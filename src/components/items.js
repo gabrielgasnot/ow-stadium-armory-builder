@@ -1,9 +1,10 @@
 import React from "react";
 import { Stack } from "@mui/material";
 import Item from "./item.js";
+import { getPerkColor } from "../services/color.js";
 
 function Items(props) {
-  const { items, grade, selectItem, getColor } = props;
+  const { items, grade, selectItem } = props;
 
   if (items && items.length > 0) {
     return (
@@ -14,7 +15,7 @@ function Items(props) {
             <Item
               item={item}
               key={`item_${item.name}`}
-              color={getColor(grade)}
+              color={getPerkColor(grade)}
               selectItem={selectItem}
             />
           );

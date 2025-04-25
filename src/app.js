@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import "./app.css";
-import { Heroes, Details, Perks } from "./components";
+import { Heroes, Details, Perks, LoadBuild } from "./components";
 import { Box, Grid, Typography, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { basicItems, heroes } from "./db/db";
-import { amber, green, blue, purple } from "@mui/material/colors";
 
 function App() {
   const [currentHero, setCurrentHero] = useState(undefined);
@@ -13,19 +12,6 @@ function App() {
   const [selectedPowers, setSelectedPowers] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
-
-  const getPerkColor = (grade) => {
-    switch (grade) {
-      case "normal":
-        return green[500];
-      case "rare":
-        return blue[500];
-      case "epic":
-        return purple[500];
-      default:
-        return amber[500];
-    }
-  };
 
   const loadHero = (selectedHero) => {
     setSelectedPowers([]);
@@ -66,7 +52,7 @@ function App() {
     }
   };
 
-  const exportJson = () => {
+  const exportBuild = () => {
     const build = {
       hero: {
         name: currentHero.name,
@@ -83,6 +69,23 @@ function App() {
     a.download = `${currentHero.name}_build.json`;
     a.click();
     URL.revokeObjectURL(url);
+  };
+
+  const importBuild = (build) => {
+    const hero = heroes.find((h) => h.name === build.hero.name);
+    if (!hero) {
+      setErrorMessage("Failed to import: hero not found");
+      return;
+    }
+
+    // Reset
+    setSelectedPowers([]);
+    setSelectedItems([]);
+    setErrorMessage("");
+
+    setCurrentHero(hero);
+    setSelectedPowers(build.powers);
+    setSelectedItems(build.items);
   };
 
   return (
@@ -107,8 +110,15 @@ function App() {
             OW Stadium - Armory Builder
           </Typography>
         </Grid>
-        <Grid size={12}>
-          <Heroes heroes={heroes} loadHero={loadHero}></Heroes>
+        <Grid size={12} textAlign={"center"}>
+          <Typography variant="h5" component="h2" gutterBottom>
+            Select a hero to start building your build
+          </Typography>
+          <Heroes heroes={heroes} loadHero={loadHero} currentHero={currentHero}></Heroes>
+          <Typography variant="h6" component="h2" gutterBottom>
+            or click below to load a build that you've already created
+          </Typography>
+          <LoadBuild importBuild={importBuild} />
         </Grid>
         {currentHero && (
           <Grid container size={12} spacing={2}>
@@ -117,8 +127,7 @@ function App() {
                 hero={currentHero}
                 powers={selectedPowers}
                 items={selectedItems}
-                getColor={getPerkColor}
-                getJson={exportJson}
+                getJson={exportBuild}
               />
             </Grid>
             <Grid size={9}>
@@ -127,7 +136,6 @@ function App() {
                 generalItems={basicItems}
                 items={heroItems}
                 selectPerk={updatePerkBuild}
-                getPerkColor={getPerkColor}
               />
             </Grid>
           </Grid>
