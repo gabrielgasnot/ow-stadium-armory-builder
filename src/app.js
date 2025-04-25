@@ -56,12 +56,13 @@ function App() {
   };
 
   const removePerkBuild = (perkType, perk) => {
-    console.log('Removing ', perkType, perk);
     if (perkType === "power") {
-      setSelectedPowers(selectedPowers.filter(power => power.name !== perk.name));
+      setSelectedPowers(
+        selectedPowers.filter((power) => power.name !== perk.name)
+      );
     }
     if (perkType === "item") {
-      setSelectedItems(selectedItems.filter(item => item.name !== perk.name));
+      setSelectedItems(selectedItems.filter((item) => item.name !== perk.name));
     }
   };
 
@@ -109,7 +110,7 @@ function App() {
   };
 
   return (
-    <Box className="App">
+    <Grid container spacing={2}>
       {errorMessage && (
         <Alert
           variant="outlined"
@@ -124,49 +125,47 @@ function App() {
           {errorMessage}
         </Alert>
       )}
-      <Grid container spacing={2}>
-        <Grid size={12}>
-          <Typography variant="h4" component="h1" gutterBottom align="center">
-            OW Stadium - Armory Builder
-          </Typography>
-        </Grid>
-        <Grid size={12} textAlign={"center"}>
-          <Typography variant="h5" component="h2" gutterBottom>
-            Select a hero to start building your build
-          </Typography>
-          <Heroes
-            heroes={heroes}
-            loadHero={loadHero}
-            currentHero={currentHero?.name}
-          ></Heroes>
-          <Typography variant="h6" component="h2" gutterBottom>
-            or click below to load a build that you've already created
-          </Typography>
-          <LoadBuild importBuild={importBuild} />
-        </Grid>
-        {currentHero && (
-          <Grid container size={12} spacing={2}>
-            <Grid size={3}>
-              <Details
-                hero={currentHero}
-                powers={selectedPowers}
-                items={selectedItems}
-                getJson={exportBuild}
-                removeElement={removePerkBuild}
-              />
-            </Grid>
-            <Grid size={9}>
-              <Perks
-                powers={heroPowers}
-                generalItems={basicItems}
-                items={heroItems}
-                selectPerk={addPerkBuild}
-              />
-            </Grid>
-          </Grid>
-        )}
+      <Grid size={12}>
+        <Typography variant="h4" component="h1" gutterBottom align="center">
+          OW Stadium - Armory Builder
+        </Typography>
       </Grid>
-    </Box>
+      <Grid size={12} textAlign={"center"}>
+        <Typography variant="h5" component="h2" gutterBottom>
+          Select a hero to start building your build
+        </Typography>
+        <Heroes
+          heroes={heroes}
+          loadHero={loadHero}
+          currentHero={currentHero?.name}
+        ></Heroes>
+        <Typography variant="h6" component="h2" gutterBottom>
+          or click below to load a build that you've already created
+        </Typography>
+        <LoadBuild importBuild={importBuild} />
+      </Grid>
+      {currentHero && (
+        <Grid container size={12} spacing={2}>
+          <Grid size={3}>
+            <Details
+              hero={currentHero}
+              powers={selectedPowers}
+              items={selectedItems}
+              getJson={exportBuild}
+              removeElement={removePerkBuild}
+            />
+          </Grid>
+          <Grid size={9}>
+            <Perks
+              powers={heroPowers}
+              generalItems={basicItems}
+              items={heroItems}
+              selectPerk={addPerkBuild}
+            />
+          </Grid>
+        </Grid>
+      )}
+    </Grid>
   );
 }
 
