@@ -26,7 +26,17 @@ function Heroes(props) {
             <Card
               key={`hero_${hero.name}`}
               onClick={() => selectHero(hero)}
-              sx={{ width: 125, cursor: "pointer" }}
+              sx={{
+                width: 125,
+                cursor: "pointer",
+                "&[data-active]": {
+                  backgroundColor: "action.selected",
+                  "&:hover": {
+                    backgroundColor: "action.selectedHover",
+                  },
+                },
+              }}
+              data-active={hero.name === currentHero ? "" : undefined}
             >
               <CardMedia
                 sx={{ height: 125 }}
