@@ -55,12 +55,22 @@ function App() {
     setSelectedItems([...selectedItems, item]);
   };
 
-  const updatePerkBuild = (perkType, newPerk) => {
+  const removePerkBuild = (perkType, perk) => {
+    console.log('Removing ', perkType, perk);
     if (perkType === "power") {
-      addPower(newPerk);
+      setSelectedPowers(selectedPowers.filter(power => power.name !== perk.name));
     }
     if (perkType === "item") {
-      addItem(newPerk);
+      setSelectedItems(selectedItems.filter(item => item.name !== perk.name));
+    }
+  };
+
+  const addPerkBuild = (perkType, perk) => {
+    if (perkType === "power") {
+      addPower(perk);
+    }
+    if (perkType === "item") {
+      addItem(perk);
     }
   };
 
@@ -142,6 +152,7 @@ function App() {
                 powers={selectedPowers}
                 items={selectedItems}
                 getJson={exportBuild}
+                removeElement={removePerkBuild}
               />
             </Grid>
             <Grid size={9}>
@@ -149,7 +160,7 @@ function App() {
                 powers={heroPowers}
                 generalItems={basicItems}
                 items={heroItems}
-                selectPerk={updatePerkBuild}
+                selectPerk={addPerkBuild}
               />
             </Grid>
           </Grid>

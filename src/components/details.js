@@ -14,7 +14,7 @@ import { getPerkColor } from "../services/color";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 
 function Details(props) {
-  const { hero, powers, items, getJson } = props;
+  const { hero, powers, items, getJson, removeElement } = props;
 
   if (!hero) {
     return;
@@ -52,6 +52,7 @@ function Details(props) {
                 <Chip
                   label={power.name}
                   sx={{ backgroundColor: amber[100] }}
+                  onDelete={() => removeElement('power', power)}
                 ></Chip>
               ))}
             </Stack>
@@ -67,6 +68,7 @@ function Details(props) {
                 <Chip
                   label={`${item.name} (${item.category})`}
                   sx={{ backgroundColor: getPerkColor(item.grade) }}
+                  onDelete={() => removeElement('item', item)}
                 ></Chip>
               ))}
             </Stack>
