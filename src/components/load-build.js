@@ -51,6 +51,7 @@ function LoadBuild(props) {
               event.preventDefault();
               const formData = new FormData(event.currentTarget);
               const formJson = Object.fromEntries(formData.entries());
+              console.log(formJson);
               handleClose(formJson ? JSON.parse(formJson.importData) : null);
             },
           },

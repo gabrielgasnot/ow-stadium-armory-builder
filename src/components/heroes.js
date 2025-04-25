@@ -4,13 +4,10 @@ import { getHeroColor } from "../services/color";
 
 function Heroes(props) {
   const { heroes, loadHero, currentHero } = props;
-  const [selectedHero, setSelectedHero] = React.useState(currentHero);
 
   const selectHero = (hero) => {
-    setSelectedHero(hero);
     loadHero(hero);
   };
-
 
   if (heroes && heroes.length > 0) {
     return (
@@ -24,6 +21,7 @@ function Heroes(props) {
           flexWrap: "wrap",
         }}
       >
+        Current hero: {currentHero}
         {heroes
           .sort((h1, h2) => (h1.role < h2.role ? 1 : -1))
           .map((hero) => (
@@ -34,7 +32,7 @@ function Heroes(props) {
               variant="outlined"
               onClick={() => selectHero(hero)}
               sx={{
-                bgcolor: getHeroColor(hero.role, selectedHero?.name === hero.name),
+                bgcolor: getHeroColor(hero.role, currentHero === hero.name),
               }}
             />
           ))}

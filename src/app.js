@@ -32,6 +32,7 @@ function App() {
       setErrorMessage("You can only have 4 powers");
       return;
     }
+
     setSelectedPowers([...selectedPowers, power]);
   };
 
@@ -72,24 +73,23 @@ function App() {
   };
 
   const importBuild = (build) => {
-    const hero = heroes.find((h) => h.name === build.hero.name);
-    if (!hero) {
-      setErrorMessage("Failed to import: hero not found");
-      return;
+    if (build && build.hero && build.powers && build.items) {
+      const hero = heroes.find((h) => h.name === build.hero.name);
+      if (!hero) {
+        setErrorMessage("Failed to import: hero not found");
+        return;
+      }
+
+      // Reset
+      loadHero(hero);
+      setSelectedPowers(build.powers);
+      setSelectedItems(build.items);
     }
-
-    // Reset
-    setSelectedPowers([]);
-    setSelectedItems([]);
-    setErrorMessage("");
-
-    setCurrentHero(hero);
-    setSelectedPowers(build.powers);
-    setSelectedItems(build.items);
   };
 
   return (
     <Box className="App">
+      App current Hero: {currentHero?.name}
       {errorMessage && (
         <Alert
           variant="outlined"
@@ -114,7 +114,11 @@ function App() {
           <Typography variant="h5" component="h2" gutterBottom>
             Select a hero to start building your build
           </Typography>
-          <Heroes heroes={heroes} loadHero={loadHero} currentHero={currentHero}></Heroes>
+          <Heroes
+            heroes={heroes}
+            loadHero={loadHero}
+            currentHero={currentHero?.name}
+          ></Heroes>
           <Typography variant="h6" component="h2" gutterBottom>
             or click below to load a build that you've already created
           </Typography>
