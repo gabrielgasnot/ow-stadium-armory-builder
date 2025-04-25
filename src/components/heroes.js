@@ -1,27 +1,12 @@
 import React from "react";
 import { Chip, Stack } from "@mui/material";
-import { red, green, blue, grey } from "@mui/material/colors";
+import { getHeroColor } from "../services/color";
 
 function Heroes(props) {
-  const [selectedHero, setSelectedHero] = React.useState("");
-  const { heroes, loadHero } = props;
+  const { heroes, loadHero, currentHero } = props;
 
   const selectHero = (hero) => {
-    setSelectedHero(hero.name);
     loadHero(hero);
-  };
-
-  const getColor = (role, selected) => {
-    switch (role) {
-      case "Tank":
-        return blue[selected ? 700 : 300];
-      case "Damage":
-        return red[selected ? 700 : 300];
-      case "Support":
-        return green[selected ? 700 : 300];
-      default:
-        return grey[500];
-    }
   };
 
   if (heroes && heroes.length > 0) {
@@ -36,6 +21,7 @@ function Heroes(props) {
           flexWrap: "wrap",
         }}
       >
+        Current hero: {currentHero}
         {heroes
           .sort((h1, h2) => (h1.role < h2.role ? 1 : -1))
           .map((hero) => (
@@ -46,7 +32,7 @@ function Heroes(props) {
               variant="outlined"
               onClick={() => selectHero(hero)}
               sx={{
-                bgcolor: getColor(hero.role, selectedHero === hero.name),
+                bgcolor: getHeroColor(hero.role, currentHero === hero.name),
               }}
             />
           ))}

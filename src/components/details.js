@@ -10,10 +10,11 @@ import {
   Button,
 } from "@mui/material";
 import { amber } from "@mui/material/colors";
+import { getPerkColor } from "../services/color";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 
 function Details(props) {
-  const { hero, powers, items, getColor, getJson } = props;
+  const { hero, powers, items, getJson } = props;
 
   if (!hero) {
     return;
@@ -65,7 +66,7 @@ function Details(props) {
               {items.map((item) => (
                 <Chip
                   label={`${item.name} (${item.category})`}
-                  sx={{ backgroundColor: getColor(item.grade) }}
+                  sx={{ backgroundColor: getPerkColor(item.grade) }}
                 ></Chip>
               ))}
             </Stack>
