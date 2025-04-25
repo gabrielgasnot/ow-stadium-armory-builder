@@ -28,6 +28,12 @@ function App() {
   };
 
   const addPower = (power) => {
+    if (
+      selectedPowers.find((selectedPower) => selectedPower.name === power.name)
+    ) {
+      return;
+    }
+
     if (selectedPowers.length >= 4) {
       setErrorMessage("You can only have 4 powers");
       return;
@@ -37,10 +43,15 @@ function App() {
   };
 
   const addItem = (item) => {
+    if (selectedItems.find((selectedItem) => selectedItem.name === item.name)) {
+      return;
+    }
+
     if (selectedItems.length >= 6) {
       setErrorMessage("You can only have 6 items");
       return;
     }
+
     setSelectedItems([...selectedItems, item]);
   };
 
@@ -89,7 +100,6 @@ function App() {
 
   return (
     <Box className="App">
-      App current Hero: {currentHero?.name}
       {errorMessage && (
         <Alert
           variant="outlined"

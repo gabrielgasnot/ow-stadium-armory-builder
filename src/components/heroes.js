@@ -21,7 +21,6 @@ function Heroes(props) {
           flexWrap: "wrap",
         }}
       >
-        Current hero: {currentHero}
         {heroes
           .sort((h1, h2) => (h1.role < h2.role ? 1 : -1))
           .map((hero) => (
