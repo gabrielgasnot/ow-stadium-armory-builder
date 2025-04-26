@@ -470,8 +470,11 @@ const basicItems = {
   ],
 };
 
+// Identifiers:
+// - heroes from: https://overwatch.judgehype.com/article/personnages/
 const heroes = [
   {
+    id: 5,
     name: "Reinhardt",
     role: "Tank",
     hp: 550,
@@ -627,6 +630,7 @@ const heroes = [
     },
   },
   {
+    id: 2,
     name: "Reaper",
     role: "Damage",
     hp: 300,
@@ -777,6 +781,7 @@ const heroes = [
     },
   },
   {
+    id: 15,
     name: "Soldier 76",
     role: "Damage",
     hp: 250,
@@ -898,6 +903,7 @@ const heroes = [
     },
   },
   {
+    id: 6,
     name: "Mercy",
     role: "Support",
     hp: 225,
@@ -1039,6 +1045,7 @@ const heroes = [
     },
   },
   {
+    id: 26,
     name: "Moira",
     role: "Support",
     hp: 225,
@@ -1176,6 +1183,7 @@ const heroes = [
     },
   },
   {
+    id: 19,
     name: "D.Va",
     role: "Tank",
     hp: 550,
@@ -1345,6 +1353,7 @@ const heroes = [
     },
   },
   {
+    id: 21,
     name: "Genji",
     role: "Damage",
     hp: 250,
@@ -1502,6 +1511,7 @@ const heroes = [
     },
   },
   {
+    id: 24,
     name: "Orisa",
     role: "Tank",
     hp: 475,
@@ -1664,6 +1674,7 @@ const heroes = [
     },
   },
   {
+    id: 34,
     name: "Junker Queen",
     role: "Tank",
     hp: 375,
@@ -1827,6 +1838,7 @@ const heroes = [
     },
   },
   {
+    id: 13,
     name: "Zarya",
     role: "Tank",
     hp: 400,
@@ -1962,6 +1974,7 @@ const heroes = [
     },
   },
   {
+    id: 35,
     name: "Kiriko",
     role: "Support",
     hp: 225,
@@ -2121,6 +2134,7 @@ const heroes = [
     },
   },
   {
+    id: 22,
     name: "Ana",
     role: "Support",
     hp: 250,
@@ -2285,6 +2299,7 @@ const heroes = [
     },
   },
   {
+    id: 14,
     name: "Cassidy",
     role: "Damage",
     hp: 275,
@@ -2413,6 +2428,7 @@ const heroes = [
     },
   },
   {
+    id: 29,
     name: "Ashe",
     role: "Damage",
     hp: 250,
@@ -2573,6 +2589,7 @@ const heroes = [
     },
   },
   {
+    id: 41,
     name: "Juno",
     hp: 225,
     role: "Support",
@@ -2729,6 +2746,7 @@ const heroes = [
     },
   },
   {
+    id: 20,
     name: "Mei",
     role: "Damage",
     hp: 300,
@@ -2862,6 +2880,7 @@ const heroes = [
     },
   },
   {
+    id: 16,
     name: "Lucio",
     hp: 225,
     role: "Support",
@@ -2999,7 +3018,28 @@ const heroes = [
 ];
 
 const heroesOrder = [
-  "D.Va", "Orisa", "Junker Queen", "Reinhardt", "Zarya", "Ashe", "Cassidy", "Reaper", "Genji", "Mei", "Soldier 76", "Ana", "Mercy", "Juno", "Kiriko", "Lucio", "Moira"
+  // Tank
+  19, // D.Va
+  24, // Orisa
+  34, // Junker Queen
+  5, // Reinhardt
+  13, // Zarya
+
+  // DPS
+  29, // Ashe
+  14, // Cassidy
+  2, // Reaper
+  21, // Genji
+  20, // Mei
+  15, // Soldier 76
+
+  // Support
+  22, // Ana
+  6, // Mercy
+  41, // Juno
+  35, // Kiriko
+  16, // Lucio
+  26, // Moira
 ];
 
 export { basicItems, heroes, heroesOrder };

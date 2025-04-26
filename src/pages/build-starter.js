@@ -12,7 +12,7 @@ function BuildStarter(props) {
       <Heroes
         heroes={heroes}
         loadHero={loadHero}
-        currentHero={currentHero?.name}
+        currentHero={currentHero?.id}
       ></Heroes>
       <Typography variant="h6" component="h2" gutterBottom>
         or click below to load a build that you've already created

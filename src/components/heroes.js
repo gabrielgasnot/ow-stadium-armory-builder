@@ -24,7 +24,7 @@ function Heroes(props) {
           .sort((h1, h2) => (h1.role < h2.role ? 1 : -1))
           .map((hero) => (
             <Card
-              key={`hero_${hero.name}`}
+              key={`hero_${hero.id}`}
               onClick={() => selectHero(hero)}
               sx={{
                 width: 125,
@@ -36,11 +36,11 @@ function Heroes(props) {
                   },
                 },
               }}
-              data-active={hero.name === currentHero ? "" : undefined}
+              data-active={hero.id === currentHero ? "" : undefined}
             >
               <CardMedia
                 sx={{ height: 125 }}
-                image={`${process.env.PUBLIC_URL}/heroes/${hero.name}.png`}
+                image={`${process.env.PUBLIC_URL}/heroes/${hero.id}.png`}
                 title={hero.name}
               />
               <CardContent>{hero.name}</CardContent>

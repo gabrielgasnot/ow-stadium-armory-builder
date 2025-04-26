@@ -21,7 +21,7 @@ function App() {
     setErrorMessage("");
     setCurrentHero(selectedHero);
 
-    const hero = heroes.find((h) => h.name === selectedHero.name);
+    const hero = heroes.find((h) => h.id === selectedHero.id);
 
     if (hero) {
       setHeroPowers(hero.powers ?? []);
@@ -80,6 +80,7 @@ function App() {
   const exportBuild = () => {
     const build = {
       hero: {
+        id: currentHero.id,
         name: currentHero.name,
         role: currentHero.role,
       },
@@ -98,7 +99,7 @@ function App() {
 
   const importBuild = (build) => {
     if (build && build.hero && build.powers && build.items) {
-      const hero = heroes.find((h) => h.name === build.hero.name);
+      const hero = heroes.find((h) => h.id === build.hero.id);
       if (!hero) {
         setErrorMessage("Failed to import: hero not found");
         return;
