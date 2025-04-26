@@ -2,4 +2,10 @@
 
 body {
   font-family: 'BigNoodleTitling', Arial, Helvetica, sans-serif;
+
+}
+
+#footer {
+  position: absolute;
+  bottom: 20px;
 }

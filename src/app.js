@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./app.css";
-import { Heroes, Details, Perks, LoadBuild } from "./components";
-import { Box, Grid, Typography, Alert, IconButton } from "@mui/material";
+import { Details, Perks, ArmoryHeader } from "./components";
+import BuildStarter from "./pages/build-starter";
+import { Grid, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { basicItems, heroes } from "./db/db";
+import ArmoryFooter from "./components/footer";
 
 function App() {
   const [currentHero, setCurrentHero] = useState(undefined);
@@ -110,7 +112,7 @@ function App() {
   };
 
   return (
-    <Grid container spacing={2} className="app">
+    <Grid container spacing={2} style={{ height: '100vh', bottom: '80px' }}>
       {errorMessage && (
         <Alert
           variant="outlined"
@@ -126,27 +128,19 @@ function App() {
         </Alert>
       )}
       <Grid size={12}>
-        <Typography variant="h4" component="h1" gutterBottom align="center">
-          OW Stadium - Armory Builder
-        </Typography>
+        <ArmoryHeader pages={[]} />
       </Grid>
       <Grid size={12} textAlign={"center"}>
-        <Typography variant="h5" component="h2" gutterBottom>
-          Select a hero to start building your build
-        </Typography>
-        <Heroes
+        <BuildStarter
           heroes={heroes}
           loadHero={loadHero}
           currentHero={currentHero?.name}
-        ></Heroes>
-        <Typography variant="h6" component="h2" gutterBottom>
-          or click below to load a build that you've already created
-        </Typography>
-        <LoadBuild importBuild={importBuild} />
+          importBuild={importBuild}
+        />
       </Grid>
       {currentHero && (
         <Grid container size={12} spacing={2}>
-          <Grid size={3}>
+          <Grid item xs={12} sm={4}>
             <Details
               hero={currentHero}
               powers={selectedPowers}
@@ -155,7 +149,7 @@ function App() {
               removeElement={removePerkBuild}
             />
           </Grid>
-          <Grid size={9}>
+          <Grid item xs={12} sm={8}>
             <Perks
               powers={heroPowers}
               generalItems={basicItems}
@@ -165,6 +159,7 @@ function App() {
           </Grid>
         </Grid>
       )}
+      <ArmoryFooter />
     </Grid>
   );
 }
