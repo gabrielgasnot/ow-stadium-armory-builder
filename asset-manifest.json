@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ow-stadium-armory-builder/static/css/main.2cd7ea3f.css",
-    "main.js": "/ow-stadium-armory-builder/static/js/main.96e23690.js",
+    "main.css": "/ow-stadium-armory-builder/static/css/main.9c9eed14.css",
+    "main.js": "/ow-stadium-armory-builder/static/js/main.f7322d86.js",
     "static/js/453.a34066a1.chunk.js": "/ow-stadium-armory-builder/static/js/453.a34066a1.chunk.js",
     "index.html": "/ow-stadium-armory-builder/index.html",
-    "main.2cd7ea3f.css.map": "/ow-stadium-armory-builder/static/css/main.2cd7ea3f.css.map",
-    "main.96e23690.js.map": "/ow-stadium-armory-builder/static/js/main.96e23690.js.map",
+    "main.9c9eed14.css.map": "/ow-stadium-armory-builder/static/css/main.9c9eed14.css.map",
+    "main.f7322d86.js.map": "/ow-stadium-armory-builder/static/js/main.f7322d86.js.map",
     "453.a34066a1.chunk.js.map": "/ow-stadium-armory-builder/static/js/453.a34066a1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2cd7ea3f.css",
-    "static/js/main.96e23690.js"
+    "static/css/main.9c9eed14.css",
+    "static/js/main.f7322d86.js"
   ]
 }
