@@ -116,7 +116,14 @@ function App() {
   };
 
   return (
-    <Grid container spacing={2} style={{ height: "90vh" }}>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100vh",
+        overflow: "hidden",
+      }}
+    >
       {errorMessage && (
         <Alert
           variant="outlined"
@@ -131,89 +138,93 @@ function App() {
           {errorMessage}
         </Alert>
       )}
-      <Grid size={12}>
-        <ArmoryHeader pages={[]} />
-      </Grid>
-      {!currentHero && (
-        <Grid size={12} textAlign={"center"}>
-          <BuildStarter
-            heroes={heroes}
-            loadHero={loadHero}
-            currentHero={currentHero?.name}
-            importBuild={importBuild}
-          />
-        </Grid>
-      )}
-      {currentHero && (
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: { xs: "column", lg: "row" },
-            height: "100vh",
-            overflow: "hidden",
-          }}
-        >
-          <Box
-            sx={{
-              minWidth: { xs: "100vw", lg: "20vw" },
-              flexShrink: 0,
-              bgcolor: "#f5f5f5",
-              p: 2,
-              boxSizing: "border-box",
-              overflow: "auto",
-            }}
-          >
-            <Box>
-              <Button
-                role={undefined}
-                variant="text"
-                tabIndex={-1}
-                startIcon={<ArrowBackIcon />}
-                onClick={() => loadHero(undefined)}
-                sx={{
-                  fontFamily: "BigNoodleTitling",
-                  fontWeight: 700,
-                  fontSize: "1em",
-                  textDecoration: "none",
-                }}
-              >
-                Return to heroes
-              </Button>
-            </Box>
-            <Details
-              hero={currentHero}
-              powers={selectedPowers}
-              items={selectedItems}
-              getJson={exportBuild}
-              removeElement={removePerkBuild}
+      {/* Header (app bar) */}
+      <ArmoryHeader pages={[]} />
+
+      {/* Main Content Area */}
+      <Box sx={{ display: "flex", flex: 1, overflow: "hidden" }}>
+        {!currentHero && (
+          <Grid size={12} textAlign={"center"}>
+            <BuildStarter
+              heroes={heroes}
+              loadHero={loadHero}
+              currentHero={currentHero?.name}
+              importBuild={importBuild}
             />
-          </Box>
+          </Grid>
+        )}
+        {currentHero && (
           <Box
             sx={{
-              flexGrow: 1,
-              p: 2,
-              overflow: "auto",
+              display: "flex",flex: 1, 
+              flexDirection: { xs: "column", lg: "row" },
+              overflow: "hidden",
             }}
           >
             <Box
               sx={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 2,
+                minWidth: { xs: "100vw", lg: "20vw" },
+                flexShrink: 0,
+                bgcolor: "#f5f5f5",
+                p: 2,
+                boxSizing: "border-box",
+                overflow: "auto",
               }}
             >
-              <Perks
-                powers={heroPowers}
-                generalItems={basicItems}
-                items={heroItems}
-                selectPerk={addPerkBuild}
+              <Box>
+                <Button
+                  role={undefined}
+                  variant="text"
+                  tabIndex={-1}
+                  startIcon={<ArrowBackIcon />}
+                  onClick={() => loadHero(undefined)}
+                  sx={{
+                    fontFamily: "BigNoodleTitling",
+                    fontWeight: 700,
+                    fontSize: "1em",
+                    textDecoration: "none",
+                  }}
+                >
+                  Return to heroes
+                </Button>
+              </Box>
+              <Details
+                hero={currentHero}
+                powers={selectedPowers}
+                items={selectedItems}
+                getJson={exportBuild}
+                removeElement={removePerkBuild}
               />
             </Box>
+            <Box
+              sx={{
+                flexGrow: 1,
+                p: 2,
+                overflow: "auto",
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: 2,
+                }}
+              >
+                <Perks
+                  powers={heroPowers}
+                  generalItems={basicItems}
+                  items={heroItems}
+                  selectPerk={addPerkBuild}
+                />
+              </Box>
+            </Box>
           </Box>
-        </Box>
-      )}
+        )}
+      </Box>
+
+      {/* Footer */}
       <ArmoryFooter />
-    </Grid>
+    </Box>
   );
 }
 
