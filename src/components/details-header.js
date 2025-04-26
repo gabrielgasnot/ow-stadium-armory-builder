@@ -21,7 +21,7 @@ function DetailsHeader(props) {
           height: 100,
           backgroundColor: "#ccc",
           borderRadius: 1,
-          backgroundImage: `url(${process.env.PUBLIC_URL}/heroes/${hero.name}.png)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/heroes/${hero.id}.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           flexShrink: 0,
