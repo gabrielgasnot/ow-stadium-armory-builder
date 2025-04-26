@@ -1,6 +1,5 @@
 import React from "react";
-import { Chip, Stack } from "@mui/material";
-import { getHeroColor } from "../services/color";
+import { Card, CardMedia, CardContent, Stack } from "@mui/material";
 
 function Heroes(props) {
   const { heroes, loadHero, currentHero } = props;
@@ -24,16 +23,28 @@ function Heroes(props) {
         {heroes
           .sort((h1, h2) => (h1.role < h2.role ? 1 : -1))
           .map((hero) => (
-            <Chip
+            <Card
               key={`hero_${hero.name}`}
-              label={hero.name}
-              readonly
-              variant="outlined"
               onClick={() => selectHero(hero)}
               sx={{
-                bgcolor: getHeroColor(hero.role, currentHero === hero.name),
+                width: 125,
+                cursor: "pointer",
+                "&[data-active]": {
+                  backgroundColor: "action.selected",
+                  "&:hover": {
+                    backgroundColor: "action.selectedHover",
+                  },
+                },
               }}
-            />
+              data-active={hero.name === currentHero ? "" : undefined}
+            >
+              <CardMedia
+                sx={{ height: 125 }}
+                image={`${process.env.PUBLIC_URL}/heroes/${hero.name}.png`}
+                title={hero.name}
+              />
+              <CardContent>{hero.name}</CardContent>
+            </Card>
           ))}
       </Stack>
     );

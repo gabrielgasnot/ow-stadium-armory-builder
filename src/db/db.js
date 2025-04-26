@@ -2998,4 +2998,8 @@ const heroes = [
   },
 ];
 
-export { basicItems, heroes };
+const heroesOrder = [
+  "D.Va", "Orisa", "Junker Queen", "Reinhardt", "Zarya", "Ashe", "Cassidy", "Reaper", "Genji", "Mei", "Soldier 76", "Ana", "Mercy", "Juno", "Kiriko", "Lucio", "Moira"
+];
+
+export { basicItems, heroes, heroesOrder };

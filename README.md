@@ -7,11 +7,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [x] Build the database (manual creation: use Stadium Practice Range... hours of fun...)
 - [x] Basic list of heroes
 - [x] Basic display of items & powers
-- [ ] Ability to select Perks & Powers
-- [ ] Be able to save/load build (send build as json, import build by copying the json ?)
+- [x] Ability to select Perks & Powers
+- [x] Be able to save/load build (send build as json, import build by copying the json ?)
 - [ ] Rework db files for a better split of items effects
 - [ ] Cleanup public files
-- [ ] Improve GUI (to be split)
+- [ ] Improve GUI
+ - [ ] Add game icons
+ - [ ] Responsive
 - [ ] Other things that I didn't think of...
 
 ## Dev / Technical
