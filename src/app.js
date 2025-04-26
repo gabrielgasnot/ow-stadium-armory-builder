@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import "./app.css";
 import { Details, Perks, ArmoryHeader } from "./components";
 import BuildStarter from "./pages/build-starter";
-import { Box, Grid, Alert, IconButton } from "@mui/material";
+import { Button, Box, Grid, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { basicItems, heroes } from "./db/db";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArmoryFooter from "./components/footer";
 
 function App() {
@@ -21,11 +22,13 @@ function App() {
     setErrorMessage("");
     setCurrentHero(selectedHero);
 
-    const hero = heroes.find((h) => h.id === selectedHero.id);
+    if (selectedHero) {
+      const hero = heroes.find((h) => h.id === selectedHero.id);
 
-    if (hero) {
-      setHeroPowers(hero.powers ?? []);
-      setHeroItems(hero.items ?? []);
+      if (hero) {
+        setHeroPowers(hero.powers ?? []);
+        setHeroItems(hero.items ?? []);
+      }
     }
   };
 
@@ -131,14 +134,16 @@ function App() {
       <Grid size={12}>
         <ArmoryHeader pages={[]} />
       </Grid>
-      <Grid size={12} textAlign={"center"}>
-        <BuildStarter
-          heroes={heroes}
-          loadHero={loadHero}
-          currentHero={currentHero?.name}
-          importBuild={importBuild}
-        />
-      </Grid>
+      {!currentHero && (
+        <Grid size={12} textAlign={"center"}>
+          <BuildStarter
+            heroes={heroes}
+            loadHero={loadHero}
+            currentHero={currentHero?.name}
+            importBuild={importBuild}
+          />
+        </Grid>
+      )}
       {currentHero && (
         <Box
           sx={{
@@ -150,14 +155,31 @@ function App() {
         >
           <Box
             sx={{
-              width: { xs: "100vw", lg: "25vw" },
+              minWidth: { xs: "100vw", lg: "20vw" },
               flexShrink: 0,
               bgcolor: "#f5f5f5",
               p: 2,
-              boxSizing: 'border-box',
+              boxSizing: "border-box",
               overflow: "auto",
             }}
           >
+            <Box>
+              <Button
+                role={undefined}
+                variant="text"
+                tabIndex={-1}
+                startIcon={<ArrowBackIcon />}
+                onClick={() => loadHero(undefined)}
+                sx={{
+                  fontFamily: "BigNoodleTitling",
+                  fontWeight: 700,
+                  fontSize: "1em",
+                  textDecoration: "none",
+                }}
+              >
+                Return to heroes
+              </Button>
+            </Box>
             <Details
               hero={currentHero}
               powers={selectedPowers}

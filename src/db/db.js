@@ -233,7 +233,7 @@ const basicItems = {
       category: "Survival",
     },
     {
-      name: "Vishkar Converter",
+      name: "Vishkar Condensor",
       description: "+25 Shields, convert 100 Health into Shields",
       price: 4000,
       category: "Survival",
@@ -357,7 +357,7 @@ const basicItems = {
       category: "Ability",
     },
     {
-      name: "Lumérico Fusion Drive",
+      name: "LumériCo Fusion Drive",
       description:
         "+50 Armor, +15% Ability Power, when you use an ability, restore 50 Armor or Shields over 2s",
       price: 10000,
@@ -1690,7 +1690,7 @@ const heroes = [
           "[Scatter Gun] critical hits against targets within 12m applies [Wound] for 30 damage over 3s",
       },
       {
-        name: "Twist the Knife",
+        name: "Twist The Knife",
         description:
           "[Scatter Gun] critical hits extend the duration of all [Wounds] on the target by 0.5s",
       },
@@ -1700,12 +1700,12 @@ const heroes = [
           "Holding [Jagged Blade] charges it, increasing its damage by up to 35% and causing it to knockback",
       },
       {
-        name: "Cut'em, Gracie!",
+        name: "Cut'Em, Gracie!",
         description:
           "Each enemy hit by [Jagged Blade] while it returns to you reduces its cooldown by 1s",
       },
       {
-        name: "Let's go Win",
+        name: "Let's Go Win",
         description: "Eliminations reset the cooldown of [Commanding Shout]",
       },
       {
@@ -1719,7 +1719,7 @@ const heroes = [
           "Using [Commanding Shout] [Wounds] enemies within 10m for 30 damage over 3s",
       },
       {
-        name: "Chop chop",
+        name: "Chop Chop",
         description:
           "[Carnage] gains an additional charge but its cooldown reduction per hit is reduced to 1s",
       },
@@ -1734,7 +1734,7 @@ const heroes = [
           "[Carnage] and [Rampage] gives 15% of Max Life as Overhealth per hit",
       },
       {
-        name: "Bow down",
+        name: "Bow Down",
         description: "[Rampage] now also knocks down enemy hit for 1.5s",
       },
     ],
@@ -1763,7 +1763,7 @@ const heroes = [
           category: "Ability",
         },
         {
-          name: "Dew's Damage Dampener",
+          name: "Dez's Damage Dampeners",
           description:
             "+25 Health, +50% Knockback Resistance, When knockback, gain 25%  increased Move Speed for 3s",
           price: 4000,
@@ -1869,7 +1869,7 @@ const heroes = [
           "When [Barrier] expires, grand Overhealth equal to 50% if remaining  [Barrier] Health to the target for 3s",
       },
       {
-        name: "Containment Field",
+        name: "Containment Shield",
         description:
           "[Barrier] heals 25 Life, increased by [Energy], and grants 20% Move Speed while active",
       },
@@ -1879,7 +1879,7 @@ const heroes = [
           "[Projected Barrier] also applies to 1 additional ally within 10m, but has 20% reduced duration",
       },
       {
-        name: "Here to Spot You",
+        name: "Here To Spot You",
         description:
           "[Projected Barrier] pulls you to the targeted ally and heals you for 15% of Max Life over 3s",
       },
@@ -2487,7 +2487,7 @@ const heroes = [
           "You are healed for 100% of [B.O.B.]'s damage dealt and [B.O.B.] is healed for 100% of your damage dealt",
       },
       {
-        name: "B.O.B. Jr.",
+        name: "B.O.B. Jr",
         description:
           "[B.O.B.] costs 50% less Ultimate Charge but has reduced Life, 50% reduced Attack Speed, and is significantly smaller",
       },
@@ -2955,7 +2955,7 @@ const heroes = [
           category: "Ability",
         },
         {
-          name: "Lofly Beats",
+          name: "LoFly Beats",
           description:
             "+5% Weapon Power, +5% Ability Power, While in [Speed Boost], [Soundwave] also knocks you back",
           price: 4000,
