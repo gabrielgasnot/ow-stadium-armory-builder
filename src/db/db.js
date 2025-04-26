@@ -200,14 +200,14 @@ const basicItems = {
     {
       name: "Reinforced Titanium",
       description:
-        "+25 Shields, while you have Shields, take 10% reduced Ability Damage",
+        "+25 Shields, while you have Shields, take 15% reduced Ability Damage",
       price: 3750,
       category: "Survival",
     },
     {
       name: "Iron Eyes",
       description:
-        "+25 Shields, you take 15% reduced damage from Critical Hits",
+        "+25 Shields, you take 20% reduced damage from Critical Hits",
       price: 4500,
       category: "Survival",
     },
@@ -261,14 +261,14 @@ const basicItems = {
     {
       name: "Salvaged Slugs",
       description:
-        "+10% Attack Speed, +25% Damage to Barriers, Dealing Weapon Damage to Barriers has a 40% chance to restore 1 ammo",
+        "+10% Attack Speed, +30% Damage to Barriers, Dealing Weapon Damage to Barriers has a 50% chance to restore 1 ammo",
       price: 9500,
       category: "Weapon",
     },
     {
       name: "Volskaya Ordnance",
       description:
-        "+10% Attack Speed, deal 3% increased Weapon Damage for every 100 Max Life the target has more than you, up to 15%",
+        "+10% Attack Speed, deal 5% increased Weapon Damage for every 100 Max Life the target has more than you, up to 20%",
       price: 9500,
       category: "Weapon",
     },
@@ -1272,7 +1272,7 @@ const heroes = [
         {
           name: "Plot Armor",
           description:
-            "+25 Armor, while [Defense Matrix] is active, gain 30% damage reduction against beams",
+            "+25 Armor, while [Defense Matrix] is active, gain 65% damage reduction against beams",
           price: 4000,
           category: "Survival",
         },
