@@ -1,7 +1,6 @@
 import React from "react";
 import { Stack } from "@mui/material";
-import Item from "./item.js";
-import { getPerkColor } from "../services/color.js";
+import PerkCard from "./perk-card.js";
 
 function Items(props) {
   const { items, grade, selectItem } = props;
@@ -12,11 +11,11 @@ function Items(props) {
         {items.map((item) => {
           item.grade = grade;
           return (
-            <Item
-              item={item}
-              key={`item_${item.name}`}
-              color={getPerkColor(grade)}
-              selectItem={selectItem}
+            <PerkCard
+              perk={item}
+              perkGrade={grade}
+              selectPerk={selectItem}
+              perkType="item"
             />
           );
         })}

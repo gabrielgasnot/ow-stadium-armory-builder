@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, CardHeader, CardContent, Stack } from "@mui/material";
-import { amber } from "@mui/material/colors";
+import { Stack } from "@mui/material";
+import PerkCard from "./perk-card";
 
 function Powers(props) {
   const { powers, selectPower } = props;
@@ -9,14 +9,7 @@ function Powers(props) {
     return (
       <Stack direction="row" spacing={2} useFlexGap sx={{ flexWrap: "wrap" }}>
         {powers.map((power) => (
-          <Card
-            key={`power_${power.name}`}
-            sx={{ width: 345, backgroundColor: amber[100], cursor: "pointer" }}
-            onClick={() => selectPower("power", power)}
-          >
-            <CardHeader title={power.name} />
-            <CardContent>{power.description}</CardContent>
-          </Card>
+          <PerkCard perk={power} perkType="power" selectPerk={selectPower}/>
         ))}
       </Stack>
     );
