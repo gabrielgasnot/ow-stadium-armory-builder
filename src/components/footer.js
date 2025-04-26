@@ -16,7 +16,7 @@ function ArmoryFooter() {
     >
       This site is fan made, with lot of love to Overwatch and all the kind &
       lovely people of{" "}
-      <a href="https://www.twitch.tv/gf_iguel">PositivityLand</a>!
+      <a target="_blank" href="https://www.twitch.tv/gf_iguel">PositivityLand</a>!
     </Paper>
   );
 }
