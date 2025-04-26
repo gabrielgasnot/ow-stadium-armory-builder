@@ -1343,7 +1343,7 @@ const heroes = [
           category: "Ability",
         },
         {
-          name: "Macro Missiles",
+          name: "Macro Missile",
           description:
             "[Micro Missiles] deal 25% increased damage and have significantly increased knockback",
           price: 12000,
