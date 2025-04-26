@@ -2,6 +2,7 @@ const basicItems = {
   normal: [
     {
       id: "00W001",
+      position: 1,
       name: "Compensator",
       description: "+5% Weapon Power",
       price: 1000,
@@ -9,6 +10,7 @@ const basicItems = {
     },
     {
       id: "00W002",
+      position: 4,
       name: "Ammo Reserves",
       description: "+20% Max Ammo",
       price: 1500,
@@ -16,6 +18,7 @@ const basicItems = {
     },
     {
       id: "00W003",
+      position: 3,
       name: "Weapon Grease",
       description: "+5% Attack Speed",
       price: 1000,
@@ -23,6 +26,7 @@ const basicItems = {
     },
     {
       id: "00W004",
+      position: 2,
       name: "Plasma Converter",
       description: "+10% Weapon Lifesteal",
       price: 1000,
@@ -30,6 +34,7 @@ const basicItems = {
     },
     {
       id: "00W005",
+      position: 5,
       name: "Frenzy Amplifier",
       description:
         "Eliminations grant 10% Attack Speed and 15% Move Speed for 3s",
@@ -38,6 +43,7 @@ const basicItems = {
     },
     {
       id: "00A001",
+      position: 2,
       name: "Power Playbook",
       description: "+10% Ability Power",
       price: 1000,
@@ -45,6 +51,7 @@ const basicItems = {
     },
     {
       id: "00A002",
+      position: 3,
       name: "Shady Spectacles",
       description: "+10% Ability Lifesteal",
       price: 1000,
@@ -52,6 +59,7 @@ const basicItems = {
     },
     {
       id: "00A003",
+      position: 1,
       name: "Charged Plating",
       description:
         "After you spend your Ultimate Charge, gain 25 Armor and 10% Ability Power for the rest of the round",
@@ -60,6 +68,7 @@ const basicItems = {
     },
     {
       id: "00A004",
+      position: 4,
       name: "Winning Attitude",
       description: "+25 Health, when you die, gain 15% Ultimate Charge",
       price: 1500,
@@ -67,6 +76,7 @@ const basicItems = {
     },
     {
       id: "00S001",
+      position: 2,
       name: "Electrolytes",
       description:
         "At the start of the round, gain 100 unrecoverable Overhealth",
@@ -75,6 +85,7 @@ const basicItems = {
     },
     {
       id: "00S002",
+      position: 3,
       name: "Field Rations",
       description: "While on the Objective, restore 8 Life every 1s",
       price: 1000,
@@ -82,6 +93,7 @@ const basicItems = {
     },
     {
       id: "00S003",
+      position: 1,
       name: "Adrenaline Shot",
       description:
         "+10 Health, Health Packs grant 20% Move Speed for 5s and 50 Overhealth",
@@ -90,6 +102,7 @@ const basicItems = {
     },
     {
       id: "00S004",
+      position: 4,
       name: "Running Shoes",
       description:
         "+10 Health, at the start of the round and when you first respawn, gain 20% Move Speed for 10s while out of combat",
@@ -98,6 +111,7 @@ const basicItems = {
     },
     {
       id: "00S005",
+      position: 7,
       name: "Heartbeat Sensor",
       description: "+5% Move Speed, Enemies below 30% Life are revealed to you",
       price: 1500,
@@ -105,6 +119,7 @@ const basicItems = {
     },
     {
       id: "00S006",
+      position: 8,
       name: "Siphon Gloves",
       description: "+25 Health, [Quick Melee] damage heals for 25 Life",
       price: 1500,
@@ -112,6 +127,7 @@ const basicItems = {
     },
     {
       id: "00S007",
+      position: 6,
       name: "First Aid Kit",
       description:
         "+25 Shields, Reduce the time before your Life begins regenerating by 33%",
@@ -120,6 +136,7 @@ const basicItems = {
     },
     {
       id: "00S008",
+      position: 5,
       name: "Armored Vest",
       description: "+25 Armor",
       price: 1500,
@@ -129,6 +146,7 @@ const basicItems = {
   rare: [
     {
       id: "00W006",
+      position: 4,
       name: "Stockpile",
       description: "+5% Attack Speed, +25% Max Ammo",
       price: 4000,
@@ -136,6 +154,7 @@ const basicItems = {
     },
     {
       id: "00W007",
+      position: 1,
       name: "Aftermarket Firing Pin",
       description: "+10% Attack Speed, +5% Move Speed",
       price: 3750,
@@ -143,6 +162,7 @@ const basicItems = {
     },
     {
       id: "00W008",
+      position: 2,
       name: "Advanced Nanobiotics",
       description:
         "+5% Weapon Power, after healing an ally, gain 10% Attack Speed for 3s",
@@ -151,6 +171,7 @@ const basicItems = {
     },
     {
       id: "00W009",
+      position: 3,
       name: "Shieldbuster",
       description:
         "+5% Weapon Power, after dealing damage to Shields or Armor grants 15% Attack Speed for 1s",
@@ -159,6 +180,7 @@ const basicItems = {
     },
     {
       id: "00W010",
+      position: 5,
       name: "Technoleech",
       description: "+5% Weapon Power, +10% Weapon Lifesteal",
       price: 4500,
@@ -166,6 +188,7 @@ const basicItems = {
     },
     {
       id: "00W011",
+      position: 6,
       name: "Icy Coolant",
       description: "+10% Weapon Power, +5% Cooldown Reduction",
       price: 5000,
@@ -173,6 +196,7 @@ const basicItems = {
     },
     {
       id: "00W012",
+      position: 7,
       name: "Talon Modification Module",
       description: "+15% Weapon Power",
       price: 5500,
@@ -180,6 +204,7 @@ const basicItems = {
     },
     {
       id: "00A005",
+      position: 5,
       name: "Wrist Wraps",
       description: "+5% Ability Power, +10% Attack Speed",
       price: 4000,
@@ -187,6 +212,7 @@ const basicItems = {
     },
     {
       id: "00A006",
+      position: 1,
       name: "Custom Stock",
       description: "+5% Weapon Power, +10% Ability Power",
       price: 3750,
@@ -194,6 +220,7 @@ const basicItems = {
     },
     {
       id: "00A007",
+      position: 4,
       name: "Junker Whatchamajig",
       description: "+25% Starting Ultimate Charge",
       price: 4000,
@@ -201,6 +228,7 @@ const basicItems = {
     },
     {
       id: "00A008",
+      position: 3,
       name: "Energized Bracers",
       description: "+10% Ability Power, +10% Ability Lifesteal",
       price: 4000,
@@ -208,6 +236,7 @@ const basicItems = {
     },
     {
       id: "00A009",
+      position: 2,
       name: "Biolight Overflow",
       description:
         "+25 Health, +5% Ability Power, when you spend your Ultimate Charge, grant nearby allies 50 Overhealth for 3s",
@@ -216,6 +245,7 @@ const basicItems = {
     },
     {
       id: "00A010",
+      position: 6,
       name: "Multi-tool",
       description: "+5% Ability Power, +10% Cooldown Reduction",
       price: 5000,
@@ -223,6 +253,7 @@ const basicItems = {
     },
     {
       id: "00A011",
+      position: 7,
       name: "Nano Cola",
       description: "+20% Ability Power",
       price: 5500,
@@ -230,6 +261,7 @@ const basicItems = {
     },
     {
       id: "00S009",
+      position: 1,
       name: "Reinforced Titanium",
       description:
         "+25 Shields, while you have Shields, take 15% reduced Ability Damage",
@@ -238,6 +270,7 @@ const basicItems = {
     },
     {
       id: "00S010",
+      position: 7,
       name: "Iron Eyes",
       description:
         "+25 Shields, you take 20% reduced damage from Critical Hits",
@@ -246,6 +279,7 @@ const basicItems = {
     },
     {
       id: "00S011",
+      position: 2,
       name: "Cushioned Padding",
       description:
         "+25 Shields, -40% Incoming Negative Effect Duration, when affected by Stun, Sleep, or Hinder, regenerate 10% of your Max Life over 3s",
@@ -254,6 +288,7 @@ const basicItems = {
     },
     {
       id: "00S012",
+      position: 3,
       name: "Ironclad Exhaust Ports",
       description:
         "+5% Cooldown Reduction, when you use an ability, gain 25 Overhealth for 3s",
@@ -262,6 +297,7 @@ const basicItems = {
     },
     {
       id: "00S013",
+      position: 6,
       name: "Crusader Hydraulics",
       description:
         "+25 Armor, while you have Armor, take 10% less Weapon Damage",
@@ -270,6 +306,7 @@ const basicItems = {
     },
     {
       id: "00S014",
+      position: 4,
       name: "Vishkar Converter",
       description: "+25 Shields, convert 100 Health into Shields",
       price: 4000,
@@ -277,6 +314,7 @@ const basicItems = {
     },
     {
       id: "00S015",
+      position: 5,
       name: "Vital-E-Tee",
       description: "+10 Armor, Convert 100 Health into Armor",
       price: 4000,
@@ -284,6 +322,7 @@ const basicItems = {
     },
     {
       id: "00S016",
+      position: 8,
       name: "MEKA Z-Series",
       description: "+8% Health, Armor, and Shields",
       price: 5000,
@@ -293,6 +332,7 @@ const basicItems = {
   epic: [
     {
       id: "00W013",
+      position: 1,
       name: "Codebreaker",
       description: "+15% Weapon Power, Ignore 50% of Armor's damage reduction",
       price: 9000,
@@ -300,6 +340,7 @@ const basicItems = {
     },
     {
       id: "00W014",
+      position: 2,
       name: "Salvaged Slugs",
       description:
         "+10% Attack Speed, +30% Damage to Barriers, Dealing Weapon Damage to Barriers has a 50% chance to restore 1 ammo",
@@ -308,6 +349,7 @@ const basicItems = {
     },
     {
       id: "00W015",
+      position: 3,
       name: "Volskaya Ordnance",
       description:
         "+10% Attack Speed, deal 5% increased Weapon Damage for every 100 Max Life the target has more than you, up to 20%",
@@ -316,6 +358,7 @@ const basicItems = {
     },
     {
       id: "00W016",
+      position: 4,
       name: "Commander's Clip",
       description:
         "+10% Attack Speed, +40% Max Ammo, when you use an ability, restore 10% of your Max Ammo",
@@ -324,6 +367,7 @@ const basicItems = {
     },
     {
       id: "00W017",
+      position: 5,
       name: "Weapon Jammer",
       description:
         "+25 Armor, +10% Weapon Power, Dealing Weapon Damage negates 10% of target's bonus Attack Speed and increases your Attack Speed by 10% for 2s",
@@ -332,6 +376,7 @@ const basicItems = {
     },
     {
       id: "00W018",
+      position: 6,
       name: "Amari's Antidote",
       description:
         "+25 Health, +15% Weapon Power, while healing an ally below 50% Life with your Weapon, deal 15% increased Weapon Healing",
@@ -340,6 +385,7 @@ const basicItems = {
     },
     {
       id: "00W019",
+      position: 7,
       name: "Booster Jets",
       description:
         "+20% Attack Speed, when you use an ability, gain 20% Move Speed for 2s",
@@ -348,6 +394,7 @@ const basicItems = {
     },
     {
       id: "00W020",
+      position: 8,
       name: "El-Sa'ka Suppressor",
       description:
         "+10% Weapon Power, Critical Hits apply 30% Healing Reduction for 2s",
@@ -356,6 +403,7 @@ const basicItems = {
     },
     {
       id: "00W021",
+      position: 9,
       name: "Hardlight Accelerator",
       description:
         "+10% Weapon Power, +10% Cooldown Reduction, when you use an ability, gain 5% Weapon Power for 3s, stacking up to 3 times",
@@ -364,6 +412,7 @@ const basicItems = {
     },
     {
       id: "00W022",
+      position: 11,
       name: "Eye of the Spider",
       description:
         "+25% Weapon Power, deal 10% increased damage to enemies under 30% Life",
@@ -372,6 +421,7 @@ const basicItems = {
     },
     {
       id: "00W023",
+      position: 10,
       name: "The Closer",
       description:
         "+20% Weapon Power, +10% Critical Damage, Critical Hits reveal the target for 3s",
@@ -380,6 +430,7 @@ const basicItems = {
     },
     {
       id: "00A012",
+      position: 1,
       name: "Three-Tap Tommygun",
       description:
         "+10% Ability Power, +10% Attack Speed, after using an ability, your next 3 instances of Weapon Damage deal additional damage equal to 3% of the target's Life",
@@ -388,6 +439,7 @@ const basicItems = {
     },
     {
       id: "00A013",
+      position: 2,
       name: "Biotech Maximizer",
       description:
         "+25 Health. +10% Ability Power, when you use an ability that heals, reduce its cooldown by 5% for each unique ally it heals",
@@ -396,6 +448,7 @@ const basicItems = {
     },
     {
       id: "00A014",
+      position: 3,
       name: "Catalytic Crystal",
       description:
         "+15% Ability Power, ability Damage and Healing grants 20% more Ultimate Charge",
@@ -404,6 +457,7 @@ const basicItems = {
     },
     {
       id: "00A015",
+      position: 5,
       name: "Superflexor",
       description:
         "+25 Health, +10% Weapon Power, when you deal Weapon Damage or Healing, gain 5% Ability Power for 3s, stacking up to 5 times",
@@ -412,6 +466,7 @@ const basicItems = {
     },
     {
       id: "00A016",
+      position: 4,
       name: "Lumérico Fusion Drive",
       description:
         "+50 Armor, +15% Ability Power, when you use an ability, restore 50 Armor or Shields over 2s",
@@ -420,6 +475,7 @@ const basicItems = {
     },
     {
       id: "00A017",
+      position: 6,
       name: "Cybervenom",
       description:
         "+10% Ability Power, +5% Cooldown Reduction, Dealing Ability Damage applies 30% Healing Reduction for 2s",
@@ -428,6 +484,7 @@ const basicItems = {
     },
     {
       id: "00A018",
+      position: 7,
       name: "Iridescent Iris",
       description:
         "+20% Ability Power, +10% Cooldown Reduction, when you spend your Ultimate Charge, gain 100 Overhealth for 3s",
@@ -436,6 +493,7 @@ const basicItems = {
     },
     {
       id: "00A019",
+      position: 8,
       name: "Liquid Nitrogen",
       description:
         "+25 Health, +10% Ability Power, Dealing Ability Damage slows the target's Move Speed by 20% for 3s",
@@ -444,6 +502,7 @@ const basicItems = {
     },
     {
       id: "00A020",
+      position: 9,
       name: "Mark of the Kitsune",
       description:
         "+10% Ability Power, after casting an ability, your next instance of Weapon Damage or Healing deals 25 bonus damage or healing",
@@ -452,6 +511,7 @@ const basicItems = {
     },
     {
       id: "00A021",
+      position: 10,
       name: "Champion's Kit",
       description: "+40% Ability Power",
       price: 13500,
@@ -459,6 +519,7 @@ const basicItems = {
     },
     {
       id: "00S017",
+      position: 1,
       name: "Geneticist's Vial",
       description:
         "+25 HP, the first time you die each round, revive at 200 Life after 3s",
@@ -467,6 +528,7 @@ const basicItems = {
     },
     {
       id: "00S018",
+      position: 2,
       name: "Bloodbound",
       description:
         "+50 Health, the last enemy to deal a final blow to you is Revealed when nearby, deal 10% more damage to them and take 10% reduced damage from them",
@@ -475,6 +537,7 @@ const basicItems = {
     },
     {
       id: "00S019",
+      position: 3,
       name: "Divine Intervention",
       description:
         "+50 Shield, when you take more than 100 damage at once, restore 15% of damage taken and start regenerating your Shields",
@@ -483,6 +546,7 @@ const basicItems = {
     },
     {
       id: "00S020",
+      position: 4,
       name: "Gloomgauntlet",
       description:
         "+50 Armor, +15% Melee Damage, [Melee] damage grants 10% Move Speed and restores 5% of max Life over 2s",
@@ -491,6 +555,7 @@ const basicItems = {
     },
     {
       id: "00S021",
+      position: 6,
       name: "Phantasmic Flux",
       description:
         "+10% Weapon Power, +10% Ability Power, +15% Weapon Lifesteal, +15% Ability Lifesteal, while at full Life, Lifesteal grants up to 100 Overhealth",
@@ -499,6 +564,7 @@ const basicItems = {
     },
     {
       id: "00S022",
+      position: 7,
       name: "Rüstung von Wilhelm",
       description:
         "+15% Health, Shields, and Armor, while below 30% Life, gain 10% Damage Reduction",
@@ -507,6 +573,7 @@ const basicItems = {
     },
     {
       id: "00S023",
+      position: 8,
       name: "Vanadium Injection",
       description:
         "+50 Shield, while at 100% Ultimate Charge, gain 50 Health, 10% Weapon Power, 10% Ability Power, 10% Attack Speed, 10% Cooldown Reduction, and 10% Move Speed",
@@ -515,6 +582,7 @@ const basicItems = {
     },
     {
       id: "00S024",
+      position: 5,
       name: "Martian Mender",
       description:
         "+25 Health, +10% Cooldown Reduction, Restore 3% of your Life every 1s",
@@ -523,6 +591,7 @@ const basicItems = {
     },
     {
       id: "00S025",
+      position: 9,
       name: "Nebula Conduit",
       description:
         "+50 Health, +10% Weapon Power, prevent 15% of incoming damage and instead take that prevented damage over 3s",
@@ -531,6 +600,7 @@ const basicItems = {
     },
     {
       id: "00S026",
+      position: 10,
       name: "Ogundimu Reduction Field",
       description:
         "+50 Armor, when you take damage, gain 0.5% Damage Reduction for 1s, stacking up to 20 times",
@@ -550,73 +620,73 @@ const heroes = [
     hp: 550,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Smashing!",
         description:
           "When you deal damage with [Rocket Hammer], gain 5% Move Speed and 4% Weapon Lifesteal for 3s, stacking up to 5 times.",
       },
       {
-        id:"",
+        id: "",
         name: "Feeling The Burn",
         description:
           "Every 3rd [Rocket Hammer] swing applies Burn, dealing 30% [Rocket Hammer] damage over 2s.",
       },
       {
-        id:"",
+        id: "",
         name: "Wilhelmwagen",
         description:
           "While [Barrier Field] is deployed, you heal for 15% of the damage it mitigates and gain 30% Move Speed.",
       },
       {
-        id:"",
+        id: "",
         name: "To Me, My Friends!",
         description:
           "While [Barrier Field] is deployed, allies within 5m are healed equal to 3% of your max Life every 1s.",
       },
       {
-        id:"",
+        id: "",
         name: "Amplification Barrier",
         description:
           "Friendly projectiles that pass through your [Barrier Field] deal 15% more damage.",
       },
       {
-        id:"",
+        id: "",
         name: "Barrier Reconstruction",
         description:
           "When you deal damage with [Rocket Hammer] or [Fire Strike], restore health to [Barrier Field] equal to 10% of its max Health.",
       },
       {
-        id:"",
+        id: "",
         name: "Vanguard",
         description:
           "[Charge] grants nearby allies Overhealth equal to 10% of your max Life and 20% Move Speed for 3s.",
       },
       {
-        id:"",
+        id: "",
         name: "Shield Stampede",
         description:
           "+50% [Charge] Knockback Power During [Charge], automatically deploy [Barrier Field].",
       },
       {
-        id:"",
+        id: "",
         name: "Vroom Boom Boom",
         description:
           "During [Charge], colliding with a wall triggers an explosion that deals 30% of [Charge]'s pin damage.",
       },
       {
-        id:"",
+        id: "",
         name: "Impact Burst",
         description:
           "[Fire Strike] triggers an explosion the first time it hits an enemy, dealing 20% of its damage in a 3m radius.",
       },
       {
-        id:"",
+        id: "",
         name: "Magma Strike",
         description:
           "If [Fire Strike] is cast twice within 2s, the second strike leaves a trail of lava that Burns enemies for 50% of [Fire Strike] damage.",
       },
       {
-        id:"",
+        id: "",
         name: "Blazing Blitz",
         description:
           "After using [Earthshatter], every [Rocket Hammer] swing launches a [Fire Strike] for 4s.",
@@ -718,71 +788,71 @@ const heroes = [
     hp: 300,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Revolving Ruin",
         description:
           "Close-range (7m) [Hellfire Shotgun] hits grant 5% Attack Speed for 1s, stacking up to 8 times",
       },
       {
-        id:"",
+        id: "",
         name: "Shrouded Shrapnel",
         description:
           "Using [Wraith Form] increases the number of pellets per shot in your next magazine by 25% and its spread by 50%",
       },
       {
-        id:"",
+        id: "",
         name: "Death Step",
         description:
           "After using [Shadow Step], cast [Death Blossom] for 1.5s with 50% reduced damage",
       },
       {
-        id:"",
+        id: "",
         name: "Strangle Step",
         description: "After using [Shadow Step], double your Lifesteal for 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Spirited To Slay",
         description: "Eliminations reset your cooldowns",
       },
       {
-        id:"",
+        id: "",
         name: "Backstabber",
         description:
           "After using an ability, your next shot deals 50% additional damage over 3s to enemies struck from behind",
       },
       {
-        id:"",
+        id: "",
         name: "Wraith Renewal",
         description:
           "While in [Wraith Form], restore 10% of your Life every 1s. Double this while below 50% Life.",
       },
       {
-        id:"",
+        id: "",
         name: "Ghosted",
         description:
           "While in [Wraith Form], passing through enemies slows their Move Speed and Attack Speed by 30% for 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Silent As The Grave",
         description:
           "Your footsteps and [Shadow Step] are significantly quieter",
       },
       {
-        id:"",
+        id: "",
         name: "Shared Siphon",
         description:
           "[The Reaping] also heals the nearest ally within 10m for 30% of Reaper's damage dealt",
       },
       {
-        id:"",
+        id: "",
         name: "Harvest Fest",
         description:
           "[Hellfire Shotgun] hits have a 10% chance to spawn a Soul Globe. When picked up, restore 25% Life, 25% Ammo, and gain 25% Move Speed for 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Vampiric Touch",
         description:
           "Hits with [Quick Melee] mark enemies for 5s. Allies gain 20% Lifesteal against marked enemies",
@@ -881,73 +951,73 @@ const heroes = [
     hp: 250,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Super Visor",
         description:
           "After using [Helix Rocket], activate [Tactical Visor] for 0.75s",
       },
       {
-        id:"",
+        id: "",
         name: "Chaingun",
         description:
           "While continuously shooting [Pulse Rifle], each shot grants 0.5% Weapon Power, stacking up to 100 times",
       },
       {
-        id:"",
+        id: "",
         name: "Biotic Bullseye",
         description:
           "While in [Biotic Field], critical hits restore 5% Max Ammo and extend the field's duration by 0.5s (up to 5s)",
       },
       {
-        id:"",
+        id: "",
         name: "Back Off",
         description:
           "Enemies within your [Biotic Field] take damage equal to 100% of its healing output",
       },
       {
-        id:"",
+        id: "",
         name: "On Me!",
         description:
           "[Biotic Field] moves with you and grants you 20% increased max Health while active",
       },
       {
-        id:"",
+        id: "",
         name: "Frontliners",
         description:
           "Allies in range of your [Biotic Field] when it spawns gain Overhealth equal to 30% of your max Life for 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Hunker Down",
         description:
           "When [Helix Rocket] deals damage, creates a [Biotic Field] with a 70% reduced duration at your position",
       },
       {
-        id:"",
+        id: "",
         name: "Cratered",
         description:
           "Increase [Helix Rocket] explosion radius by 40% and explosion damage by 25%",
       },
       {
-        id:"",
+        id: "",
         name: "Double Helix",
         description:
           "[Helix Rocket] fires a second homing [Helix Rocket] that deals 70% reduced damage",
       },
       {
-        id:"",
+        id: "",
         name: "Man On The Run",
         description:
           "During [Sprint], restore 10% of your Ammo every 1s and increase your Max Ammo by 10% until you reload, stacking up to 10 times",
       },
       {
-        id:"",
+        id: "",
         name: "Track and Field",
         description:
           "During [Sprint], [Biotic Field] cooldown refreshes 150% faster",
       },
       {
-        id:"",
+        id: "",
         name: "Peripheral Pulse",
         description:
           "During [Tactical Visor], [Pulse Rifle] shoots at 1 additional enemy, dealing 50% damage",
@@ -1015,73 +1085,73 @@ const heroes = [
     hp: 225,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Battle Medic",
         description:
           "Every 1s your Staff is attached, [Caduceus Blaster] gains +4% Attack Speed (stacks 10 times) until you reload or swap to your Staff",
       },
       {
-        id:"",
+        id: "",
         name: "First Responder",
         description:
           "When you [Resurrect] an ally, you both gain 250 Overhealth for 6s",
       },
       {
-        id:"",
+        id: "",
         name: "The Whambulance",
         description:
           "When [Guardian Angel] ends, heal your target for 4 Life for every 1m you traveled",
       },
       {
-        id:"",
+        id: "",
         name: "Renaissance",
         description:
           "After successfully [Resurrect], gain [Valkyrie] for 5 seconds",
       },
       {
-        id:"",
+        id: "",
         name: "Equivalent Exchange",
         description:
           "You have 3 charges of [Resurrect] with 33% reduced cast time, but their cooldowns only reset at the start of the round",
       },
       {
-        id:"",
+        id: "",
         name: "Triage Unit",
         description:
           "When using [Guardian Angel] on allies below 50% HP, your [Caduceus Staff] heals them for 30% more for 3 sec",
       },
       {
-        id:"",
+        id: "",
         name: "Threads of Fate",
         description:
           "[Caduceus Staff] chains to your previous target for 3 sec at 50% effectiveness",
       },
       {
-        id:"",
+        id: "",
         name: "Protective Beam",
         description:
           "[Caduceus Staff] targets above 80% Life gain 10% damage reduction",
       },
       {
-        id:"",
+        id: "",
         name: "Serenity",
         description:
           "[Sympathetic Recovery] heals for 20% more and heals you even while healing a full health ally",
       },
       {
-        id:"",
+        id: "",
         name: "Distortion",
         description:
           "Allies boosted by your [Caduceus Staff] gain +20% Lifesteal",
       },
       {
-        id:"",
+        id: "",
         name: "Crepuscular Circle",
         description:
           "While [Valkyrie] is active, the healing and damage boost of [Caduceus Staff] are automatically applied to nearby allies",
       },
       {
-        id:"",
+        id: "",
         name: "Glass Extra Full",
         description:
           "Healing from [Caduceus Staff] targeting full health allies is converted to Overhealth, up to 50",
@@ -1169,73 +1239,73 @@ const heroes = [
     hp: 225,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Optimal Overflow",
         description:
           "After you spend 50 [Biotic Energy], launch the last selected [Biotic Orb] with 75% reduced duration",
       },
       {
-        id:"",
+        id: "",
         name: "Precarious Potency",
         description:
           "Allies healed by your [Biotic Grasp] are healed for an additional 20% of [Biotic Grasp]'s healing over 5s",
       },
       {
-        id:"",
+        id: "",
         name: "Deconstruction",
         description:
           "After you spend 50 [Biotic Energy], deal 20% increased damage for 6s",
       },
       {
-        id:"",
+        id: "",
         name: "Ethereal Excision",
         description:
           "While aiming at an enemy's head with [Biotic Grasp]'s secondary fire, gain 30% Lifesteal, 30% Move Speed, and restore 100% increased Biotic Energy",
       },
       {
-        id:"",
+        id: "",
         name: "Chain Grasp",
         description:
           "After using [Biotic Orb], [Biotic Grasp]'s secondary fire chains to 2 additional targets within 10m for 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Empowering You",
         description:
           "[Biotic Grasp]'s secondary fire can target allies, increasing their damage by 15%",
       },
       {
-        id:"",
+        id: "",
         name: "Cross-Orbal",
         description:
           "[Biotic Orb] launches an additional [Biotic Orb] of the other type with 50% reduced capacity",
       },
       {
-        id:"",
+        id: "",
         name: "Multiball",
         description:
           "[Biotic Orb] launches 2 additional orbs of the chosen type with 85% reduced effectiveness",
       },
       {
-        id:"",
+        id: "",
         name: "Phantasm",
         description:
           "When you use [Fade], spawn a stationary copy of the last selected [Biotic Orb] with 50% reduced duration",
       },
       {
-        id:"",
+        id: "",
         name: "Scientific Deathod",
         description:
           "While using [Fade], passing through enemies grants 5% Ultimate Charge and Overhealth equal to 15% of your max Life",
       },
       {
-        id:"",
+        id: "",
         name: "Voidhoppers",
         description:
           "[Fade] phases other allies within 8m for 0.25s and grants them Overhealth equal to 20% of your max Life",
       },
       {
-        id:"",
+        id: "",
         name: "Destruction's Divide",
         description:
           "[Coalescence] can be toggled between pure healing or pure damage, with 25% greater effect",
@@ -1319,72 +1389,84 @@ const heroes = [
     hp: 550,
     powers: [
       {
-        id:"19P001",
+        id: "19P001",
+        position: 1,
         name: "Focused Fusion",
         description:
           "[Fusion Cannon]'s spread is reduced by 66% and damage falloff range is 20m farther",
       },
       {
-        id:"19P004",
+        id: "19P004",
+        position: 2,
         name: "Legendary Loadout",
         description:
           "[Micro Missiles] are replaced with 6 Heavy Rockets, which deal 350% more explosive damage and have 100% increased radius",
       },
       {
-        id:"19P007",
+        id: "19P007",
+        position: 2,
         name: "Overstocked",
         description: "Gain 1 extra charge of [Micro Missiles]",
       },
       {
-        id:"19P010",
+        id: "19P010",
+        position: 4,
         name: "Countermeasures",
         description:
           "When you mitigate 150 damage with [Defense Matrix], automatically fire 2 [Micro Missiles]",
       },
       {
-        id:"19P008",
+        id: "19P008",
+        position: 7,
         name: "Ignition Burst",
         description:
           "[Boosters] leave a trail of lava that deals 30 damage every 1s",
       },
       {
-        id:"19P006",
+        id: "19P006",
+        position: 8,
         name: "MEKA Punch",
         description:
           "While using [Boosters], [Quick Melee] deals 75% more damage. [Quick Melee] eliminations reset the cooldown of [Boosters]",
       },
       {
-        id:"19P003",
+        id: "19P003",
+        position: 10,
         name: "Tokki Slam",
         description:
           "During [Boosters], use crouch to slam the ground, dealing damage equal to 20% of your max Armor and knocking up enemies hit",
       },
       {
-        id:"19P005",
+        id: "19P005",
+        position: 5,
         name: "Facetanking",
         description:
           "[Defense Matrix] heals you for 30% of the damage it blocks",
       },
       {
-        id:"19P002",
+        id: "19P002",
+        position: 6,
         name: "Ultrawide Matrix",
         description:
           "Increase the size of Defense Matrix by 50% and its duration by 20%",
       },
       {
-        id:"19P011",
+        id: "19P011",
+        position: 9,
         name: "Stat Boost",
         description:
           "During the first 2s of [Boosters], [Defense Matrix] recovers 100% faster",
       },
       {
-        id:"19P012",
+        id: "19P012",
+        position: 12,
         name: "Party Protector",
         description:
           "When you use [Self-Destruct], allies within [Self-Destruct] radius gains 250 Overhealth for 8s",
       },
       {
-        id:"19P009",
+        id: "19P009",
+        position: 11,
         name: "Express Detonation",
         description: "Self-Destruct explosion is triggered 15% faster",
       },
@@ -1394,6 +1476,7 @@ const heroes = [
       rare: [
         {
           id: "19A001",
+          position: 1,
           name: "Dae-hyun's Detonator",
           description:
             "+15% Ability Lifesteal, if your [Mech] detonates while mid-air, increase [Self-Destruct] explosion damage and range by 200%",
@@ -1402,6 +1485,7 @@ const heroes = [
         },
         {
           id: "19A002",
+          position: 2,
           name: "Mastermind's Mitigator",
           description:
             "Every 300 damage you mitigate with [Defense Matrix] reduces [Micro Missiles] cooldown by 1s",
@@ -1410,6 +1494,7 @@ const heroes = [
         },
         {
           id: "19A003",
+          position: 2,
           name: "Vesuvius Protocol",
           description:
             "+10% Ability Power, using [Self-Destruct] drops lava nearby that deals 30 damage every 1s",
@@ -1418,6 +1503,7 @@ const heroes = [
         },
         {
           id: "19S001",
+          position: 2,
           name: "Galvanized Core",
           description: "+25 Health, 25% [Boosters] Duration",
           price: 4000,
@@ -1425,6 +1511,7 @@ const heroes = [
         },
         {
           id: "19S002",
+          position: 2,
           name: "Plot Armor",
           description:
             "+25 Armor, while [Defense Matrix] is active, gain 65% damage reduction against beams",
@@ -1433,6 +1520,7 @@ const heroes = [
         },
         {
           id: "19S003",
+          position: 3,
           name: "Solo Spec",
           description:
             "+25 Health, when you mitigate damage with [Defense Matrix], gain Shields equal to 10% of the damage mitigated, up to 100. Resets when your [Mech] is destroyed",
@@ -1443,6 +1531,7 @@ const heroes = [
       epic: [
         {
           id: "19A004",
+          position: 1,
           name: "Busan Blaster",
           description:
             "+20% Ability Power, [Light Gun] gains a secondary fire, which charges up to fire a piercing shot that deals 80 piercing damage",
@@ -1451,6 +1540,7 @@ const heroes = [
         },
         {
           id: "19S004",
+          position: 4,
           name: "Nano Cola™ Nitrous",
           description:
             "+50 Health, when you eject from your Mech, gain 25% increased max Health and gain [Nano Boost] for 8s",
@@ -1459,6 +1549,7 @@ const heroes = [
         },
         {
           id: "19S005",
+          position: 2,
           name: "Chip-Damage Diverter",
           description:
             "+50 Health, when you deal damage to Barriers while in your [Mech], gain Shields equal to 10% of the damage dealt, up to 200. Resets when your [Mech] is destroyed",
@@ -1467,6 +1558,7 @@ const heroes = [
         },
         {
           id: "19S006",
+          position: 1,
           name: "Multi-Task Mod",
           description:
             "+10% Weapon Power, [Fusion Cannons] can now be fired while using [Defense Matrix]",
@@ -1475,6 +1567,7 @@ const heroes = [
         },
         {
           id: "19S007",
+          position: 3,
           name: "Singijeon's Pulse Plating",
           description:
             "+50 Health, gain 5% of damage mitigated by [Defense Matrix] as Ultimate Charge",
@@ -1483,6 +1576,7 @@ const heroes = [
         },
         {
           id: "19S008",
+          position: 1,
           name: "APM AMP",
           description:
             "+50 Shield, when you use [Boosters], allies within 16m gain 25% Move Speed for 2s",
@@ -1491,6 +1585,7 @@ const heroes = [
         },
         {
           id: "19A005",
+          position: 3,
           name: "Onslaught Ordinance",
           description:
             "+15% Ability Power, the quantity and duration of [Micro Missiles] is increased by 20%",
@@ -1499,6 +1594,7 @@ const heroes = [
         },
         {
           id: "19A006",
+          position: 2,
           name: "Macro Missiles",
           description:
             "[Micro Missiles] deal 25% increased damage and have significantly increased knockback",
@@ -1515,66 +1611,66 @@ const heroes = [
     hp: 250,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Wyrm's Maw",
         description:
           "Targets hit by your [Shurikens] take 10% more damage from [Swift Strike] for 4s, stacking up to 5 times",
       },
       {
-        id:"",
+        id: "",
         name: "Laceration",
         description:
           "[Swift Strike] deals 25% additional damage over 3s to enemies hit",
       },
       {
-        id:"",
+        id: "",
         name: "Iaido Strike",
         description:
           "After [Deflect] ends, you quickly swing your [Dragonblade] once",
       },
       {
-        id:"",
+        id: "",
         name: "Hidden Blade",
         description: "Gain 50% Melee Lifesteal and +25 Quick Melee Damage",
       },
       {
-        id:"",
+        id: "",
         name: "Forged Under Fire",
         description:
           "While [Deflect] is active, heal for 60% of the damage it prevents",
       },
       {
-        id:"",
+        id: "",
         name: "Sacred Shuriken",
         description:
           "[Shuriken]'s primary fire throws 2 additional [Shuriken] that don't consume any extra ammo",
       },
       {
-        id:"",
+        id: "",
         name: "Hanamura Healing",
         description:
           "Critical hits and [Swift Strike] grant Overhealth equal to 25% of their damage dealt for 5s",
       },
       {
-        id:"",
+        id: "",
         name: "Spirit of Sojiro",
         description:
           "When [Deflect] stops incoming damage, reduce the cooldown of [Swift Strike] by 1s, up to 5s",
       },
       {
-        id:"",
+        id: "",
         name: "Dragon's Breath",
         description:
           "[Dragonblade] swings also fire a large piercing projectile that deals 50% of [Dragonblade]'s damage",
       },
       {
-        id:"",
+        id: "",
         name: "Cybernetic Speed",
         description:
           "Dealing damage with [Shuriken] grants 2% [Shuriken] Attack Speed for 3s, stacking up to 15 times",
       },
       {
-        id:"",
+        id: "",
         name: "Hashimoto's Bane",
         description:
           "After using an ability, your next secondary fire throws 2 extra [Shuriken] that seek enemies but deal 50% less damage",
@@ -1684,73 +1780,73 @@ const heroes = [
     hp: 475,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Scorched Earth",
         description:
           "When you [Overheat], apply Burning to enemies within 6m, dealing damage equal to 10% of your max Life over 5s",
       },
       {
-        id:"",
+        id: "",
         name: "Shield Divergence",
         description:
           "When you [Overheat], deploy a Barrier with 600 Health in front",
       },
       {
-        id:"",
+        id: "",
         name: "Advanced Throwbotics",
         description:
           "When you use [Javelin Spin], launch an [Energy Javelin] with 50% less damage",
       },
       {
-        id:"",
+        id: "",
         name: "Spynstem Update",
         description:
           "[Javelin Spin] now deflects projectiles and grants 20% of damage dealt from deflecting as Ultimate Charge",
       },
       {
-        id:"",
+        id: "",
         name: "Hot Rotate-O",
         description:
           "[Javelin Spin] gains 35% Cooldown Reduction but now generates [Heat]",
       },
       {
-        id:"",
+        id: "",
         name: "Factory Reset",
         description:
           "While [Fortify] is active, [Javelin Spin] and [Energy Javelin] gain 25% Cooldown Reduction",
       },
       {
-        id:"",
+        id: "",
         name: "Lassoed",
         description:
           "On impact, [Energy Javelin] will pull enemies within 4m towards itself",
       },
       {
-        id:"",
+        id: "",
         name: "Ride With Me",
         description:
           "While [Fortify] is active, grant allies in line of sight 30% Move Speed and Overhealth equal to 10% of your max Life",
       },
       {
-        id:"",
+        id: "",
         name: "Hooves of Steel",
         description:
           "After [Fortify] ends, gain Shields equal to 50% of the damage received during [Fortify]. Resets when you next use [Fortify]",
       },
       {
-        id:"",
+        id: "",
         name: "Restortify",
         description:
           "While [Fortify] is active, heal for 10% of your max Life every 1s",
       },
       {
-        id:"",
+        id: "",
         name: "Centripetal Charge",
         description:
           "25% Ultimate Cost Reduction. After using [Terra Surge], reset your ability cooldowns",
       },
       {
-        id:"",
+        id: "",
         name: "Supercharger",
         description:
           "When you use [Terra Surge], drop a [Supercharger] that increases the damage of nearby allies by 25% for 15s",
@@ -1859,72 +1955,72 @@ const heroes = [
     hp: 375,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Thrill of Battle",
         description:
           "[Adrenalin Rush] also heals allies within 12m for 50% of the amount it heals you",
       },
       {
-        id:"",
+        id: "",
         name: "Royal Bullets",
         description:
           "[Scatter Gun] critical hits against targets within 12m applies [Wound] for 30 damage over 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Twist the Knife",
         description:
           "[Scatter Gun] critical hits extend the duration of all [Wounds] on the target by 0.5s",
       },
       {
-        id:"",
+        id: "",
         name: "Blade Parade",
         description:
           "Holding [Jagged Blade] charges it, increasing its damage by up to 35% and causing it to knockback",
       },
       {
-        id:"",
+        id: "",
         name: "Cut'em, Gracie!",
         description:
           "Each enemy hit by [Jagged Blade] while it returns to you reduces its cooldown by 1s",
       },
       {
-        id:"",
+        id: "",
         name: "Let's go Win",
         description: "Eliminations reset the cooldown of [Commanding Shout]",
       },
       {
-        id:"",
+        id: "",
         name: "Merciless Magnetism",
         description:
           "Using [Commanding Shout] causes your [Jagged Blade] to home to a target",
       },
       {
-        id:"",
+        id: "",
         name: "Reckoner's Roar",
         description:
           "Using [Commanding Shout] [Wounds] enemies within 10m for 30 damage over 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Chop chop",
         description:
           "[Carnage] gains an additional charge but its cooldown reduction per hit is reduced to 1s",
       },
       {
-        id:"",
+        id: "",
         name: "Soaring Stone",
         description:
           "[Carnage] becomes a leaping strike if ou jump during its cast time",
       },
       {
-        id:"",
+        id: "",
         name: "Bloodcrazed",
         description:
           "[Carnage] and [Rampage] gives 15% of Max Life as Overhealth per hit",
       },
       {
-        id:"",
+        id: "",
         name: "Bow down",
         description: "[Rampage] now also knocks down enemy hit for 1.5s",
       },
@@ -2035,73 +2131,73 @@ const heroes = [
     hp: 400,
     powers: [
       {
-        id:"",
+        id: "",
         name: "No Limits",
         description:
           "Maximum [Energy] increased to 150. [Energy] always decays above 100 [Energy] at a 150% faster rate",
       },
       {
-        id:"",
+        id: "",
         name: "Particle Accelerator",
         description:
           "Gain 15% Attack Speed for [Particle Cannon]'s secondary fire. After using an ability, quadruple this bonus for 5s",
       },
       {
-        id:"",
+        id: "",
         name: "Piercing Beam",
         description:
           "Above 80 [Energy], [Particle Cannon]'s Primary Fire will pierce enemies",
       },
       {
-        id:"",
+        id: "",
         name: "Pre-Workout",
         description:
           "Gain Weapon Lifesteal and Ability Lifesteal equal to 20% of [Energy]",
       },
       {
-        id:"",
+        id: "",
         name: "Barrier Benefits",
         description:
           "When [Barrier] expires, grand Overhealth equal to 50% if remaining  [Barrier] Health to the target for 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Containment Field",
         description:
           "[Barrier] heals 25 Life, increased by [Energy], and grants 20% Move Speed while active",
       },
       {
-        id:"",
+        id: "",
         name: "Fission Field",
         description:
           "[Projected Barrier] also applies to 1 additional ally within 10m, but has 20% reduced duration",
       },
       {
-        id:"",
+        id: "",
         name: "Here to Spot You",
         description:
           "[Projected Barrier] pulls you to the targeted ally and heals you for 15% of Max Life over 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Lifelift",
         description:
           "+50% [Particle Barrier] size. Increase [Particle Barrier] Health by 100% of Bonus Max Life.",
       },
       {
-        id:"",
+        id: "",
         name: "Major Flex",
         description:
           "[Barrier] knocks back and deal 25 damage, increased by [Energy], to enemies within 5m every 1s",
       },
       {
-        id:"",
+        id: "",
         name: "Volskaya Vortex",
         description:
           "After a [Barrier] is cast, [Particle Cannon]'s next secondary fire spawns a slowing vortex tat deals 100 damage over 2s",
       },
       {
-        id:"",
+        id: "",
         name: "Graviton Anomaly",
         description:
           "25% Ultimate Cost Reduction [Graviton Surge] base damage is increased to 30 and increased by [Energy], but has 50% reduced duration",
@@ -2183,71 +2279,71 @@ const heroes = [
     hp: 225,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Foxy Fireworks",
         description:
           "After reloading, your next 3 thrown [Kunai] explode on contact, dealing 20 damage to nearby enemies",
       },
       {
-        id:"",
+        id: "",
         name: "Keen Kunai",
         description:
           "Kunai critical hits decreases active ability cooldowns by 15% and refund 3 ammo",
       },
       {
-        id:"",
+        id: "",
         name: "Triple Threat",
         description:
           "After using [Swift Step], for 4s, your secondary fire throws 2 additional [Kunai] in a spread that deal 50% less damage",
       },
       {
-        id:"",
+        id: "",
         name: "Leaf On The Wind",
         description:
           "[Healing Ofuda] bounces to another ally up to 2 times, healing for 30% of the normal amount",
       },
       {
-        id:"",
+        id: "",
         name: "Self-Care",
         description:
           "When you use [Healing Ofuda], heal yourself for 5% of your max Life",
       },
       {
-        id:"",
+        id: "",
         name: "Supported Shooting",
         description:
           "When [Healing Ofuda] heals allies, grant them 20% increased Attack Speed for 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Fleet Foot",
         description: "[Swift Step] can be used directionally without a target",
       },
       {
-        id:"",
+        id: "",
         name: "Clone Conjuration",
         description:
           "After using [Swift Step], create a clone of yourself that lasts for 5s",
       },
       {
-        id:"",
+        id: "",
         name: "Two-Zu",
         description: "[Protection Suzu] gains an additional charge",
       },
       {
-        id:"",
+        id: "",
         name: "Cleansing Charge",
         description:
           "When you cleanse negative effects with [Protection Suzu], gain 5% Ultimate Charge for each hero cleansed",
       },
       {
-        id:"",
+        id: "",
         name: "Crossing Guard",
         description:
           "[Kitsune Rush] now also reduces enemies Move Speed by 50% for 2s",
       },
       {
-        id:"",
+        id: "",
         name: "Spirit Veil",
         description:
           "Using [Kitsune Rush] cleanses Kiriko of negative effects and make her invulnerable for 4s",
@@ -2355,73 +2451,73 @@ const heroes = [
     hp: 250,
     powers: [
       {
-        id:"",
+        id: "",
         name: "No Scope Needed",
         description:
           "Landing unscoped shots with [Biotic Rifle] grants 10% Attack Speed for 2s, stacking up to 3 times",
       },
       {
-        id:"",
+        id: "",
         name: "Tactical Rifle",
         description:
           "While scoped, [Biotic Rifle] will lock-on to allies for guaranteed hits",
       },
       {
-        id:"",
+        id: "",
         name: "Pinpoint Prescription",
         description:
           "[Biotic Rifle] can now critically hit both allies and enemies",
       },
       {
-        id:"",
+        id: "",
         name: "Dreamy",
         description:
           "[Sleep Dart] can hit allies, healing 100% of their max Life over 8s instead of putting them to sleep",
       },
       {
-        id:"",
+        id: "",
         name: "Comfy Cloud",
         description:
           "[Sleep Dart] explodes on contact, hitting targets within 3m, but Sleep has a 50% reduced duration",
       },
       {
-        id:"",
+        id: "",
         name: "Sleep Regimen",
         description:
           "Gain 50 Health. When you apply Sleep to an enemy, gain 10 Health, up to 150",
       },
       {
-        id:"",
+        id: "",
         name: "Home Remedy",
         description:
           "[Biotic Grenade] applies Overhealth equal to 100% of its healing",
       },
       {
-        id:"",
+        id: "",
         name: "Venomous",
         description:
           "[Biotic Grenade] deals an additional 30 damage over its duration to enemies affected by it",
       },
       {
-        id:"",
+        id: "",
         name: "Time Out",
         description:
           "[Biotic Grenade] now knocks enemies back and reduces their Move Speed by 50% for 1.5s",
       },
       {
-        id:"",
+        id: "",
         name: "Your Full Potential",
         description:
           "[Nano Boost] also grants the target 20% Ultimate Charge and 200 Overhealth",
       },
       {
-        id:"",
+        id: "",
         name: "My Turn",
         description:
           "[Nano Boost] also applies to yourself for 50% of its duration",
       },
       {
-        id:"",
+        id: "",
         name: "Our Turn",
         description:
           "[Nano Boost] also affects other visible allies, but it has a 50% reduced duration on them",
@@ -2532,72 +2628,72 @@ const heroes = [
     hp: 275,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Quick Draw",
         description:
           "After using [Combat Roll], [Peacekeeper]'s next primary fire can auto-aim within 9m while under cooldown",
       },
       {
-        id:"",
+        id: "",
         name: "Dead Man Walking",
         description:
           "Eliminating an enemy you've recently critically hit grants 1 Max Ammo for the round",
       },
       {
-        id:"",
+        id: "",
         name: "Full House",
         description:
           "For each Ammo available, [Peacekeeper]'s primary fire gains 1% increased damage, up to 25%",
       },
       {
-        id:"",
+        id: "",
         name: "Just Roll With It",
         description:
           "During [Combat Roll], prevent all incoming damage, after [Combat Roll] ends, heal 30% of your Life over 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Bullseye",
         description: "Critical hit reduces [Combat Roll]'s cooldown by 2s",
       },
       {
-        id:"",
+        id: "",
         name: "Barrel Roll",
         description:
           "[Combat Roll] takes you 50% further and deals 65 damage to enemies",
       },
       {
-        id:"",
+        id: "",
         name: "Flash In The Pan",
         description:
           "Eliminating an enemy recently damaged by [Flashbang] grants 15% Ultimate Charge",
       },
       {
-        id:"",
+        id: "",
         name: "Think Flasht",
         description:
           "When you start a [Combat Roll], leave a [Flashbang] behind",
       },
       {
-        id:"",
+        id: "",
         name: "Hot Potato",
         description:
           "[Flashbang] adds 3 extra Ammo on hit until [Peacekeeper] is reloaded",
       },
       {
-        id:"",
+        id: "",
         name: "Easy Rider",
         description:
           "While using [Deadeye], gain 100 Overhealth and 25% Movement Speed",
       },
       {
-        id:"",
+        id: "",
         name: "Sunrise",
         description:
           "Using [Deadeye] slows all visible enemies by 35% for 1.5s",
       },
       {
-        id:"",
+        id: "",
         name: "Sunset",
         description: "[Deadeye] eliminations grant 15% Ultimate Charge each",
       },
@@ -2673,71 +2769,71 @@ const heroes = [
     hp: 250,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Reload Therapy",
         description: "When you reload a shot, heal 3% of your Life",
       },
       {
-        id:"",
+        id: "",
         name: "Head Honcho",
         description:
           "Each unscoped shot you land increases the damage of the next scoped shot you land by 3%, up to 30%. Resets on reload",
       },
       {
-        id:"",
+        id: "",
         name: "My Business, My Rules",
         description:
           "When you deal damage to a Burning enemy with [The Viper], reduce the cooldown of your abilities by 10%",
       },
       {
-        id:"",
+        id: "",
         name: "Incendiary Rounds",
         description:
           "While scoped, hitting the same target without missing deals 30 extra damage",
       },
       {
-        id:"",
+        id: "",
         name: "Incendiary Blast",
         description:
           "[Coach Gun] applies Burning, dealing 100 damage over 5s. If target was burning, deal extra 75 additional Ability Damage instantly",
       },
       {
-        id:"",
+        id: "",
         name: "Calamity",
         description:
           "Using [Coach Gun] reloads 2 Ammo. [The Viper]'s next 2 hits deal 40 additional damage over 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Double Barreled",
         description: "[Coach Gun] gains an additional charge",
       },
       {
-        id:"",
+        id: "",
         name: "Early Detonation",
         description:
           "Shooting [Dynamite] reloads 5 Ammo and reduces the cooldown of [Dynamite] by 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Molten Munitions",
         description:
           "When [Dynamite] explodes on the ground, it leaves lava that Burns enemies for 50 every 1s",
       },
       {
-        id:"",
+        id: "",
         name: "Out with a Bang",
         description:
           "When [Dynamite] explodes, it spawns 3 sticky explosives that deal 66% reduced damage",
       },
       {
-        id:"",
+        id: "",
         name: "Partners in Crime",
         description:
           "You are healed for 100% of [B.O.B.]'s damage dealt and [B.O.B.] is healed for 100% of your damage dealt",
       },
       {
-        id:"",
+        id: "",
         name: "B.O.B. Jr.",
         description:
           "[B.O.B.] costs 50% less Ultimate Charge but has reduced Life, 50% reduced Attack Speed, and is significantly smaller",
@@ -2846,71 +2942,71 @@ const heroes = [
     role: "Support",
     powers: [
       {
-        id:"",
+        id: "",
         name: "MediMaster",
         description:
           "[Mediblaster] can now critically hit both allies and enemies",
       },
       {
-        id:"",
+        id: "",
         name: "Stinger",
         description:
           "[Mediblaster] deals an additional 10 damage to enemies over 1s. (Does not stack)",
       },
       {
-        id:"",
+        id: "",
         name: "Cosmic Coolant",
         description:
           "[Pulsar Torpedoes] cooldown is reduced by 1s for each target it hits",
       },
       {
-        id:"",
+        id: "",
         name: "Medicinal Missiles",
         description:
           "[Pulsar Torpedoes] heal for an extra 30 life and causes allies hit to receive 50% more healing for 3s",
       },
       {
-        id:"",
+        id: "",
         name: "Pulsar Plus",
         description: "[Pulsar Torpedoes] gains 1 additional charge",
       },
       {
-        id:"",
+        id: "",
         name: "Torpedo Glide",
         description:
           "During [Glide Boost], every 50 damage you deal reduces the cooldown of [Pulsar Torpedoes] by 1s",
       },
       {
-        id:"",
+        id: "",
         name: "Blink Boosts",
         description:
           "[Glide Boost] gains 2 additional charges and has a 65% reduced cooldown, but has 75% reduced duration",
       },
       {
-        id:"",
+        id: "",
         name: "Rally Ring",
         description:
           "Reduce [Hyper Ring]'s cooldown by 1s when an ally passes through it",
       },
       {
-        id:"",
+        id: "",
         name: "Black Hole",
         description:
           "[Hyper Ring] slows the Move Speed of enemies who pass through it by 35% for 1s",
       },
       {
-        id:"",
+        id: "",
         name: "Hyper Healer",
         description: "Allies affected by [Hyper Ring] gain 50 Overhealth",
       },
       {
-        id:"",
+        id: "",
         name: "Stellar Focus",
         description:
           "[Orbital Ray] now follows you and its duration is increased by 35%",
       },
       {
-        id:"",
+        id: "",
         name: "Orbital Alignment",
         description:
           "Enemies inside of [Orbital Ray] lose 35% Move Speed. Allies inside of it gain 25% Move Speed",
@@ -3015,70 +3111,70 @@ const heroes = [
     hp: 300,
     powers: [
       {
-        id:"",
+        id: "",
         name: "Permafrost",
         description: "Increase your Max Health by 50% of your Ability Power",
       },
       {
-        id:"",
+        id: "",
         name: "Slowball",
         description:
           "[Endothermic Blaster]'s secondary fire now shoots a snowball that applies 30% slow for 1s on critical hit",
       },
       {
-        id:"",
+        id: "",
         name: "Extendothermics",
         description:
           "[Endothermic Blaster]'s primary fire range is increased by 6m",
       },
       {
-        id:"",
+        id: "",
         name: "Frost Armor",
         description:
           "Gain Armor equal to 5% of the primary fire damage you deal, up to 100, until the end of the round",
       },
       {
-        id:"",
+        id: "",
         name: "Snowball Flight",
         description:
           "Jumping while mid-air creates a large [Ice Wall] pillar under you. (12s Cooldown)",
       },
       {
-        id:"",
+        id: "",
         name: "Twice As Ice",
         description:
           "When you use [Cryo-Freeze], reset the next cooldown of [Ice Wall]",
       },
       {
-        id:"",
+        id: "",
         name: "Iceberg",
         description: "[Ice Wall] spawns a mini [Blizzard] that slows enemies",
       },
       {
-        id:"",
+        id: "",
         name: "Cryclone",
         description:
           "[Cryo-Freeze] spawns a mini [Blizzard] that slows enemies",
       },
       {
-        id:"",
+        id: "",
         name: "Coulder",
         description:
           "[Cryo-Freeze] now encases you in a rolling iceball that can knock back enemies and deal 10 damage",
       },
       {
-        id:"",
+        id: "",
         name: "Frost Nova",
         description:
           "When [Cryo-Freeze] ends, knock back nearby enemies, dealing 60 damage",
       },
       {
-        id:"",
+        id: "",
         name: "Blizznado",
         description: "While within [Blizzard], heal 5% of your Life every 1s",
       },
       {
-        id:"",
+        id: "",
         name: "Avalanche",
         description:
           "Visible enemies within 20m of the Blizzard are slowed by 25%",
@@ -3161,71 +3257,71 @@ const heroes = [
     role: "Support",
     powers: [
       {
-        id:"",
+        id: "",
         name: "Fast Forward",
         description: "While above 50% Move Speed, increase damage by 25%",
       },
       {
-        id:"",
+        id: "",
         name: "Signature Shift",
         description:
           "After using an ability, your next [Sonic Amplifier] shot shoots a volley of 6 ammo with 20% increased projectile size",
       },
       {
-        id:"",
+        id: "",
         name: "Sonic Boom",
         description:
           "[Sonic Amplifier] Damage heals all allies affected by [Crossfade] equal to 20% of damage dealt",
       },
       {
-        id:"",
+        id: "",
         name: "Mixtape",
         description:
           "When switching to [Healing Boost], [Crossfade] heals for 50% of [Crossfade] healing for every 1s [Speed Boost] was active",
       },
       {
-        id:"",
+        id: "",
         name: "Megaphone",
         description:
           "+20% [Amp It Up] Duration. While [Amp It Up] is active, [Crossfade] radius is increased by 150%",
       },
       {
-        id:"",
+        id: "",
         name: "Radio Edit",
         description:
           "After using [Amp It Up], trigger [Sound Barrier] with 85% reduced Overhealth",
       },
       {
-        id:"",
+        id: "",
         name: "Vivace",
         description:
           "While [Wallriding] or airborne, [Soundwave] cooldown refreshes 25% faster and adds 1 Max Ammo per 1s until you reload",
       },
       {
-        id:"",
+        id: "",
         name: "Wallvibing",
         description:
           "While [Wallriding] or airborne, gain temporary Overhealth equal to 3% of your life every 1s up to 30%",
       },
       {
-        id:"",
+        id: "",
         name: "Crowd Pleaser",
         description:
           "After using [Soundwave], heal all allies affected by [Crossfade] for 200% of [Crossfade] healing.",
       },
       {
-        id:"",
+        id: "",
         name: "Let's Bounce",
         description:
           "[Soundwave] has 30% increased knockback and deals 40 bonus damage if the target hits a wall",
       },
       {
-        id:"",
+        id: "",
         name: "Reverb",
         description: "Gain 1 extra charge of [Soundwave]",
       },
       {
-        id:"",
+        id: "",
         name: "Beat Drop",
         description:
           "20% Ultimate Cost Reduction. Landing on an enemy with [Sound Barrier] deals up to 200 damage",
