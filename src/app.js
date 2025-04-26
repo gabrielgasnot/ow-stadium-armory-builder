@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./app.css";
 import { Details, Perks, ArmoryHeader } from "./components";
 import BuildStarter from "./pages/build-starter";
-import { Grid, Alert, IconButton } from "@mui/material";
+import { Box, Grid, Alert, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { basicItems, heroes } from "./db/db";
 import ArmoryFooter from "./components/footer";
@@ -113,7 +113,7 @@ function App() {
   };
 
   return (
-    <Grid container spacing={2} style={{ height: '100vh', bottom: '80px' }}>
+    <Grid container spacing={2} style={{ height: "90vh" }}>
       {errorMessage && (
         <Alert
           variant="outlined"
@@ -140,8 +140,24 @@ function App() {
         />
       </Grid>
       {currentHero && (
-        <Grid container size={12} spacing={2}>
-          <Grid item xs={12} sm={4}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "column", lg: "row" },
+            height: "100vh",
+            overflow: "hidden",
+          }}
+        >
+          <Box
+            sx={{
+              width: { xs: "100vw", lg: "25vw" },
+              flexShrink: 0,
+              bgcolor: "#f5f5f5",
+              p: 2,
+              boxSizing: 'border-box',
+              overflow: "auto",
+            }}
+          >
             <Details
               hero={currentHero}
               powers={selectedPowers}
@@ -149,16 +165,30 @@ function App() {
               getJson={exportBuild}
               removeElement={removePerkBuild}
             />
-          </Grid>
-          <Grid item xs={12} sm={8}>
-            <Perks
-              powers={heroPowers}
-              generalItems={basicItems}
-              items={heroItems}
-              selectPerk={addPerkBuild}
-            />
-          </Grid>
-        </Grid>
+          </Box>
+          <Box
+            sx={{
+              flexGrow: 1,
+              p: 2,
+              overflow: "auto",
+            }}
+          >
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 2,
+              }}
+            >
+              <Perks
+                powers={heroPowers}
+                generalItems={basicItems}
+                items={heroItems}
+                selectPerk={addPerkBuild}
+              />
+            </Box>
+          </Box>
+        </Box>
       )}
       <ArmoryFooter />
     </Grid>
