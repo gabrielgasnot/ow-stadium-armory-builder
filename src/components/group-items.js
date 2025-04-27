@@ -40,7 +40,7 @@ function GroupItems(props) {
       sx={{ flexGrow: 1, minHeight: 0, width: "100%", height: "100%" }}
     >
       {["normal", "rare", "epic"].map((grade) => (
-        <Grid item key={grade} size={{ xs: 12, md: 4 }}>
+        <Grid item key={grade} size={{ xs: 12, xl:4 }}>
           <Items
             items={getItemsByGrade(grade)}
             grade={grade}

@@ -12,7 +12,7 @@ function PerkCard({ perk, perkType, perkGrade, selectPerk }) {
   return (
     <Card
       sx={{
-        width: { xs: '100%', sm: 300 },
+        width: { xs: '100%', sm: 400 },
         mx: "auto",
         transition: "box-shadow 0.3s ease",
         "&:hover": {
@@ -48,6 +48,7 @@ function PerkCard({ perk, perkType, perkGrade, selectPerk }) {
             letterSpacing=".1rem"
             color="inherit"
             textDecoration="none"
+            textOverflow={"ellipsis"}
           >
             {perk.name}
           </Typography>
@@ -65,7 +66,7 @@ function PerkCard({ perk, perkType, perkGrade, selectPerk }) {
       {/* Actions: Price */}
       {perk.price && (
         <CardActions sx={{ justifyContent: "flex-end" }}>
-          <Typography variant="subtitle1" fontWeight="bold">
+          <Typography variant="subtitle1" fontWeight="500">
             {perk.price} credits
           </Typography>
         </CardActions>

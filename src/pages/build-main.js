@@ -26,7 +26,7 @@ function BuildMain({
       {/* Left / Detail panel */}
       <Box
         sx={{
-          width: { xs: "100%", lg: "20%" },
+          width: { xs: "100%", lg: "30%",  xl: "20%"},
           flexShrink: 0,
           overflow: "auto",
           bgcolor: "#f5f5f5",
