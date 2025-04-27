@@ -4,7 +4,7 @@ import DetailsHeader from "./details-header";
 import PerkMiniCard from "./perk-mini-card";
 
 function Details(props) {
-  const { hero, powers, items, getJson, removeElement } = props;
+  const { hero, powers, items, removeElement } = props;
   const powerColumns = 4;
   const itemColumns = 3;
   const itemRows = 2;

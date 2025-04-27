@@ -7,7 +7,6 @@ function BuildMain({
   loadHero,
   selectedPowers,
   selectedItems,
-  exportBuild,
   removePerkBuild,
   heroPowers,
   basicItems,
@@ -58,7 +57,6 @@ function BuildMain({
           hero={currentHero}
           powers={selectedPowers}
           items={selectedItems}
-          getJson={exportBuild}
           removeElement={removePerkBuild}
         />
       </Box>

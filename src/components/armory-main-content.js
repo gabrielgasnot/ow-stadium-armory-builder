@@ -7,10 +7,8 @@ function ArmoryMainContent({
   currentHero,
   heroes,
   loadHero,
-  importBuild,
   selectedPowers,
   selectedItems,
-  exportBuild,
   removePerkBuild,
   heroPowers,
   heroItems,
@@ -42,7 +40,6 @@ function ArmoryMainContent({
           loadHero={loadHero}
           selectedPowers={selectedPowers}
           selectedItems={selectedItems}
-          exportBuild={exportBuild}
           removePerkBuild={removePerkBuild}
           heroPowers={heroPowers}
           basicItems={basicItems}

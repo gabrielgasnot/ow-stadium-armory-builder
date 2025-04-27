@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { basicItems, heroes } from "./db/db";
 import owTheme from "./theme";
-import { HashRouter, useLocation } from 'react-router-dom';
+import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
 
 function App() {
   return (
@@ -29,6 +29,7 @@ function AppContent() {
   const [errorMessage, setErrorMessage] = useState("");
 
   const location = useLocation();
+  const navigate = useNavigate();
   const rawPath = location.pathname;
   const encodedString = rawPath.startsWith('/') ? rawPath.slice(1) : rawPath;
 
@@ -36,15 +37,12 @@ function AppContent() {
     setSelectedPowers([]);
     setSelectedItems([]);
     setErrorMessage("");
-    setCurrentHero(selectedHero);
 
     if (selectedHero) {
       const hero = heroes.find((h) => h.id === selectedHero.id);
-
-      if (hero) {
-        setHeroPowers(hero.powers ?? []);
-        setHeroItems(hero.items ?? []);
-      }
+      navigate(`/${hero?.id}`);
+    } else {
+      navigate('');
     }
   };
 
@@ -96,35 +94,13 @@ function AppContent() {
     }
   };
 
-  const exportBuild = () => {
-    const build = {
-      hero: {
-        id: currentHero.id,
-        name: currentHero.name,
-        role: currentHero.role,
-      },
-      powers: selectedPowers,
-      items: selectedItems,
-    };
-    const json = JSON.stringify(build, null, 2);
-    const blob = new Blob([json], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `${currentHero.name}_build.json`;
-    a.click();
-    URL.revokeObjectURL(url);
-  };
-
-  const importBuild = useCallback((buildId) => {
+  const navigation = useCallback((buildId) => {
     if (buildId && !isNaN(buildId)) {
       const heroId = parseInt(buildId);
       if(heroId !== currentHero) {
         const hero = heroes.find((h) => h.id === parseInt(heroId));
         if (!hero) {
           setErrorMessage("Failed to import: hero not found");
-          console.log(heroes);
-          console.log(heroId);
           return;
         }
         else {
@@ -133,18 +109,15 @@ function AppContent() {
           setHeroPowers(hero.powers);
         }
       }
+    } else {
+      setCurrentHero(undefined);
     }
   }, [currentHero]);
 
 
-  useEffect(() => {
-    if (!encodedString) {
-      console.warn('No encoded data');
-      return;
-    }
-    
-    importBuild(encodedString);
-  }, [encodedString, importBuild]);
+  useEffect(() => {    
+    navigation(encodedString);
+  }, [encodedString, navigation]);
 
 
   return (
@@ -182,8 +155,6 @@ function AppContent() {
           currentHero={currentHero}
           heroes={heroes}
           loadHero={loadHero}
-          importBuild={importBuild}
-          exportBuild={exportBuild}
           removePerkBuild={removePerkBuild}
           addPerkBuild={addPerkBuild}
           selectedItems={selectedItems}
