@@ -3594,4 +3594,20 @@ const heroesOrder = [
   26, // Moira
 ];
 
+// Sort basic items
+Object.values(basicItems).forEach(items =>
+    items.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity))
+);
+
+// Sort heroes capacities
+heroes.forEach(hero => {
+  // Sort powers
+  hero.powers.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity));
+
+  // Sort items (normal, rare, epic)
+  Object.values(hero.items).forEach(arr =>
+      arr.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity))
+  );
+});
+
 export { basicItems, heroes, heroesOrder };
