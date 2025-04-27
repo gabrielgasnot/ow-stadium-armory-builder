@@ -20,10 +20,7 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
       {perk && (
         <CardMedia
           component="img"
-          image={`${process.env.PUBLIC_URL}/perks/${perk.name.replace(
-            "'",
-            "_"
-          )}.png`}
+          image={`${process.env.PUBLIC_URL}/perks/${perk.id}.png`}
           title={perk.name}
           alt={perk.name}
           sx={{
