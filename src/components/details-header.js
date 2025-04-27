@@ -25,7 +25,7 @@ function DetailsHeader(props) {
           backgroundSize: "cover",
           backgroundPosition: "center",
           flexShrink: 0,
-          display: { xs: "none", sm: "block" },
+          display: { xs: "none", xl: "block" },
         }}
       />
 

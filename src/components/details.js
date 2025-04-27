@@ -1,11 +1,27 @@
 import React from "react";
-import { Chip, Stack, Card, CardHeader, CardContent } from "@mui/material";
-import { amber } from "@mui/material/colors";
-import { getPerkColor } from "../services/color";
+import { Grid, Stack, Card, CardHeader, CardContent } from "@mui/material";
 import DetailsHeader from "./details-header";
+import PerkMiniCard from "./perk-mini-card";
 
 function Details(props) {
   const { hero, powers, items, getJson, removeElement } = props;
+  const powerColumns = 4;
+  const itemColumns = 3;
+  const itemRows = 2;
+
+  const getPerkMiniCard = (perks, perkType, index) => {
+    if (index >= perks.length) {
+      return null;
+    }
+    const perk = perks[index];
+    return (
+      <PerkMiniCard
+        perk={perk}
+        perkType={perkType}
+        unselectPerk={() => removeElement(perkType, perk)}
+      />
+    );
+  };
 
   if (!hero) {
     return;
@@ -18,38 +34,65 @@ function Details(props) {
       <Card sx={{ height: "100%" }}>
         <CardHeader title="Powers" />
         <CardContent>
-          <Stack
-            spacing={1}
-            useFlexGap
-            sx={{ flexWrap: "wrap", width: "100%" }}
+          <Grid
+            container
+            spacing={2}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
           >
-            {powers.map((power) => (
-              <Chip
-                label={power.name}
-                sx={{ backgroundColor: amber[100] }}
-                onDelete={() => removeElement("power", power)}
-              ></Chip>
+            {[...Array(powerColumns)].map((_, index) => (
+              <Grid
+                item
+                size={{ xs: 6, sm: 4, md: 6 }}
+                key={index}
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                {getPerkMiniCard(powers, "power", index)}
+              </Grid>
             ))}
-          </Stack>
+          </Grid>
         </CardContent>
       </Card>
 
       <Card>
         <CardHeader title="Items" />
         <CardContent>
-          <Stack
-            spacing={1}
-            useFlexGap
-            sx={{ flexWrap: "wrap", width: "100%" }}
+          <Grid
+            container
+            spacing={2}
+            sx={{
+              textAlign: "center",
+            }}
           >
-            {items.map((item) => (
-              <Chip
-                label={`${item.name} (${item.category})`}
-                sx={{ backgroundColor: getPerkColor(item.grade) }}
-                onDelete={() => removeElement("item", item)}
-              ></Chip>
-            ))}
-          </Stack>
+            {[...Array(itemRows)].map((_, rowIndex) =>
+              [...Array(itemColumns)].map((_, index) => (
+                <Grid
+                  item
+                  spacing={2}
+                  size={{ xs: 6, sm: 4, md: 6 }}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                  }}
+                  key={index}
+                >
+                  {getPerkMiniCard(
+                    items,
+                    "item",
+                    rowIndex * itemColumns + index
+                  )}
+                </Grid>
+              ))
+            )}
+          </Grid>
         </CardContent>
       </Card>
     </Stack>
