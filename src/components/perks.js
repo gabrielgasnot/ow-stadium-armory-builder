@@ -1,45 +1,49 @@
 import React from "react";
-import { Box, Tabs, Tab } from "@mui/material";
+import { Stack, Box, Tabs, Tab } from "@mui/material";
 import Powers from "./powers.js";
 import GroupItems from "./group-items.js";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
+  if (value !== index) {
+    return null;
+  }
+
   return (
-    <div
+<Box
       role="tabpanel"
-      hidden={value !== index}
       id={`full-width-tabpanel-${index}`}
       aria-labelledby={`full-width-tab-${index}`}
       {...other}
+      sx={{
+        p: 2,
+        height: "100%",
+        boxSizing: "border-box",
+        overflow: "auto",
+      }}
     >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
-    </div>
+      {children}
+    </Box>
   );
 }
 
-function Perks(props) {
+function Perks({ powers, generalItems, items, selectPerk, getPerkColor }) {
   const [value, setValue] = React.useState(0);
-  const { powers, generalItems, items, selectPerk, getPerkColor } = props;
 
   const handleChange = (_, newValue) => {
     setValue(newValue);
   };
 
   if (!powers || !items || !generalItems) {
-    return "Select a hero.";
+    return "No perk available for this hero";
   }
 
-  return (
-    <Box>
-      <Tabs value={value} onChange={handleChange}>
-        <Tab label="Weapon" />
-        <Tab label="Ability" />
-        <Tab label="Survival" />
-        <Tab label="Powers" />
-      </Tabs>
-      <TabPanel value={value} index={0}>
+  // 👇 Centralized tab definition
+  const tabConfig = [
+    {
+      label: "Weapon",
+      content: (
         <GroupItems
           basicItems={generalItems}
           items={items}
@@ -47,29 +51,74 @@ function Perks(props) {
           selectItem={selectPerk}
           getColor={getPerkColor}
         />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
+      ),
+    },
+    {
+      label: "Ability",
+      content: (
         <GroupItems
           basicItems={generalItems}
-          items={items ?? []}
+          items={items}
           category="Ability"
           selectItem={selectPerk}
           getColor={getPerkColor}
         />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
+      ),
+    },
+    {
+      label: "Survival",
+      content: (
         <GroupItems
           basicItems={generalItems}
-          items={items ?? []}
+          items={items}
           category="Survival"
           selectItem={selectPerk}
           getColor={getPerkColor}
         />
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        <Powers powers={powers} selectPower={selectPerk} />
-      </TabPanel>
-    </Box>
+      ),
+    },
+    {
+      label: "Powers",
+      content: <Powers powers={powers} selectPower={selectPerk} />,
+    },
+  ];
+
+  return (
+    <Stack
+      direction="column"
+      spacing={2}
+      sx={{
+        height: "100%",
+        overflow: "hidden",
+      }}
+    >
+      {/* Tabs navigation */}
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        variant="scrollable"
+        scrollButtons="auto"
+      >
+        {tabConfig.map((tab, index) => (
+          <Tab key={index} label={tab.label} />
+        ))}
+      </Tabs>
+
+      {/* Tab content */}
+      <Box
+        sx={{
+          flexGrow: 1,
+          overflow: "auto",
+          minHeight: 0,
+        }}
+      >
+        {tabConfig.map((tab, index) => (
+          <TabPanel key={index} value={value} index={index}>
+            {tab.content}
+          </TabPanel>
+        ))}
+      </Box>
+    </Stack>
   );
 }
 

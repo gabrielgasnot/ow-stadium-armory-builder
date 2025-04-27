@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import "./app.css";
-import { Details, Perks, ArmoryHeader } from "./components";
-import BuildStarter from "./pages/build-starter";
-import { Box, Grid, Alert, IconButton } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { ArmoryHeader, ArmoryFooter, ArmoryMainContent } from "./components";
+import {
+  Box,
+  Alert,
+  Snackbar,
+  ThemeProvider,
+  CssBaseline,
+} from "@mui/material";
 import { basicItems, heroes } from "./db/db";
-import ArmoryFooter from "./components/footer";
+import owTheme from "./theme";
 
 function App() {
   const [currentHero, setCurrentHero] = useState(undefined);
@@ -21,11 +25,13 @@ function App() {
     setErrorMessage("");
     setCurrentHero(selectedHero);
 
-    const hero = heroes.find((h) => h.id === selectedHero.id);
+    if (selectedHero) {
+      const hero = heroes.find((h) => h.id === selectedHero.id);
 
-    if (hero) {
-      setHeroPowers(hero.powers ?? []);
-      setHeroItems(hero.items ?? []);
+      if (hero) {
+        setHeroPowers(hero.powers ?? []);
+        setHeroItems(hero.items ?? []);
+      }
     }
   };
 
@@ -113,85 +119,55 @@ function App() {
   };
 
   return (
-    <Grid container spacing={2} style={{ height: "90vh" }}>
-      {errorMessage && (
-        <Alert
-          variant="outlined"
-          severity="error"
-          action={
-            <IconButton aria-label="close" onClick={() => setErrorMessage("")}>
-              <CloseIcon />
-            </IconButton>
-          }
+    <ThemeProvider theme={owTheme}>
+      <CssBaseline />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          height: "100vh",
+          width: "100vw",
+          overflowY: "auto"
+        }}
+      >
+        <Snackbar
+          open={errorMessage}
+          autoHideDuration={6000}
           onClose={() => setErrorMessage("")}
         >
-          {errorMessage}
-        </Alert>
-      )}
-      <Grid size={12}>
+          <Alert
+            onClose={() => setErrorMessage("")}
+            severity="error"
+            variant="filled"
+            sx={{ width: "100%" }}
+          >
+            {errorMessage}
+          </Alert>
+        </Snackbar>
+
+        {/* Header (app bar) */}
         <ArmoryHeader pages={[]} />
-      </Grid>
-      <Grid size={12} textAlign={"center"}>
-        <BuildStarter
+
+        {/* Main Content Area */}
+        <ArmoryMainContent
+          currentHero={currentHero}
           heroes={heroes}
           loadHero={loadHero}
-          currentHero={currentHero?.name}
           importBuild={importBuild}
+          exportBuild={exportBuild}
+          removePerkBuild={removePerkBuild}
+          addPerkBuild={addPerkBuild}
+          selectedItems={selectedItems}
+          selectedPowers={selectedPowers}
+          heroPowers={heroPowers}
+          heroItems={heroItems}
+          basicItems={basicItems}
         />
-      </Grid>
-      {currentHero && (
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: { xs: "column", lg: "row" },
-            height: "100vh",
-            overflow: "hidden",
-          }}
-        >
-          <Box
-            sx={{
-              width: { xs: "100vw", lg: "25vw" },
-              flexShrink: 0,
-              bgcolor: "#f5f5f5",
-              p: 2,
-              boxSizing: 'border-box',
-              overflow: "auto",
-            }}
-          >
-            <Details
-              hero={currentHero}
-              powers={selectedPowers}
-              items={selectedItems}
-              getJson={exportBuild}
-              removeElement={removePerkBuild}
-            />
-          </Box>
-          <Box
-            sx={{
-              flexGrow: 1,
-              p: 2,
-              overflow: "auto",
-            }}
-          >
-            <Box
-              sx={{
-                display: "flex",
-                flexWrap: "wrap",
-                gap: 2,
-              }}
-            >
-              <Perks
-                powers={heroPowers}
-                generalItems={basicItems}
-                items={heroItems}
-                selectPerk={addPerkBuild}
-              />
-            </Box>
-          </Box>
-        </Box>
-      )}
-      <ArmoryFooter />
-    </Grid>
+
+        {/* Footer */}
+        <ArmoryFooter />
+      </Box>
+    </ThemeProvider>
   );
 }
 

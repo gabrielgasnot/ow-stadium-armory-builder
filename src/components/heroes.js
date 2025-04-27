@@ -12,7 +12,7 @@ function Heroes(props) {
     return (
       <Stack
         direction="row"
-        spacing={1}
+        spacing={2}
         useFlexGap
         sx={{
           justifyContent: "center",
@@ -29,11 +29,9 @@ function Heroes(props) {
               sx={{
                 width: 125,
                 cursor: "pointer",
-                "&[data-active]": {
-                  backgroundColor: "action.selected",
-                  "&:hover": {
-                    backgroundColor: "action.selectedHover",
-                  },
+                transition: "box-shadow 0.3s ease",
+                "&:hover": {
+                  boxShadow: "0 4px 20px rgba(25, 64, 97, 0.81)",
                 },
               }}
               data-active={hero.id === currentHero ? "" : undefined}
