@@ -13,7 +13,7 @@ describe("Image existence check", () => {
     ])
     .flat();
   const ids = [
-    ...items,
+    ...items.map((item) => item.id),
     ...hero_items_perks,
   ];
   const missingFiles = [];
