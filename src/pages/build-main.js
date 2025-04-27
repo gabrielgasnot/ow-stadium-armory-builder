@@ -2,37 +2,36 @@ import { Box, Button } from "@mui/material";
 import { Details, Perks } from "../components";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-function BuildMain(props) {
-  const {
-    currentHero,
-    loadHero,
-    selectedPowers,
-    selectedItems,
-    exportBuild,
-    removePerkBuild,
-    heroPowers,
-    basicItems,
-    heroItems,
-    addPerkBuild,
-  } = props;
-
+function BuildMain({
+  currentHero,
+  loadHero,
+  selectedPowers,
+  selectedItems,
+  exportBuild,
+  removePerkBuild,
+  heroPowers,
+  basicItems,
+  heroItems,
+  addPerkBuild,
+}) {
   return (
     <Box
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", sm: "column", lg: "row" },
-        overflowY: "auto",
-        height: "100%",
+        flexDirection: { xs: "column", lg: "row" },
+        height: "100%", // Viewport height
+        overflowY: { xs: "auto", lg: "hidden" },
       }}
     >
       {/* Left / Detail panel */}
       <Box
         sx={{
+          width: { xs: "100%", lg: "20%" },
           flexShrink: 0,
+          overflow: "auto",
           bgcolor: "#f5f5f5",
           p: 2,
           boxSizing: "border-box",
-          overflow: "hidden",
         }}
       >
         <Box>
@@ -63,10 +62,11 @@ function BuildMain(props) {
       <Box
         sx={{
           flexGrow: 1,
+          flexShrink: { xs: 0, md: 1 },
+          overflow: "auto",
           p: 2,
-          height: { xs: "auto", lg: "100%" },
-          overflowY: { xs: "visible", lg: "auto" },
-          overflowX: "hidden",
+          boxSizing: "border-box",
+          minHeight: 0,
         }}
       >
         <Perks

@@ -7,7 +7,15 @@ function Items(props) {
 
   if (items && items.length > 0) {
     return (
-      <Stack direction="row" spacing={2} useFlexGap sx={{ flexWrap: "wrap" }}>
+      <Stack
+        direction="row"
+        spacing={2}
+        useFlexGap
+        sx={{
+          flexWrap: "wrap",
+          justifyContent: "flex-start"
+        }}
+      >
         {items.map((item) => {
           item.grade = grade;
           return (

@@ -12,7 +12,7 @@ function PerkCard({ perk, perkType, perkGrade, selectPerk }) {
   return (
     <Card
       sx={{
-        width: { xs: '100%', sm: 350 },
+        width: { xs: '100%', sm: 300 },
         mx: "auto",
         transition: "box-shadow 0.3s ease",
         "&:hover": {
