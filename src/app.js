@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./app.css";
 import { ArmoryHeader, ArmoryFooter, ArmoryMainContent } from "./components";
 import {
@@ -10,14 +10,27 @@ import {
 } from "@mui/material";
 import { basicItems, heroes } from "./db/db";
 import owTheme from "./theme";
+import { HashRouter, useLocation } from 'react-router-dom';
 
 function App() {
+  return (
+    <HashRouter>
+      <AppContent />
+    </HashRouter>
+  );
+}
+
+function AppContent() {
   const [currentHero, setCurrentHero] = useState(undefined);
   const [heroPowers, setHeroPowers] = useState([]);
   const [heroItems, setHeroItems] = useState([]);
   const [selectedPowers, setSelectedPowers] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
+
+  const location = useLocation();
+  const rawPath = location.pathname;
+  const encodedString = rawPath.startsWith('/') ? rawPath.slice(1) : rawPath;
 
   const loadHero = (selectedHero) => {
     setSelectedPowers([]);
@@ -64,8 +77,6 @@ function App() {
   };
 
   const removePerkBuild = (perkType, perk) => {
-    console.log('Removing ', perk);
-    
     if (perkType === "power") {
       setSelectedPowers(
         selectedPowers.filter((power) => power.id !== perk.id)
@@ -105,20 +116,36 @@ function App() {
     URL.revokeObjectURL(url);
   };
 
-  const importBuild = (build) => {
-    if (build && build.hero && build.powers && build.items) {
-      const hero = heroes.find((h) => h.id === build.hero.id);
-      if (!hero) {
-        setErrorMessage("Failed to import: hero not found");
-        return;
+  const importBuild = useCallback((buildId) => {
+    if (buildId) {
+      const heroId = buildId[0];
+      if(!isNaN(heroId) && heroId !== currentHero) {
+        const hero = heroes.find((h) => h.id === parseInt(heroId));
+        if (!hero) {
+          setErrorMessage("Failed to import: hero not found");
+          console.log(heroes);
+          console.log(heroId);
+          return;
+        }
+        else {
+          setCurrentHero(hero);
+          setHeroItems(hero.items);
+          setHeroPowers(hero.powers);
+        }
       }
-
-      // Reset
-      loadHero(hero);
-      setSelectedPowers(build.powers);
-      setSelectedItems(build.items);
     }
-  };
+  }, [currentHero]);
+
+
+  useEffect(() => {
+    if (!encodedString) {
+      console.warn('No encoded data');
+      return;
+    }
+    
+    importBuild(encodedString);
+  }, [encodedString, importBuild]);
+
 
   return (
     <ThemeProvider theme={owTheme}>
