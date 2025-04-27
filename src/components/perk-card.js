@@ -26,10 +26,7 @@ function PerkCard({ perk, perkType, perkGrade, selectPerk }) {
       <CardHeader
         avatar={
           <Avatar
-            src={`${process.env.PUBLIC_URL}/perks/${perk.name.replace(
-              "'",
-              "_"
-            )}.png`}
+            src={`${process.env.PUBLIC_URL}/perks/${perk.id}.png`}
             alt={perk.name}
             sx={{
               width: 96,

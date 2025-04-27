@@ -1371,6 +1371,7 @@ const heroes = [
           category: "Weapon"
         },
         {
+          id: "26W002",
           name: "High Capacity Tubing",
           description: "+10% Weapon Power, +50 Max [Biotic Energy]",
           price: 4000,
