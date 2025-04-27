@@ -12,7 +12,7 @@ function Details(props) {
   const getPerkMiniCard = (perks, perkType, index) => {
     return (
       <Box sx={{ textAlign: "center" }}>
-        {perkType === "power" && `Round ${index + 1}`}
+        {perkType === "power" && `Round ${2 * index + 1}`}
         <PerkMiniCard
           perk={perks[index]}
           perkType={perkType}
