@@ -15,22 +15,24 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
         justifyContent: "center",
         cursor: "pointer",
       }}
-      onClick={unselectPerk}
+      onClick={perk ? () => null : unselectPerk}
     >
-      <CardMedia
-        component="img"
-        image={`${process.env.PUBLIC_URL}/perks/${perk.name.replace(
-          "'",
-          "_"
-        )}.png`}
-        title={perk.name}
-        alt={perk.name}
-        sx={{
-          width: "100%",
-          height: "100%",
-          objectFit: "cover", // Cover the space properly
-        }}
-      />
+      {perk && (
+        <CardMedia
+          component="img"
+          image={`${process.env.PUBLIC_URL}/perks/${perk.name.replace(
+            "'",
+            "_"
+          )}.png`}
+          title={perk.name}
+          alt={perk.name}
+          sx={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover", // Cover the space properly
+          }}
+        />
+      )}
     </Box>
   );
 }

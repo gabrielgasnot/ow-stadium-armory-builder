@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Stack, Card, CardHeader, CardContent } from "@mui/material";
+import { Box, Grid, Stack, Card, CardHeader, CardContent } from "@mui/material";
 import DetailsHeader from "./details-header";
 import PerkMiniCard from "./perk-mini-card";
 
@@ -10,16 +10,15 @@ function Details(props) {
   const itemRows = 2;
 
   const getPerkMiniCard = (perks, perkType, index) => {
-    if (index >= perks.length) {
-      return null;
-    }
-    const perk = perks[index];
     return (
-      <PerkMiniCard
-        perk={perk}
-        perkType={perkType}
-        unselectPerk={() => removeElement(perkType, perk)}
-      />
+      <Box sx={{ textAlign: "center" }}>
+        {perkType === "power" && `Round ${index + 1}`}
+        <PerkMiniCard
+          perk={perks[index]}
+          perkType={perkType}
+          unselectPerk={() => removeElement(perkType, perks[index])}
+        />
+      </Box>
     );
   };
 
@@ -46,7 +45,7 @@ function Details(props) {
             {[...Array(powerColumns)].map((_, index) => (
               <Grid
                 item
-                size={{ xs: 6, sm: 4, md: 6 }}
+                size={{ xs: 6, sm: 4, md: 6, xl: 3 }}
                 key={index}
                 sx={{
                   display: "flex",
@@ -76,7 +75,7 @@ function Details(props) {
                 <Grid
                   item
                   spacing={2}
-                  size={{ xs: 6, sm: 4, md: 6 }}
+                  size={{ xs: 6, sm: 4, md: 6, lg: 4 }}
                   sx={{
                     display: "flex",
                     justifyContent: "center",
