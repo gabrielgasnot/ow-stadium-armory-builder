@@ -7,7 +7,13 @@ function Powers({ powers, selectPower, selectedIds }) {
     return (
       <Stack direction="row" spacing={2} useFlexGap sx={{ flexWrap: "wrap" }}>
         {powers.map((power) => (
-          <PerkCard perk={power} perkType="power" selectPerk={selectPower} isSelected={selectedIds.find(id => id === power.id) !== undefined} />
+          <PerkCard
+              perk={power}
+              perkType="power"
+              selectPerk={selectPower}
+              isSelected={selectedIds.find(id => id === power.id) !== undefined}
+              isDisabled={(selectedIds.find(id => id === power.id) === undefined) && selectedIds.length >= 4}
+          />
         ))}
       </Stack>
     );

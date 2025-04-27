@@ -3,7 +3,7 @@ import { Stack } from "@mui/material";
 import PerkCard from "./perk-card.js";
 
 function Items(props) {
-  const { items, grade, selectItem, selectedIds } = props;
+  const { items, grade, selectItem, selectedIds, isDisabled } = props;
 
   if (items && items.length > 0) {
     return (
@@ -25,6 +25,7 @@ function Items(props) {
               selectPerk={selectItem}
               perkType="item"
               isSelected={selectedIds.find(id => id === item.id) !== undefined}
+              isDisabled={isDisabled && (!selectedIds.find(id => id === item.id) !== undefined)}
             />
           );
         })}

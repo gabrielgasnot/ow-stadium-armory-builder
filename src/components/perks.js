@@ -28,7 +28,7 @@ function TabPanel(props) {
   );
 }
 
-function Perks({ powers, generalItems, items, selectPerk, getPerkColor, selectedPerks }) {
+function Perks({ powers, generalItems, items, selectPerk, getPerkColor, selectedItems, selectedPowers }) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (_, newValue) => {
@@ -49,7 +49,7 @@ function Perks({ powers, generalItems, items, selectPerk, getPerkColor, selected
           items={items}
           category="Weapon"
           selectItem={selectPerk}
-          selectedIds={selectedPerks}
+          selectedIds={selectedItems}
           getColor={getPerkColor}
         />
       ),
@@ -62,7 +62,7 @@ function Perks({ powers, generalItems, items, selectPerk, getPerkColor, selected
           items={items}
           category="Ability"
           selectItem={selectPerk}
-          selectedIds={selectedPerks}
+          selectedIds={selectedItems}
           getColor={getPerkColor}
         />
       ),
@@ -75,14 +75,14 @@ function Perks({ powers, generalItems, items, selectPerk, getPerkColor, selected
           items={items}
           category="Survival"
           selectItem={selectPerk}
-          selectedIds={selectedPerks}
+          selectedIds={selectedItems}
           getColor={getPerkColor}
         />
       ),
     },
     {
       label: "Powers",
-      content: <Powers powers={powers} selectPower={selectPerk} selectedIds={selectedPerks} />,
+      content: <Powers powers={powers} selectPower={selectPerk} selectedIds={selectedPowers} />,
     },
   ];
 
