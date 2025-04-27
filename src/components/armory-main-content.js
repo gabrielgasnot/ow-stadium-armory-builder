@@ -7,15 +7,14 @@ function ArmoryMainContent({
   currentHero,
   heroes,
   loadHero,
-  importBuild,
   selectedPowers,
   selectedItems,
-  exportBuild,
   removePerkBuild,
   heroPowers,
   heroItems,
   basicItems,
   addPerkBuild,
+  shareBuild,
 }) {
   return (
     <Box
@@ -26,7 +25,7 @@ function ArmoryMainContent({
         overflow: "hidden",
         height: "100%",
         width: "100%",
-        paddingBottom: { xs: "80px", sm: "50px" },
+        paddingBottom: { xs: "70px", sm: "40px" },
       }}
     >
       {!currentHero && (
@@ -42,12 +41,12 @@ function ArmoryMainContent({
           loadHero={loadHero}
           selectedPowers={selectedPowers}
           selectedItems={selectedItems}
-          exportBuild={exportBuild}
           removePerkBuild={removePerkBuild}
           heroPowers={heroPowers}
           basicItems={basicItems}
           heroItems={heroItems}
           addPerkBuild={addPerkBuild}
+          shareBuild={shareBuild}
         />
       )}
     </Box>

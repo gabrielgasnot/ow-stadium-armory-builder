@@ -12,6 +12,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import BuildIcon from "@mui/icons-material/Build";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function ArmoryHeader(props) {
   const { pages } = props;
@@ -26,7 +27,10 @@ function ArmoryHeader(props) {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'secondary.main', color: 'text.secondary' }}>
+    <AppBar
+      position="static"
+      sx={{ backgroundColor: "secondary.main", color: "text.secondary" }}
+    >
       <Container maxWidth={false}>
         <Toolbar disableGutters>
           <BuildIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -84,11 +88,12 @@ function ArmoryHeader(props) {
               </Menu>
             </Box>
           )}
+          
           <Typography
             variant="h4"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="#"
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -115,6 +120,17 @@ function ArmoryHeader(props) {
               ))}
             </Box>
           )}
+          <Box sx={{ flexGrow: 0, ml: "auto" }}>
+            <IconButton
+              component="a"
+              href="https://github.com/gabrielgasnot/ow-stadium-armory-builder"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="inherit"
+            >
+              <GitHubIcon />
+            </IconButton>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>

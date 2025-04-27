@@ -3,8 +3,7 @@ import { Box, Grid, Stack, Card, CardHeader, CardContent } from "@mui/material";
 import DetailsHeader from "./details-header";
 import PerkMiniCard from "./perk-mini-card";
 
-function Details(props) {
-  const { hero, powers, items, getJson, removeElement } = props;
+function Details({ hero, powers, items, removeElement, shareBuild }) {
   const powerColumns = 4;
   const itemColumns = 3;
   const itemRows = 2;
@@ -28,7 +27,7 @@ function Details(props) {
 
   return (
     <Stack spacing={2} sx={{ flexGrow: 1, minHeight: 0, width: "100%" }}>
-      <DetailsHeader hero={hero} items={items} />
+      <DetailsHeader hero={hero} items={items} shareBuild={shareBuild} />
 
       <Card sx={{ height: "100%" }}>
         <CardHeader title="Powers" />

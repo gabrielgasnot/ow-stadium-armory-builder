@@ -7,12 +7,12 @@ function BuildMain({
   loadHero,
   selectedPowers,
   selectedItems,
-  exportBuild,
   removePerkBuild,
   heroPowers,
   basicItems,
   heroItems,
   addPerkBuild,
+  shareBuild,
 }) {
   const selectedPowerIds = [
     ...selectedPowers.map((sp) => sp.id),
@@ -46,6 +46,8 @@ function BuildMain({
             variant="text"
             tabIndex={-1}
             startIcon={<ArrowBackIcon />}
+            component="a"
+            href="/#/"
             onClick={() => loadHero(undefined)}
             sx={{
               fontWeight: 700,
@@ -60,8 +62,8 @@ function BuildMain({
           hero={currentHero}
           powers={selectedPowers}
           items={selectedItems}
-          getJson={exportBuild}
           removeElement={removePerkBuild}
+          shareBuild={shareBuild}
         />
       </Box>
       {/* Right / Perk Panel */}
