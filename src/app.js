@@ -117,9 +117,9 @@ function AppContent() {
   };
 
   const importBuild = useCallback((buildId) => {
-    if (buildId) {
-      const heroId = buildId[0];
-      if(!isNaN(heroId) && heroId !== currentHero) {
+    if (buildId && !isNaN(buildId)) {
+      const heroId = parseInt(buildId);
+      if(heroId !== currentHero) {
         const hero = heroes.find((h) => h.id === parseInt(heroId));
         if (!hero) {
           setErrorMessage("Failed to import: hero not found");
