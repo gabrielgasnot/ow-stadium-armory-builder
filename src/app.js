@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import "./app.css";
-import { Details, Perks, ArmoryHeader } from "./components";
-import BuildStarter from "./pages/build-starter";
-import { Grid, Alert, IconButton } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { ArmoryHeader, ArmoryFooter, ArmoryMainContent } from "./components";
+import {
+  Box,
+  Alert,
+  Snackbar,
+  ThemeProvider,
+  CssBaseline,
+} from "@mui/material";
 import { basicItems, heroes } from "./db/db";
-import ArmoryFooter from "./components/footer";
+import owTheme from "./theme";
 
 function App() {
   const [currentHero, setCurrentHero] = useState(undefined);
@@ -21,11 +25,13 @@ function App() {
     setErrorMessage("");
     setCurrentHero(selectedHero);
 
-    const hero = heroes.find((h) => h.id === selectedHero.id);
+    if (selectedHero) {
+      const hero = heroes.find((h) => h.id === selectedHero.id);
 
-    if (hero) {
-      setHeroPowers(hero.powers ?? []);
-      setHeroItems(hero.items ?? []);
+      if (hero) {
+        setHeroPowers(hero.powers ?? []);
+        setHeroItems(hero.items ?? []);
+      }
     }
   };
 
@@ -113,55 +119,55 @@ function App() {
   };
 
   return (
-    <Grid container spacing={2} style={{ height: '100vh', bottom: '80px' }}>
-      {errorMessage && (
-        <Alert
-          variant="outlined"
-          severity="error"
-          action={
-            <IconButton aria-label="close" onClick={() => setErrorMessage("")}>
-              <CloseIcon />
-            </IconButton>
-          }
+    <ThemeProvider theme={owTheme}>
+      <CssBaseline />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          height: "100vh",
+          width: "100vw",
+          overflowY: "auto"
+        }}
+      >
+        <Snackbar
+          open={errorMessage}
+          autoHideDuration={6000}
           onClose={() => setErrorMessage("")}
         >
-          {errorMessage}
-        </Alert>
-      )}
-      <Grid size={12}>
+          <Alert
+            onClose={() => setErrorMessage("")}
+            severity="error"
+            variant="filled"
+            sx={{ width: "100%" }}
+          >
+            {errorMessage}
+          </Alert>
+        </Snackbar>
+
+        {/* Header (app bar) */}
         <ArmoryHeader pages={[]} />
-      </Grid>
-      <Grid size={12} textAlign={"center"}>
-        <BuildStarter
+
+        {/* Main Content Area */}
+        <ArmoryMainContent
+          currentHero={currentHero}
           heroes={heroes}
           loadHero={loadHero}
-          currentHero={currentHero?.name}
           importBuild={importBuild}
+          exportBuild={exportBuild}
+          removePerkBuild={removePerkBuild}
+          addPerkBuild={addPerkBuild}
+          selectedItems={selectedItems}
+          selectedPowers={selectedPowers}
+          heroPowers={heroPowers}
+          heroItems={heroItems}
+          basicItems={basicItems}
         />
-      </Grid>
-      {currentHero && (
-        <Grid container size={12} spacing={2}>
-          <Grid item xs={12} sm={4}>
-            <Details
-              hero={currentHero}
-              powers={selectedPowers}
-              items={selectedItems}
-              getJson={exportBuild}
-              removeElement={removePerkBuild}
-            />
-          </Grid>
-          <Grid item xs={12} sm={8}>
-            <Perks
-              powers={heroPowers}
-              generalItems={basicItems}
-              items={heroItems}
-              selectPerk={addPerkBuild}
-            />
-          </Grid>
-        </Grid>
-      )}
-      <ArmoryFooter />
-    </Grid>
+
+        {/* Footer */}
+        <ArmoryFooter />
+      </Box>
+    </ThemeProvider>
   );
 }
 

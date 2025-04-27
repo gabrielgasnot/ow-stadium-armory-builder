@@ -307,7 +307,7 @@ const basicItems = {
     {
       id: "00S014",
       position: 4,
-      name: "Vishkar Converter",
+      name: "Vishkar Condensor",
       description: "+25 Shields, convert 100 Health into Shields",
       price: 4000,
       category: "Survival",
@@ -1628,7 +1628,7 @@ const heroes = [
         {
           position: 2,
           id: "19A006",
-          name: "Macro Missiles",
+          name: "Macro Missile",
           description: "[Micro Missiles] deal 25% increased damage and have significantly increased knockback",
           price: 12000,
           category: "Ability"

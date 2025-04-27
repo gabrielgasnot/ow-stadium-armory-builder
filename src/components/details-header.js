@@ -19,7 +19,7 @@ function DetailsHeader(props) {
         sx={{
           width: 100,
           height: 100,
-          backgroundColor: "#ccc",
+          backgroundColor: 'background.paper',
           borderRadius: 1,
           backgroundImage: `url(${process.env.PUBLIC_URL}/heroes/${hero.id}.png)`,
           backgroundSize: "cover",
@@ -65,7 +65,6 @@ function DetailsHeader(props) {
             display: "flex",
             flexDirection: { xs: "column", md: "row" }, // Stack on mobile, row on desktop
             alignItems: { xs: "flex-start", md: "center" }, // Align left on mobile, center on desktop
-            fontFamily: "BigNoodleTitling",
             fontWeight: 400,
             letterSpacing: ".2rem",
             color: "text.secondary",

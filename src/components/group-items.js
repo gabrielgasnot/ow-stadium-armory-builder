@@ -20,32 +20,35 @@ function GroupItems(props) {
     ...items?.epic.filter((item) => item.category === category),
   ];
 
+  const getItemsByGrade = (grade) => {
+    switch (grade) {
+      case "normal":
+        return normalItems;
+      case "rare":
+        return rareItems;
+      case "epic":
+        return epicItems;
+      default:
+        return [];
+    }
+  };
+
   return (
-    <Grid container size={12} spacing={2}>
-      <Grid size={4}>
-        <Items
-          items={normalItems}
-          grade="normal"
-          selectItem={selectItem}
-          getColor={getColor}
-        />
-      </Grid>
-      <Grid size={4}>
-        <Items
-          items={rareItems}
-          grade="rare"
-          selectItem={selectItem}
-          getColor={getColor}
-        />
-      </Grid>
-      <Grid size={4}>
-        <Items
-          items={epicItems}
-          grade="epic"
-          selectItem={selectItem}
-          getColor={getColor}
-        />
-      </Grid>
+    <Grid
+      container
+      spacing={2}
+      sx={{ flexGrow: 1, minHeight: 0, width: "100%", height: "100%" }}
+    >
+      {["normal", "rare", "epic"].map((grade) => (
+        <Grid item key={grade} size={{ xs: 12, md: 4 }}>
+          <Items
+            items={getItemsByGrade(grade)}
+            grade={grade}
+            selectItem={selectItem}
+            getColor={getColor}
+          />
+        </Grid>
+      ))}
     </Grid>
   );
 }
