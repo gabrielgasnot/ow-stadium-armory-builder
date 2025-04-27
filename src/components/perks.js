@@ -11,7 +11,7 @@ function TabPanel(props) {
   }
 
   return (
-<Box
+    <Box
       role="tabpanel"
       id={`full-width-tabpanel-${index}`}
       aria-labelledby={`full-width-tab-${index}`}
@@ -28,7 +28,15 @@ function TabPanel(props) {
   );
 }
 
-function Perks({ powers, generalItems, items, selectPerk, getPerkColor, selectedItems, selectedPowers }) {
+function Perks({
+  powers,
+  generalItems,
+  items,
+  selectPerk,
+  getPerkColor,
+  selectedItems,
+  selectedPowers,
+}) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (_, newValue) => {
@@ -82,7 +90,13 @@ function Perks({ powers, generalItems, items, selectPerk, getPerkColor, selected
     },
     {
       label: "Powers",
-      content: <Powers powers={powers} selectPower={selectPerk} selectedIds={selectedPowers} />,
+      content: (
+        <Powers
+          powers={powers}
+          selectPower={selectPerk}
+          selectedIds={selectedPowers}
+        />
+      ),
     },
   ];
 
@@ -103,7 +117,16 @@ function Perks({ powers, generalItems, items, selectPerk, getPerkColor, selected
         scrollButtons="auto"
       >
         {tabConfig.map((tab, index) => (
-          <Tab key={index} label={tab.label} />
+          <Tab
+            key={index}
+            label={tab.label}
+            sx={{
+              minWidth: { xs: 100, sm: 120 }, // wider touch targets on small devices
+              fontSize: { xs: "0.9rem", sm: "1.2rem" },
+              paddingX: { xs: 2, sm: 3 },
+              paddingY: { xs: 1, sm: 1.5 },
+            }}
+          />
         ))}
       </Tabs>
 

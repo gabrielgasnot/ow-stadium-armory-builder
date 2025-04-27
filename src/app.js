@@ -131,7 +131,7 @@ function AppContent() {
             }
           }
         }
-      } 
+      }
     },
     [currentHero]
   );
@@ -142,7 +142,11 @@ function AppContent() {
       selectedPowers,
       selectedItems
     );
-    const newShareLink = `${window.location.origin}/#/${encodedBuild}`;
+    let baseUrl = window.location.origin + window.location.pathname;
+    if (!baseUrl.endsWith("/")) {
+      baseUrl += "/";
+    }
+    const newShareLink = `${baseUrl}#/${encodedBuild}`;
     setShareLink(newShareLink);
   };
 
