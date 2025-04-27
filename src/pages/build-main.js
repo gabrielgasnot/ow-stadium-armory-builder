@@ -14,8 +14,10 @@ function BuildMain({
   heroItems,
   addPerkBuild,
 }) {
-  const selectedPerkIds = [
+  const selectedPowerIds = [
     ...selectedPowers.map((sp) => sp.id),
+  ];
+  const selectedItemsIds = [
     ...selectedItems.map((si) => si.id),
   ];
   return (
@@ -77,7 +79,8 @@ function BuildMain({
           powers={heroPowers}
           generalItems={basicItems}
           items={heroItems}
-          selectedPerks={selectedPerkIds}
+          selectedPowers={selectedPowerIds}
+          selectedItems={selectedItemsIds}
           selectPerk={addPerkBuild}
         />
       </Box>

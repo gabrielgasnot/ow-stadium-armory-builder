@@ -47,6 +47,7 @@ function GroupItems(props) {
             selectItem={selectItem}
             selectedIds={selectedIds}
             getColor={getColor}
+            isDisabled={selectedIds.length >= 6}
           />
         </Grid>
       ))}
