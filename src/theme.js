@@ -22,7 +22,7 @@ const owTheme = createTheme({
     text: {
       primary: colors.black, // Set the default text color here
       secondary: colors.grey, // You can also customize secondary text color
-    },
+    }
   },
   typography: {
     fontFamily: "'BigNoodleTitling', sans-serif", // Add your custom font here

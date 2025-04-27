@@ -8,13 +8,16 @@ import {
 } from "@mui/material";
 import { getPerkColor } from "../services/color";
 
-function PerkCard({ perk, perkType, perkGrade, selectPerk }) {
+function PerkCard({ perk, perkType, perkGrade, selectPerk, isSelected }) {
   return (
     <Card
       sx={{
-        width: { xs: '100%', sm: 400 },
+        width: { xs: "100%", sm: 400 },
         mx: "auto",
-        transition: "box-shadow 0.3s ease",
+        border: "2px solid",
+        borderColor: isSelected ? "#f99e1a" : "transparent",
+        boxShadow: isSelected ? "0 0 10px 5px rgba(249, 158, 26, 0.7)" : "none",
+        transition: "border-color 0.3s ease",
         "&:hover": {
           boxShadow: "0 4px 20px rgba(20, 96, 158, 0.69)",
         },

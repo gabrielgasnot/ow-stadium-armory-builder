@@ -15,15 +15,12 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
         justifyContent: "center",
         cursor: "pointer",
       }}
-      onClick={perk ? () => null : unselectPerk}
+      onClick={perk ? () => unselectPerk(perk) : () => null}
     >
       {perk && (
         <CardMedia
           component="img"
-          image={`${process.env.PUBLIC_URL}/perks/${perk.name.replace(
-            "'",
-            "_"
-          )}.png`}
+          image={`${process.env.PUBLIC_URL}/perks/${perk.id}.png`}
           title={perk.name}
           alt={perk.name}
           sx={{

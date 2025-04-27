@@ -3,7 +3,7 @@ import { Grid } from "@mui/material";
 import Items from "./items";
 
 function GroupItems(props) {
-  const { basicItems, items, category, selectItem, getColor } = props;
+  const { basicItems, items, category, selectItem, getColor, selectedIds } = props;
 
   const normalItems = [
     ...basicItems?.normal.filter((item) => item.category === category),
@@ -45,6 +45,7 @@ function GroupItems(props) {
             items={getItemsByGrade(grade)}
             grade={grade}
             selectItem={selectItem}
+            selectedIds={selectedIds}
             getColor={getColor}
           />
         </Grid>
