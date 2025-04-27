@@ -1,7 +1,7 @@
 import { Box, Button } from "@mui/material";
 import { Details, Perks } from "../components";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-
+import { Link as RouterLink } from "react-router-dom";
 function BuildMain({
   currentHero,
   loadHero,
@@ -14,12 +14,8 @@ function BuildMain({
   addPerkBuild,
   shareBuild,
 }) {
-  const selectedPowerIds = [
-    ...selectedPowers.map((sp) => sp.id),
-  ];
-  const selectedItemsIds = [
-    ...selectedItems.map((si) => si.id),
-  ];
+  const selectedPowerIds = [...selectedPowers.map((sp) => sp.id)];
+  const selectedItemsIds = [...selectedItems.map((si) => si.id)];
   return (
     <Box
       sx={{
@@ -46,8 +42,8 @@ function BuildMain({
             variant="text"
             tabIndex={-1}
             startIcon={<ArrowBackIcon />}
-            component="a"
-            href="/#/"
+            component={RouterLink}
+            to="/"
             onClick={() => loadHero(undefined)}
             sx={{
               fontWeight: 700,

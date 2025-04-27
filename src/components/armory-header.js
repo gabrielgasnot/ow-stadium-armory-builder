@@ -38,7 +38,7 @@ function ArmoryHeader(props) {
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href={`${window.location.origin}${window.location.pathname.split('#')[0]}`}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -93,7 +93,7 @@ function ArmoryHeader(props) {
             variant="h4"
             noWrap
             component="a"
-            href="#"
+            href={`${window.location.origin}${window.location.pathname.split('#')[0]}`}
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
