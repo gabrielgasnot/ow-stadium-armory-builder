@@ -21,7 +21,7 @@ function GroupItems(props) {
   ];
 
   return (
-    <Grid container size={12} spacing={2}>
+    <Grid container size={12} spacing={2} height="100%">
       <Grid size={4}>
         <Items
           items={normalItems}

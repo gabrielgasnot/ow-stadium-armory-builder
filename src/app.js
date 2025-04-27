@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import "./app.css";
-import { Details, Perks, ArmoryHeader } from "./components";
-import BuildStarter from "./pages/build-starter";
-import { Button, Box, Grid, Alert, IconButton } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
+import { ArmoryHeader, ArmoryFooter, ArmoryMainContent } from "./components";
+import {
+  Box,
+  Alert,
+  Snackbar,
+  ThemeProvider,
+  CssBaseline,
+} from "@mui/material";
 import { basicItems, heroes } from "./db/db";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArmoryFooter from "./components/footer";
+import owTheme from "./theme";
 
 function App() {
   const [currentHero, setCurrentHero] = useState(undefined);
@@ -116,115 +119,55 @@ function App() {
   };
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: "column",
-        height: "100vh",
-        overflow: "hidden",
-      }}
-    >
-      {errorMessage && (
-        <Alert
-          variant="outlined"
-          severity="error"
-          action={
-            <IconButton aria-label="close" onClick={() => setErrorMessage("")}>
-              <CloseIcon />
-            </IconButton>
-          }
+    <ThemeProvider theme={owTheme}>
+      <CssBaseline />
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          height: "100vh",
+          width: "100vw",
+          overflowY: "auto"
+        }}
+      >
+        <Snackbar
+          open={errorMessage}
+          autoHideDuration={6000}
           onClose={() => setErrorMessage("")}
         >
-          {errorMessage}
-        </Alert>
-      )}
-      {/* Header (app bar) */}
-      <ArmoryHeader pages={[]} />
-
-      {/* Main Content Area */}
-      <Box sx={{ display: "flex", flex: 1, overflow: "hidden" }}>
-        {!currentHero && (
-          <Grid size={12} textAlign={"center"}>
-            <BuildStarter
-              heroes={heroes}
-              loadHero={loadHero}
-              currentHero={currentHero?.name}
-              importBuild={importBuild}
-            />
-          </Grid>
-        )}
-        {currentHero && (
-          <Box
-            sx={{
-              display: "flex",flex: 1, 
-              flexDirection: { xs: "column", lg: "row" },
-              overflow: "hidden",
-            }}
+          <Alert
+            onClose={() => setErrorMessage("")}
+            severity="error"
+            variant="filled"
+            sx={{ width: "100%" }}
           >
-            <Box
-              sx={{
-                minWidth: { xs: "100vw", lg: "20vw" },
-                flexShrink: 0,
-                bgcolor: "#f5f5f5",
-                p: 2,
-                boxSizing: "border-box",
-                overflow: "auto",
-              }}
-            >
-              <Box>
-                <Button
-                  role={undefined}
-                  variant="text"
-                  tabIndex={-1}
-                  startIcon={<ArrowBackIcon />}
-                  onClick={() => loadHero(undefined)}
-                  sx={{
-                    fontFamily: "BigNoodleTitling",
-                    fontWeight: 700,
-                    fontSize: "1em",
-                    textDecoration: "none",
-                  }}
-                >
-                  Return to heroes
-                </Button>
-              </Box>
-              <Details
-                hero={currentHero}
-                powers={selectedPowers}
-                items={selectedItems}
-                getJson={exportBuild}
-                removeElement={removePerkBuild}
-              />
-            </Box>
-            <Box
-              sx={{
-                flexGrow: 1,
-                p: 2,
-                overflow: "auto",
-              }}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: 2,
-                }}
-              >
-                <Perks
-                  powers={heroPowers}
-                  generalItems={basicItems}
-                  items={heroItems}
-                  selectPerk={addPerkBuild}
-                />
-              </Box>
-            </Box>
-          </Box>
-        )}
-      </Box>
+            {errorMessage}
+          </Alert>
+        </Snackbar>
 
-      {/* Footer */}
-      <ArmoryFooter />
-    </Box>
+        {/* Header (app bar) */}
+        <ArmoryHeader pages={[]} />
+
+        {/* Main Content Area */}
+        <ArmoryMainContent
+          currentHero={currentHero}
+          heroes={heroes}
+          loadHero={loadHero}
+          importBuild={importBuild}
+          exportBuild={exportBuild}
+          removePerkBuild={removePerkBuild}
+          addPerkBuild={addPerkBuild}
+          selectedItems={selectedItems}
+          selectedPowers={selectedPowers}
+          heroPowers={heroPowers}
+          heroItems={heroItems}
+          basicItems={basicItems}
+        />
+
+        {/* Footer */}
+        <ArmoryFooter />
+      </Box>
+    </ThemeProvider>
   );
 }
 

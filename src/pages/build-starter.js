@@ -1,11 +1,11 @@
-import { Grid, Typography } from "@mui/material";
-import { Heroes, LoadBuild } from "../components";
+import { Box, Typography } from "@mui/material";
+import { Heroes } from "../components";
 
 function BuildStarter(props) {
-  const { heroes, loadHero, currentHero, importBuild } = props;
+  const { heroes, loadHero, currentHero } = props;
 
   return (
-    <Grid size={12} textAlign={"center"}>
+    <Box sx={{ width: '100%', textAlign: "center",  overflowY: 'auto', paddingBottom: "10px" }}>
       <Typography variant="h5" component="h2" gutterBottom>
         Select a hero to start your build
       </Typography>
@@ -14,11 +14,7 @@ function BuildStarter(props) {
         loadHero={loadHero}
         currentHero={currentHero?.id}
       ></Heroes>
-      <Typography variant="h6" component="h2" gutterBottom>
-        or click below to load a build that you've already created
-      </Typography>
-      <LoadBuild importBuild={importBuild} />
-    </Grid>
+    </Box>
   );
 }
 

@@ -26,7 +26,7 @@ function ArmoryHeader(props) {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: 'secondary.main', color: 'text.secondary' }}>
       <Container maxWidth={false}>
         <Toolbar disableGutters>
           <BuildIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
@@ -34,11 +34,10 @@ function ArmoryHeader(props) {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            href="/"
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "BigNoodleTitling",
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
@@ -86,7 +85,7 @@ function ArmoryHeader(props) {
             </Box>
           )}
           <Typography
-            variant="h5"
+            variant="h4"
             noWrap
             component="a"
             href="#app-bar-with-responsive-menu"

@@ -32,43 +32,56 @@ function Perks(props) {
   }
 
   return (
-    <Box>
+    <Box
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        height: "100%", // Ensure Perks fills the available height
+      }}
+    >
       <Tabs value={value} onChange={handleChange}>
         <Tab label="Weapon" />
         <Tab label="Ability" />
         <Tab label="Survival" />
         <Tab label="Powers" />
       </Tabs>
-      <TabPanel value={value} index={0}>
-        <GroupItems
-          basicItems={generalItems}
-          items={items}
-          category="Weapon"
-          selectItem={selectPerk}
-          getColor={getPerkColor}
-        />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <GroupItems
-          basicItems={generalItems}
-          items={items ?? []}
-          category="Ability"
-          selectItem={selectPerk}
-          getColor={getPerkColor}
-        />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        <GroupItems
-          basicItems={generalItems}
-          items={items ?? []}
-          category="Survival"
-          selectItem={selectPerk}
-          getColor={getPerkColor}
-        />
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        <Powers powers={powers} selectPower={selectPerk} />
-      </TabPanel>
+      <Box
+        sx={{
+          flexGrow: 1,
+          overflowY: { xs: "visible", lg: "auto" },
+        }}
+      >
+        <TabPanel value={value} index={0}>
+          <GroupItems
+            basicItems={generalItems}
+            items={items}
+            category="Weapon"
+            selectItem={selectPerk}
+            getColor={getPerkColor}
+          />
+        </TabPanel>
+        <TabPanel value={value} index={1}>
+          <GroupItems
+            basicItems={generalItems}
+            items={items ?? []}
+            category="Ability"
+            selectItem={selectPerk}
+            getColor={getPerkColor}
+          />
+        </TabPanel>
+        <TabPanel value={value} index={2}>
+          <GroupItems
+            basicItems={generalItems}
+            items={items ?? []}
+            category="Survival"
+            selectItem={selectPerk}
+            getColor={getPerkColor}
+          />
+        </TabPanel>
+        <TabPanel value={value} index={3}>
+          <Powers powers={powers} selectPower={selectPerk} />
+        </TabPanel>
+      </Box>
     </Box>
   );
 }
