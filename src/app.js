@@ -37,7 +37,7 @@ function App() {
 
   const addPower = (power) => {
     if (
-      selectedPowers.find((selectedPower) => selectedPower.name === power.name)
+      selectedPowers.find((selectedPower) => selectedPower.id === power.id)
     ) {
       return;
     }
@@ -51,7 +51,7 @@ function App() {
   };
 
   const addItem = (item) => {
-    if (selectedItems.find((selectedItem) => selectedItem.name === item.name)) {
+    if (selectedItems.find((selectedItem) => selectedItem.id === item.id)) {
       return;
     }
 
@@ -64,13 +64,15 @@ function App() {
   };
 
   const removePerkBuild = (perkType, perk) => {
+    console.log('Removing ', perk);
+    
     if (perkType === "power") {
       setSelectedPowers(
-        selectedPowers.filter((power) => power.name !== perk.name)
+        selectedPowers.filter((power) => power.id !== perk.id)
       );
     }
     if (perkType === "item") {
-      setSelectedItems(selectedItems.filter((item) => item.name !== perk.name));
+      setSelectedItems(selectedItems.filter((item) => item.id !== perk.id));
     }
   };
 

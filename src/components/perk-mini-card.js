@@ -15,7 +15,7 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
         justifyContent: "center",
         cursor: "pointer",
       }}
-      onClick={perk ? () => null : unselectPerk}
+      onClick={perk ? () => unselectPerk(perk) : () => null}
     >
       {perk && (
         <CardMedia
