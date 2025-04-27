@@ -1,9 +1,8 @@
 import React from "react";
-import { Typography, Box, Paper } from "@mui/material";
+import { Button, Typography, Box, Paper } from "@mui/material";
+import ShareIcon from "@mui/icons-material/Share";
 
-function DetailsHeader(props) {
-  const { hero, items } = props;
-
+function DetailsHeader({ hero, items, shareBuild }) {
   return (
     <Paper
       elevation={3}
@@ -19,7 +18,7 @@ function DetailsHeader(props) {
         sx={{
           width: 100,
           height: 100,
-          backgroundColor: 'background.paper',
+          backgroundColor: "background.paper",
           borderRadius: 1,
           backgroundImage: `url(${process.env.PUBLIC_URL}/heroes/${hero.id}.png)`,
           backgroundSize: "cover",
@@ -78,6 +77,19 @@ function DetailsHeader(props) {
           Build cost:{" "}
           {items.map((item) => item.price).reduce((a, b) => a + b, 0)} credits
         </Typography>
+
+        {/* Share button */}
+        <Box sx={{ mt: 2 }}>
+          <Button
+            variant="contained"
+            color="primary"
+            onClick={() => shareBuild()}
+            fullWidth
+            startIcon={<ShareIcon />}
+          >
+            Share Build
+          </Button>
+        </Box>
       </Box>
     </Paper>
   );

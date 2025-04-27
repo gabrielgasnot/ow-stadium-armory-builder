@@ -10,7 +10,11 @@ import {
 } from "@mui/material";
 import { basicItems, heroes } from "./db/db";
 import owTheme from "./theme";
-import { HashRouter, useLocation, useNavigate } from 'react-router-dom';
+import { HashRouter, useLocation } from "react-router-dom";
+import exportBuild from "./services/export-build";
+import ShareBuildModal from "./components/share-build";
+import importBuild from "./services/import-build";
+import getAllItemsByHero from "./services/query-items";
 
 function App() {
   return (
@@ -27,29 +31,30 @@ function AppContent() {
   const [selectedPowers, setSelectedPowers] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
   const [errorMessage, setErrorMessage] = useState("");
+  const [shareLink, setShareLink] = useState("");
 
   const location = useLocation();
-  const navigate = useNavigate();
   const rawPath = location.pathname;
-  const encodedString = rawPath.startsWith('/') ? rawPath.slice(1) : rawPath;
+  const encodedString = rawPath.startsWith("/") ? rawPath.slice(1) : rawPath;
 
   const loadHero = (selectedHero) => {
     setSelectedPowers([]);
     setSelectedItems([]);
     setErrorMessage("");
+    setCurrentHero(selectedHero);
 
     if (selectedHero) {
       const hero = heroes.find((h) => h.id === selectedHero.id);
-      navigate(`/${hero?.id}`);
-    } else {
-      navigate('');
+
+      if (hero) {
+        setHeroPowers(hero.powers ?? []);
+        setHeroItems(hero.items ?? []);
+      }
     }
   };
 
   const addPower = (power) => {
-    if (
-      selectedPowers.find((selectedPower) => selectedPower.id === power.id)
-    ) {
+    if (selectedPowers.find((selectedPower) => selectedPower.id === power.id)) {
       return;
     }
 
@@ -76,9 +81,7 @@ function AppContent() {
 
   const removePerkBuild = (perkType, perk) => {
     if (perkType === "power") {
-      setSelectedPowers(
-        selectedPowers.filter((power) => power.id !== perk.id)
-      );
+      setSelectedPowers(selectedPowers.filter((power) => power.id !== perk.id));
     }
     if (perkType === "item") {
       setSelectedItems(selectedItems.filter((item) => item.id !== perk.id));
@@ -94,31 +97,58 @@ function AppContent() {
     }
   };
 
-  const navigation = useCallback((buildId) => {
-    if (buildId && !isNaN(buildId)) {
-      const heroId = parseInt(buildId);
-      if(heroId !== currentHero) {
-        const hero = heroes.find((h) => h.id === parseInt(heroId));
-        if (!hero) {
-          setErrorMessage("Failed to import: hero not found");
-          return;
-        }
-        else {
-          setCurrentHero(hero);
-          setHeroItems(hero.items);
-          setHeroPowers(hero.powers);
-        }
-      }
-    } else {
-      setCurrentHero(undefined);
-    }
-  }, [currentHero]);
+  const navigation = useCallback(
+    (buildId) => {
+      if (buildId) {
+        const result = importBuild(buildId);
 
+        if (result) {
+          const heroId = parseInt(result.heroId);
+          if (heroId !== currentHero) {
+            const hero = heroes.find((h) => h.id === parseInt(heroId));
+            if (!hero) {
+              setErrorMessage("Failed to import: hero not found");
+              return;
+            } else {
+              console.log("Navigation data: ", result);
+              setCurrentHero(hero);
+              setHeroItems(hero.items);
+              setHeroPowers(hero.powers);
 
-  useEffect(() => {    
+              if (result.selectedPerks.length > 0) {
+                const itemDb = getAllItemsByHero(hero);
+                setSelectedItems(
+                  itemDb.filter((item) =>
+                    result.selectedPerks.includes(item.id)
+                  )
+                );
+                setSelectedPowers(
+                  hero.powers.filter((power) =>
+                    result.selectedPerks.includes(power.id)
+                  )
+                );
+              }
+            }
+          }
+        }
+      } 
+    },
+    [currentHero]
+  );
+
+  const shareBuild = () => {
+    const encodedBuild = exportBuild(
+      currentHero,
+      selectedPowers,
+      selectedItems
+    );
+    const newShareLink = `${window.location.origin}/#/${encodedBuild}`;
+    setShareLink(newShareLink);
+  };
+
+  useEffect(() => {
     navigation(encodedString);
   }, [encodedString, navigation]);
-
 
   return (
     <ThemeProvider theme={owTheme}>
@@ -129,7 +159,7 @@ function AppContent() {
           flexDirection: "column",
           height: "100vh",
           width: "100vw",
-          overflowY: "auto"
+          overflowY: "auto",
         }}
       >
         <Snackbar
@@ -147,6 +177,11 @@ function AppContent() {
           </Alert>
         </Snackbar>
 
+        <ShareBuildModal
+          generatedLink={shareLink}
+          close={() => setShareLink("")}
+        />
+
         {/* Header (app bar) */}
         <ArmoryHeader pages={[]} />
 
@@ -162,6 +197,7 @@ function AppContent() {
           heroPowers={heroPowers}
           heroItems={heroItems}
           basicItems={basicItems}
+          shareBuild={shareBuild}
         />
 
         {/* Footer */}
