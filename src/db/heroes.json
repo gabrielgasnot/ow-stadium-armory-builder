@@ -4474,33 +4474,66 @@
           "position": 1,
           "id": "16A001",
           "name": "#1 Single",
-          "description": "+10% Ability Power, When allies leave your [Crossfade] area, the effect lingers for 2s",
+          "description": "When allies leave your [Crossfade] area, the effect lingers for 2s",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "16A002",
           "name": "Lofly Beats",
-          "description": "+5% Weapon Power, +5% Ability Power, While in [Speed Boost], [Soundwave] also knocks you back",
+          "description": "While in [Speed Boost], [Soundwave] also knocks you back",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 5,
+              "valueType": "%"
+            },
+            {
+              "type": "AP",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 3,
           "id": "16A003",
           "name": "Nano Boop",
-          "description": "+5% Cooldown Reduction, Environmental kills grant [Nano Boost] for 5s",
+          "description": "Environmental kills grant [Nano Boost] for 5s",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "CR",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "16S001",
           "name": "Speed Skates",
-          "description": "+25 Health, After [Wallriding], gain 30% Move Speed for 2s",
+          "description": "After [Wallriding], gain 30% Move Speed for 2s",
           "price": 3750,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ],
       "epic": [
@@ -4508,41 +4541,91 @@
           "position": 1,
           "id": "16W001",
           "name": "B-Side Bop",
-          "description": "+25 Health, +25% Melee Damage, After using [Soundwave], your next [Quick Melee] grants decaying Overhealth equal to 200% of damage dealt",
+          "description": "After using [Soundwave], your next [Quick Melee] grants decaying Overhealth equal to 200% of damage dealt",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "MD",
+              "value": 25,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "16W002",
           "name": "Riff Repeater",
-          "description": "+15% Weapon Power, [Sonic Amplifier] projectiles ricochet off walls 3 times",
+          "description": "[Sonic Amplifier] projectiles ricochet off walls 3 times",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "16A004",
           "name": "Airwaves",
-          "description": "+25 Health, +15% Ability Power, [Sound Barrier] effectiveness is increased by 25% for every 1s [Sound Barrier] is channeled, up to 50%",
+          "description": "[Sound Barrier] effectiveness is increased by 25% for every 1s [Sound Barrier] is channeled, up to 50%",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "16A005",
           "name": "All-Out Auditiva",
-          "description": "+20% Ability Power, +33% [Amp It Up] Duration",
+          "description": "",
           "price": 11000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 20,
+              "valueType": "%"
+            },
+            {
+              "type": "[Amp It Up] Duration",
+              "value": 33,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "16S002",
           "name": "Hip Hop",
-          "description": "+25 Health, After [Wallriding], gain an additonal jump while airborne",
+          "description": "After [Wallriding], gain an additonal jump while airborne",
           "price": 9000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ]
     }
