@@ -938,7 +938,19 @@
           "name": "Long Distance Wings",
           "description": "+10% Ability Power, +33% [Guardian Angel] Range",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "[Guardian Angel] Range",
+              "value": 33,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
@@ -946,15 +958,29 @@
           "name": "Aerodynamic Feathers",
           "description": "+25 Health, while affected by [Angelic Descent], continuously gain 10% Move Speed every 1s up to 60%",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 2,
           "id": "6S002",
-          "name": "Angeleisure Wear",
+          "name": "Angeleisure Wear"  ,
           "description": "+25 Health, while affected by [Angelic Descent] or [Guardian Angel], heal 3% of your Life every 1s",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ],
       "epic": [
@@ -964,7 +990,14 @@
           "name": "Angelic Acrobatics",
           "description": "+15% Guardian Angel Move Speed, [Guardian Angel]'s cooldown starts as soon as you jump or crouch",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+            "attributes": [
+                {
+                "type": "[Guardian Angel] Move Speed",
+                "value": 15,
+                "valueType": "%"
+                }
+            ]
         },
         {
           "position": 1,
@@ -972,7 +1005,14 @@
           "name": "Blessed Boosters",
           "description": "+50 Health, Your launch velocity is increased by 25% when canceling [Guardian Angel] with crouch or jump",
           "price": 9000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 50,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 2,
@@ -980,7 +1020,24 @@
           "name": "Chain Evoker",
           "description": "+50 Armor, +5% [Caduceus Staff] damage boost, +15% Ultimate Charge gained from damage boost",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "Armor",
+              "value": 50,
+              "valueType": ""
+            },
+            {
+              "type": "[Caduceus Staff] Damage Boost",
+              "value": 5,
+              "valueType": "%"
+            },
+            {
+              "type": "Ultimate Charge Gained from Damage Boost",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
@@ -988,7 +1045,19 @@
           "name": "Celestial Clip",
           "description": "+10% Weapon Power, +33% Max Ammo, [Caduceus Blaster] has a 10% chance to fire an extra shot that doesn't consume additional ammo",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "MA",
+              "value": 33,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
@@ -996,7 +1065,19 @@
           "name": "Caduceus EX",
           "description": "+10% Weapon Power, +33% [Caduceus Staff] Range",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "[Caduceus Staff] Range",
+              "value": 33,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
@@ -1004,7 +1085,19 @@
           "name": "Resurrection Rangefinder",
           "description": "+10% Cooldown Reduction, +75% [Resurrection] Range",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "CR",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "[Resurrection] Range",
+              "value": 75,
+              "valueType": "%"
+            }
+          ]
         }
       ]
     }
