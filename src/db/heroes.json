@@ -1192,14 +1192,33 @@
           "name": "Bio-Needles",
           "description": "+10% Attack Speed, [Biotic Grasp]'s secondary fire restores 50% more [Biotic Energy]",
           "price": 4000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "id": "26W002",
           "name": "High Capacity Tubing",
           "description": "+10% Weapon Power, +50 Max [Biotic Energy]",
           "price": 4000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+              {
+              "type": "WP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "Max [Biotic Energy]",
+              "value": 50,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 1,
@@ -1207,23 +1226,44 @@
           "name": "Smart Orbs",
           "description": "+5% Ability Power, [Biotic Orb] moves 50% slower while it is healing or dealing damage",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "26A002",
           "name": "Levitation Shawl",
-          "description": "+10% Ability Power, During [Coalescence] gains free flight",
+          "description": "During [Coalescence] gains free flight",
           "price": 4500,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "26S001",
           "name": "Abyss Boots",
-          "description": "+25 Health, while using [Fade], you jump 30% higher",
+          "description": "While using [Fade], you jump 30% higher.",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ],
       "epic": [
@@ -1233,7 +1273,19 @@
           "name": "Subatomic Splitter",
           "description": "+10% Weapon Power, +15% [Biotic Grasp] Secondary Fire Range",
           "price": 11000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "[Biotic Grasp] Secondary Fire Range",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
@@ -1241,23 +1293,59 @@
           "name": "Extendrils",
           "description": "+15% Ability Power, +30% [Biotic Orb] Tendril Range",
           "price": 11000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            },
+            {
+              "type": "[Biotic Orb] Tendril Range",
+              "value": 30,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "26W004",
           "name": "Alternative Energy",
-          "description": "+10% Ability Power, +15% Attack Speed, when you use [Fade], refill your [Biotic Energy]",
+          "description": "When you use [Fade], refill your [Biotic Energy]",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "AS",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "26A004",
           "name": "Coalegion",
-          "description": "+25 Health, +15% Ability Power, allies healed by [Coalescence] deal 15% increased damage",
+          "description": "Allies healed by [Coalescence] deal 15% increased damage",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         }
       ]
     }
