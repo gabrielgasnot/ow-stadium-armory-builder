@@ -2,21 +2,12 @@ import { Box, Button } from "@mui/material";
 import { Details, Perks } from "../components";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Link as RouterLink } from "react-router-dom";
-function BuildMain({
-  currentHero,
-  loadHero,
-  selectedPowers,
-  selectedItems,
-  removePerkBuild,
-  heroPowers,
-  basicItems,
-  heroItems,
-  addPerkBuild,
-  shareBuild,
-  showMessage
-}) {
-  const selectedPowerIds = [...selectedPowers.map((sp) => sp.id)];
-  const selectedItemsIds = [...selectedItems.map((si) => si.id)];
+import { useContext } from "react";
+import AppContext from "../app-context.js";
+
+function BuildMain() {
+  const { loadHero } = useContext(AppContext);
+
   return (
     <Box
       sx={{
@@ -55,14 +46,7 @@ function BuildMain({
             Return to heroes
           </Button>
         </Box>
-        <Details
-          hero={currentHero}
-          powers={selectedPowers}
-          items={selectedItems}
-          removeElement={removePerkBuild}
-          shareBuild={shareBuild}
-          showMessage={showMessage}
-        />
+        <Details />
       </Box>
       {/* Right / Perk Panel */}
       <Box
@@ -75,14 +59,7 @@ function BuildMain({
           minHeight: 0,
         }}
       >
-        <Perks
-          powers={heroPowers}
-          generalItems={basicItems}
-          items={heroItems}
-          selectedPowers={selectedPowerIds}
-          selectedItems={selectedItemsIds}
-          selectPerk={addPerkBuild}
-        />
+        <Perks />
       </Box>
     </Box>
   );

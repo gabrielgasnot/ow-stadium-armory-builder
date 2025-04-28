@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useContext, useRef } from "react";
 import { Box, Grid, Stack, Card, CardHeader, CardContent } from "@mui/material";
 import DetailsHeader from "./details-header";
 import PerkMiniCard from "./perk-mini-card";
 import html2canvas from "html2canvas";
-import { useRef } from "react";
+import AppContext from "../app-context.js";
 
-function Details({ hero, powers, items, removeElement, shareBuild, showMessage }) {
+function Details() {
+  const {
+    currentHero,
+    selectedItems,
+    selectedPowers,
+    removePerkBuild,
+    showMessage,
+  } = useContext(AppContext);
+
   const captureRef = useRef();
   const powerColumns = 4;
   const itemColumns = 3;
@@ -16,7 +24,7 @@ function Details({ hero, powers, items, removeElement, shareBuild, showMessage }
 
     const canvas = await html2canvas(element, {
       backgroundColor: "#ffffff", // ensure background is solid white
-      ignoreElements: (el) => el.classList?.contains('no-capture'),
+      ignoreElements: (el) => el.classList?.contains("no-capture"),
       scale: 1.25, // higher resolution screenshot
     });
 
@@ -28,7 +36,7 @@ function Details({ hero, powers, items, removeElement, shareBuild, showMessage }
         showMessage("Build copied to clipboard!", "success");
       } catch (err) {
         showMessage(`Failed to copy: ${err}`, "error");
-      } 
+      }
     });
   };
 
@@ -36,29 +44,24 @@ function Details({ hero, powers, items, removeElement, shareBuild, showMessage }
     return (
       <Box sx={{ textAlign: "center" }}>
         {perkType === "power" && `Round ${2 * index + 1}`}
+        {perkType === "item" && `Item ${index + 1}`}
         <PerkMiniCard
           perk={perks[index]}
           perkType={perkType}
-          unselectPerk={() => removeElement(perkType, perks[index])}
+          unselectPerk={() => removePerkBuild(perkType, perks[index])}
         />
       </Box>
     );
   };
 
-  if (!hero) {
+  if (!currentHero) {
     return;
   }
 
   return (
-    <Box ref={captureRef}  sx={{ width: "100%" }}>
+    <Box ref={captureRef} sx={{ width: "100%" }}>
       <Stack spacing={2} sx={{ flexGrow: 1, minHeight: 0, width: "100%" }}>
-        <DetailsHeader
-          hero={hero}
-          items={items}
-          shareBuild={shareBuild}
-          copyBuild={handleCopy}
-        />
-
+        <DetailsHeader copyBuild={handleCopy} />
         <Card sx={{ height: "100%" }}>
           <CardHeader title="Powers" />
           <CardContent>
@@ -82,7 +85,7 @@ function Details({ hero, powers, items, removeElement, shareBuild, showMessage }
                     alignItems: "center",
                   }}
                 >
-                  {getPerkMiniCard(powers, "power", index)}
+                  {getPerkMiniCard(selectedPowers, "power", index)}
                 </Grid>
               ))}
             </Grid>
@@ -113,7 +116,7 @@ function Details({ hero, powers, items, removeElement, shareBuild, showMessage }
                     key={index}
                   >
                     {getPerkMiniCard(
-                      items,
+                      selectedItems,
                       "item",
                       rowIndex * itemColumns + index
                     )}

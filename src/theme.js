@@ -22,7 +22,7 @@ const owTheme = createTheme({
     text: {
       primary: colors.black, // Set the default text color here
       secondary: colors.grey, // You can also customize secondary text color
-    }
+    },
   },
   typography: {
     fontFamily: "'BigNoodleTitling', sans-serif", // Add your custom font here
@@ -36,12 +36,29 @@ const owTheme = createTheme({
   },
   components: {
     MuiCssBaseline: {
-        styleOverrides: {
-          body: {
-            userSelect: "none", // Disable text selection globally across the app
+      styleOverrides: {
+        body: {
+          userSelect: "none", // Disable text selection globally across the app
+        },
+      },
+    },
+    MuiCardHeader: {
+      styleOverrides: {
+        root: {
+          padding: "16px 16px 8px 16px", // Set your desired padding value
+        },
+      },
+    },
+    MuiCardContent: {
+      styleOverrides: {
+        root: {
+          padding: "8px 16px 16px 16px", // Set your desired padding value
+          "&:last-child": {
+            paddingBottom: "16px", // Set your desired padding value
           },
         },
       },
+    },
   },
 });
 
