@@ -696,7 +696,19 @@
           "name": "Pulse Converter",
           "description": "+5% Attack Speed, +5% Cooldown Reduction, [Helix Rocket] damage restores 20% of your ammo",
           "price": 4000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 5,
+              "valueType": "%"
+            },
+            {
+              "type": "CR",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
@@ -704,7 +716,19 @@
           "name": "Battery Pack",
           "description": "+10% Ability Power, +30% Biotic Field Duration",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "[Biotic Field] Duration",
+              "value": 30,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
@@ -712,7 +736,24 @@
           "name": "Bomb Diffusal Boots",
           "description": "+25 Health, +5% Weapon Power, 90% Reduced [Helix Rocket] Self-Damage, When you damage yourself with [Helix Rocket], it knocks you back 200% further",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "WP",
+              "value": 5,
+              "valueType": "%"
+            },
+            {
+              "type": "Reduced [Helix Rocket] Self-Damage",
+              "value": 90,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
@@ -720,7 +761,24 @@
           "name": "Compression Fatigues",
           "description": "+25 Health, +5% Attack Speed, +25% [Sprint] Move Speed",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "AS",
+              "value": 5,
+              "valueType": "%"
+            },
+            {
+              "type": "[Sprint] Move Speed",
+              "value": 25,
+              "valueType": "%"
+            }
+          ]
         }
       ],
       "epic": [
@@ -730,7 +788,19 @@
           "name": "Rapid Response Radius",
           "description": "+10% Ability Power, +30% Biotic Field Radius, [Biotic Field] heals allies below 50% Life for 10% more",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "[Biotic Field] Radius",
+              "value": 30,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
@@ -738,7 +808,14 @@
           "name": "Iron Lung",
           "description": "+25 Health, while using [Sprint], gain Overhealth equal to 5% of your max Life every 1s, up to 25%, for 5s",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+            "attributes": [
+                {
+                "type": "HP",
+                "value": 25,
+                "valueType": ""
+                }
+            ]
         },
         {
           "position": 1,
@@ -746,7 +823,19 @@
           "name": "Endgame Equalizer",
           "description": "+25 Health, +15% Ability Power, when you spend your Ultimate Charge, reset all ability cooldowns. While [Tactical Visor] is active, gain 20% Cooldown Reduction",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         }
       ]
     }
