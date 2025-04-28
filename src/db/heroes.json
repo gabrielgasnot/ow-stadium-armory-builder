@@ -804,13 +804,13 @@
           "description": "While using [Sprint], gain Overhealth equal to 5% of your max Life every 1s, up to 25%, for 5s",
           "price": 10000,
           "category": "Survival",
-            "attributes": [
-                {
-                "type": "HP",
-                "value": 25,
-                "valueType": ""
-                }
-            ]
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 1,
@@ -986,13 +986,13 @@
           "description": "[Guardian Angel]'s cooldown starts as soon as you jump or crouch",
           "price": 10000,
           "category": "Ability",
-            "attributes": [
-                {
-                "type": "[Guardian Angel] Move Speed",
-                "value": 15,
-                "valueType": "%"
-                }
-            ]
+          "attributes": [
+            {
+              "type": "[Guardian Angel] Move Speed",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
@@ -1203,7 +1203,7 @@
           "price": 4000,
           "category": "Weapon",
           "attributes": [
-              {
+            {
               "type": "WP",
               "value": 10,
               "valueType": "%"
@@ -3155,57 +3155,117 @@
           "position": 1,
           "id": "22W001",
           "name": "Target Tracker",
-          "description": "+15% Biotic Grenade Duration, for each enemy or ally affected by [Biotic Grenade], gain 5% Attack Speed, up to 25%",
+          "description": "For each enemy or ally affected by [Biotic Grenade], gain 5% Attack Speed, up to 25%",
           "price": 4000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "Biotic Grenade Duration",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "22W002",
           "name": "Potent Projectiles",
-          "description": "+10% Weapon Power, Unscoped [Biotic Rifle] projectiles are 100% larger",
+          "description": "Unscoped [Biotic Rifle] projectiles are 100% larger",
           "price": 5000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 3,
           "id": "22W003",
           "name": "Quick Scope",
-          "description": "+5% Weapon Power, +200% Faster Scope Speed, Deal 20% more damage to airborne enemies",
+          "description": "Deal 20% more damage to airborne enemies",
           "price": 5000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "Faster Scope Speed",
+              "value": 200,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "22A001",
           "name": "Double Dosage",
-          "description": "+25 Health, landing a [Sleep Dart] on target affected by [Biotic Grenade] reduces its cooldown by 35%",
+          "description": "Landing a [Sleep Dart] on target affected by [Biotic Grenade] reduces its cooldown by 35%",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 1,
           "id": "22S001",
           "name": "Dash Boots",
-          "description": "+5% Movement Speed, jumping in mid-air will dash you a short distance",
+          "description": "Jumping in mid-air will dash you a short distance",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "MS",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "22S002",
           "name": "Perfected Formula",
-          "description": "+25 Shields, +15% Nano Boost Duration",
+          "description": "",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "SH",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "Nano Boost Duration",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
+
         },
         {
           "position": 3,
           "id": "22S003",
           "name": "I.V. Drip",
-          "description": "+25 Health, while affected by [Biotic Grenade], Ana gains 100 Overhealth",
+          "description": "While affected by [Biotic Grenade], Ana gains 100 Overhealth",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ],
       "epic": [
@@ -3213,9 +3273,16 @@
           "position": 1,
           "id": "22W004",
           "name": "Unscoped Resources",
-          "description": "+4 Max Ammo, Unscoped [Biotic Rifle] shots have a 50% chance not to consume Ammo",
+          "description": "Unscoped [Biotic Rifle] shots have a 50% chance not to consume Ammo",
           "price": 11000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "MA",
+              "value": 4,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 3,
@@ -3229,33 +3296,66 @@
           "position": 1,
           "id": "22A003",
           "name": "Lethal Dose",
-          "description": "+50% Ability Lifesteal, [Sleep Dart] direct hit deals 100 bonus damage",
+          "description": "[Sleep Dart] direct hit deals 100 bonus damage",
           "price": 9000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "ALS",
+              "value": 50,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 4,
           "id": "22A004",
           "name": "Grenadius Pin",
-          "description": "+30% Biotic Grenade Radius, +20% Ability Power",
+          "description": "",
           "price": 12000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 20,
+              "valueType": "%"
+            },
+            {
+              "type": "[Biotic Grenade] Duration",
+              "value": 30,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "22A005",
           "name": "Cluster Core",
-          "description": "+25% Ability Lifesteal, [Biotic Grenade] cooldown is reduced by 1s for each target it hits",
+          "description": "[Biotic Grenade] cooldown is reduced by 1s for each target it hits",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "ALS",
+              "value": 25,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "22S004",
           "name": "Eye of Horus",
-          "description": "+50 Shields, [Nano Boost] can target allies through walls and its range is increased to 60m",
+          "description": "[Nano Boost] can target allies through walls and its range is increased to 60m",
           "price": 9000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "SH",
+              "value": 50,
+              "valueType": ""
+            }
+          ]
         }
       ]
     }
