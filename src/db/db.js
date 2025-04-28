@@ -617,7 +617,9 @@ const heroes = [
     id: 5,
     name: "Reinhardt",
     role: "Tank",
-    hp: 550,
+    hp: 250,
+    armor: 300,
+    shields: 0,
     powers: [
       {
         position: 12,
@@ -800,6 +802,8 @@ const heroes = [
     name: "Reaper",
     role: "Damage",
     hp: 300,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 3,
@@ -975,6 +979,8 @@ const heroes = [
     name: "Soldier 76",
     role: "Damage",
     hp: 250,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 2,
@@ -1118,6 +1124,8 @@ const heroes = [
     name: "Mercy",
     role: "Support",
     hp: 225,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 6,
@@ -1285,6 +1293,8 @@ const heroes = [
     name: "Moira",
     role: "Support",
     hp: 225,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 5,
@@ -1442,7 +1452,9 @@ const heroes = [
     id: 19,
     name: "D.Va",
     role: "Tank",
-    hp: 550,
+    hp: 250,
+    armor: 300,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -1642,6 +1654,8 @@ const heroes = [
     name: "Genji",
     role: "Damage",
     hp: 250,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 7,
@@ -1826,7 +1840,9 @@ const heroes = [
     id: 24,
     name: "Orisa",
     role: "Tank",
-    hp: 475,
+    hp: 155,
+    armor: 325,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -2018,6 +2034,8 @@ const heroes = [
     name: "Junker Queen",
     role: "Tank",
     hp: 375,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -2208,7 +2226,9 @@ const heroes = [
     id: 13,
     name: "Zarya",
     role: "Tank",
-    hp: 400,
+    hp: 175,
+    armor: 0,
+    shields: 225,
     powers: [
       {
         id: "13P001",
@@ -2347,6 +2367,8 @@ const heroes = [
     name: "Kiriko",
     role: "Support",
     hp: 225,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -2538,6 +2560,8 @@ const heroes = [
     name: "Ana",
     role: "Support",
     hp: 250,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -2729,6 +2753,8 @@ const heroes = [
     name: "Cassidy",
     role: "Damage",
     hp: 275,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 4,
@@ -2880,6 +2906,8 @@ const heroes = [
     name: "Ashe",
     role: "Damage",
     hp: 250,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 4,
@@ -3069,7 +3097,9 @@ const heroes = [
   {
     id: 41,
     name: "Juno",
-    hp: 225,
+    hp: 75,
+    armor: 0,
+    shields: 150,
     role: "Support",
     powers: [
       {
@@ -3254,6 +3284,8 @@ const heroes = [
     name: "Mei",
     role: "Damage",
     hp: 300,
+    armor: 0,
+    shields: 0,
     powers: [
       {
         position: 3,
@@ -3412,6 +3444,8 @@ const heroes = [
     id: 16,
     name: "Lucio",
     hp: 225,
+    armor: 0,
+    shields: 0,
     role: "Support",
     powers: [
       {
