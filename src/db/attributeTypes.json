@@ -1,0 +1,62 @@
+{
+  "AR": {
+    "icon": "HP.svg",
+    "name": "Armor"
+  },
+  "HP": {
+    "icon": "HP.svg",
+    "name": "Health"
+  },
+  "SH": {
+    "icon": "HP.svg",
+    "name": "Shields"
+  },
+  "WP": {
+    "icon": "WP.svg",
+    "name": "Weapon Power"
+  },
+  "WPLS": {
+    "icon": "WPLS.svg",
+    "name": "Weapon Lifesteal"
+  },
+  "AP": {
+    "icon": "AP.svg",
+    "name": "Ability Power"
+  },
+  "ALS": {
+    "icon": "ALS.svg",
+    "name": "Ability Lifesteal"
+  },
+  "AS": {
+    "icon": "AS.svg",
+    "name": "Attack Speed"
+  },
+  "RS": {
+    "icon": "RS.svg",
+    "name": "Reload Speed"
+  },
+  "MS": {
+    "icon": "MS.svg",
+    "name": "Movement Speed"
+  },
+  "CR": {
+    "icon": "CR.svg",
+    "name": "Cooldown Reduction"
+  },
+  "CD": {
+    "icon": "CD.svg",
+    "name": "Critical Damage"
+  },
+  "MD": {
+    "icon": "MD.svg",
+    "name": "Melee Damage"
+  },
+  "KR": {
+    "icon": "ability.png",
+    "name": "Knockback Resist"
+  },
+  "MA": {
+    "icon": "MA.svg",
+    "name": "Max Ammo"
+  }
+}

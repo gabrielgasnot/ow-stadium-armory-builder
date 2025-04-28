@@ -7,6 +7,7 @@ import {
   CardActions,
 } from "@mui/material";
 import { getPerkColor } from "../services/color";
+import types from "../db/attributeTypes.json";
 
 function PerkCard({ perk, perkType, perkGrade, selectPerk, isSelected, isDisabled }) {
   return (
@@ -61,7 +62,28 @@ function PerkCard({ perk, perkType, perkGrade, selectPerk, isSelected, isDisable
       {/* Content: Description */}
       <CardContent>
         <Typography variant="body2" color="text.secondary">
-          {perk.description}
+          {perk.description ?? ''}
+          {perk.attributes && perk.attributes.map((attribute, index) => (
+              <span key={index} color="text.secondary" style={{display:"block"}}>
+                  {attribute.type === "description" ? (
+                      attribute.value
+                  ) : (
+                      <>
+                          <img
+                              src={`${process.env.PUBLIC_URL}/icons/${types[attribute.type]?.icon ?? "ability.png"}`}
+                              alt={attribute.type}
+                              style={{ width: 20, height: 20, marginRight: 4 }}
+                          />
+                          ${attribute.value} ${attribute.unit ?? ""}
+                          {typeof types[attribute.type] === "undefined" ? (
+                            `${attribute?.type}`
+                          ) : (
+                            `${types[attribute.type]?.name}`
+                          )}
+                      </>
+                  )}
+              </span>
+          ))}
         </Typography>
       </CardContent>
 

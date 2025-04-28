@@ -4,14 +4,13 @@
       "id": "00W001",
       "position": 1,
       "name": "Compensator",
-      "description": "",
       "price": 1000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -19,14 +18,13 @@
       "id": "00W002",
       "position": 4,
       "name": "Ammo Reserves",
-      "description": "",
       "price": 1500,
       "category": "Weapon",
       "attributes": [
         {
           "type": "MA",
           "value": 20,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -34,14 +32,13 @@
       "id": "00W003",
       "position": 3,
       "name": "Weapon Grease",
-      "description": "",
       "price": 1000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "AS",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -49,14 +46,13 @@
       "id": "00W004",
       "position": 2,
       "name": "Plasma Converter",
-      "description": "",
       "price": 1000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WPLS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -64,23 +60,26 @@
       "id": "00W005",
       "position": 5,
       "name": "Frenzy Amplifier",
-      "description": "Eliminations grant 10% Attack Speed and 15% Move Speed for 3s",
       "price": 1500,
       "category": "Weapon",
-      "attributes": []
+      "attributes": [
+        {
+          "type": "description",
+          "value": "Eliminations grant 10% Attack Speed and 15% Move Speed for 3s"
+        }
+      ]
     },
     {
       "id": "00A001",
       "position": 2,
       "name": "Power Playbook",
-      "description": "",
       "price": 1000,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -88,14 +87,13 @@
       "id": "00A002",
       "position": 3,
       "name": "Shady Spectacles",
-      "description": "",
       "price": 1000,
       "category": "Ability",
       "attributes": [
         {
           "type": "ALS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -103,23 +101,30 @@
       "id": "00A003",
       "position": 1,
       "name": "Charged Plating",
-      "description": "After you spend your Ultimate Charge, gain 25 Armor and 10% Ability Power for the rest of the round",
       "price": 1000,
       "category": "Ability",
-      "attributes": []
+      "attributes": [
+        {
+          "type": "description",
+          "value": "After you spend your Ultimate Charge, gain 25 Armor and 10% Ability Power for the rest of the round"
+        }
+      ]
     },
     {
       "id": "00A004",
       "position": 4,
       "name": "Winning Attitude",
-      "description": "When you die, gain 15% Ultimate Charge",
       "price": 1500,
       "category": "Ability",
       "attributes": [
         {
           "type": "HP",
           "value": 25,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "When you die, gain 15% Ultimate Charge"
         }
       ]
     },
@@ -127,32 +132,43 @@
       "id": "00S001",
       "position": 2,
       "name": "Electrolytes",
-      "description": "At the start of the round, gain 100 unrecoverable Overhealth",
       "price": 1000,
       "category": "Survival",
-      "attributes": []
+      "attributes": [
+        {
+          "type": "description",
+          "value": "At the start of the round, gain 100 unrecoverable Overhealth"
+        }
+      ]
     },
     {
       "id": "00S002",
       "position": 3,
       "name": "Field Rations",
-      "description": "While on the Objective, restore 8 Life every 1s",
       "price": 1000,
       "category": "Survival",
-      "attributes": []
+      "attributes": [
+        {
+          "type": "description",
+          "value": "While on the Objective, restore 8 Life every 1s"
+        }
+      ]
     },
     {
       "id": "00S003",
       "position": 1,
       "name": "Adrenaline Shot",
-      "description": "Health Packs grant 20% Move Speed for 5s and 50 Overhealth",
       "price": 1000,
       "category": "Survival",
       "attributes": [
         {
           "type": "HP",
           "value": 10,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "Health Packs grant 20% Move Speed for 5s and 50 Overhealth"
         }
       ]
     },
@@ -160,14 +176,17 @@
       "id": "00S004",
       "position": 4,
       "name": "Running Shoes",
-      "description": "At the start of the round and when you first respawn, gain 20% Move Speed for 10s while out of combat",
       "price": 1000,
       "category": "Survival",
       "attributes": [
         {
           "type": "HP",
           "value": 10,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "At the start of the round and when you first respawn, gain 20% Move Speed for 10s while out of combat"
         }
       ]
     },
@@ -175,14 +194,17 @@
       "id": "00S005",
       "position": 7,
       "name": "Heartbeat Sensor",
-      "description": "Enemies below 30% Life are revealed to you",
       "price": 1500,
       "category": "Survival",
       "attributes": [
         {
           "type": "MS",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Enemies below 30% Life are revealed to you"
         }
       ]
     },
@@ -190,14 +212,17 @@
       "id": "00S006",
       "position": 8,
       "name": "Siphon Gloves",
-      "description": "[Quick Melee] damage heals for 25 Life",
       "price": 1500,
       "category": "Survival",
       "attributes": [
         {
           "type": "HP",
           "value": 25,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "[Quick Melee] damage heals for 25 Life"
         }
       ]
     },
@@ -205,14 +230,17 @@
       "id": "00S007",
       "position": 6,
       "name": "First Aid Kit",
-      "description": "Reduce the time before your Life begins regenerating by 33%",
       "price": 1500,
       "category": "Survival",
       "attributes": [
         {
           "type": "SH",
           "value": 25,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "Reduce the time before your Life begins regenerating by 33%"
         }
       ]
     },
@@ -220,14 +248,13 @@
       "id": "00S008",
       "position": 5,
       "name": "Armored Vest",
-      "description": "",
       "price": 1500,
       "category": "Survival",
       "attributes": [
         {
           "type": "AR",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         }
       ]
     }
@@ -237,19 +264,18 @@
       "id": "00W006",
       "position": 4,
       "name": "Stockpile",
-      "description": "",
       "price": 4000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "AS",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "MA",
           "value": 25,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -257,19 +283,18 @@
       "id": "00W007",
       "position": 1,
       "name": "Aftermarket Firing Pin",
-      "description": "",
       "price": 3750,
       "category": "Weapon",
       "attributes": [
         {
           "type": "AS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "MS",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -277,14 +302,17 @@
       "id": "00W008",
       "position": 2,
       "name": "Advanced Nanobiotics",
-      "description": "After healing an ally, gain 10% Attack Speed for 3s",
       "price": 4000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "After healing an ally, gain 10% Attack Speed for 3s"
         }
       ]
     },
@@ -292,14 +320,17 @@
       "id": "00W009",
       "position": 3,
       "name": "Shieldbuster",
-      "description": "After dealing damage to Shields or Armor grants 15% Attack Speed for 1s",
       "price": 4000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "After dealing damage to Shields or Armor grants 15% Attack Speed for 1s"
         }
       ]
     },
@@ -307,19 +338,18 @@
       "id": "00W010",
       "position": 5,
       "name": "Technoleech",
-      "description": "",
       "price": 4500,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "WPLS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -327,19 +357,18 @@
       "id": "00W011",
       "position": 6,
       "name": "Icy Coolant",
-      "description": "",
       "price": 5000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "CR",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -347,14 +376,13 @@
       "id": "00W012",
       "position": 7,
       "name": "Talon Modification Module",
-      "description": "",
       "price": 5500,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -362,19 +390,18 @@
       "id": "00A005",
       "position": 5,
       "name": "Wrist Wraps",
-      "description": "",
       "price": 4000,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "AS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -382,19 +409,18 @@
       "id": "00A006",
       "position": 1,
       "name": "Custom Stock",
-      "description": "",
       "price": 3750,
       "category": "Ability",
       "attributes": [
         {
           "type": "WP",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "AP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -402,14 +428,13 @@
       "id": "00A007",
       "position": 4,
       "name": "Junker Whatchamajig",
-      "description": "",
       "price": 4000,
       "category": "Ability",
       "attributes": [
         {
           "type": "Starting Ultimate Charge",
           "value": 25,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -417,19 +442,18 @@
       "id": "00A008",
       "position": 3,
       "name": "Energized Bracers",
-      "description": "",
       "price": 4000,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "ALS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -437,19 +461,22 @@
       "id": "00A009",
       "position": 2,
       "name": "Biolight Overflow",
-      "description": "hen you spend your Ultimate Charge, grant nearby allies 50 Overhealth for 3s",
       "price": 4000,
       "category": "Ability",
       "attributes": [
         {
           "type": "HP",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "AP",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "hen you spend your Ultimate Charge, grant nearby allies 50 Overhealth for 3s"
         }
       ]
     },
@@ -457,19 +484,18 @@
       "id": "00A010",
       "position": 6,
       "name": "Multi-tool",
-      "description": "",
       "price": 5000,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "CR",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -477,14 +503,13 @@
       "id": "00A011",
       "position": 7,
       "name": "Nano Cola",
-      "description": "",
       "price": 5500,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 20,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -492,14 +517,17 @@
       "id": "00S009",
       "position": 1,
       "name": "Reinforced Titanium",
-      "description": "While you have Shields, take 15% reduced Ability Damage",
       "price": 3750,
       "category": "Survival",
       "attributes": [
         {
           "type": "SH",
           "value": 25,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "While you have Shields, take 15% reduced Ability Damage"
         }
       ]
     },
@@ -507,14 +535,17 @@
       "id": "00S010",
       "position": 7,
       "name": "Iron Eyes",
-      "description": "You take 20% reduced damage from Critical Hits",
       "price": 4500,
       "category": "Survival",
       "attributes": [
         {
           "type": "SH",
           "value": 25,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "You take 20% reduced damage from Critical Hits"
         }
       ]
     },
@@ -522,19 +553,22 @@
       "id": "00S011",
       "position": 2,
       "name": "Cushioned Padding",
-      "description": "When affected by Stun, Sleep, or Hinder, regenerate 10% of your Max Life over 3s",
       "price": 4000,
       "category": "Survival",
       "attributes": [
         {
           "type": "SH",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "Incoming Negative Effect Duration",
           "value": -40,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "When affected by Stun, Sleep, or Hinder, regenerate 10% of your Max Life over 3s"
         }
       ]
     },
@@ -542,14 +576,17 @@
       "id": "00S012",
       "position": 3,
       "name": "Ironclad Exhaust Ports",
-      "description": "When you use an ability, gain 25 Overhealth for 3s",
       "price": 4000,
       "category": "Survival",
       "attributes": [
         {
           "type": "CR",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "When you use an ability, gain 25 Overhealth for 3s"
         }
       ]
     },
@@ -557,14 +594,17 @@
       "id": "00S013",
       "position": 6,
       "name": "Crusader Hydraulics",
-      "description": "While you have Armor, take 10% less Weapon Damage",
       "price": 4500,
       "category": "Survival",
       "attributes": [
         {
           "type": "AR",
           "value": 25,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "While you have Armor, take 10% less Weapon Damage"
         }
       ]
     },
@@ -572,19 +612,18 @@
       "id": "00S014",
       "position": 4,
       "name": "Vishkar Condensor",
-      "description": "",
       "price": 4000,
       "category": "Survival",
       "attributes": [
         {
           "type": "SH",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "CHS",
           "value": 100,
-          "valueType": ""
+          "unit": ""
         }
       ]
     },
@@ -592,19 +631,18 @@
       "id": "00S015",
       "position": 5,
       "name": "Vital-E-Tee",
-      "description": "",
       "price": 4000,
       "category": "Survival",
       "attributes": [
         {
           "type": "AR",
           "value": 10,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "CHA",
           "value": 100,
-          "valueType": ""
+          "unit": ""
         }
       ]
     },
@@ -612,24 +650,23 @@
       "id": "00S016",
       "position": 8,
       "name": "MEKA Z-Series",
-      "description": "",
       "price": 5000,
       "category": "Survival",
       "attributes": [
         {
           "type": "HP",
           "value": 8,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "AR",
           "value": 8,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "SH",
           "value": 8,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     }
@@ -639,14 +676,17 @@
       "id": "00W013",
       "position": 1,
       "name": "Codebreaker",
-      "description": "Ignore 50% of Armor's damage reduction",
       "price": 9000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Ignore 50% of Armor's damage reduction"
         }
       ]
     },
@@ -654,19 +694,22 @@
       "id": "00W014",
       "position": 2,
       "name": "Salvaged Slugs",
-      "description": "Dealing Weapon Damage to Barriers has a 50% chance to restore 1 ammo",
       "price": 9500,
       "category": "Weapon",
       "attributes": [
         {
           "type": "AS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "Increased Damage to Barriers",
           "value": 30,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Dealing Weapon Damage to Barriers has a 50% chance to restore 1 ammo"
         }
       ]
     },
@@ -674,14 +717,17 @@
       "id": "00W015",
       "position": 3,
       "name": "Volskaya Ordnance",
-      "description": "Deal 5% increased Weapon Damage for every 100 Max Life the target has more than you, up to 20%",
       "price": 9500,
       "category": "Weapon",
       "attributes": [
         {
           "type": "AS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Deal 5% increased Weapon Damage for every 100 Max Life the target has more than you, up to 20%"
         }
       ]
     },
@@ -689,19 +735,22 @@
       "id": "00W016",
       "position": 4,
       "name": "Commander's Clip",
-      "description": "When you use an ability, restore 10% of your Max Ammo",
       "price": 10000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "AS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "MA",
           "value": 40,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "When you use an ability, restore 10% of your Max Ammo"
         }
       ]
     },
@@ -709,19 +758,22 @@
       "id": "00W017",
       "position": 5,
       "name": "Weapon Jammer",
-      "description": "Dealing Weapon Damage negates 10% of target's bonus Attack Speed and increases your Attack Speed by 10% for 2s",
       "price": 10000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "AR",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "WP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Dealing Weapon Damage negates 10% of target's bonus Attack Speed and increases your Attack Speed by 10% for 2s"
         }
       ]
     },
@@ -729,19 +781,22 @@
       "id": "00W018",
       "position": 6,
       "name": "Amari's Antidote",
-      "description": "While healing an ally below 50% Life with your Weapon, deal 15% increased Weapon Healing",
       "price": 11000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "HP",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "WP",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "While healing an ally below 50% Life with your Weapon, deal 15% increased Weapon Healing"
         }
       ]
     },
@@ -749,14 +804,17 @@
       "id": "00W019",
       "position": 7,
       "name": "Booster Jets",
-      "description": "When you use an ability, gain 20% Move Speed for 2s",
       "price": 11000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "AS",
           "value": 20,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "When you use an ability, gain 20% Move Speed for 2s"
         }
       ]
     },
@@ -764,14 +822,17 @@
       "id": "00W020",
       "position": 8,
       "name": "El-Sa'ka Suppressor",
-      "description": "Critical Hits apply 30% Healing Reduction for 2s",
       "price": 11000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Critical Hits apply 30% Healing Reduction for 2s"
         }
       ]
     },
@@ -779,19 +840,22 @@
       "id": "00W021",
       "position": 9,
       "name": "Hardlight Accelerator",
-      "description": "When you use an ability, gain 5% Weapon Power for 3s, stacking up to 3 times",
       "price": 11000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "CR",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "When you use an ability, gain 5% Weapon Power for 3s, stacking up to 3 times"
         }
       ]
     },
@@ -799,14 +863,17 @@
       "id": "00W022",
       "position": 11,
       "name": "Eye of the Spider",
-      "description": "Deal 10% increased damage to enemies under 30% Life",
       "price": 135000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 25,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Deal 10% increased damage to enemies under 30% Life"
         }
       ]
     },
@@ -814,19 +881,22 @@
       "id": "00W023",
       "position": 10,
       "name": "The Closer",
-      "description": "Critical Hits reveal the target for 3s",
       "price": 13000,
       "category": "Weapon",
       "attributes": [
         {
           "type": "WP",
           "value": 20,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "CD",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Critical Hits reveal the target for 3s"
         }
       ]
     },
@@ -834,19 +904,22 @@
       "id": "00A012",
       "position": 1,
       "name": "Three-Tap Tommygun",
-      "description": "After using an ability, your next 3 instances of Weapon Damage deal additional damage equal to 3% of the target's Life",
       "price": 9500,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "AS",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "After using an ability, your next 3 instances of Weapon Damage deal additional damage equal to 3% of the target's Life"
         }
       ]
     },
@@ -854,19 +927,22 @@
       "id": "00A013",
       "position": 2,
       "name": "Biotech Maximizer",
-      "description": "When you use an ability that heals, reduce its cooldown by 5% for each unique ally it heals",
       "price": 10000,
       "category": "Ability",
       "attributes": [
         {
           "type": "HP",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "AP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "When you use an ability that heals, reduce its cooldown by 5% for each unique ally it heals"
         }
       ]
     },
@@ -874,14 +950,17 @@
       "id": "00A014",
       "position": 3,
       "name": "Catalytic Crystal",
-      "description": "Ability Damage and Healing grants 20% more Ultimate Charge",
       "price": 10000,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 15,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "Ability Damage and Healing grants 20% more Ultimate Charge"
         }
       ]
     },
@@ -889,19 +968,22 @@
       "id": "00A015",
       "position": 5,
       "name": "Superflexor",
-      "description": "When you deal Weapon Damage or Healing, gain 5% Ability Power for 3s, stacking up to 5 times",
       "price": 10000,
       "category": "Ability",
       "attributes": [
         {
           "type": "HP",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "WP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "When you deal Weapon Damage or Healing, gain 5% Ability Power for 3s, stacking up to 5 times"
         }
       ]
     },
@@ -909,19 +991,22 @@
       "id": "00A016",
       "position": 4,
       "name": "Lum\u00e9rico Fusion Drive",
-      "description": "When you use an ability, restore 50 Armor or Shields over 2s",
       "price": 10000,
       "category": "Ability",
       "attributes": [
         {
           "type": "AR",
           "value": 50,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "AP",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "When you use an ability, restore 50 Armor or Shields over 2s"
         }
       ]
     },
@@ -929,19 +1014,22 @@
       "id": "00A017",
       "position": 6,
       "name": "Cybervenom",
-      "description": "Dealing Ability Damage applies 30% Healing Reduction for 2s",
       "price": 10500,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "CR",
           "value": 5,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Dealing Ability Damage applies 30% Healing Reduction for 2s"
         }
       ]
     },
@@ -949,19 +1037,22 @@
       "id": "00A018",
       "position": 7,
       "name": "Iridescent Iris",
-      "description": "When you spend your Ultimate Charge, gain 100 Overhealth for 3s",
       "price": 11000,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 20,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "CR",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "When you spend your Ultimate Charge, gain 100 Overhealth for 3s"
         }
       ]
     },
@@ -969,19 +1060,22 @@
       "id": "00A019",
       "position": 8,
       "name": "Liquid Nitrogen",
-      "description": "Dealing Ability Damage slows the target's Move Speed by 20% for 3s",
       "price": 11000,
       "category": "Ability",
       "attributes": [
         {
           "type": "HP",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "AP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Dealing Ability Damage slows the target's Move Speed by 20% for 3s"
         }
       ]
     },
@@ -989,14 +1083,17 @@
       "id": "00A020",
       "position": 9,
       "name": "Mark of the Kitsune",
-      "description": "After casting an ability, your next instance of Weapon Damage or Healing deals 25 bonus damage or healing",
       "price": 11000,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "After casting an ability, your next instance of Weapon Damage or Healing deals 25 bonus damage or healing"
         }
       ]
     },
@@ -1004,14 +1101,13 @@
       "id": "00A021",
       "position": 10,
       "name": "Champion's Kit",
-      "description": "",
       "price": 13500,
       "category": "Ability",
       "attributes": [
         {
           "type": "AP",
           "value": 40,
-          "valueType": "%"
+          "unit": "%"
         }
       ]
     },
@@ -1019,14 +1115,17 @@
       "id": "00S017",
       "position": 1,
       "name": "Geneticist's Vial",
-      "description": "The first time you die each round, revive at 200 Life after 3s",
       "price": 9000,
       "category": "Survival",
       "attributes": [
         {
           "type": "HP",
           "value": 25,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "The first time you die each round, revive at 200 Life after 3s"
         }
       ]
     },
@@ -1034,14 +1133,17 @@
       "id": "00S018",
       "position": 2,
       "name": "Bloodbound",
-      "description": "The last enemy to deal a final blow to you is Revealed when nearby, deal 10% more damage to them and take 10% reduced damage from them",
       "price": 9500,
       "category": "Survival",
       "attributes": [
         {
           "type": "HP",
           "value": 50,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "The last enemy to deal a final blow to you is Revealed when nearby, deal 10% more damage to them and take 10% reduced damage from them"
         }
       ]
     },
@@ -1049,14 +1151,17 @@
       "id": "00S019",
       "position": 3,
       "name": "Divine Intervention",
-      "description": "When you take more than 100 damage at once, restore 15% of damage taken and start regenerating your Shields",
       "price": 9500,
       "category": "Survival",
       "attributes": [
         {
           "type": "SH",
           "value": 50,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "When you take more than 100 damage at once, restore 15% of damage taken and start regenerating your Shields"
         }
       ]
     },
@@ -1064,19 +1169,22 @@
       "id": "00S020",
       "position": 4,
       "name": "Gloomgauntlet",
-      "description": "[Melee] damage grants 10% Move Speed and restores 5% of max Life over 2s",
       "price": 9500,
       "category": "Survival",
       "attributes": [
         {
           "type": "AR",
           "value": 50,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "MD",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "[Melee] damage grants 10% Move Speed and restores 5% of max Life over 2s"
         }
       ]
     },
@@ -1084,29 +1192,32 @@
       "id": "00S021",
       "position": 6,
       "name": "Phantasmic Flux",
-      "description": "While at full Life, Lifesteal grants up to 100 Overhealth",
       "price": 10000,
       "category": "Survival",
       "attributes": [
         {
           "type": "WP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "AP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "WPLS",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "ALS",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "While at full Life, Lifesteal grants up to 100 Overhealth"
         }
       ]
     },
@@ -1114,24 +1225,27 @@
       "id": "00S022",
       "position": 7,
       "name": "R\u00fcstung von Wilhelm",
-      "description": "While below 30% Life, gain 10% Damage Reduction",
       "price": 10000,
       "category": "Survival",
       "attributes": [
         {
           "type": "HP",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "AR",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
         },
         {
           "type": "SH",
           "value": 15,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "While below 30% Life, gain 10% Damage Reduction"
         }
       ]
     },
@@ -1139,14 +1253,17 @@
       "id": "00S023",
       "position": 8,
       "name": "Vanadium Injection",
-      "description": "While at 100% Ultimate Charge, gain 50 Health, 10% Weapon Power, 10% Ability Power, 10% Attack Speed, 10% Cooldown Reduction, and 10% Move Speed",
       "price": 10000,
       "category": "Survival",
       "attributes": [
         {
           "type": "SH",
           "value": 50,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "While at 100% Ultimate Charge, gain 50 Health, 10% Weapon Power, 10% Ability Power, 10% Attack Speed, 10% Cooldown Reduction, and 10% Move Speed"
         }
       ]
     },
@@ -1154,19 +1271,22 @@
       "id": "00S024",
       "position": 5,
       "name": "Martian Mender",
-      "description": "Restore 3% of your Life every 1s",
       "price": 10000,
       "category": "Survival",
       "attributes": [
         {
           "type": "HP",
           "value": 25,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "CR",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Restore 3% of your Life every 1s"
         }
       ]
     },
@@ -1174,19 +1294,22 @@
       "id": "00S025",
       "position": 9,
       "name": "Nebula Conduit",
-      "description": "Prevent 15% of incoming damage and instead take that prevented damage over 3s",
       "price": 11000,
       "category": "Survival",
       "attributes": [
         {
           "type": "HP",
           "value": 50,
-          "valueType": ""
+          "unit": ""
         },
         {
           "type": "WP",
           "value": 10,
-          "valueType": "%"
+          "unit": "%"
+        },
+        {
+          "type": "description",
+          "value": "Prevent 15% of incoming damage and instead take that prevented damage over 3s"
         }
       ]
     },
@@ -1194,14 +1317,17 @@
       "id": "00S026",
       "position": 10,
       "name": "Ogundimu Reduction Field",
-      "description": "When you take damage, gain 0.5% Damage Reduction for 1s, stacking up to 20 times",
       "price": 11000,
       "category": "Survival",
       "attributes": [
         {
           "type": "AR",
           "value": 50,
-          "valueType": ""
+          "unit": ""
+        },
+        {
+          "type": "description",
+          "value": "When you take damage, gain 0.5% Damage Reduction for 1s, stacking up to 20 times"
         }
       ]
     }

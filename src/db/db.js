@@ -1,21 +1,6 @@
-import basicItems from "./basicItems.json";
-import heroes from "./heroes.json";
-
-const attributeTypes = {
-  WP: "Weapon Power",
-  AP: "Ability Power",
-  HP: "Health",
-  AR: "Armor",
-  SH: "Shield",
-  MS: "Move Speed",
-  CD: "Critical Damage",
-  CR: "Cooldown Reduction",
-  AS: "Attack Speed",
-  MA: "Max Ammo",
-  WPLS: "Weapon Lifesteal",
-  ALS: "Ability Lifesteal",
-  MD: "Melee Damage",
-};
+import basicItems from './basicItems.json';
+import heroes from './heroes.json';
+import attributeTypes from './attributeTypes.json';
 
 const heroesOrder = [
   // Tank

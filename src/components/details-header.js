@@ -2,6 +2,7 @@ import React from "react";
 import { Stack, Button, Typography, Box, Paper } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
+import types from "../db/attributeTypes.json";
 
 function DetailsHeader({ hero, items, shareBuild, copyBuild}) {
   return (
@@ -76,7 +77,15 @@ function DetailsHeader({ hero, items, shareBuild, copyBuild}) {
           }}
         >
           Build cost:{" "}
-          {items.map((item) => item.price).reduce((a, b) => a + b, 0)} credits
+          <span>
+            <img
+              src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
+              alt="credits"
+              color="red"
+              style={{ width: 20, height: 20, marginRight: 4 }}
+            />
+            {items.map((item) => item.price).reduce((a, b) => a + b, 0)} credits
+          </span>
         </Typography>
 
         {/* Share button */}
