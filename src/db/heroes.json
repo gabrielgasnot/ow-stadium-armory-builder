@@ -87,7 +87,7 @@
           "position": 1,
           "id": "5W001",
           "name": "Ironclad Cleats",
-          "description": "+25 Armor, +5% Weapon Power, +40% Knockback Resist",
+          "description": "",
           "price": 3750,
           "category": "Weapon",
           "attributes": [
@@ -112,7 +112,7 @@
           "position": 3,
           "id": "5S003",
           "name": "Rocket Boots",
-          "description": "+25 Health, holding crouch increases the height of your next jump by up to 200%",
+          "description": "Holding crouch increases the height of your next jump by up to 200%",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -126,7 +126,7 @@
         {
           "id": "5A001",
           "name": "Boost Recycler",
-          "description": "+10% Ability Power, if [Charge] is interrupted by the enemy, refund 50% of [Charge]'s cooldown",
+          "description": "If [Charge] is interrupted by the enemy, refund 50% of [Charge]'s cooldown",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -141,7 +141,7 @@
           "position": 1,
           "id": "5S001",
           "name": "Crusader's Cure",
-          "description": "+25 Health, using [Charge] cleanses all negative effects",
+          "description": "Using [Charge] cleanses all negative effects",
           "price": 3750,
           "category": "Survival",
           "attributes": [
@@ -156,7 +156,7 @@
           "position": 2,
           "id": "5S002",
           "name": "Overclocked Barrier",
-          "description": "+25 Health, +20% Barrier Field Health, +20% [Barrier Field] Size",
+          "description": "",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -181,7 +181,7 @@
           "position": 1,
           "id": "5A002",
           "name": "Chimera's Maw",
-          "description": "+10% Ability Power, +50% Fire Strike Radius",
+          "description": "",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -203,7 +203,7 @@
           "position": 1,
           "id": "5W002",
           "name": "Dampener Grip",
-          "description": "+10% Ability Power, +10% Attack Speed, when you deal damage with [Rocket Hammer], reduce the cooldown of your abilities by 1s",
+          "description": "When you deal damage with [Rocket Hammer], reduce the cooldown of your abilities by 1s",
           "price": 10000,
           "category": "Weapon",
           "attributes": [
@@ -223,7 +223,7 @@
           "position": 2,
           "id": "5W003",
           "name": "Plan Z",
-          "description": "+10% Weapon Power, Gain 3% Attack Speed for every 100 missing Life, up to 30%",
+          "description": "Gain 3% Attack Speed for every 100 missing Life, up to 30%",
           "price": 11000,
           "category": "Weapon",
           "attributes": [
@@ -238,7 +238,7 @@
           "position": 1,
           "id": "5A004",
           "name": "Gryphon Glider",
-          "description": "+25 Health, +10% Ability Lifesteal, you can now fly during [Charge]",
+          "description": "You can now fly during [Charge]",
           "price": 10000,
           "category": "Ability",
           "attributes": [
@@ -258,7 +258,7 @@
           "position": 3,
           "id": "5S003",
           "name": "Infusion Generator",
-          "description": "+25 Health, Increase [Barrier Field] Health by 100% of your max Life",
+          "description": "Increase [Barrier Field] Health by 100% of your max Life",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -273,7 +273,7 @@
           "position": 2,
           "id": "5S004",
           "name": "Phoenix Protocol",
-          "description": "+25 Health, [Barrier Field] regenerates 50% faster and begins regenerating 50% sooner after being destroyed",
+          "description": "[Barrier Field] regenerates 50% faster and begins regenerating 50% sooner after being destroyed",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -288,7 +288,7 @@
           "position": 2,
           "id": "5A005",
           "name": "Rocket Strike",
-          "description": "+20% Ability Power, +50% Fire Strike Projectile Speed",
+          "description": "",
           "price": 10000,
           "category": "Ability",
           "attributes": [
@@ -395,7 +395,7 @@
           "position": 1,
           "id": "2W001",
           "name": "Spectral Slugs",
-          "description": "+5% Attack Speed, +25% Magazine Size, using [Shadow Step] restores 100% of your ammo",
+          "description": "Using [Shadow Step] restores 100% of your ammo",
           "price": 4000,
           "category": "Weapon",
           "attributes": [
@@ -415,7 +415,7 @@
           "position": 2,
           "id": "2S001",
           "name": "Neverfrost",
-          "description": "+25 Health, +5% Weapon Power, reduce effectiveness of enemy slows by 50%",
+          "description": "Reduce effectiveness of enemy slows by 50%",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -435,7 +435,7 @@
           "position": 3,
           "id": "2S002",
           "name": "Pocket Mist",
-          "description": "+25 Health, while below 50% Life, gain 20% Move Speed",
+          "description": "While below 50% Life, gain 20% Move Speed",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -450,7 +450,7 @@
           "position": 1,
           "id": "2S003",
           "name": "Devastation",
-          "description": "+15% Ability Lifesteal, each [Death Blossom] elimination increases your Health by 25 until the end of the round, up to 100 Health",
+          "description": "Each [Death Blossom] elimination increases your Health by 25 until the end of the round, up to 100 Health",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -467,7 +467,7 @@
           "position": 1,
           "id": "2S004",
           "name": "Wretched Wings",
-          "description": "+25 Health, While in Wraith Form, gain the ability to fly and gain 20% Move Speed",
+          "description": "While in Wraith Form, gain the ability to fly and gain 20% Move Speed",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -475,11 +475,6 @@
               "type": "HP",
               "value": 25,
               "valueType": ""
-            },
-            {
-              "type": "MA",
-              "value": 25,
-              "valueType": "%"
             }
           ]
         },
@@ -487,7 +482,7 @@
           "position": 2,
           "id": "2S005",
           "name": "Dauntless Draught",
-          "description": "+50 Health, +15% Move Speed during Wraith Form, +33% Wraith Form Duration",
+          "description": "",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -512,7 +507,7 @@
           "position": 1,
           "id": "2A001",
           "name": "Nightcreeper",
-          "description": "+10% Move Speed, +30% [Shadow Step] Cast Speed, using [Wraith Form] reduces the cooldown of [Shadow Step] by 2s",
+          "description": "Using [Wraith Form] reduces the cooldown of [Shadow Step] by 2s",
           "price": 9500,
           "category": "Ability",
           "attributes": [
@@ -532,13 +527,13 @@
           "position": 3,
           "id": "2S006",
           "name": "Crimson Cloak",
-          "description": "+25 Health, +10% Ability Power, gain 15% of max Health as Overhealth while using [Death Blossom]",
+          "description": "Using [Death Bloosom] grants you Overhelth equel to 15% of your max Life",
           "price": 11000,
           "category": "Survival",
           "attributes": [
             {
               "type": "HP",
-              "value": 15,
+              "value": 25,
               "valueType": ""
             },
             {
@@ -552,7 +547,7 @@
           "position": 3,
           "id": "2A002",
           "name": "Crowd Control",
-          "description": "+15% Ability Power, [Death Blossom] gains 5% Ability Power for each enemy within its range",
+          "description": "[Death Blossom] gains 5% Ability Power for each enemy within its range",
           "price": 11000,
           "category": "Ability",
           "attributes": [
@@ -567,7 +562,7 @@
           "position": 2,
           "id": "2A003",
           "name": "Wreath Of Ruin",
-          "description": "+20% Ability Power, +25% Death Blossom Radius, +20% Move Speed during Death Blossom",
+          "description": "",
           "price": 10000,
           "category": "Ability",
           "attributes": [
@@ -592,7 +587,7 @@
           "position": 1,
           "id": "2W002",
           "name": "Onslaught",
-          "description": "+25% Max Ammo, every 3rd shot fires both of your [Hellfire Shotguns]. The extra shot does not consume ammo but deals 80% reduced damage",
+          "description": "Every 3rd shot fires both of your [Hellfire Shotguns]. The extra shot does not consume ammo but deals 80% reduced damage",
           "price": 10000,
           "category": "Weapon",
           "attributes": [
@@ -694,7 +689,7 @@
           "position": 1,
           "id": "15W001",
           "name": "Pulse Converter",
-          "description": "+5% Attack Speed, +5% Cooldown Reduction, [Helix Rocket] damage restores 20% of your ammo",
+          "description": "[Helix Rocket] damage restores 20% of your ammo",
           "price": 4000,
           "category": "Weapon",
           "attributes": [
@@ -714,7 +709,7 @@
           "position": 1,
           "id": "15A001",
           "name": "Battery Pack",
-          "description": "+10% Ability Power, +30% Biotic Field Duration",
+          "description": "",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -734,7 +729,7 @@
           "position": 2,
           "id": "15A002",
           "name": "Bomb Diffusal Boots",
-          "description": "+25 Health, +5% Weapon Power, 90% Reduced [Helix Rocket] Self-Damage, When you damage yourself with [Helix Rocket], it knocks you back 200% further",
+          "description": "When you damage yourself with [Helix Rocket], it knocks you back 200% further",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -759,7 +754,7 @@
           "position": 1,
           "id": "15S001",
           "name": "Compression Fatigues",
-          "description": "+25 Health, +5% Attack Speed, +25% [Sprint] Move Speed",
+          "description": "",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -786,7 +781,7 @@
           "position": 2,
           "id": "15A003",
           "name": "Rapid Response Radius",
-          "description": "+10% Ability Power, +30% Biotic Field Radius, [Biotic Field] heals allies below 50% Life for 10% more",
+          "description": "[Biotic Field] heals allies below 50% Life for 10% more",
           "price": 10000,
           "category": "Ability",
           "attributes": [
@@ -806,7 +801,7 @@
           "position": 1,
           "id": "15S002",
           "name": "Iron Lung",
-          "description": "+25 Health, while using [Sprint], gain Overhealth equal to 5% of your max Life every 1s, up to 25%, for 5s",
+          "description": "While using [Sprint], gain Overhealth equal to 5% of your max Life every 1s, up to 25%, for 5s",
           "price": 10000,
           "category": "Survival",
             "attributes": [
@@ -821,7 +816,7 @@
           "position": 1,
           "id": "15A004",
           "name": "Endgame Equalizer",
-          "description": "+25 Health, +15% Ability Power, when you spend your Ultimate Charge, reset all ability cooldowns. While [Tactical Visor] is active, gain 20% Cooldown Reduction",
+          "description": "When you spend your Ultimate Charge, reset all ability cooldowns. While [Tactical Visor] is active, gain 20% Cooldown Reduction",
           "price": 10000,
           "category": "Ability",
           "attributes": [
@@ -936,7 +931,7 @@
           "position": 1,
           "id": "6A001",
           "name": "Long Distance Wings",
-          "description": "+10% Ability Power, +33% [Guardian Angel] Range",
+          "description": "",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -956,7 +951,7 @@
           "position": 1,
           "id": "6S001",
           "name": "Aerodynamic Feathers",
-          "description": "+25 Health, while affected by [Angelic Descent], continuously gain 10% Move Speed every 1s up to 60%",
+          "description": "While affected by [Angelic Descent], continuously gain 10% Move Speed every 1s up to 60%",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -971,7 +966,7 @@
           "position": 2,
           "id": "6S002",
           "name": "Angeleisure Wear"  ,
-          "description": "+25 Health, while affected by [Angelic Descent] or [Guardian Angel], heal 3% of your Life every 1s",
+          "description": "While affected by [Angelic Descent] or [Guardian Angel], heal 3% of your Life every 1s",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -988,7 +983,7 @@
           "position": 2,
           "id": "6A002",
           "name": "Angelic Acrobatics",
-          "description": "+15% Guardian Angel Move Speed, [Guardian Angel]'s cooldown starts as soon as you jump or crouch",
+          "description": "[Guardian Angel]'s cooldown starts as soon as you jump or crouch",
           "price": 10000,
           "category": "Ability",
             "attributes": [
@@ -1003,7 +998,7 @@
           "position": 1,
           "id": "6S003",
           "name": "Blessed Boosters",
-          "description": "+50 Health, Your launch velocity is increased by 25% when canceling [Guardian Angel] with crouch or jump",
+          "description": "Your launch velocity is increased by 25% when canceling [Guardian Angel] with crouch or jump",
           "price": 9000,
           "category": "Survival",
           "attributes": [
@@ -1018,7 +1013,7 @@
           "position": 2,
           "id": "6S004",
           "name": "Chain Evoker",
-          "description": "+50 Armor, +5% [Caduceus Staff] damage boost, +15% Ultimate Charge gained from damage boost",
+          "description": "",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -1043,7 +1038,7 @@
           "position": 2,
           "id": "6W003",
           "name": "Celestial Clip",
-          "description": "+10% Weapon Power, +33% Max Ammo, [Caduceus Blaster] has a 10% chance to fire an extra shot that doesn't consume additional ammo",
+          "description": "[Caduceus Blaster] has a 10% chance to fire an extra shot that doesn't consume additional ammo",
           "price": 10000,
           "category": "Weapon",
           "attributes": [
@@ -1063,7 +1058,7 @@
           "position": 1,
           "id": "6W004",
           "name": "Caduceus EX",
-          "description": "+10% Weapon Power, +33% [Caduceus Staff] Range",
+          "description": "",
           "price": 10000,
           "category": "Weapon",
           "attributes": [
@@ -1083,7 +1078,7 @@
           "position": 1,
           "id": "6A003",
           "name": "Resurrection Rangefinder",
-          "description": "+10% Cooldown Reduction, +75% [Resurrection] Range",
+          "description": "",
           "price": 10000,
           "category": "Ability",
           "attributes": [
@@ -1190,7 +1185,7 @@
           "position": 1,
           "id": "26W001",
           "name": "Bio-Needles",
-          "description": "+10% Attack Speed, [Biotic Grasp]'s secondary fire restores 50% more [Biotic Energy]",
+          "description": "[Biotic Grasp]'s secondary fire restores 50% more [Biotic Energy]",
           "price": 4000,
           "category": "Weapon",
           "attributes": [
@@ -1204,7 +1199,7 @@
         {
           "id": "26W002",
           "name": "High Capacity Tubing",
-          "description": "+10% Weapon Power, +50 Max [Biotic Energy]",
+          "description": "",
           "price": 4000,
           "category": "Weapon",
           "attributes": [
@@ -1224,7 +1219,7 @@
           "position": 1,
           "id": "26A001",
           "name": "Smart Orbs",
-          "description": "+5% Ability Power, [Biotic Orb] moves 50% slower while it is healing or dealing damage",
+          "description": "[Biotic Orb] moves 50% slower while it is healing or dealing damage",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -1438,7 +1433,7 @@
           "position": 1,
           "id": "19A001",
           "name": "Dae-hyun's Detonator",
-          "description": "+15% Ability Lifesteal, if your [Mech] detonates while mid-air, increase [Self-Destruct] explosion damage and range by 200%",
+          "description": "If your [Mech] detonates while mid-air, increase [Self-Destruct] explosion damage and range by 200%",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -1462,7 +1457,7 @@
           "position": 3,
           "id": "19A003",
           "name": "Vesuvius Protocol",
-          "description": "+10% Ability Power, using [Self-Destruct] drops lava nearby that deals 30 damage every 1s",
+          "description": "Using [Self-Destruct] drops lava nearby that deals 30 damage every 1s",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -1477,7 +1472,7 @@
           "position": 1,
           "id": "19S001",
           "name": "Galvanized Core",
-          "description": "+25 Health, 25% [Boosters] Duration",
+          "description": "",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -1497,7 +1492,7 @@
           "position": 2,
           "id": "19S002",
           "name": "Plot Armor",
-          "description": "+25 Armor, while [Defense Matrix] is active, gain 65% damage reduction against beams",
+          "description": "While [Defense Matrix] is active, gain 65% damage reduction against beams",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -1512,7 +1507,7 @@
           "position": 3,
           "id": "19S003",
           "name": "Solo Spec",
-          "description": "+25 Health, when you mitigate damage with [Defense Matrix], gain Shields equal to 10% of the damage mitigated, up to 100. Resets when your [Mech] is destroyed",
+          "description": "When you mitigate damage with [Defense Matrix], gain Shields equal to 10% of the damage mitigated, up to 100. Resets when your [Mech] is destroyed",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -1529,7 +1524,7 @@
           "position": 1,
           "id": "19A004",
           "name": "Busan Blaster",
-          "description": "+20% Ability Power, [Light Gun] gains a secondary fire, which charges up to fire a piercing shot that deals 80 piercing damage",
+          "description": "[Light Gun] gains a secondary fire, which charges up to fire a piercing shot that deals 80 piercing damage",
           "price": 10000,
           "category": "Ability",
           "attributes": [
@@ -1544,15 +1539,22 @@
           "position": 4,
           "id": "19S004",
           "name": "Nano Cola\u2122 Nitrous",
-          "description": "+50 Health, when you eject from your Mech, gain 25% increased max Health and gain [Nano Boost] for 8s",
+          "description": "When you eject from your Mech, gain 25% increased max Health and gain [Nano Boost] for 8s",
           "price": 11000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": "50",
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 2,
           "id": "19S005",
           "name": "Chip-Damage Diverter",
-          "description": "+50 Health, when you deal damage to Barriers while in your [Mech], gain Shields equal to 10% of the damage dealt, up to 200. Resets when your [Mech] is destroyed",
+          "description": "When you deal damage to Barriers while in your [Mech], gain Shields equal to 10% of the damage dealt, up to 200. Resets when your [Mech] is destroyed",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -1567,7 +1569,7 @@
           "position": 1,
           "id": "19S006",
           "name": "Multi-Task Mod",
-          "description": "+10% Weapon Power, [Fusion Cannons] can now be fired while using [Defense Matrix]",
+          "description": "[Fusion Cannons] can now be fired while using [Defense Matrix]",
           "price": 10000,
           "category": "Weapon",
           "attributes": [
@@ -1582,7 +1584,7 @@
           "position": 3,
           "id": "19S007",
           "name": "Singijeon's Pulse Plating",
-          "description": "+50 Health, gain 5% of damage mitigated by [Defense Matrix] as Ultimate Charge",
+          "description": "Gain 5% of damage mitigated by [Defense Matrix] as Ultimate Charge",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -1597,7 +1599,7 @@
           "position": 1,
           "id": "19S008",
           "name": "APM AMP",
-          "description": "+50 Shield, when you use [Boosters], allies within 16m gain 25% Move Speed for 2s",
+          "description": "When you use [Boosters], allies within 16m gain 25% Move Speed for 2s",
           "price": 9000,
           "category": "Survival",
           "attributes": [
@@ -1612,7 +1614,7 @@
           "position": 3,
           "id": "19A005",
           "name": "Onslaught Ordinance",
-          "description": "+15% Ability Power, the quantity and duration of [Micro Missiles] is increased by 20%",
+          "description": "The quantity and duration of [Micro Missiles] is increased by 20%",
           "price": 12000,
           "category": "Ability",
           "attributes": [
