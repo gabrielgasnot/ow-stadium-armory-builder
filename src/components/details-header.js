@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Stack, Button, Typography, Box, Paper } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
 import types from "../db/attributeTypes.json";
+import AppContext from "../app-context.js";
 
-function DetailsHeader({ hero, items, shareBuild, copyBuild}) {
+function DetailsHeader({ copyBuild }) {
+  const { currentHero, selectedItems, shareBuild } = useContext(AppContext);
   return (
     <Paper
       elevation={3}
       sx={{
         padding: 2,
         display: "flex",
-        alignItems: "stretch",
+        alignItems: "center",
         flexDirection: "row",
       }}
     >
@@ -22,7 +24,7 @@ function DetailsHeader({ hero, items, shareBuild, copyBuild}) {
           height: 100,
           backgroundColor: "background.paper",
           borderRadius: 1,
-          backgroundImage: `url(${process.env.PUBLIC_URL}/heroes/${hero.id}.png)`,
+          backgroundImage: `url(${process.env.PUBLIC_URL}/heroes/${currentHero.id}.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           flexShrink: 0,
@@ -44,20 +46,19 @@ function DetailsHeader({ hero, items, shareBuild, copyBuild}) {
         {/* Name + Icon */}
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <img
-            src={`${process.env.PUBLIC_URL}/roles/${hero.role}.svg`}
-            alt={hero.role}
+            src={`${process.env.PUBLIC_URL}/roles/${currentHero.role}.svg`}
+            alt={currentHero.role}
             style={{ width: 24, height: 24, marginRight: 8, display: "block" }}
           />
           <Typography
             variant="h4"
             sx={{
-              mr: 2,
-              fontFamily: "BigNoodleTitling",
-              fontWeight: 700,
+              mr: 1,
+              fontWeight: 600,
               textDecoration: "none",
             }}
           >
-            {hero.name}
+            {currentHero.name}
           </Typography>
         </Box>
 
@@ -70,8 +71,7 @@ function DetailsHeader({ hero, items, shareBuild, copyBuild}) {
             letterSpacing: ".2rem",
             color: "text.secondary",
             textDecoration: "none",
-            mt: 1,
-            mr: 2,
+            mr: 1,
             fontSize: { xs: "0.875rem", sm: "1rem", md: "1.25rem" }, // Adjust font size based on screen
             lineHeight: { xs: 1.5, sm: 1.6, md: 1.8 }, // Line height for readability
           }}
@@ -84,33 +84,35 @@ function DetailsHeader({ hero, items, shareBuild, copyBuild}) {
               color="red"
               style={{ width: 20, height: 20, marginRight: 4 }}
             />
-            {items.map((item) => item.price).reduce((a, b) => a + b, 0)} credits
+            {selectedItems.map((item) => item.price).reduce((a, b) => a + b, 0)}{" "} credits
           </span>
         </Typography>
 
         {/* Share button */}
-          <Box sx={{ mt: 2 }} className="no-capture">
-            <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={() => shareBuild()}
-                fullWidth
-                startIcon={<ShareIcon />}
-              >
-                Share Build
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={copyBuild} // your screen capture handler
-                fullWidth
-                startIcon={<CameraAltIcon />}
-              >
-                Capture Build
-              </Button>
-            </Stack>
-          </Box>
+        <Box sx={{ mt: 1 }} className="no-capture">
+          <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={() => shareBuild()}
+              fullWidth
+              startIcon={<ShareIcon />}
+              title="Share this build"
+            >
+              Share
+            </Button>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={copyBuild} // your screen capture handler
+              fullWidth
+              startIcon={<CameraAltIcon />}
+              title="Capture this build"
+            >
+              Capture
+            </Button>
+          </Stack>
+        </Box>
       </Box>
     </Paper>
   );

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Stack, Box, Tabs, Tab } from "@mui/material";
 import Powers from "./powers.js";
 import GroupItems from "./group-items.js";
+import AppContext from "../app-context.js";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -28,22 +29,16 @@ function TabPanel(props) {
   );
 }
 
-function Perks({
-  powers,
-  generalItems,
-  items,
-  selectPerk,
-  getPerkColor,
-  selectedItems,
-  selectedPowers,
-}) {
+function Perks() {
+  const { heroPowers, basicItems, heroItems } = useContext(AppContext);
+
   const [value, setValue] = React.useState(0);
 
   const handleChange = (_, newValue) => {
     setValue(newValue);
   };
 
-  if (!powers || !items || !generalItems) {
+  if (!heroPowers && !heroItems && !basicItems) {
     return "No perk available for this hero";
   }
 
@@ -51,52 +46,19 @@ function Perks({
   const tabConfig = [
     {
       label: "Weapon",
-      content: (
-        <GroupItems
-          basicItems={generalItems}
-          items={items}
-          category="Weapon"
-          selectItem={selectPerk}
-          selectedIds={selectedItems}
-          getColor={getPerkColor}
-        />
-      ),
+      content: <GroupItems category="Weapon" />,
     },
     {
       label: "Ability",
-      content: (
-        <GroupItems
-          basicItems={generalItems}
-          items={items}
-          category="Ability"
-          selectItem={selectPerk}
-          selectedIds={selectedItems}
-          getColor={getPerkColor}
-        />
-      ),
+      content: <GroupItems category="Ability" />,
     },
     {
       label: "Survival",
-      content: (
-        <GroupItems
-          basicItems={generalItems}
-          items={items}
-          category="Survival"
-          selectItem={selectPerk}
-          selectedIds={selectedItems}
-          getColor={getPerkColor}
-        />
-      ),
+      content: <GroupItems category="Survival" />,
     },
     {
       label: "Powers",
-      content: (
-        <Powers
-          powers={powers}
-          selectPower={selectPerk}
-          selectedIds={selectedPowers}
-        />
-      ),
+      content: <Powers />,
     },
   ];
 

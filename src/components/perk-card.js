@@ -1,3 +1,4 @@
+import React, { useContext } from "react";
 import {
   Card,
   CardContent,
@@ -8,8 +9,11 @@ import {
 } from "@mui/material";
 import { getPerkColor } from "../services/color";
 import types from "../db/attributeTypes.json";
+import AppContext from "../app-context.js";
 
-function PerkCard({ perk, perkType, perkGrade, selectPerk, isSelected, isDisabled }) {
+function PerkCard({ perk, perkType, isSelected, isDisabled }) {
+  const { perkGrade, addPerkBuild } = useContext(AppContext);
+
   return (
     <Card
       sx={{
@@ -23,9 +27,9 @@ function PerkCard({ perk, perkType, perkGrade, selectPerk, isSelected, isDisable
         "&:hover": {
           boxShadow: "0 4px 20px rgba(20, 96, 158, 0.69)",
         },
-        cursor: isDisabled ? "not-allowed": "pointer",
+        cursor: isDisabled ? "not-allowed" : "pointer",
       }}
-      onClick={() => isDisabled ? false : selectPerk(perkType, perk)}
+      onClick={() => (isDisabled ? false : addPerkBuild(perkType, perk))}
     >
       {/* Header: Image + Name */}
       <CardHeader

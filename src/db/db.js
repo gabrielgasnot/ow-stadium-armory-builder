@@ -39,10 +39,13 @@ heroes.forEach((hero) => {
     (a, b) => (a.position ?? Infinity) - (b.position ?? Infinity)
   );
 
-  // Sort items (normal, rare, epic)
+  // Sort items (comon, rare, epic)
   Object.values(hero.items).forEach((arr) =>
     arr.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity))
   );
 });
+
+// Sort heroes by the defined order
+heroes.sort((a, b) => heroesOrder.indexOf(a.id) - heroesOrder.indexOf(b.id));
 
 export { basicItems, heroes, heroesOrder, attributeTypes };
