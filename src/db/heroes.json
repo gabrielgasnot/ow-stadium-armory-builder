@@ -2311,7 +2311,7 @@
           "position": 1,
           "id": "34W001",
           "name": "Gutpunch Gauntlet",
-          "description": "+10% Weapon Power, while not holding [Jagged Blade], [Quick Melee] deals 75% more damage and knocks back",
+          "description": "While not holding [Jagged Blade], [Quick Melee] deals 75% more damage and knocks back",
           "price": 4000,
           "category": "Weapon",
           "attributes": [
@@ -2326,7 +2326,7 @@
           "position": 2,
           "id": "34W002",
           "name": "Monarch's Decree",
-          "description": "+5% Weapon Power, [Commanding Shout] grants you +15% Attack Speed",
+          "description": "[Commanding Shout] grants you +15% Attack Speed",
           "price": 4000,
           "category": "Weapon",
           "attributes": [
@@ -2341,7 +2341,7 @@
           "position": 1,
           "id": "34A001",
           "name": "Bigger Magnet",
-          "description": "+10% Ability Power, [Jagged Blade]'s pull strength is increased by 35%",
+          "description": "[Jagged Blade]'s pull strength is increased by 35%",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -2356,15 +2356,27 @@
           "position": 1,
           "id": "34S001",
           "name": "Dez's Damage Dampener",
-          "description": "+25 Health, +50% Knockback Resistance, When knockback, gain 25%  increased Move Speed for 3s",
+          "description": "When knockback, gain 25%  increased Move Speed for 3s",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": "25",
+              "valueType": ""
+            },
+            {
+              "type": "KR",
+              "value": 50,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "34S002",
           "name": "Rebellious Spirit",
-          "description": "+25 Health, When [Wound] gets removed instead of expiring, gain 10% of Max Life as Overhealth, up to 150",
+          "description": "When [Wound] gets removed instead of expiring, gain 10% of Max Life as Overhealth, up to 150",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -2379,7 +2391,7 @@
           "position": 3,
           "id": "34S003",
           "name": "Slicing Spree",
-          "description": "+10% Move Speed, While within 12m of an enemy with a [Wound], gain 10% Move Speed and 5% Attack Speed",
+          "description": "While within 12m of an enemy with a [Wound], gain 10% Move Speed and 5% Attack Speed",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -2396,7 +2408,7 @@
           "position": 1,
           "id": "34W003",
           "name": "Shred and Lead",
-          "description": "+33% Max Ammo, +10% Weapon Lifesteal, When you [Wound] an enemy, gain 10% Attack Speed for 4s, stacking up to 3 times",
+          "description": "When you [Wound] an enemy, gain 10% Attack Speed for 4s, stacking up to 3 times",
           "price": 10000,
           "category": "Weapon",
           "attributes": [
@@ -2416,7 +2428,7 @@
           "position": 2,
           "id": "34W004",
           "name": "Bloodhound Mask",
-          "description": "+15% Weapon Power, Gain 5% Weapon Power for each enemy with a [Wound] within 12m",
+          "description": "Gain 5% Weapon Power for each enemy with a [Wound] within 12m",
           "price": 12000,
           "category": "Weapon",
           "attributes": [
@@ -2431,7 +2443,7 @@
           "position": 1,
           "id": "34A002",
           "name": "Tinker Tracksuit",
-          "description": "+5% Cooldown Reduction, +10% Ability Lifesteal, [Rampage] and [Carnage] hits grant 10% Attack Speed for 4s",
+          "description": "[Rampage] and [Carnage] hits grant 10% Attack Speed for 4s",
           "price": 9500,
           "category": "Ability",
           "attributes": [
@@ -2451,7 +2463,7 @@
           "position": 2,
           "id": "34A003",
           "name": "Booming Voice",
-          "description": "+25% Ability Power, +50% [Commanding Shout] Radius, [Commanding Shout] will affect allies that are out of line of sight",
+          "description": "[Commanding Shout] will affect allies that are out of line of sight",
           "price": 11000,
           "category": "Ability",
           "attributes": [
@@ -2471,7 +2483,7 @@
           "position": 1,
           "id": "34S004",
           "name": "Scav Scraps",
-          "description": "+50 Health, +5% Cooldown Reduction, [Carnage] and [Jagged Blade] impacts damage grants Overhealth equal to 40% of damage dealt",
+          "description": "[Carnage] and [Jagged Blade] impacts damage grants Overhealth equal to 40% of damage dealt",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -2491,7 +2503,7 @@
           "position": 2,
           "id": "34S005",
           "name": "Thick Skull",
-          "description": "+50 Armor, While casting [Rampage] or [Carnage], gain 50% damage reduction",
+          "description": "While casting [Rampage] or [Carnage], gain 50% damage reduction",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -2506,7 +2518,7 @@
           "position": 3,
           "id": "34S006",
           "name": "Undying Loyalty",
-          "description": "+50 Health, +30% [Commanding Shout] Overhealth, Allies affected by [Commanding Shout] are healed for 5% of Junker Queen 's life every second",
+          "description": "Allies affected by [Commanding Shout] are healed for 5% of Junker Queen 's life every second",
           "price": 10000,
           "category": "Survival",
           "attributes": [
@@ -2516,7 +2528,7 @@
               "valueType": ""
             },
             {
-              "type": "Commanding Shout Overhealth",
+              "type": "[Commanding Shout] Overhealth",
               "value": 30,
               "valueType": "%"
             }
