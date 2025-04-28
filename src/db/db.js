@@ -1,5 +1,21 @@
-import basicItems from './basicItems.json';
-import heroes from './heroes.json';
+import basicItems from "./basicItems.json";
+import heroes from "./heroes.json";
+
+const attributeTypes = {
+  WP: "Weapon Power",
+  AP: "Ability Power",
+  HP: "Health",
+  AR: "Armor",
+  SH: "Shield",
+  MS: "Move Speed",
+  CD: "Critical Damage",
+  CR: "Cooldown Reduction",
+  AS: "Attack Speed",
+  MA: "Max Ammo",
+  WPLS: "Weapon Lifesteal",
+  ALS: "Ability Lifesteal",
+  MD: "Melee Damage",
+};
 
 const heroesOrder = [
   // Tank
@@ -27,19 +43,21 @@ const heroesOrder = [
 ];
 
 // Sort basic items
-Object.values(basicItems).forEach(items =>
-    items.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity))
+Object.values(basicItems).forEach((items) =>
+  items.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity))
 );
 
 // Sort heroes capacities
-heroes.forEach(hero => {
+heroes.forEach((hero) => {
   // Sort powers
-  hero.powers.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity));
+  hero.powers.sort(
+    (a, b) => (a.position ?? Infinity) - (b.position ?? Infinity)
+  );
 
   // Sort items (normal, rare, epic)
-  Object.values(hero.items).forEach(arr =>
-      arr.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity))
+  Object.values(hero.items).forEach((arr) =>
+    arr.sort((a, b) => (a.position ?? Infinity) - (b.position ?? Infinity))
   );
 });
 
-export { basicItems, heroes, heroesOrder };
+export { basicItems, heroes, heroesOrder, attributeTypes };
