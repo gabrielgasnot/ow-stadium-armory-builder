@@ -13,6 +13,7 @@ function BuildMain({
   heroItems,
   addPerkBuild,
   shareBuild,
+  showMessage
 }) {
   const selectedPowerIds = [...selectedPowers.map((sp) => sp.id)];
   const selectedItemsIds = [...selectedItems.map((si) => si.id)];
@@ -60,6 +61,7 @@ function BuildMain({
           items={selectedItems}
           removeElement={removePerkBuild}
           shareBuild={shareBuild}
+          showMessage={showMessage}
         />
       </Box>
       {/* Right / Perk Panel */}
