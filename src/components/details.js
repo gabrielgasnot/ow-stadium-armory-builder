@@ -126,6 +126,25 @@ function Details() {
             </Grid>
           </CardContent>
         </Card>
+
+        <Card
+          sx={{
+            flexGrow: 1,
+            minHeight: 0, // very important when you want internal scroll!
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <CardHeader title="Stats" />
+          <CardContent
+            sx={{
+              flexGrow: 1,
+              overflow: { xs: "visible", xl: "auto" },
+            }}
+          >
+           
+          </CardContent>
+        </Card>
       </Stack>
     </Box>
   );
