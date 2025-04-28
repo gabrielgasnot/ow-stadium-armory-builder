@@ -93,7 +93,7 @@
           "attributes": [
             {
               "type": "AR",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -118,7 +118,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
@@ -147,7 +147,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
@@ -162,7 +162,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -244,7 +244,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -264,7 +264,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
@@ -279,7 +279,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
@@ -1478,7 +1478,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -1498,7 +1498,7 @@
           "attributes": [
             {
               "type": "AR",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
@@ -1513,7 +1513,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
@@ -1545,7 +1545,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "50",
+              "value": 50,
               "valueType": ""
             }
           ]
@@ -1560,7 +1560,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "50",
+              "value": 50,
               "valueType": ""
             }
           ]
@@ -1590,7 +1590,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "50",
+              "value": 50,
               "valueType": ""
             }
           ]
@@ -1605,7 +1605,7 @@
           "attributes": [
             {
               "type": "SH",
-              "value": "50",
+              "value": 50,
               "valueType": ""
             }
           ]
@@ -2124,7 +2124,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
@@ -2148,7 +2148,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
@@ -2215,7 +2215,7 @@
           "attributes": [
             {
               "type": "AR",
-              "value": "50",
+              "value": 50,
               "valueType": ""
             }
           ]
@@ -2362,7 +2362,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -2382,7 +2382,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
@@ -2489,7 +2489,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "50",
+              "value": 50,
               "valueType": ""
             },
             {
@@ -2509,7 +2509,7 @@
           "attributes": [
             {
               "type": "AR",
-              "value": "50",
+              "value": 50,
               "valueType": ""
             }
           ]
@@ -2524,7 +2524,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "50",
+              "value": 50,
               "valueType": ""
             },
             {
@@ -2651,7 +2651,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -2670,7 +2670,7 @@
           "attributes": [
             {
               "type": "SH",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -2689,7 +2689,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -2738,7 +2738,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -2757,7 +2757,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -3009,7 +3009,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             },
             {
@@ -3044,7 +3044,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": "25",
+              "value": 25,
               "valueType": ""
             }
           ]
