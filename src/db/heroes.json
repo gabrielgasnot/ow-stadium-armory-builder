@@ -2612,7 +2612,7 @@
         {
           "id": "13W001",
           "name": "Hybrid Battery",
-          "description": "+5% Weapon Power, [Energy] cannot be reduced below 20.",
+          "description": "[Energy] cannot be reduced below 20.",
           "price": 4000,
           "category": "Weapon",
           "attributes": [
@@ -2626,7 +2626,7 @@
         {
           "id": "13A001",
           "name": "Beyond Barrier",
-          "description": "+10% Ability Power, +20% [Porjected Barrier] range",
+          "description": "",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -2645,7 +2645,7 @@
         {
           "id": "13S001",
           "name": "Blastproof Boots",
-          "description": "+25 Health, +5% Move Speed, [Particle Cannon]'s secondary fire self knockback is increased by 100% and no longer damages yourself.",
+          "description": "[Particle Cannon]'s secondary fire self knockback is increased by 100% and no longer damages yourself.",
           "price": 3750,
           "category": "Survival",
           "attributes": [
@@ -2664,7 +2664,7 @@
         {
           "id": "13S002",
           "name": "Jumper Cables",
-          "description": "+25 Shields, +5% Ability Power, After using a [Barrier], start regenerating Shields instantly",
+          "description": "After using a [Barrier], start regenerating Shields instantly",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -2683,7 +2683,7 @@
         {
           "id": "13S003",
           "name": "Protein Shake",
-          "description": "+25 Health, +15% Melee Damage, While [Particle Barrier] is active, become unstoppable and [Quick Melee] knocks back enemies.",
+          "description": "While [Particle Barrier] is active, become unstoppable and [Quick Melee] knocks back enemies.",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -2704,7 +2704,7 @@
         {
           "id": "13W002",
           "name": "Light Launcher",
-          "description": "+15% Weapon Power, Consecutive [Particle Cannon] secondary fire sots consume 20% less Ammo, up to 60% for your current magazine",
+          "description": "Consecutive [Particle Cannon] secondary fire sots consume 20% less Ammo, up to 60% for your current magazine",
           "price": 10000,
           "category": "Weapon",
           "attributes": [
@@ -2718,7 +2718,7 @@
         {
           "id": "13W003",
           "name": "Bigger Beam",
-          "description": "+10% Weapon Power, [Particle Cannon]'s primary fire range is increased by 20%",
+          "description": "[Particle Cannon]'s primary fire range is increased by 20%",
           "price": 11000,
           "category": "Weapon",
           "attributes": [
@@ -2732,10 +2732,15 @@
         {
           "id": "13A002",
           "name": "Lynx's Datadrive",
-          "description": "+25 Health, +15% Ability Power, Casting [Projected Barrier] on an refunds 20% of [Barrier] cooldown",
+          "description": "Casting [Projected Barrier] on an refunds 20% of [Barrier] cooldown",
           "price": 10000,
           "category": "Ability",
           "attributes": [
+            {
+              "type": "HP",
+              "value": "25",
+              "valueType": ""
+            },
             {
               "type": "AP",
               "value": 15,
@@ -2746,7 +2751,7 @@
         {
           "id": "13A003",
           "name": "Superconductor",
-          "description": "+25 Health, +15% Ability Power, +40% [Barrier] Duration",
+          "description": "",
           "price": 10000,
           "category": "Ability",
           "attributes": [
