@@ -2863,33 +2863,66 @@
           "position": 1,
           "id": "35W001",
           "name": "Asa's Armaments",
-          "description": "+10% Attack Speed, [Kunai] bounce off surfaces 1 time",
+          "description": "[Kunai] bounce off surfaces 1 time",
           "price": 4000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "35W002",
           "name": "Farsight Focus Sash",
-          "description": "+10% Weapon Power, when you deal damage, gain 200% [Healing Ofuda] Projectile Speed for 5s",
+          "description": "When you deal damage, gain 200% [Healing Ofuda] Projectile Speed for 5s",
           "price": 5000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 3,
           "id": "35W003",
           "name": "Teamwork Toolkit",
-          "description": "+10% Weapon Power, when you heal an ally, grant them 10% increased Move Speed for 3s",
+          "description": "When you heal an ally, grant them 10% increased Move Speed for 3s",
           "price": 5000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "35A001",
           "name": "Eye Of The Yokai",
-          "description": "+10% Ability Power, 35% [Kitsune Rush] Duration",
+          "description": "",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "[Kitsune Rush] Duration",
+              "value": 35,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
@@ -2903,9 +2936,16 @@
           "position": 1,
           "id": "35S001",
           "name": "Kitsune Kicks",
-          "description": "+10% Move Speed, gain the ability to [Double Jump]",
+          "description": "Gain the ability to [Double Jump]",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "MS",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         }
       ],
       "epic": [
@@ -2913,57 +2953,116 @@
           "position": 1,
           "id": "35W004",
           "name": "Ry\u014dta's Reloader",
-          "description": "+35% Reload Speed, after casting an ability, restore 100% of your ammo",
+          "description": "After casting an ability, restore 100% of your ammo",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "RS",
+              "value": 35,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "35W005",
           "name": "Spirits' Guidance",
-          "description": "+15% Weapon Power, 100% [Healing Ofuda] Projectile Speed",
+          "description": "",
           "price": 12000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 15,
+              "valueType": "%"
+            },
+            {
+              "type": "[Healing Ofuda] Projectile Speed",
+              "value": 100,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "35A003",
           "name": "Donut Delivery",
-          "description": "+10% Ability Power, [Swift Step] heals nearby allies by 80 Life over 2s",
+          "description": "[Swift Step] heals nearby allies by 80 Life over 2s",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "35A004",
           "name": "Our Bikes",
-          "description": "+25 Health, +15% Ability Power, allies affected by [Kitsune Rush] are healed for 80 every 1s",
+          "description": "Allies affected by [Kitsune Rush] are healed for 80 every 1s",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": "25",
+              "valueType": ""
+            },
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 3,
           "id": "35A005",
           "name": "Talisman of Velocity",
-          "description": "+15% Ability Power, [Protection Suzu] grants 25% Attack Speed and 25% Move Speed for 4s",
+          "description": "[Protection Suzu] grants 25% Attack Speed and 25% Move Speed for 4s",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "35S002",
           "name": "Goddess's Aura",
-          "description": "+25 Health, after using [Swift Step], you gain 100 Overhealth for 4s",
+          "description": "[Swift Step], you gain 100 Overhealth for 4s",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": "25",
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 2,
           "id": "35S003",
           "name": "Talisman of Life",
-          "description": "+20% Ability Power, [Protection Suzu] grants 100 Overhealth for 5s",
+          "description": "[Protection Suzu] grants 100 Overhealth for 5s",
           "price": 11000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 20,
+              "valueType": "%"
+            }
+          ]
         }
       ]
     }
