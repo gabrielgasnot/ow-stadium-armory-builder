@@ -3,11 +3,11 @@ import path from "path";
 import { basicItems, heroes } from "./db/db";
 
 describe("Image existence check", () => {
-  const items = [...basicItems.normal, ...basicItems.rare, ...basicItems.epic];
+  const items = [...basicItems.common, ...basicItems.rare, ...basicItems.epic];
   const hero_items_perks = heroes
     .map((hero) => [
       ...hero.powers.map((power) => power.id),
-      ...hero.items.normal.map((item) => item.id),
+      ...hero.items.common.map((item) => item.id),
       ...hero.items.rare.map((item) => item.id),
       ...hero.items.epic.map((item) => item.id),
     ])

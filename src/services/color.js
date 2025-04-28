@@ -2,7 +2,7 @@ import { amber, green, blue, purple, red, grey } from "@mui/material/colors";
 
 const getPerkColor = (grade) => {
   switch (grade) {
-    case "normal":
+    case "common":
       return green[500];
     case "rare":
       return blue[500];
