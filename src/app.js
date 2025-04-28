@@ -1,6 +1,11 @@
-import React, { useContext, useEffect, useCallback } from "react";
+import React, { useContext, useEffect, useCallback, useState } from "react";
 import "./app.css";
-import { ArmoryHeader, ArmoryFooter, ArmoryMainContent } from "./components";
+import {
+  ArmoryHeader,
+  ArmoryFooter,
+  ArmoryMainContent,
+  LoadingComponent,
+} from "./components";
 import {
   Box,
   Alert,
@@ -15,6 +20,7 @@ import importBuild from "./services/import-build";
 import getAllItemsByHero from "./services/query-items";
 import AppContext from "./app-context";
 import AppContextProvider from "./app-context-provider";
+import { useNavigate } from "react-router-dom";
 
 function App() {
   return (
@@ -27,12 +33,16 @@ function App() {
 }
 
 function AppContent() {
+  const [loading, setLoading] = useState(true);
+
   const {
     currentHero,
     setCurrentHero,
     setHeroPowers,
     setHeroItems,
+    selectedPowers,
     setSelectedPowers,
+    selectedItems,
     setSelectedItems,
     shareLink,
     setShareLink,
@@ -44,6 +54,7 @@ function AppContent() {
   } = useContext(AppContext);
 
   const location = useLocation();
+  const navigate = useNavigate();
   const rawPath = location.pathname;
   const encodedString = rawPath.startsWith("/") ? rawPath.slice(1) : rawPath;
 
@@ -54,41 +65,79 @@ function AppContent() {
 
         if (result) {
           const heroId = parseInt(result.heroId);
+          // Check if the heroId is different from the currentHero
           if (heroId !== currentHero) {
             const hero = heroes.find((h) => h.id === parseInt(heroId));
             if (!hero) {
               showMessage("Failed to import: hero not found");
               return;
             } else {
-              console.log("Navigation data: ", result);
+              // Only update state if it has changed
               setCurrentHero(hero);
               setHeroItems(hero.items);
               setHeroPowers(hero.powers);
 
-              if (result.selectedPerks.length > 0) {
+              // Check if selectedPerks match the items and powers that need to be updated
+              const selectedItemsMatch =
+                selectedItems.length > 0 &&
+                selectedItems.every((item) =>
+                  result.selectedPerks.includes(item.id)
+                );
+              const selectedPowersMatch =
+                selectedPowers.length > 0 &&
+                selectedPowers.every((power) =>
+                  result.selectedPerks.includes(power.id)
+                );
+
+              // Only update selectedItems and selectedPowers if needed
+              if (!selectedItemsMatch) {
                 const itemDb = getAllItemsByHero(hero);
-                setSelectedItems(
-                  itemDb.filter((item) =>
-                    result.selectedPerks.includes(item.id)
-                  )
-                );
-                setSelectedPowers(
-                  hero.powers.filter((power) =>
-                    result.selectedPerks.includes(power.id)
-                  )
-                );
+                const orderedSelectedItems = result.selectedPerks
+                  .map((id) => itemDb.find((item) => item.id === id))
+                  .filter((item) => item !== undefined);
+
+                setSelectedItems(orderedSelectedItems);
+              }
+              
+              if (!selectedPowersMatch) {
+                const orderedSelectedPowers = result.selectedPerks
+                  .map((id) => hero.powers.find((power) => power.id === id))
+                  .filter((power) => power !== undefined);
+                setSelectedPowers(orderedSelectedPowers);
               }
             }
           }
+          navigate("/");
         }
       }
+      setLoading(false);
     },
-    [currentHero]
+    [
+      currentHero,
+      navigate,
+      heroes,
+      showMessage,
+      setCurrentHero,
+      setHeroItems,
+      setHeroPowers,
+      selectedItems,
+      selectedPowers,
+      setSelectedItems,
+      setSelectedPowers,
+    ]
   );
 
   useEffect(() => {
-    navigation(encodedString);
+    if (encodedString) {
+      navigation(encodedString);
+    } else {
+      setLoading(false);
+    }
   }, [encodedString, navigation]);
+
+  if (loading) {
+    return <LoadingComponent />; // Display loading screen or placeholder
+  }
 
   return (
     <ThemeProvider theme={owTheme}>
