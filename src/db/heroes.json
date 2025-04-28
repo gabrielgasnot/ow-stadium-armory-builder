@@ -3967,33 +3967,71 @@
           "position": 1,
           "id": "41W001",
           "name": "Vantage Shot",
-          "description": "+5% Weapon Power, while airborne, [Mediblaster] deals 15% more damage",
+          "description": "While airborne, [Mediblaster] deals 15% more damage",
           "price": 4000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "41A001",
           "name": "Lock-On Shield",
-          "description": "+10% Ability Power, while aiming [Pulsar Torpedoes], gain Overhealth equal to 50% of your max Shields",
+          "description": "While aiming [Pulsar Torpedoes], gain Overhealth equal to 50% of your max Shields",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "41A002",
           "name": "Lux Loop",
-          "description": "+10% Ability Power, +25% Hyper Ring Duration",
+          "description": "",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "Hyper Ring Duration",
+              "value": 25,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "41S001",
           "name": "Boosted Rockets",
-          "description": "+25 Shield, +25% [Glide Boost] Duration",
+          "description": "",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "SH",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "[Glide Boost] Duration",
+              "value": 25,
+              "valueType": "%"
+            }
+          ]
         }
       ],
       "epic": [
@@ -4001,25 +4039,51 @@
           "position": 2,
           "id": "41W002",
           "name": "Long Range Blaster",
-          "description": "+15% Weapon Power, [Mediblaster] deals 15% increased damage and healing to targets farther than 12m away",
+          "description": "[Mediblaster] deals 15% increased damage and healing to targets farther than 12m away",
           "price": 12000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "41A003",
           "name": "PulStar Destroyers",
-          "description": "+15% Ability Power, [Pulsar Torpedoes] explode on hit, deal 20 damage to nearby enemies",
+          "description": "[Pulsar Torpedoes] explode on hit, deal 20 damage to nearby enemies",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "41W003",
           "name": "Pulse Spike",
-          "description": "+10% Attack Speed, +35% [Pulsar Torpedoes] Projectile Speed, after using [Pulsar Torpedoes], gain 25% Attack Speed for 4s",
+          "description": "After using [Pulsar Torpedoes], gain 25% Attack Speed for 4s",
           "price": 11000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "[Pulsar Torpedoes] Projectile Speed",
+              "value": 35,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
@@ -4027,39 +4091,80 @@
           "name": "Forti-Glide",
           "description": "+75 Shield, during [Glide Boost], gain 10% Damage Reduction",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "SH",
+              "value": 75,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 3,
           "id": "41W004",
           "name": "Gravitational Push",
-          "description": "+15% Weapon Power, during [Glide Boost], gain 20% Attack Speed and your [Quick Melee] knocks enemies back",
+          "description": "During [Glide Boost], gain 20% Attack Speed and your [Quick Melee] knocks enemies back",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "41A004",
           "name": "Solar Shielding",
-          "description": "+25% Ability Power, allies affected by [Hyper Ring] restore 25 Shields every 1s",
+          "description": "Allies affected by [Hyper Ring] restore 25 Shields every 1s",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 25,
+              "valueType": "%"
+            }
+          ]
+
         },
         {
           "position": 2,
           "id": "41S003",
           "name": "Sunburst Serum",
-          "description": "+75 Shield, [Orbital Ray] gains 25% increased healing",
+          "description": "[Orbital Ray] gains 25% increased healing",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "SH",
+              "value": 75,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 3,
           "id": "41A005",
           "name": "Red Promise Regulator",
-          "description": "+50 Shield, +15% Ability Power, when you use [Orbital Ray], reset your cooldowns",
+          "description": "When you use [Orbital Ray], reset your cooldowns",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "SH",
+              "value": 50,
+              "valueType": ""
+            },
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         }
       ]
     }
