@@ -3662,9 +3662,17 @@
           "position": 1,
           "id": "29W001",
           "name": "Maxed Mag",
-          "description": "+5% Attack Speed, Gain 3% Attack Speed for each remaining Ammo above 50% of your Max Ammo",
+          "description": "Gain 3% Attack Speed for each remaining Ammo above 50% of your Max Ammo",
           "price": 4000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
+
         },
         {
           "position": 2,
@@ -3672,39 +3680,84 @@
           "name": "Tripod",
           "description": "+5% Weapon Power, [The Viper], [Coach Gun], and [Dynamite] deal 10% more damage to enemies that are below you",
           "price": 4000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 3,
           "id": "29W003",
           "name": "Greased Loader",
-          "description": "25% Max Ammo, +15% Reload Speed",
+          "description": "",
           "price": 5000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "MA",
+              "value": 25,
+              "valueType": "%"
+            },
+            {
+              "type": "RS",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "29A001",
           "name": "Furnace Fuel",
-          "description": "+25 Health, +5% Ability Power, When Burn gets removed instead of expiring, gain 3% Ultimate Charge",
+          "description": "When Burn gets removed instead of expiring, gain 3% Ultimate Charge",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "AP",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "29A002",
           "name": "Silver Lighter",
-          "description": "+10% Ability Power, Damage dealt to Burning targets grants 20% more Ultimate Charge",
+          "description": "Damage dealt to Burning targets grants 20% more Ultimate Charge",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "29S001",
           "name": "Silver Spurs",
-          "description": "+25 Health, after using [Coach Gun], gain 20% Move Speed for 3s",
+          "description": "After using [Coach Gun], gain 20% Move Speed for 3s",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ],
       "epic": [
@@ -3712,57 +3765,116 @@
           "position": 1,
           "id": "29W004",
           "name": "Ironsights",
-          "description": "+10% Attack Speed, when the target is further than 10m, scoped shot gains 1% damage for each meter",
+          "description": "When the target is further than 10m, scoped shot gains 1% damage for each meter",
           "price": 11000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "29W005",
           "name": "Sidewinder",
-          "description": "+10% Attack Speed, when the target is within 10m, unscoped shot gains 15% increased damage",
+          "description": "When the target is within 10m, unscoped shot gains 15% increased damage",
           "price": 11000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "29A003",
           "name": "Infrared Lenses",
-          "description": "+15% Ability Power, deal 25% increased damage to Burning enemies",
+          "description": "Deal 25% increased damage to Burning enemies",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "29A004",
           "name": "Stacked Sticks",
-          "description": "+15% Ability Power, 40% [Dynamite] Explosion Radius",
+          "description": "",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            },
+            {
+              "type": "[Dynamite] Explosion Radius",
+              "value": 40,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 3,
           "id": "29A005",
           "name": "Build-A-Blast Buckshot",
-          "description": "+10% Cooldown Reduction, [Coach Gun] has 50% increased self-knockback",
+          "description": "[Coach Gun] has 50% increased self-knockback",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "CR",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "29S002",
           "name": "B.O.B. Wire Defense",
-          "description": "+50 Health, +25 Armor, when [B.O.B.] finishes charging, [B.O.B.] gains 300 Armor",
+          "description": "When [B.O.B.] finishes charging, [B.O.B.] gains 300 Armor",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 50,
+              "valueType": ""
+            },
+            {
+              "type": "AR",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 2,
           "id": "29S003",
           "name": "Firestarter",
-          "description": "+50 Health, Your Burning effects gain 35% Lifesteal",
+          "description": "Your Burning effects gain 35% Lifesteal",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 50,
+              "valueType": ""
+            }
+          ]
         }
       ]
     }
