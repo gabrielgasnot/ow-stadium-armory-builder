@@ -803,7 +803,7 @@ const heroes = [
     role: "Damage",
     hp: 300,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 3,
@@ -980,7 +980,7 @@ const heroes = [
     role: "Damage",
     hp: 250,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 2,
@@ -1125,7 +1125,7 @@ const heroes = [
     role: "Support",
     hp: 225,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 6,
@@ -1294,7 +1294,7 @@ const heroes = [
     role: "Support",
     hp: 225,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 5,
@@ -1454,7 +1454,7 @@ const heroes = [
     role: "Tank",
     hp: 250,
     armor: 300,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -1655,7 +1655,7 @@ const heroes = [
     role: "Damage",
     hp: 250,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 7,
@@ -1842,7 +1842,7 @@ const heroes = [
     role: "Tank",
     hp: 155,
     armor: 325,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -2035,7 +2035,7 @@ const heroes = [
     role: "Tank",
     hp: 375,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -2228,7 +2228,7 @@ const heroes = [
     role: "Tank",
     hp: 175,
     armor: 0,
-    shield: 225,
+    shields: 225,
     powers: [
       {
         id: "13P001",
@@ -2368,7 +2368,7 @@ const heroes = [
     role: "Support",
     hp: 225,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -2561,7 +2561,7 @@ const heroes = [
     role: "Support",
     hp: 250,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 1,
@@ -2754,7 +2754,7 @@ const heroes = [
     role: "Damage",
     hp: 275,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 4,
@@ -2907,7 +2907,7 @@ const heroes = [
     role: "Damage",
     hp: 250,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 4,
@@ -3099,7 +3099,7 @@ const heroes = [
     name: "Juno",
     hp: 75,
     armor: 0,
-    shield: 150,
+    shields: 150,
     role: "Support",
     powers: [
       {
@@ -3285,7 +3285,7 @@ const heroes = [
     role: "Damage",
     hp: 300,
     armor: 0,
-    shield: 0,
+    shields: 0,
     powers: [
       {
         position: 3,
@@ -3445,7 +3445,7 @@ const heroes = [
     name: "Lucio",
     hp: 225,
     armor: 0,
-    shield: 0,
+    shields: 0,
     role: "Support",
     powers: [
       {
