@@ -2035,7 +2035,7 @@
           "position": 1,
           "id": "24W001",
           "name": "Electro Lights",
-          "description": "+10% Attack Speed, recover from being [Overheated] 25% faster",
+          "description": "Recover from being [Overheated] 25% faster",
           "price": 4000,
           "category": "Weapon",
           "attributes": [
@@ -2059,7 +2059,7 @@
           "position": 3,
           "id": "24W003",
           "name": "Optimized Energy",
-          "description": "+10% Weapon Power, Critical Hits reduce your [Heat] by 5%",
+          "description": "Critical Hits reduce your [Heat] by 5%",
           "price": 5000,
           "category": "Weapon",
           "attributes": [
@@ -2083,7 +2083,7 @@
           "position": 2,
           "id": "24A002",
           "name": "Elite Rotator Cuff",
-          "description": "+10% Ability Power, 35% [Javelin Spin] Duration",
+          "description": "",
           "price": 4000,
           "category": "Ability",
           "attributes": [
@@ -2103,15 +2103,22 @@
           "position": 3,
           "id": "24A003",
           "name": "Refraction Tiles",
-          "description": "+25 Armor, while [Javelin Spin] is active, gain 50% damage reduction to beams",
+          "description": "While [Javelin Spin] is active, gain 50% damage reduction to beams",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AR",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 1,
           "id": "24S001",
           "name": "Charged Chassis",
-          "description": "+25 Health, [Fortify] grants additional Overhealth equal to 10% of your Max Life",
+          "description": "[Fortify] grants additional Overhealth equal to 10% of your Max Life",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -2135,7 +2142,7 @@
           "position": 3,
           "id": "24S003",
           "name": "Solar Regenergy",
-          "description": "+25 Health, after using an ability, restore your Armor equal to 5% of your Max Life",
+          "description": "After using an ability, restore your Armor equal to 5% of your Max Life",
           "price": 4000,
           "category": "Survival",
           "attributes": [
@@ -2152,7 +2159,7 @@
           "position": 1,
           "id": "24A004",
           "name": "Efi's Theorem",
-          "description": "+20% Ability Lifesteal, +50% Fortify Duration",
+          "description": "",
           "price": 10000,
           "category": "Ability",
           "attributes": [
@@ -2172,7 +2179,7 @@
           "position": 2,
           "id": "24A005",
           "name": "3D-Printed Lance",
-          "description": "+15% Ability Power, [Energy Javelin] cooldown is reduced by 15%, but each use generates 25 [Heat]",
+          "description": "[Energy Javelin] cooldown is reduced by 15%, but each use generates 25 [Heat]",
           "price": 11000,
           "category": "Ability",
           "attributes": [
@@ -2187,7 +2194,7 @@
           "position": 3,
           "id": "24A006",
           "name": "Oladele-copter Blades",
-          "description": "+15% Ability Power, while using [Javelin Spin], gain free flight and 20% Move Speed",
+          "description": "While using [Javelin Spin], gain free flight and 20% Move Speed",
           "price": 12000,
           "category": "Ability",
           "attributes": [
@@ -2202,7 +2209,7 @@
           "position": 1,
           "id": "24S004",
           "name": "HollaGram Helmet",
-          "description": "+50 Armor, when you use [Fortify], all allies within line of sight gains unstoppable for 2s",
+          "description": "When you use [Fortify], all allies within line of sight gains unstoppable for 2s",
           "price": 10000,
           "category": "Survival",
           "attributes": [
