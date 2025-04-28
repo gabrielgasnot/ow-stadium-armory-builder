@@ -1718,9 +1718,16 @@
           "position": 1,
           "id": "21W001",
           "name": "Spiked Grip",
-          "description": "+30% Max Ammo, while climbing restore 20% of your ammo every 1s",
+          "description": "While climbing restore 20% of your ammo every 1s",
           "price": 3750,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "MA",
+              "value": 30,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
@@ -1734,33 +1741,71 @@
           "position": 2,
           "id": "21A002",
           "name": "Ninja Soles",
-          "description": "+5% Cooldown Reduction, +15% Move Speed during [Deflect]",
+          "description": "",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "CR",
+              "value": 5,
+              "valueType": "%"
+            },
+            {
+              "type": "Move Speed during [Deflect]",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "21S001",
           "name": "Anti-Beam Coating",
-          "description": "+25 Armor, +5% Attack Speed, [Deflect] blocks Beam attacks",
+          "description": "[Deflect] blocks Beam attacks",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "AR",
+              "value": 25,
+              "valueType": ""
+            },
+            {
+              "type": "AS",
+              "value": 5,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "21S002",
           "name": "Equilibrium Gear",
-          "description": "+25 Health, while climbing, heal 5% of your Life every 1s",
+          "description": "While climbing, heal 5% of your Life every 1s",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 3,
           "id": "21S003",
           "name": "Sparrowhawk Feather",
-          "description": "+25 Health, Gain an additional jump",
+          "description": "Gain an additional jump",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ],
       "epic": [
@@ -1768,49 +1813,121 @@
           "position": 1,
           "id": "21W002",
           "name": "Ambusher Optics",
-          "description": "+25% Quick Melee damage, [Quick Melee] can critically hit when hitting enemies from behind, dealing 50% increased damage",
+          "description": "[Quick Melee] can critically hit when hitting enemies from behind, dealing 50% increased damage",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "MD",
+              "value": 25,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "21W003",
           "name": "Enduring Edge",
-          "description": "+10% Weapon Power, 4s [Dragonblade] Duration",
+          "description": "",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "[Dragonblade] Duration",
+              "value": 4,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 3,
           "id": "21W004",
           "name": "Swift-Loader",
-          "description": "+10% Attack Speed, +30% Max Ammo, damaging an enemy with [Swift Strike] restores 20% of your ammo",
+          "description": "Damaging an enemy with [Swift Strike] restores 20% of your ammo",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "MA",
+              "value": 30,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "21A003",
           "name": "Clean Sweep",
-          "description": "+10% Ability Power, +15% Ability Lifesteal, +50% [Swift Strike] Width",
+          "description": "",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            },
+            {
+              "type": "ALS",
+              "value": 15,
+              "valueType": "%"
+            },
+            {
+              "type": "[Swift Strike] Width",
+              "value": 50,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "21A004",
           "name": "Deflecting Dash",
-          "description": "+15% Ability Power, during [Swift Strike], deflect incoming projectiles toward your reticle",
+          "description": "During [Swift Strike], deflect incoming projectiles toward your reticle",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "21S004",
           "name": "Slicy Coolant",
-          "description": "+50 Armor, +5% Cooldown Reduction, +1s Deflect Duration",
+          "description": "",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "AR",
+              "value": 50,
+              "valueType": ""
+            },
+            {
+              "type": "CR",
+              "value": 5,
+              "valueType": "%"
+            },
+            {
+              "type": "[Deflect] Duration",
+              "value": 1,
+              "valueType": "s"
+            }
+          ]
         },
         {
           "position": 2,
@@ -1818,7 +1935,14 @@
           "name": "Transference Delta",
           "description": "15% Ultimate Cost Reduction, convert 100 Health to Armor, when you use Dragonblade, heal your Armor fully",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "Ultimate Cost Reduction",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         }
       ]
     }
