@@ -3448,33 +3448,61 @@
           "position": 1,
           "id": "14W001",
           "name": "Quickload Chamber",
-          "description": "+20% Reload Speed, reloading within 6m of an enemy adds 20% of Max Ammo as extra Ammo",
+          "description": "Reloading within 6m of an enemy adds 20% of Max Ammo as extra Ammo",
           "price": 4000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "RS",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "14A001",
           "name": "Blackwatch Tech",
-          "description": "+10% Ability Power, [Deadeye] eliminations reduce [Flashbang] max cooldown by 10%, up to 40% for the round",
+          "description": "[Deadeye] eliminations reduce [Flashbang] max cooldown by 10%, up to 40% for the round",
           "price": 4000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "14A002",
           "name": "Streamlined Poncho",
-          "description": "+10% Cooldown Reduction, [Combat Roll] reduces [Flashbang] cooldown",
+          "description": "[Combat Roll] reduces [Flashbang] cooldown",
           "price": 5000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "CR",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "14S001",
           "name": "Wanted Poster",
-          "description": "+25 Health, [Deadeye] eliminations reward extra 500 Stadium Cash each",
+          "description": "[Deadeye] eliminations reward extra 500 Stadium Cash each",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ],
       "epic": [
@@ -3482,33 +3510,66 @@
           "position": 1,
           "id": "14W002",
           "name": "Competitive Analysis",
-          "description": "+20% Weapon Lifesteal, deal 15% increased primary fire damage to enemies in the Damage role",
+          "description": "Deal 15% increased primary fire damage to enemies in the Damage role",
           "price": 11000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "WPLS",
+              "value": 20,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "14A003",
           "name": "Improvised Dynamite",
-          "description": "+20% Ability Power, +10% Cooldown Reduction, [Flashbang] explosion radius is increased by 50%",
+          "description": "[Flashbang] explosion radius is increased by 50%",
           "price": 11000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 20,
+              "valueType": "%"
+            },
+            {
+              "type": "CR",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "14S002",
           "name": "Eagle Eye",
-          "description": "+50 Health, Receives 25% less damage from enemy farther than 12m",
+          "description": "Receives 25% less damage from enemy farther than 12m",
           "price": 12000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 50,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 1,
           "id": "14S003",
           "name": "Frankie's Fixer",
-          "description": "+50 Health, Heal 10 Life for each Ammo loaded using [Combat Roll]",
+          "description": "Heal 10 Life for each Ammo loaded using [Combat Roll]",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 50,
+              "valueType": ""
+            }
+          ]
         }
       ]
     }
