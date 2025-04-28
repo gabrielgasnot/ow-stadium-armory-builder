@@ -4257,17 +4257,31 @@
           "position": 1,
           "id": "20S001",
           "name": "Coldspot",
-          "description": "+25 Health, Primary Fire and [Blizzard] can remove burn",
+          "description": "Primary Fire and [Blizzard] can remove burn",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         },
         {
           "position": 2,
           "id": "20S002",
           "name": "Meicicle",
-          "description": "+25 Health, [Cryo-Freeze] duration is increased by 25%",
+          "description": "[Cryo-Freeze] duration is increased by 25%",
           "price": 4000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ],
       "epic": [
@@ -4275,33 +4289,61 @@
           "position": 1,
           "id": "20W001",
           "name": "Focused Flurries",
-          "description": "+15% Attack Speed, Max Ammo is increased by 75% but reloading takes 50% longer",
+          "description": "Max Ammo is increased by 75% but reloading takes 50% longer",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
           "id": "20W002",
           "name": "Snowboot",
-          "description": "+15% Attack Speed, Frozen ground increases Mei's Movement Speed by 35%",
+          "description": "Frozen ground increases Mei's Movement Speed by 35%",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 3,
           "id": "20W003",
           "name": "Himalayan Hat",
-          "description": "+10% Attack Speed, while within [Blizzard], gain 10% Attack Speed",
+          "description": "While within [Blizzard], gain 10% Attack Speed",
           "price": 10000,
-          "category": "Weapon"
+          "category": "Weapon",
+          "attributes": [
+            {
+              "type": "AS",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "20A001",
           "name": "Sturdy Snowfort",
-          "description": "+15% Ability Power, Ability Power is increased by 5% per each spawned Ice Pillars",
+          "description": "Ability Power is increased by 5% per each spawned Ice Pillars",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 15,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 2,
@@ -4315,17 +4357,31 @@
           "position": 3,
           "id": "20A003",
           "name": "Icy Veins",
-          "description": "+10% Ability Power, [Blizzard] deals 100% increased damage",
+          "description": "[Blizzard] deals 100% increased damage",
           "price": 10000,
-          "category": "Ability"
+          "category": "Ability",
+          "attributes": [
+            {
+              "type": "AP",
+              "value": 10,
+              "valueType": "%"
+            }
+          ]
         },
         {
           "position": 1,
           "id": "20S003",
           "name": "Ice Sheet",
-          "description": "+25 Health, [Ice Wall] Duration is increased by 1 second and health is increased by 100%",
+          "description": "[Ice Wall] Duration is increased by 1 second and health is increased by 100%",
           "price": 10000,
-          "category": "Survival"
+          "category": "Survival",
+          "attributes": [
+            {
+              "type": "HP",
+              "value": 25,
+              "valueType": ""
+            }
+          ]
         }
       ]
     }
