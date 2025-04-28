@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, CardMedia } from "@mui/material";
 
 function PerkMiniCard({ perk, perkType, unselectPerk }) {
@@ -6,8 +7,8 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
   return (
     <Box
       sx={{
-        width: 96,
-        height: 96,
+        width: 64,
+        height: 64,
         borderRadius: isPower ? 2 : "50%", // Circle for "item", square for "power"
         overflow: "hidden",
         display: "flex",

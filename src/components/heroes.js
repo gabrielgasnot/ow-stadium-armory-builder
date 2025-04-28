@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Card, CardMedia, CardContent, Stack } from "@mui/material";
+import AppContext from "../app-context.js";
 
-function Heroes(props) {
-  const { heroes, loadHero, currentHero } = props;
+function Heroes() {
+  const { heroes, loadHero, currentHero } = useContext(AppContext);
 
   const selectHero = (hero) => {
     loadHero(hero);
@@ -20,30 +21,28 @@ function Heroes(props) {
           flexWrap: "wrap",
         }}
       >
-        {heroes
-          .sort((h1, h2) => (h1.role < h2.role ? 1 : -1))
-          .map((hero) => (
-            <Card
-              key={`hero_${hero.id}`}
-              onClick={() => selectHero(hero)}
-              sx={{
-                width: 125,
-                cursor: "pointer",
-                transition: "box-shadow 0.3s ease",
-                "&:hover": {
-                  boxShadow: "0 4px 20px rgba(25, 64, 97, 0.81)",
-                },
-              }}
-              data-active={hero.id === currentHero ? "" : undefined}
-            >
-              <CardMedia
-                sx={{ height: 125 }}
-                image={`${process.env.PUBLIC_URL}/heroes/${hero.id}.png`}
-                title={hero.name}
-              />
-              <CardContent>{hero.name}</CardContent>
-            </Card>
-          ))}
+        {heroes.map((hero) => (
+          <Card
+            key={`hero_${hero.id}`}
+            onClick={() => selectHero(hero)}
+            sx={{
+              width: 125,
+              cursor: "pointer",
+              transition: "box-shadow 0.3s ease",
+              "&:hover": {
+                boxShadow: "0 4px 20px rgba(25, 64, 97, 0.81)",
+              },
+            }}
+            data-active={hero.id === currentHero ? "" : undefined}
+          >
+            <CardMedia
+              sx={{ height: 125 }}
+              image={`${process.env.PUBLIC_URL}/heroes/${hero.id}.png`}
+              title={hero.name}
+            />
+            <CardContent>{hero.name}</CardContent>
+          </Card>
+        ))}
       </Stack>
     );
   } else {

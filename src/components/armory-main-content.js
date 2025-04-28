@@ -1,22 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Box } from "@mui/material";
 import BuildStarter from "../pages/build-starter";
 import BuildMain from "../pages/build-main";
+import AppContext from "../app-context.js";
 
-function ArmoryMainContent({
-  currentHero,
-  heroes,
-  loadHero,
-  selectedPowers,
-  selectedItems,
-  removePerkBuild,
-  heroPowers,
-  heroItems,
-  basicItems,
-  addPerkBuild,
-  shareBuild,
-  showMessage
-}) {
+function ArmoryMainContent() {
+  const { currentHero } = useContext(AppContext);
   return (
     <Box
       sx={{
@@ -29,28 +18,8 @@ function ArmoryMainContent({
         paddingBottom: { xs: "70px", sm: "40px" },
       }}
     >
-      {!currentHero && (
-        <BuildStarter
-          heroes={heroes}
-          loadHero={loadHero}
-          currentHero={currentHero?.name}
-        />
-      )}
-      {currentHero && (
-        <BuildMain
-          currentHero={currentHero}
-          loadHero={loadHero}
-          selectedPowers={selectedPowers}
-          selectedItems={selectedItems}
-          removePerkBuild={removePerkBuild}
-          heroPowers={heroPowers}
-          basicItems={basicItems}
-          heroItems={heroItems}
-          addPerkBuild={addPerkBuild}
-          shareBuild={shareBuild}
-          showMessage={showMessage}
-        />
-      )}
+      {!currentHero && <BuildStarter />}
+      {currentHero && <BuildMain />}
     </Box>
   );
 }

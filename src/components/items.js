@@ -2,9 +2,7 @@ import React from "react";
 import { Stack } from "@mui/material";
 import PerkCard from "./perk-card.js";
 
-function Items(props) {
-  const { items, grade, selectItem, selectedIds, isDisabled } = props;
-
+function Items({ items, grade, selectedIds, isDisabled }) {
   if (items && items.length > 0) {
     return (
       <Stack
@@ -13,7 +11,7 @@ function Items(props) {
         useFlexGap
         sx={{
           flexWrap: "wrap",
-          justifyContent: "flex-start"
+          justifyContent: "flex-start",
         }}
       >
         {items.map((item) => {
@@ -21,11 +19,14 @@ function Items(props) {
           return (
             <PerkCard
               perk={item}
-              perkGrade={grade}
-              selectPerk={selectItem}
               perkType="item"
-              isSelected={selectedIds.find(id => id === item.id) !== undefined}
-              isDisabled={isDisabled && (!selectedIds.find(id => id === item.id) !== undefined)}
+              isSelected={
+                selectedIds.find((id) => id === item.id) !== undefined
+              }
+              isDisabled={
+                isDisabled &&
+                !selectedIds.find((id) => id === item.id) !== undefined
+              }
             />
           );
         })}
