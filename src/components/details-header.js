@@ -1,8 +1,9 @@
 import React from "react";
-import { Button, Typography, Box, Paper } from "@mui/material";
+import { Stack, Button, Typography, Box, Paper } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
+import CameraAltIcon from "@mui/icons-material/CameraAlt";
 
-function DetailsHeader({ hero, items, shareBuild }) {
+function DetailsHeader({ hero, items, shareBuild, copyBuild}) {
   return (
     <Paper
       elevation={3}
@@ -79,17 +80,28 @@ function DetailsHeader({ hero, items, shareBuild }) {
         </Typography>
 
         {/* Share button */}
-        <Box sx={{ mt: 2 }}>
-          <Button
-            variant="contained"
-            color="primary"
-            onClick={() => shareBuild()}
-            fullWidth
-            startIcon={<ShareIcon />}
-          >
-            Share Build
-          </Button>
-        </Box>
+          <Box sx={{ mt: 2 }} className="no-capture">
+            <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={() => shareBuild()}
+                fullWidth
+                startIcon={<ShareIcon />}
+              >
+                Share Build
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={copyBuild} // your screen capture handler
+                fullWidth
+                startIcon={<CameraAltIcon />}
+              >
+                Capture Build
+              </Button>
+            </Stack>
+          </Box>
       </Box>
     </Paper>
   );

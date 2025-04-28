@@ -15,6 +15,7 @@ function ArmoryMainContent({
   basicItems,
   addPerkBuild,
   shareBuild,
+  showMessage
 }) {
   return (
     <Box
@@ -47,6 +48,7 @@ function ArmoryMainContent({
           heroItems={heroItems}
           addPerkBuild={addPerkBuild}
           shareBuild={shareBuild}
+          showMessage={showMessage}
         />
       )}
     </Box>

@@ -30,8 +30,9 @@ function AppContent() {
   const [heroItems, setHeroItems] = useState([]);
   const [selectedPowers, setSelectedPowers] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
-  const [errorMessage, setErrorMessage] = useState("");
   const [shareLink, setShareLink] = useState("");
+  const [snackBarMessage, setSnackBarMessage] = useState("");
+  const [snackBarCategory, setSnackBarCategory] = useState("");
 
   const location = useLocation();
   const rawPath = location.pathname;
@@ -40,7 +41,7 @@ function AppContent() {
   const loadHero = (selectedHero) => {
     setSelectedPowers([]);
     setSelectedItems([]);
-    setErrorMessage("");
+    setSnackBarMessage("");
     setCurrentHero(selectedHero);
 
     if (selectedHero) {
@@ -53,13 +54,18 @@ function AppContent() {
     }
   };
 
+  const showMessage = (message, category = "error") => {
+    setSnackBarCategory(category);
+    setSnackBarMessage(message);
+  };
+
   const addPower = (power) => {
     if (selectedPowers.find((selectedPower) => selectedPower.id === power.id)) {
       return;
     }
 
     if (selectedPowers.length >= 4) {
-      setErrorMessage("You can only have 4 powers");
+      showMessage("You can only have 4 powers");
       return;
     }
 
@@ -72,7 +78,7 @@ function AppContent() {
     }
 
     if (selectedItems.length >= 6) {
-      setErrorMessage("You can only have 6 items");
+      showMessage("You can only have 6 items");
       return;
     }
 
@@ -107,7 +113,7 @@ function AppContent() {
           if (heroId !== currentHero) {
             const hero = heroes.find((h) => h.id === parseInt(heroId));
             if (!hero) {
-              setErrorMessage("Failed to import: hero not found");
+              showMessage("Failed to import: hero not found");
               return;
             } else {
               console.log("Navigation data: ", result);
@@ -167,17 +173,17 @@ function AppContent() {
         }}
       >
         <Snackbar
-          open={errorMessage}
+          open={snackBarMessage}
           autoHideDuration={6000}
-          onClose={() => setErrorMessage("")}
+          onClose={() => setSnackBarMessage("")}
         >
           <Alert
-            onClose={() => setErrorMessage("")}
-            severity="error"
+            onClose={() => setSnackBarMessage("")}
+            severity={snackBarCategory}
             variant="filled"
             sx={{ width: "100%" }}
           >
-            {errorMessage}
+            {snackBarMessage}
           </Alert>
         </Snackbar>
 
@@ -202,6 +208,7 @@ function AppContent() {
           heroItems={heroItems}
           basicItems={basicItems}
           shareBuild={shareBuild}
+          showMessage={showMessage}
         />
 
         {/* Footer */}
