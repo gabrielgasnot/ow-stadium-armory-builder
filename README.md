@@ -1,58 +1,13 @@
-# OW Stadium - Talent Builder
+# OW Stadium - Armory Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Disclaimer:
 
-## WIP
+This project utilizes assets from Blizzard's Overwatch game. All images, character designs, and other assets related to Overwatch are the property of Blizzard Entertainment and are used under Blizzard’s terms and conditions for non-commercial, fan-based purposes. This project is not affiliated with Blizzard Entertainment, nor is it endorsed or supported by them.
 
-- [x] Build the database (manual creation: use Stadium Practice Range... hours of fun...)
-- [x] Basic list of heroes
-- [x] Basic display of items & powers
-- [x] Ability to select Perks & Powers
-- [x] Be able to save/load build (send build as json, import build by copying the json ?)
-- [ ] Rework db files for a better split of items effects
-- [ ] Cleanup public files
-- [ ] Improve GUI
- - [ ] Add game icons
- - [ ] Responsive
-- [ ] Other things that I didn't think of...
+The use of Overwatch assets in this project is intended for non-commercial, fan-made purposes only. Redistribution of the Overwatch assets themselves, or any commercial use of the assets, is strictly prohibited and violates Blizzard's usage policies. For more information on Blizzard's guidelines regarding the use of their intellectual property, please refer to their official website.
 
-## Dev / Technical
+## License
 
-First of, install `npm` and run `npm install` to install all dependencies.
+This project is licensed under the **GNU General Public License v3.0 (GPLv3)** - see the [LICENSE](LICENSE) file for details.
 
-### Available Scripts
-
-In the project directory, you can run:
-
-#### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-#### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-#### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-#### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The project includes assets from Blizzard’s Overwatch game, and the use of these assets is subject to Blizzard’s terms and conditions. This project is **not affiliated** with Blizzard Entertainment.
