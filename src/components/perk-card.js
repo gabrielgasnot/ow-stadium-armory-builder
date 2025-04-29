@@ -36,10 +36,12 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
         cursor: isDisabled ? "not-allowed" : "pointer",
       }}
       onClick={() =>
-        isDisabled
+        !isSelected
+          ? isDisabled
+            ? false
+            : addPerkBuild(perkType, perk)
+          : isDisabled
           ? false
-          : !isSelected
-          ? addPerkBuild(perkType, perk)
           : removePerkBuild(perkType, perk)
       }
     >
