@@ -1,3 +1,5 @@
+import { decompressString } from '../helpers/compression.js';
+
 const isValidBase64 = (str) => {
   const base64Regex = /^[A-Za-z0-9+/=]+$/;
   return base64Regex.test(str);
@@ -22,11 +24,12 @@ const parseDecodedString = (build) => {
 
 const importBuild = (encodedBuild) => {
   if (isValidBase64(encodedBuild)) {
-    const decodedString = atob(encodedBuild);
-    return parseDecodedString(decodedString);
-  } else {
-    return undefined;
+    const decodedString = decompressString(encodedBuild) ;
+    if (decodedString) {
+      return parseDecodedString(decodedString);
+    }
   }
+  return undefined;
 };
 
 export default importBuild;
