@@ -15,7 +15,6 @@ function DetailsHeader({ copyBuild }) {
         display: "flex",
         alignItems: "center",
         flexDirection: "row",
-        borderRadius: "16px"
       }}
     >
       {/* Left image section - hidden on xs */}
@@ -49,7 +48,13 @@ function DetailsHeader({ copyBuild }) {
           <img
             src={`${process.env.PUBLIC_URL}/roles/${currentHero.role}.svg`}
             alt={currentHero.role}
-            style={{ width: 24, height: 24, marginRight: 8, display: "block", filter: "invert(1)" }}
+            style={{
+              width: 24,
+              height: 24,
+              marginRight: 8,
+              display: "block",
+              filter: "invert(1)",
+            }}
           />
           <Typography
             variant="h4"
@@ -63,31 +68,25 @@ function DetailsHeader({ copyBuild }) {
           </Typography>
         </Box>
 
-        <Typography
+        <Box
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" }, // Stack on mobile, row on desktop
             alignItems: { xs: "flex-start", md: "center" }, // Align left on mobile, center on desktop
-            fontWeight: 400,
-            letterSpacing: ".2rem",
-            color: "text.secondary",
-            textDecoration: "none",
-            mr: 1,
-            fontSize: { xs: "0.875rem", sm: "1rem", md: "1.25rem" }, // Adjust font size based on screen
-            lineHeight: { xs: 1.5, sm: 1.6, md: 1.8 }, // Line height for readability
           }}
         >
-          Build cost:{" "}
-          <span>
-            <img
-              src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
-              alt="credits"
-              color="red"
-              style={{ width: 20, height: 20, marginRight: 4 }}
-            />
-            {selectedItems.map((item) => item.price).reduce((a, b) => a + b, 0)}{" "} credits
-          </span>
-        </Typography>
+          <Typography component="span" sx={{ mr: 0.5 }}>
+            Build cost:
+          </Typography>
+          <img
+            src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
+            alt="credits"
+            style={{ width: 24, height: 24, marginRight: 4 }}
+          />
+          <Typography variant="h5" component="span" sx={{ mr: 1 }}>
+            {selectedItems.map((item) => item.price).reduce((a, b) => a + b, 0)}
+          </Typography>
+        </Box>
 
         {/* Share button */}
         <Box sx={{ mt: 1 }} className="no-capture">

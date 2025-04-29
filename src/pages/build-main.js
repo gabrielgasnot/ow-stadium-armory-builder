@@ -30,7 +30,10 @@ function BuildMain() {
           width: { xs: "100%", xl: "25%", xxl: "20%" },
           flexShrink: 0,
           overflow: "auto",
-          p: 2,
+          paddingTop: 0,
+          paddingBottom: 0,
+          paddingLeft: 2,
+          paddingRight: 2,
           boxSizing: "border-box",
         }}
       >
@@ -64,7 +67,10 @@ function BuildMain() {
           flexGrow: 1,
           flexShrink: { xs: 0, md: 1 },
           overflow: "auto",
-          p: 2,
+          paddingTop: 1,
+          paddingBottom: 3,
+          paddingLeft: 0,
+          paddingRight: 0,
           boxSizing: "border-box",
           minHeight: 0,
         }}

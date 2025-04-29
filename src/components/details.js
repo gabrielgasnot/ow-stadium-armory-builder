@@ -97,7 +97,7 @@ function Details() {
           <CardContent>
             <Grid
               container
-              spacing={2}
+              spacing={1}
               sx={{
                 textAlign: "center",
               }}

@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Paper, Typography, Divider } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import HighlightText from "./highlight-text.js"; // Assuming you have a HighlightText component
+import PerkAttributes from "./perk-attributes.js";
 
 export default function PerkSummary({ perk }) {
   const theme = useTheme();
@@ -35,10 +36,9 @@ export default function PerkSummary({ perk }) {
           {perk.name}
         </Typography>
       </Box>
-
       <Divider sx={{ my: 1 }} />
-
       <HighlightText text={perk.description} />
+      <PerkAttributes attributes={perk.attributes} />
 
       {(perk.price || perk.category) && (
         <Box
@@ -61,12 +61,21 @@ export default function PerkSummary({ perk }) {
           )}
           {perk.price && (
             <Typography
-              variant="caption"
+              variant="subtitle1"
               sx={{
-                color: "primary.main",
+                alignItems: "center",
               }}
             >
-              {perk.price} credits
+              <img
+                src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
+                alt="credits"
+                style={{
+                  width: 18,
+                  height: 18,
+                  marginRight: 2,
+                }}
+              />
+              {perk.price}
             </Typography>
           )}
         </Box>
