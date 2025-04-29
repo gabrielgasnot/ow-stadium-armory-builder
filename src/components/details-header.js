@@ -71,7 +71,7 @@ function DetailsHeader({ copyBuild }) {
         <Box
           sx={{
             display: "flex",
-            flexDirection: { xs: "column", md: "row" }, // Stack on mobile, row on desktop
+            flexDirection: { xs: "row" }, // Stack on mobile, row on desktop
             alignItems: { xs: "flex-start", md: "center" }, // Align left on mobile, center on desktop
           }}
         >
@@ -83,7 +83,7 @@ function DetailsHeader({ copyBuild }) {
             alt="credits"
             style={{ width: 24, height: 24, marginRight: 4 }}
           />
-          <Typography variant="h5" component="span" sx={{ mr: 1 }}>
+          <Typography component="span" sx={{ mr: 1 }}>
             {selectedItems.map((item) => item.price).reduce((a, b) => a + b, 0)}
           </Typography>
         </Box>
