@@ -21,6 +21,15 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
     }
   };
 
+  const handleMouseClick = (e) => {
+    if (!perk) {
+      return;
+    }
+
+    unselectPerk(perk);
+    handleHidePerkSummary();
+  };
+
   return (
     <Box
       sx={{
@@ -50,7 +59,7 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
           },
         },
       }}
-      onClick={perk ? () => unselectPerk(perk) : () => null}
+      onClick={handleMouseClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleHidePerkSummary}
       onTouchStart={handleTouchStart}
