@@ -1,5 +1,6 @@
 import basicItems from './basicItems.json';
 import heroes from './heroes.json';
+import attributeTypes from './attributeTypes.json';
 
 const heroesOrder = [
   // Tank
@@ -47,4 +48,4 @@ heroes.forEach((hero) => {
 // Sort heroes by the defined order
 heroes.sort((a, b) => heroesOrder.indexOf(a.id) - heroesOrder.indexOf(b.id));
 
-export { basicItems, heroes, heroesOrder };
+export { basicItems, heroes, heroesOrder, attributeTypes };

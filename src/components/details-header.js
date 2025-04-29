@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Stack, Button, Typography, Box, Paper } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
+import types from "../db/attributeTypes.json";
 import AppContext from "../app-context.js";
 
 function DetailsHeader({ copyBuild }) {
@@ -75,9 +76,16 @@ function DetailsHeader({ copyBuild }) {
             lineHeight: { xs: 1.5, sm: 1.6, md: 1.8 }, // Line height for readability
           }}
         >
-          cost:{" "}
-          {selectedItems.map((item) => item.price).reduce((a, b) => a + b, 0)}{" "}
-          credits
+          Build cost:{" "}
+          <span>
+            <img
+              src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
+              alt="credits"
+              color="red"
+              style={{ width: 20, height: 20, marginRight: 4 }}
+            />
+            {selectedItems.map((item) => item.price).reduce((a, b) => a + b, 0)}{" "} credits
+          </span>
         </Typography>
 
         {/* Share button */}
