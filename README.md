@@ -1,5 +1,9 @@
 # OW Stadium - Armory Builder
 
+![GPLv3 License](https://img.shields.io/badge/license-GPLv3-blue.svg)
+
+Live on: https://overwatchbuilds.com
+
 ## Disclaimer:
 
 This project utilizes assets from Blizzard's Overwatch game. All images, character designs, and other assets related to Overwatch are the property of Blizzard Entertainment and are used under Blizzard’s terms and conditions for non-commercial, fan-based purposes. This project is not affiliated with Blizzard Entertainment, nor is it endorsed or supported by them.
