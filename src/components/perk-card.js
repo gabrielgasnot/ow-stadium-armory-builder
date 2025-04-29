@@ -74,7 +74,7 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
                   ) : (
                       <>
                           <img
-                              src={`${process.env.PUBLIC_URL}/icons/${types[attribute.type]?.icon ?? "ability.png"}`}
+                              src={`${process.env.PUBLIC_URL}/icons/${types[attribute.type]?.icon ?? "default.svg"}`}
                               alt={attribute.type}
                               style={{ width: 20, height: 20, marginRight: 4 }}
                           />

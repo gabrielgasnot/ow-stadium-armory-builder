@@ -52,7 +52,7 @@
     "name": "Melee Damage"
   },
   "KR": {
-    "icon": "ability.png",
+    "icon": "default.svg",
     "name": "Knockback Resist"
   },
   "MA": {
