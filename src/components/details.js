@@ -62,7 +62,7 @@ function Details() {
     <Box ref={captureRef} sx={{ width: "100%" }}>
       <Stack spacing={2} sx={{ flexGrow: 1, minHeight: 0, width: "100%" }}>
         <DetailsHeader copyBuild={handleCopy} />
-        <Card sx={{ height: "100%" }}>
+        <Card className="no-hover" sx={{ height: "100%" }}>
           <CardHeader title="Powers" />
           <CardContent>
             <Grid
@@ -92,12 +92,12 @@ function Details() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="no-hover">
           <CardHeader title="Items" />
           <CardContent>
             <Grid
               container
-              spacing={2}
+              spacing={1}
               sx={{
                 textAlign: "center",
               }}
