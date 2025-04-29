@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Box, CardMedia } from "@mui/material";
 import AppContext from "../app-context.js";
 import { useTheme } from "@mui/material/styles";
@@ -6,8 +6,20 @@ import { useTheme } from "@mui/material/styles";
 function PerkMiniCard({ perk, perkType, unselectPerk }) {
   const theme = useTheme();
   const isPower = perkType === "power";
+
+  const [isTouch, setIsTouch] = useState(false);
   const { handleShowPerkSummary, handleHidePerkSummary } =
     useContext(AppContext);
+
+  const handleTouchStart = () => {
+    setIsTouch(true);
+  };
+
+  const handleMouseEnter = (e) => {
+    if (!isTouch) {
+      handleShowPerkSummary(e, perk);
+    }
+  };
 
   return (
     <Box
@@ -22,8 +34,8 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
         justifyContent: "center",
         cursor: "pointer",
         boxShadow: perk
-        ? `0 0 10px 2px ${theme.palette.custom.orange}`
-        : "none",
+          ? `0 0 10px 2px ${theme.palette.custom.orange}`
+          : "none",
         animation: !perk ? "pulse 10s ease-in-out infinite" : "none",
         transition: "box-shadow 0.3s ease, border 0.3s ease",
         "@keyframes pulse": {
@@ -39,8 +51,9 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
         },
       }}
       onClick={perk ? () => unselectPerk(perk) : () => null}
-      onMouseEnter={(e) => handleShowPerkSummary(e, perk)}
+      onMouseEnter={handleMouseEnter}
       onMouseLeave={handleHidePerkSummary}
+      onTouchStart={handleTouchStart}
     >
       {perk && (
         <CardMedia
