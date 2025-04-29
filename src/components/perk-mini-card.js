@@ -43,7 +43,7 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
         justifyContent: "center",
         cursor: "pointer",
         boxShadow: perk
-          ? `0 0 10px 2px ${theme.palette.custom.orange}`
+          ? `0 0 10px 2px ${theme.palette.custom.grades[perk.grade]}`
           : "none",
         animation: !perk ? "pulse 10s ease-in-out infinite" : "none",
         transition: "box-shadow 0.3s ease, border 0.3s ease",

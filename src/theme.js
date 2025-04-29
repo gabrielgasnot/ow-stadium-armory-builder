@@ -11,6 +11,9 @@ const colors = {
   black: "#000000",
   darkBlue: "#2e3442",
   darkerBlue: "#0f131a",
+  greenOW: "#16a531",
+  blueOW: "#05a0fa",
+  purpleOW: "#c948ff",
 };
 
 const owTheme = createTheme({
@@ -27,6 +30,11 @@ const owTheme = createTheme({
     },
     custom: {
       orange: colors.orange,
+      grades: {
+        common: colors.greenOW,
+        rare: colors.blueOW,
+        epic: colors.purpleOW,
+      }
     },
     action: {
       disabled: colors.lightGrey,
