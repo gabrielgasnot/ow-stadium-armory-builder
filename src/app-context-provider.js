@@ -17,7 +17,6 @@ const MyProvider = ({ children }) => {
   const [summaryPerk, setSummaryPerk] = useState(null);
   const [placement, setPlacement] = useState("bottom");
 
-
   const loadHero = (selectedHero) => {
     setSelectedPowers([]);
     setSelectedItems([]);
@@ -103,28 +102,28 @@ const MyProvider = ({ children }) => {
     setPerkSummaryOpen(true);
     calculatePlacement(event.currentTarget);
   };
-  
+
   const handleHidePerkSummary = () => {
     setPerkSummaryOpen(false);
     setPerkPopupAnchorEl(null);
     setSummaryPerk(null);
   };
 
-    // Positioning
-    const calculatePlacement = (target) => {
-      const rect = target?.getBoundingClientRect();
-      if (!rect) return;
-  
-      const screenHeight = window.innerHeight;
-      const spaceAbove = rect.top;
-      const spaceBelow = screenHeight - rect.bottom;
-  
-      if (spaceAbove > spaceBelow) {
-        setPlacement("top"); // Show above if there's more space above the element
-      } else {
-        setPlacement("bottom"); // Show below if there's more space below the element
-      }
-    };
+  // Positioning
+  const calculatePlacement = (target) => {
+    const rect = target?.getBoundingClientRect();
+    if (!rect) return;
+
+    const screenHeight = window.innerHeight;
+    const spaceAbove = rect.top;
+    const spaceBelow = screenHeight - rect.bottom;
+
+    if (spaceAbove > spaceBelow) {
+      setPlacement("top"); // Show above if there's more space above the element
+    } else {
+      setPlacement("bottom"); // Show below if there's more space below the element
+    }
+  };
 
   return (
     <AppContext.Provider
@@ -160,7 +159,8 @@ const MyProvider = ({ children }) => {
         summaryPerk,
         setSummaryPerk,
         handleShowPerkSummary,
-        handleHidePerkSummary
+        handleHidePerkSummary,
+        placement,
       }}
     >
       {children}

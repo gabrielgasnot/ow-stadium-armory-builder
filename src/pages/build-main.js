@@ -27,7 +27,7 @@ function BuildMain() {
       {/* Left / Detail panel */}
       <Box
         sx={{
-          width: { xs: "100%", xl: "25%", xxl: "20%" },
+          width: { xs: "100%", lg: "40%", xl: "28%", xxl: "20%" },
           flexShrink: 0,
           overflow: "auto",
           paddingTop: 0,
@@ -65,7 +65,7 @@ function BuildMain() {
       <Box
         sx={{
           flexGrow: 1,
-          flexShrink: { xs: 0, md: 1 },
+          flexShrink: { xs: 0, lg: 1 },
           overflow: "auto",
           paddingTop: 1,
           paddingBottom: 3,
