@@ -1,3 +1,5 @@
+import pako from 'pako';
+
 const isValidBase64 = (str) => {
   const base64Regex = /^[A-Za-z0-9+/=]+$/;
   return base64Regex.test(str);
@@ -21,8 +23,11 @@ const parseDecodedString = (build) => {
 };
 
 const importBuild = (encodedBuild) => {
-  if (isValidBase64(encodedBuild)) {
-    const decodedString = atob(encodedBuild);
+  const compressed = Uint8Array.from(atob(encodedBuild), (c) => c.charCodeAt(0));
+  const decompressedBuild = pako.inflate(compressed);
+
+  if (isValidBase64(decompressedBuild)) {
+    const decodedString = atob(decompressedBuild);
     return parseDecodedString(decodedString);
   } else {
     return undefined;
