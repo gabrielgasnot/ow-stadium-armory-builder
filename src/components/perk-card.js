@@ -40,8 +40,6 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
           ? isDisabled
             ? false
             : addPerkBuild(perkType, perk)
-          : isDisabled
-          ? false
           : removePerkBuild(perkType, perk)
       }
     >
