@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import {
   Card,
   CardContent,
@@ -15,7 +15,7 @@ import { useTheme } from "@mui/material/styles";
 
 function PerkCard({ perk, perkType, isSelected, isDisabled }) {
   const theme = useTheme();
-  const { perkGrade, addPerkBuild } = useContext(AppContext);
+  const { perkGrade, addPerkBuild, removePerkBuild } = useContext(AppContext);
 
   return (
     <Card
@@ -35,7 +35,13 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
         },
         cursor: isDisabled ? "not-allowed" : "pointer",
       }}
-      onClick={() => (isDisabled ? false : addPerkBuild(perkType, perk))}
+      onClick={() =>
+        isDisabled
+          ? false
+          : !isSelected
+          ? addPerkBuild(perkType, perk)
+          : removePerkBuild(perkType, perk)
+      }
     >
       {/* Header: Image + Name */}
       <CardHeader
