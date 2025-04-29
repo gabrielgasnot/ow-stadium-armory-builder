@@ -1,14 +1,16 @@
-import { createTheme } from "@mui/material/styles";
+import { createTheme, alpha } from "@mui/material/styles";
 
 const colors = {
   white: "#ffffff",
   offWhite: "#f0f4fc",
-  orange: "#f99e1a",
+  orange: "#e77f2d",
   grey: "#43484c",
   greyBlue: "#405275",
   lightGrey: "#bec1cc",
   lightBlue: "#218ffe",
   black: "#000000",
+  darkBlue: "#2e3442",
+  darkerBlue: "#0f131a",
 };
 
 const owTheme = createTheme({
@@ -16,39 +18,44 @@ const owTheme = createTheme({
     primary: { main: colors.greyBlue },
     secondary: { main: colors.offWhite },
     background: {
-      default: colors.lightBlue,
-      paper: colors.offWhite,
+      default: colors.darkerBlue, // Page background
+      paper: colors.darkBlue, // Card background
     },
     text: {
-      primary: colors.black, // Set the default text color here
-      secondary: colors.grey, // You can also customize secondary text color
+      primary: colors.white,
+      secondary: colors.lightGrey,
     },
     custom: {
       orange: colors.orange,
-    }
+    },
+    action: {
+      disabled: colors.lightGrey,
+      disabledBackground: alpha(colors.grey, 0.2),
+      hover: alpha(colors.lightBlue, 0.08),
+    },
   },
   typography: {
-    fontFamily: "'BigNoodleTitling', sans-serif", // Add your custom font here
-    fontSize: 16, // Base font size
+    fontFamily: "'BigNoodleTitling', sans-serif",
+    fontSize: 16,
     h1: {
-      fontFamily: "'BigNoodleTitling', sans-serif", // Apply it to specific elements like h1
-      fontSize: "clamp(2rem, 5vw, 3rem)", // Scales between 2rem and 3rem based on screen size
+      fontFamily: "'BigNoodleTitling', sans-serif",
+      fontSize: "clamp(2rem, 5vw, 3rem)",
       fontWeight: 700,
-      letterSpacing: ".1rem", // Adjust letter spacing for readability
-      lineHeight: 1.2, // Adjust line height for better legibility
+      letterSpacing: ".1rem",
+      lineHeight: 1.2,
     },
     h2: {
       fontFamily: "'BigNoodleTitling', sans-serif",
-      fontSize: "clamp(1.8rem, 4vw, 2.5rem)", // Scales between 1.8rem and 2.5rem
+      fontSize: "clamp(1.8rem, 4vw, 2.5rem)",
       fontWeight: 700,
       letterSpacing: ".1rem",
       lineHeight: 1.3,
     },
     body1: {
-      fontSize: "clamp(1rem, 2vw, 1.25rem)", // Scales between 1rem and 1.25rem
+      fontSize: "clamp(1rem, 2vw, 1.25rem)",
       fontWeight: 400,
-      letterSpacing: ".05rem", // Slight letter spacing
-      lineHeight: 1.6, // Adequate line height for readability
+      letterSpacing: ".05rem",
+      lineHeight: 1.6,
     },
     body2: {
       fontSize: "clamp(0.9rem, 1.8vw, 1.1rem)",
@@ -58,30 +65,85 @@ const owTheme = createTheme({
     },
     button: {
       fontWeight: 500,
-      textTransform: "none", // To prevent button text from being uppercased by default
+      textTransform: "none",
     },
+  },
+  shape: {
+    borderRadius: 8,
   },
   components: {
     MuiCssBaseline: {
       styleOverrides: {
         body: {
-          userSelect: "none", // Disable text selection globally across the app
+          backgroundColor: colors.darkerBlue,
+          color: colors.white,
+          userSelect: "none",
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          backgroundColor: alpha(theme.palette.background.paper, 0.9),
+          borderRadius: theme.shape.borderRadius,
+          boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.5)",
+          transition: "box-shadow 0.3s ease, transform 0.3s ease",
+          "&:hover": {
+            boxShadow: "0px 6px 20px rgba(33, 150, 243, 0.5)",
+            transform: "translateY(-2px)",
+          },
+          "&.no-hover:hover": {
+            boxShadow: "none", // no hover for cards that have the 'no-hover' class
+            transform: "none",
+          },
+          "&.Mui-disabled": {
+            backgroundColor: theme.palette.action.disabledBackground,
+            color: theme.palette.text.secondary,
+            boxShadow: "none",
+          },
+        }),
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          color: colors.white,
+          "&:hover": {
+            backgroundColor: alpha(colors.lightBlue, 0.2),
+          },
         },
       },
     },
     MuiCardHeader: {
       styleOverrides: {
         root: {
-          padding: "16px 16px 8px 16px", // Set your desired padding value
+          padding: "8px 16px 8px 16px",
         },
       },
     },
     MuiCardContent: {
       styleOverrides: {
         root: {
-          padding: "8px 16px 16px 16px", // Set your desired padding value
+          padding: "8px 16px 16px 16px",
           "&:last-child": {
-            paddingBottom: "16px", // Set your desired padding value
+            paddingBottom: "16px",
+          },
+        },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: colors.lightBlue, // Default link color (same as your light blue background)
+          textDecoration: "none", // Remove underline
+          "&:hover": {
+            color: colors.orange, // Hover state: Overwatch orange
+          },
+          "&:visited": {
+            color: colors.orange, // Visited links: muted grey-blue
+          },
+          "&:active": {
+            color: colors.orange, // Active links: same orange as hover
           },
         },
       },

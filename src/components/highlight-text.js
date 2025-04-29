@@ -7,7 +7,7 @@ function HighlightText({ text }) {
   const parts = text.split(/(\[.*?\])/g); // Split on [brackets], keeping them
 
   return (
-    <Typography variant="body1" sx={{ color: "black" }}>
+    <Typography variant="body1">
       {parts.map((part, index) => {
         if (part.startsWith("[") && part.endsWith("]")) {
           return (

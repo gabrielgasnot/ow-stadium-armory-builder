@@ -15,6 +15,7 @@ function DetailsHeader({ copyBuild }) {
         display: "flex",
         alignItems: "center",
         flexDirection: "row",
+        borderRadius: "16px"
       }}
     >
       {/* Left image section - hidden on xs */}
@@ -48,7 +49,7 @@ function DetailsHeader({ copyBuild }) {
           <img
             src={`${process.env.PUBLIC_URL}/roles/${currentHero.role}.svg`}
             alt={currentHero.role}
-            style={{ width: 24, height: 24, marginRight: 8, display: "block" }}
+            style={{ width: 24, height: 24, marginRight: 8, display: "block", filter: "invert(1)" }}
           />
           <Typography
             variant="h4"

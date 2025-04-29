@@ -29,7 +29,6 @@ function ArmoryHeader(props) {
   return (
     <AppBar
       position="static"
-      sx={{ backgroundColor: "secondary.main", color: "text.secondary" }}
     >
       <Container maxWidth={false}>
         <Toolbar disableGutters>

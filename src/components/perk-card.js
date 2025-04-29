@@ -11,8 +11,10 @@ import { getPerkColor } from "../services/color";
 import types from "../db/attributeTypes.json";
 import AppContext from "../app-context.js";
 import HighlightText from "./highlight-text.js";
+import { useTheme } from "@mui/material/styles";
 
 function PerkCard({ perk, perkType, isSelected, isDisabled }) {
+  const theme = useTheme();
   const { perkGrade, addPerkBuild } = useContext(AppContext);
 
   return (
@@ -21,7 +23,10 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
         width: { xs: "100%", sm: 400 },
         mx: "auto",
         border: "2px solid",
-        backgroundColor: !isSelected && isDisabled ? "#CCC" : "white",
+        backgroundColor:
+          !isSelected && isDisabled
+            ? theme.palette.action.disabledBackground
+            : theme.palette.background.paper,
         borderColor: isSelected ? "#f99e1a" : "transparent",
         boxShadow: isSelected ? "0 0 10px 5px rgba(249, 158, 26, 0.7)" : "none",
         transition: "border-color 0.3s ease",

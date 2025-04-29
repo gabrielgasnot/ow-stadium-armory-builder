@@ -1,12 +1,19 @@
-import { Box, Button } from "@mui/material";
-import { Details, Perks } from "../components";
+import React from "react";
+import { Box, Button, Popper } from "@mui/material";
+import { Details, Perks, PerkSummary } from "../components";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Link as RouterLink } from "react-router-dom";
 import { useContext } from "react";
 import AppContext from "../app-context.js";
 
 function BuildMain() {
-  const { loadHero } = useContext(AppContext);
+  const {
+    loadHero,
+    perkSummaryOpen,
+    perkPopupAnchorEl,
+    summaryPerk,
+    placement,
+  } = useContext(AppContext);
 
   return (
     <Box
@@ -23,7 +30,6 @@ function BuildMain() {
           width: { xs: "100%", xl: "25%", xxl: "20%" },
           flexShrink: 0,
           overflow: "auto",
-          bgcolor: "#f5f5f5",
           p: 2,
           boxSizing: "border-box",
         }}
@@ -41,6 +47,10 @@ function BuildMain() {
               fontWeight: 700,
               fontSize: "1em",
               textDecoration: "none",
+              color: "common.white", // <-- ADD THIS
+              "&:hover": {
+                color: "primary.light", // Optional: lighter blue on hover for nice effect
+              },
             }}
           >
             Return to heroes
@@ -61,6 +71,19 @@ function BuildMain() {
       >
         <Perks />
       </Box>
+      {/* Popper for perk summary */}
+      <Popper
+        open={perkSummaryOpen}
+        anchorEl={perkPopupAnchorEl}
+        placement={placement}
+        modifiers={[{ name: "offset", options: { offset: [8, 8] } }]}
+      >
+        {summaryPerk && (
+          <Box sx={{ zIndex: 1300, pointerEvents: "none" }}>
+            <PerkSummary perk={summaryPerk} />
+          </Box>
+        )}
+      </Popper>
     </Box>
   );
 }
