@@ -77,6 +77,11 @@ function Perks() {
         onChange={handleChange}
         variant="scrollable"
         scrollButtons="auto"
+        sx={{
+          "& .MuiTabs-indicator": {
+            backgroundColor: (theme) => theme.palette.custom.orange, // Custom indicator color using theme's primary color
+          },
+        }}
       >
         {tabConfig.map((tab, index) => (
           <Tab
@@ -87,6 +92,14 @@ function Perks() {
               fontSize: { xs: "0.9rem", sm: "1.2rem" },
               paddingX: { xs: 2, sm: 3 },
               paddingY: { xs: 1, sm: 1.5 },
+              transition: "all 0.3s ease", // Smooth transition for all styles
+              "&:hover": {
+                color: "white", // Make text white on hover
+                textShadow: "0 0 10px rgba(249, 158, 26, 0.7)", // Subtle glow on hover
+              },
+              "&.Mui-selected": {
+                color: "white", // Text color when selected
+              },
             }}
           />
         ))}

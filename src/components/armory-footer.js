@@ -1,4 +1,4 @@
-import { Box, Paper } from "@mui/material";
+import { Box, Paper, Link } from "@mui/material";
 
 function ArmoryFooter() {
   return (
@@ -10,15 +10,23 @@ function ArmoryFooter() {
         left: 0,
         right: 0,
         padding: 8,
-        backgroundColor: "#fafafa",
         textAlign: "center",
+        borderRadius: 0,
       }}
     >
-      This site is fan made, with lot of <Box component="span" sx={{ fontSize: '1.2em' }}>💖</Box> to Overwatch and all the kind &
-      lovely people of{" "}
-      <a target="_blank" rel="noreferrer" href="https://www.twitch.tv/gf_iguel">
+      This site is fan made, with lot of{" "}
+      <Box component="span" sx={{ fontSize: "1.2em" }}>
+        💖
+      </Box>{" "}
+      to Overwatch and all the kind & lovely people of{" "}
+      <Link
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.twitch.tv/gf_iguel"
+        sx={{ color: "inherit", textDecoration: "none" }} // Inherit text color and remove underline
+      >
         PositivityLand
-      </a>
+      </Link>
       !
     </Paper>
   );

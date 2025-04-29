@@ -12,6 +12,11 @@ const MyProvider = ({ children }) => {
   const [shareLink, setShareLink] = useState("");
   const [snackBarMessage, setSnackBarMessage] = useState("");
   const [snackBarCategory, setSnackBarCategory] = useState("");
+  const [perkSummaryOpen, setPerkSummaryOpen] = useState(false);
+  const [perkPopupAnchorEl, setPerkPopupAnchorEl] = useState(null);
+  const [summaryPerk, setSummaryPerk] = useState(null);
+  const [placement, setPlacement] = useState("bottom");
+
 
   const loadHero = (selectedHero) => {
     setSelectedPowers([]);
@@ -92,6 +97,35 @@ const MyProvider = ({ children }) => {
     setShareLink(newShareLink);
   };
 
+  const handleShowPerkSummary = (event, perk) => {
+    setPerkPopupAnchorEl(event.currentTarget);
+    setSummaryPerk(perk);
+    setPerkSummaryOpen(true);
+    calculatePlacement(event.currentTarget);
+  };
+  
+  const handleHidePerkSummary = () => {
+    setPerkSummaryOpen(false);
+    setPerkPopupAnchorEl(null);
+    setSummaryPerk(null);
+  };
+
+    // Positioning
+    const calculatePlacement = (target) => {
+      const rect = target?.getBoundingClientRect();
+      if (!rect) return;
+  
+      const screenHeight = window.innerHeight;
+      const spaceAbove = rect.top;
+      const spaceBelow = screenHeight - rect.bottom;
+  
+      if (spaceAbove > spaceBelow) {
+        setPlacement("top"); // Show above if there's more space above the element
+      } else {
+        setPlacement("bottom"); // Show below if there's more space below the element
+      }
+    };
+
   return (
     <AppContext.Provider
       value={{
@@ -119,6 +153,14 @@ const MyProvider = ({ children }) => {
         shareBuild,
         heroes,
         basicItems,
+        perkSummaryOpen,
+        setPerkSummaryOpen,
+        perkPopupAnchorEl,
+        setPerkPopupAnchorEl,
+        summaryPerk,
+        setSummaryPerk,
+        handleShowPerkSummary,
+        handleHidePerkSummary
       }}
     >
       {children}
