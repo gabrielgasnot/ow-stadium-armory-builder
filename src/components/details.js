@@ -4,6 +4,7 @@ import DetailsHeader from "./details-header";
 import PerkMiniCard from "./perk-mini-card";
 import html2canvas from "html2canvas";
 import AppContext from "../app-context.js";
+import StatsPanel from "./stats-panel";
 
 function Details() {
   const {
@@ -60,7 +61,7 @@ function Details() {
 
   return (
     <Box ref={captureRef} sx={{ width: "100%" }}>
-      <Stack spacing={2} sx={{ flexGrow: 1, minHeight: 0, width: "100%" }}>
+      <Stack spacing={2} sx={{ flexGrow: 1, minHeight: 0, width: "100%", paddingBottom: 3 }}>
         <DetailsHeader copyBuild={handleCopy} />
         <Card className="no-hover" sx={{ height: "100%" }}>
           <CardHeader title="Powers" />
@@ -127,7 +128,7 @@ function Details() {
           </CardContent>
         </Card>
 
-        <Card
+        <Card className="no-hover"
           sx={{
             flexGrow: 1,
             minHeight: 0, // very important when you want internal scroll!
@@ -142,7 +143,7 @@ function Details() {
               overflow: { xs: "visible", xl: "auto" },
             }}
           >
-           
+           <StatsPanel />
           </CardContent>
         </Card>
       </Stack>
