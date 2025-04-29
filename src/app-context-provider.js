@@ -16,7 +16,6 @@ const MyProvider = ({ children }) => {
   const [perkPopupAnchorEl, setPerkPopupAnchorEl] = useState(null);
   const [summaryPerk, setSummaryPerk] = useState(null);
   const [placement, setPlacement] = useState("bottom");
-  const [isTouch, setIsTouch] = useState(false);
 
   const loadHero = (selectedHero) => {
     setSelectedPowers([]);
