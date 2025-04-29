@@ -1,4 +1,4 @@
-import pako from 'pako';
+import { decompressString } from '../helpers/compression.js';
 
 const isValidBase64 = (str) => {
   const base64Regex = /^[A-Za-z0-9+/=]+$/;
@@ -23,15 +23,13 @@ const parseDecodedString = (build) => {
 };
 
 const importBuild = (encodedBuild) => {
-  const compressed = Uint8Array.from(atob(encodedBuild), (c) => c.charCodeAt(0));
-  const decompressedBuild = pako.inflate(compressed);
-
-  if (isValidBase64(decompressedBuild)) {
-    const decodedString = atob(decompressedBuild);
-    return parseDecodedString(decodedString);
-  } else {
-    return undefined;
+  if (isValidBase64(encodedBuild)) {
+    const decodedString = decompressString(encodedBuild) ;
+    if (decodedString) {
+      return parseDecodedString(decodedString);
+    }
   }
+  return undefined;
 };
 
 export default importBuild;
