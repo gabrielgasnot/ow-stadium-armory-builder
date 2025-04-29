@@ -2,6 +2,12 @@
   "name": "ow-stadium-armory-builder",
   "version": "0.1.0",
   "private": true,
+  "license": "GPL-3.0",
+  "author": "Gabriel GASNOT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gabrielgasnot/ow-stadium-armory-builder"
+  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
