@@ -10,7 +10,6 @@ const StatBar = ({ name, icon, attributeType }) => {
   const { selectedItems, hoverPerk } = useContext(AppContext);
   const percentage = getBasicAttributeSum(attributeType, selectedItems);
   const hoverImpact = getBasicAttributeSum(attributeType, [hoverPerk]);
-
   const cappedPercentage = Math.min(percentage, 100);
   const cappedImpact = Math.max(
     Math.min(hoverImpact, 100 - cappedPercentage),
@@ -18,7 +17,7 @@ const StatBar = ({ name, icon, attributeType }) => {
   ); // avoid overflow
 
   return (
-    <Box key={name} display="flex" alignItems="center" gap={2}>
+    <Box key={attributeType} display="flex" alignItems="center" gap={2}>
       {/* Image on the left */}
       <Box
         sx={{
@@ -29,7 +28,7 @@ const StatBar = ({ name, icon, attributeType }) => {
           backgroundRepeat: "no-repeat",
         }}
       />
-      <Tooltip title={`${cappedPercentage} %`}>
+      <Tooltip title={`${name}: ${cappedPercentage} %`} enterTouchDelay={0}>
         <Box
           sx={{
             width: "100%",
