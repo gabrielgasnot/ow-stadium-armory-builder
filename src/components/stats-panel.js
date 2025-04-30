@@ -1,14 +1,19 @@
 import React, { useContext } from "react";
 import { Box } from "@mui/material";
 import StatBar from "./stat-bar";
+import StatBarLife from "./stat-bar-life";
 import AppContext from "../app-context";
-import { getBasicAttributeSum, getBasicStatAttributes } from "../services/stats";
+import {
+  getBasicAttributeSum,
+  getBasicStatAttributes,
+} from "../services/stats";
 
 const StatsPanel = () => {
   const { selectedItems, hoverPerk } = useContext(AppContext);
 
   return (
     <Box display="flex" flexDirection="column" gap={2}>
+      <StatBarLife />
       {getBasicStatAttributes().map(([attributeType, { icon, name }]) => (
         <Box key={name} display="flex" alignItems="center" gap={2}>
           {/* Image on the left */}

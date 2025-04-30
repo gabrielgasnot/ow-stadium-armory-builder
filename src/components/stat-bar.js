@@ -42,7 +42,7 @@ const StatBar = ({ name, percentage = 0, hoverImpact = 0 }) => {
               left: `${cappedPercentage}%`,
               height: "100%",
               width: `${cappedImpact}%`,
-              backgroundColor: "orange",
+              backgroundColor: "green",
               opacity: 0.8,
               transition: "width 0.3s ease, left 0.3s ease",
             }}

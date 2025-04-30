@@ -34,7 +34,8 @@ const owTheme = createTheme({
         common: colors.greenOW,
         rare: colors.blueOW,
         epic: colors.purpleOW,
-      }
+      },
+      blue: colors.blueOW,
     },
     action: {
       disabled: colors.lightGrey,
