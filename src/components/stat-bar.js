@@ -1,7 +1,16 @@
-import React from "react";
-import { Box, Tooltip } from "@mui/material";
+import React, { useContext } from "react";
+import { Box, Tooltip, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import AppContext from "../app-context";
 
-const StatBar = ({ name, percentage = 0, hoverImpact = 0 }) => {
+import { getBasicAttributeSum } from "../services/stats";
+
+const StatBar = ({ name, icon, attributeType }) => {
+  const theme = useTheme();
+  const { selectedItems, hoverPerk } = useContext(AppContext);
+  const percentage = getBasicAttributeSum(attributeType, selectedItems);
+  const hoverImpact = getBasicAttributeSum(attributeType, [hoverPerk]);
+
   const cappedPercentage = Math.min(percentage, 100);
   const cappedImpact = Math.max(
     Math.min(hoverImpact, 100 - cappedPercentage),
@@ -9,47 +18,65 @@ const StatBar = ({ name, percentage = 0, hoverImpact = 0 }) => {
   ); // avoid overflow
 
   return (
-    <Tooltip title={`${name}: ${cappedPercentage} %`}>
+    <Box key={name} display="flex" alignItems="center" gap={2}>
+      {/* Image on the left */}
       <Box
         sx={{
-          width: "100%",
+          width: 24,
           height: 24,
-          backgroundColor: "black",
-          borderRadius: 1,
-          overflow: "hidden",
-          position: "relative",
+          backgroundImage: `url(${process.env.PUBLIC_URL}/icons/${icon})`,
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
         }}
-      >
-        {/* White filled part */}
+      />
+      <Tooltip title={`${cappedPercentage} %`}>
         <Box
           sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            height: "100%",
-            width: `${cappedPercentage}%`,
-            backgroundColor: "white",
-            transition: "width 0.3s ease",
+            width: "100%",
+            height: 24,
+            backgroundColor: theme.palette.background.default,
+            borderRadius: 1,
+            overflow: "hidden",
+            position: "relative",
           }}
-        />
-
-        {/* Orange hover impact overlay */}
-        {hoverImpact > 0 && (
+        >
+          {/* White filled part */}
           <Box
             sx={{
               position: "absolute",
               top: 0,
-              left: `${cappedPercentage}%`,
+              left: 0,
               height: "100%",
-              width: `${cappedImpact}%`,
-              backgroundColor: "green",
-              opacity: 0.8,
-              transition: "width 0.3s ease, left 0.3s ease",
+              width: `${cappedPercentage}%`,
+              backgroundColor: "white",
+              transition: "width 0.3s ease",
             }}
           />
-        )}
-      </Box>
-    </Tooltip>
+
+          {/* Orange hover impact overlay */}
+          {hoverImpact > 0 && (
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: `${cappedPercentage}%`,
+                height: "100%",
+                width: `${cappedImpact}%`,
+                backgroundColor: "green",
+                opacity: 0.8,
+                transition: "width 0.3s ease, left 0.3s ease",
+              }}
+            />
+          )}
+        </Box>
+      </Tooltip>
+      {cappedImpact > 0 && (
+        <Typography sx={{ color: theme.palette.custom.green }}>
+          {percentage + cappedImpact}
+        </Typography>
+      )}
+      {cappedImpact === 0 && <Typography>{percentage}</Typography>}
+    </Box>
   );
 };
 

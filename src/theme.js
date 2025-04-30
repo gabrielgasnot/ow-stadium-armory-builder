@@ -36,6 +36,7 @@ const owTheme = createTheme({
         epic: colors.purpleOW,
       },
       blue: colors.blueOW,
+      green: colors.greenOW,
     },
     action: {
       disabled: colors.lightGrey,

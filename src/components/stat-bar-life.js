@@ -6,15 +6,27 @@ import { useTheme } from "@mui/material/styles";
 
 const StatBar = () => {
   const theme = useTheme();
-  const { currentHero, selectedItems } = useContext(AppContext);
-  const lifeStats = getLifeStatSum(currentHero, selectedItems);
+  const { currentHero, selectedItems, hoverPerk } = useContext(AppContext);
 
-  const total = lifeStats.reduce((acc, stat) => acc + stat.value, 0);
-  const [HP, AR, SH] = lifeStats;
-  const lifePercentage = (HP.value / total) * 100;
-  const armorPercentage = (AR.value / total) * 100;
-  const shieldPercentage = (SH.value / total) * 100;
-  // const cappedImpact = Math.max(Math.min(hoverImpact, 100 - total), 0);
+  const calculate = (stats) => {
+    const total = stats.reduce((acc, stat) => acc + stat.value, 0);
+    const [HP, AR, SH] = stats;
+    return {
+      total: total,
+      HP: (HP.value / total) * 100,
+      AR: (AR.value / total) * 100,
+      SH: (SH.value / total) * 100,
+    };
+  };
+
+  const lifeStats = getLifeStatSum(currentHero, selectedItems);
+  const { total, HP, AR, SH } = calculate(lifeStats);
+  const tempStats = getLifeStatSum(currentHero, [...selectedItems, hoverPerk]);
+  const tempValues = calculate(tempStats);
+  const diffTotal = tempValues.total - total;
+  const diffHP = tempValues.HP - HP;
+  const diffAR = tempValues.AR - AR;
+  const diffSH = tempValues.SH - SH;
 
   return (
     <Box key={"lifeStats"} display="flex" alignItems="center" gap={2}>
@@ -29,9 +41,7 @@ const StatBar = () => {
         }}
       />
       <Tooltip
-        title={`${lifeStats
-          .map((stat) => `${stat.type}: ${stat.value}`)
-          .join(", ")}`}
+        title={`${lifeStats.map((stat) => `${stat.value}`).join(" / ")}`}
       >
         <Box
           sx={{
@@ -50,8 +60,21 @@ const StatBar = () => {
               top: 0,
               left: 0,
               height: "100%",
-              width: `${lifePercentage}%`,
+              width: `${HP}%`,
               backgroundColor: theme.palette.secondary.main,
+              transition: "width 0.3s ease",
+            }}
+          />
+
+          {/* Green for Life Hover Impact */}
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: `${HP}%`,
+              height: "100%",
+              width: `${diffHP}%`,
+              backgroundColor: theme.palette.custom.green,
               transition: "width 0.3s ease",
             }}
           />
@@ -61,10 +84,23 @@ const StatBar = () => {
             sx={{
               position: "absolute",
               top: 0,
-              left: `${lifePercentage}%`,
+              left: `${HP + diffHP}%`,
               height: "100%",
-              width: `${armorPercentage}%`,
+              width: `${AR}%`,
               backgroundColor: theme.palette.custom.orange,
+              transition: "width 0.3s ease",
+            }}
+          />
+
+          {/* Green for Armor Hover Impact */}
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: `${HP + diffHP + AR}%`,
+              height: "100%",
+              width: `${diffAR}%`,
+              backgroundColor: theme.palette.custom.green,
               transition: "width 0.3s ease",
             }}
           />
@@ -74,16 +110,34 @@ const StatBar = () => {
             sx={{
               position: "absolute",
               top: 0,
-              left: `${lifePercentage + armorPercentage}%`,
+              left: `${HP + diffHP + AR + diffAR}%`,
               height: "100%",
-              width: `${shieldPercentage}%`,
+              width: `${SH}%`,
               backgroundColor: theme.palette.custom.blue,
+              transition: "width 0.3s ease",
+            }}
+          />
+
+          {/* Green for Shields Hover Impact */}
+          <Box
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: `${HP + diffHP + AR + diffAR + SH}%`,
+              height: "100%",
+              width: `${diffSH}%`,
+              backgroundColor: theme.palette.custom.green,
               transition: "width 0.3s ease",
             }}
           />
         </Box>
       </Tooltip>
-      <Typography>{total}</Typography>
+      {diffTotal > 0 && (
+        <Typography sx={{ color: theme.palette.custom.green }}>
+          {total + diffTotal}
+        </Typography>
+      )}
+      {diffTotal === 0 && <Typography>{total}</Typography>}
     </Box>
   );
 };

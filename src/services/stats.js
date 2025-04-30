@@ -1,6 +1,12 @@
 import attributeTypes from "../db/attributeTypes.json";
 
-const lifeStatTypes = ["AR", "HP", "SH", "CHA", "CHS"];
+const convertStatTypes = ["CHA", "CHS"];
+const basicLifeStatTypes = ["AR", "HP", "SH"];
+const lifeStatTypes = [...basicLifeStatTypes, ...convertStatTypes];
+const conversionTable = {
+  CHA: { input: "HP", output: "AR" },
+  CHS: { input: "HP", output: "SH" },
+};
 
 function getBasicAttributeSum(attributeType, selectedItems) {
   if (!selectedItems || selectedItems.length === 0) {
@@ -10,9 +16,14 @@ function getBasicAttributeSum(attributeType, selectedItems) {
     return 0;
   }
 
-  const attributeValue = sumUpStats(selectedItems)[attributeType];
+  const summedUpStats = sumUpStats(selectedItems);
 
-  return attributeValue?.value ?? 0;
+  const attributeValue = summedUpStats.find(
+    (attribute) => attribute.type === attributeType
+  );
+
+  const foundValue = attributeValue?.value ?? 0;
+  return foundValue;
 }
 
 function getLifeStatSum(currentHero, selectedItems) {
@@ -29,14 +40,20 @@ function getLifeStatSum(currentHero, selectedItems) {
 
   const flatBonusArray = summedUpStats.filter(
     (attribute) =>
-      lifeStatTypes.includes(attribute.type) && attribute.unit === ""
+      basicLifeStatTypes.includes(attribute.type) && attribute.unit === ""
+  );
+
+  const convertBonusArray = summedUpStats.filter(
+    (attribute) =>
+      convertStatTypes.includes(attribute.type) && attribute.unit === ""
   );
 
   const percentBonusArray = summedUpStats.filter(
     (attribute) =>
-      lifeStatTypes.includes(attribute.type) && attribute.unit === "%"
+      basicLifeStatTypes.includes(attribute.type) && attribute.unit === "%"
   );
 
+  // Apply flat bonuses
   for (const lifeStat of lifeStats) {
     const flatBonus = flatBonusArray.find(
       (attribute) => attribute.type === lifeStat.type
@@ -46,6 +63,18 @@ function getLifeStatSum(currentHero, selectedItems) {
     }
   }
 
+  // Convert HP to AR and SH
+  if (convertBonusArray && convertBonusArray.length > 0) {
+    for (const convertBonus of convertBonusArray) {
+      const { input, output } = conversionTable[convertBonus.type];
+      const lifeStatInput = lifeStats.find((stat) => stat.type === input);
+      const lifeStatOutput = lifeStats.find((stat) => stat.type === output);
+      lifeStatInput.value -= convertBonus.value ?? 0;
+      lifeStatOutput.value += convertBonus.value ?? 0;
+    }
+  }
+
+  // Apply percentage bonuses
   if (!percentBonusArray || percentBonusArray.length > 0) {
     for (const lifeStat of lifeStats) {
       const percentBonus = percentBonusArray.find(
@@ -72,19 +101,26 @@ const sumUpStats = (selectedItems) => {
     return [];
   }
 
-  const sum = selectedItems
+  const attributes = selectedItems
     .filter((item) => Boolean(item))
-    .flatMap((item) => item.attributes) // extract all attributes into one array
-    .reduce((acc, { type, value, unit }) => {
-      if (!acc[type]) {
-        acc[type] = { type, value, unit };
-      } else {
-        acc[type].value += value;
-      }
-      return acc;
-    }, {});
+    .flatMap((item) => item.attributes); // extract all attributes into one array
 
-  return Object.values(sum);
+  const result = {};
+  for (const attribute of attributes) {
+    if (!result[attribute.type]) {
+      result[attribute.type] = [];
+    }
+    const unitRow = result[attribute.type].find(
+      (row) => row.unit === attribute.unit
+    );
+    if (!unitRow) {
+      result[attribute.type].push({ ...attribute });
+    } else {
+      unitRow.value += attribute.value;
+    }
+  }
+
+  return Object.values(result).flat();
 };
 
 export { getBasicAttributeSum, getBasicStatAttributes, getLifeStatSum };
