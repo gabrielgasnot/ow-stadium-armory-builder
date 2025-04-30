@@ -16,6 +16,7 @@ const MyProvider = ({ children }) => {
   const [perkPopupAnchorEl, setPerkPopupAnchorEl] = useState(null);
   const [summaryPerk, setSummaryPerk] = useState(null);
   const [placement, setPlacement] = useState("bottom");
+  const [hoverPerk, setHoverPerk] = useState(null);
 
   const loadHero = (selectedHero) => {
     setSelectedPowers([]);
@@ -71,6 +72,7 @@ const MyProvider = ({ children }) => {
     if (perkType === "item") {
       setSelectedItems(selectedItems.filter((item) => item.id !== perk.id));
     }
+    setHoverPerk(perk);
   };
 
   const addPerkBuild = (perkType, perk) => {
@@ -80,6 +82,7 @@ const MyProvider = ({ children }) => {
     if (perkType === "item") {
       addItem(perk);
     }
+    setHoverPerk(null);
   };
 
   const shareBuild = () => {
@@ -161,6 +164,8 @@ const MyProvider = ({ children }) => {
         handleShowPerkSummary,
         handleHidePerkSummary,
         placement,
+        hoverPerk,
+        setHoverPerk,
       }}
     >
       {children}

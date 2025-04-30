@@ -15,7 +15,9 @@ import { useTheme } from "@mui/material/styles";
 
 function PerkCard({ perk, perkType, isSelected, isDisabled }) {
   const theme = useTheme();
-  const { perkGrade, addPerkBuild, removePerkBuild } = useContext(AppContext);
+  const { perkGrade, setHoverPerk, addPerkBuild, removePerkBuild } =
+    useContext(AppContext);
+  const isPower = perkType === "power";
 
   return (
     <Card
@@ -35,11 +37,15 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
         },
         cursor: isDisabled ? "not-allowed" : "pointer",
       }}
+      onMouseEnter={() =>
+        !isSelected && !isDisabled && !isPower ? setHoverPerk(perk) : false
+      }
+      onMouseLeave={() => setHoverPerk(null)}
       onClick={() =>
-        isDisabled
-          ? false
-          : !isSelected
-          ? addPerkBuild(perkType, perk)
+        !isSelected
+          ? isDisabled
+            ? false
+            : addPerkBuild(perkType, perk)
           : removePerkBuild(perkType, perk)
       }
     >
