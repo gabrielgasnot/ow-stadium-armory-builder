@@ -28,7 +28,7 @@ const StatBar = ({ name, icon, attributeType }) => {
           backgroundRepeat: "no-repeat",
         }}
       />
-      <Tooltip title={`${name}: ${cappedPercentage} %`} enterTouchDelay={0}>
+      <Tooltip title={`${name}: ${cappedPercentage} %`} enterTouchDelay={0} leaveTouchDelay={1000}>
         <Box
           sx={{
             width: "100%",
