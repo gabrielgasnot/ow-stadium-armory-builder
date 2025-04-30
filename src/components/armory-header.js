@@ -27,12 +27,23 @@ function ArmoryHeader(props) {
   };
 
   return (
-    <AppBar
-      position="static"
-    >
+    <AppBar position="static">
       <Container maxWidth={false}>
         <Toolbar disableGutters>
-          <BuildIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <Box
+            component="img"
+            src={`${process.env.PUBLIC_URL}/logo-light.svg`}
+            alt="Armory Builder Logo"
+            sx={{
+              height: 32,
+              mr: 1,
+              display: {
+                xs: "none",
+                md: "flex",
+              },
+            }}
+          />
+
           <Typography
             variant="h6"
             noWrap

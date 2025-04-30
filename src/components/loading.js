@@ -4,18 +4,18 @@ import { CircularProgress, Box } from "@mui/material";
 function LoadingComponent() {
   return (
     <Box
-      sx={{
+      sx={(theme) => ({
         position: "fixed",
         top: 0,
         left: 0,
         width: "100vw",
         height: "100vh",
-        background: "radial-gradient(circle, #FFFFFF 0%, #F4F4F4 100%)",
+        background: `radial-gradient(circle, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         zIndex: 9999,
-      }}
+      })}
     >
       <Box
         sx={{

@@ -4,7 +4,7 @@ import BuildStarter from "../pages/build-starter";
 import BuildMain from "../pages/build-main";
 import AppContext from "../app-context.js";
 
-function ArmoryMainContent() {
+function ArmoryMainContent({ importBuild }) {
   const { currentHero } = useContext(AppContext);
   return (
     <Box
@@ -18,7 +18,7 @@ function ArmoryMainContent() {
         paddingBottom: { xs: "70px", sm: "40px" },
       }}
     >
-      {!currentHero && <BuildStarter />}
+      {!currentHero && <BuildStarter importBuild={importBuild} />}
       {currentHero && <BuildMain />}
     </Box>
   );

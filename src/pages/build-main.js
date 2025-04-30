@@ -50,9 +50,10 @@ function BuildMain() {
               fontWeight: 700,
               fontSize: "1em",
               textDecoration: "none",
-              color: "common.white", // <-- ADD THIS
+              color: (theme) => theme.palette.common.white,
               "&:hover": {
-                color: "primary.light", // Optional: lighter blue on hover for nice effect
+                backgroundColor: (theme) => theme.palette.primary.main,
+                color: (theme) => theme.palette.common.white,
               },
             }}
           >

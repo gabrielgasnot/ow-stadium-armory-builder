@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useTransition } from "react";
 import {
   Card,
   CardContent,
@@ -15,6 +15,7 @@ import { useTheme } from "@mui/material/styles";
 
 function PerkCard({ perk, perkType, isSelected, isDisabled }) {
   const theme = useTheme();
+  const [_, startTransition] = useTransition();
   const { perkGrade, setHoverPerk, addPerkBuild, removePerkBuild } =
     useContext(AppContext);
   const isPower = perkType === "power";
@@ -38,15 +39,23 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
         cursor: isDisabled ? "not-allowed" : "pointer",
       }}
       onMouseEnter={() =>
-        !isSelected && !isDisabled && !isPower ? setHoverPerk(perk) : false
+        startTransition(() => {
+          if (!isSelected && !isDisabled && !isPower) {
+            setHoverPerk(perk);
+          }
+        })
       }
       onMouseLeave={() => setHoverPerk(null)}
       onClick={() =>
-        !isSelected
-          ? isDisabled
-            ? false
-            : addPerkBuild(perkType, perk)
-          : removePerkBuild(perkType, perk)
+        startTransition(() => {
+          if (!isSelected && !isDisabled) {
+            addPerkBuild(perkType, perk);
+          }
+          if (isSelected) {
+            // If the perk is already selected, remove it from the build
+            removePerkBuild(perkType, perk);
+          }
+        })
       }
     >
       {/* Header: Image + Name */}
@@ -83,7 +92,7 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
 
       {/* Content: Description */}
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" component="div">
           <HighlightText text={perk.description} />
           <PerkAttributes attributes={perk.attributes} />
         </Typography>

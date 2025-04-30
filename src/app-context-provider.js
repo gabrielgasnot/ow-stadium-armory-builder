@@ -9,6 +9,7 @@ const MyProvider = ({ children }) => {
   const [heroItems, setHeroItems] = useState([]);
   const [selectedPowers, setSelectedPowers] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
+  const [encodedBuildId, setEncodedBuildId] = useState("");
   const [shareLink, setShareLink] = useState("");
   const [snackBarMessage, setSnackBarMessage] = useState("");
   const [snackBarCategory, setSnackBarCategory] = useState("");
@@ -96,6 +97,7 @@ const MyProvider = ({ children }) => {
       baseUrl += "/";
     }
     const newShareLink = `${baseUrl}#/${encodedBuild}`;
+    setEncodedBuildId(encodedBuild);
     setShareLink(newShareLink);
   };
 
@@ -166,6 +168,8 @@ const MyProvider = ({ children }) => {
         placement,
         hoverPerk,
         setHoverPerk,
+        setEncodedBuildId,
+        encodedBuildId,
       }}
     >
       {children}

@@ -1,10 +1,11 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useTransition } from "react";
 import { Box, CardMedia } from "@mui/material";
 import AppContext from "../app-context.js";
 import { useTheme } from "@mui/material/styles";
 
 function PerkMiniCard({ perk, perkType, unselectPerk }) {
   const theme = useTheme();
+  const [_, startTransition] = useTransition();
   const isPower = perkType === "power";
 
   const [isTouch, setIsTouch] = useState(false);
@@ -21,7 +22,7 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
     }
   };
 
-  const handleMouseClick = (e) => {
+  const handleMouseClick = () => {
     if (!perk) {
       return;
     }
@@ -59,10 +60,26 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
           },
         },
       }}
-      onClick={handleMouseClick}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleHidePerkSummary}
-      onTouchStart={handleTouchStart}
+      onClick={() =>
+        startTransition(() => {
+          handleMouseClick();
+        })
+      }
+      onMouseEnter={(e) =>
+        startTransition(() => {
+          handleMouseEnter(e);
+        })
+      }
+      onMouseLeave={() =>
+        startTransition(() => {
+          handleHidePerkSummary();
+        })
+      }
+      onTouchStart={() =>
+        startTransition(() => {
+          handleTouchStart();
+        })
+      }
     >
       {perk && (
         <CardMedia

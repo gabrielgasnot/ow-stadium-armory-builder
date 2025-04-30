@@ -13,6 +13,7 @@ const StatBar = () => {
     const [HP, AR, SH] = stats;
     return {
       total: total,
+      stats: {HP, AR, SH},
       HP: (HP.value / total) * 100,
       AR: (AR.value / total) * 100,
       SH: (SH.value / total) * 100,
@@ -20,7 +21,7 @@ const StatBar = () => {
   };
 
   const lifeStats = getLifeStatSum(currentHero, selectedItems);
-  const { total, HP, AR, SH } = calculate(lifeStats);
+  const { total, stats, HP, AR, SH } = calculate(lifeStats);
   const tempStats = getLifeStatSum(currentHero, [...selectedItems, hoverPerk]);
   const tempValues = calculate(tempStats);
   const diffTotal = tempValues.total - total;
@@ -41,7 +42,7 @@ const StatBar = () => {
         }}
       />
       <Tooltip
-        title={`${lifeStats.map((stat) => `${stat.value}`).join(" / ")}`}
+        title={`Life: ${stats.HP.value} / Armor: ${stats.AR.value} / Shields: ${stats.SH.value}`}
       >
         <Box
           sx={{
