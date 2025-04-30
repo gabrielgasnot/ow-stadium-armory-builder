@@ -6,7 +6,7 @@ import attributeTypes from "../db/attributeTypes.json";
 import getCurrentSum from "../services/stats";
 
 const StatsPanel = () => {
-  const { selectedItems } = useContext(AppContext);
+  const { selectedItems, hoverPerk } = useContext(AppContext);
   const lifeStats = ["AR", "HP", "SH"];
 
   return (
@@ -28,7 +28,7 @@ const StatsPanel = () => {
             <StatBar
               name={name}
               percentage={getCurrentSum(attributeType, selectedItems)}
-              hoverImpact={0}
+              hoverImpact={getCurrentSum(attributeType, [hoverPerk])}
             />
           </Box>
         ))}

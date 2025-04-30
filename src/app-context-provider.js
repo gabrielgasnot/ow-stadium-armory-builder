@@ -16,6 +16,7 @@ const MyProvider = ({ children }) => {
   const [perkPopupAnchorEl, setPerkPopupAnchorEl] = useState(null);
   const [summaryPerk, setSummaryPerk] = useState(null);
   const [placement, setPlacement] = useState("bottom");
+  const [hoverPerk, setHoverPerk] = useState(null);
 
   const loadHero = (selectedHero) => {
     setSelectedPowers([]);
@@ -161,6 +162,8 @@ const MyProvider = ({ children }) => {
         handleShowPerkSummary,
         handleHidePerkSummary,
         placement,
+        hoverPerk,
+        setHoverPerk,
       }}
     >
       {children}
