@@ -58,5 +58,13 @@
   "MA": {
     "icon": "MA.svg",
     "name": "Max Ammo"
+  },
+  "CHS": {
+    "icon": "default.svg",
+    "name": "Convert Health to Shields"
+  },
+  "CHA": {
+    "icon": "default.svg",
+    "name": "Convert Health to Armor"
   }
 }

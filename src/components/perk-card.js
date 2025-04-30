@@ -35,7 +35,7 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
         },
         cursor: isDisabled ? "not-allowed" : "pointer",
       }}
-      onMouseEnter={() => setHoverPerk(perk)}
+      onMouseEnter={() => !isSelected && !isDisabled ? setHoverPerk(perk) : false} 
       onMouseLeave={() => setHoverPerk(null)}
       onClick={() =>
         !isSelected

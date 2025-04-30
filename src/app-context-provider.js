@@ -72,6 +72,7 @@ const MyProvider = ({ children }) => {
     if (perkType === "item") {
       setSelectedItems(selectedItems.filter((item) => item.id !== perk.id));
     }
+    setHoverPerk(perk);
   };
 
   const addPerkBuild = (perkType, perk) => {
@@ -81,6 +82,7 @@ const MyProvider = ({ children }) => {
     if (perkType === "item") {
       addItem(perk);
     }
+    setHoverPerk(null);
   };
 
   const shareBuild = () => {
