@@ -12,13 +12,13 @@ import {
 } from "@mui/material";
 import { ContentCopy } from "@mui/icons-material";
 
-function ShareBuildModal({ generatedLink, close }) {
+function ShareBuildModal({ encodedBuildId, generatedLink, close }) {
   const [openSnackbar, setOpenSnackbar] = useState(false);
 
-  const handleCopy = () => {
-    if (generatedLink) {
+  const handleCopy = (targetText) => {
+    if (targetText) {
       navigator.clipboard
-        .writeText(generatedLink)
+        .writeText(targetText)
         .then(() => {
           setOpenSnackbar(true);
         })
@@ -47,16 +47,51 @@ function ShareBuildModal({ generatedLink, close }) {
       <DialogTitle>Share your build</DialogTitle>
       <DialogContent>
         <TextField
+          label="Your build ID"
+          value={encodedBuildId}
+          variant="outlined"
+          fullWidth
+          slotProps={{
+            input: {
+              readOnly: true,
+              endAdornment: (
+                <IconButton
+                  onClick={() => handleCopy(encodedBuildId)}
+                  sx={{
+                    transition: 'color 0.3s ease',
+                    color: theme => theme.palette.text.primary,
+                    '&:hover': {
+                      color: theme => theme.palette.custom.blue,
+                    },
+                  }}
+                >
+                  <ContentCopy />
+                </IconButton>
+              ),
+            },
+          }}
+          sx={{ marginBottom: 2, marginTop: 2 }}
+        />
+
+        <TextField
           label="Link to your build"
           value={generatedLink}
           variant="outlined"
           fullWidth
           slotProps={{
             input: {
-                
               readOnly: true,
               endAdornment: (
-                <IconButton onClick={handleCopy}>
+                <IconButton
+                  onClick={() => handleCopy(generatedLink)}
+                  sx={{
+                    transition: 'color 0.3s ease',
+                    color: theme => theme.palette.text.primary,
+                    '&:hover': {
+                      color: theme => theme.palette.custom.blue,
+                    },
+                  }}
+                >
                   <ContentCopy />
                 </IconButton>
               ),

@@ -44,6 +44,7 @@ function AppContent() {
     setSelectedPowers,
     selectedItems,
     setSelectedItems,
+    encodedBuildId,
     shareLink,
     setShareLink,
     snackBarMessage,
@@ -51,6 +52,7 @@ function AppContent() {
     snackBarCategory,
     showMessage,
     heroes,
+    setEncodedBuildId,
   } = useContext(AppContext);
 
   const location = useLocation();
@@ -98,7 +100,7 @@ function AppContent() {
 
                 setSelectedItems(orderedSelectedItems);
               }
-              
+
               if (!selectedPowersMatch) {
                 const orderedSelectedPowers = result.selectedPerks
                   .map((id) => hero.powers.find((power) => power.id === id))
@@ -136,7 +138,12 @@ function AppContent() {
   }, [encodedString, navigation]);
 
   if (loading) {
-    return <LoadingComponent />; // Display loading screen or placeholder
+    return (
+      <ThemeProvider theme={owTheme}>
+        <CssBaseline />
+        <LoadingComponent />
+      </ThemeProvider>
+    );
   }
 
   return (
@@ -167,18 +174,34 @@ function AppContent() {
         </Snackbar>
 
         <ShareBuildModal
+          encodedBuildId={encodedBuildId}
           generatedLink={shareLink}
-          close={() => setShareLink("")}
+          close={() => {
+            setShareLink("");
+            setEncodedBuildId("");
+          }}
         />
 
         {/* Header (app bar) */}
         <ArmoryHeader pages={[]} />
 
         {/* Main Content Area */}
-        <ArmoryMainContent />
+        <ArmoryMainContent importBuild={navigation} />
 
         {/* Footer */}
         <ArmoryFooter />
+        <div
+          id="focus-dummy"
+          tabIndex={-1}
+          style={{
+            position: "absolute",
+            width: 0,
+            height: 0,
+            overflow: "hidden",
+            opacity: 0,
+            pointerEvents: "none",
+          }}
+        />
       </Box>
     </ThemeProvider>
   );

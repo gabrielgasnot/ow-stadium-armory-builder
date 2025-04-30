@@ -84,10 +84,17 @@ const owTheme = createTheme({
   components: {
     MuiCssBaseline: {
       styleOverrides: {
-        body: {
-          backgroundColor: colors.darkerBlue,
-          color: colors.white,
+        "html, body, #root": {
           userSelect: "none",
+        },
+        "*, *::before, *::after": {
+          userSelect: "none",
+        },
+        button: {
+          userSelect: "none",
+        },
+        svg: {
+          userSelect: "none", // Some icons can still behave weirdly
         },
       },
     },
@@ -117,10 +124,19 @@ const owTheme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
+          userSelect: "none",
           color: colors.white,
           "&:hover": {
+            userSelect: "none",
             backgroundColor: alpha(colors.lightBlue, 0.2),
           },
+        },
+      },
+    },
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          userSelect: "none",
         },
       },
     },

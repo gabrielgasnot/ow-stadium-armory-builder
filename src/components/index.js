@@ -7,6 +7,7 @@ import ArmoryFooter from "./armory-footer.js";
 import ArmoryMainContent from "./armory-main-content.js";
 import LoadingComponent from "./loading.js";
 import PerkSummary from "./perk-summary.js";
+import ImportBuildModal from "./import-build.js";
 export {
   Details,
   Heroes,
@@ -17,4 +18,5 @@ export {
   ArmoryMainContent,
   LoadingComponent,
   PerkSummary,
+  ImportBuildModal
 };
