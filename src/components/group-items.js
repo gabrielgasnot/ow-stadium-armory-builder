@@ -25,11 +25,11 @@ function GroupItems({ category }) {
   const getItemsByGrade = (grade) => {
     switch (grade) {
       case "common":
-        return commonItems;
+        return commonItems.filter(item => !item.disabled);
       case "rare":
-        return rareItems;
+        return rareItems.filter(item => !item.disabled);
       case "epic":
-        return epicItems;
+        return epicItems.filter(item => !item.disabled);
       default:
         return [];
     }

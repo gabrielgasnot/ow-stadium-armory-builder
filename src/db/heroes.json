@@ -538,6 +538,30 @@
           ]
         },
         {
+          "position": 1,
+          "id": "2A001",
+          "name": "Nightcreeper",
+          "price": 9500,
+          "category": "Ability",
+          "disabled": 1,
+          "attributes": [
+            {
+              "type": "MS",
+              "value": 10,
+              "unit": "%"
+            },
+            {
+              "type": "[Shadow Step] Cast Speed",
+              "value": 30,
+              "unit": "%"
+            },
+            {
+              "type": "description",
+              "value": "Using [Wraith Form] reduces the cooldown of [Shadow Step] by 2s"
+            }
+          ]
+        },
+        {
           "position": 3,
           "id": "2S006",
           "name": "Crimson Cloak",

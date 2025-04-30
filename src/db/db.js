@@ -5,25 +5,25 @@ import attributeTypes from './attributeTypes.json';
 const heroesOrder = [
   // Tank
   19, // D.Va
-  24, // Orisa
   34, // Junker Queen
+  24, // Orisa
   5, // Reinhardt
   13, // Zarya
 
   // DPS
   29, // Ashe
   14, // Cassidy
-  2, // Reaper
   21, // Genji
   20, // Mei
+  2, // Reaper
   15, // Soldier 76
 
   // Support
   22, // Ana
-  6, // Mercy
   41, // Juno
   35, // Kiriko
   16, // Lucio
+  6, // Mercy
   26, // Moira
 ];
 
