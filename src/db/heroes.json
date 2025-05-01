@@ -2173,7 +2173,7 @@
         "position": 8,
         "id": "24P005",
         "name": "Restortify",
-        "description": "While [Fortify] is active, heal for 10% of your max Life every 1s"
+        "description": "While [Fortify] is active, heal for 5% of your max Life every 1s"
       },
       {
         "position": 11,
