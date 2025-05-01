@@ -1,13 +1,13 @@
-import Details from "./details.js";
-import Heroes from "./heroes.js";
-import Items from "./items.js";
-import Perks from "./perks.js";
-import ArmoryHeader from "./armory-header.js";
-import ArmoryFooter from "./armory-footer.js";
-import ArmoryMainContent from "./armory-main-content.js";
-import LoadingComponent from "./loading.js";
-import PerkSummary from "./perk-summary.js";
-import ImportBuildModal from "./import-build.js";
+import Details from "./details";
+import Heroes from "./heroes";
+import Items from "./items";
+import Perks from "./perks";
+import ArmoryHeader from "./armory-header";
+import ArmoryFooter from "./armory-footer";
+import ArmoryMainContent from "./armory-main-content";
+import LoadingComponent from "./loading";
+import PerkSummary from "./perk-summary";
+import ImportBuildModal from "./import-build";
 export {
   Details,
   Heroes,

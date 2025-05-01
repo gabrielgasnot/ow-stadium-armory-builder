@@ -2,6 +2,7 @@ import React from "react";
 import types from "../db/attributeTypes.json";
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import getPublicUrl from "../helpers/public-url";
 
 function PerkAttributes({ attributes }) {
   const theme = useTheme();
@@ -16,7 +17,7 @@ function PerkAttributes({ attributes }) {
         ) : (
           <>
             <img
-              src={`${process.env.PUBLIC_URL}/icons/${
+              src={`${getPublicUrl()}icons/${
                 types[attribute.type]?.icon ?? "default.svg"
               }`}
               alt={attribute.type}

@@ -3,6 +3,7 @@ import { Box, Tooltip, Typography } from "@mui/material";
 import { getLifeStatSum } from "../services/stats";
 import AppContext from "../app-context";
 import { useTheme } from "@mui/material/styles";
+import getPublicUrl from "../helpers/public-url";
 
 const StatBar = () => {
   const theme = useTheme();
@@ -36,7 +37,7 @@ const StatBar = () => {
         sx={{
           width: 24,
           height: 24,
-          backgroundImage: `url(${process.env.PUBLIC_URL}/icons/HP.svg)`,
+          backgroundImage: `url(${getPublicUrl()}icons/HP.svg)`,
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}

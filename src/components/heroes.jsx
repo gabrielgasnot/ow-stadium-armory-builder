@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Card, CardMedia, CardContent, Stack } from "@mui/material";
 import AppContext from "../app-context.js";
+import getPublicUrl from "../helpers/public-url";
 
 function Heroes() {
   const { heroes, loadHero, currentHero } = useContext(AppContext);
@@ -37,7 +38,7 @@ function Heroes() {
           >
             <CardMedia
               sx={{ height: 125 }}
-              image={`${process.env.PUBLIC_URL}/heroes/${hero.id}.png`}
+              image={`${getPublicUrl()}heroes/${hero.id}.png`}
               title={hero.name}
             />
             <CardContent>{hero.name}</CardContent>

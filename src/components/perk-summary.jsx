@@ -1,8 +1,9 @@
 import React from "react";
 import { Box, Paper, Typography, Divider } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-import HighlightText from "./highlight-text.js"; // Assuming you have a HighlightText component
-import PerkAttributes from "./perk-attributes.js";
+import HighlightText from "./highlight-text"; // Assuming you have a HighlightText component
+import PerkAttributes from "./perk-attributes";
+import getPublicUrl from "../helpers/public-url";
 
 export default function PerkSummary({ perk }) {
   const theme = useTheme();
@@ -67,7 +68,7 @@ export default function PerkSummary({ perk }) {
               }}
             >
               <img
-                src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
+                src={`${getPublicUrl()}icons/credit.svg`}
                 alt="credits"
                 style={{
                   width: 18,

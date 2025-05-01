@@ -9,9 +9,10 @@ import {
 } from "@mui/material";
 import { getPerkColor } from "../services/color";
 import AppContext from "../app-context.js";
-import HighlightText from "./highlight-text.js";
-import PerkAttributes from "./perk-attributes.js";
+import HighlightText from "./highlight-text";
+import PerkAttributes from "./perk-attributes";
 import { useTheme } from "@mui/material/styles";
+import getPublicUrl from "../helpers/public-url";
 
 function PerkCard({ perk, perkType, isSelected, isDisabled }) {
   const theme = useTheme();
@@ -62,7 +63,7 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
       <CardHeader
         avatar={
           <Avatar
-            src={`${process.env.PUBLIC_URL}/perks/${perk.id}.png`}
+            src={`${getPublicUrl()}perks/${perk.id}.png`}
             alt={perk.name}
             sx={{
               width: 70,
@@ -102,7 +103,7 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
       {perk.price && (
         <CardActions sx={{ justifyContent: "flex-end", marginRight: 2 }}>
           <img
-            src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
+            src={`${getPublicUrl()}icons/credit.svg`}
             alt="credits"
             style={{ width: 24, height: 24 }}
           />

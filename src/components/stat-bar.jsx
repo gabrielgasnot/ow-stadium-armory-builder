@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Box, Tooltip, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import AppContext from "../app-context";
-
+import getPublicUrl from "../helpers/public-url";
 import { getBasicAttributeSum } from "../services/stats";
 
 const StatBar = ({ name, icon, attributeType }) => {
@@ -23,7 +23,7 @@ const StatBar = ({ name, icon, attributeType }) => {
         sx={{
           width: 24,
           height: 24,
-          backgroundImage: `url(${process.env.PUBLIC_URL}/icons/${icon})`,
+          backgroundImage: `url(${getPublicUrl()}icons/${icon})`,
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
         }}

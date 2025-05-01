@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { Stack, Button, Typography, Box, Paper } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
-import types from "../db/attributeTypes.json";
 import AppContext from "../app-context.js";
+import getPublicUrl from "../helpers/public-url";
 
 function DetailsHeader({ copyBuild }) {
   const { currentHero, selectedItems, shareBuild } = useContext(AppContext);
@@ -24,7 +24,7 @@ function DetailsHeader({ copyBuild }) {
           height: 100,
           backgroundColor: "background.paper",
           borderRadius: 1,
-          backgroundImage: `url(${process.env.PUBLIC_URL}/heroes/${currentHero.id}.png)`,
+          backgroundImage: `url(${getPublicUrl()}heroes/${currentHero.id}.png)`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           flexShrink: 0,
@@ -46,7 +46,7 @@ function DetailsHeader({ copyBuild }) {
         {/* Name + Icon */}
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <img
-            src={`${process.env.PUBLIC_URL}/roles/${currentHero.role}.svg`}
+            src={`${getPublicUrl()}roles/${currentHero.role}.svg`}
             alt={currentHero.role}
             style={{
               width: 24,
@@ -79,7 +79,7 @@ function DetailsHeader({ copyBuild }) {
             Build cost:
           </Typography>
           <img
-            src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
+            src={`${getPublicUrl()}icons/credit.svg`}
             alt="credits"
             style={{ width: 24, height: 24, marginRight: 4 }}
           />

@@ -1,12 +1,10 @@
 import React, { useContext } from "react";
 import { Stack, Box, Tabs, Tab } from "@mui/material";
-import Powers from "./powers.js";
-import GroupItems from "./group-items.js";
-import AppContext from "../app-context.js";
+import Powers from "./powers";
+import GroupItems from "./group-items";
+import AppContext from "../app-context";
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
+function TabPanel({ children, value, index, ...other }) {
   if (value !== index) {
     return null;
   }

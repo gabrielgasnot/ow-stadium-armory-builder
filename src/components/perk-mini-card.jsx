@@ -2,6 +2,7 @@ import React, { useContext, useState, useTransition } from "react";
 import { Box, CardMedia } from "@mui/material";
 import AppContext from "../app-context.js";
 import { useTheme } from "@mui/material/styles";
+import getPublicUrl from "../helpers/public-url";
 
 function PerkMiniCard({ perk, perkType, unselectPerk }) {
   const theme = useTheme();
@@ -84,7 +85,7 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
       {perk && (
         <CardMedia
           component="img"
-          image={`${process.env.PUBLIC_URL}/perks/${perk.id}.png`}
+          image={`${getPublicUrl()}perks/${perk.id}.png`}
           alt={perk.name}
           sx={{
             width: "100%",

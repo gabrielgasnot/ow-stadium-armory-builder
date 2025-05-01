@@ -1,5 +1,6 @@
 import React from "react";
 import { CircularProgress, Box } from "@mui/material";
+import getPublicUrl from "../helpers/public-url";
 
 function LoadingComponent() {
   return (
@@ -51,7 +52,7 @@ function LoadingComponent() {
           }}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/loader.jpeg`}
+            src={`${getPublicUrl()}loader.jpeg`}
             alt="Please wait..."
             style={{
               width: "60%",
