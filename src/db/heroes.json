@@ -2335,7 +2335,7 @@
             },
             {
               "type": "description",
-              "value": "After using an ability, restore your Armor equal to 5% of your Max Life"
+              "value": "After using an ability, restore your Armor equal to 3% of your Max Life"
             }
           ]
         }
