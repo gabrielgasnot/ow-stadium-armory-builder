@@ -4,6 +4,7 @@
   "private": true,
   "license": "GPL-3.0",
   "author": "Gabriel GASNOT",
+  "homepage": ".",
   "repository": {
     "type": "git",
     "url": "https://github.com/gabrielgasnot/ow-stadium-armory-builder"
@@ -27,7 +28,8 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --cname overwatchbuilds.com",
+    "deployPreprod": "gh-pages -d build --branch gh-pages-preprod",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
