@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Stack, Button, Typography, Box, Paper } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
-import types from "../db/attributeTypes.json";
 import AppContext from "../app-context.js";
 
 function DetailsHeader({ copyBuild }) {

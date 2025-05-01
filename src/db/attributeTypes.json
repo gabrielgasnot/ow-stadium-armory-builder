@@ -1,70 +1,53 @@
 {
   "AR": {
-    "icon": "HP.svg",
-    "name": "Armor"
+    "icon": "HP.svg"
   },
   "HP": {
-    "icon": "HP.svg",
-    "name": "Health"
+    "icon": "HP.svg"
   },
   "SH": {
-    "icon": "HP.svg",
-    "name": "Shields"
+    "icon": "HP.svg"
   },
   "WP": {
-    "icon": "WP.svg",
-    "name": "Weapon Power"
+    "icon": "WP.svg"
   },
   "WPLS": {
-    "icon": "WPLS.svg",
-    "name": "Weapon Lifesteal"
+    "icon": "WPLS.svg"
   },
   "AP": {
-    "icon": "AP.svg",
-    "name": "Ability Power"
+    "icon": "AP.svg"
   },
   "ALS": {
-    "icon": "ALS.svg",
-    "name": "Ability Lifesteal"
+    "icon": "ALS.svg"
   },
   "AS": {
-    "icon": "AS.svg",
-    "name": "Attack Speed"
+    "icon": "AS.svg"
   },
   "RS": {
-    "icon": "RS.svg",
-    "name": "Reload Speed"
+    "icon": "RS.svg"
   },
   "MS": {
-    "icon": "MS.svg",
-    "name": "Movement Speed"
+    "icon": "MS.svg"
   },
   "CR": {
-    "icon": "CR.svg",
-    "name": "Cooldown Reduction"
+    "icon": "CR.svg"
   },
   "CD": {
-    "icon": "CD.svg",
-    "name": "Critical Damage"
+    "icon": "CD.svg"
   },
   "MD": {
-    "icon": "MD.svg",
-    "name": "Melee Damage"
+    "icon": "MD.svg"
   },
   "KR": {
-    "icon": "default.svg",
-    "name": "Knockback Resist"
+    "icon": "default.svg"
   },
   "MA": {
-    "icon": "MA.svg",
-    "name": "Max Ammo"
+    "icon": "MA.svg"
   },
   "CHS": {
-    "icon": "default.svg",
-    "name": "Convert Health to Shields"
+    "icon": "default.svg"
   },
   "CHA": {
-    "icon": "default.svg",
-    "name": "Convert Health to Armor"
+    "icon": "default.svg"
   }
 }
