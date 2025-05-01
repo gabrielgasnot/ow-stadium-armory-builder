@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useCallback, useState } from "react";
+import React, { useContext, useEffect, useCallback, useState, useRef } from "react";
 import "./app.css";
 import {
   ArmoryHeader,
@@ -34,6 +34,7 @@ function App() {
 
 function AppContent() {
   const [loading, setLoading] = useState(true);
+  const hasNavigated = useRef(false);
 
   const {
     currentHero,
@@ -109,7 +110,10 @@ function AppContent() {
               }
             }
           }
-          navigate("/");
+
+          if (location.pathname !== "/") {
+            navigate("/");
+          }
         }
       }
       setLoading(false);
@@ -126,16 +130,20 @@ function AppContent() {
       selectedPowers,
       setSelectedItems,
       setSelectedPowers,
+      location.pathname,
     ]
   );
 
   useEffect(() => {
-    if (encodedString) {
+    if (!hasNavigated.current && encodedString) {
+      hasNavigated.current = true;
+      console.debug("Navigating to buildId:", encodedString);
       navigation(encodedString);
-    } else {
+    } else if (!encodedString) {
       setLoading(false);
     }
   }, [encodedString, navigation]);
+
 
   if (loading) {
     return (
