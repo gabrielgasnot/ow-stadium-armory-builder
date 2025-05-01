@@ -5,6 +5,7 @@ import { useTheme } from "@mui/material/styles";
 
 function PerkMiniCard({ perk, perkType, unselectPerk }) {
   const theme = useTheme();
+  // eslint-disable-next-line no-unused-vars
   const [_, startTransition] = useTransition();
   const isPower = perkType === "power";
 
