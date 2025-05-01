@@ -543,7 +543,7 @@
           "name": "Nightcreeper",
           "price": 9500,
           "category": "Ability",
-          "disabled": 1,
+          "disabled": true,
           "attributes": [
             {
               "type": "MS",

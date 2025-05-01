@@ -8,7 +8,8 @@ const getAllItemsByHero = (hero) => {
     ...basicItems.common,
     ...basicItems.rare,
     ...basicItems.epic,
-  ];
+  ].filter(item => !item.disabled);
 };
+
 
 export default getAllItemsByHero;
