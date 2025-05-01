@@ -25,7 +25,7 @@ function ArmoryFooter() {
         href="https://www.twitch.tv/gf_iguel"
         sx={{ color: "inherit", textDecoration: "none" }} // Inherit text color and remove underline
       >
-        PositivityLand
+        PositivitiLand
       </Link>
       !
     </Paper>
