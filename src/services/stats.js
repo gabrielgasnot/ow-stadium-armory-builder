@@ -103,7 +103,8 @@ const sumUpStats = (selectedItems) => {
 
   const attributes = selectedItems
     .filter((item) => Boolean(item))
-    .flatMap((item) => item.attributes); // extract all attributes into one array
+    .flatMap((item) => item.attributes)
+    .filter((attribute) => Boolean(attribute) && Boolean(attribute.type));
 
   const result = {};
   for (const attribute of attributes) {
