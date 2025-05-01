@@ -196,6 +196,7 @@
       "name": "Heartbeat Sensor",
       "price": 1500,
       "category": "Survival",
+      "disabled": true,
       "attributes": [
         {
           "type": "MS",
