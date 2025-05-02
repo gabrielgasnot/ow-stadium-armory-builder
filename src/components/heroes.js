@@ -1,12 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Card, CardMedia, CardContent, Stack } from "@mui/material";
-import AppContext from "../app-context.js";
+import { useBuild } from "../contexts/build-context.js";
+import { useDb } from "../contexts/db-context.js";
 
-function Heroes() {
-  const { heroes, loadHero, currentHero } = useContext(AppContext);
+function Heroes({ currentHero }) {
+  const { heroes } = useDb();
+  const { initBuild } = useBuild();
 
   const selectHero = (hero) => {
-    loadHero(hero);
+    initBuild(hero);
   };
 
   if (heroes && heroes.length > 0) {

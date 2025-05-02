@@ -1,18 +1,15 @@
-import React, { useContext, useState, useTransition } from "react";
+import React, { useState, useTransition } from "react";
 import { Box, CardMedia } from "@mui/material";
-import AppContext from "../app-context.js";
 import { useTheme } from "@mui/material/styles";
+import { useUI } from "../../contexts/ui-context.js";
 
 function PerkMiniCard({ perk, perkType, unselectPerk }) {
   const theme = useTheme();
-  // eslint-disable-next-line no-unused-vars
-  const [_, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
   const isPower = perkType === "power";
 
   const [isTouch, setIsTouch] = useState(false);
-  const { handleShowPerkSummary, handleHidePerkSummary } =
-    useContext(AppContext);
-
+  const { handleShowPerkSummary, handleHidePerkSummary } = useUI();
   const handleTouchStart = () => {
     setIsTouch(true);
   };
@@ -31,6 +28,15 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
     unselectPerk(perk);
     handleHidePerkSummary();
   };
+
+  const perkHandlers = perk
+    ? {
+        onClick: () => startTransition(() => handleMouseClick()),
+        onMouseEnter: (e) => startTransition(() => handleMouseEnter(e)),
+        onMouseLeave: () => startTransition(() => handleHidePerkSummary()),
+        onTouchStart: () => startTransition(() => handleTouchStart()),
+      }
+    : {};
 
   return (
     <Box
@@ -61,26 +67,7 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
           },
         },
       }}
-      onClick={() =>
-        startTransition(() => {
-          handleMouseClick();
-        })
-      }
-      onMouseEnter={(e) =>
-        startTransition(() => {
-          handleMouseEnter(e);
-        })
-      }
-      onMouseLeave={() =>
-        startTransition(() => {
-          handleHidePerkSummary();
-        })
-      }
-      onTouchStart={() =>
-        startTransition(() => {
-          handleTouchStart();
-        })
-      }
+      {...perkHandlers}
     >
       {perk && (
         <CardMedia

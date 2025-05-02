@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Paper, Typography, Divider } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import HighlightText from "./highlight-text.js"; // Assuming you have a HighlightText component
-import PerkAttributes from "./perk-attributes.js";
+import PerkAttributes from "../common/perk-attributes.js";
 
 export default function PerkSummary({ perk }) {
   const theme = useTheme();

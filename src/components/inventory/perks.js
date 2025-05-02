@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Stack, Box, Tabs, Tab } from "@mui/material";
 import Powers from "./powers.js";
 import GroupItems from "./group-items.js";
-import AppContext from "../app-context.js";
+import { useDb } from "../../contexts/db-context.js";
+import { useHero } from "../../contexts/hero-context.js";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -30,7 +31,8 @@ function TabPanel(props) {
 }
 
 function Perks() {
-  const { heroPowers, basicItems, heroItems } = useContext(AppContext);
+  const { basicItems, heroItems } = useDb()
+  const { heroPowers } = useHero();
 
   const [value, setValue] = React.useState(0);
 

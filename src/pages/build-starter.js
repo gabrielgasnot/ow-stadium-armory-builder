@@ -3,7 +3,7 @@ import { Box, Typography, Button } from "@mui/material";
 import ContentCopy from "@mui/icons-material/ContentCopy";
 import { Heroes, ImportBuildModal } from "../components";
 
-function BuildStarter({ importBuild }) {
+function BuildStarter({ currentHero, importBuild }) {
   const [importOpen, setImportOpen] = useState(false);
 
   return (
@@ -18,7 +18,7 @@ function BuildStarter({ importBuild }) {
       <Typography variant="h5" component="h2" gutterBottom>
         Select a hero to start your build
       </Typography>
-      <Heroes />
+      <Heroes currentHero={currentHero} />
       <Typography variant="h5" component="h2" gutterBottom sx={{ mt: 4 }}>
         Or
       </Typography>

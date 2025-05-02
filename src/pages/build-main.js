@@ -3,20 +3,17 @@ import { Box, Button, Popper } from "@mui/material";
 import { Details, Perks, PerkSummary } from "../components";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Link as RouterLink } from "react-router-dom";
-import { useContext } from "react";
-import AppContext from "../app-context.js";
+import { useHero } from "../contexts/hero-context.js";
+import { useUI } from "../contexts/ui-context.js";
 
 function BuildMain() {
-  const {
-    loadHero,
-    perkSummaryOpen,
-    perkPopupAnchorEl,
-    summaryPerk,
-    placement,
-  } = useContext(AppContext);
+  const { loadHero } = useHero();
+  const { perkSummaryOpen, perkPopupAnchorEl, summaryPerk, placement } =
+    useUI();
 
   return (
     <Box
+      id="build-main"
       sx={{
         display: "flex",
         flexDirection: { xs: "column", lg: "row" },
@@ -27,7 +24,9 @@ function BuildMain() {
       {/* Left / Detail panel */}
       <Box
         sx={{
-          width: { xs: "100%", lg: "40%", xl: "28%", xxl: "20%" },
+          minWidth: "440px",
+          maxWidth: { xs: "100%", lg: "600px" },
+          width: { xs: "100%", lg: "40%", xl: "20%" },
           flexShrink: 0,
           overflow: "auto",
           paddingTop: 0,

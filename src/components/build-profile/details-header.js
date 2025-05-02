@@ -1,11 +1,13 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Stack, Button, Typography, Box, Paper } from "@mui/material";
 import ShareIcon from "@mui/icons-material/Share";
 import CameraAltIcon from "@mui/icons-material/CameraAlt";
-import AppContext from "../app-context.js";
+import { useHero } from "../../contexts/hero-context.js";
+import { useBuild } from "../../contexts/build-context.js";
 
 function DetailsHeader({ copyBuild }) {
-  const { currentHero, selectedItems, shareBuild } = useContext(AppContext);
+  const { currentHero } = useHero();
+  const { selectedItems, shareBuild } = useBuild();
   return (
     <Paper
       elevation={3}

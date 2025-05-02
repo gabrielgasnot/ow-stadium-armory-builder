@@ -1,29 +1,45 @@
-import React, { useContext } from "react";
+import React, { useMemo } from "react";
 import { Box, Tooltip, Typography } from "@mui/material";
-import { getLifeStatSum } from "../services/stats";
-import AppContext from "../app-context";
 import { useTheme } from "@mui/material/styles";
+import { useHero } from "../../contexts/hero-context";
+import { useBuild } from "../../contexts/build-context";
+import { useStats } from "../../contexts/stats-context";
 
 const StatBar = () => {
   const theme = useTheme();
-  const { currentHero, selectedItems, hoverPerk } = useContext(AppContext);
+  const { getLifeStatSum } = useStats();
+  const { currentHero } = useHero();
+  const { selectedItems, hoverPerk } = useBuild();
 
   const calculate = (stats) => {
     const total = stats.reduce((acc, stat) => acc + stat.value, 0);
     const [HP, AR, SH] = stats;
     return {
       total: total,
-      stats: {HP, AR, SH},
+      stats: { HP, AR, SH },
       HP: (HP.value / total) * 100,
       AR: (AR.value / total) * 100,
       SH: (SH.value / total) * 100,
     };
   };
 
-  const lifeStats = getLifeStatSum(currentHero, selectedItems);
-  const { total, stats, HP, AR, SH } = calculate(lifeStats);
-  const tempStats = getLifeStatSum(currentHero, [...selectedItems, hoverPerk]);
-  const tempValues = calculate(tempStats);
+  const lifeStats = useMemo(
+    () => getLifeStatSum(currentHero, selectedItems),
+    [currentHero, selectedItems, getLifeStatSum]
+  );
+
+  const { total, stats, HP, AR, SH } = useMemo(
+    () => calculate(lifeStats),
+    [lifeStats]
+  );
+
+  const tempStats = useMemo(
+    () => getLifeStatSum(currentHero, [...selectedItems, hoverPerk]),
+    [currentHero, selectedItems, hoverPerk, getLifeStatSum]
+  );
+
+  const tempValues = useMemo(() => calculate(tempStats), [tempStats]);
+
   const diffTotal = tempValues.total - total;
   const diffHP = tempValues.HP - HP;
   const diffAR = tempValues.AR - AR;
@@ -134,7 +150,13 @@ const StatBar = () => {
         </Box>
       </Tooltip>
       {diffTotal > 0 && (
-        <Typography sx={{ color: theme.palette.custom.green }}>
+        <Typography
+          sx={{
+            width: 30,
+            textAlign: "right",
+            color: theme.palette.custom.green,
+          }}
+        >
           {total + diffTotal}
         </Typography>
       )}

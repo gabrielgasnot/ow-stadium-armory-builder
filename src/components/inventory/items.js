@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack } from "@mui/material";
-import PerkCard from "./perk-card.js";
+import PerkCard from "../common/perk-card.js";
 
 function Items({ items, grade, selectedIds, isDisabled }) {
   if (items && items.length > 0) {

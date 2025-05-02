@@ -1,19 +1,18 @@
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 import { Box, Grid, Stack, Card, CardHeader, CardContent } from "@mui/material";
-import DetailsHeader from "./details-header";
-import PerkMiniCard from "./perk-mini-card";
+import DetailsHeader from "./details-header.js";
+import PerkMiniCard from "../common/perk-mini-card.js";
 import html2canvas from "html2canvas";
-import AppContext from "../app-context.js";
-import StatsPanel from "./stats-panel";
+import StatsPanel from "./stats-panel.js";
+import BuildRoundPanel from "./build-round-panel.js";
+import { useHero } from "../../contexts/hero-context.js";
+import { useUI } from "../../contexts/ui-context.js";
+import { useBuild } from "../../contexts/build-context.js";
 
 function Details() {
-  const {
-    currentHero,
-    selectedItems,
-    selectedPowers,
-    removePerkBuild,
-    showMessage,
-  } = useContext(AppContext);
+  const { currentHero } = useHero();
+  const { showMessage } = useUI();
+  const { selectedItems, selectedPowers, removePerkBuild } = useBuild();
 
   const captureRef = useRef();
   const powerColumns = 4;
@@ -61,8 +60,12 @@ function Details() {
 
   return (
     <Box ref={captureRef} sx={{ width: "100%" }}>
-      <Stack spacing={2} sx={{ flexGrow: 1, minHeight: 0, width: "100%", paddingBottom: 3 }}>
+      <Stack
+        spacing={2}
+        sx={{ flexGrow: 1, minHeight: 0, width: "100%", paddingBottom: 3 }}
+      >
         <DetailsHeader copyBuild={handleCopy} />
+        <BuildRoundPanel />
         <Card className="no-hover" sx={{ height: "100%" }}>
           <CardHeader title="Powers" />
           <CardContent>
@@ -128,7 +131,8 @@ function Details() {
           </CardContent>
         </Card>
 
-        <Card className="no-hover"
+        <Card
+          className="no-hover"
           sx={{
             flexGrow: 1,
             minHeight: 0, // very important when you want internal scroll!
@@ -143,7 +147,7 @@ function Details() {
               overflow: { xs: "visible", xl: "auto" },
             }}
           >
-           <StatsPanel />
+            <StatsPanel />
           </CardContent>
         </Card>
       </Stack>

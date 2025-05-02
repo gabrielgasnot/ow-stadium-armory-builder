@@ -1,4 +1,4 @@
-import React, { useContext, useTransition } from "react";
+import React, { useTransition } from "react";
 import {
   Card,
   CardContent,
@@ -7,18 +7,16 @@ import {
   Avatar,
   CardActions,
 } from "@mui/material";
-import { getPerkColor } from "../services/color";
-import AppContext from "../app-context.js";
+import { getPerkColor } from "../../services/color";
 import HighlightText from "./highlight-text.js";
 import PerkAttributes from "./perk-attributes.js";
 import { useTheme } from "@mui/material/styles";
+import { useBuild } from "../../contexts/build-context.js";
 
 function PerkCard({ perk, perkType, isSelected, isDisabled }) {
   const theme = useTheme();
-  // eslint-disable-next-line no-unused-vars
-  const [_, startTransition] = useTransition();
-  const { perkGrade, setHoverPerk, addPerkBuild, removePerkBuild } =
-    useContext(AppContext);
+  const [, startTransition] = useTransition();
+  const { perkGrade, setHoverPerk, addPerkBuild, removePerkBuild } = useBuild();
   const isPower = perkType === "power";
 
   return (
@@ -41,7 +39,7 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
       }}
       onMouseEnter={() =>
         startTransition(() => {
-          if (!isSelected && !isDisabled && !isPower) {
+          if (!isDisabled && !isPower) {
             setHoverPerk(perk);
           }
         })

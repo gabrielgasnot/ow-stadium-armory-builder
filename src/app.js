@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useCallback, useState, useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./app.css";
 import {
   ArmoryHeader,
@@ -6,144 +6,44 @@ import {
   ArmoryMainContent,
   LoadingComponent,
 } from "./components";
-import {
-  Box,
-  Alert,
-  Snackbar,
-  ThemeProvider,
-  CssBaseline,
-} from "@mui/material";
+import { Box, ThemeProvider, CssBaseline } from "@mui/material";
 import owTheme from "./theme";
-import { HashRouter, useLocation } from "react-router-dom";
-import ShareBuildModal from "./components/share-build";
-import importBuild from "./services/import-build";
-import getAllItemsByHero from "./services/query-items";
-import AppContext from "./app-context";
-import AppContextProvider from "./app-context-provider";
-import { useNavigate } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
+import ShareBuildModal from "./components/services/share-build";
+import AppProviders from "./contexts/app-context";
+import { useBuild } from "./contexts/build-context";
+import { useUI } from "./contexts/ui-context";
+import useBuildNavigation from "./hooks/use-build-navigation";
+import SnackbarNotification from "./hooks/snackbar-notification";
 
 function App() {
   return (
     <HashRouter>
-      <AppContextProvider>
+      <AppProviders>
         <AppContent />
-      </AppContextProvider>
+      </AppProviders>
     </HashRouter>
   );
 }
 
 function AppContent() {
+  const { encodedString, navigation } = useBuildNavigation();
   const [loading, setLoading] = useState(true);
   const hasNavigated = useRef(false);
 
-  const {
-    currentHero,
-    setCurrentHero,
-    setHeroPowers,
-    setHeroItems,
-    selectedPowers,
-    setSelectedPowers,
-    selectedItems,
-    setSelectedItems,
-    encodedBuildId,
-    shareLink,
-    setShareLink,
-    snackBarMessage,
-    setSnackBarMessage,
-    snackBarCategory,
-    showMessage,
-    heroes,
-    setEncodedBuildId,
-  } = useContext(AppContext);
+  const { encodedBuildId, setEncodedBuildId, shareLink, setShareLink } =
+    useBuild();
 
-  const location = useLocation();
-  const navigate = useNavigate();
-  const rawPath = location.pathname;
-  const encodedString = rawPath.startsWith("/") ? rawPath.slice(1) : rawPath;
-
-  const navigation = useCallback(
-    (buildId) => {
-      if (buildId) {
-        const result = importBuild(buildId);
-
-        if (result) {
-          const heroId = parseInt(result.heroId);
-          // Check if the heroId is different from the currentHero
-          if (heroId !== currentHero) {
-            const hero = heroes.find((h) => h.id === parseInt(heroId));
-            if (!hero) {
-              showMessage("Failed to import: hero not found");
-              return;
-            } else {
-              // Only update state if it has changed
-              setCurrentHero(hero);
-              setHeroItems(hero.items);
-              setHeroPowers(hero.powers);
-
-              // Check if selectedPerks match the items and powers that need to be updated
-              const selectedItemsMatch =
-                selectedItems.length > 0 &&
-                selectedItems.every((item) =>
-                  result.selectedPerks.includes(item.id)
-                );
-              const selectedPowersMatch =
-                selectedPowers.length > 0 &&
-                selectedPowers.every((power) =>
-                  result.selectedPerks.includes(power.id)
-                );
-
-              // Only update selectedItems and selectedPowers if needed
-              if (!selectedItemsMatch) {
-                const itemDb = getAllItemsByHero(hero);
-                const orderedSelectedItems = result.selectedPerks
-                  .map((id) => itemDb.find((item) => item.id === id))
-                  .filter((item) => item !== undefined);
-
-                setSelectedItems(orderedSelectedItems);
-              }
-
-              if (!selectedPowersMatch) {
-                const orderedSelectedPowers = result.selectedPerks
-                  .map((id) => hero.powers.find((power) => power.id === id))
-                  .filter((power) => power !== undefined);
-                setSelectedPowers(orderedSelectedPowers);
-              }
-            }
-          }
-
-          if (location.pathname !== "/") {
-            navigate("/");
-          }
-        }
-      }
-      setLoading(false);
-    },
-    [
-      currentHero,
-      navigate,
-      heroes,
-      showMessage,
-      setCurrentHero,
-      setHeroItems,
-      setHeroPowers,
-      selectedItems,
-      selectedPowers,
-      setSelectedItems,
-      setSelectedPowers,
-      location.pathname,
-    ]
-  );
+  const { snackBarMessage, setSnackBarMessage, snackBarCategory } = useUI();
 
   useEffect(() => {
     if (!hasNavigated.current && encodedString) {
       hasNavigated.current = true;
-      console.debug("Navigating to buildId:", encodedString);
       navigation(encodedString);
     } else if (!encodedString) {
       setLoading(false);
     }
   }, [encodedString, navigation]);
-
 
   if (loading) {
     return (
@@ -166,20 +66,12 @@ function AppContent() {
           overflowY: "auto",
         }}
       >
-        <Snackbar
+        <SnackbarNotification
           open={snackBarMessage}
-          autoHideDuration={6000}
+          message={snackBarMessage}
           onClose={() => setSnackBarMessage("")}
-        >
-          <Alert
-            onClose={() => setSnackBarMessage("")}
-            severity={snackBarCategory}
-            variant="filled"
-            sx={{ width: "100%" }}
-          >
-            {snackBarMessage}
-          </Alert>
-        </Snackbar>
+          severity={snackBarCategory}
+        />
 
         <ShareBuildModal
           encodedBuildId={encodedBuildId}

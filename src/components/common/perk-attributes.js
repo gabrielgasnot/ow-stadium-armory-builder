@@ -1,5 +1,5 @@
 import React from "react";
-import types from "../db/attributeTypes.json";
+import types from "../../db/attributeTypes.json";
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 

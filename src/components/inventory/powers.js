@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Stack } from "@mui/material";
-import PerkCard from "./perk-card";
-import AppContext from "../app-context.js";
+import PerkCard from "../common/perk-card.js";
+import { useHero } from "../../contexts/hero-context.js";
+import { useBuild } from "../../contexts/build-context.js";
 
 function Powers() {
-  const { heroPowers, selectedPowers } = useContext(AppContext);
+  const { heroPowers } = useHero();
+  const { selectedPowers } = useBuild();
   const selectedIds = [...selectedPowers.map((sp) => sp.id)];
   if (heroPowers && heroPowers.length > 0) {
     return (
