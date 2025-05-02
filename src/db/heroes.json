@@ -659,7 +659,7 @@
         "position": 2,
         "id": "15P001",
         "name": "Super Visor",
-        "description": "After using [Helix Rocket], activate [Tactical Visor] for 0.75s"
+        "description": "After using [Helix Rocket], activate [Tactical Visor] for 0.5s"
       },
       {
         "position": 3,
@@ -671,7 +671,7 @@
         "position": 9,
         "id": "15P003",
         "name": "Biotic Bullseye",
-        "description": "While in [Biotic Field], critical hits restore 5% Max Ammo and extend the field's duration by 0.5s (up to 5s)"
+        "description": "While in [Biotic Field], critical hits restore 10% Max Ammo and extend the field's duration by 0.5s (up to 5s)"
       },
       {
         "position": 8,
@@ -1656,12 +1656,12 @@
           "attributes": [
             {
               "type": "HP",
-              "value": 50,
+              "value": 25,
               "unit": ""
             },
             {
               "type": "description",
-              "value": "When you eject from your Mech, gain 25% increased max Health and gain [Nano Boost] for 8s"
+              "value": "When you eject from your Mech, gain 5% increased max Health and gain [Nano Boost] for 4s"
             }
           ]
         },
@@ -2816,12 +2816,12 @@
       {
         "id": "13P008",
         "name": "Here to Spot You",
-        "description": "[Projected Barrier] pulls you to the targeted ally and heals you for 15% of Max Life over 3s"
+        "description": "[Projected Barrier] pulls you to the targeted ally and heals you for 20% of Max Life over 3s"
       },
       {
         "id": "13P009",
         "name": "Lifelift",
-        "description": "+50% [Particle Barrier] size. Increase [Particle Barrier] Health by 100% of Bonus Max Life."
+        "description": "+50% [Particle Barrier] size. Increase [Particle Barrier] Health by 50% of Bonus Max Life."
       },
       {
         "id": "13P010",
@@ -4274,7 +4274,7 @@
         "position": 3,
         "id": "41P003",
         "name": "Cosmic Coolant",
-        "description": "[Pulsar Torpedoes] cooldown is reduced by 1s for each target it hits"
+        "description": "[Pulsar Torpedoes] cooldown is reduced by 0.5s for each target it hits"
       },
       {
         "position": 4,
@@ -4436,8 +4436,8 @@
           "category": "Ability",
           "attributes": [
             {
-              "type": "AP",
-              "value": 15,
+              "type": "ALS",
+              "value": 10,
               "unit": "%"
             },
             {
@@ -4514,7 +4514,7 @@
           "attributes": [
             {
               "type": "AP",
-              "value": 25,
+              "value": 15,
               "unit": "%"
             },
             {
@@ -4627,7 +4627,7 @@
         "position": 8,
         "id": "20P009",
         "name": "Coulder",
-        "description": "[Cryo-Freeze] now encases you in a rolling iceball that can knock back enemies and deal 10 damage"
+        "description": "[Cryo-Freeze] now encases you in a rolling iceball that can knock back enemies and deal 20 damage"
       },
       {
         "position": 10,
@@ -4831,7 +4831,7 @@
         "position": 2,
         "id": "16P002",
         "name": "Signature Shift",
-        "description": "After using an ability, your next [Sonic Amplifier] shot shoots a volley of 6 ammo with 20% increased projectile size"
+        "description": "After using an ability, your next [Sonic Amplifier] shot shoots a volley of 6 ammo with 80% increased projectile size"
       },
       {
         "position": 3,
@@ -4849,7 +4849,7 @@
         "position": 5,
         "id": "16P005",
         "name": "Megaphone",
-        "description": "+20% [Amp It Up] Duration. While [Amp It Up] is active, [Crossfade] radius is increased by 150%"
+        "description": "+15% [Amp It Up] Duration. While [Amp It Up] is active, [Crossfade] radius is increased by 150%"
       },
       {
         "position": 6,
@@ -4873,7 +4873,7 @@
         "position": 9,
         "id": "16P009",
         "name": "Crowd Pleaser",
-        "description": "After using [Soundwave], heal all allies affected by [Crossfade] for 200% of [Crossfade] healing."
+        "description": "After using [Soundwave], heal all allies affected by [Crossfade] for 150% of [Crossfade] healing."
       },
       {
         "position": 10,
@@ -4985,7 +4985,7 @@
           "attributes": [
             {
               "type": "HP",
-              "value": 25,
+              "value": 50,
               "unit": ""
             },
             {
