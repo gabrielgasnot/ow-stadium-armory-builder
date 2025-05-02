@@ -11,7 +11,6 @@ import {
   IconButton,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import BuildIcon from "@mui/icons-material/Build";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 function ArmoryHeader(props) {

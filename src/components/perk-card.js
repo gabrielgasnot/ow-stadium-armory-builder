@@ -15,6 +15,7 @@ import { useTheme } from "@mui/material/styles";
 
 function PerkCard({ perk, perkType, isSelected, isDisabled }) {
   const theme = useTheme();
+  // eslint-disable-next-line no-unused-vars
   const [_, startTransition] = useTransition();
   const { perkGrade, setHoverPerk, addPerkBuild, removePerkBuild } =
     useContext(AppContext);
