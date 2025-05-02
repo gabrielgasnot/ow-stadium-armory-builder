@@ -2,14 +2,12 @@ import React, { useMemo } from "react";
 import { Box, Tooltip, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { useHero } from "../../contexts/hero-context";
-import { useBuild } from "../../contexts/build-context";
 import { useStats } from "../../contexts/stats-context";
 
 const StatBar = () => {
   const theme = useTheme();
   const { getLifeStatSum } = useStats();
   const { currentHero } = useHero();
-  const { selectedItems, hoverPerk } = useBuild();
 
   const calculate = (stats) => {
     const total = stats.reduce((acc, stat) => acc + stat.value, 0);
@@ -24,8 +22,8 @@ const StatBar = () => {
   };
 
   const lifeStats = useMemo(
-    () => getLifeStatSum(currentHero, selectedItems),
-    [currentHero, selectedItems, getLifeStatSum]
+    () => getLifeStatSum(currentHero),
+    [currentHero, getLifeStatSum]
   );
 
   const { total, stats, HP, AR, SH } = useMemo(
@@ -34,8 +32,8 @@ const StatBar = () => {
   );
 
   const tempStats = useMemo(
-    () => getLifeStatSum(currentHero, [...selectedItems, hoverPerk]),
-    [currentHero, selectedItems, hoverPerk, getLifeStatSum]
+    () => getLifeStatSum(currentHero, true),
+    [currentHero, getLifeStatSum]
   );
 
   const tempValues = useMemo(() => calculate(tempStats), [tempStats]);
@@ -83,7 +81,23 @@ const StatBar = () => {
             }}
           />
 
-          {/* Green for Life Hover Impact */}
+          {/* Red for Life Hover Impact (negative impact) */}
+          {diffHP < 0 && (
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: `${HP + diffHP}%`,
+                height: "100%",
+                width: `${Math.abs(diffHP)}%`,
+                backgroundColor: "red",
+                opacity: 0.8,
+                transition: "width 0.3s ease, left 0.3s ease",
+              }}
+            />
+          )}
+
+          {/* Green for Life Hover Impact (positive impact) */}
           <Box
             sx={{
               position: "absolute",
@@ -109,7 +123,23 @@ const StatBar = () => {
             }}
           />
 
-          {/* Green for Armor Hover Impact */}
+          {/* Red for Armor Hover Impact (negative impact) */}
+          {diffAR < 0 && (
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: `${HP + Math.abs(diffHP) + AR}%`,
+                height: "100%",
+                width: `${Math.abs(diffAR)}%`,
+                backgroundColor: "red",
+                opacity: 0.8,
+                transition: "width 0.3s ease, left 0.3s ease",
+              }}
+            />
+          )}
+
+          {/* Green for Armor Hover Impact (positive impact) */}
           <Box
             sx={{
               position: "absolute",
@@ -135,7 +165,23 @@ const StatBar = () => {
             }}
           />
 
-          {/* Green for Shields Hover Impact */}
+          {/* Red for Shields Hover Impact (negative impact) */}
+          {diffSH < 0 && (
+            <Box
+              sx={{
+                position: "absolute",
+                top: 0,
+                left: `${HP + Math.abs(diffHP) + AR + Math.abs(diffAR) + SH}%`,
+                height: "100%",
+                width: `${Math.abs(diffSH)}%`,
+                backgroundColor: "red",
+                opacity: 0.8,
+                transition: "width 0.3s ease, left 0.3s ease",
+              }}
+            />
+          )}
+
+          {/* Green for Shields Hover Impact (positive impact) */}
           <Box
             sx={{
               position: "absolute",
@@ -149,18 +195,27 @@ const StatBar = () => {
           />
         </Box>
       </Tooltip>
-      {diffTotal > 0 && (
+      {diffTotal !== 0 && (
         <Typography
           sx={{
             width: 30,
             textAlign: "right",
-            color: theme.palette.custom.green,
+            color: diffTotal > 0 ? theme.palette.custom.green : "red",
           }}
         >
           {total + diffTotal}
         </Typography>
       )}
-      {diffTotal === 0 && <Typography>{total}</Typography>}
+      {diffTotal === 0 && (
+        <Typography
+          sx={{
+            width: 30,
+            textAlign: "right",
+          }}
+        >
+          {total}
+        </Typography>
+      )}
     </Box>
   );
 };

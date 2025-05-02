@@ -122,18 +122,39 @@ export function StatsProvider({ children }) {
       ([type]) => !lifeStatTypes.includes(type)
     );
 
-  const getLifeStatSum = (currentHero, selectedItems) => {
+  const getLifeStatSum = (currentHero, withHoverPerk = false) => {
     const hp = { type: "HP", value: currentHero?.hp ?? 0 };
     const ar = { type: "AR", value: currentHero?.armor ?? 0 };
     const sh = { type: "SH", value: currentHero?.shields ?? 0 };
     const lifeStats = [hp, ar, sh];
 
-    if (!selectedItems || selectedItems.length === 0) {
+    if (!hoverPerk && !selectedItems && selectedItems.length === 0) {
       return lifeStats;
     }
 
-    const summedUpStats = summedUpStatsSelectedItems;
+    const summedUpStats = [...summedUpStatsSelectedItems];
+    if (withHoverPerk) {
+      const hoverPerkSelected = selectedItems.find(
+        (item) => item.id === hoverPerk.id
+      );
+      // If the hoverPerk is not already selected, we need to add its stats
+      const hoverStats = summedUpStatsHoverPerk;
+      hoverStats.forEach((stat) => {
+        if (hoverPerkSelected) {
+          stat.value = -stat.value;
+        }
+        const summedUpStat = summedUpStats.find(
+          (s) => s.type === stat.type && s.unit === stat.unit
+        );
 
+        if (summedUpStat) {
+          summedUpStat.value += stat.value;
+        } else {
+          summedUpStats.push(stat);
+        }
+      });
+    }
+    console.log("summedUpStats", summedUpStats);
     const flatBonusArray = summedUpStats.filter(
       (attribute) =>
         basicLifeStatTypes.includes(attribute.type) && attribute.unit === ""
