@@ -132,13 +132,15 @@ export function StatsProvider({ children }) {
       return lifeStats;
     }
 
-    const summedUpStats = [...summedUpStatsSelectedItems];
-    if (withHoverPerk) {
+    const summedUpStats = summedUpStatsSelectedItems.map((stat) => ({
+      ...stat,
+    }));
+    if (withHoverPerk && hoverPerk) {
       const hoverPerkSelected = selectedItems.find(
         (item) => item.id === hoverPerk.id
       );
       // If the hoverPerk is not already selected, we need to add its stats
-      const hoverStats = summedUpStatsHoverPerk;
+      const hoverStats = summedUpStatsHoverPerk.map((stat) => ({ ...stat }));
       hoverStats.forEach((stat) => {
         if (hoverPerkSelected) {
           stat.value = -stat.value;
@@ -154,7 +156,7 @@ export function StatsProvider({ children }) {
         }
       });
     }
-    console.log("summedUpStats", summedUpStats);
+
     const flatBonusArray = summedUpStats.filter(
       (attribute) =>
         basicLifeStatTypes.includes(attribute.type) && attribute.unit === ""
@@ -192,7 +194,7 @@ export function StatsProvider({ children }) {
     }
 
     // Appliquer les bonus en pourcentage
-    if (!percentBonusArray || percentBonusArray.length > 0) {
+    if (!percentBonusArray && percentBonusArray.length > 0) {
       for (const lifeStat of lifeStats) {
         const percentBonus = percentBonusArray.find(
           (attribute) => attribute.type === lifeStat.type

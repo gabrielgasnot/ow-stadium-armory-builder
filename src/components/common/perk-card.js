@@ -39,6 +39,7 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
       }}
       onMouseEnter={() =>
         startTransition(() => {
+          console.log("hoverPerk", perk);
           if (!isDisabled && !isPower) {
             setHoverPerk(perk);
           }
