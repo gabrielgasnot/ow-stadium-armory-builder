@@ -16,10 +16,10 @@ function BuildMain() {
       id="build-main"
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", lg: "row" },
+        flexDirection: { xs: "column", md: "row" },
         height: "100%",
         width: "100%",
-        overflowY: { xs: "auto", lg: "hidden" },
+        overflowY: { xs: "auto", md: "hidden" },
       }}
     >
       {/* Left / Detail panel */}
@@ -27,7 +27,7 @@ function BuildMain() {
         sx={{
           minWidth: "440px",
           maxWidth: { xs: "100%", lg: "600px" },
-          width: { xs: "100%", lg: "40%", xl: "20%" },
+          width: { xs: "100%", md: "40%", xl: "20%" },
           flexShrink: 0,
           overflow: "auto",
           paddingTop: 0,
@@ -66,7 +66,7 @@ function BuildMain() {
       <Box
         sx={{
           flexGrow: 1,
-          flexShrink: { xs: 0, lg: 1 },
+          flexShrink: 0,
           overflow: "auto",
           paddingTop: 1,
           paddingBottom: 3,
@@ -74,7 +74,7 @@ function BuildMain() {
           paddingRight: 0,
           boxSizing: "border-box",
           minHeight: 0,
-          width: { xs: "100%", lg: "60%", xl: "80%" },
+          width: { xs: "100%", md: "60%", xl: "80%" },
         }}
       >
         <Perks />

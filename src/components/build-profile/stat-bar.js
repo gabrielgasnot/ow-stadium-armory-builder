@@ -34,13 +34,7 @@ const StatBar = ({
   };
 
   return (
-    <Box
-      key={attributeType}
-      display="flex"
-      alignItems="center"
-      gap={2}
-      {...boxEvents}
-    >
+    <Box key={attributeType} display="flex" alignItems="center" gap={2}>
       {/* Image on the left */}
       <Box
         sx={{
@@ -57,6 +51,7 @@ const StatBar = ({
         leaveTouchDelay={1000}
       >
         <Box
+          {...boxEvents}
           sx={{
             width: "100%",
             height: 24,

@@ -31,12 +31,14 @@ function GroupItems({ category }) {
             xs: 12,
             xl: 4,
           }}
-          sx={{
-            // Add border divider between columns, but only for non-last columns
-            borderRight: (theme) =>  index < 2 ? `1px solid ${theme.palette.background.paper} ` : "none",
-          }}
+          sx={(theme) => ({
+            [theme.breakpoints.up("md")]: {
+              borderRight:
+                index < 2 ? `1px solid ${theme.palette.background.paper}` : "none",
+            },
+          })}
         >
-          <Typography variant="h6" sx={{ textTransform: "capitalize", mb: 1 }}>
+          <Typography variant="h6" sx={{ textTransform: "capitalize" }}>
             {grade}
           </Typography>
           <Items

@@ -138,13 +138,7 @@ const StatBar = ({ setHoverAttributes }) => {
   };
 
   return (
-    <Box
-      key={"lifeStats"}
-      display="flex"
-      alignItems="center"
-      gap={2}
-      {...boxEvents}
-    >
+    <Box key={"lifeStats"} display="flex" alignItems="center" gap={2}>
       {/* Image on the left */}
       <Box
         sx={{
@@ -159,6 +153,7 @@ const StatBar = ({ setHoverAttributes }) => {
         title={`Life: ${stats.HP.value} / Armor: ${stats.AR.value} / Shields: ${stats.SH.value}`}
       >
         <Box
+          {...boxEvents}
           sx={{
             width: "100%",
             height: 24,

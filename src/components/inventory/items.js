@@ -11,6 +11,7 @@ function Items({ items, grade, selectedIds, isDisabled }) {
           gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
           alignItems: "start",
           gap: 1.5,
+          padding: 2,
           width: "100%",
           overflowY: { xs: "hidden", lg: "auto" },
           minHeight: "auto",

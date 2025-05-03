@@ -4,7 +4,7 @@ export const useHoverAttributes = () => {
   const { hoverAttributes } = useUI();
 
   const checkHoverAttributes = (perkAttributes) => {
-    return perkAttributes.some((attr) =>
+    return perkAttributes?.some((attr) =>
       hoverAttributes.some((hoverAttr) => hoverAttr === attr.type)
     );
   };
