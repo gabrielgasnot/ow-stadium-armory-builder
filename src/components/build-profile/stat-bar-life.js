@@ -46,14 +46,35 @@ const StatBar = () => {
 
   const statChangeValue = {};
   let totalChangeValue = 0;
+  let actualChangeSum = 0;
   values.forEach((key) => {
-    statChangeValue[key] = hoverStats[key].value - stats[key].value ;
-    totalChangeValue += statChangeValue[key];
+    statChangeValue[key] = hoverStats[key].value - stats[key].value;
+    totalChangeValue += Math.abs(statChangeValue[key]);
+    actualChangeSum += statChangeValue[key];
   });
+
+  // Convert case
+  if (actualChangeSum !== totalChangeValue) {
+    let sourceKey = "";
+    let targetKey = "";
+    values.forEach((key) => {
+      if (statChangeValue[key] < 0) {
+        sourceKey = key;
+      }
+      if (statChangeValue[key] > 0) {
+        targetKey = key;
+      }
+    });
+    if (sourceKey && targetKey) {
+      statChangeValue[targetKey] += statChangeValue[sourceKey];
+      statChangeValue[sourceKey] = 0;
+    }
+  }
 
   const statChangeRatio = {};
   values.forEach((key) => {
-    statChangeRatio[key] = Math.abs(statChangeValue[key]) / Math.abs(totalChangeValue);
+    statChangeRatio[key] =
+      Math.abs(statChangeValue[key]) / Math.abs(totalChangeValue);
   });
 
   // Delta percents distributed proportionally
