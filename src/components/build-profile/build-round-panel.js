@@ -5,7 +5,7 @@ import BuilderRoundNavigatorDefault from "./build-round-navigator-default";
 import { useBuild } from "../../contexts/build-context.js";
 
 function BuildRoundPanel() {
-  const { currentRound, setCurrentRound } = useBuild();
+  const { currentRound, changeRound, rounds } = useBuild();
   const xsStickyRef = useRef();
   const [showSticky, setShowSticky] = useState(false);
 
@@ -46,7 +46,7 @@ function BuildRoundPanel() {
       >
         <BuilderRoundNavigatorXs
           currentRound={currentRound}
-          setCurrentRound={setCurrentRound}
+          changeRound={changeRound}
         />
       </Box>
 
@@ -65,14 +65,15 @@ function BuildRoundPanel() {
         >
           <BuilderRoundNavigatorXs
             currentRound={currentRound}
-            setCurrentRound={setCurrentRound}
+            changeRound={changeRound}
           />
         </Box>
       )}
 
       <BuilderRoundNavigatorDefault
+        rounds={rounds}
         currentRound={currentRound}
-        setCurrentRound={setCurrentRound}
+        changeRound={changeRound}
       />
     </Paper>
   );

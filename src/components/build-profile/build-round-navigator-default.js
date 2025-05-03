@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Box, Typography, Pagination } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-function BuilderRoundNavigatorDefault({ currentRound, setCurrentRound }) {
+function BuilderRoundNavigatorDefault({ rounds, currentRound, changeRound }) {
   const theme = useTheme();
   const maxRounds = 7;
   const [startPos, setStartPos] = useState({ x: 0, y: 0 });
@@ -17,7 +17,7 @@ function BuilderRoundNavigatorDefault({ currentRound, setCurrentRound }) {
     if (items.length < 2) return;
 
     const first = items[0].getBoundingClientRect();
-    const target = items[currentRound - 1].getBoundingClientRect(); // adjust index
+    const target = items[rounds.length - 1].getBoundingClientRect(); // adjust index
 
     const container = paginationRef.current.getBoundingClientRect();
 
@@ -30,7 +30,7 @@ function BuilderRoundNavigatorDefault({ currentRound, setCurrentRound }) {
       x: target.left + target.width / 2 - container.left,
       y: target.top + target.height / 2 - container.top,
     });
-  }, [currentRound]);
+  }, [rounds.length]);
 
   return (
     <Box
@@ -73,7 +73,7 @@ function BuilderRoundNavigatorDefault({ currentRound, setCurrentRound }) {
           ref={paginationRef}
           count={maxRounds}
           page={currentRound}
-          onChange={(_, value) => setCurrentRound(value)}
+          onChange={(_, value) => changeRound(value)}
           hideNextButton={true}
           hidePrevButton={true}
           siblingCount={1}

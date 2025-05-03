@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Button, Typography } from "@mui/material";
 
-function BuildRoundNavigatorXs({ currentRound, setCurrentRound }) {
+function BuildRoundNavigatorXs({ currentRound, changeRound }) {
   return (
     <Box
       sx={{
@@ -15,7 +15,7 @@ function BuildRoundNavigatorXs({ currentRound, setCurrentRound }) {
       <Button
         variant="contained"
         color="primary"
-        onClick={() => setCurrentRound(currentRound - 1)}
+        onClick={() => changeRound(currentRound - 1)}
         disabled={currentRound <= 1}
       >
         Previous Round
@@ -26,7 +26,7 @@ function BuildRoundNavigatorXs({ currentRound, setCurrentRound }) {
       <Button
         variant="contained"
         color="primary"
-        onClick={() => setCurrentRound(currentRound + 1)}
+        onClick={() => changeRound(currentRound + 1)}
         disabled={currentRound >= 7}
       >
         Next Round
