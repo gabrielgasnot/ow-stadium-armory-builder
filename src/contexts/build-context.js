@@ -1,4 +1,11 @@
-import { createContext, useContext, useState, useEffect, useMemo } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useMemo,
+  useCallback,
+} from "react";
 import exportBuild from "../services/export-build";
 import { useHero } from "./hero-context";
 
@@ -23,6 +30,7 @@ export const BuildProvider = ({ children }) => {
   const [shareLink, setShareLink] = useState("");
   const [hoverPerk, setHoverPerk] = useState(null);
   const [currentRound, setCurrentRound] = useState(1);
+  const [pendingRound, setPendingRound] = useState(null);
 
   const estimatedCredits = useMemo(() => {
     return 3500 + (currentRound - 1) * 10000;
@@ -32,16 +40,72 @@ export const BuildProvider = ({ children }) => {
     resetBuild();
     loadHero(selectedHero); // Charger les pouvoirs/items du héros
   };
+  const getMaxRound = (count) => {
+    switch (count) {
+      case 1:
+        return 1;
+      case 2:
+        return 3;
+      case 3:
+        return 5;
+      case 4:
+        return 7;
+      default:
+        return 1;
+    }
+  };
+
+  const allowedPowerCountByRound = {
+    1: 1,
+    3: 2,
+    5: 3,
+    7: 4,
+  };
 
   const addPower = (power, showMessage) => {
     if (selectedPowers.find((p) => p.id === power.id)) return;
 
-    if (selectedPowers.length >= 4) {
+    const newPowerList = [...selectedPowers, power];
+
+    if (newPowerList.length > 4) {
       showMessage?.("You can only have 4 powers");
       return;
     }
 
-    setSelectedPowers([...selectedPowers, power]);
+    const maxRound = getMaxRound(newPowerList.length);
+
+    if (currentRound >= maxRound) {
+      setSelectedPowers(newPowerList);
+      return;
+    }
+
+    const basePowers =
+      newPowerList.length > 1 ? newPowerList.slice(0, -1) : newPowerList;
+
+    // Update rounds immediately
+    setRounds((prevRounds) => {
+      const updatedRounds = [];
+      for (let i = 1; i <= maxRound; i++) {
+        const powers = i === maxRound ? newPowerList : basePowers;
+        const existing = prevRounds.find((r) => r.roundId === i);
+        const items = existing?.items || selectedItems;
+        const existingPowers = existing?.powers || powers;
+        updatedRounds.push(new Round(i, existingPowers, items));
+      }
+      return updatedRounds;
+    });
+
+    const maxAllowed =
+      Object.entries(allowedPowerCountByRound)
+        .reverse()
+        .find(([round]) => currentRound >= +round)?.[1] ?? 1;
+
+    const allowedPowers = newPowerList.slice(0, maxAllowed);
+    setSelectedPowers(allowedPowers);
+
+    if (maxRound !== currentRound) {
+      setPendingRound(maxRound); // let useEffect handle navigation
+    }
   };
 
   const addItem = (item, showMessage) => {
@@ -65,7 +129,7 @@ export const BuildProvider = ({ children }) => {
     setHoverPerk(perk);
   };
 
-  const addPerkBuild = (perkType, perk, showMessage) => {
+  const addPerkBuild = async (perkType, perk, showMessage) => {
     if (perkType === "power") addPower(perk, showMessage);
     if (perkType === "item") addItem(perk, showMessage);
     setHoverPerk(null);
@@ -99,53 +163,57 @@ export const BuildProvider = ({ children }) => {
     return updated;
   };
 
-  const changeRound = (roundId) => {
-    setRounds((prevRounds) => {
-      let updated = saveRound(
-        currentRound,
-        selectedPowers,
-        selectedItems,
-        prevRounds
-      );
-
-      while (updated.length < roundId) {
-        updated = saveRound(
-          updated.length + 1,
+  const changeRound = useCallback(
+    (roundId) => {
+      setRounds((prevRounds) => {
+        let updated = saveRound(
+          currentRound,
           selectedPowers,
           selectedItems,
-          updated
+          prevRounds
         );
-      }
 
-      // Look for next round
-      const nextRound = updated.find((r) => r.roundId === roundId);
+        while (updated.length < roundId) {
+          console.debug("in the loop");
+          updated = saveRound(
+            updated.length + 1,
+            selectedPowers,
+            selectedItems,
+            updated
+          );
+        }
 
-      // init with potential existing items/powers
-      let nextPowers = nextRound?.powers ?? [];
-      let nextItems = nextRound?.items ?? [];
+        // Look for next round
+        const nextRound = updated.find((r) => r.roundId === roundId);
 
-      // if no power => look in the previous rounds.
-      if (nextPowers.length === 0) {
-        for (let i = roundId - 1; i >= 1; i--) {
-          const prev = updated.find((r) => r.roundId === i);
-          if (prev) {
-            if (nextPowers.length === 0 && prev.powers.length > 0) {
-              nextPowers = prev.powers;
+        // init with potential existing items/powers
+        let nextPowers = nextRound?.powers ?? [];
+        let nextItems = nextRound?.items ?? [];
+
+        // if no power => look in the previous rounds.
+        if (nextPowers.length === 0) {
+          for (let i = roundId - 1; i >= 1; i--) {
+            const prev = updated.find((r) => r.roundId === i);
+            if (prev) {
+              if (nextPowers.length === 0 && prev.powers.length > 0) {
+                nextPowers = prev.powers;
+              }
+
+              if (nextPowers.length > 0) break;
             }
-
-            if (nextPowers.length > 0) break;
           }
         }
-      }
 
-      setSelectedPowers(nextPowers);
-      setSelectedItems(nextItems);
+        setSelectedPowers(nextPowers);
+        setSelectedItems(nextItems);
+        console.debug("setRounds in changeRound ", roundId);
+        return updated;
+      });
 
-      return updated;
-    });
-
-    setCurrentRound(roundId);
-  };
+      setCurrentRound(roundId);
+    },
+    [currentRound, selectedItems, selectedPowers]
+  );
 
   const initRound = () => {
     const initialRound = new Round(1);
@@ -163,58 +231,18 @@ export const BuildProvider = ({ children }) => {
     initRound();
   };
 
-  // auto save round powers/items
   useEffect(() => {
-    setRounds((prevRounds) =>
-      saveRound(currentRound, selectedPowers, selectedItems, prevRounds)
-    );
-  }, [selectedPowers, selectedItems, currentRound]);
-
-  // automatically creates round based on number of powers
-  useEffect(() => {
-    const getMaxRound = (powerCount) => {
-      switch (powerCount) {
-        case 2:
-          return 3;
-        case 3:
-          return 5;
-        case 4:
-          return 7;
-        default:
-          return 1;
-      }
-    };
-
-    const neededRounds = getMaxRound(selectedPowers.length);
-
-    if (rounds.length < neededRounds) {
-      setRounds((prevRounds) => {
-        let updated = [...prevRounds];
-
-        // Save current round before cloning
-        updated = saveRound(
-          currentRound,
-          selectedPowers,
-          selectedItems,
-          updated
-        );
-
-        for (let i = updated.length + 1; i <= neededRounds; i++) {
-          updated = saveRound(i, selectedPowers, selectedItems, updated);
-        }
-
-        return updated;
-      });
+    if (pendingRound !== null) {
+      changeRound(pendingRound);
+      setPendingRound(null);
     }
-  }, [selectedPowers, selectedItems, currentRound, rounds.length]);
+  }, [pendingRound, changeRound]);
 
   return (
     <BuildContext.Provider
       value={{
         selectedPowers,
-        setSelectedPowers,
         selectedItems,
-        setSelectedItems,
         encodedBuildId,
         setEncodedBuildId,
         shareLink,

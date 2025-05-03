@@ -43,8 +43,6 @@ export const UIProvider = ({ children }) => {
   };
 
   const updateHoverAttributes = (next) => {
-    console.debug(next);
-
     if (
       Array.isArray(next) &&
       (next.length !== hoverAttributes.length ||
