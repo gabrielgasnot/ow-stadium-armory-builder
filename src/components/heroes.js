@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardMedia, CardContent, Stack } from "@mui/material";
+import { Card, CardMedia, CardContent, Stack, Typography } from "@mui/material";
 import { useBuild } from "../contexts/build-context.js";
 import { useDb } from "../contexts/db-context.js";
 
@@ -42,7 +42,11 @@ function Heroes({ currentHero }) {
               image={`${process.env.PUBLIC_URL}/heroes/${hero.id}.png`}
               title={hero.name}
             />
-            <CardContent>{hero.name}</CardContent>
+            <CardContent
+              sx={{ alignItems: "center", justifyContent: "center" }}
+            >
+              <Typography variant="h6">{hero.name}</Typography>
+            </CardContent>
           </Card>
         ))}
       </Stack>

@@ -11,6 +11,7 @@ export const UIProvider = ({ children }) => {
   const [summaryPerk, setSummaryPerk] = useState(null);
   const [placement, setPlacement] = useState("bottom");
   const [hoverPerk, setHoverPerk] = useState(null);
+  const [hoverAttributes, setHoverAttributes] = useState([]);
 
   const showMessage = (message, category = "error") => {
     setSnackBarCategory(category);
@@ -41,6 +42,18 @@ export const UIProvider = ({ children }) => {
     setPlacement(spaceAbove > spaceBelow ? "top" : "bottom");
   };
 
+  const updateHoverAttributes = (next) => {
+    console.debug(next);
+
+    if (
+      Array.isArray(next) &&
+      (next.length !== hoverAttributes.length ||
+       !next.every((val, idx) => val === hoverAttributes[idx]))
+    ) {
+      setHoverAttributes(next);
+    }
+  };
+
   return (
     <UIContext.Provider
       value={{
@@ -60,6 +73,8 @@ export const UIProvider = ({ children }) => {
         placement,
         hoverPerk,
         setHoverPerk,
+        hoverAttributes,
+        updateHoverAttributes,
       }}
     >
       {children}

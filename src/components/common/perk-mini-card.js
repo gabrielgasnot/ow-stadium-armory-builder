@@ -3,7 +3,7 @@ import { Box, CardMedia } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { useUI } from "../../contexts/ui-context.js";
 
-function PerkMiniCard({ perk, perkType, unselectPerk }) {
+function PerkMiniCard({ perk, perkType, setHoverPerk, unselectPerk }) {
   const theme = useTheme();
   const [, startTransition] = useTransition();
   const isPower = perkType === "power";
@@ -15,9 +15,17 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
   };
 
   const handleMouseEnter = (e) => {
-    if (!isTouch) {
+    if (!isTouch && perk) {
       handleShowPerkSummary(e, perk);
+      if (!isPower) {
+        setHoverPerk(perk);
+      }
     }
+  };
+
+  const handleMouseLeave = () => {
+    setHoverPerk(null);
+    handleHidePerkSummary();
   };
 
   const handleMouseClick = () => {
@@ -27,13 +35,14 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
 
     unselectPerk(perk);
     handleHidePerkSummary();
+    setHoverPerk(null);
   };
 
   const perkHandlers = perk
     ? {
         onClick: () => startTransition(() => handleMouseClick()),
         onMouseEnter: (e) => startTransition(() => handleMouseEnter(e)),
-        onMouseLeave: () => startTransition(() => handleHidePerkSummary()),
+        onMouseLeave: () => startTransition(() => handleMouseLeave()),
         onTouchStart: () => startTransition(() => handleTouchStart()),
       }
     : {};

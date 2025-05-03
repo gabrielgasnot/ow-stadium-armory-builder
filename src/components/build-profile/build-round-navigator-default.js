@@ -2,9 +2,8 @@ import React, { useState, useRef, useEffect } from "react";
 import { Box, Typography, Pagination } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-function BuilderRoundNavigatorDefault({ rounds, currentRound, changeRound }) {
+function BuilderRoundNavigatorDefault({ rounds, maxRounds, currentRound, changeRound }) {
   const theme = useTheme();
-  const maxRounds = 7;
   const [startPos, setStartPos] = useState({ x: 0, y: 0 });
   const [endPos, setEndPos] = useState({ x: 0, y: 0 });
   const paginationRef = useRef(null);

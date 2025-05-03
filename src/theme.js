@@ -46,36 +46,30 @@ const owTheme = createTheme({
   },
   typography: {
     fontFamily: "'BigNoodleTitling', sans-serif",
-    fontSize: 16,
+    fontSize: 14, // base size slightly smaller
     h1: {
-      fontFamily: "'BigNoodleTitling', sans-serif",
-      fontSize: "clamp(2rem, 5vw, 3rem)",
-      fontWeight: 700,
-      letterSpacing: ".1rem",
-      lineHeight: 1.2,
+      fontSize: "clamp(1.8rem, 3vw, 2.2rem)",
+      lineHeight: 1.1,
     },
     h2: {
-      fontFamily: "'BigNoodleTitling', sans-serif",
-      fontSize: "clamp(1.8rem, 4vw, 2.5rem)",
-      fontWeight: 700,
-      letterSpacing: ".1rem",
-      lineHeight: 1.3,
+      fontSize: "clamp(1.5rem, 2.5vw, 1.8rem)",
+      lineHeight: 1.2,
+    },
+    h6: {
+      fontSize: "clamp(1.05rem, 1vw, 1.2rem)",
+      lineHeight: 1.2,
+      fontWeight: 400,
+      letterSpacing: "0.05em",
     },
     body1: {
-      fontSize: "clamp(1rem, 2vw, 1.25rem)",
-      fontWeight: 400,
-      letterSpacing: ".05rem",
-      lineHeight: 1.6,
+      fontFamily: "'Titillium Web', sans-serif",
+      fontSize: "clamp(1rem, 1.4vw, 1.1rem)",
+      lineHeight: 1.4,
     },
     body2: {
-      fontSize: "clamp(0.9rem, 1.8vw, 1.1rem)",
-      fontWeight: 400,
-      letterSpacing: ".05rem",
-      lineHeight: 1.6,
-    },
-    button: {
-      fontWeight: 500,
-      textTransform: "none",
+      fontFamily: "'Titillium Web', sans-serif",
+      fontSize: "clamp(0.95rem, 1.2vw, 1rem)",
+      lineHeight: 1.4,
     },
   },
   shape: {
@@ -126,6 +120,9 @@ const owTheme = createTheme({
         root: {
           userSelect: "none",
           color: colors.white,
+          padding: "0.1rem",
+          fontSize: "clamp(1.05rem, 1vw, 1.2rem)",
+          letterSpacing: "0.05em",
           "&:hover": {
             userSelect: "none",
             backgroundColor: alpha(colors.lightBlue, 0.2),
@@ -150,10 +147,18 @@ const owTheme = createTheme({
     MuiCardContent: {
       styleOverrides: {
         root: {
-          padding: "8px 16px 16px 16px",
+          padding: "4px 8px 8px 8px",
           "&:last-child": {
             paddingBottom: "16px",
+            paddingTop: "8px",
           },
+        },
+      },
+    },
+    MuiCardActions: {
+      styleOverrides: {
+        root: {
+          padding: "4px 8px 8px 8px",
         },
       },
     },
@@ -171,6 +176,17 @@ const owTheme = createTheme({
           "&:active": {
             color: colors.orange, // Active links: same orange as hover
           },
+        },
+      },
+    },
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          fontFamily: "'Titillium Web', sans-serif",
+          fontSize: "clamp(0.9rem, 1vw, 1rem)",
+          lineHeight: 1.2,
+          fontWeight: 400,
+          letterSpacing: "0.1em",
         },
       },
     },

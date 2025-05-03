@@ -5,9 +5,7 @@ import GroupItems from "./group-items.js";
 import { useDb } from "../../contexts/db-context.js";
 import { useHero } from "../../contexts/hero-context.js";
 
-function TabPanel(props) {
-  const { children, value, index, ...other } = props;
-
+function TabPanel({ children, value, index, ...other } ) {
   if (value !== index) {
     return null;
   }
@@ -23,6 +21,7 @@ function TabPanel(props) {
         height: "100%",
         boxSizing: "border-box",
         overflow: "auto",
+        width: "100%"
       }}
     >
       {children}
@@ -113,6 +112,7 @@ function Perks() {
           flexGrow: 1,
           overflow: "auto",
           minHeight: 0,
+          width: "100%"
         }}
       >
         {tabConfig.map((tab, index) => (

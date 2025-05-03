@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Box, Grid, Stack, Card, CardHeader, CardContent } from "@mui/material";
+import { Box, Grid, Stack, Card, CardHeader, CardContent, Typography } from "@mui/material";
 import DetailsHeader from "./details-header.js";
 import PerkMiniCard from "../common/perk-mini-card.js";
 import html2canvas from "html2canvas";
@@ -12,7 +12,8 @@ import { useBuild } from "../../contexts/build-context.js";
 function Details() {
   const { currentHero } = useHero();
   const { showMessage } = useUI();
-  const { selectedItems, selectedPowers, removePerkBuild } = useBuild();
+  const { selectedItems, selectedPowers, removePerkBuild, setHoverPerk } =
+    useBuild();
 
   const captureRef = useRef();
   const powerColumns = 4;
@@ -43,11 +44,14 @@ function Details() {
   const getPerkMiniCard = (perks, perkType, index) => {
     return (
       <Box sx={{ textAlign: "center" }}>
-        {perkType === "power" && `Round ${2 * index + 1}`}
-        {perkType === "item" && `Item ${index + 1}`}
+        <Typography variant="h6">
+          {perkType === "power" && `Round ${2 * index + 1}`}
+          {perkType === "item" && `Item ${index + 1}`}
+        </Typography>
         <PerkMiniCard
           perk={perks[index]}
           perkType={perkType}
+          setHoverPerk={setHoverPerk}
           unselectPerk={() => removePerkBuild(perkType, perks[index])}
         />
       </Box>

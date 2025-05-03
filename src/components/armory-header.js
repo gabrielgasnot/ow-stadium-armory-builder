@@ -44,7 +44,7 @@ function ArmoryHeader(props) {
           />
 
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             href={`${window.location.origin}${

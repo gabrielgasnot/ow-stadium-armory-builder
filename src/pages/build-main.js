@@ -17,7 +17,8 @@ function BuildMain() {
       sx={{
         display: "flex",
         flexDirection: { xs: "column", lg: "row" },
-        height: "100%", // Viewport height
+        height: "100%",
+        width: "100%",
         overflowY: { xs: "auto", lg: "hidden" },
       }}
     >
@@ -73,6 +74,7 @@ function BuildMain() {
           paddingRight: 0,
           boxSizing: "border-box",
           minHeight: 0,
+          width: { xs: "100%", lg: "60%", xl: "80%" },
         }}
       >
         <Perks />

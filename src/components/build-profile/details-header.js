@@ -7,7 +7,7 @@ import { useBuild } from "../../contexts/build-context.js";
 
 function DetailsHeader({ copyBuild }) {
   const { currentHero } = useHero();
-  const { selectedItems, shareBuild } = useBuild();
+  const { selectedItems, shareBuild, estimatedCredits } = useBuild();
   return (
     <Paper
       elevation={3}
@@ -86,6 +86,26 @@ function DetailsHeader({ copyBuild }) {
           />
           <Typography component="span" sx={{ mr: 1 }}>
             {selectedItems.map((item) => item.price).reduce((a, b) => a + b, 0)}
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: { xs: "row" }, // Stack on mobile, row on desktop
+            alignItems: { xs: "flex-start", md: "center" }, // Align left on mobile, center on desktop
+          }}
+        >
+          <Typography component="span" sx={{ mr: 0.5 }}>
+            Estimated gains:
+          </Typography>
+          <img
+            src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
+            alt="credits"
+            style={{ width: 24, height: 24, marginRight: 4 }}
+          />
+          <Typography component="span" sx={{ mr: 1 }}>
+            {estimatedCredits}
           </Typography>
         </Box>
 

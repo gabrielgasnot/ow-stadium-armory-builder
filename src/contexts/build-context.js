@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useContext, useState, useEffect, useMemo } from "react";
 import exportBuild from "../services/export-build";
 import { useHero } from "./hero-context";
 
@@ -15,6 +15,7 @@ class Round {
 export const BuildProvider = ({ children }) => {
   const { currentHero, loadHero } = useHero();
 
+  const maxRounds = 7;
   const [rounds, setRounds] = useState([]);
   const [selectedPowers, setSelectedPowers] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
@@ -22,6 +23,10 @@ export const BuildProvider = ({ children }) => {
   const [shareLink, setShareLink] = useState("");
   const [hoverPerk, setHoverPerk] = useState(null);
   const [currentRound, setCurrentRound] = useState(1);
+
+  const estimatedCredits = useMemo(() => {
+    return 3500 + (currentRound - 1) * 10000;
+  }, [currentRound]);
 
   const initBuild = (selectedHero) => {
     resetBuild();
@@ -112,9 +117,29 @@ export const BuildProvider = ({ children }) => {
         );
       }
 
+      // Look for next round
       const nextRound = updated.find((r) => r.roundId === roundId);
-      setSelectedPowers(nextRound?.powers ?? []);
-      setSelectedItems(nextRound?.items ?? []);
+
+      // init with potential existing items/powers
+      let nextPowers = nextRound?.powers ?? [];
+      let nextItems = nextRound?.items ?? [];
+
+      // if no power => look in the previous rounds.
+      if (nextPowers.length === 0) {
+        for (let i = roundId - 1; i >= 1; i--) {
+          const prev = updated.find((r) => r.roundId === i);
+          if (prev) {
+            if (nextPowers.length === 0 && prev.powers.length > 0) {
+              nextPowers = prev.powers;
+            }
+
+            if (nextPowers.length > 0) break;
+          }
+        }
+      }
+
+      setSelectedPowers(nextPowers);
+      setSelectedItems(nextItems);
 
       return updated;
     });
@@ -206,6 +231,8 @@ export const BuildProvider = ({ children }) => {
         resetBuild,
         initBuild,
         rounds,
+        maxRounds,
+        estimatedCredits,
       }}
     >
       {children}

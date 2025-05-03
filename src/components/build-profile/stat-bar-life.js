@@ -1,11 +1,12 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useTransition } from "react";
 import { Box, Tooltip, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { useHero } from "../../contexts/hero-context";
 import { useStats } from "../../contexts/stats-context";
 
-const StatBar = () => {
+const StatBar = ({ setHoverAttributes }) => {
   const theme = useTheme();
+  const [, startTransition] = useTransition();
   const { getLifeStatSum } = useStats();
   const { currentHero } = useHero();
 
@@ -128,8 +129,22 @@ const StatBar = () => {
     }
   };
 
+  const boxEvents = {
+    onMouseEnter: (e) =>
+      startTransition(() => {
+        setHoverAttributes([...values]);
+      }),
+    onMouseLeave: () => startTransition(() => setHoverAttributes([])),
+  };
+
   return (
-    <Box key={"lifeStats"} display="flex" alignItems="center" gap={2}>
+    <Box
+      key={"lifeStats"}
+      display="flex"
+      alignItems="center"
+      gap={2}
+      {...boxEvents}
+    >
       {/* Image on the left */}
       <Box
         sx={{
