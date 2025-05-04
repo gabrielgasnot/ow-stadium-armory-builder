@@ -1,5 +1,16 @@
 import React, { useRef } from "react";
-import { Box, Grid, Stack, Card, CardHeader, CardContent, Typography } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Stack,
+  Card,
+  CardHeader,
+  CardContent,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails,
+  Typography,
+} from "@mui/material";
 import DetailsHeader from "./details-header.js";
 import PerkMiniCard from "../common/perk-mini-card.js";
 import html2canvas from "html2canvas";
@@ -8,6 +19,7 @@ import BuildRoundPanel from "./build-round-panel.js";
 import { useHero } from "../../contexts/hero-context.js";
 import { useUI } from "../../contexts/ui-context.js";
 import { useBuild } from "../../contexts/build-context.js";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function Details() {
   const { currentHero } = useHero();
@@ -135,8 +147,8 @@ function Details() {
           </CardContent>
         </Card>
 
-        <Card
-          className="no-hover"
+        <Accordion
+          defaultExpanded
           sx={{
             flexGrow: 1,
             minHeight: 0, // very important when you want internal scroll!
@@ -144,16 +156,18 @@ function Details() {
             flexDirection: "column",
           }}
         >
-          <CardHeader title="Stats" />
-          <CardContent
+          <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+            <Typography variant="h5">Stats</Typography>
+          </AccordionSummary>
+          <AccordionDetails
             sx={{
               flexGrow: 1,
               overflow: { xs: "visible", xl: "auto" },
             }}
           >
             <StatsPanel />
-          </CardContent>
-        </Card>
+          </AccordionDetails>
+        </Accordion>
       </Stack>
     </Box>
   );

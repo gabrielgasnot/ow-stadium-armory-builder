@@ -190,6 +190,52 @@ const owTheme = createTheme({
         },
       },
     },
+    MuiAccordion: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          backgroundColor: alpha(theme.palette.background.paper, 0.9),
+          borderRadius: theme.shape.borderRadius,
+          boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.5)",
+          marginBottom: theme.spacing(1),
+          overflow: "hidden",
+          transition: "box-shadow 0.3s ease, transform 0.3s ease",
+          "&:before": {
+            display: "none", // remove the default divider line
+          },
+          "&.Mui-expanded": {
+            marginTop: "8px",
+          },
+        }),
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          color: theme.palette.text.primary,
+          padding: "0 16px",
+          minHeight: "48px",
+          "&.Mui-expanded": {
+            minHeight: "48px",
+          },
+        }),
+        content: {
+          margin: "12px 0",
+          "&.Mui-expanded": {
+            margin: "12px 0",
+          },
+        },
+        expandIconWrapper: ({ theme }) => ({
+          color: theme.palette.text.primary,
+        }),
+      },
+    },
+    MuiAccordionDetails: {
+      styleOverrides: {
+        root: {
+          padding: "8px 16px 16px",
+        },
+      },
+    },
   },
 });
 
