@@ -151,6 +151,8 @@ const StatBar = ({ setHoverAttributes }) => {
       />
       <Tooltip
         title={`Life: ${stats.HP.value} / Armor: ${stats.AR.value} / Shields: ${stats.SH.value}`}
+        enterTouchDelay={0}
+        leaveTouchDelay={1000}
       >
         <Box
           {...boxEvents}
