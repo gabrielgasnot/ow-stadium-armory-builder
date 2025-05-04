@@ -23,7 +23,13 @@ export const BuildProvider = ({ children }) => {
   const { currentHero, loadHero } = useHero();
 
   const maxRounds = 7;
-  const [rounds, setRounds] = useState([]);
+  const [rounds, setRounds] = useState(
+    Array.from(
+      Array(7)
+        .keys()
+        .map((i) => new Round(i + 1))
+    )
+  );
   const [selectedPowers, setSelectedPowers] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
   const [encodedBuildId, setEncodedBuildId] = useState("");
@@ -40,7 +46,7 @@ export const BuildProvider = ({ children }) => {
     resetBuild();
     loadHero(selectedHero); // Charger les pouvoirs/items du héros
   };
-  const getMaxRound = (count) => {
+  const getMaxRoundByPower = (count) => {
     switch (count) {
       case 1:
         return 1;
@@ -57,10 +63,15 @@ export const BuildProvider = ({ children }) => {
 
   const allowedPowerCountByRound = {
     1: 1,
+    2: 1,
     3: 2,
+    4: 2,
     5: 3,
+    6: 3,
     7: 4,
   };
+
+  const round = useMemo(() => rounds[currentRound - 1], [rounds, currentRound]);
 
   const addPower = (power, showMessage) => {
     if (selectedPowers.find((p) => p.id === power.id)) return;
@@ -72,40 +83,47 @@ export const BuildProvider = ({ children }) => {
       return;
     }
 
-    const maxRound = getMaxRound(newPowerList.length);
-
-    if (currentRound >= maxRound) {
-      setSelectedPowers(newPowerList);
-      return;
-    }
-
-    const basePowers =
-      newPowerList.length > 1 ? newPowerList.slice(0, -1) : newPowerList;
+    setSelectedPowers(newPowerList);
 
     // Update rounds immediately
-    setRounds((prevRounds) => {
+    setRounds((existingRounds) => {
       const updatedRounds = [];
-      for (let i = 1; i <= maxRound; i++) {
-        const powers = i === maxRound ? newPowerList : basePowers;
-        const existing = prevRounds.find((r) => r.roundId === i);
-        const items = existing?.items || selectedItems;
-        const existingPowers = existing?.powers || powers;
-        updatedRounds.push(new Round(i, existingPowers, items));
+      for (let i = 1; i <= maxRounds; i++) {
+        const maxRoundPowers = allowedPowerCountByRound[i];
+        const roundPowers =
+          newPowerList.length <= maxRoundPowers
+            ? newPowerList.map((power) => ({ ...power }))
+            : newPowerList.slice(0, maxRoundPowers);
+        const existingRound = existingRounds.find((r) => r.roundId === i);
+        updatedRounds.push(new Round(i, roundPowers, existingRound.items));
       }
       return updatedRounds;
     });
 
-    const maxAllowed =
-      Object.entries(allowedPowerCountByRound)
-        .reverse()
-        .find(([round]) => currentRound >= +round)?.[1] ?? 1;
-
-    const allowedPowers = newPowerList.slice(0, maxAllowed);
-    setSelectedPowers(allowedPowers);
-
+    const maxRound = getMaxRoundByPower(newPowerList.length);
     if (maxRound !== currentRound) {
       setPendingRound(maxRound); // let useEffect handle navigation
     }
+  };
+
+  const removePower = (power) => {
+    const newPowerList = selectedPowers.filter((p) => p.id !== power.id);
+    setSelectedPowers(newPowerList);
+
+    // Update rounds immediately
+    setRounds((existingRounds) => {
+      const updatedRounds = [];
+      for (let i = 1; i <= maxRounds; i++) {
+        const maxRoundPowers = allowedPowerCountByRound[i];
+        const roundPowers =
+          newPowerList.length <= maxRoundPowers
+            ? newPowerList.map((power) => ({ ...power }))
+            : newPowerList.slice(0, maxRoundPowers);
+        const existingRound = existingRounds.find((r) => r.roundId === i);
+        updatedRounds.push(new Round(i, roundPowers, existingRound.items));
+      }
+      return updatedRounds;
+    });
   };
 
   const addItem = (item, showMessage) => {
@@ -116,15 +134,23 @@ export const BuildProvider = ({ children }) => {
       return;
     }
 
-    setSelectedItems([...selectedItems, item]);
+    const newSelectedItems = [...selectedItems, item];
+    setSelectedItems(newSelectedItems);
+    round.items = newSelectedItems;
+  };
+
+  const removeItem = (item) => {
+    const newSelectedItems = selectedItems.filter((i) => i.id !== item.id);
+    setSelectedItems(newSelectedItems);
+    round.items = newSelectedItems;
   };
 
   const removePerkBuild = (perkType, perk) => {
     if (perkType === "power") {
-      setSelectedPowers((prev) => prev.filter((p) => p.id !== perk.id));
+      removePower(perk);
     }
     if (perkType === "item") {
-      setSelectedItems((prev) => prev.filter((i) => i.id !== perk.id));
+      removeItem(perk);
     }
     setHoverPerk(perk);
   };
@@ -149,75 +175,25 @@ export const BuildProvider = ({ children }) => {
     setShareLink(newShareLink);
   };
 
-  const saveRound = (roundId, powers, items, prevRounds) => {
-    const updated = [...prevRounds];
-    const index = updated.findIndex((r) => r.roundId === roundId);
-    const updatedRound = new Round(roundId, powers, items);
-
-    if (index === -1) {
-      updated.push(updatedRound);
-    } else {
-      updated[index] = updatedRound;
-    }
-
-    return updated;
-  };
-
   const changeRound = useCallback(
     (roundId) => {
-      setRounds((prevRounds) => {
-        let updated = saveRound(
-          currentRound,
-          selectedPowers,
-          selectedItems,
-          prevRounds
-        );
-
-        while (updated.length < roundId) {
-          console.debug("in the loop");
-          updated = saveRound(
-            updated.length + 1,
-            selectedPowers,
-            selectedItems,
-            updated
-          );
-        }
-
-        // Look for next round
-        const nextRound = updated.find((r) => r.roundId === roundId);
-
-        // init with potential existing items/powers
-        let nextPowers = nextRound?.powers ?? [];
-        let nextItems = nextRound?.items ?? [];
-
-        // if no power => look in the previous rounds.
-        if (nextPowers.length === 0) {
-          for (let i = roundId - 1; i >= 1; i--) {
-            const prev = updated.find((r) => r.roundId === i);
-            if (prev) {
-              if (nextPowers.length === 0 && prev.powers.length > 0) {
-                nextPowers = prev.powers;
-              }
-
-              if (nextPowers.length > 0) break;
-            }
-          }
-        }
-
-        setSelectedPowers(nextPowers);
-        setSelectedItems(nextItems);
-        console.debug("setRounds in changeRound ", roundId);
-        return updated;
-      });
-
+      const round = rounds[roundId - 1];
+      setSelectedPowers(round.powers);
+      setSelectedItems(round.items);
       setCurrentRound(roundId);
     },
-    [currentRound, selectedItems, selectedPowers]
+    [rounds]
   );
 
   const initRound = () => {
-    const initialRound = new Round(1);
-    setRounds([initialRound]);
+    // Init the full 7 rounds
+    setRounds(
+      Array.from(
+        Array(7)
+          .keys()
+          .map((i) => new Round(i + 1))
+      )
+    );
     setCurrentRound(1);
     setSelectedPowers([]);
     setSelectedItems([]);
@@ -230,6 +206,10 @@ export const BuildProvider = ({ children }) => {
     setShareLink("");
     initRound();
   };
+
+  const currentlyPoweredRound = useMemo(() => {
+    return getMaxRoundByPower(selectedPowers.length);
+  }, [selectedPowers.length]);
 
   useEffect(() => {
     if (pendingRound !== null) {
@@ -258,7 +238,7 @@ export const BuildProvider = ({ children }) => {
         changeRound,
         resetBuild,
         initBuild,
-        rounds,
+        currentlyPoweredRound,
         maxRounds,
         estimatedCredits,
       }}

@@ -2,7 +2,12 @@ import React, { useState, useRef, useEffect } from "react";
 import { Box, Typography, Pagination } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-function BuilderRoundNavigatorDefault({ rounds, maxRounds, currentRound, changeRound }) {
+function BuilderRoundNavigatorDefault({
+  roundCount,
+  maxRounds,
+  currentRound,
+  changeRound,
+}) {
   const theme = useTheme();
   const [startPos, setStartPos] = useState({ x: 0, y: 0 });
   const [endPos, setEndPos] = useState({ x: 0, y: 0 });
@@ -16,7 +21,7 @@ function BuilderRoundNavigatorDefault({ rounds, maxRounds, currentRound, changeR
     if (items.length < 2) return;
 
     const first = items[0].getBoundingClientRect();
-    const target = items[rounds.length - 1].getBoundingClientRect(); // adjust index
+    const target = items[roundCount - 1].getBoundingClientRect(); // adjust index
 
     const container = paginationRef.current.getBoundingClientRect();
 
@@ -29,7 +34,7 @@ function BuilderRoundNavigatorDefault({ rounds, maxRounds, currentRound, changeR
       x: target.left + target.width / 2 - container.left,
       y: target.top + target.height / 2 - container.top,
     });
-  }, [rounds.length]);
+  }, [roundCount]);
 
   return (
     <Box
