@@ -19,7 +19,7 @@ export const HeroProvider = ({ children }) => {
     if (selectedHero) {
       const hero = heroes.find((h) => h.id === selectedHero.id);
       if (hero) {
-        const heroPowers = hero.powers ?? [];
+        const heroPowers = hero.powers.filter(power => !power.disabled) ?? [];
         const heroItems = hero.items ?? [];
 
         setHeroPowers(heroPowers);
