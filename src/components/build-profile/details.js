@@ -32,7 +32,7 @@ function Details() {
     removePerkBuild,
     setHoverPerk,
     keepItems,
-    setKeepItems,
+    updateKeepItems,
   } = useBuild();
 
   const captureRef = useRef();
@@ -149,7 +149,7 @@ function Details() {
                   <Switch
                     size="small"
                     checked={keepItems}
-                    onChange={(e) => setKeepItems(e.target.checked)}
+                    onChange={(e) => updateKeepItems(e.target.checked)}
                   />
                 </Stack>
               </Tooltip>

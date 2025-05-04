@@ -175,6 +175,28 @@ export const BuildProvider = ({ children }) => {
     }
   };
 
+  const updateRoundItems = (newSelectedItems) => {
+    const roundItemIds = new Set(round.items.map((item) => item.id));
+    // Update rounds with selected items
+    setRounds((existingRounds) => {
+      const updatedRounds = [];
+      for (let i = 1; i <= maxRounds; i++) {
+        const existingRound = existingRounds.find((r) => r.roundId === i);
+        // only update future rounds
+        const itemsMatch = existingRound.items.every((item) =>
+          roundItemIds.has(item.id)
+        );
+        if (i > currentRound && itemsMatch) {
+          existingRound.items = newSelectedItems.map((item) => ({ ...item }));
+        }
+        updatedRounds.push(
+          new Round(i, existingRound.powers, existingRound.items)
+        );
+      }
+      return updatedRounds;
+    });
+  };
+
   const addItem = (item, showMessage) => {
     if (selectedItems.find((i) => i.id === item.id)) return;
 
@@ -188,25 +210,7 @@ export const BuildProvider = ({ children }) => {
     round.items = newSelectedItems;
 
     if (keepItems) {
-      const roundItemIds = new Set(round.items.map((item) => item.id));
-      // Update rounds with selected items
-      setRounds((existingRounds) => {
-        const updatedRounds = [];
-        for (let i = 1; i <= maxRounds; i++) {
-          const existingRound = existingRounds.find((r) => r.roundId === i);
-          // only update future rounds
-          const itemsMatch = existingRound.items.every((item) =>
-            roundItemIds.has(item.id)
-          );
-          if (i > currentRound && itemsMatch) {
-            existingRound.items = newSelectedItems.map((item) => ({ ...item }));
-          }
-          updatedRounds.push(
-            new Round(i, existingRound.powers, existingRound.items)
-          );
-        }
-        return updatedRounds;
-      });
+      updateRoundItems(newSelectedItems);
     }
   };
 
@@ -216,21 +220,7 @@ export const BuildProvider = ({ children }) => {
     round.items = newSelectedItems;
 
     if (keepItems) {
-      // Update rounds with selected items
-      setRounds((existingRounds) => {
-        const updatedRounds = [];
-        for (let i = 1; i <= maxRounds; i++) {
-          const existingRound = existingRounds.find((r) => r.roundId === i);
-          // only update future rounds
-          if (i > currentRound && existingRound.items.length === 0) {
-            existingRound.items = newSelectedItems.map((item) => ({ ...item }));
-          }
-          updatedRounds.push(
-            new Round(i, existingRound.powers, existingRound.items)
-          );
-        }
-        return updatedRounds;
-      });
+      updateRoundItems(newSelectedItems);
     }
   };
 
@@ -262,8 +252,6 @@ export const BuildProvider = ({ children }) => {
 
   const changeRound = useCallback(
     (roundId) => {
-      console.debug("Moving to round: ", roundId);
-      console.debug("Rounds: ", rounds);
       const round = rounds[roundId - 1];
       setSelectedPowers(round.powers);
       setSelectedItems(round.items);
@@ -292,6 +280,13 @@ export const BuildProvider = ({ children }) => {
     setEncodedBuildId("");
     setShareLink("");
     initRound();
+  };
+
+  const updateKeepItems = (newState) => {
+    setKeepItems(newState);
+    if (newState) {
+      updateRoundItems(selectedItems);
+    }
   };
 
   const currentlyPoweredRound = useMemo(() => {
@@ -329,7 +324,7 @@ export const BuildProvider = ({ children }) => {
         maxRounds,
         estimatedCredits,
         keepItems,
-        setKeepItems,
+        updateKeepItems,
         initFromImport,
       }}
     >
