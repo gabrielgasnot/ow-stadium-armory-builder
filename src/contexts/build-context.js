@@ -8,6 +8,7 @@ import {
 } from "react";
 import exportBuild from "../services/export-build";
 import { useHero } from "./hero-context";
+import getAllItemsByHero from "../services/query-items";
 
 const BuildContext = createContext();
 
@@ -20,7 +21,7 @@ class Round {
 }
 
 export const BuildProvider = ({ children }) => {
-  const { currentHero, loadHero } = useHero();
+  const { currentHero, importHero, loadHero } = useHero();
 
   const maxRounds = 7;
   const [rounds, setRounds] = useState(
@@ -47,6 +48,48 @@ export const BuildProvider = ({ children }) => {
     resetBuild();
     loadHero(selectedHero); // Charger les pouvoirs/items du héros
   };
+
+  const initFromImport = (importResult) => {
+    resetBuild();
+    if (importResult && importResult.heroId) {
+      const heroId = parseInt(importResult.heroId);
+      const hero = importHero(heroId);
+      if (!hero) {
+        throw new Error("Failed to import: hero not found");
+      } else {
+        const itemDb = getAllItemsByHero(hero);
+
+        const importedRounds = importResult.roundsPerks.map(
+          (roundData, idx) => {
+            const roundId = idx + 1;
+
+            const orderedSelectedItems = roundData
+              .map((id) => itemDb.find((item) => item.id === id))
+              .filter((item) => item !== undefined);
+
+            const orderedSelectedPowers = roundData
+              .map((id) => hero.powers.find((power) => power.id === id))
+              .filter((power) => power !== undefined);
+
+            return new Round(
+              roundId,
+              orderedSelectedPowers,
+              orderedSelectedItems
+            );
+          }
+        );
+
+        if (importedRounds.length < maxRounds) {
+          throw new Error("Failed to import all rounds");
+        }
+
+        setRounds(importedRounds);
+        setSelectedItems(importedRounds[0].items);
+        setSelectedPowers(importedRounds[0].powers);
+      }
+    }
+  };
+
   const getMaxRoundByPower = (count) => {
     switch (count) {
       case 1:
@@ -208,11 +251,7 @@ export const BuildProvider = ({ children }) => {
   };
 
   const shareBuild = () => {
-    const encodedBuild = exportBuild(
-      currentHero,
-      selectedPowers,
-      selectedItems
-    );
+    const encodedBuild = exportBuild(currentHero, rounds);
     let baseUrl = window.location.origin + window.location.pathname;
     if (!baseUrl.endsWith("/")) baseUrl += "/";
     const newShareLink = `${baseUrl}#/${encodedBuild}`;
@@ -291,6 +330,7 @@ export const BuildProvider = ({ children }) => {
         estimatedCredits,
         keepItems,
         setKeepItems,
+        initFromImport,
       }}
     >
       {children}

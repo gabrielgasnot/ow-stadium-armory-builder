@@ -1,4 +1,4 @@
-import { decompressString } from '../helpers/compression.js';
+import { decompressString } from "../helpers/compression.js";
 
 const isValidBase64 = (str) => {
   const base64Regex = /^[A-Za-z0-9+/=]+$/;
@@ -6,7 +6,7 @@ const isValidBase64 = (str) => {
 };
 
 const parseDecodedString = (build) => {
-  const data = build.split("-");
+  const data = build.split("|");
 
   if (data.length === 0) {
     return undefined;
@@ -14,17 +14,17 @@ const parseDecodedString = (build) => {
 
   // Get the heroId (first element)
   const heroId = data.shift();
-  const perks = [...data];
+  const roundsIds = [...data.map((row) => row.split("-"))];
 
   return {
     heroId: heroId,
-    selectedPerks: perks
-  }
+    roundsPerks: roundsIds,
+  };
 };
 
 const importBuild = (encodedBuild) => {
   if (isValidBase64(encodedBuild)) {
-    const decodedString = decompressString(encodedBuild) ;
+    const decodedString = decompressString(encodedBuild);
     if (decodedString) {
       return parseDecodedString(decodedString);
     }

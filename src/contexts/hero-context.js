@@ -19,7 +19,7 @@ export const HeroProvider = ({ children }) => {
     if (selectedHero) {
       const hero = heroes.find((h) => h.id === selectedHero.id);
       if (hero) {
-        const heroPowers = hero.powers.filter(power => !power.disabled) ?? [];
+        const heroPowers = hero.powers.filter((power) => !power.disabled) ?? [];
         const heroItems = hero.items ?? [];
 
         setHeroPowers(heroPowers);
@@ -42,6 +42,25 @@ export const HeroProvider = ({ children }) => {
     }
   };
 
+  const importHero = (heroId) => {
+    const hero = heroes.find((h) => h.id === heroId);
+
+    if (hero) {
+      setCurrentHero(hero);
+      setHeroItems(hero.items);
+      setHeroPowers(hero.powers);
+      
+      setAvailableItems({
+        common: [...basicItems.common, ...hero.items.common],
+        rare: [...basicItems.rare, ...hero.items.rare],
+        epic: [...basicItems.epic, ...hero.items.epic],
+      });
+      return hero;
+    }
+
+    return undefined;
+  };
+
   return (
     <HeroContext.Provider
       value={{
@@ -53,6 +72,7 @@ export const HeroProvider = ({ children }) => {
         setHeroItems,
         loadHero,
         availableItems,
+        importHero,
       }}
     >
       {children}
