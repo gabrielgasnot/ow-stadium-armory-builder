@@ -26,13 +26,13 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
   return (
     <Card
       sx={{
-        width: { xs: "100%", sm: "20%" },
+        width: "100%",
         minWidth: "300px",
         mx: "auto",
         border: "2px solid",
         backgroundColor:
           (!isSelected && isDisabled) ||
-          (hasHoverAttributes && !matchesAttribute)
+          (!isPower && hasHoverAttributes && !matchesAttribute)
             ? theme.palette.action.disabledBackground
             : theme.palette.background.paper,
         borderColor: (theme) =>

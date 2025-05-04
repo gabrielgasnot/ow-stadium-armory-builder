@@ -20,12 +20,13 @@ function BuildMain() {
         height: "100%",
         width: "100%",
         overflowY: { xs: "auto", md: "hidden" },
+        overflowX: "hidden",
       }}
     >
       {/* Left / Detail panel */}
       <Box
         sx={{
-          minWidth: "375px",
+          minWidth: { xs: "375px", sm: "440px" },
           maxWidth: { xs: "100%", lg: "600px" },
           width: { xs: "100%", md: "40%", xl: "20%" },
           flexShrink: 0,
@@ -74,7 +75,7 @@ function BuildMain() {
           paddingRight: 0,
           boxSizing: "border-box",
           minHeight: 0,
-          width: { xs: "100%", md: "60%", xl: "80%" },
+          width: { xs: "100%", md: "50%", xl: "70%" },
         }}
       >
         <Perks />

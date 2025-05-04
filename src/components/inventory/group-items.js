@@ -32,7 +32,7 @@ function GroupItems({ category }) {
             xl: 4,
           }}
           sx={(theme) => ({
-            [theme.breakpoints.up("md")]: {
+            [theme.breakpoints.up("xl")]: {
               borderRight:
                 index < 2 ? `1px solid ${theme.palette.background.paper}` : "none",
             },
