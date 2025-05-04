@@ -127,7 +127,7 @@ function Details() {
               <Tooltip
                 title={`${
                   keepItems
-                    ? "Items will be copied on all coming rounds with no items."
+                    ? "Items will be copied on all coming rounds with no items (or with same items)."
                     : "Items will only be applied to this round."
                 }`}
                 enterTouchDelay={0}
