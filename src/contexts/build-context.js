@@ -125,6 +125,11 @@ export const BuildProvider = ({ children }) => {
       }
       return updatedRounds;
     });
+
+    const maxRound = getMaxRoundByPower(newPowerList.length);
+    if (maxRound !== currentRound) {
+      setPendingRound(maxRound); // let useEffect handle navigation
+    }
   };
 
   const addItem = (item, showMessage) => {
@@ -140,14 +145,16 @@ export const BuildProvider = ({ children }) => {
     round.items = newSelectedItems;
 
     if (keepItems) {
-      const roundItemIds = new Set(round.items.map(item => item.id));
+      const roundItemIds = new Set(round.items.map((item) => item.id));
       // Update rounds with selected items
       setRounds((existingRounds) => {
         const updatedRounds = [];
         for (let i = 1; i <= maxRounds; i++) {
           const existingRound = existingRounds.find((r) => r.roundId === i);
           // only update future rounds
-          const itemsMatch = existingRound.items.every(item => roundItemIds.has(item.id))
+          const itemsMatch = existingRound.items.every((item) =>
+            roundItemIds.has(item.id)
+          );
           if (i > currentRound && itemsMatch) {
             existingRound.items = newSelectedItems.map((item) => ({ ...item }));
           }
