@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Box, Paper } from "@mui/material";
-import BuilderRoundNavigatorXs from "./build-round-navigator-xs";
 import BuilderRoundNavigatorDefault from "./build-round-navigator-default";
 import { useBuild } from "../../contexts/build-context.js";
 
