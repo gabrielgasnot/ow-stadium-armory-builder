@@ -140,14 +140,14 @@ const owTheme = createTheme({
     MuiCardHeader: {
       styleOverrides: {
         root: {
-          padding: "8px 16px 8px 16px",
+          padding: "8px 16px 0px 16px",
         },
       },
     },
     MuiCardContent: {
       styleOverrides: {
         root: {
-          padding: "4px 8px 8px 8px",
+          padding: "0px 8px 8px 8px",
           "&:last-child": {
             paddingBottom: "16px",
             paddingTop: "8px",
@@ -219,9 +219,9 @@ const owTheme = createTheme({
           },
         }),
         content: {
-          margin: "12px 0",
+          margin: "8px 0px 8px 0px",
           "&.Mui-expanded": {
-            margin: "12px 0",
+            margin: "8px 0px 8px 0px",
           },
         },
         expandIconWrapper: ({ theme }) => ({
@@ -232,7 +232,7 @@ const owTheme = createTheme({
     MuiAccordionDetails: {
       styleOverrides: {
         root: {
-          padding: "8px 16px 16px",
+          padding: "0px 16px 16px",
         },
       },
     },
