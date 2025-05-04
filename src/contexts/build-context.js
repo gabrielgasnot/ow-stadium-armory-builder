@@ -37,6 +37,7 @@ export const BuildProvider = ({ children }) => {
   const [hoverPerk, setHoverPerk] = useState(null);
   const [currentRound, setCurrentRound] = useState(1);
   const [pendingRound, setPendingRound] = useState(null);
+  const [keepItems, setKeepItems] = useState(false);
 
   const estimatedCredits = useMemo(() => {
     return 3500 + (currentRound - 1) * 10000;
@@ -241,6 +242,8 @@ export const BuildProvider = ({ children }) => {
         currentlyPoweredRound,
         maxRounds,
         estimatedCredits,
+        keepItems,
+        setKeepItems,
       }}
     >
       {children}

@@ -10,6 +10,8 @@ import {
   AccordionSummary,
   AccordionDetails,
   Typography,
+  Switch,
+  Tooltip,
 } from "@mui/material";
 import DetailsHeader from "./details-header.js";
 import PerkMiniCard from "../common/perk-mini-card.js";
@@ -24,8 +26,14 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 function Details() {
   const { currentHero } = useHero();
   const { showMessage } = useUI();
-  const { selectedItems, selectedPowers, removePerkBuild, setHoverPerk } =
-    useBuild();
+  const {
+    selectedItems,
+    selectedPowers,
+    removePerkBuild,
+    setHoverPerk,
+    keepItems,
+    setKeepItems,
+  } = useBuild();
 
   const captureRef = useRef();
   const powerColumns = 4;
@@ -113,7 +121,40 @@ function Details() {
         </Card>
 
         <Card className="no-hover">
-          <CardHeader title="Items" />
+          <CardHeader
+            title="Items"
+            action={
+              <Tooltip
+                title={`${
+                  keepItems
+                    ? "Items will be copied on all coming rounds with no items."
+                    : "Items will only be applied to this round."
+                }`}
+                enterTouchDelay={0}
+                leaveTouchDelay={1000}
+              >
+                <Stack
+                  flexDirection={"row"}
+                  spacing={1}
+                  sx={{
+                    alignItems: "center",
+                    "& > *": {
+                      marginTop: "0 !important", // force reset any rogue margin
+                    },
+                  }}
+                >
+                  <Typography variant="body2">
+                    Keep items between round
+                  </Typography>
+                  <Switch
+                    size="small"
+                    checked={keepItems}
+                    onChange={(e) => setKeepItems(e.target.checked)}
+                  />
+                </Stack>
+              </Tooltip>
+            }
+          />
           <CardContent>
             <Grid
               container

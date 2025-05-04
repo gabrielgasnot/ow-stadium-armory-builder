@@ -130,6 +130,34 @@ const owTheme = createTheme({
         },
       },
     },
+    MuiSwitch: {
+      styleOverrides: {
+        switchBase: ({ theme }) => ({
+          padding: 1,
+          "&.Mui-checked": {
+            transform: "translateX(16px)",
+            color: theme.palette.custom.blue, // thumb color when checked
+            "& + .MuiSwitch-track": {
+              backgroundColor: alpha(theme.palette.custom.blue, 0.5), // track color when checked
+              opacity: 1,
+            },
+          },
+        }),
+        thumb: {
+          width: 24,
+          height: 24,
+          boxShadow: "none",
+        },
+        track: ({ theme }) => ({
+          borderRadius: 26 / 2,
+          backgroundColor: theme.palette.grey[600] || "#666", // track when unchecked
+          opacity: 1,
+          transition: theme.transitions.create(["background-color"], {
+            duration: 500,
+          }),
+        }),
+      },
+    },
     MuiIconButton: {
       styleOverrides: {
         root: {
