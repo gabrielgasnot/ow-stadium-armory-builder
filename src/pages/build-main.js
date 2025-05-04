@@ -25,7 +25,7 @@ function BuildMain() {
       {/* Left / Detail panel */}
       <Box
         sx={{
-          minWidth: "440px",
+          minWidth: "375px",
           maxWidth: { xs: "100%", lg: "600px" },
           width: { xs: "100%", md: "40%", xl: "20%" },
           flexShrink: 0,
