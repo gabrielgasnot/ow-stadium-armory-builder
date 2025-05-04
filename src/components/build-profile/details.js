@@ -12,6 +12,7 @@ import {
   Typography,
   Switch,
   Tooltip,
+  useTheme,
 } from "@mui/material";
 import DetailsHeader from "./details-header.js";
 import PerkMiniCard from "../common/perk-mini-card.js";
@@ -21,6 +22,7 @@ import BuildRoundPanel from "./build-round-panel.js";
 import { useHero } from "../../contexts/hero-context.js";
 import { useUI } from "../../contexts/ui-context.js";
 import { useBuild } from "../../contexts/build-context.js";
+import BuildExportCanvas from "./build-export-canvas.js";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function Details() {
@@ -33,20 +35,26 @@ function Details() {
     setHoverPerk,
     keepItems,
     updateKeepItems,
+    rounds,
   } = useBuild();
 
-  const captureRef = useRef();
+  const theme = useTheme();
+  const exportRef = useRef();
   const powerColumns = 4;
   const itemColumns = 3;
   const itemRows = 2;
 
   const handleCopy = async () => {
-    const element = captureRef.current;
+    const element = exportRef.current;
 
     const canvas = await html2canvas(element, {
-      backgroundColor: "#ffffff", // ensure background is solid white
+      backgroundColor: theme.palette.background.default, // ensure background is solid
       ignoreElements: (el) => el.classList?.contains("no-capture"),
       scale: 1.25, // higher resolution screenshot
+      allowTaint: false,
+      imageTimeout: 10000,
+      useCORS: true,
+      // foreignObjectRendering: true,
     });
 
     canvas.toBlob(async (blob) => {
@@ -83,7 +91,7 @@ function Details() {
   }
 
   return (
-    <Box ref={captureRef} sx={{ width: "100%" }}>
+    <Box sx={{ width: "100%" }}>
       <Stack
         spacing={1}
         sx={{ flexGrow: 1, minHeight: 0, width: "100%", paddingBottom: 3 }}
@@ -210,6 +218,28 @@ function Details() {
           </AccordionDetails>
         </Accordion>
       </Stack>
+
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          zIndex: 9999,
+          backgroundColor: theme.palette.background.default,
+          width: "100vw",
+          height: "auto",
+          pointerEvents: "none", // don't interfere with interaction
+          opacity: 0,
+        }}
+      >
+        <div ref={exportRef}>
+          <BuildExportCanvas
+            allRounds={rounds}
+            selectedItems={selectedItems}
+            selectedPowers={selectedPowers}
+          />
+        </div>
+      </div>
     </Box>
   );
 }

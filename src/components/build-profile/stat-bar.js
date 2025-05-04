@@ -35,12 +35,13 @@ const StatBar = ({
     <Box key={attributeType} display="flex" alignItems="center" gap={2}>
       {/* Image on the left */}
       <Box
+        component="img"
+        src={`${process.env.PUBLIC_URL}/icons/${icon}`}
+        alt={attributeType}
         sx={{
           width: 20,
           height: 20,
-          backgroundImage: `url(${process.env.PUBLIC_URL}/icons/${icon})`,
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
+          objectFit: "contain",
         }}
       />
       <Tooltip

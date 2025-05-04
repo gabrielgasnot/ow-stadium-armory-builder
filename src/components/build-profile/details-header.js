@@ -95,6 +95,7 @@ function DetailsHeader({ copyBuild }) {
             flexDirection: { xs: "row" }, // Stack on mobile, row on desktop
             alignItems: { xs: "flex-start", md: "center" }, // Align left on mobile, center on desktop
           }}
+          className="no-capture"
         >
           <Typography component="span" sx={{ mr: 0.5 }}>
             Estimated gains:
