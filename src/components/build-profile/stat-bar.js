@@ -1,4 +1,4 @@
-import React, { useTransition } from "react";
+import React from "react";
 import { Box, Tooltip, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
@@ -11,7 +11,6 @@ const StatBar = ({
   setHoverAttributes,
 }) => {
   const theme = useTheme();
-  const [, startTransition] = useTransition();
   const cappedPercentage = Math.min(value, 100);
 
   // If hoverImpact is positive, calculate the green bar (increase)
@@ -28,9 +27,8 @@ const StatBar = ({
   );
 
   const boxEvents = {
-    onMouseEnter: (e) =>
-      startTransition(() => setHoverAttributes([attributeType])),
-    onMouseLeave: () => startTransition(() => setHoverAttributes([])),
+    onMouseEnter: () => setHoverAttributes([attributeType]),
+    onMouseLeave: () => setHoverAttributes([]),
   };
 
   return (
