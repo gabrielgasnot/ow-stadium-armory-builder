@@ -5,7 +5,8 @@ import BuilderRoundNavigatorDefault from "./build-round-navigator-default";
 import { useBuild } from "../../contexts/build-context.js";
 
 function BuildRoundPanel() {
-  const { currentRound, changeRound, currentlyPoweredRound, maxRounds } = useBuild();
+  const { currentRound, changeRound, currentlyPoweredRound, maxRounds } =
+    useBuild();
   const xsStickyRef = useRef();
   const [showSticky, setShowSticky] = useState(false);
 
@@ -39,12 +40,10 @@ function BuildRoundPanel() {
         flexDirection: "column",
       }}
     >
-      <Box
-        ref={xsStickyRef}
-        width="100%"
-        sx={{ display: { xs: "flex", sm: "none" } }}
-      >
-        <BuilderRoundNavigatorXs
+      <Box ref={xsStickyRef} width="100%">
+        <BuilderRoundNavigatorDefault
+          roundCount={currentlyPoweredRound}
+          maxRounds={maxRounds}
           currentRound={currentRound}
           changeRound={changeRound}
         />
@@ -54,7 +53,6 @@ function BuildRoundPanel() {
         <Box
           sx={{
             position: "fixed",
-            display: { xs: "flex", sm: "none" },
             top: 53, // adjust for your app bar height
             left: 0,
             right: 0,
@@ -63,19 +61,14 @@ function BuildRoundPanel() {
             boxShadow: (theme) => `0px 4px 8px ${theme.palette.custom.orange}`,
           }}
         >
-          <BuilderRoundNavigatorXs
+          <BuilderRoundNavigatorDefault
+            roundCount={currentlyPoweredRound}
+            maxRounds={maxRounds}
             currentRound={currentRound}
             changeRound={changeRound}
           />
         </Box>
       )}
-
-      <BuilderRoundNavigatorDefault
-        roundCount={currentlyPoweredRound}
-        maxRounds={maxRounds}
-        currentRound={currentRound}
-        changeRound={changeRound}
-      />
     </Paper>
   );
 }

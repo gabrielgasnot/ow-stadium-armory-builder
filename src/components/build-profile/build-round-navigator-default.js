@@ -39,17 +39,28 @@ function BuilderRoundNavigatorDefault({
   return (
     <Box
       sx={{
-        display: { xs: "none", sm: "flex" },
-        flexDirection: "row",
+        display: "flex",
+        flexDirection: { xs: "column", md: "row" },
         justifyContent: "flex-start",
         alignItems: "center",
         width: "100%",
+        minHeight: { xs: "90px", md: "0px" },
       }}
     >
-      <Typography variant="h6" sx={{ margin: "0 15px" }}>
+      <Typography
+        variant="h6"
+        sx={{ margin: { xs: "8px 0 8px 0", md: "0 15px" } }}
+      >
         Round
       </Typography>
-      <Box sx={{ position: "relative", width: "100%" }} ref={containerRef}>
+      <Box
+        sx={{
+          position: "relative",
+          width: "100%",
+          padding: { xs: "0px 8px 0px 8px", md: "inherit" },
+        }}
+        ref={containerRef}
+      >
         {/* SVG line */}
         <svg
           style={{
