@@ -6,13 +6,9 @@ import {
   CardHeader,
   CardContent,
   Grid,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
 } from "@mui/material";
 import DetailsHeader from "./details-header.js";
 import PerkMiniCard from "../common/perk-mini-card.js";
-import StatsPanel from "./stats-panel.js";
 
 function BuildExportCanvas({ allRounds }) {
   const powerColumns = 4;
