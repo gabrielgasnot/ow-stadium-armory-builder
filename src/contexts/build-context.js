@@ -23,7 +23,11 @@ class Round {
 export const BuildProvider = ({ children }) => {
   const { currentHero, importHero, loadHero } = useHero();
 
+  // BASIC BUILD DATA
   const maxRounds = 7;
+  const earningStart = 3500;
+  const earningPerRound = 9000;
+
   const [rounds, setRounds] = useState(
     Array.from(
       Array(7)
@@ -41,12 +45,69 @@ export const BuildProvider = ({ children }) => {
   const [keepItems, setKeepItems] = useState(false);
 
   const estimatedCredits = useMemo(() => {
-    return 3500 + (currentRound - 1) * 10000;
+    return earningStart + (currentRound - 1) * earningPerRound;
   }, [currentRound]);
 
   const initBuild = (selectedHero) => {
     resetBuild();
     loadHero(selectedHero); // Charger les pouvoirs/items du héros
+  };
+
+  const initFromImportV1 = (hero, importResult) => {
+    const itemDb = getAllItemsByHero(hero);
+
+    const orderedSelectedItems = importResult.selectedPerks
+      .map((id) => itemDb.find((item) => item.id === id))
+      .filter((item) => item !== undefined);
+
+    const orderedSelectedPowers = importResult.selectedPerks
+      .map((id) => hero.powers.find((power) => power.id === id))
+      .filter((power) => power !== undefined);
+
+    // Update rounds immediately
+    setRounds(() => {
+      const updatedRounds = [];
+      for (let i = 1; i <= maxRounds; i++) {
+        const maxRoundPowers = allowedPowerCountByRound[i];
+        const roundPowers =
+        orderedSelectedPowers.length <= maxRoundPowers
+            ? orderedSelectedPowers.map((power) => ({ ...power }))
+            : orderedSelectedPowers.slice(0, maxRoundPowers);
+        updatedRounds.push(new Round(i, roundPowers, orderedSelectedItems));
+      }
+      return updatedRounds;
+    });
+    
+    setSelectedItems(rounds[maxRounds - 1].items);
+    setSelectedPowers(rounds[maxRounds - 1].powers);
+    setPendingRound(maxRounds);
+  };
+
+  const initFromImportV2 = (hero, importResult) => {
+    const itemDb = getAllItemsByHero(hero);
+
+    const importedRounds = importResult.roundsPerks.map((roundData, idx) => {
+      const roundId = idx + 1;
+
+      const orderedSelectedItems = roundData
+        .map((id) => itemDb.find((item) => item.id === id))
+        .filter((item) => item !== undefined);
+
+      const orderedSelectedPowers = roundData
+        .map((id) => hero.powers.find((power) => power.id === id))
+        .filter((power) => power !== undefined);
+
+      return new Round(roundId, orderedSelectedPowers, orderedSelectedItems);
+    });
+
+    if (importedRounds.length < maxRounds) {
+      throw new Error("Failed to import all rounds");
+    }
+
+    setRounds(importedRounds);
+    setSelectedItems(importedRounds[0].items);
+    setSelectedPowers(importedRounds[maxRounds - 1].powers);
+    setPendingRound(1);
   };
 
   const initFromImport = (importResult) => {
@@ -57,35 +118,16 @@ export const BuildProvider = ({ children }) => {
       if (!hero) {
         throw new Error("Failed to import: hero not found");
       } else {
-        const itemDb = getAllItemsByHero(hero);
-
-        const importedRounds = importResult.roundsPerks.map(
-          (roundData, idx) => {
-            const roundId = idx + 1;
-
-            const orderedSelectedItems = roundData
-              .map((id) => itemDb.find((item) => item.id === id))
-              .filter((item) => item !== undefined);
-
-            const orderedSelectedPowers = roundData
-              .map((id) => hero.powers.find((power) => power.id === id))
-              .filter((power) => power !== undefined);
-
-            return new Round(
-              roundId,
-              orderedSelectedPowers,
-              orderedSelectedItems
-            );
-          }
-        );
-
-        if (importedRounds.length < maxRounds) {
-          throw new Error("Failed to import all rounds");
+        switch (importResult.version) {
+          case 1:
+            initFromImportV1(hero, importResult);
+            break;
+          case 2:
+            initFromImportV2(hero, importResult);
+            break;
+          default:
+            throw new Error("Unknown import format");
         }
-
-        setRounds(importedRounds);
-        setSelectedItems(importedRounds[0].items);
-        setSelectedPowers(importedRounds[0].powers);
       }
     }
   };

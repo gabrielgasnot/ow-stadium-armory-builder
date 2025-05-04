@@ -5,8 +5,8 @@ const isValidBase64 = (str) => {
   return base64Regex.test(str);
 };
 
-const parseDecodedString = (build) => {
-  const data = build.split("|");
+const callFirstParseDecoder = (build) => {
+  const data = build.split("-");
 
   if (data.length === 0) {
     return undefined;
@@ -14,9 +14,32 @@ const parseDecodedString = (build) => {
 
   // Get the heroId (first element)
   const heroId = data.shift();
+  const perks = [...data];
+
+  return {
+    version: 1,
+    heroId: heroId,
+    selectedPerks: perks,
+  };
+};
+
+const parseDecodedString = (build) => {
+  let data = build.split("|");
+
+  if (data.length === 0) {
+    return undefined;
+  }
+
+  if (data.length === 1) {
+    return callFirstParseDecoder(build);
+  }
+
+  // Get the heroId (first element)
+  const heroId = data.shift();
   const roundsIds = [...data.map((row) => row.split("-"))];
 
   return {
+    version: 2,
     heroId: heroId,
     roundsPerks: roundsIds,
   };
