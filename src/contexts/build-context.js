@@ -138,12 +138,50 @@ export const BuildProvider = ({ children }) => {
     const newSelectedItems = [...selectedItems, item];
     setSelectedItems(newSelectedItems);
     round.items = newSelectedItems;
+
+    if (keepItems) {
+      const roundItemIds = new Set(round.items.map(item => item.id));
+      // Update rounds with selected items
+      setRounds((existingRounds) => {
+        const updatedRounds = [];
+        for (let i = 1; i <= maxRounds; i++) {
+          const existingRound = existingRounds.find((r) => r.roundId === i);
+          // only update future rounds
+          const itemsMatch = existingRound.items.every(item => roundItemIds.has(item.id))
+          if (i > currentRound && itemsMatch) {
+            existingRound.items = newSelectedItems.map((item) => ({ ...item }));
+          }
+          updatedRounds.push(
+            new Round(i, existingRound.powers, existingRound.items)
+          );
+        }
+        return updatedRounds;
+      });
+    }
   };
 
   const removeItem = (item) => {
     const newSelectedItems = selectedItems.filter((i) => i.id !== item.id);
     setSelectedItems(newSelectedItems);
     round.items = newSelectedItems;
+
+    if (keepItems) {
+      // Update rounds with selected items
+      setRounds((existingRounds) => {
+        const updatedRounds = [];
+        for (let i = 1; i <= maxRounds; i++) {
+          const existingRound = existingRounds.find((r) => r.roundId === i);
+          // only update future rounds
+          if (i > currentRound && existingRound.items.length === 0) {
+            existingRound.items = newSelectedItems.map((item) => ({ ...item }));
+          }
+          updatedRounds.push(
+            new Round(i, existingRound.powers, existingRound.items)
+          );
+        }
+        return updatedRounds;
+      });
+    }
   };
 
   const removePerkBuild = (perkType, perk) => {
@@ -178,6 +216,8 @@ export const BuildProvider = ({ children }) => {
 
   const changeRound = useCallback(
     (roundId) => {
+      console.debug("Moving to round: ", roundId);
+      console.debug("Rounds: ", rounds);
       const round = rounds[roundId - 1];
       setSelectedPowers(round.powers);
       setSelectedItems(round.items);
@@ -213,7 +253,7 @@ export const BuildProvider = ({ children }) => {
   }, [selectedPowers.length]);
 
   useEffect(() => {
-    if (pendingRound !== null) {
+    if (pendingRound) {
       changeRound(pendingRound);
       setPendingRound(null);
     }
