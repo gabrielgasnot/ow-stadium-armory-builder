@@ -2,8 +2,15 @@
 
 body {
   font-family: 'BigNoodleTitling', Arial, Helvetica, sans-serif;
-
+  scrollbar-color: white rgb(15, 19, 26);
+  scrollbar-width: thin;
 }
+::-webkit-scrollbar-track { /* Background */
+  background: rgb(15, 19, 26);
+}
+::-webkit-scrollbar-thumb { /* Foreground */
+   background: white;
+ }
 
 #footer {
   position: absolute;
