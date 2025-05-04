@@ -65,7 +65,7 @@ function Details() {
   return (
     <Box ref={captureRef} sx={{ width: "100%" }}>
       <Stack
-        spacing={2}
+        spacing={1}
         sx={{ flexGrow: 1, minHeight: 0, width: "100%", paddingBottom: 3 }}
       >
         <DetailsHeader copyBuild={handleCopy} />

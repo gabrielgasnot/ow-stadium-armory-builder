@@ -38,8 +38,8 @@ const StatBar = ({
       {/* Image on the left */}
       <Box
         sx={{
-          width: 24,
-          height: 24,
+          width: 20,
+          height: 20,
           backgroundImage: `url(${process.env.PUBLIC_URL}/icons/${icon})`,
           backgroundSize: "contain",
           backgroundRepeat: "no-repeat",
@@ -54,7 +54,7 @@ const StatBar = ({
           {...boxEvents}
           sx={{
             width: "100%",
-            height: 24,
+            height: 20,
             backgroundColor: theme.palette.background.default,
             borderRadius: 1,
             overflow: "hidden",
@@ -108,7 +108,8 @@ const StatBar = ({
       </Tooltip>
       <Typography
         sx={{
-          width: 30,
+          width: 35,
+          height: 20,
           textAlign: "right",
           color:
             cappedPositiveImpact > 0

@@ -19,7 +19,7 @@ const StatsPanel = () => {
   );
   const { updateHoverAttributes } = useUI();
   return (
-    <Box display="flex" flexDirection="column" gap={2}>
+    <Box display="flex" flexDirection="column" gap={1}>
       <StatBarLife setHoverAttributes={updateHoverAttributes} />
       {getBasicStatAttributes().map(([attributeType, { icon, name }]) => (
         <StatBar
