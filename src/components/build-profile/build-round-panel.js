@@ -51,6 +51,8 @@ function BuildRoundPanel() {
       {showSticky && (
         <Box
           sx={{
+            display: { xs: "flex", md: "none" },
+            padding: 2,
             position: "fixed",
             top: 53, // adjusted to the app bar height
             left: 0,

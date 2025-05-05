@@ -21,7 +21,7 @@ function BuilderRoundNavigatorDefault({
     if (items.length < 2) return;
 
     const first = items[0].getBoundingClientRect();
-    const target = items[roundCount - 1].getBoundingClientRect(); // adjust index
+    const target = items[roundCount - 1].getBoundingClientRect();
 
     const container = paginationRef.current.getBoundingClientRect();
 
@@ -44,12 +44,12 @@ function BuilderRoundNavigatorDefault({
         justifyContent: "flex-start",
         alignItems: "center",
         width: "100%",
-        minHeight: { xs: "90px", md: "0px" },
+        minHeight: { xs: "60px", md: "0px" },
       }}
     >
       <Typography
         variant="h6"
-        sx={{ margin: { xs: "8px 0 8px 0", md: "0 15px" } }}
+        sx={{ margin: { xs: "0 0 8px 0", md: "0 15px" } }}
       >
         Round
       </Typography>
