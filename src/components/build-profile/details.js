@@ -48,13 +48,16 @@ function Details() {
     const element = exportRef.current;
 
     const canvas = await html2canvas(element, {
-      backgroundColor: theme.palette.background.default, // ensure background is solid
-      ignoreElements: (el) => el.classList?.contains("no-capture"),
+      onclone: (clonedDoc) => {
+        const clonedNode = clonedDoc.body.querySelector('[data-export-target]');
+        if (clonedNode) {
+          clonedNode.style.display = 'block';
+        }
+      },
       scale: 1.25, // higher resolution screenshot
       allowTaint: false,
       imageTimeout: 10000,
       useCORS: true,
-      // foreignObjectRendering: true,
     });
 
     canvas.toBlob(async (blob) => {
@@ -220,25 +223,16 @@ function Details() {
       </Stack>
 
       <div
+        ref={exportRef}
+        data-export-target
         style={{
-          position: "absolute",
-          top: 200,
-          left: 0,
-          zIndex: 9999,
-          backgroundColor: theme.palette.background.default,
+          display: "none",
           height: "auto",
-          pointerEvents: "none", // don't interfere with interaction
-          opacity: 100,
+          width: "3400px",
+          backgroundColor: theme.palette.background.default,
         }}
       >
-        <div ref={exportRef}>
-          <BuildExportCanvas
-            hero={currentHero}
-            allRounds={rounds}
-            selectedItems={selectedItems}
-            shareLink={""}
-          />
-        </div>
+        <BuildExportCanvas hero={currentHero} allRounds={rounds} />
       </div>
     </Box>
   );

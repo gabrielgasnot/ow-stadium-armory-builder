@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Paper } from "@mui/material";
+import { Box, Typography, Paper, Divider, alpha } from "@mui/material";
 import { QRCodeSVG } from "qrcode.react";
 
 function BuildExportHeader({ hero, selectedItems, shareLink }) {
@@ -13,7 +13,7 @@ function BuildExportHeader({ hero, selectedItems, shareLink }) {
         alignItems: "center",
         flexDirection: "row",
         gap: 2,
-        width: "600px",
+        width: "700px",
       }}
     >
       {/* Left Part */}
@@ -46,7 +46,17 @@ function BuildExportHeader({ hero, selectedItems, shareLink }) {
             Overwatchbuilds.com
           </Typography>
         </Box>
-
+        <Divider
+          variant="middle"
+          sx={(theme) => ({
+            backgroundColor: alpha(theme.palette.custom.orange, 0.1),
+            height: "1px",
+            boxShadow: "0px 2px 4px rgba(249, 158, 26, 0.7)",
+            borderRadius: "1px",
+            mt: 2,
+            mb: 2,
+          })}
+        />
         {/* Content */}
         <Box
           sx={{
@@ -85,7 +95,7 @@ function BuildExportHeader({ hero, selectedItems, shareLink }) {
             {/* Name + Icon */}
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <img
-                src={`${process.env.PUBLIC_URL}/roles/${hero.role}.svg`}
+                src={`${process.env.PUBLIC_URL}/roles/pbg/${hero.role}.png`}
                 alt={hero.role}
                 style={{
                   width: 24,
@@ -144,16 +154,7 @@ function BuildExportHeader({ hero, selectedItems, shareLink }) {
         <Typography variant="h6" sx={{ width: "100%", textAlign: "center" }}>
           Scan to access the build
         </Typography>
-        <QRCodeSVG
-          value={shareLink}
-          marginSize={1}
-          imageSettings={{
-            src: `${process.env.PUBLIC_URL}/logo-light.png`,
-            height: 24,
-            width: 24,
-            excavate: true,
-          }}
-        />
+        <QRCodeSVG value={shareLink} marginSize={1} />
       </Box>
     </Paper>
   );

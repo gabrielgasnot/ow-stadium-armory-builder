@@ -9,6 +9,7 @@ import {
 import exportBuild from "../services/export-build";
 import { useHero } from "./hero-context";
 import getAllItemsByHero from "../services/query-items";
+import buildShareLink from '../services/build-share-link';
 
 const BuildContext = createContext();
 
@@ -284,9 +285,7 @@ export const BuildProvider = ({ children }) => {
 
   const shareBuild = () => {
     const encodedBuild = exportBuild(currentHero, rounds);
-    let baseUrl = window.location.origin + window.location.pathname;
-    if (!baseUrl.endsWith("/")) baseUrl += "/";
-    const newShareLink = `${baseUrl}#/${encodedBuild}`;
+    const newShareLink = buildShareLink(encodedBuild);
 
     setEncodedBuildId(encodedBuild);
     setShareLink(newShareLink);

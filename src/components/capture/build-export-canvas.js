@@ -11,11 +11,15 @@ import {
 import PerkMiniCard from "../common/perk-mini-card";
 import StatsSummary from "./stats-summary";
 import BuildExportHeader from "./build-export-header";
+import buildShareLink from "../../services/build-share-link";
+import exportBuild from "../../services/export-build";
 
-function BuildExportCanvas({ hero, allRounds, shareLink, selectedItems }) {
+function BuildExportCanvas({ hero, allRounds }) {
   const powerColumns = 4;
   const itemColumns = 3;
   const itemRows = 2;
+
+  const shareLink = buildShareLink(exportBuild(hero, allRounds));
 
   const getPerkMiniCard = (perks, perkType, index) => {
     return (
@@ -38,6 +42,7 @@ function BuildExportCanvas({ hero, allRounds, shareLink, selectedItems }) {
     <Box sx={{ display: "flex", flexDirection: "column" }}>
       <Box
         sx={{
+          margin: 2,
           padding: 2,
           display: "flex",
           flexDirection: "row",
@@ -46,7 +51,7 @@ function BuildExportCanvas({ hero, allRounds, shareLink, selectedItems }) {
         <BuildExportHeader
           shareLink={shareLink}
           hero={hero}
-          selectedItems={selectedItems}
+          selectedItems={allRounds[6].items}
         />
       </Box>
       <Divider sx={{ color: "white" }} />

@@ -216,7 +216,7 @@ export function StatsProvider({ children }) {
     const sh = { type: "SH", value: currentHero?.shields ?? 0 };
     const lifeStats = [hp, ar, sh];
 
-    if (!hoverPerk && !items && items.length === 0) {
+    if (items?.length === 0) {
       return lifeStats;
     }
 

@@ -8,20 +8,23 @@ import useBasicStatValues from "../../hooks/use-basic-stat-value";
 const StatsSummary = ({ items }) => {
   const { getBasicStatAttributes, calculateStats } = useStats();
 
-  const getItemsAttributeSum = useMemo(
+  const itemsAttributeSum = useMemo(
     () => calculateStats(items),
     [items, calculateStats]
   );
 
+  const getItemsAttributeSum = (type) =>
+    itemsAttributeSum.find((a) => a.type === type)?.value ?? 0;
+
   const { baseValues } = useBasicStatValues(
     getBasicStatAttributes,
-    (type) => getItemsAttributeSum[type] ?? 0,
+    getItemsAttributeSum,
     getBasicStatAttributes
   );
 
   return (
     <Box display="flex" flexDirection="column" gap={1} width="100%">
-      <StatBarLifeSummary items={getItemsAttributeSum} />
+      <StatBarLifeSummary items={items} />
       {getBasicStatAttributes().map(
         ([attributeType, { icon }]) =>
           baseValues[attributeType] > 0 && (
