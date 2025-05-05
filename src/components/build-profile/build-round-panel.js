@@ -52,10 +52,11 @@ function BuildRoundPanel() {
         <Box
           sx={{
             position: "fixed",
-            top: 53, // adjust for your app bar height
+            top: 53, // adjusted to the app bar height
             left: 0,
             right: 0,
             zIndex: 1200,
+            width: "100vw",
             backgroundColor: (theme) => theme.palette.background.paper,
             boxShadow: (theme) => `0px 4px 8px ${theme.palette.custom.orange}`,
           }}
