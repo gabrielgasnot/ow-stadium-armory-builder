@@ -4,14 +4,14 @@ import { useTheme } from "@mui/material/styles";
 import { useHero } from "../../contexts/hero-context";
 import { useStats } from "../../contexts/stats-context";
 
-const StatBarLifeSummary = () => {
+const StatBarLifeSummary = ({ items }) => {
   const theme = useTheme();
-  const { getLifeStatSum } = useStats();
+  const { getLifeStats } = useStats();
   const { currentHero } = useHero();
 
   const lifeStats = useMemo(
-    () => getLifeStatSum(currentHero),
-    [currentHero, getLifeStatSum]
+    () => getLifeStats(currentHero, items),
+    [currentHero, getLifeStats, items]
   );
 
   const calculate = (stats) => {

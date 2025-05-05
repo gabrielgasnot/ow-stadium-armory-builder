@@ -29,7 +29,7 @@ function DetailsHeader({ copyBuild }) {
           backgroundSize: "cover",
           backgroundPosition: "center",
           flexShrink: 0,
-          display: { xs: "none", xl: "block" },
+          display: { xs: "none", lg: "block" },
         }}
       />
 

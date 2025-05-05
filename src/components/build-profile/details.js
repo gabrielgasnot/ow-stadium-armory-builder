@@ -113,7 +113,7 @@ function Details() {
               {[...Array(powerColumns)].map((_, index) => (
                 <Grid
                   item
-                  size={{ xs: 6, sm: 4, md: 6, xl: 3 }}
+                  size={3}
                   key={index}
                   sx={{
                     display: "flex",
@@ -176,7 +176,7 @@ function Details() {
                   <Grid
                     item
                     spacing={2}
-                    size={{ xs: 6, sm: 4, md: 6, lg: 4 }}
+                    size={4}
                     sx={{
                       display: "flex",
                       justifyContent: "center",
@@ -222,14 +222,13 @@ function Details() {
       <div
         style={{
           position: "absolute",
-          top: 0,
+          top: 200,
           left: 0,
           zIndex: 9999,
           backgroundColor: theme.palette.background.default,
-          width: "100vw",
           height: "auto",
           pointerEvents: "none", // don't interfere with interaction
-          opacity: 0,
+          opacity: 100,
         }}
       >
         <div ref={exportRef}>
@@ -237,7 +236,7 @@ function Details() {
             hero={currentHero}
             allRounds={rounds}
             selectedItems={selectedItems}
-            selectedPowers={selectedPowers}
+            shareLink={""}
           />
         </div>
       </div>

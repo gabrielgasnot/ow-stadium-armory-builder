@@ -210,6 +210,73 @@ export function StatsProvider({ children }) {
     return lifeStats;
   };
 
+  const getLifeStats = (currentHero, items) => {
+    const hp = { type: "HP", value: currentHero?.hp ?? 0 };
+    const ar = { type: "AR", value: currentHero?.armor ?? 0 };
+    const sh = { type: "SH", value: currentHero?.shields ?? 0 };
+    const lifeStats = [hp, ar, sh];
+
+    if (!hoverPerk && !items && items.length === 0) {
+      return lifeStats;
+    }
+
+    const summedUpStats = calculateStats(items).map((stat) => ({
+      ...stat,
+    }));
+
+    const flatBonusArray = summedUpStats.filter(
+      (attribute) =>
+        basicLifeStatTypes.includes(attribute.type) && attribute.unit === ""
+    );
+
+    const convertBonusArray = summedUpStats.filter(
+      (attribute) =>
+        convertStatTypes.includes(attribute.type) && attribute.unit === ""
+    );
+
+    const percentBonusArray = summedUpStats.filter(
+      (attribute) =>
+        basicLifeStatTypes.includes(attribute.type) && attribute.unit === "%"
+    );
+
+    // Appliquer les bonus fixes
+    for (const lifeStat of lifeStats) {
+      const flatBonus = flatBonusArray.find(
+        (attribute) => attribute.type === lifeStat.type
+      );
+      if (flatBonus) {
+        lifeStat.value += flatBonus.value ?? 0;
+      }
+    }
+
+    // Convertir HP en AR et SH
+    if (convertBonusArray && convertBonusArray.length > 0) {
+      for (const convertBonus of convertBonusArray) {
+        const { input, output } = conversionTable[convertBonus.type];
+        const lifeStatInput = lifeStats.find((stat) => stat.type === input);
+        const lifeStatOutput = lifeStats.find((stat) => stat.type === output);
+        lifeStatInput.value -= convertBonus.value ?? 0;
+        lifeStatOutput.value += convertBonus.value ?? 0;
+      }
+    }
+
+    // Appliquer les bonus en pourcentage
+    if (!percentBonusArray && percentBonusArray.length > 0) {
+      for (const lifeStat of lifeStats) {
+        const percentBonus = percentBonusArray.find(
+          (attribute) => attribute.type === lifeStat.type
+        );
+        if (percentBonus) {
+          lifeStat.value += Math.ceil(
+            (lifeStat.value * percentBonus.value) / 100
+          );
+        }
+      }
+    }
+
+    return lifeStats;
+  };
+
   return (
     <StatsContext.Provider
       value={{
@@ -218,6 +285,8 @@ export function StatsProvider({ children }) {
         getHoverPerkAttributeSum,
         getBasicStatAttributes,
         getLifeStatSum,
+        calculateStats,
+        getLifeStats,
       }}
     >
       {children}

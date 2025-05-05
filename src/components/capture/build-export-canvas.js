@@ -6,15 +6,17 @@ import {
   CardHeader,
   CardContent,
   Grid,
+  Divider,
 } from "@mui/material";
-import DetailsHeader from "../build-profile/details-header";
 import PerkMiniCard from "../common/perk-mini-card";
 import StatsSummary from "./stats-summary";
+import BuildExportHeader from "./build-export-header";
 
-function BuildExportCanvas({ hero, allRounds }) {
+function BuildExportCanvas({ hero, allRounds, shareLink, selectedItems }) {
   const powerColumns = 4;
   const itemColumns = 3;
   const itemRows = 2;
+
   const getPerkMiniCard = (perks, perkType, index) => {
     return (
       <Box sx={{ textAlign: "center" }}>
@@ -33,32 +35,36 @@ function BuildExportCanvas({ hero, allRounds }) {
   };
 
   return (
-    <>
+    <Box sx={{ display: "flex", flexDirection: "column" }}>
       <Box
         sx={{
-          width: "20%",
           padding: 2,
+          display: "flex",
+          flexDirection: "row",
         }}
       >
-        <DetailsHeader copyBuild={() => null} />
+        <BuildExportHeader
+          shareLink={shareLink}
+          hero={hero}
+          selectedItems={selectedItems}
+        />
       </Box>
+      <Divider sx={{ color: "white" }} />
       <Box
         sx={{
-          width: "100%",
           padding: 2,
           display: "flex",
           flexDirection: "row",
         }}
       >
         {allRounds.map((round, idx) => (
-          <Box key={idx} sx={{ margin: 2 }}>
+          <Box key={idx} sx={{ margin: 2, width: 450 }}>
             <Typography variant="h5">Round {round.roundId}</Typography>
             <Stack
               spacing={1}
               sx={{
                 flexGrow: 1,
                 minHeight: 0,
-                width: "100%",
                 paddingBottom: 3,
               }}
             >
@@ -77,7 +83,7 @@ function BuildExportCanvas({ hero, allRounds }) {
                     {[...Array(powerColumns)].map((_, index) => (
                       <Grid
                         item
-                        size={{ xs: 6, sm: 4, md: 6, xl: 3 }}
+                        size={3}
                         key={index}
                         sx={{
                           display: "flex",
@@ -107,7 +113,7 @@ function BuildExportCanvas({ hero, allRounds }) {
                         <Grid
                           item
                           spacing={2}
-                          size={{ xs: 6, sm: 4, md: 6, lg: 4 }}
+                          size={4}
                           sx={{
                             display: "flex",
                             justifyContent: "center",
@@ -137,7 +143,7 @@ function BuildExportCanvas({ hero, allRounds }) {
                       textAlign: "center",
                     }}
                   >
-                    <StatsSummary />
+                    <StatsSummary items={round.items} />
                   </Grid>
                 </CardContent>
               </Card>
@@ -145,7 +151,7 @@ function BuildExportCanvas({ hero, allRounds }) {
           </Box>
         ))}
       </Box>
-    </>
+    </Box>
   );
 }
 
