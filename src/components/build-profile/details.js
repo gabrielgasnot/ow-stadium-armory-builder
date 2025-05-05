@@ -67,7 +67,13 @@ function Details() {
         ]);
         showMessage("Build copied to clipboard!", "success");
       } catch (err) {
-        showMessage(`Failed to copy: ${err}`, "error");
+        showMessage(`Failed to copy: ${err}, downloading instead.`, "error");
+
+        // Fallback: Download as PNG
+        const link = document.createElement('a');
+        link.download = 'image.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
       }
     });
   };
