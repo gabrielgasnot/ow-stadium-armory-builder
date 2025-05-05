@@ -7,10 +7,11 @@ import {
   CardContent,
   Grid,
 } from "@mui/material";
-import DetailsHeader from "./details-header.js";
-import PerkMiniCard from "../common/perk-mini-card.js";
+import DetailsHeader from "../build-profile/details-header";
+import PerkMiniCard from "../common/perk-mini-card";
+import StatsSummary from "./stats-summary";
 
-function BuildExportCanvas({ allRounds }) {
+function BuildExportCanvas({ hero, allRounds }) {
   const powerColumns = 4;
   const itemColumns = 3;
   const itemRows = 2;
@@ -122,6 +123,21 @@ function BuildExportCanvas({ allRounds }) {
                         </Grid>
                       ))
                     )}
+                  </Grid>
+                </CardContent>
+              </Card>
+
+              <Card className="no-hover">
+                <CardHeader title="Stats" />
+                <CardContent>
+                  <Grid
+                    container
+                    spacing={1}
+                    sx={{
+                      textAlign: "center",
+                    }}
+                  >
+                    <StatsSummary />
                   </Grid>
                 </CardContent>
               </Card>

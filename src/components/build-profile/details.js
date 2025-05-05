@@ -22,7 +22,7 @@ import BuildRoundPanel from "./build-round-panel.js";
 import { useHero } from "../../contexts/hero-context.js";
 import { useUI } from "../../contexts/ui-context.js";
 import { useBuild } from "../../contexts/build-context.js";
-import BuildExportCanvas from "./build-export-canvas.js";
+import BuildExportCanvas from "../capture/build-export-canvas.js";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function Details() {
@@ -234,6 +234,7 @@ function Details() {
       >
         <div ref={exportRef}>
           <BuildExportCanvas
+            hero={currentHero}
             allRounds={rounds}
             selectedItems={selectedItems}
             selectedPowers={selectedPowers}
