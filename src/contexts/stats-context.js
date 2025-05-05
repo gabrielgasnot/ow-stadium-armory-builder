@@ -183,7 +183,7 @@ export function StatsProvider({ children }) {
     }
 
     // Convertir HP en AR et SH
-    if (convertBonusArray && convertBonusArray.length > 0) {
+    if (convertBonusArray?.length > 0) {
       for (const convertBonus of convertBonusArray) {
         const { input, output } = conversionTable[convertBonus.type];
         const lifeStatInput = lifeStats.find((stat) => stat.type === input);
@@ -194,7 +194,7 @@ export function StatsProvider({ children }) {
     }
 
     // Appliquer les bonus en pourcentage
-    if (!percentBonusArray && percentBonusArray.length > 0) {
+    if (percentBonusArray?.length > 0) {
       for (const lifeStat of lifeStats) {
         const percentBonus = percentBonusArray.find(
           (attribute) => attribute.type === lifeStat.type
@@ -250,7 +250,7 @@ export function StatsProvider({ children }) {
     }
 
     // Convertir HP en AR et SH
-    if (convertBonusArray && convertBonusArray.length > 0) {
+    if (convertBonusArray?.length > 0) {
       for (const convertBonus of convertBonusArray) {
         const { input, output } = conversionTable[convertBonus.type];
         const lifeStatInput = lifeStats.find((stat) => stat.type === input);
@@ -261,7 +261,7 @@ export function StatsProvider({ children }) {
     }
 
     // Appliquer les bonus en pourcentage
-    if (!percentBonusArray && percentBonusArray.length > 0) {
+    if (percentBonusArray?.length > 0) {
       for (const lifeStat of lifeStats) {
         const percentBonus = percentBonusArray.find(
           (attribute) => attribute.type === lifeStat.type

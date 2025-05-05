@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Typography, Paper, Divider, alpha } from "@mui/material";
 import { QRCodeSVG } from "qrcode.react";
 
-function BuildExportHeader({ hero, selectedItems, shareLink }) {
+function BuildExportHeader({ hero, shareLink }) {
   return (
     <Paper
       elevation={3}
@@ -13,7 +13,7 @@ function BuildExportHeader({ hero, selectedItems, shareLink }) {
         alignItems: "center",
         flexDirection: "row",
         gap: 2,
-        width: "700px",
+        width: "600px",
       }}
     >
       {/* Left Part */}
@@ -34,7 +34,7 @@ function BuildExportHeader({ hero, selectedItems, shareLink }) {
             src={`${process.env.PUBLIC_URL}/logo-light.png`}
             alt="Overwatch Builds"
             sx={{
-              width: 64,
+              width: 83,
               height: 64,
               objectFit: "contain",
             }}
@@ -95,14 +95,13 @@ function BuildExportHeader({ hero, selectedItems, shareLink }) {
             {/* Name + Icon */}
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <img
-                src={`${process.env.PUBLIC_URL}/roles/pbg/${hero.role}.png`}
+                src={`${process.env.PUBLIC_URL}/roles/png/${hero.role}.png`}
                 alt={hero.role}
                 style={{
                   width: 24,
                   height: 24,
                   marginRight: 8,
                   display: "block",
-                  filter: "invert(1)",
                 }}
               />
               <Typography
@@ -116,26 +115,14 @@ function BuildExportHeader({ hero, selectedItems, shareLink }) {
                 {hero.name}
               </Typography>
             </Box>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "flex-start", // Align left on mobile, center on desktop
-              }}
-            >
-              <Typography component="span" sx={{ mr: 0.5 }}>
-                Total build cost:
-              </Typography>
-              <img
-                src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
-                alt="credits"
-                style={{ width: 24, height: 24, marginRight: 4 }}
-              />
-              <Typography component="span" sx={{ mr: 1 }}>
-                {selectedItems
-                  .map((item) => item.price)
-                  .reduce((a, b) => a + b, 0)}
-              </Typography>
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              Build created{" "}
+              {`${new Date().getFullYear()}-${String(
+                new Date().getMonth() + 1
+              ).padStart(2, "0")}-${String(new Date().getDate()).padStart(
+                2,
+                "0"
+              )}`}
             </Box>
           </Box>
         </Box>

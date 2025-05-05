@@ -62,99 +62,115 @@ function BuildExportCanvas({ hero, allRounds }) {
           flexDirection: "row",
         }}
       >
-        {allRounds.map((round, idx) => (
-          <Box key={idx} sx={{ margin: 2, width: 450 }}>
-            <Typography variant="h5">Round {round.roundId}</Typography>
-            <Stack
-              spacing={1}
-              sx={{
-                flexGrow: 1,
-                minHeight: 0,
-                paddingBottom: 3,
-              }}
-            >
-              <Card className="no-hover" sx={{ height: "100%" }}>
-                <CardHeader title="Powers" />
-                <CardContent>
-                  <Grid
-                    container
-                    spacing={2}
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    {[...Array(powerColumns)].map((_, index) => (
-                      <Grid
-                        item
-                        size={3}
-                        key={index}
-                        sx={{
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                        }}
-                      >
-                        {getPerkMiniCard(round.powers, "power", index)}
-                      </Grid>
-                    ))}
-                  </Grid>
-                </CardContent>
-              </Card>
-
-              <Card className="no-hover">
-                <CardHeader title="Items" />
-                <CardContent>
-                  <Grid
-                    container
-                    spacing={1}
-                    sx={{
-                      textAlign: "center",
-                    }}
-                  >
-                    {[...Array(itemRows)].map((_, rowIndex) =>
-                      [...Array(itemColumns)].map((_, index) => (
+        {/* Do not print rounds without items. */}
+        {allRounds
+          .filter((round) => round.items.length > 0)
+          .map((round, idx) => (
+            <Box key={idx} sx={{ margin: 2, width: 450 }}>
+              <Typography variant="h5">Round {round.roundId}</Typography>
+              <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
+                <Typography variant="body2">Round cost:</Typography>
+                <img
+                  src={`${process.env.PUBLIC_URL}/icons/png/credit.png`}
+                  alt="credits"
+                  style={{ width: 24, height: 24, marginRight: 4 }}
+                />
+                <Typography variant="body2">
+                  {round.items
+                    .map((item) => item.price)
+                    .reduce((a, b) => a + b, 0)}
+                </Typography>
+              </Box>
+              <Stack
+                spacing={1}
+                sx={{
+                  flexGrow: 1,
+                  minHeight: 0,
+                  paddingBottom: 3,
+                }}
+              >
+                <Card className="no-hover" sx={{ height: "100%" }}>
+                  <CardHeader title="Powers" />
+                  <CardContent>
+                    <Grid
+                      container
+                      spacing={2}
+                      sx={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      {[...Array(powerColumns)].map((_, index) => (
                         <Grid
                           item
-                          spacing={2}
-                          size={4}
+                          size={3}
+                          key={index}
                           sx={{
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
                           }}
-                          key={index}
                         >
-                          {getPerkMiniCard(
-                            round.items,
-                            "item",
-                            rowIndex * itemColumns + index
-                          )}
+                          {getPerkMiniCard(round.powers, "power", index)}
                         </Grid>
-                      ))
-                    )}
-                  </Grid>
-                </CardContent>
-              </Card>
+                      ))}
+                    </Grid>
+                  </CardContent>
+                </Card>
 
-              <Card className="no-hover">
-                <CardHeader title="Stats" />
-                <CardContent>
-                  <Grid
-                    container
-                    spacing={1}
-                    sx={{
-                      textAlign: "center",
-                    }}
-                  >
-                    <StatsSummary items={round.items} />
-                  </Grid>
-                </CardContent>
-              </Card>
-            </Stack>
-          </Box>
-        ))}
+                <Card className="no-hover">
+                  <CardHeader title="Items" />
+                  <CardContent>
+                    <Grid
+                      container
+                      spacing={1}
+                      sx={{
+                        textAlign: "center",
+                      }}
+                    >
+                      {[...Array(itemRows)].map((_, rowIndex) =>
+                        [...Array(itemColumns)].map((_, index) => (
+                          <Grid
+                            item
+                            spacing={2}
+                            size={4}
+                            sx={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                            }}
+                            key={index}
+                          >
+                            {getPerkMiniCard(
+                              round.items,
+                              "item",
+                              rowIndex * itemColumns + index
+                            )}
+                          </Grid>
+                        ))
+                      )}
+                    </Grid>
+                  </CardContent>
+                </Card>
+
+                <Card className="no-hover">
+                  <CardHeader title="Stats" />
+                  <CardContent>
+                    <Grid
+                      container
+                      spacing={1}
+                      sx={{
+                        textAlign: "center",
+                      }}
+                    >
+                      <StatsSummary items={round.items} />
+                    </Grid>
+                  </CardContent>
+                </Card>
+              </Stack>
+            </Box>
+          ))}
       </Box>
     </Box>
   );
