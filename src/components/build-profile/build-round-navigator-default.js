@@ -1,19 +1,19 @@
 import React, { useState, useRef, useEffect } from "react";
-import { Box, Typography, Pagination } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+import { Box, Typography, Pagination, PaginationItem } from "@mui/material";
+import { useTheme, alpha } from "@mui/material/styles";
 
 function BuilderRoundNavigatorDefault({
-  roundCount,
+  rounds,
   maxRounds,
   currentRound,
   changeRound,
+  powerByRound,
 }) {
   const theme = useTheme();
   const [startPos, setStartPos] = useState({ x: 0, y: 0 });
   const [endPos, setEndPos] = useState({ x: 0, y: 0 });
   const paginationRef = useRef(null);
   const containerRef = useRef(null);
-
   useEffect(() => {
     if (!paginationRef.current) return;
 
@@ -21,7 +21,7 @@ function BuilderRoundNavigatorDefault({
     if (items.length < 2) return;
 
     const first = items[0].getBoundingClientRect();
-    const target = items[roundCount - 1].getBoundingClientRect();
+    const target = items[currentRound - 1].getBoundingClientRect();
 
     const container = paginationRef.current.getBoundingClientRect();
 
@@ -34,7 +34,15 @@ function BuilderRoundNavigatorDefault({
       x: target.left + target.width / 2 - container.left,
       y: target.top + target.height / 2 - container.top,
     });
-  }, [roundCount]);
+  }, [currentRound]);
+
+  const roundFilled = (roundId) => {
+    const round = rounds[roundId - 1];
+    if (!round) {
+      return false;
+    }
+    return powerByRound[roundId] === round.powers.length && round.items.length > 0;
+  };
 
   return (
     <Box
@@ -100,33 +108,39 @@ function BuilderRoundNavigatorDefault({
               width: "100%",
               padding: 0,
             },
-            "& ul > li:first-of-type .MuiPaginationItem-root": {
-              borderColor: theme.palette.custom.orange,
-            },
-            "& ul > li:nth-of-type(odd) .MuiPaginationItem-root": {
-              transform: "scale(1.2)",
-            },
-            "& .MuiPaginationItem-root": {
-              borderRadius: "50%",
-              minWidth: 36,
-              height: 36,
-              color: theme.palette.text.primary,
-              backgroundColor: theme.palette.background.paper,
-              border: `2px solid ${theme.palette.primary.main}`,
-              transition: "all 0.2s ease-in-out",
-              fontWeight: 700,
-              "&.Mui-selected": {
-                backgroundColor: theme.palette.primary.main,
-                color: theme.palette.text.primary,
-                borderColor: theme.palette.custom.orange,
-                "&:hover": {
-                  backgroundColor: theme.palette.primary.main,
-                },
-              },
-              "&:hover": {
-                backgroundColor: theme.palette.custom.orange,
-              },
-            },
+          }}
+          renderItem={(item) => {
+            const isFilled = roundFilled(item.page);
+            return (
+              <PaginationItem
+                {...item}
+                sx={{
+                  borderRadius: "50%",
+                  minWidth: 36,
+                  height: 36,
+                  transform: item.page % 2 === 1 ? "scale(1.2)" : undefined,
+                  color: theme.palette.text.primary,
+                  backgroundColor: theme.palette.background.default,
+                  border: `2px solid`,
+                  borderColor: isFilled
+                    ? theme.palette.custom.orange
+                    : theme.palette.primary.main,
+                  fontWeight: 700,
+                  transition: "all 0.2s ease-in-out",
+                  "&.Mui-selected": {
+                    backgroundColor: theme.palette.primary.main,
+                    boxShadow: "0 0 3px 3px rgba(5, 160, 250, 0.5)",
+                    color: theme.palette.text.primary,
+                    "&:hover": {
+                      backgroundColor: theme.palette.primary.main,
+                    },
+                  },
+                  "&:hover": {
+                    backgroundColor: theme.palette.custom.orange,
+                  },
+                }}
+              />
+            );
           }}
         />
       </Box>

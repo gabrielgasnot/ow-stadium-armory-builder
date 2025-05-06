@@ -4,20 +4,19 @@ import BuilderRoundNavigatorDefault from "./build-round-navigator-default";
 import { useBuild } from "../../contexts/build-context.js";
 
 function BuildRoundPanel() {
-  const { currentRound, changeRound, currentlyPoweredRound, maxRounds } =
-    useBuild();
+  const { currentRound, changeRound, rounds, maxRounds, allowedPowerCountByRound } = useBuild();
   const xsStickyRef = useRef();
   const [showSticky, setShowSticky] = useState(false);
 
   useEffect(() => {
-    const scrollParent = document.querySelector("#build-main"); // or useRef
+    const scrollParent = document.querySelector("#build-main");
     const node = xsStickyRef.current;
     if (!node) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => setShowSticky(!entry.isIntersecting),
       {
-        root: scrollParent, // default is null (i.e. viewport)
+        root: scrollParent,
         threshold: 0,
       }
     );
@@ -28,6 +27,16 @@ function BuildRoundPanel() {
 
     return () => observer.disconnect();
   }, []);
+
+  const getRoundNavigator = () => (
+    <BuilderRoundNavigatorDefault
+      rounds={rounds}
+      maxRounds={maxRounds}
+      currentRound={currentRound}
+      changeRound={changeRound}
+      powerByRound={allowedPowerCountByRound}
+    />
+  );
 
   return (
     <Paper
@@ -40,12 +49,7 @@ function BuildRoundPanel() {
       }}
     >
       <Box ref={xsStickyRef} width="100%">
-        <BuilderRoundNavigatorDefault
-          roundCount={currentlyPoweredRound}
-          maxRounds={maxRounds}
-          currentRound={currentRound}
-          changeRound={changeRound}
-        />
+        {getRoundNavigator()}
       </Box>
 
       {showSticky && (
@@ -63,12 +67,7 @@ function BuildRoundPanel() {
             boxShadow: (theme) => `0px 4px 8px ${theme.palette.custom.orange}`,
           }}
         >
-          <BuilderRoundNavigatorDefault
-            roundCount={currentlyPoweredRound}
-            maxRounds={maxRounds}
-            currentRound={currentRound}
-            changeRound={changeRound}
-          />
+          {getRoundNavigator()}
         </Box>
       )}
     </Paper>

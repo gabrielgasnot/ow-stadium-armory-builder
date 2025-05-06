@@ -9,7 +9,7 @@ import {
 import exportBuild from "../services/export-build";
 import { useHero } from "./hero-context";
 import getAllItemsByHero from "../services/query-items";
-import buildShareLink from '../services/build-share-link';
+import buildShareLink from "../services/build-share-link";
 
 const BuildContext = createContext();
 
@@ -71,14 +71,14 @@ export const BuildProvider = ({ children }) => {
       for (let i = 1; i <= maxRounds; i++) {
         const maxRoundPowers = allowedPowerCountByRound[i];
         const roundPowers =
-        orderedSelectedPowers.length <= maxRoundPowers
+          orderedSelectedPowers.length <= maxRoundPowers
             ? orderedSelectedPowers.map((power) => ({ ...power }))
             : orderedSelectedPowers.slice(0, maxRoundPowers);
         updatedRounds.push(new Round(i, roundPowers, orderedSelectedItems));
       }
       return updatedRounds;
     });
-    
+
     setSelectedItems(rounds[maxRounds - 1].items);
     setSelectedPowers(rounds[maxRounds - 1].powers);
     setPendingRound(maxRounds);
@@ -330,10 +330,6 @@ export const BuildProvider = ({ children }) => {
     }
   };
 
-  const currentlyPoweredRound = useMemo(() => {
-    return getMaxRoundByPower(selectedPowers.length);
-  }, [selectedPowers.length]);
-
   useEffect(() => {
     if (pendingRound) {
       changeRound(pendingRound);
@@ -361,13 +357,13 @@ export const BuildProvider = ({ children }) => {
         changeRound,
         resetBuild,
         initBuild,
-        currentlyPoweredRound,
         maxRounds,
         estimatedCredits,
         keepItems,
         updateKeepItems,
         initFromImport,
-        rounds
+        rounds,
+        allowedPowerCountByRound
       }}
     >
       {children}
