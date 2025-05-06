@@ -131,7 +131,7 @@ function BuilderRoundNavigatorDefault({
                   transition: "all 0.2s ease-in-out",
                   "&.Mui-selected": {
                     backgroundColor: theme.palette.primary.main,
-                    boxShadow: "0 0 3px 3px rgba(5, 160, 250, 0.5)",
+                    boxShadow: isFilled ? "0 0 3px 3px rgba(249, 158, 26, 0.5)" : "0 0 3px 3px rgba(5, 160, 250, 0.5)",
                     color: theme.palette.text.primary,
                     "&:hover": {
                       backgroundColor: theme.palette.primary.main,
