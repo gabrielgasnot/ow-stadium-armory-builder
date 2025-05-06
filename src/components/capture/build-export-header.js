@@ -78,21 +78,24 @@ function BuildExportHeader({ hero, shareLink }) {
             }}
           >
             Build created on
-            <Box sx={{ display: "flex", flexDirection: "row" }}>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "center",
+              }}
+            >
               <Box
                 component="img"
                 src={`${process.env.PUBLIC_URL}/logo-light.png`}
                 alt="Overwatch Builds"
                 sx={{
-                  width: 42,
-                  height: 32,
+                  width: 32,
+                  height: 24,
                   objectFit: "contain",
                 }}
               />
-              <Typography
-                variant="h4"
-                sx={{ textAlign: "left", alignContent: "baseline" }}
-              >
+              <Typography variant="h4" sx={{ textAlign: "left", ml: 1 }}>
                 Overwatchbuilds.com
               </Typography>
             </Box>
