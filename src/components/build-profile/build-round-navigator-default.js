@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Box, Typography, Pagination, PaginationItem } from "@mui/material";
-import { useTheme, alpha } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
 
 function BuilderRoundNavigatorDefault({
   rounds,
@@ -41,7 +41,9 @@ function BuilderRoundNavigatorDefault({
     if (!round) {
       return false;
     }
-    return powerByRound[roundId] === round.powers.length && round.items.length > 0;
+    return (
+      powerByRound[roundId] === round.powers.length && round.items.length > 0
+    );
   };
 
   return (
