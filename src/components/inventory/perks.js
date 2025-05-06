@@ -33,7 +33,7 @@ function Perks() {
   const { basicItems, heroItems } = useDb()
   const { heroPowers } = useHero();
 
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(3);
 
   const handleChange = (_, newValue) => {
     setValue(newValue);
