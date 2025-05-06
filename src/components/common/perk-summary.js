@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Paper, Typography, Divider } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import HighlightText from "./highlight-text.js"; // Assuming you have a HighlightText component
-import PerkAttributes from "./perk-attributes.js";
+import PerkAttributes from "../common/perk-attributes.js";
 
 export default function PerkSummary({ perk }) {
   const theme = useTheme();
@@ -18,21 +18,22 @@ export default function PerkSummary({ perk }) {
         boxShadow: "0 0 10px 2px rgba(231, 127, 45, 0.4)",
         padding: 2,
         borderRadius: 2,
-        width: "100%", // Make it flexible
-        maxWidth: "350px", // Limit width to keep it compact
-        overflowWrap: "break-word", // Ensure long words break and wrap
-        wordBreak: "break-word", // Word breaking
-        textOverflow: "ellipsis", // Ellipsis for overflowing text (optional)
+        width: "100%", 
+        minWidth: "250px",
+        maxWidth: "350px", 
+        overflowWrap: "break-word", 
+        wordBreak: "break-word", 
+        textOverflow: "ellipsis",
         margin: "auto",
         // For responsiveness
         "@media (max-width: 600px)": {
           maxWidth: "90%", // On smaller screens, take up 90% of the screen width
           padding: 1, // Reduce padding on smaller screens
-        },
+        }
       }}
     >
       <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
-        <Typography variant="h6" fontWeight="bold" noWrap>
+        <Typography variant="h6" noWrap>
           {perk.name}
         </Typography>
       </Box>
@@ -51,7 +52,7 @@ export default function PerkSummary({ perk }) {
         >
           {perk.category && (
             <Typography
-              variant="caption"
+              variant="subtitle1"
               sx={{
                 color: "text.secondary",
               }}

@@ -46,36 +46,30 @@ const owTheme = createTheme({
   },
   typography: {
     fontFamily: "'BigNoodleTitling', sans-serif",
-    fontSize: 16,
+    fontSize: 14, // base size slightly smaller
     h1: {
-      fontFamily: "'BigNoodleTitling', sans-serif",
-      fontSize: "clamp(2rem, 5vw, 3rem)",
-      fontWeight: 700,
-      letterSpacing: ".1rem",
-      lineHeight: 1.2,
+      fontSize: "clamp(1.8rem, 3vw, 2.2rem)",
+      lineHeight: 1.1,
     },
     h2: {
-      fontFamily: "'BigNoodleTitling', sans-serif",
-      fontSize: "clamp(1.8rem, 4vw, 2.5rem)",
-      fontWeight: 700,
-      letterSpacing: ".1rem",
-      lineHeight: 1.3,
+      fontSize: "clamp(1.5rem, 2.5vw, 1.8rem)",
+      lineHeight: 1.2,
+    },
+    h6: {
+      fontSize: "clamp(1.05rem, 1vw, 1.2rem)",
+      lineHeight: 1.2,
+      fontWeight: 400,
+      letterSpacing: "0.05em",
     },
     body1: {
-      fontSize: "clamp(1rem, 2vw, 1.25rem)",
-      fontWeight: 400,
-      letterSpacing: ".05rem",
-      lineHeight: 1.6,
+      fontFamily: "'Titillium Web', sans-serif",
+      fontSize: "clamp(1rem, 1.4vw, 1.1rem)",
+      lineHeight: 1.4,
     },
     body2: {
-      fontSize: "clamp(0.9rem, 1.8vw, 1.1rem)",
-      fontWeight: 400,
-      letterSpacing: ".05rem",
-      lineHeight: 1.6,
-    },
-    button: {
-      fontWeight: 500,
-      textTransform: "none",
+      fontFamily: "'Titillium Web', sans-serif",
+      fontSize: "clamp(0.95rem, 1.2vw, 1rem)",
+      lineHeight: 1.4,
     },
   },
   shape: {
@@ -126,11 +120,42 @@ const owTheme = createTheme({
         root: {
           userSelect: "none",
           color: colors.white,
+          padding: "0.1rem",
+          fontSize: "clamp(1.05rem, 1vw, 1.2rem)",
+          letterSpacing: "0.05em",
           "&:hover": {
             userSelect: "none",
             backgroundColor: alpha(colors.lightBlue, 0.2),
           },
         },
+      },
+    },
+    MuiSwitch: {
+      styleOverrides: {
+        switchBase: ({ theme }) => ({
+          padding: 1,
+          "&.Mui-checked": {
+            transform: "translateX(16px)",
+            color: theme.palette.custom.blue, // thumb color when checked
+            "& + .MuiSwitch-track": {
+              backgroundColor: alpha(theme.palette.custom.blue, 0.5), // track color when checked
+              opacity: 1,
+            },
+          },
+        }),
+        thumb: {
+          width: 24,
+          height: 24,
+          boxShadow: "none",
+        },
+        track: ({ theme }) => ({
+          borderRadius: 26 / 2,
+          backgroundColor: theme.palette.grey[600] || "#666", // track when unchecked
+          opacity: 1,
+          transition: theme.transitions.create(["background-color"], {
+            duration: 500,
+          }),
+        }),
       },
     },
     MuiIconButton: {
@@ -143,17 +168,25 @@ const owTheme = createTheme({
     MuiCardHeader: {
       styleOverrides: {
         root: {
-          padding: "8px 16px 8px 16px",
+          padding: "8px 16px 0px 16px",
         },
       },
     },
     MuiCardContent: {
       styleOverrides: {
         root: {
-          padding: "8px 16px 16px 16px",
+          padding: "0px 8px 8px 8px",
           "&:last-child": {
             paddingBottom: "16px",
+            paddingTop: "8px",
           },
+        },
+      },
+    },
+    MuiCardActions: {
+      styleOverrides: {
+        root: {
+          padding: "4px 8px 8px 8px",
         },
       },
     },
@@ -171,6 +204,63 @@ const owTheme = createTheme({
           "&:active": {
             color: colors.orange, // Active links: same orange as hover
           },
+        },
+      },
+    },
+    MuiTooltip: {
+      styleOverrides: {
+        tooltip: {
+          fontFamily: "'Titillium Web', sans-serif",
+          fontSize: "clamp(0.9rem, 1vw, 1rem)",
+          lineHeight: 1.2,
+          fontWeight: 400,
+          letterSpacing: "0.1em",
+        },
+      },
+    },
+    MuiAccordion: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          backgroundColor: alpha(theme.palette.background.paper, 0.9),
+          borderRadius: theme.shape.borderRadius,
+          boxShadow: "0px 2px 8px rgba(0, 0, 0, 0.5)",
+          marginBottom: theme.spacing(1),
+          overflow: "hidden",
+          transition: "box-shadow 0.3s ease, transform 0.3s ease",
+          "&:before": {
+            display: "none", // remove the default divider line
+          },
+          "&.Mui-expanded": {
+            marginTop: "8px",
+          },
+        }),
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          color: theme.palette.text.primary,
+          padding: "0 16px",
+          minHeight: "48px",
+          "&.Mui-expanded": {
+            minHeight: "48px",
+          },
+        }),
+        content: {
+          margin: "8px 0px 8px 0px",
+          "&.Mui-expanded": {
+            margin: "8px 0px 8px 0px",
+          },
+        },
+        expandIconWrapper: ({ theme }) => ({
+          color: theme.palette.text.primary,
+        }),
+      },
+    },
+    MuiAccordionDetails: {
+      styleOverrides: {
+        root: {
+          padding: "0px 16px 16px",
         },
       },
     },

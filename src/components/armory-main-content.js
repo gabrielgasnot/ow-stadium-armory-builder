@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Box } from "@mui/material";
 import BuildStarter from "../pages/build-starter";
 import BuildMain from "../pages/build-main";
-import AppContext from "../app-context.js";
+import { useHero } from "../contexts/hero-context.js";
 
 function ArmoryMainContent({ importBuild }) {
-  const { currentHero } = useContext(AppContext);
+  const { currentHero } = useHero();
   return (
     <Box
       sx={{
@@ -18,7 +18,7 @@ function ArmoryMainContent({ importBuild }) {
         paddingBottom: { xs: "70px", sm: "40px" },
       }}
     >
-      {!currentHero && <BuildStarter importBuild={importBuild} />}
+      {!currentHero && <BuildStarter currentHero={currentHero} importBuild={importBuild} />}
       {currentHero && <BuildMain />}
     </Box>
   );

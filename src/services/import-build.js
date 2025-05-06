@@ -1,11 +1,11 @@
-import { decompressString } from '../helpers/compression.js';
+import { decompressString } from "../helpers/compression.js";
 
 const isValidBase64 = (str) => {
   const base64Regex = /^[A-Za-z0-9+/=]+$/;
   return base64Regex.test(str);
 };
 
-const parseDecodedString = (build) => {
+const callFirstParseDecoder = (build) => {
   const data = build.split("-");
 
   if (data.length === 0) {
@@ -17,14 +17,37 @@ const parseDecodedString = (build) => {
   const perks = [...data];
 
   return {
+    version: 1,
     heroId: heroId,
-    selectedPerks: perks
+    selectedPerks: perks,
+  };
+};
+
+const parseDecodedString = (build) => {
+  let data = build.split("|");
+
+  if (data.length === 0) {
+    return undefined;
   }
+
+  if (data.length === 1) {
+    return callFirstParseDecoder(build);
+  }
+
+  // Get the heroId (first element)
+  const heroId = data.shift();
+  const roundsIds = [...data.map((row) => row.split("-"))];
+
+  return {
+    version: 2,
+    heroId: heroId,
+    roundsPerks: roundsIds,
+  };
 };
 
 const importBuild = (encodedBuild) => {
   if (isValidBase64(encodedBuild)) {
-    const decodedString = decompressString(encodedBuild) ;
+    const decodedString = decompressString(encodedBuild);
     if (decodedString) {
       return parseDecodedString(decodedString);
     }
