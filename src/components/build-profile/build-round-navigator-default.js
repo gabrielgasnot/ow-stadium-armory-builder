@@ -54,7 +54,7 @@ function BuilderRoundNavigatorDefault({
         justifyContent: "flex-start",
         alignItems: "center",
         width: "100%",
-        minHeight: { xs: "60px", md: "0px" },
+        minHeight: { xs: "80px", md: "0px" },
       }}
     >
       <Typography
