@@ -3,31 +3,32 @@ import { Box, Button, Popper } from "@mui/material";
 import { Details, Perks, PerkSummary } from "../components";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Link as RouterLink } from "react-router-dom";
-import { useContext } from "react";
-import AppContext from "../app-context.js";
+import { useHero } from "../contexts/hero-context.js";
+import { useUI } from "../contexts/ui-context.js";
 
 function BuildMain() {
-  const {
-    loadHero,
-    perkSummaryOpen,
-    perkPopupAnchorEl,
-    summaryPerk,
-    placement,
-  } = useContext(AppContext);
+  const { loadHero } = useHero();
+  const { perkSummaryOpen, perkPopupAnchorEl, summaryPerk, placement } =
+    useUI();
 
   return (
     <Box
+      id="build-main"
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", lg: "row" },
-        height: "100%", // Viewport height
-        overflowY: { xs: "auto", lg: "hidden" },
+        flexDirection: { xs: "column", md: "row" },
+        height: "100%",
+        width: "100%",
+        overflowY: { xs: "auto", md: "hidden" },
+        overflowX: "hidden",
       }}
     >
       {/* Left / Detail panel */}
       <Box
         sx={{
-          width: { xs: "100%", lg: "40%", xl: "28%", xxl: "20%" },
+          minWidth: { xs: "375px", sm: "440px" },
+          maxWidth: { xs: "100%", lg: "600px" },
+          width: { xs: "100%", md: "40%", xl: "20%" },
           flexShrink: 0,
           overflow: "auto",
           paddingTop: 0,
@@ -66,7 +67,7 @@ function BuildMain() {
       <Box
         sx={{
           flexGrow: 1,
-          flexShrink: { xs: 0, lg: 1 },
+          flexShrink: 0,
           overflow: "auto",
           paddingTop: 1,
           paddingBottom: 3,
@@ -74,6 +75,7 @@ function BuildMain() {
           paddingRight: 0,
           boxSizing: "border-box",
           minHeight: 0,
+          width: { xs: "100%", md: "50%", xl: "70%" },
         }}
       >
         <Perks />

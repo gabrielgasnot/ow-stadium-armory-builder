@@ -44,7 +44,7 @@ function ArmoryHeader(props) {
           />
 
           <Typography
-            variant="h6"
+            variant="h5"
             noWrap
             component="a"
             href={`${window.location.origin}${
@@ -59,7 +59,7 @@ function ArmoryHeader(props) {
               textDecoration: "none",
             }}
           >
-            OW Stadium - Armory Builder
+            Overwatch Builds - Armory Builder
           </Typography>
 
           {pages && pages.length > 0 && (
@@ -118,7 +118,7 @@ function ArmoryHeader(props) {
               textDecoration: "none",
             }}
           >
-            Armory Builder
+            Overwatchbuilds
           </Typography>
           {pages && pages.length > 0 && (
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>

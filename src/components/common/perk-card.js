@@ -1,4 +1,4 @@
-import React, { useContext, useTransition } from "react";
+import React, { useTransition } from "react";
 import {
   Card,
   CardContent,
@@ -7,31 +7,40 @@ import {
   Avatar,
   CardActions,
 } from "@mui/material";
-import { getPerkColor } from "../services/color";
-import AppContext from "../app-context.js";
+import { getPerkColor } from "../../services/color";
 import HighlightText from "./highlight-text.js";
 import PerkAttributes from "./perk-attributes.js";
 import { useTheme } from "@mui/material/styles";
+import { useBuild } from "../../contexts/build-context.js";
+import { useHoverAttributes } from "../../hooks/use-hover-attributes";
 
 function PerkCard({ perk, perkType, isSelected, isDisabled }) {
   const theme = useTheme();
-  // eslint-disable-next-line no-unused-vars
-  const [_, startTransition] = useTransition();
-  const { perkGrade, setHoverPerk, addPerkBuild, removePerkBuild } =
-    useContext(AppContext);
+  const [, startTransition] = useTransition();
+  const { checkHoverAttributes, hasHoverAttributes } = useHoverAttributes();
+  const { perkGrade, setHoverPerk, addPerkBuild, removePerkBuild } = useBuild();
+  const matchesAttribute = checkHoverAttributes(perk.attributes);
+
   const isPower = perkType === "power";
 
   return (
     <Card
       sx={{
-        width: { xs: "100%", sm: 400 },
+        width: "100%",
+        minWidth: "300px",
         mx: "auto",
         border: "2px solid",
         backgroundColor:
-          !isSelected && isDisabled
+          (!isSelected && isDisabled) ||
+          (!isPower && hasHoverAttributes && !matchesAttribute)
             ? theme.palette.action.disabledBackground
             : theme.palette.background.paper,
-        borderColor: isSelected ? "#f99e1a" : "transparent",
+        borderColor: (theme) =>
+          isSelected
+            ? theme.palette.custom.orange
+            : hasHoverAttributes && matchesAttribute
+            ? theme.palette.custom.blue
+            : "transparent",
         boxShadow: isSelected ? "0 0 10px 5px rgba(249, 158, 26, 0.7)" : "none",
         transition: "border-color 0.3s ease",
         "&:hover": {
@@ -41,7 +50,7 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
       }}
       onMouseEnter={() =>
         startTransition(() => {
-          if (!isSelected && !isDisabled && !isPower) {
+          if (!isDisabled && !isPower) {
             setHoverPerk(perk);
           }
         })
@@ -66,8 +75,8 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
             src={`${process.env.PUBLIC_URL}/perks/${perk.id}.png`}
             alt={perk.name}
             sx={{
-              width: 70,
-              height: 70,
+              width: 64,
+              height: 64,
               border: getPerkColor(perkGrade),
               backgroundColor: "white",
             }}
@@ -101,7 +110,13 @@ function PerkCard({ perk, perkType, isSelected, isDisabled }) {
 
       {/* Actions: Price */}
       {perk.price && (
-        <CardActions sx={{ justifyContent: "flex-end", marginRight: 2 }}>
+        <CardActions
+          sx={{
+            justifyContent: "flex-end",
+            alignContent: "flex-end",
+            marginRight: 2,
+          }}
+        >
           <img
             src={`${process.env.PUBLIC_URL}/icons/credit.svg`}
             alt="credits"

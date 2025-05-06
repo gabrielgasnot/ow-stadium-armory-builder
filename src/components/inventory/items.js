@@ -1,23 +1,27 @@
 import React from "react";
-import { Stack } from "@mui/material";
-import PerkCard from "./perk-card.js";
+import { Box } from "@mui/material";
+import PerkCard from "../common/perk-card.js";
 
 function Items({ items, grade, selectedIds, isDisabled }) {
   if (items && items.length > 0) {
     return (
-      <Stack
-        direction="row"
-        spacing={2}
-        useFlexGap
+      <Box
         sx={{
-          flexWrap: "wrap",
-          justifyContent: "flex-start",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+          alignItems: "start",
+          gap: 1.5,
+          padding: 2,
+          width: "100%",
+          overflowY: { xs: "hidden", lg: "auto" },
+          minHeight: "auto",
         }}
       >
         {items.map((item) => {
           item.grade = grade;
           return (
             <PerkCard
+              key={item.id}
               perk={item}
               perkType="item"
               isSelected={
@@ -30,7 +34,7 @@ function Items({ items, grade, selectedIds, isDisabled }) {
             />
           );
         })}
-      </Stack>
+      </Box>
     );
   }
 }

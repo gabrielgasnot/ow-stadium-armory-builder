@@ -928,6 +928,7 @@
       },
       {
         "position": 7,
+        "disabled": true,
         "id": "6P005",
         "name": "Equivalent Exchange",
         "description": "You have 3 charges of [Resurrect] with 33% reduced cast time, but their cooldowns only reset at the start of the round"

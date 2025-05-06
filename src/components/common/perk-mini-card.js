@@ -1,26 +1,31 @@
-import React, { useContext, useState, useTransition } from "react";
+import React, { useState, useTransition } from "react";
 import { Box, CardMedia } from "@mui/material";
-import AppContext from "../app-context.js";
 import { useTheme } from "@mui/material/styles";
+import { useUI } from "../../contexts/ui-context.js";
 
-function PerkMiniCard({ perk, perkType, unselectPerk }) {
+function PerkMiniCard({ perk, perkType, setHoverPerk, unselectPerk }) {
   const theme = useTheme();
-  // eslint-disable-next-line no-unused-vars
-  const [_, startTransition] = useTransition();
+  const [, startTransition] = useTransition();
   const isPower = perkType === "power";
 
   const [isTouch, setIsTouch] = useState(false);
-  const { handleShowPerkSummary, handleHidePerkSummary } =
-    useContext(AppContext);
-
+  const { handleShowPerkSummary, handleHidePerkSummary } = useUI();
   const handleTouchStart = () => {
     setIsTouch(true);
   };
 
   const handleMouseEnter = (e) => {
-    if (!isTouch) {
+    if (!isTouch && perk) {
       handleShowPerkSummary(e, perk);
+      if (!isPower) {
+        setHoverPerk(perk);
+      }
     }
+  };
+
+  const handleMouseLeave = () => {
+    setHoverPerk(null);
+    handleHidePerkSummary();
   };
 
   const handleMouseClick = () => {
@@ -30,7 +35,17 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
 
     unselectPerk(perk);
     handleHidePerkSummary();
+    setHoverPerk(null);
   };
+
+  const perkHandlers = perk
+    ? {
+        onClick: () => startTransition(() => handleMouseClick()),
+        onMouseEnter: (e) => startTransition(() => handleMouseEnter(e)),
+        onMouseLeave: () => startTransition(() => handleMouseLeave()),
+        onTouchStart: () => startTransition(() => handleTouchStart()),
+      }
+    : {};
 
   return (
     <Box
@@ -61,26 +76,7 @@ function PerkMiniCard({ perk, perkType, unselectPerk }) {
           },
         },
       }}
-      onClick={() =>
-        startTransition(() => {
-          handleMouseClick();
-        })
-      }
-      onMouseEnter={(e) =>
-        startTransition(() => {
-          handleMouseEnter(e);
-        })
-      }
-      onMouseLeave={() =>
-        startTransition(() => {
-          handleHidePerkSummary();
-        })
-      }
-      onTouchStart={() =>
-        startTransition(() => {
-          handleTouchStart();
-        })
-      }
+      {...perkHandlers}
     >
       {perk && (
         <CardMedia
