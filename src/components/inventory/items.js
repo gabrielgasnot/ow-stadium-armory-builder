@@ -21,6 +21,7 @@ function Items({ items, grade, selectedIds, isDisabled }) {
           item.grade = grade;
           return (
             <PerkCard
+              key={item.id}
               perk={item}
               perkType="item"
               isSelected={
