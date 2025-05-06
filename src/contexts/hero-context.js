@@ -49,7 +49,7 @@ export const HeroProvider = ({ children }) => {
       setCurrentHero(hero);
       setHeroItems(hero.items);
       setHeroPowers(hero.powers);
-      
+
       setAvailableItems({
         common: [...basicItems.common, ...hero.items.common],
         rare: [...basicItems.rare, ...hero.items.rare],
