@@ -66,9 +66,15 @@ function BuildExportCanvas({ hero, allRounds }) {
         {allRounds
           .filter((round) => round.items.length > 0)
           .map((round, idx) => (
-            <Box key={idx} sx={{ margin: 2, width: 450 }}>
+            <Box key={idx} sx={{ margin: 2, width: 350 }}>
               <Typography variant="h5">Round {round.roundId}</Typography>
-              <Box sx={{ display: "flex", flexDirection: "row", justifyContent: "flex-start" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "row",
+                  justifyContent: "flex-start",
+                }}
+              >
                 <Typography variant="body2">Round cost:</Typography>
                 <img
                   src={`${process.env.PUBLIC_URL}/icons/png/credit.png`}

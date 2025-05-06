@@ -49,9 +49,9 @@ function Details() {
 
     const canvas = await html2canvas(element, {
       onclone: (clonedDoc) => {
-        const clonedNode = clonedDoc.body.querySelector('[data-export-target]');
+        const clonedNode = clonedDoc.body.querySelector("[data-export-target]");
         if (clonedNode) {
-          clonedNode.style.display = 'block';
+          clonedNode.style.display = "block";
         }
       },
       scale: 1.25, // higher resolution screenshot
@@ -70,9 +70,9 @@ function Details() {
         showMessage(`Failed to copy: ${err}, downloading instead.`, "error");
 
         // Fallback: Download as PNG
-        const link = document.createElement('a');
-        link.download = 'image.png';
-        link.href = canvas.toDataURL('image/png');
+        const link = document.createElement("a");
+        link.download = "image.png";
+        link.href = canvas.toDataURL("image/png");
         link.click();
       }
     });
@@ -234,7 +234,7 @@ function Details() {
         style={{
           display: "none",
           height: "auto",
-          width: "3400px",
+          width: "2700px",
           backgroundColor: theme.palette.background.default,
         }}
       >
