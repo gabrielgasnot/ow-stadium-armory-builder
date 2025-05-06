@@ -11,7 +11,7 @@ import {
 import { useBuild } from "../contexts/build-context.js";
 import { useDb } from "../contexts/db-context.js";
 
-function Heroes({ currentHero, isSmallScreen }) {
+function Heroes({ currentHero }) {
   const { heroes, roles } = useDb();
   const { initBuild } = useBuild();
 
@@ -70,38 +70,23 @@ function Heroes({ currentHero, isSmallScreen }) {
                 sx={{
                   display: "flex",
                   alignItems: "center",
-                  flexDirection: { xs: "column", md: "row" },
+                  flexDirection: "column",
                   justifyContent: "flex-start",
                   gap: 2,
                   mb: 2,
                 }}
               >
-                {isSmallScreen ? (
-                  <Divider
-                    flexItem
-                    orientation="horizontal"
-                    variant="middle"
-                    sx={{
-                      "&::before, &::after": {
-                        borderColor: "#ffffff",
-                      },
-                      height: 1,
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        width: { xs: 64, md: 100 },
-                        height: { xs: 64, md: 100 },
-                        borderRadius: 1,
-                        backgroundImage: `url(${process.env.PUBLIC_URL}/roles/${role}.svg)`,
-                        filter: "invert(1)",
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        flexShrink: 0,
-                      }}
-                    />
-                  </Divider>
-                ) : (
+                <Divider
+                  flexItem
+                  orientation="horizontal"
+                  variant="middle"
+                  sx={{
+                    "&::before, &::after": {
+                      borderColor: "#ffffff",
+                    },
+                    height: 1,
+                  }}
+                >
                   <Box
                     sx={{
                       width: { xs: 64, md: 100 },
@@ -114,14 +99,14 @@ function Heroes({ currentHero, isSmallScreen }) {
                       flexShrink: 0,
                     }}
                   />
-                )}
+                </Divider>
 
                 <Stack
                   direction="row"
                   spacing={2}
                   useFlexGap
                   sx={{
-                    justifyContent: { xs: "center", md: "flex-start" },
+                    justifyContent: "center",
                     alignItems: "center",
                     flexWrap: "wrap",
                   }}

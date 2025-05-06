@@ -1,19 +1,10 @@
 import React, { useState } from "react";
-import {
-  Box,
-  Typography,
-  Button,
-  Divider,
-  useMediaQuery,
-  useTheme,
-} from "@mui/material";
+import { Box, Typography, Button, Divider } from "@mui/material";
 import ContentCopy from "@mui/icons-material/ContentCopy";
 import { Heroes, ImportBuildModal } from "../components";
 
 function BuildStarter({ currentHero, importBuild }) {
   const [importOpen, setImportOpen] = useState(false);
-  const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <Box
@@ -27,27 +18,24 @@ function BuildStarter({ currentHero, importBuild }) {
       <Typography variant="h5" component="h2" gutterBottom>
         Select a hero to start your build
       </Typography>
-      <Heroes currentHero={currentHero} isSmallScreen={isSmallScreen} />
-      {isSmallScreen ? (
-        <Divider
-          flexItem
-          orientation="horizontal"
-          variant="middle"
-          sx={{
-            "&::before, &::after": {
-              borderColor: "#ffffff",
-            },
-          }}
-        >
-          <Typography variant="h5" component="h2" gutterBottom>
-            Or
-          </Typography>
-        </Divider>
-      ) : (
+      <Heroes currentHero={currentHero} />
+
+      <Divider
+        flexItem
+        orientation="horizontal"
+        variant="middle"
+        sx={{
+          justifyContent: "center",
+          "&::before, &::after": {
+            borderColor: "#ffffff",
+            width: "25em",
+          },
+        }}
+      >
         <Typography variant="h5" component="h2" gutterBottom>
           Or
         </Typography>
-      )}
+      </Divider>
 
       <Button
         variant="outlined"
