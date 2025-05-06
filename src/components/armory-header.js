@@ -59,7 +59,7 @@ function ArmoryHeader(props) {
               textDecoration: "none",
             }}
           >
-            Overwatchbuilds - Armory Builder
+            Overwatch Builds - Armory Builder
           </Typography>
 
           {pages && pages.length > 0 && (
