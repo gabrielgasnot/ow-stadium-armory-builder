@@ -59,7 +59,7 @@ function ArmoryHeader(props) {
               textDecoration: "none",
             }}
           >
-            OW Stadium - Armory Builder
+            Overwatchbuilds - Armory Builder
           </Typography>
 
           {pages && pages.length > 0 && (
@@ -118,7 +118,7 @@ function ArmoryHeader(props) {
               textDecoration: "none",
             }}
           >
-            Armory Builder
+            Overwatchbuilds
           </Typography>
           {pages && pages.length > 0 && (
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
