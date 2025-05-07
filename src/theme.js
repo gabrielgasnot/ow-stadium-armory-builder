@@ -71,6 +71,9 @@ const owTheme = createTheme({
       fontSize: "clamp(0.95rem, 1.2vw, 1rem)",
       lineHeight: 1.4,
     },
+    caption: {
+      fontFamily: "'Titillium Web', sans-serif",
+    },
   },
   shape: {
     borderRadius: 8,
