@@ -7,6 +7,7 @@ import { useHero } from "./hero-context";
 const convertStatTypes = ["CHA", "CHS"];
 const basicLifeStatTypes = ["AR", "HP", "SH"];
 const lifeStatTypes = [...basicLifeStatTypes, ...convertStatTypes];
+const notBasicStats = [...lifeStatTypes, "KR"];
 
 const conversionTable = {
   CHA: { input: "HP", output: "AR" },
@@ -119,7 +120,7 @@ export function StatsProvider({ children }) {
 
   const getBasicStatAttributes = () =>
     Object.entries(attributeTypes).filter(
-      ([type]) => !lifeStatTypes.includes(type)
+      ([type]) => !notBasicStats.includes(type)
     );
 
   const getLifeStatSum = (currentHero, withHoverPerk = false) => {
