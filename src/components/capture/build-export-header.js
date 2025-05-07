@@ -1,7 +1,12 @@
 import React from "react";
 import { Box, Typography, Paper } from "@mui/material";
 
-function BuildExportHeader({ hero, shareLink }) {
+function BuildExportHeader({ hero }) {
+  const dt = new Date();
+  const year = dt.getFullYear();
+  const month = (dt.getMonth() + 1).toString().padStart(2, "0");
+  const day = dt.getDate().toString().padStart(2, "0");
+
   return (
     <Paper
       elevation={3}
@@ -99,6 +104,17 @@ function BuildExportHeader({ hero, shareLink }) {
                 Overwatchbuilds.com
               </Typography>
             </Box>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "flex-end",
+              alignItems: "flex-end",
+            }}
+          >
+            <Typography variant="caption">
+              {year}-{month}-{day}
+            </Typography>
           </Box>
         </Box>
       </Box>
