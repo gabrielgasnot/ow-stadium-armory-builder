@@ -483,7 +483,7 @@
           "category": "Survival",
           "attributes": [
             {
-              "type": "AL",
+              "type": "ALS",
               "value": 15,
               "unit": "%"
             },
@@ -1384,10 +1384,6 @@
               "type": "[Biotic Orb] Tendril Range",
               "value": 30,
               "unit": "%"
-            },
-            {
-              "type": "description",
-              "value": "+15% Ability Power, +30% [Biotic Orb] Tendril Range"
             }
           ]
         },
@@ -2101,7 +2097,7 @@
             },
             {
               "type": "description",
-              "value": "15% Ultimate Cost Reduction, convert 100 Health to Armor, when you use Dragonblade, heal your Armor fully"
+              "value": "Convert 100 Health to Armor, when you use Dragonblade, heal your Armor fully"
             }
           ]
         }
@@ -3482,7 +3478,7 @@
           "attributes": [
             {
               "type": "WP",
-              "value": 10,
+              "value": 5,
               "unit": "%"
             },
             {
@@ -3771,7 +3767,7 @@
           "attributes": [
             {
               "type": "RS",
-              "value": 10,
+              "value": 20,
               "unit": "%"
             },
             {
@@ -3812,7 +3808,7 @@
             },
             {
               "type": "description",
-              "value": "[Combat Roll] reduces [Flashbang] cooldown"
+              "value": "[Combat Roll] reduces [Flashbang] cooldown by 2s"
             }
           ]
         },
@@ -4484,7 +4480,7 @@
             },
             {
               "type": "description",
-              "value": "+75 Shield, during [Glide Boost], gain 10% Damage Reduction"
+              "value": "During [Glide Boost], gain 10% Damage Reduction"
             }
           ]
         },
