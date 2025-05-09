@@ -11,7 +11,7 @@
         "position": 12,
         "id": "5P009",
         "name": "Smashing!",
-        "description": "When you deal damage with [Rocket Hammer], gain 5% Move Speed and 4% Weapon Lifesteal for 3s, stacking up to 5 times."
+        "description": "When you deal damage with [Rocket Hammer], gain 2% Move Speed and 4% Weapon Lifesteal for 3s, stacking up to 5 times."
       },
       {
         "position": 11,
@@ -65,7 +65,7 @@
         "position": 9,
         "id": "5P006",
         "name": "Impact Burst",
-        "description": "[Fire Strike] triggers an explosion the first time it hits an enemy, dealing 20% of its damage in a 3m radius."
+        "description": "[Fire Strike] triggers an explosion the first time it hits an enemy, dealing 15% of its damage in a 3m radius."
       },
       {
         "position": 10,
@@ -1191,7 +1191,7 @@
         "position": 6,
         "id": "26P002",
         "name": "Precarious Potency",
-        "description": "Allies healed by your [Biotic Grasp] are healed for an additional 20% of [Biotic Grasp]'s healing over 5s"
+        "description": "Allies healed by your [Biotic Grasp] are healed for an additional 25% of [Biotic Grasp]'s healing over 5s"
       },
       {
         "position": 2,
@@ -1251,7 +1251,7 @@
         "position": 12,
         "id": "26P012",
         "name": "Destruction's Divide",
-        "description": "[Coalescence] can be toggled between pure healing or pure damage, with 25% greater effect"
+        "description": "[Coalescence] can be toggled between pure healing or pure damage, with 30% greater effect"
       }
     ],
     "items": {
@@ -1470,7 +1470,7 @@
         "position": 4,
         "id": "19P010",
         "name": "Countermeasures",
-        "description": "When you mitigate 150 damage with [Defense Matrix], automatically fire 2 [Micro Missiles]"
+        "description": "When you mitigate 100 damage with [Defense Matrix], automatically fire 2 [Micro Missiles]"
       },
       {
         "position": 7,
@@ -1500,13 +1500,13 @@
         "position": 6,
         "id": "19P002",
         "name": "Ultrawide Matrix",
-        "description": "Increase the size of Defense Matrix by 50% and its duration by 20%"
+        "description": "Increase the size of Defense Matrix by 50% and its duration by 25%"
       },
       {
         "position": 9,
         "id": "19P011",
         "name": "Stat Boost",
-        "description": "During the first 2s of [Boosters], [Defense Matrix] recovers 100% faster"
+        "description": "During the first 2s of [Boosters], [Defense Matrix] recovers 125% faster"
       },
       {
         "position": 12,
@@ -1551,7 +1551,7 @@
           "attributes": [
             {
               "type": "description",
-              "value": "Every 300 damage you mitigate with [Defense Matrix] reduces [Micro Missiles] cooldown by 1s"
+              "value": "Every 200 damage you mitigate with [Defense Matrix] reduces [Micro Missiles] cooldown by 1s"
             }
           ]
         },
@@ -1693,7 +1693,7 @@
           "attributes": [
             {
               "type": "WP",
-              "value": 10,
+              "value": 20,
               "unit": "%"
             },
             {
@@ -1716,7 +1716,7 @@
             },
             {
               "type": "description",
-              "value": "Gain 5% of damage mitigated by [Defense Matrix] as Ultimate Charge"
+              "value": "Gain 10% of damage mitigated by [Defense Matrix] as Ultimate Charge"
             }
           ]
         },
@@ -2606,12 +2606,12 @@
           "attributes": [
             {
               "type": "MS",
-              "value": 10,
+              "value": 5,
               "unit": "%"
             },
             {
               "type": "description",
-              "value": "While within 12m of an enemy with a [Wound], gain 10% Move Speed and 5% Attack Speed"
+              "value": "While within 12m of an enemy with a [Wound], gain 5% Move Speed and 10% Attack Speed"
             }
           ]
         }
@@ -2690,7 +2690,7 @@
           "attributes": [
             {
               "type": "AP",
-              "value": 25,
+              "value": 15,
               "unit": "%"
             },
             {
@@ -2797,7 +2797,7 @@
       {
         "id": "13P004",
         "name": "Pre-Workout",
-        "description": "Gain Weapon Lifesteal and Ability Lifesteal equal to 20% of [Energy]"
+        "description": "Gain Weapon Lifesteal and Ability Lifesteal equal to 15% of [Energy]"
       },
       {
         "id": "13P005",
@@ -2822,7 +2822,7 @@
       {
         "id": "13P009",
         "name": "Lifelift",
-        "description": "+50% [Particle Barrier] size. Increase [Particle Barrier] Health by 50% of Bonus Max Life."
+        "description": "+50% [Particle Barrier] size. Increase [Particle Barrier] Health by 25% of Bonus Max Life."
       },
       {
         "id": "13P010",
@@ -3934,7 +3934,7 @@
         "position": 1,
         "id": "29P002",
         "name": "Head Honcho",
-        "description": "Each unscoped shot you land increases the damage of the next scoped shot you land by 3%, up to 30%. Resets on reload"
+        "description": "Each unscoped shot you land increases the damage of the next scoped shot you land by 5%, up to 30%. Resets on reload"
       },
       {
         "position": 3,
@@ -3994,7 +3994,7 @@
         "position": 11,
         "id": "29P012",
         "name": "B.O.B. Jr.",
-        "description": "[B.O.B.] costs 50% less Ultimate Charge but has reduced Life, 50% reduced Attack Speed, and is significantly smaller"
+        "description": "[B.O.B.] costs 50% less Ultimate Charge but has reduced Life, 20% reduced Attack Speed, and is significantly smaller"
       }
     ],
     "items": {
@@ -4166,7 +4166,7 @@
             },
             {
               "type": "description",
-              "value": "Deal 25% increased damage to Burning enemies"
+              "value": "Deal 20% increased damage to Burning enemies"
             }
           ]
         },
@@ -4838,7 +4838,7 @@
         "position": 3,
         "id": "16P003",
         "name": "Sonic Boom",
-        "description": "[Sonic Amplifier] Damage heals all allies affected by [Crossfade] equal to 20% of damage dealt"
+        "description": "[Sonic Amplifier] Damage heals all allies affected by [Crossfade] equal to 30% of damage dealt"
       },
       {
         "position": 4,
@@ -4874,13 +4874,13 @@
         "position": 9,
         "id": "16P009",
         "name": "Crowd Pleaser",
-        "description": "After using [Soundwave], heal all allies affected by [Crossfade] for 150% of [Crossfade] healing."
+        "description": "After using [Soundwave], heal all allies affected by [Crossfade] for 100% of [Crossfade] healing."
       },
       {
         "position": 10,
         "id": "16P010",
         "name": "Let's Bounce",
-        "description": "[Soundwave] has 30% increased knockback and deals 40 bonus damage if the target hits a wall"
+        "description": "[Soundwave] has 25% increased knockback and deals 25 bonus damage if the target hits a wall"
       },
       {
         "position": 11,
@@ -4907,7 +4907,7 @@
           "attributes": [
             {
               "type": "AP",
-              "value": 10,
+              "value": 5,
               "unit": "%"
             },
             {
@@ -5050,12 +5050,12 @@
           "attributes": [
             {
               "type": "AP",
-              "value": 20,
+              "value": 15,
               "unit": "%"
             },
             {
               "type": "[Amp It Up] Duration",
-              "value": 33,
+              "value": 25,
               "unit": "%"
             }
           ]

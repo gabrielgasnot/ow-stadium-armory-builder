@@ -815,7 +815,7 @@
         },
         {
           "type": "description",
-          "value": "When you use an ability, gain 20% Move Speed for 2s"
+          "value": "When you use an ability, gain 10% Move Speed for 2s"
         }
       ]
     },
@@ -1305,7 +1305,7 @@
         },
         {
           "type": "WP",
-          "value": 10,
+          "value": 5,
           "unit": "%"
         },
         {
