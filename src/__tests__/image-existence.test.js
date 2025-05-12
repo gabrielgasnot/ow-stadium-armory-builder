@@ -1,8 +1,10 @@
 import fs from "fs";
 import path from "path";
-import { basicItems, heroes } from "../db/db";
+import { getLocalizedItems, getLocalizedHeroes } from "../db/db";
 
 describe("Image existence check", () => {
+  const basicItems = getLocalizedItems();
+  const heroes = getLocalizedHeroes();
   const items = [...basicItems.common, ...basicItems.rare, ...basicItems.epic];
   const hero_items_perks = heroes
     .map((hero) => [
