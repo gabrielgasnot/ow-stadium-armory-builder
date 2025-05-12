@@ -2,12 +2,12 @@ import { Box } from "@mui/material";
 import PerkCard from "../common/perk-card";
 import { useHero } from "../../contexts/hero-context";
 import { useBuild } from "../../contexts/build-context";
-import { Perk } from "../../models/perk";
+import { Power } from "../../models/power";
 
 function Powers() {
   const { heroPowers } = useHero();
   const { selectedPowers } = useBuild();
-  const selectedIds = [...selectedPowers.map((sp: Perk) => sp.id)];
+  const selectedIds = [...selectedPowers.map((sp: Power) => sp.id)];
   if (heroPowers && heroPowers.length > 0) {
     return (
       <Box
@@ -39,7 +39,7 @@ function Powers() {
           minHeight: "auto",
         }}
       >
-        {heroPowers.map((power: Perk) => (
+        {heroPowers.map((power: Power) => (
           <PerkCard
             key={power.id}
             perk={power}
