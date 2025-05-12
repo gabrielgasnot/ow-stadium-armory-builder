@@ -1,0 +1,20 @@
+export default {
+    AR: "Armure",
+    HP: "Points de vie",
+    SH: "Bouclier",
+    WP: "Puissance d'arme",
+    WPLS: "Vol de vie de l'arme",
+    AP: "Puissance de capacité",
+    ALS: "Vol de vie des capacités",
+    AS: "Vitesse d'attaque",
+    RS: "Vitesse de rechargement",
+    MS: "Vitesse de déplacement",
+    CR: "Réduction des temps de recharge",
+    CD: "Dégâts critiques",
+    MD: "Dégâts de mélée",
+    KR: "Knockback Resist",
+    MA: "Munitions maximum",
+    CHS: "Points de vie convertis en Bouclier",
+    CHA: "Points de vie convertis en Armure",
+  };
+  

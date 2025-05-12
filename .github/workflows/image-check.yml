@@ -21,4 +21,4 @@ jobs:
         run: npm ci
 
       - name: Run image existence test
-        run: npm test -- --testPathPattern=image-existence
+        run: npm test
