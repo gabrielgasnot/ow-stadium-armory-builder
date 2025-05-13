@@ -1,5 +1,5 @@
-import { Box, Button, Popper } from "@mui/material";
-import { Details, Perks, PerkSummary } from "../components";
+import { Box, Button, Popper, useMediaQuery, useTheme } from "@mui/material";
+import { ArmoryFooter, Details, Perks, PerkSummary } from "../components";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Link as RouterLink } from "react-router-dom";
 import { useHero } from "../contexts/hero-context";
@@ -7,6 +7,8 @@ import { useUI } from "../contexts/ui-context";
 import { useTranslation } from "react-i18next";
 
 function BuildMain() {
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const { t } = useTranslation("common");
   const { loadHero } = useHero();
   const { perkSummaryOpen, perkPopupAnchorEl, summaryPerk, placement } =
@@ -71,7 +73,7 @@ function BuildMain() {
           flexShrink: 0,
           overflow: "auto",
           paddingTop: 1,
-          paddingBottom: 3,
+          paddingBottom: { xs: 0, md: 3 },
           paddingLeft: 0,
           paddingRight: 0,
           boxSizing: "border-box",
@@ -94,6 +96,8 @@ function BuildMain() {
           </Box>
         )}
       </Popper>
+
+      {!isDesktop && <ArmoryFooter />}
     </Box>
   );
 }

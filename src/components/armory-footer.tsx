@@ -1,7 +1,9 @@
-import { Box, Paper, Link } from "@mui/material";
+import { Box, Paper, Link, useMediaQuery } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@mui/material/styles";
 
 function ArmoryFooter() {
+  const theme = useTheme();
   const { t, i18n } = useTranslation("footer");
   const needSpace = i18n.language === "en";
 
@@ -9,7 +11,9 @@ function ArmoryFooter() {
     <Paper
       elevation={3}
       style={{
-        position: "fixed",
+        position: `${
+          useMediaQuery(theme.breakpoints.up("md")) ? "fixed" : "relative"
+        }`,
         bottom: 0,
         left: 0,
         right: 0,

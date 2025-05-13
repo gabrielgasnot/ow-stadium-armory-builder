@@ -1,7 +1,14 @@
 import { useState } from "react";
-import { Box, Typography, Button, Divider } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Button,
+  Divider,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 import ContentCopy from "@mui/icons-material/ContentCopy";
-import { Heroes, ImportBuildModal } from "../components";
+import { ArmoryFooter, Heroes, ImportBuildModal } from "../components";
 import { useTranslation } from "react-i18next";
 
 interface BuildStarterProps {
@@ -10,6 +17,8 @@ interface BuildStarterProps {
 }
 
 function BuildStarter({ currentHero, importBuild }: BuildStarterProps) {
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const [importOpen, setImportOpen] = useState(false);
   const { t } = useTranslation("common");
 
@@ -19,7 +28,7 @@ function BuildStarter({ currentHero, importBuild }: BuildStarterProps) {
         width: "100%",
         textAlign: "center",
         overflowY: "auto",
-        paddingBottom: "10px",
+        paddingBottom: { xs: 0, md: "10px" },
       }}
     >
       <Typography variant="h5" component="h2" gutterBottom>
@@ -40,7 +49,7 @@ function BuildStarter({ currentHero, importBuild }: BuildStarterProps) {
         }}
       >
         <Typography variant="h5" component="h2" gutterBottom>
-        {t("or")}
+          {t("or")}
         </Typography>
       </Divider>
 
@@ -52,6 +61,7 @@ function BuildStarter({ currentHero, importBuild }: BuildStarterProps) {
           userSelect: "none",
           fontWeight: 700,
           mt: 1,
+          mb: { xs: 1, md: 0 },
           px: 4, // more horizontal padding
           py: 1.5, // more vertical padding
           fontSize: "1.1rem",
@@ -69,6 +79,8 @@ function BuildStarter({ currentHero, importBuild }: BuildStarterProps) {
       >
         {t("importBuild")}
       </Button>
+
+      {!isDesktop && <ArmoryFooter />}
 
       <ImportBuildModal
         open={importOpen}
