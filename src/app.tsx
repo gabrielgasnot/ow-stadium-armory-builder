@@ -6,7 +6,13 @@ import {
   ArmoryMainContent,
   LoadingComponent,
 } from "./components";
-import { Box, ThemeProvider, CssBaseline } from "@mui/material";
+import {
+  Box,
+  ThemeProvider,
+  CssBaseline,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import owTheme from "./theme";
 import { HashRouter } from "react-router-dom";
 import ShareBuildModal from "./components/services/share-build";
@@ -35,6 +41,9 @@ function AppContent() {
     useBuild();
 
   const { snackBarMessage, setSnackBarMessage, snackBarCategory } = useUI();
+
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   useEffect(() => {
     if (!hasNavigated.current && encodedString) {
@@ -88,8 +97,7 @@ function AppContent() {
         {/* Main Content Area */}
         <ArmoryMainContent importBuild={navigation} />
 
-        {/* Footer */}
-        <ArmoryFooter />
+        {isDesktop && <ArmoryFooter />}
         <div
           id="focus-dummy"
           tabIndex={-1}

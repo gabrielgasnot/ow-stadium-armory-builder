@@ -1154,19 +1154,19 @@ export default {
     position: 2,
     name: "Boum Supersonique",
     description:
-      "Les personnages alliés affectés par [CrossVolatilité] reçoivent des soins égaux à 30% des dégâts infligés par [Ampli].",
+      "Les personnages alliés affectés par [Crossfade] reçoivent des soins égaux à 30% des dégâts infligés par [Ampli].",
   },
   "16P004": {
     position: 4,
     name: "Mixtape",
     description:
-      "Lorsque vous passez au [Beat de soins], [CrossVolatilité] prodigue 50% de ses soins pour chaque seconde d'utilisation du [Beat de vitesse].",
+      "Lorsque vous passez au [Beat de soins], [Crossfade] prodigue 50% de ses soins pour chaque seconde d'utilisation du [Beat de vitesse].",
   },
   "16P005": {
     position: 5,
     name: "Megaphone",
     description:
-      "Durée de [Volume max.] augmenté de 15%. Tant que [Volume max.] est actif, le rayon de [CrossVolatilité] est augmenté de 150%.",
+      "Durée de [Volume max.] augmenté de 15%. Tant que [Volume max.] est actif, le rayon de [Crossfade] est augmenté de 150%.",
   },
   "16P006": {
     position: 6,
@@ -1190,7 +1190,7 @@ export default {
     position: 10,
     name: "Ovation",
     description:
-      "Après avoir utilisé [Onde sonore], vous soignez tous les personnages alliés affectés par [Crossface] à hauteur de 100% des soins de [CrossVolatilité].",
+      "Après avoir utilisé [Onde sonore], vous soignez tous les personnages alliés affectés par [Crossfade] à hauteur de 100% des soins de [Crossfade].",
   },
   "16P010": {
     position: 9,

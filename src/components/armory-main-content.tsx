@@ -18,7 +18,7 @@ function ArmoryMainContent({ importBuild }: ArmoryMainContentProps) {
         overflow: "hidden",
         height: "100%",
         width: "100%",
-        paddingBottom: { xs: "90px", sm: "40px" },
+        paddingBottom: { xs: "0px", md: "40px" },
       }}
     >
       {!currentHero && (

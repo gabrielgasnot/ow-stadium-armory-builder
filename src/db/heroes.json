@@ -1391,7 +1391,7 @@
           "id": "14W001",
           "price": 4000,
           "category": "Weapon",
-          "attributes": [{ "type": "RS", "value": 10, "unit": "%" }]
+          "attributes": [{ "type": "RS", "value": 20, "unit": "%" }]
         },
         {
           "id": "14A001",
