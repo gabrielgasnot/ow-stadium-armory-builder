@@ -1,5 +1,8 @@
+import { Item } from "./item";
+import { Power } from "./power";
+
 export interface Round {
   id: number;
-  items: string[];
-  powers: string[];
+  items: Item[];
+  powers: Power[];
 }
