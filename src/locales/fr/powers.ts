@@ -75,7 +75,7 @@ export default {
     position: 4,
     name: "Ruine Tourbillonnante",
     description:
-      "Les tirs à courte portée (7 m) de vos [Pompes funèbres] augmentent votre vitesse d'attaque de 5% pendant 1 s. Cet effet peut se cumuler 8 fois.",
+      "Les tirs à courte portée (7 m) de vos [Pompes funèbres] augmentent votre vitesse d'attaque de 4% pendant 1 s. Cet effet peut se cumuler 10 fois.",
   },
   "2P002": {
     position: 2,
@@ -803,7 +803,7 @@ export default {
     position: 5,
     name: "Doux Rêve",
     description:
-      "[Fléchette hypodermique] peut toucher les personnages alliés pour leur rendre 100% de leurs points de vie maximum en 8s au lieu de les endormir.",
+      "[Fléchette hypodermique] peut toucher les personnages alliés pour leur rendre 80% de leurs points de vie maximum en 4s au lieu de les endormir.",
   },
   "22P005": {
     position: 6,
@@ -821,13 +821,13 @@ export default {
     position: 7,
     name: "Remède Maison",
     description:
-      "[Grenade biotique] octroie un surplus de points de vie égal à 100% de ses soins.",
+      "[Grenade biotique] octroie un surplus de points de vie égal à 200% de ses soins.",
   },
   "22P008": {
     position: 9,
     name: "Vénéneuse",
     description:
-      "[Grenade biotique] inflige 30 points de dégâts supplémentaires aux personnages adverses affectés pendant sa durée.",
+      "[Grenade biotique] inflige 50 points de dégâts supplémentaires aux personnages adverses affectés pendant sa durée.",
   },
   "22P009": {
     position: 8,

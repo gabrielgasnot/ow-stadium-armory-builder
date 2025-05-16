@@ -75,7 +75,7 @@ export default {
     position: 3,
     name: "Revolving Ruin",
     description:
-      "Close-range (7m) [Hellfire Shotgun] hits grant 5% Attack Speed for 1s, stacking up to 8 times",
+      "Close-range (7m) [Hellfire Shotgun] hits grant 4% Attack Speed for 1s, stacking up to 10 times",
   },
   "2P002": {
     position: 5,
@@ -784,7 +784,7 @@ export default {
     position: 5,
     name: "Dreamy",
     description:
-      "[Sleep Dart] can hit allies, healing 100% of their max Life over 8s instead of putting them to sleep",
+      "[Sleep Dart] can hit allies, healing 80% of their max Life over 4s instead of putting them to sleep",
   },
   "22P005": {
     position: 4,
@@ -802,13 +802,13 @@ export default {
     position: 7,
     name: "Home Remedy",
     description:
-      "[Biotic Grenade] applies Overhealth equal to 100% of its healing",
+      "[Biotic Grenade] applies Overhealth equal to 200% of its healing",
   },
   "22P008": {
     position: 9,
     name: "Venomous",
     description:
-      "[Biotic Grenade] deals an additional 30 damage over its duration to enemies affected by it",
+      "[Biotic Grenade] deals an additional 50 damage over its duration to enemies affected by it",
   },
   "22P009": {
     position: 8,
