@@ -645,7 +645,7 @@ export default {
   "22S003": [
     {
       type: "description",
-      value: "While affected by [Biotic Grenade], Ana gains 100 Overhealth",
+      value: "While affected by [Biotic Grenade], Ana gains 150 Overhealth",
     },
   ],
   "22W004": [

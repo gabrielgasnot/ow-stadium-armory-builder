@@ -672,7 +672,7 @@ export default {
   "22S003": [
     {
       type: "description",
-      value: "Si vous bénéficiez des effets de [Grenade biotique], vous gagnez un surpluus de 100 points de vie.",
+      value: "Si vous bénéficiez des effets de [Grenade biotique], vous gagnez un surpluus de 150 points de vie.",
     },
   ],
   "22W004": [
