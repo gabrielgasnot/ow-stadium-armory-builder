@@ -10,6 +10,7 @@ export default {
       // DPS
       29, // Ashe
       14, // Cassidy
+      43, // Freja
       2, // Faucheur
       43, // Freja
       21, // Genji
