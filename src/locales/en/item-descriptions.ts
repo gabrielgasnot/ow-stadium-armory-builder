@@ -991,7 +991,7 @@ export default {
   "00S001": [
     {
       type: "description",
-      value: "At the start of the round, gain 100 unrecoverable Overhealth",
+      value: "At the start of the round and everytime you respawn, gain 100 unrecoverable Overhealth",
     },
   ],
   "00S002": [
