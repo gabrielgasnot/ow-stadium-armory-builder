@@ -256,4 +256,13 @@ export default {
   "00S024": { position: 8, name: "Soin Martiens" },
   "00S025": { position: 9, name: "Catalyseur Nébuleux" },
   "00S026": { position: 10, name: "Champ Réducteur d'Ogundimu" },
+  "43W001": { position: 2, name: "Écharpe du Sillage" },
+  "43W002": { position: 1, name: "Balise de Suivi" },
+  "43W003": { position: 1, name: "Tyrolienne Portable" },
+  "43A001": { position: 1, name: "Bottes de Marchevent" },
+  "43A002": { position: 1, name: "Maelström Magnétique" },
+  "43S001": { position: 1, name: "Cape Aérienne" },
+  "43S002": { position: 2, name: "Marque de Chasseuse" },
+  "43S003": { position: 3, name: "Garrot" },
+  "43S004": { position: 1, name: "Pointes Toxiques" },
 };

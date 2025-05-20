@@ -760,6 +760,7 @@ export default {
       value: "Damage dealt to Burning targets grants 20% more Ultimate Charge",
     },
   ],
+  "29A004": [{ type: "[Dynamite] Explosion Radius", value: 40, unit: "%" }],
   "29S001": [
     {
       type: "description",
@@ -991,7 +992,8 @@ export default {
   "00S001": [
     {
       type: "description",
-      value: "At the start of the round, gain 100 unrecoverable Overhealth",
+      value:
+        "At the start of the round and everytime you respawn, gain 100 unrecoverable Overhealth",
     },
   ],
   "00S002": [
@@ -1207,7 +1209,7 @@ export default {
   "00S017": [
     {
       type: "description",
-      value: "The first time you die each round, revive at 200 Life after 3s",
+      value: "The first time you die each round, revive at 250 Life after 3s",
     },
   ],
   "00S018": [
@@ -1265,6 +1267,57 @@ export default {
       type: "description",
       value:
         "When you take damage, gain 0.5% Damage Reduction for 1s, stacking up to 20 times",
+    },
+  ],
+  "43W001": [{ type: "[Quick Dash] Distance", value: 25, unit: "%" }],
+  "43W002": [
+    {
+      type: "description",
+      value:
+        "When [Take Aim] bolt sticks an enemy, increase your Attack Speed by 20% for 3s",
+    },
+  ],
+  "43W003": [
+    {
+      type: "description",
+      value: "Elimination reset both charges of [Quick Dash] Cooldown.",
+    },
+  ],
+  "43A001": [{ type: "[Updraft] Height", value: 20, unit: "%" }],
+  "43A002": [
+    {
+      type: "description",
+      value:
+        "[Bola Shot] pulls in nearby enemies even when it misses with 50% reduced pull strength.",
+    },
+  ],
+  "43S001": [
+    { type: "[Take Aim] Slowed Momentum Duration", value: 100, unit: "%" },
+    {
+      type: "description",
+      value:
+        "While momentum is slowed by [Take Aim], restore 5% Max Life every 1s.",
+    },
+  ],
+  "43S002": [
+    {
+      type: "description",
+      value:
+        "Enemies with a Bounty of 750 or more are revealed to you within 40m. Eliminating them grants 250 additional Stadium Cash.",
+    },
+  ],
+  "43S003": [
+    {
+      type: "description",
+      value:
+        "After using [Updraft], reset [Quick Dash] and gain 50 Overhealth for 5s.",
+    },
+  ],
+  "43S004": [
+    {
+      type: "description",
+      value:
+        "[Take Aim] bolt sticks and explosions slow enemies by 30%, but takes 1s longer to explode.",
     },
   ],
 };

@@ -3,7 +3,7 @@ export default {
     position: 11,
     name: "Renversant!",
     description:
-      "Lorsque vous infligez des dégâts avec [Marteau à réaction], vous gagnez 5% de vitesse de déplacement et votre arme gagne 4% de vol de vie pendant 3 s. Cet effet peut se cumuler 5 fois.",
+      "Lorsque vous infligez des dégâts avec [Marteau à réaction], vous gagnez 1% de vitesse de déplacement et votre arme gagne 3% de vol de vie pendant 2 s. Cet effet peut se cumuler 10 fois.",
   },
   "5P012": {
     position: 12,
@@ -15,13 +15,13 @@ export default {
     position: 4,
     name: "Wilhelmwagen",
     description:
-      "Tant que votre [Écran] est déployé, vous vous soignez à hauteur de 15% des points de vie que vous bloquez et votre vitesse de déplacement augmenten de 30%.",
+      "Tant que votre [Écran] est déployé, vous vous soignez à hauteur de 5% des points de vie que vous bloquez et votre vitesse de déplacement augmenten de 30%.",
   },
   "5P007": {
     position: 3,
     name: "Rejoignez-moi, Camarades !",
     description:
-      "Tant que votre [Écran] est actif, les personnages alliés à moins de 5 m sont soignés à hauteur de 3% de vos points de vie maximum chaque seconde.",
+      "Tant que votre [Écran] est actif, les personnages alliés à moins de 5 m sont soignés à hauteur de 4% de vos points de vie maximum chaque seconde.",
   },
   "5P001": {
     position: 1,
@@ -187,7 +187,7 @@ export default {
     position: 6,
     name: "Cratère",
     description:
-      "Le rayon d'explosion de [Roquette LX] augmente de 40% et les dégâts de l'explosion augmentent de 25%.",
+      "Le rayon d'explosion de [Roquette LX] augmente de 40% et les dégâts de l'explosion augmentent de 15%.",
   },
   "15P009": {
     position: 7,
@@ -1208,5 +1208,77 @@ export default {
     name: "Chute de Rythme",
     description:
       "Le coût de votre capacité ultime est réduit de 20%. Atterir sur une cible adverse avec [Mur de son] inflige jusqu'à 200 points de dégâts.",
+  },
+  "43P001": {
+    position: 1,
+    name: "Cyclone",
+    description:
+      "Lorsque vous utilisez [Courant ascendant], vous tirez un carreau de [Dans le mille] dans la direction ciblée par votre viseur.",
+  },
+  "43P002": {
+    position: 3,
+    name: "Tête Chercheuse",
+    description:
+      "Lorsqu'un carreau de [Dans le mille] colle à la cible, vous envoyez automatiquement dans sa direction 3 carreaux d'arbalète supplémentaires qui infligent des dégâts réduits de 66 %.",
+  },
+  "43P003": {
+    position: 4,
+    name: "Tir sismique",
+    description:
+      "Le rayon d'explosion de [Dans le mille] augmente de 33 %. Cet effet est doublé si le carreau est collé à la cible.",
+  },
+  "43P004": {
+    position: 2,
+    name: "Enfiler l'aiguille",
+    description:
+      "Les carreaux de [Dans le mille] transpercent les adversaires. Les explosions supplémentaires infligent des dégâts réduits de 66 %.",
+  },
+  "43P005": {
+    position: 7,
+    name: "Poches Profondes",
+    description:
+      "Lorsque vous utilisez une capacité, vous récupérez 50% de votre maximum de munitions.",
+  },
+  "43P006": {
+    position: 5,
+    name: "Herboriste",
+    description:
+      "Pendant 2 s après l'utilisation de [Ruée rapide], les tirs réussis de votre [arbalète Rafale] vous rendent 3 % de vos points de vie maximum.",
+  },
+  "43P007": {
+    position: 6,
+    name: "Performance Maximale",
+    description:
+      "Tant que vous attaquez avec votre [arbalète Rafale], votre vitesse de chute est réduite de 80 %.",
+  },
+  "43P008": {
+    position: 8,
+    name: "Renouveau",
+    description:
+      "Les tirs d'[arbalète Rafale] qui touchent des cibles piégées par [Dans le mille] ou [Tir de bolas] réduisent le temps de recharge de vos capacités de 5 % et vous rendent 1 munition.",
+  },
+  "43P009": {
+    position: 9,
+    name: "Volée à deux",
+    description:
+      "Tous les cinq tirs à l'[arbalète Rafale], vous projetez 2 carreaux supplémentaires qui infligent des dégâts réduis de 50 %.",
+  },
+  "43P010": {
+    position: 11,
+    name: "Lille Fælde",
+    description:
+      "Après [Courant ascendant], votre prochain [Dans le mille] depuis les airs ne projette plus de carreau explosif, mais déclenche à la place un [Tir de bolas] qui inflige des dégâts réduits de 60 %.",
+  },
+  "43P011": {
+    position: 10,
+    name: "Cuisson parfaite",
+    description:
+      "La zone de dégâts de [Tir de bolas] persiste pendant 3 s et inflige des dégâts augmentés de 50 %. Les éliminations à l'aide de [Tir de bolas] comptent pour [Chasseuse de primes].",
+  },
+  "43P012": {
+    position: 12,
+    name: "Bourrasque Puissante",
+    description:
+      "[Courant ascendant] projette une rafale dans la direction de votre viseur, ce qui repousse les adversaires et leur inflige 40 points de dégâts.",
   },
 };

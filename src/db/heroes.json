@@ -59,7 +59,7 @@
           "price": 4000,
           "category": "Ability",
           "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
+            { "type": "AP", "value": 5, "unit": "%" },
             { "type": "[Fire Strike] Radius", "value": 50, "unit": "%" }
           ]
         }
@@ -106,8 +106,8 @@
           "price": 10000,
           "category": "Ability",
           "attributes": [
-            { "type": "AP", "value": 20, "unit": "%" },
-            { "type": "Fire Strike Projectile Speed", "value": 50, "unit": "%" }
+            { "type": "AP", "value": 10, "unit": "%" },
+            { "type": "Fire Strike Projectile Speed", "value": 25, "unit": "%" }
           ]
         }
       ]
@@ -1532,10 +1532,7 @@
           "id": "29A004",
           "price": 10000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 15, "unit": "%" },
-            { "type": "[Dynamite] Explosion Radius", "value": 40, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
         },
         {
           "id": "29A005",
@@ -1849,6 +1846,95 @@
           "price": 9000,
           "category": "Survival",
           "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+        }
+      ]
+    }
+  },
+  {
+    "id": 43,
+    "hp": 225,
+    "armor": 0,
+    "shields": 0,
+    "role": "Damage",
+    "powers": [
+      "43P001",
+      "43P002",
+      "43P003",
+      "43P004",
+      "43P005",
+      "43P006",
+      "43P007",
+      "43P008",
+      "43P009",
+      "43P010",
+      "43P011",
+      "43P012"
+    ],
+    "items": {
+      "common": [],
+      "rare": [
+        {
+          "id": "43W001",
+          "price": 4000,
+          "category": "Weapon",
+          "attributes": [
+            { "type": "HP", "value": 25, "unit": "" },
+            { "type": "WP", "value": 5, "unit": "%" }
+          ]
+        },
+        {
+          "id": "43W002",
+          "price": 4000,
+          "category": "Weapon",
+          "attributes": [{ "type": "MA", "value": 30, "unit": "%" }]
+        },
+
+        {
+          "id": "43A001",
+          "price": 4000,
+          "category": "Ability",
+          "attributes": [
+            { "type": "HP", "value": 25, "unit": "" },
+            { "type": "CR", "value": 5, "unit": "%" }
+          ]
+        },
+        {
+          "id": "43S001",
+          "price": 4000,
+          "category": "Survival",
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+        },
+        {
+          "id": "43S002",
+          "price": 4000,
+          "category": "Survival",
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+        },
+        {
+          "id": "43S003",
+          "price": 4000,
+          "category": "Survival",
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+        }
+      ],
+      "epic": [
+        {
+          "id": "43W003",
+          "price": 10000,
+          "category": "Weapon",
+          "attributes": [{ "type": "WP", "value": 15, "unit": "%" }]
+        },
+        {
+          "id": "43A002",
+          "price": 10000,
+          "category": "Ability",
+          "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
+        },
+        {
+          "id": "43S004",
+          "price": 9000,
+          "category": "Survival",
+          "attributes": [{ "type": "HP", "value": 50, "unit": "" }]
         }
       ]
     }

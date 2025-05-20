@@ -48,9 +48,9 @@
     { "id": "00S002", "price": 1000, "category": "Survival", "attributes": [] },
     {
       "id": "00S003",
-      "price": 1000,
+      "price": 1500,
       "category": "Survival",
-      "attributes": [{ "type": "HP", "value": 10, "unit": "" }]
+      "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
     },
     {
       "id": "00S004",
@@ -125,7 +125,7 @@
     },
     {
       "id": "00W011",
-      "price": 5000,
+      "price": 5500,
       "category": "Weapon",
       "attributes": [
         { "type": "WP", "value": 10, "unit": "%" },
@@ -134,7 +134,7 @@
     },
     {
       "id": "00W012",
-      "price": 5500,
+      "price": 6000,
       "category": "Weapon",
       "attributes": [{ "type": "WP", "value": 15, "unit": "%" }]
     },
@@ -184,16 +184,16 @@
     },
     {
       "id": "00A010",
-      "price": 5000,
+      "price": 4500,
       "category": "Ability",
       "attributes": [
-        { "type": "AP", "value": 5, "unit": "%" },
-        { "type": "CR", "value": 10, "unit": "%" }
+        { "type": "AP", "value": 10, "unit": "%" },
+        { "type": "CR", "value": 5, "unit": "%" }
       ]
     },
     {
       "id": "00A011",
-      "price": 5500,
+      "price": 6000,
       "category": "Ability",
       "attributes": [{ "type": "AP", "value": 20, "unit": "%" }]
     },
@@ -334,13 +334,13 @@
     },
     {
       "id": "00W022",
-      "price": 13500,
+      "price": 14000,
       "category": "Weapon",
       "attributes": [{ "type": "WP", "value": 25, "unit": "%" }]
     },
     {
       "id": "00W023",
-      "price": 13000,
+      "price": 14500,
       "category": "Weapon",
       "attributes": [
         { "type": "WP", "value": 20, "unit": "%" },
@@ -424,9 +424,9 @@
     },
     {
       "id": "00A021",
-      "price": 13500,
+      "price": 14000,
       "category": "Ability",
-      "attributes": [{ "type": "AP", "value": 40, "unit": "%" }]
+      "attributes": [{ "type": "AP", "value": 35, "unit": "%" }]
     },
     {
       "id": "00S017",
@@ -436,7 +436,7 @@
     },
     {
       "id": "00S018",
-      "price": 9500,
+      "price": 9000,
       "category": "Survival",
       "attributes": [{ "type": "HP", "value": 50, "unit": "" }]
     },
@@ -448,7 +448,7 @@
     },
     {
       "id": "00S020",
-      "price": 9500,
+      "price": 10000,
       "category": "Survival",
       "attributes": [
         { "type": "AR", "value": 50, "unit": "" },
