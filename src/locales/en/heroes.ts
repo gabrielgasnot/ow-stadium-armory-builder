@@ -10,6 +10,7 @@ export default {
     // DPS
     29, // Ashe
     14, // Cassidy
+    43, // Freja
     21, // Genji
     20, // Mei
     2, // Reaper
@@ -41,5 +42,6 @@ export default {
     "16": "Lucio",
     "6": "Mercy",
     "26": "Moira",
+    "43": "Freja",
   },
 };

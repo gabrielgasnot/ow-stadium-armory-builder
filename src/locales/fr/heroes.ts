@@ -6,15 +6,16 @@ export default {
       34, // Junker Queen
       5, // Reinhardt
       13, // Zarya
-  
+
       // DPS
       29, // Ashe
       14, // Cassidy
+      43, // Freja
       2, // Faucheur
       21, // Genji
       20, // Mei
       15, // Soldat 76
-  
+
       // Support
       22, // Ana
       6, // Ange
@@ -41,6 +42,6 @@ export default {
       "16": "Lucio",
       "6": "Ange",
       "26": "Moira",
+      "43": "Freja",
     },
   };
-  

@@ -1178,4 +1178,76 @@ export default {
     description:
       "20% Ultimate Cost Reduction. Landing on an enemy with [Sound Barrier] deals up to 200 damage",
   },
+  "43P001": {
+    position: 1,
+    name: "Cyclone",
+    description:
+      "When you use [Updraft], fire a [Take Aim] bold at your crosshair.",
+  },
+  "43P002": {
+    position: 2,
+    name: "Seekerpoint",
+    description:
+      "When [Take Aim] bolt sticks an enemy, automatically fire 3 additional crossbow shots at them that deal 66% reduced damage.",
+  },
+  "43P003": {
+    position: 3,
+    name: "Seismic Shot",
+    description:
+      "[Take Aim] explosion radius is increased by 33%. Double this if the bolt is stuck to a target.",
+  },
+  "43P004": {
+    position: 4,
+    name: "Thread the needle",
+    description:
+      "[Take Aim] bolts pierce enemies. Additional explosions deal 66% reduced damage.",
+  },
+  "43P005": {
+    position: 5,
+    name: "Deep Pockets",
+    description:
+      "When you use an ability, restore 50% of your Max Ammo.",
+  },
+  "43P006": {
+    position: 6,
+    name: "Forager",
+    description:
+      "For 2s after using [Quick Dash], [Revdraw Crossbow] hits heal you for 3% of your Max Life,",
+  },
+  "43P007": {
+    position: 7,
+    name: "Peak Performance",
+    description:
+      "While firing [Revdraw Crowbow], your fall speed is decreased by 80%.",
+  },
+  "43P008": {
+    position: 8,
+    name: "Redux",
+    description:
+      "[Revdraw Crossbow] hits against targets stuck by a [Take Aim] bot or [Bola Shot] reduce the cooldown of your abilities by 5% and refunds 1 ammo.",
+  },
+  "43P009": {
+    position: 9,
+    name: "Volley à deux",
+    description:
+      "Every fifth [Revdraw Crossbow] shot fires an additional 2 bolts in a spread that deal 50% reduced domage.",
+  },
+  "43P010": {
+    position: 10,
+    name: "Liile Fælde",
+    description:
+      "After using [Updraft], your next [Take Aim] while airborn fires a [Bola Shot] that deals 60% reduced damage instead of an explosive bolt.",
+  },
+  "43P011": {
+    position: 11,
+    name: "So cooked",
+    description:
+      "[Bola Shot]'s damaging zone deals 50% more damage and lingers for 3s. [Bola Shot] eliminations count towards [Bounty Hunting].",
+  },
+  "43P012": {
+    position: 12,
+    name: "Mighty Gust",
+    description:
+      "[Updraft] launches a wind blast towards your crosshair, knocking back enemies and dealing 40 damage.",
+  },
 };
