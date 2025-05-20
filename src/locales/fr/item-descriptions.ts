@@ -80,10 +80,28 @@ export default {
         "Vous pouvez voler et bénéficiez d'une vitesse de déplacement augmentée de 20% pendant l'utilisation de [Forme spectrale].",
     },
   ],
+  "2S005": [
+    {
+      type: "Vitesse de déplacement pendant [Forme spectrale]",
+      value: 15,
+      unit: "%",
+    },
+    { type: "Durée de [Forme spectrale]", value: 33, unit: "%" },
+  ],
   "2A001": [
+    { type: "Temps de lancement de [Voie des ombres]", value: 30, unit: "%" },
     {
       type: "description",
-      value: "Using [Wraith Form] reduces the cooldown of [Shadow Step] by 2s",
+      value:
+        "[Forme spectrale] réduit le temps de recharge de [Voie des ombres] de 2 s.",
+    },
+  ],
+  "2A003": [
+    { type: "Rayon d'[Éclosion Mortelle]", value: 25, unit: "%" },
+    {
+      type: "Vitesse de déplacement pendant [Éclosion Mortelle]",
+      value: 20,
+      unit: "%",
     },
   ],
   "2S006": [
@@ -1396,7 +1414,8 @@ export default {
   "43W003": [
     {
       type: "description",
-      value: "Les éliminations réinitialisent le temps de recharge de deux charges de [Ruée rapide].",
+      value:
+        "Les éliminations réinitialisent le temps de recharge de deux charges de [Ruée rapide].",
     },
   ],
   "43A001": [{ type: "Hauteur de [Courant ascendant]", value: 20, unit: "%" }],
@@ -1408,7 +1427,11 @@ export default {
     },
   ],
   "43S001": [
-    { type: "Durée de déplacement ralenti de [Dans le mille]", value: 100, unit: "%" },
+    {
+      type: "Durée de déplacement ralenti de [Dans le mille]",
+      value: 100,
+      unit: "%",
+    },
     {
       type: "description",
       value:

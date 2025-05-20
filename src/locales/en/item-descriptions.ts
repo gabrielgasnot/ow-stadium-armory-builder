@@ -71,10 +71,27 @@ export default {
         "While in Wraith Form, gain the ability to fly and gain 20% Move Speed",
     },
   ],
+  "2S005": [
+    {
+      type: "Move Speed during [Wraith Form]",
+      value: 15,
+      unit: "%",
+    },
+    { type: "[Wraith Form] Duration", value: 33, unit: "%" },
+  ],
   "2A001": [
+    { type: "[Shadow Step] Cast Speed", value: 30, unit: "%" },
     {
       type: "description",
       value: "Using [Wraith Form] reduces the cooldown of [Shadow Step] by 2s",
+    },
+  ],
+  "2A003": [
+    { type: "[Death Blossom] Radius", value: 25, unit: "%" },
+    {
+      type: "Move Speed during [Death Blossom]",
+      value: 20,
+      unit: "%",
     },
   ],
   "2S006": [

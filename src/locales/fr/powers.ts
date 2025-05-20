@@ -217,7 +217,7 @@ export default {
     position: 6,
     name: "Secouriste Militaire",
     description:
-      "Chaque intervalle de 1 s d'utilisation du [Caducée] augmente la vitesse d'attaque de [Miséricorde] de 4% (cumulable 10 fois). Cet effet perdure jusqu'à ce que vous rechargiez votre arme ou repreniez votre caducée.",
+      "Chaque intervalle de 1 s d'utilisation du [Caducée] augmente la vitesse d'attaque de [Miséricorde] de 4 % (cumulable 10 fois). Cet effet perdure jusqu'à ce que vous rechargiez votre arme ou repreniez votre caducée.",
   },
   "6P002": {
     position: 8,
@@ -239,40 +239,39 @@ export default {
   },
   "6P005": {
     position: 7,
-    disabled: true,
     name: "Échange Équivalent",
     description:
-      "Vous disposez de 3 charges de [Résurrection] avec un temps d'incantation réduit de 33%, mais leurs temps de rechargement n'est réinitialisé qu'à la fin de la manche.",
+      "[Résurrection] dispose de 3 charges et son temps de lancement est réduit de 33 %, mais son temps de recharge ne se réinitialise qu'au début d'une manche.",
   },
   "6P006": {
     position: 10,
     name: "Unité de Triage",
     description:
-      "Lorsque vous utilisez [Ange Gardien] sur un personnage allié ayant moins de 50% de points de vie, votre [Caducée] lui rend 30% de points de vie su pplémentaires pendant 3 s.",
+      "Lorsque vous utilisez [Ange Gardien] sur un personnage allié ayant moins de 50% de points de vie, votre [Caducée] lui rend 30 % de points de vie supplémentaires pendant 3 s.",
   },
   "6P007": {
     position: 2,
     name: "Fils du Destin",
     description:
-      "Votre [Caducée] affecte aussi votre cible précédente pendant 3 s avec une efficacité de 50%.",
+      "Votre [Caducée] affecte aussi votre cible précédente pendant 3 s avec une efficacité de 50 %.",
   },
   "6P008": {
     position: 3,
     name: "Rayon Protecteur",
     description:
-      "Les cibles de votre [Caducée] ayant plus de 80% de leurs points de vie bénéficient de 10% de réduction des dégâts.",
+      "Les cibles de votre [Caducée] ayant plus de 80% de leurs points de vie bénéficient de 10 % de réduction des dégâts.",
   },
   "6P009": {
     position: 4,
     name: "Sérénité",
     description:
-      "[Guérison favorable] rend 20% de points de vie supplémentaires et vous soigne même lorsque vous aidez un personnage allié ayant tous ses points de vie.",
+      "[Guérison favorable] rend 20 % de points de vie supplémentaires et vous soigne même lorsque vous aidez un personnage allié ayant tous ses points de vie.",
   },
   "6P010": {
     position: 1,
     name: "Distorsion",
     description:
-      "Les personnages alliés boostés par votre [Caducée] gagnent un effet de vol de vie de 20%.",
+      "Les personnages alliés boostés par votre [Caducée] gagnent un effet de vol de vie de 20 %.",
   },
   "6P011": {
     position: 11,
@@ -290,7 +289,7 @@ export default {
     position: 2,
     name: "Débordement Optimal",
     description:
-      "Après avoir dépensé 50 unités d'[Énergie biotique], vous lancez le dernier [Orbe biotique] sélectionné. Sa durée est réduite de 75%.",
+      "Après avoir dépensé 50 unités d'[Énergie biotique], vous lancez le dernier [Orbe biotique] sélectionné. Sa durée est réduite de 75 %.",
   },
   "26P002": {
     position: 5,
@@ -441,7 +440,7 @@ export default {
       "[Frappe du vent] inflige 25% de dégâts supplémentaires en 3 s aux cibles adverses touchées.",
   },
   "21P003": {
-    position: 10,
+    position: 11,
     name: "Technique d'Iaido",
     description:
       "Lorsque [Riposte] prend fin, vous effectuez une frappe rapide avec votre [Lame du dragon].",
@@ -477,7 +476,7 @@ export default {
       "Quand [Riposte] bloque des dégâts, le temps de recharge de [Frappe du vent] est réduit de 1 s. Cet effet peut se cumuler jusqu'à atteindre 5 s.",
   },
   "21P009": {
-    position: 11,
+    position: 12,
     name: "Souffle du Dragon",
     description:
       "Les frappes de [Lame du dragon] projettent un large projectile perforant qui inflige 50% des dégâts de [Lame du dragon].",
@@ -493,6 +492,12 @@ export default {
     name: "Fléau des Hashimoto",
     description:
       "Après l'utilisation d'une capacité, votre prochain tir secondaire lance 2 [Shurikens] supplémentaires qui traquent les adversaires, mais infligent des dégâts réduits de 50%.",
+  },
+  "21P012": {
+    position: 10,
+    name: "Riposte-o-tron",
+    description:
+      "Vitesse des projectiles renvoyés augmentée de 50 %. Pendant les 1,5 premières secondes de [Riposte] vous renvoyez automatiquement les projectiles en direction des adversaires.",
   },
   "24P004": {
     position: 2,
