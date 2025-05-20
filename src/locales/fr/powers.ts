@@ -3,7 +3,7 @@ export default {
     position: 11,
     name: "Renversant!",
     description:
-      "Lorsque vous infligez des dégâts avec [Marteau à réaction], vous gagnez 5% de vitesse de déplacement et votre arme gagne 4% de vol de vie pendant 3 s. Cet effet peut se cumuler 5 fois.",
+      "Lorsque vous infligez des dégâts avec [Marteau à réaction], vous gagnez 1% de vitesse de déplacement et votre arme gagne 3% de vol de vie pendant 2 s. Cet effet peut se cumuler 10 fois.",
   },
   "5P012": {
     position: 12,
@@ -15,13 +15,13 @@ export default {
     position: 4,
     name: "Wilhelmwagen",
     description:
-      "Tant que votre [Écran] est déployé, vous vous soignez à hauteur de 15% des points de vie que vous bloquez et votre vitesse de déplacement augmenten de 30%.",
+      "Tant que votre [Écran] est déployé, vous vous soignez à hauteur de 5% des points de vie que vous bloquez et votre vitesse de déplacement augmenten de 30%.",
   },
   "5P007": {
     position: 3,
     name: "Rejoignez-moi, Camarades !",
     description:
-      "Tant que votre [Écran] est actif, les personnages alliés à moins de 5 m sont soignés à hauteur de 3% de vos points de vie maximum chaque seconde.",
+      "Tant que votre [Écran] est actif, les personnages alliés à moins de 5 m sont soignés à hauteur de 4% de vos points de vie maximum chaque seconde.",
   },
   "5P001": {
     position: 1,
@@ -187,7 +187,7 @@ export default {
     position: 6,
     name: "Cratère",
     description:
-      "Le rayon d'explosion de [Roquette LX] augmente de 40% et les dégâts de l'explosion augmentent de 25%.",
+      "Le rayon d'explosion de [Roquette LX] augmente de 40% et les dégâts de l'explosion augmentent de 15%.",
   },
   "15P009": {
     position: 7,

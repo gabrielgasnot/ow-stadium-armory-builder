@@ -1207,7 +1207,7 @@ export default {
   "00S017": [
     {
       type: "description",
-      value: "The first time you die each round, revive at 200 Life after 3s",
+      value: "The first time you die each round, revive at 250 Life after 3s",
     },
   ],
   "00S018": [

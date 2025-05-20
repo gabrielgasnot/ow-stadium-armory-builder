@@ -3,7 +3,7 @@ export default {
     position: 12,
     name: "Smashing!",
     description:
-      "When you deal damage with [Rocket Hammer], gain 2% Move Speed and 4% Weapon Lifesteal for 3s, stacking up to 5 times.",
+      "When you deal damage with [Rocket Hammer], gain 1% Move Speed and 3% Weapon Lifesteal for 2s, stacking up to 10 times.",
   },
   "5P012": {
     position: 11,
@@ -15,13 +15,13 @@ export default {
     position: 4,
     name: "Wilhelmwagen",
     description:
-      "While [Barrier Field] is deployed, you heal for 15% of the damage it mitigates and gain 30% Move Speed.",
+      "While [Barrier Field] is deployed, you heal for 5% of the damage it mitigates and gain 30% Move Speed.",
   },
   "5P007": {
     position: 3,
     name: "To Me, My Friends!",
     description:
-      "While [Barrier Field] is deployed, allies within 5m are healed equal to 3% of your max Life every 1s.",
+      "While [Barrier Field] is deployed, allies within 5m are healed equal to 4% of your max Life every 1s.",
   },
   "5P001": {
     position: 1,
@@ -186,7 +186,7 @@ export default {
     position: 5,
     name: "Cratered",
     description:
-      "Increase [Helix Rocket] explosion radius by 40% and explosion damage by 25%",
+      "Increase [Helix Rocket] explosion radius by 40% and explosion damage by 15%",
   },
   "15P009": {
     position: 6,

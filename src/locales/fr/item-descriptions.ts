@@ -1025,7 +1025,7 @@ export default {
     {
       type: "description",
       value:
-        "En début de manche, vous gagnez un surplus de 100 points de vie qui ne peuvent pas être récupérés.",
+        "En début de manche et à chaque réapparition, vous gagnez un surplus de 100 points de vie qui ne peuvent pas être récupérés.",
     },
   ],
   "00S002": [
@@ -1267,7 +1267,7 @@ export default {
     {
       type: "description",
       value:
-        "La première fois que vous mourez lors d'une manche, vous revenez à la vie avec 200 points de vie au bout de 3 s.",
+        "La première fois que vous mourez lors d'une manche, vous revenez à la vie avec 250 points de vie au bout de 3 s.",
     },
   ],
   "00S018": [
