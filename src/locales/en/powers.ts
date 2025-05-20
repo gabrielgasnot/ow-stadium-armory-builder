@@ -238,7 +238,6 @@ export default {
   },
   "6P005": {
     position: 7,
-    disabled: true,
     name: "Equivalent Exchange",
     description:
       "You have 3 charges of [Resurrect] with 33% reduced cast time, but their cooldowns only reset at the start of the round",
@@ -438,7 +437,7 @@ export default {
       "[Swift Strike] deals 25% additional damage over 3s to enemies hit",
   },
   "21P003": {
-    position: 9,
+    position: 10,
     name: "Iaido Strike",
     description:
       "After [Deflect] ends, you quickly swing your [Dragonblade] once",
@@ -449,7 +448,7 @@ export default {
     description: "Gain 50% Melee Lifesteal and +25 Quick Melee Damage",
   },
   "21P005": {
-    position: 8,
+    position: 9,
     name: "Forged Under Fire",
     description:
       "While [Deflect] is active, heal for 60% of the damage it prevents",
@@ -467,13 +466,13 @@ export default {
       "Critical hits and [Swift Strike] grant Overhealth equal to 25% of their damage dealt for 5s",
   },
   "21P008": {
-    position: 10,
+    position: 11,
     name: "Spirit of Sojiro",
     description:
       "When [Deflect] stops incoming damage, reduce the cooldown of [Swift Strike] by 1s, up to 5s",
   },
   "21P009": {
-    position: 11,
+    position: 12,
     name: "Dragon's Breath",
     description:
       "[Dragonblade] swings also fire a large piercing projectile that deals 50% of [Dragonblade]'s damage",
@@ -489,6 +488,12 @@ export default {
     name: "Hashimoto's Bane",
     description:
       "After using an ability, your next secondary fire throws 2 extra [Shuriken] that seek enemies but deal 50% less damage",
+  },
+  "21P012": {
+    position: 8,
+    name: "Deflect-o-tron",
+    description:
+      "+50% Deflected Projectile Speed. During the first 1.5s of [Deflect], automatically deflect projectiles toward enemies.",
   },
   "24P004": {
     position: 1,
@@ -1205,8 +1210,7 @@ export default {
   "43P005": {
     position: 5,
     name: "Deep Pockets",
-    description:
-      "When you use an ability, restore 50% of your Max Ammo.",
+    description: "When you use an ability, restore 50% of your Max Ammo.",
   },
   "43P006": {
     position: 6,

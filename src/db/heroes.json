@@ -48,20 +48,13 @@
           "id": "5S002",
           "price": 4000,
           "category": "Survival",
-          "attributes": [
-            { "type": "HP", "value": 25, "unit": "" },
-            { "type": "[Barrier Field] Health", "value": 20, "unit": "%" },
-            { "type": "[Barrier Field] Size", "value": 20, "unit": "%" }
-          ]
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         },
         {
           "id": "5A002",
           "price": 4000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 5, "unit": "%" },
-            { "type": "[Fire Strike] Radius", "value": 50, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 5, "unit": "%" }]
         }
       ],
       "epic": [
@@ -105,10 +98,7 @@
           "id": "5A005",
           "price": 10000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "Fire Strike Projectile Speed", "value": 25, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         }
       ]
     }
@@ -178,25 +168,13 @@
           "id": "2S005",
           "price": 10000,
           "category": "Survival",
-          "attributes": [
-            { "type": "HP", "value": 50, "unit": "" },
-            {
-              "type": "Move Speed during [Wraith Form]",
-              "value": 15,
-              "unit": "%"
-            },
-            { "type": "[Wraith Form] Duration", "value": 33, "unit": "%" }
-          ]
+          "attributes": [{ "type": "HP", "value": 50, "unit": "" }]
         },
         {
           "id": "2A001",
           "price": 9500,
-          "disabled": true,
           "category": "Ability",
-          "attributes": [
-            { "type": "MS", "value": 10, "unit": "%" },
-            { "type": "[Shadow Step] Cast Speed", "value": 30, "unit": "%" }
-          ]
+          "attributes": [{ "type": "MS", "value": 10, "unit": "%" }]
         },
         {
           "id": "2S006",
@@ -217,15 +195,7 @@
           "id": "2A003",
           "price": 10000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 20, "unit": "%" },
-            { "type": "[Death Blossom] Radius", "value": 25, "unit": "%" },
-            {
-              "type": "Move Speed during [Death Blossom]",
-              "value": 20,
-              "unit": "%"
-            }
-          ]
+          "attributes": [{ "type": "AP", "value": 20, "unit": "%" }]
         },
         {
           "id": "2W002",
@@ -677,7 +647,8 @@
       "21P008",
       "21P009",
       "21P010",
-      "21P011"
+      "21P011",
+      "21P012"
     ],
     "items": {
       "common": [],

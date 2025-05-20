@@ -16,7 +16,7 @@ export default {
   "2S003": { position: 1, name: "Dévastation" },
   "2S004": { position: 1, name: "Ailes abjectes" },
   "2S005": { position: 2, name: "Tirage impitoyable" },
-  "2A001": { position: 3, name: "Nightcreeper" },
+  "2A001": { position: 3, name: "Créature de la nuit" },
   "2S006": { position: 3, name: "Cape Écarlate" },
   "2A002": { position: 2, name: "Contrôle de Masse" },
   "2A003": { position: 2, name: "Couronne de Ruine" },
