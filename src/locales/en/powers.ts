@@ -491,7 +491,7 @@ export default {
   },
   "21P012": {
     position: 8,
-    name: "Deflect-o-tron",
+    name: "Deflect-o-bot",
     description:
       "+50% Deflected Projectile Speed. During the first 1.5s of [Deflect], automatically deflect projectiles toward enemies.",
   },
