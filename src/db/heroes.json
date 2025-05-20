@@ -1882,79 +1882,64 @@
           "category": "Weapon",
           "attributes": [
             { "type": "HP", "value": 25, "unit": "" },
-            { "type": "WP", "value": 5, "unit": "%" },
-            { "type": "[Quick Dash] Distance", "value": 25, "unit": "%" }
+            { "type": "WP", "value": 5, "unit": "%" }
           ]
         },
         {
           "id": "43W002",
           "price": 4000,
           "category": "Weapon",
-          "attributes": [
-            { "type": "MA", "value": 30, "unit": "%" }
-          ]
+          "attributes": [{ "type": "MA", "value": 30, "unit": "%" }]
         },
-        {
-          "id": "43W002",
-          "price": 10000,
-          "category": "Weapon",
-          "attributes": [
-            { "type": "WP", "value": 15, "unit": "%" }
-          ]
-        },
+
         {
           "id": "43A001",
           "price": 4000,
           "category": "Ability",
           "attributes": [
             { "type": "HP", "value": 25, "unit": "" },
-            { "type": "CR", "value": 5, "unit": "%" },
-            { "type": "[Updraft] Height", "value": 20, "unit": "%" }
-          ]
-        },
-        {
-          "id": "43A002",
-          "price": 10000,
-          "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 15, "unit": "%" }
+            { "type": "CR", "value": 5, "unit": "%" }
           ]
         },
         {
           "id": "43S001",
           "price": 4000,
           "category": "Survival",
-          "attributes": [
-            { "type": "HP", "value": 25, "unit": "" },
-            { "type": "[Take Aim] Slowed Momentum Duration", "value": 100, "unit": "%" }
-          ]
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         },
         {
           "id": "43S002",
           "price": 4000,
           "category": "Survival",
-          "attributes": [
-            { "type": "HP", "value": 25, "unit": "" }
-          ]
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         },
         {
           "id": "43S003",
           "price": 4000,
           "category": "Survival",
-          "attributes": [
-            { "type": "HP", "value": 25, "unit": "" }
-          ]
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+        }
+      ],
+      "epic": [
+        {
+          "id": "43W003",
+          "price": 10000,
+          "category": "Weapon",
+          "attributes": [{ "type": "WP", "value": 15, "unit": "%" }]
+        },
+        {
+          "id": "43A002",
+          "price": 10000,
+          "category": "Ability",
+          "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
         },
         {
           "id": "43S004",
           "price": 9000,
           "category": "Survival",
-          "attributes": [
-            { "type": "HP", "value": 50, "unit": "" }
-          ]
+          "attributes": [{ "type": "HP", "value": 50, "unit": "" }]
         }
-      ],
-      "epic": []
+      ]
     }
   }
 ]

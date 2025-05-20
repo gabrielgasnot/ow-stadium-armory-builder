@@ -1212,7 +1212,7 @@ export default {
     position: 6,
     name: "Forager",
     description:
-      "For 2s after using [Quick Dash], [Revdraw Crossbow] hits heal you for 3% of your Max Life,",
+      "For 2s after using [Quick Dash], [Revdraw Crossbow] hits heal you for 3% of your Max Life.",
   },
   "43P007": {
     position: 7,
@@ -1234,7 +1234,7 @@ export default {
   },
   "43P010": {
     position: 10,
-    name: "Liile Fælde",
+    name: "Lille Fælde",
     description:
       "After using [Updraft], your next [Take Aim] while airborn fires a [Bola Shot] that deals 60% reduced damage instead of an explosive bolt.",
   },

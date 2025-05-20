@@ -991,7 +991,8 @@ export default {
   "00S001": [
     {
       type: "description",
-      value: "At the start of the round and everytime you respawn, gain 100 unrecoverable Overhealth",
+      value:
+        "At the start of the round and everytime you respawn, gain 100 unrecoverable Overhealth",
     },
   ],
   "00S002": [
@@ -1267,6 +1268,7 @@ export default {
         "When you take damage, gain 0.5% Damage Reduction for 1s, stacking up to 20 times",
     },
   ],
+  "43W001": [{ type: "[Quick Dash] Distance", value: 25, unit: "%" }],
   "43W002": [
     {
       type: "description",
@@ -1277,10 +1279,10 @@ export default {
   "43W003": [
     {
       type: "description",
-      value:
-        "Elimination reset both charges of [Quick Dash] Cooldown.",
+      value: "Elimination reset both charges of [Quick Dash] Cooldown.",
     },
   ],
+  "43A001": [{ type: "[Updraft] Height", value: 20, unit: "%" }],
   "43A002": [
     {
       type: "description",
@@ -1289,6 +1291,7 @@ export default {
     },
   ],
   "43S001": [
+    { type: "[Take Aim] Slowed Momentum Duration", value: 100, unit: "%" },
     {
       type: "description",
       value:

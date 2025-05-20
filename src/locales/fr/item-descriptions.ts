@@ -2,7 +2,8 @@ export default {
   "5S003": [
     {
       type: "description",
-      value: "Les points de vie de votre [écran] augmentent à hauteur de 100% de vos points de vie maximum.",
+      value:
+        "Les points de vie de votre [écran] augmentent à hauteur de 100% de vos points de vie maximum.",
     },
   ],
   "5A001": [
@@ -28,7 +29,8 @@ export default {
   "5W003": [
     {
       type: "description",
-      value: "Votre vitesse d'attaque augmente de 3% pour chaque tranche de 100 points de vie manquants, jusqu'à un maximum de 30%.",
+      value:
+        "Votre vitesse d'attaque augmente de 3% pour chaque tranche de 100 points de vie manquants, jusqu'à un maximum de 30%.",
     },
   ],
   "5A004": [
@@ -53,13 +55,15 @@ export default {
   "2S001": [
     {
       type: "description",
-      value: "L'efficacité des ralentissements infligés par l'adversaire est réduite de 50%.",
+      value:
+        "L'efficacité des ralentissements infligés par l'adversaire est réduite de 50%.",
     },
   ],
   "2S002": [
     {
       type: "description",
-      value: "Lorsque vous avez moins de 50% de vos points de vie, votre vitesse de déplacement augmente de 20%.",
+      value:
+        "Lorsque vous avez moins de 50% de vos points de vie, votre vitesse de déplacement augmente de 20%.",
     },
   ],
   "2S003": [
@@ -106,7 +110,8 @@ export default {
   "15W001": [
     {
       type: "description",
-      value: "Lorsque vous utilisez [Roquette LX], vous récupérez 20% de vos munitions.",
+      value:
+        "Lorsque vous utilisez [Roquette LX], vous récupérez 20% de vos munitions.",
     },
   ],
   "15A002": [
@@ -119,7 +124,8 @@ export default {
   "15A003": [
     {
       type: "description",
-      value: "[Champ biotique] prodigue des soins augmentés de 10% aux personnages alliés ayant moins de 50% de leurs points de vie.",
+      value:
+        "[Champ biotique] prodigue des soins augmentés de 10% aux personnages alliés ayant moins de 50% de leurs points de vie.",
     },
   ],
   "15S002": [
@@ -139,7 +145,8 @@ export default {
   "6W001": [
     {
       type: "description",
-      value: "Quand vous êtes en  l'air, votre puissance d'arme augment de 5% et votre vitesse d'attaque augmente de 10%.",
+      value:
+        "Quand vous êtes en  l'air, votre puissance d'arme augment de 5% et votre vitesse d'attaque augmente de 10%.",
     },
   ],
   "6S001": [
@@ -159,7 +166,8 @@ export default {
   "6A002": [
     {
       type: "description",
-      value: "Le temps de recharge d'[Ange gardien] commence dès que vous sautez ou vous accroupissez.",
+      value:
+        "Le temps de recharge d'[Ange gardien] commence dès que vous sautez ou vous accroupissez.",
     },
   ],
   "6S003": [
@@ -217,7 +225,8 @@ export default {
   "26A004": [
     {
       type: "description",
-      value: "Les personnages alliés soignés par [Coalescence] infligent des dégâts augmentés de 15% pendant.",
+      value:
+        "Les personnages alliés soignés par [Coalescence] infligent des dégâts augmentés de 15% pendant.",
     },
   ],
   "19A001": [
@@ -279,7 +288,8 @@ export default {
   "19W001": [
     {
       type: "description",
-      value: "Vous pouvez désormais actionner vos [fusio-canons] tout en utilisant [Matrice défensive].",
+      value:
+        "Vous pouvez désormais actionner vos [fusio-canons] tout en utilisant [Matrice défensive].",
     },
   ],
   "19S007": [
@@ -313,32 +323,35 @@ export default {
   "21W001": [
     {
       type: "description",
-      value: "Lorsque vous escaladez une paroi, vous récupérez 20% de vos munitions par seconde.",
+      value:
+        "Lorsque vous escaladez une paroi, vous récupérez 20% de vos munitions par seconde.",
     },
   ],
   "21A001": [
     {
       type: "description",
-      value: "Le temps de recharge de [Frappe du vent] est réduit de 50% si la capacité n'inflige pas de dégâts.",
+      value:
+        "Le temps de recharge de [Frappe du vent] est réduit de 50% si la capacité n'inflige pas de dégâts.",
     },
   ],
   "21S001": [
     {
       type: "description",
-      value: "[Riposte] bloque désormais les dégâts des rayons."
-    }
+      value: "[Riposte] bloque désormais les dégâts des rayons.",
+    },
   ],
   "21S002": [
     {
       type: "description",
-      value: "Lorsque vous escaladez une paroi, vous récupérez 5% de vos points de vie chaque seconde.",
+      value:
+        "Lorsque vous escaladez une paroi, vous récupérez 5% de vos points de vie chaque seconde.",
     },
   ],
   "21S003": [
     {
       type: "description",
-      value: "Vous gagnez un saut supplémentaire"
-    }
+      value: "Vous gagnez un saut supplémentaire",
+    },
   ],
   "21W002": [
     {
@@ -350,7 +363,8 @@ export default {
   "21W004": [
     {
       type: "description",
-      value: "Les dégâts infligés par [Frappe du vent] restituent 20% de vos munitions.",
+      value:
+        "Les dégâts infligés par [Frappe du vent] restituent 20% de vos munitions.",
     },
   ],
   "21A004": [
@@ -376,7 +390,8 @@ export default {
   "24W002": [
     {
       type: "description",
-      value: "Vous infligez des dégâts augmentés de 25% aux adversaires à plus de 12 m.",
+      value:
+        "Vous infligez des dégâts augmentés de 25% aux adversaires à plus de 12 m.",
     },
   ],
   "24W003": [
@@ -430,7 +445,8 @@ export default {
   "24A006": [
     {
       type: "description",
-      value: "Vous pouvez voler librement et bénéficiez d'une vitesse de déplacement augmentée de 20% pendant l'utilisation de [Rotation de javelot].",
+      value:
+        "Vous pouvez voler librement et bénéficiez d'une vitesse de déplacement augmentée de 20% pendant l'utilisation de [Rotation de javelot].",
     },
   ],
   "24S004": [
@@ -462,7 +478,8 @@ export default {
   "34S001": [
     {
       type: "description",
-      value: "Lorsque vous subissez un effet de recul, votre vitesse de déplacement est augmentée de 25% pendant 3 s.",
+      value:
+        "Lorsque vous subissez un effet de recul, votre vitesse de déplacement est augmentée de 25% pendant 3 s.",
     },
   ],
   "34S002": [
@@ -489,13 +506,15 @@ export default {
   "34W004": [
     {
       type: "description",
-      value: "Votre puissance d'arme est augmentée de 5% pour chaque personnage adverse victime de [blessures] à moins de 12m.",
+      value:
+        "Votre puissance d'arme est augmentée de 5% pour chaque personnage adverse victime de [blessures] à moins de 12m.",
     },
   ],
   "34A002": [
     {
       type: "description",
-      value: "Les coups de [Massacre] et [Carnage] augementent votre vitesse d'attaque de 10% pendant 4 s.",
+      value:
+        "Les coups de [Massacre] et [Carnage] augementent votre vitesse d'attaque de 10% pendant 4 s.",
     },
   ],
   "34A003": [
@@ -515,7 +534,8 @@ export default {
   "34S005": [
     {
       type: "description",
-      value: "Lorsque vous utilisez [Massacre] ou [Carnage], vous obtenez 50% de réduction de dégâts.",
+      value:
+        "Lorsque vous utilisez [Massacre] ou [Carnage], vous obtenez 50% de réduction de dégâts.",
     },
   ],
   "34S006": [
@@ -526,7 +546,10 @@ export default {
     },
   ],
   "13W001": [
-    { type: "description", value: "Votre [énergie] ne peut pas descendre en dessous de 20." },
+    {
+      type: "description",
+      value: "Votre [énergie] ne peut pas descendre en dessous de 20.",
+    },
   ],
   "13S001": [
     {
@@ -538,7 +561,8 @@ export default {
   "13S002": [
     {
       type: "description",
-      value: "Vos points de bouclier commencent à se régénérer juste après l'utilisation d'un [écran].",
+      value:
+        "Vos points de bouclier commencent à se régénérer juste après l'utilisation d'un [écran].",
     },
   ],
   "13S003": [
@@ -558,7 +582,8 @@ export default {
   "13W003": [
     {
       type: "description",
-      value: "La portée du tir principale de votre [canon à particules] augmente de 20%.",
+      value:
+        "La portée du tir principale de votre [canon à particules] augmente de 20%.",
     },
   ],
   "13A002": [
@@ -591,7 +616,8 @@ export default {
   "35A002": [
     {
       type: "description",
-      value: "Lorsque vous utilisez une capacité, votre vitesse de déplacement augmente de 20% pendant 3 s.",
+      value:
+        "Lorsque vous utilisez une capacité, votre vitesse de déplacement augmente de 20% pendant 3 s.",
     },
   ],
   "35S001": [
@@ -603,19 +629,22 @@ export default {
   "35W004": [
     {
       type: "description",
-      value: "Après l'utilisation d'une capacité, vous récupérez 100% de vos munitions.",
+      value:
+        "Après l'utilisation d'une capacité, vous récupérez 100% de vos munitions.",
     },
   ],
   "35A003": [
     {
       type: "description",
-      value: "[Pas véloce] rend 80 points de vie en 2 s aux personnages alliées à proximité.",
+      value:
+        "[Pas véloce] rend 80 points de vie en 2 s aux personnages alliées à proximité.",
     },
   ],
   "35A004": [
     {
       type: "description",
-      value: "Les personnages alliées affectés par [Ruée de kitsune] récupèrent 80 points de vie par seconde.",
+      value:
+        "Les personnages alliées affectés par [Ruée de kitsune] récupèrent 80 points de vie par seconde.",
     },
   ],
   "35A005": [
@@ -628,13 +657,15 @@ export default {
   "35S002": [
     {
       type: "description",
-      value: "Après avoir utilisé [Pas véloce], vous gagnez un surplus de 100 points de vie pendant 4 s.",
+      value:
+        "Après avoir utilisé [Pas véloce], vous gagnez un surplus de 100 points de vie pendant 4 s.",
     },
   ],
   "35S003": [
     {
       type: "description",
-      value: "[Suzu de protection] vous octroie un surplus de 100 points de vie pendant 5 s.",
+      value:
+        "[Suzu de protection] vous octroie un surplus de 100 points de vie pendant 5 s.",
     },
   ],
   "22W001": [
@@ -647,13 +678,15 @@ export default {
   "22W002": [
     {
       type: "description",
-      value: "Les projectiles des tirs à l'œil nu de [Fusil] sont 100% plus gros.",
+      value:
+        "Les projectiles des tirs à l'œil nu de [Fusil] sont 100% plus gros.",
     },
   ],
   "22W003": [
     {
       type: "description",
-      value: "Vous infligez des dégâts augmentés de 20% aux adversaires dans les airs.",
+      value:
+        "Vous infligez des dégâts augmentés de 20% aux adversaires dans les airs.",
     },
   ],
   "22A001": [
@@ -666,13 +699,15 @@ export default {
   "22S001": [
     {
       type: "description",
-      value: "Lorsque vous sautez en plein air, vous parcourez une courte distance.",
+      value:
+        "Lorsque vous sautez en plein air, vous parcourez une courte distance.",
     },
   ],
   "22S003": [
     {
       type: "description",
-      value: "Si vous bénéficiez des effets de [Grenade biotique], vous gagnez un surpluus de 150 points de vie.",
+      value:
+        "Si vous bénéficiez des effets de [Grenade biotique], vous gagnez un surpluus de 150 points de vie.",
     },
   ],
   "22W004": [
@@ -692,7 +727,8 @@ export default {
   "22A003": [
     {
       type: "description",
-      value: "Les tirs directs de [Fléchette hypodermique] infligent 100 points de dégâts supplémentaires.",
+      value:
+        "Les tirs directs de [Fléchette hypodermique] infligent 100 points de dégâts supplémentaires.",
     },
   ],
   "22A005": [
@@ -732,7 +768,8 @@ export default {
   "14S001": [
     {
       type: "description",
-      value: "Chaque élimination à l'aide d'[Implacable] vous rapporte 500 crédits du Stadium de plus.",
+      value:
+        "Chaque élimination à l'aide d'[Implacable] vous rapporte 500 crédits du Stadium de plus.",
     },
   ],
   "14W002": [
@@ -751,13 +788,15 @@ export default {
   "14S002": [
     {
       type: "description",
-      value: "Vous subissez des dégâts réduits de 25% de la part des adversaires à plus de 12 m.",
+      value:
+        "Vous subissez des dégâts réduits de 25% de la part des adversaires à plus de 12 m.",
     },
   ],
   "14S003": [
     {
       type: "description",
-      value: "Vous récupérez 10 points de vie pour chaque munition obtenue grace à [Roulade].",
+      value:
+        "Vous récupérez 10 points de vie pour chaque munition obtenue grace à [Roulade].",
     },
   ],
   "29W001": [
@@ -784,19 +823,22 @@ export default {
   "29A002": [
     {
       type: "description",
-      value: "Les dégâts infligés aux cibles en feu octroient 20% de charge de capacité ultime en plus.",
+      value:
+        "Les dégâts infligés aux cibles en feu octroient 20% de charge de capacité ultime en plus.",
     },
   ],
   "29S001": [
     {
       type: "description",
-      value: "Après avoir utilisé [Canon scié], vous gagnez 20% de vitesse de déplacement pendant 3 s.",
+      value:
+        "Après avoir utilisé [Canon scié], vous gagnez 20% de vitesse de déplacement pendant 3 s.",
     },
   ],
   "29W004": [
     {
       type: "description",
-      value: "Lorsque la cible est à plus de 10 m, les tirs à la lunette infligent des dégâts augmentés de 1% par mètre.",
+      value:
+        "Lorsque la cible est à plus de 10 m, les tirs à la lunette infligent des dégâts augmentés de 1% par mètre.",
     },
   ],
   "29W005": [
@@ -833,7 +875,8 @@ export default {
   "41W001": [
     {
       type: "description",
-      value: "Lorsque vous êtes dans les airs, votre [médiblaster] inflige des dégâts augmentés de 15%.",
+      value:
+        "Lorsque vous êtes dans les airs, votre [médiblaster] inflige des dégâts augmentés de 15%.",
     },
   ],
   "41A001": [
@@ -860,7 +903,8 @@ export default {
   "41W003": [
     {
       type: "description",
-      value: "Après l'utilisation de [Torpilles à neutrons], votre vitesse d'attaque augmente de 25% pendant 4 s.",
+      value:
+        "Après l'utilisation de [Torpilles à neutrons], votre vitesse d'attaque augmente de 25% pendant 4 s.",
     },
   ],
   "41S002": [
@@ -879,7 +923,8 @@ export default {
   "41A004": [
     {
       type: "description",
-      value: "Les personnages alliés affectés par [Hyperanneau] récupère 25 points de bouclier par seconde.",
+      value:
+        "Les personnages alliés affectés par [Hyperanneau] récupère 25 points de bouclier par seconde.",
     },
   ],
   "41S003": [
@@ -909,7 +954,8 @@ export default {
   "20W001": [
     {
       type: "description",
-      value: "Votre maximum de munitions augmente de 75% mais le rechargement est 50% plus lent.",
+      value:
+        "Votre maximum de munitions augmente de 75% mais le rechargement est 50% plus lent.",
     },
   ],
   "20W002": [
@@ -921,13 +967,15 @@ export default {
   "20W003": [
     {
       type: "description",
-      value: "Lorsque vous vous tenez dans la zone d'effet de [Blizzard], votre vitesse d'attaque augmente de 10%.",
+      value:
+        "Lorsque vous vous tenez dans la zone d'effet de [Blizzard], votre vitesse d'attaque augmente de 10%.",
     },
   ],
   "20A001": [
     {
       type: "description",
-      value: "Votre puissance de capacité augmente de 5% par pilier de glace créé.",
+      value:
+        "Votre puissance de capacité augmente de 5% par pilier de glace créé.",
     },
   ],
   "20A002": [
@@ -960,19 +1008,22 @@ export default {
   "16A002": [
     {
       type: "description",
-      value: "Pendant le [beat de vitesse], votre [onde sonore] vous repousse aussi.",
+      value:
+        "Pendant le [beat de vitesse], votre [onde sonore] vous repousse aussi.",
     },
   ],
   "16A003": [
     {
       type: "description",
-      value: "Les victimes dues à l'environnement octroient [Nanoboost] pendant 5 s.",
+      value:
+        "Les victimes dues à l'environnement octroient [Nanoboost] pendant 5 s.",
     },
   ],
   "16S001": [
     {
       type: "description",
-      value: "Après [Wall ride], votre vitesse de déplacement augmente de 30% pendant 2 s.",
+      value:
+        "Après [Wall ride], votre vitesse de déplacement augmente de 30% pendant 2 s.",
     },
   ],
   "16W001": [
@@ -998,7 +1049,8 @@ export default {
   "16S002": [
     {
       type: "description",
-      value: "Vous gagnez un saut supplémentaire lorsque vous êtes en l'air après un [wall ride].",
+      value:
+        "Vous gagnez un saut supplémentaire lorsque vous êtes en l'air après un [wall ride].",
     },
   ],
   "00W005": [
@@ -1330,6 +1382,57 @@ export default {
       type: "description",
       value:
         "Lorsque vous subissez des dégâts, vous gagnez 0,5% de réduction des dégâts pendant 1 s. Cet effet peut se cumuler 20 fois.",
+    },
+  ],
+  "43W001": [{ type: "Distance de [Ruée rapide]", value: 25, unit: "%" }],
+  "43W002": [
+    {
+      type: "description",
+      value:
+        "Lorsque les carreaux de [Dans le mille] se collent à une cible adverse, votre vitesse d'attaque est augmentée de 20 % pendant 3 s.",
+    },
+  ],
+  "43W003": [
+    {
+      type: "description",
+      value: "Les éliminations réinitialisent le temps de recharge de deux charges de [Ruée rapide].",
+    },
+  ],
+  "43A001": [{ type: "Hauteur de [Courant ascendant]", value: 20, unit: "%" }],
+  "43A002": [
+    {
+      type: "description",
+      value:
+        "[Tir de bolas] attire les adversaires à proximité même lorsqu'il rate sa cible, mais sa force d'attraction est réduite de 50 %.",
+    },
+  ],
+  "43S001": [
+    { type: "Durée de déplacement ralenti de [Dans le mille]", value: 100, unit: "%" },
+    {
+      type: "description",
+      value:
+        "Lorsque votre vitesse est réduite par [Dans le mille], vous récupérez 5 % de vos points de vie maximum chaque seconde.",
+    },
+  ],
+  "43S002": [
+    {
+      type: "description",
+      value:
+        "Les cibles adverses dont la prime est supérieure ou égale à 750 vous sont révélées à moins de 40 m. Leur élimination rapporte 250 crédits du Stadium supplémentaires.",
+    },
+  ],
+  "43S003": [
+    {
+      type: "description",
+      value:
+        "Après l'utilisation de [Courant ascendant], votre capacité [Ruée rapide] est réinitialisée et vous gagnez un surplus de 50 points de vie pendant 5 s.",
+    },
+  ],
+  "43S004": [
+    {
+      type: "description",
+      value:
+        "Les carreaux de [Dans le mille] sont collants et leurs explosions ralentissent les adversaires de 30 %, mais elles prennent 1 s supplémentaires pour se déclencher.",
     },
   ],
 };
