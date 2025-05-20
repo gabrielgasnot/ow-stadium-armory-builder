@@ -1,4 +1,8 @@
 export default {
+  "5S002": [
+    { type: "[Barrier Field] Health", value: 20, unit: "%" },
+    { type: "[Barrier Field] Size", value: 20, unit: "%" },
+  ],
   "5S003": [
     {
       type: "description",
@@ -12,6 +16,7 @@ export default {
         "If [Charge] is interrupted by the enemy, refund 50% of [Charge]'s cooldown",
     },
   ],
+  "5A002": [{ type: "[Fire Strike] Radius", value: 50, unit: "%" }],
   "5S001": [
     {
       type: "description",
@@ -32,6 +37,7 @@ export default {
     },
   ],
   "5A004": [{ type: "description", value: "You can now fly during [Charge]" }],
+  "5A005": [{ type: "Fire Strike Projectile Speed", value: 25, unit: "%" }],
   "5S004": [
     {
       type: "description",

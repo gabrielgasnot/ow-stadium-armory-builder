@@ -1,4 +1,8 @@
 export default {
+  "5S002": [
+    { type: "Points de vie d'[Écran]", value: 20, unit: "%" },
+    { type: "Taille d'[Écran]", value: 20, unit: "%" },
+  ],
   "5S003": [
     {
       type: "description",
@@ -13,6 +17,7 @@ export default {
         "Si votre [charge] est interrompue par l'adversaire, vous récupérez 50% du temps de recharge de [charge].",
     },
   ],
+  "5A002": [{ type: "Rayon de [Frappe de feu]", value: 50, unit: "%" }],
   "5S001": [
     {
       type: "description",
@@ -39,6 +44,7 @@ export default {
       value: "Vous pouvez maintenant voler pendant [Charge].",
     },
   ],
+  "5A005": [{ type: "Vitesse des projectiles de [Frappe de feu]", value: 25, unit: "%" }],
   "5S004": [
     {
       type: "description",
