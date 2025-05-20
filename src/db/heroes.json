@@ -1532,10 +1532,7 @@
           "id": "29A004",
           "price": 10000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 15, "unit": "%" },
-            { "type": "[Dynamite] Explosion Radius", "value": 40, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
         },
         {
           "id": "29A005",

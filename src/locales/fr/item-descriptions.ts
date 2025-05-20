@@ -827,6 +827,7 @@ export default {
         "Les dégâts infligés aux cibles en feu octroient 20% de charge de capacité ultime en plus.",
     },
   ],
+  "29A004": [{ type: "Rayon d'explosion de [Dynamite]", value: 40, unit: "%" }],
   "29S001": [
     {
       type: "description",

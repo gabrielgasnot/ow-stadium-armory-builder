@@ -760,6 +760,7 @@ export default {
       value: "Damage dealt to Burning targets grants 20% more Ultimate Charge",
     },
   ],
+  "29A004": [{ type: "[Dynamite] Explosion Radius", value: 40, unit: "%" }],
   "29S001": [
     {
       type: "description",
