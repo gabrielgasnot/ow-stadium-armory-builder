@@ -1267,4 +1267,53 @@ export default {
         "When you take damage, gain 0.5% Damage Reduction for 1s, stacking up to 20 times",
     },
   ],
+  "43W002": [
+    {
+      type: "description",
+      value:
+        "When [Take Aim] bolt sticks an enemy, increase your Attack Speed by 20% for 3s",
+    },
+  ],
+  "43W003": [
+    {
+      type: "description",
+      value:
+        "Elimination reset both charges of [Quick Dash] Cooldown.",
+    },
+  ],
+  "43A002": [
+    {
+      type: "description",
+      value:
+        "[Bola Shot] pulls in nearby enemies even when it misses with 50% reduced pull strength.",
+    },
+  ],
+  "43S001": [
+    {
+      type: "description",
+      value:
+        "While momentum is slowed by [Take Aim], restore 5% Max Life every 1s.",
+    },
+  ],
+  "43S002": [
+    {
+      type: "description",
+      value:
+        "Enemies with a Bounty of 750 or more are revealed to you within 40m. Eliminating them grants 250 additional Stadium Cash.",
+    },
+  ],
+  "43S003": [
+    {
+      type: "description",
+      value:
+        "After using [Updraft], reset [Quick Dash] and gain 50 Overhealth for 5s.",
+    },
+  ],
+  "43S004": [
+    {
+      type: "description",
+      value:
+        "[Take Aim] bolt sticks and explosions slow enemies by 30%, but takes 1s longer to explode.",
+    },
+  ],
 };

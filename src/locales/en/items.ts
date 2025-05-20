@@ -256,4 +256,14 @@ export default {
   "00S024": { position: 5, name: "Martian Mender" },
   "00S025": { position: 9, name: "Nebula Conduit" },
   "00S026": { position: 10, name: "Ogundimu Reduction Field" },
+  "43W001": { position: 1, name: "Slipstream Scarf" },
+  "43W002": { position: 2, name: "Tracker Tag" },
+  "43W003": { position: 1, name: "Portable Zipline" },
+  "43A001": { position: 1, name: "Windwalker Boots" },
+  "43A002": { position: 1, name: "Magnetic Maelstrom" },
+  "43S001": { position: 1, name: "Aeroweave Cloak" },
+  "43S002": { position: 2, name: "Hunter's Mark" },
+  "43S003": { position: 3, name: "Tourniquet" },
+  "43S004": { position: 1, name: "Toxin Tips" },
+
 };
