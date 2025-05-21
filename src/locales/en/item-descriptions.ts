@@ -127,7 +127,13 @@ export default {
       value: "[Helix Rocket] damage restores 20% of your ammo",
     },
   ],
+  "15A001": [{ type: "[Biotic Field] Duration", value: 30, unit: "%" }],
   "15A002": [
+    {
+      type: "Reduced [Helix Rocket] Self-Damage",
+      value: 90,
+      unit: "%",
+    },
     {
       type: "description",
       value:
@@ -135,11 +141,13 @@ export default {
     },
   ],
   "15A003": [
+    { type: "[Biotic Field] Radius", value: 30, unit: "%" },
     {
       type: "description",
       value: "[Biotic Field] heals allies below 50% Life for 10% more",
     },
   ],
+  "15S001": [{ type: "[Sprint] Move Speed", value: 25, unit: "%" }],
   "15S002": [
     {
       type: "description",
@@ -174,17 +182,32 @@ export default {
         "While affected by [Angelic Descent] or [Guardian Angel], heal 3% of your Life every 1s",
     },
   ],
+  "6A001": [{ type: "[Guardian Angel] Range", value: 33, unit: "%" }],
   "6A002": [
+    { type: "[Guardian Angel] Move Speed", value: 15, unit: "%" },
     {
       type: "description",
       value: "[Guardian Angel]'s cooldown starts as soon as you jump or crouch",
     },
   ],
+  "6A003": [{ type: "[Resurrection] Range", value: 75, unit: "%" }],
   "6S003": [
     {
       type: "description",
       value:
         "Your launch velocity is increased by 25% when canceling [Guardian Angel] with crouch or jump",
+    },
+  ],
+  "6S004": [
+    {
+      type: "[Caduceus Staff] Damage Boost",
+      value: 5,
+      unit: "%",
+    },
+    {
+      type: "Ultimate Charge Gained from Damage Boost",
+      value: 15,
+      unit: "%",
     },
   ],
   "6W003": [
@@ -194,11 +217,20 @@ export default {
         "[Caduceus Blaster] has a 10% chance to fire an extra shot that doesn't consume additional ammo",
     },
   ],
+  "6W004": [{ type: "[Caduceus Staff] Range", value: 33, unit: "%" }],
   "26W001": [
     {
       type: "description",
       value:
         "[Biotic Grasp]'s secondary fire restores 50% more [Biotic Energy]",
+    },
+  ],
+  "26W002": [{ type: "Max [Biotic Energy]", value: 50, unit: "" }],
+  "26W003": [
+    {
+      type: "[Biotic Grasp] Secondary Fire Range",
+      value: 15,
+      unit: "%",
     },
   ],
   "26A001": [
@@ -217,12 +249,7 @@ export default {
       value: "While using [Fade], you jump 30% higher.",
     },
   ],
-  "26A003": [
-    {
-      type: "description",
-      value: "+30% [Biotic Orb] Tendril Range",
-    },
-  ],
+  "26A003": [{ type: "[Biotic Orb] Tendril Range", value: 30, unit: "%" }],
   "26W004": [
     {
       type: "description",
@@ -256,6 +283,7 @@ export default {
         "Using [Self-Destruct] drops lava nearby that deals 30 damage every 1s",
     },
   ],
+  "19S001": [{ type: "[Boosters] Duration", value: 25, unit: "%" }],
   "19S002": [
     {
       type: "description",
@@ -331,12 +359,15 @@ export default {
       value: "While climbing restore 20% of your ammo every 1s",
     },
   ],
+  "21W003": [{ type: "[Dragonblade] Duration", value: 4, unit: "s" }],
   "21A001": [
     {
       type: "description",
       value: "[Swift Strike] cooldown is reduced by 50% if it deals no damage",
     },
   ],
+  "21A002": [{ type: "Move Speed during [Deflect]", value: 15, unit: "%" }],
+  "21A003": [{ type: "[Swift Strike] Width", value: 50, unit: "%" }],
   "21S001": [{ type: "description", value: "[Deflect] blocks Beam attacks" }],
   "21S002": [
     {
@@ -345,6 +376,7 @@ export default {
     },
   ],
   "21S003": [{ type: "description", value: "Gain an additional jump" }],
+  "21S004": [{ type: "[Deflect] Duration", value: 1, unit: "s" }],
   "21W002": [
     {
       type: "description",
@@ -366,10 +398,11 @@ export default {
     },
   ],
   "21S005": [
+    { type: "Ultimate Cost Reduction", value: 15, unit: "%" },
     {
       type: "description",
       value:
-        "15% Ultimate Cost Reduction, convert 100 Health to Armor, when you use Dragonblade, heal your Armor fully",
+        "Convert 100 Health to Armor, when you use Dragonblade, heal your Armor fully",
     },
   ],
   "24W001": [
@@ -394,6 +427,7 @@ export default {
         "[Energy Javelin] deals 25% increased damage to enemies farther than 12m away",
     },
   ],
+  "24A002": [{ type: "[Javelin Spin] Duration", value: 35, unit: "%" }],
   "24A003": [
     {
       type: "description",
@@ -422,6 +456,7 @@ export default {
         "After using an ability, restore your Armor equal to 3% of your Max Life",
     },
   ],
+  "24A004": [{ type: "[Fortify] Duration", value: 50, unit: "%" }],
   "24A005": [
     {
       type: "description",
@@ -501,6 +536,7 @@ export default {
     },
   ],
   "34A003": [
+    { type: "[Commanding Shout] Radius", value: 50, unit: "%" },
     {
       type: "description",
       value:
@@ -521,6 +557,11 @@ export default {
     },
   ],
   "34S006": [
+    {
+      type: "[Commanding Shout] Overhealth",
+      value: 30,
+      unit: "%",
+    },
     {
       type: "description",
       value:

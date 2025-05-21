@@ -12,7 +12,7 @@ export default {
     CR: "Réduction des temps de recharge",
     CD: "Dégâts critiques",
     MD: "Dégâts de mélée",
-    KR: "Knockback Resist",
+    KR: "Résistance aux effets de recul",
     MA: "Munitions maximum",
     CHS: "Points de vie convertis en Bouclier",
     CHA: "Points de vie convertis en Armure",

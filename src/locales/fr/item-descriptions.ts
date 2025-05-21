@@ -44,7 +44,13 @@ export default {
       value: "Vous pouvez maintenant voler pendant [Charge].",
     },
   ],
-  "5A005": [{ type: "Vitesse des projectiles de [Frappe de feu]", value: 25, unit: "%" }],
+  "5A005": [
+    {
+      type: "Vitesse des projectiles de [Frappe de feu]",
+      value: 25,
+      unit: "%",
+    },
+  ],
   "5S004": [
     {
       type: "description",
@@ -138,7 +144,13 @@ export default {
         "Lorsque vous utilisez [Roquette LX], vous récupérez 20% de vos munitions.",
     },
   ],
+  "15A001": [{ type: "Durée de [Champ biotique]", value: 30, unit: "%" }],
   "15A002": [
+    {
+      type: "Dégâts personnels de [Roquette LX] réduits",
+      value: 90,
+      unit: "%",
+    },
     {
       type: "description",
       value:
@@ -146,11 +158,15 @@ export default {
     },
   ],
   "15A003": [
+    { type: "Rayon de [Champ biotique]", value: 30, unit: "%" },
     {
       type: "description",
       value:
         "[Champ biotique] prodigue des soins augmentés de 10% aux personnages alliés ayant moins de 50% de leurs points de vie.",
     },
+  ],
+  "15S001": [
+    { type: "Vitesse de déplacement de [Sprint]", value: 25, unit: "%" },
   ],
   "15S002": [
     {
@@ -187,18 +203,33 @@ export default {
         "Si vous bénéficiez des effets de [Saut de l'ange] ou d'[Ange gardien], vous récupérez 3% de vos points de vie par seconde.",
     },
   ],
+  "6A001": [{ type: "Portée d'[Ange gardien]", value: 33, unit: "%" }],
   "6A002": [
+    { type: "Vitesse de déplacement d'[Ange gardien]", value: 15, unit: "%" },
     {
       type: "description",
       value:
         "Le temps de recharge d'[Ange gardien] commence dès que vous sautez ou vous accroupissez.",
     },
   ],
+  "6A003": [{ type: "Portée de [Résurrection]", value: 75, unit: "%" }],
   "6S003": [
     {
       type: "description",
       value:
         "Votre vitesse de décollage augmente de 25% quand vous annulez [Ange gardien] avec la commande de saut ou d'acccroupissement.",
+    },
+  ],
+  "6S004": [
+    {
+      type: "Bonus de dégâts de [Caducée]",
+      value: 5,
+      unit: "%",
+    },
+    {
+      type: "Charge de capacité ultime obtenue grâce aux dégâts amplifiés",
+      value: 15,
+      unit: "%",
     },
   ],
   "6W003": [
@@ -208,11 +239,20 @@ export default {
         "[Miséricorde] a 10% de chances d'effectuer un tir bonus qui ne consomme aucune munition supplémentaire.",
     },
   ],
+  "6W004": [{ type: "Portée de [Caducée]", value: 33, unit: "%" }],
   "26W001": [
     {
       type: "description",
       value:
         "Le tir secondaire d'[Emprise biotique] vous rend 50% d'[énergie biotique] en plus.",
+    },
+  ],
+  "26W002": [{ type: "[Énergie biotique] maximum", value: 50, unit: "" }],
+  "26W003": [
+    {
+      type: "Portée du tir secondaire d'[Emprise biotique]",
+      value: 15,
+      unit: "%",
     },
   ],
   "26A001": [
@@ -236,8 +276,9 @@ export default {
   ],
   "26A003": [
     {
-      type: "description",
-      value: "+30% Portée des vrilles d'[Orbe biotique].",
+      type: "Portée des vrilles d'[Orbe biotique]",
+      value: 30,
+      unit: "%",
     },
   ],
   "26W004": [
@@ -274,6 +315,7 @@ export default {
         "Votre [Autodestruction] fait apparaître de la lave qui inflige 30 points de dégâts par seconde.",
     },
   ],
+  "19S001": [{ type: "Durée de [Turboréacteurs]", value: 25, unit: "%" }],
   "19S002": [
     {
       type: "description",
@@ -351,6 +393,7 @@ export default {
         "Lorsque vous escaladez une paroi, vous récupérez 20% de vos munitions par seconde.",
     },
   ],
+  "21W003": [{ type: "Durée de [Lame du Dragon]", value: 4, unit: "s" }],
   "21A001": [
     {
       type: "description",
@@ -358,6 +401,10 @@ export default {
         "Le temps de recharge de [Frappe du vent] est réduit de 50% si la capacité n'inflige pas de dégâts.",
     },
   ],
+  "21A002": [
+    { type: "Vitesse de déplacement pendant [Riposte]", value: 15, unit: "%" },
+  ],
+  "21A003": [{ type: "Largeur de [Frappe du vent]", value: 50, unit: "%" }],
   "21S001": [
     {
       type: "description",
@@ -377,6 +424,7 @@ export default {
       value: "Vous gagnez un saut supplémentaire",
     },
   ],
+  "21S004": [{ type: "Durée de [Riposte]", value: 1, unit: "s" }],
   "21W002": [
     {
       type: "description",
@@ -399,6 +447,7 @@ export default {
     },
   ],
   "21S005": [
+    { type: "Réduction du coût de la capacité ultime", value: 15, unit: "%" },
     {
       type: "description",
       value:
@@ -431,6 +480,7 @@ export default {
         "[Javelot d'énergie] inflige des dégâts augmentés de 25% aux adversaires à plus de 12 m.",
     },
   ],
+  "24A002": [{ type: "Durée de [Rotation de javelot]", value: 35, unit: "%" }],
   "24A003": [
     {
       type: "description",
@@ -459,6 +509,7 @@ export default {
         "Après l'utilisation d'une capacité, vous récupérez un montant d'armur à hauteur de 3% de vos points de vie maximum.",
     },
   ],
+  "24A004": [{ type: "Durée de [Blindage]", value: 50, unit: "%" }],
   "24A005": [
     {
       type: "description",
@@ -542,6 +593,7 @@ export default {
     },
   ],
   "34A003": [
+    { type: "Rayon de [Cri de commandement] Radius", value: 50, unit: "%" },
     {
       type: "description",
       value:
