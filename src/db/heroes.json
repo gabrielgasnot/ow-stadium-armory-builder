@@ -242,10 +242,7 @@
           "id": "15A001",
           "price": 4000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "[Biotic Field] Duration", "value": 30, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         },
         {
           "id": "15A002",
@@ -253,12 +250,7 @@
           "category": "Ability",
           "attributes": [
             { "type": "HP", "value": 25, "unit": "" },
-            { "type": "WP", "value": 5, "unit": "%" },
-            {
-              "type": "Reduced [Helix Rocket] Self-Damage",
-              "value": 90,
-              "unit": "%"
-            }
+            { "type": "WP", "value": 5, "unit": "%" }
           ]
         },
         {
@@ -267,8 +259,7 @@
           "category": "Survival",
           "attributes": [
             { "type": "HP", "value": 25, "unit": "" },
-            { "type": "AS", "value": 5, "unit": "%" },
-            { "type": "[Sprint] Move Speed", "value": 25, "unit": "%" }
+            { "type": "AS", "value": 5, "unit": "%" }
           ]
         }
       ],
@@ -277,10 +268,7 @@
           "id": "15A003",
           "price": 10000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "[Biotic Field] Radius", "value": 30, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         },
         {
           "id": "15S002",
@@ -333,10 +321,7 @@
           "id": "6A001",
           "price": 4000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "[Guardian Angel] Range", "value": 33, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         },
         {
           "id": "6S001",
@@ -356,9 +341,7 @@
           "id": "6A002",
           "price": 10000,
           "category": "Ability",
-          "attributes": [
-            { "type": "[Guardian Angel] Move Speed", "value": 15, "unit": "%" }
-          ]
+          "attributes": []
         },
         {
           "id": "6S003",
@@ -370,19 +353,7 @@
           "id": "6S004",
           "price": 10000,
           "category": "Survival",
-          "attributes": [
-            { "type": "Armor", "value": 50, "unit": "" },
-            {
-              "type": "[Caduceus Staff] Damage Boost",
-              "value": 5,
-              "unit": "%"
-            },
-            {
-              "type": "Ultimate Charge Gained from Damage Boost",
-              "value": 15,
-              "unit": "%"
-            }
-          ]
+          "attributes": [{ "type": "Armor", "value": 50, "unit": "" }]
         },
         {
           "id": "6W003",
@@ -397,19 +368,13 @@
           "id": "6W004",
           "price": 10000,
           "category": "Weapon",
-          "attributes": [
-            { "type": "WP", "value": 10, "unit": "%" },
-            { "type": "[Caduceus Staff] Range", "value": 33, "unit": "%" }
-          ]
+          "attributes": [{ "type": "WP", "value": 10, "unit": "%" }]
         },
         {
           "id": "6A003",
           "price": 10000,
           "category": "Ability",
-          "attributes": [
-            { "type": "CR", "value": 10, "unit": "%" },
-            { "type": "[Resurrection] Range", "value": 75, "unit": "%" }
-          ]
+          "attributes": [{ "type": "CR", "value": 10, "unit": "%" }]
         }
       ]
     }
@@ -447,10 +412,7 @@
           "id": "26W002",
           "price": 4000,
           "category": "Weapon",
-          "attributes": [
-            { "type": "WP", "value": 10, "unit": "%" },
-            { "type": "Max [Biotic Energy]", "value": 50, "unit": "" }
-          ]
+          "attributes": [{ "type": "WP", "value": 10, "unit": "%" }]
         },
         {
           "id": "26A001",
@@ -476,23 +438,13 @@
           "id": "26W003",
           "price": 11000,
           "category": "Weapon",
-          "attributes": [
-            { "type": "WP", "value": 10, "unit": "%" },
-            {
-              "type": "[Biotic Grasp] Secondary Fire Range",
-              "value": 15,
-              "unit": "%"
-            }
-          ]
+          "attributes": [{ "type": "WP", "value": 10, "unit": "%" }]
         },
         {
           "id": "26A003",
           "price": 11000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 15, "unit": "%" },
-            { "type": "[Biotic Orb] Tendril Range", "value": 30, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
         },
         {
           "id": "26W004",
@@ -560,10 +512,7 @@
           "id": "19S001",
           "price": 4000,
           "category": "Survival",
-          "attributes": [
-            { "type": "HP", "value": 25, "unit": "" },
-            { "type": "[Boosters] Duration", "value": 25, "unit": "%" }
-          ]
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         },
         {
           "id": "19S002",
@@ -669,10 +618,7 @@
           "id": "21A002",
           "price": 4000,
           "category": "Ability",
-          "attributes": [
-            { "type": "CR", "value": 5, "unit": "%" },
-            { "type": "Move Speed during [Deflect]", "value": 15, "unit": "%" }
-          ]
+          "attributes": [{ "type": "CR", "value": 5, "unit": "%" }]
         },
         {
           "id": "21S001",
@@ -707,10 +653,7 @@
           "id": "21W003",
           "price": 10000,
           "category": "Weapon",
-          "attributes": [
-            { "type": "WP", "value": 10, "unit": "%" },
-            { "type": "[Dragonblade] Duration", "value": 4, "unit": "" }
-          ]
+          "attributes": [{ "type": "WP", "value": 10, "unit": "%" }]
         },
         {
           "id": "21W004",
@@ -727,8 +670,7 @@
           "category": "Ability",
           "attributes": [
             { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "ALS", "value": 15, "unit": "%" },
-            { "type": "[Swift Strike] Width", "value": 50, "unit": "%" }
+            { "type": "ALS", "value": 15, "unit": "%" }
           ]
         },
         {
@@ -743,17 +685,14 @@
           "category": "Survival",
           "attributes": [
             { "type": "AR", "value": 50, "unit": "" },
-            { "type": "CR", "value": 5, "unit": "%" },
-            { "type": "[Deflect] Duration", "value": 1, "unit": "s" }
+            { "type": "CR", "value": 5, "unit": "%" }
           ]
         },
         {
           "id": "21S005",
           "price": 10000,
           "category": "Survival",
-          "attributes": [
-            { "type": "Ultimate Cost Reduction", "value": 15, "unit": "%" }
-          ]
+          "attributes": []
         }
       ]
     }
@@ -810,8 +749,7 @@
           "price": 4000,
           "category": "Ability",
           "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "[Javelin Spin] Duration", "value": 35, "unit": "%" }
+            { "type": "AP", "value": 10, "unit": "%" }
           ]
         },
         {
@@ -845,8 +783,7 @@
           "price": 10000,
           "category": "Ability",
           "attributes": [
-            { "type": "ALS", "value": 20, "unit": "%" },
-            { "type": "[Fortify] Duration", "value": 50, "unit": "%" }
+            { "type": "ALS", "value": 20, "unit": "%" }
           ]
         },
         {
@@ -963,8 +900,7 @@
           "price": 11000,
           "category": "Ability",
           "attributes": [
-            { "type": "AP", "value": 15, "unit": "%" },
-            { "type": "[Commanding Shout] Radius", "value": 50, "unit": "%" }
+            { "type": "AP", "value": 15, "unit": "%" }
           ]
         },
         {
@@ -987,12 +923,7 @@
           "price": 10000,
           "category": "Survival",
           "attributes": [
-            { "type": "HP", "value": 50, "unit": "" },
-            {
-              "type": "[Commanding Shout] Overhealth",
-              "value": 30,
-              "unit": "%"
-            }
+            { "type": "HP", "value": 50, "unit": "" }
           ]
         }
       ]
