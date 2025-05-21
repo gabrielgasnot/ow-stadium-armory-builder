@@ -315,7 +315,7 @@
       "id": "00W019",
       "price": 11000,
       "category": "Weapon",
-      "attributes": [{ "type": "AS", "value": 10, "unit": "%" }]
+      "attributes": [{ "type": "AS", "value": 20, "unit": "%" }]
     },
     {
       "id": "00W020",
