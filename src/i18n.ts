@@ -10,6 +10,7 @@ import enHeroes from "./locales/en/heroes";
 import enItemDescriptions from "./locales/en/item-descriptions";
 import enItems from "./locales/en/items";
 import enPowers from "./locales/en/powers";
+import enSkills from "./locales/en/skills";
 
 import frCommon from "./locales/fr/common";
 import frFooter from "./locales/fr/footer";
@@ -18,6 +19,7 @@ import frHeroes from "./locales/fr/heroes";
 import frItemDescriptions from "./locales/fr/item-descriptions";
 import frItems from "./locales/fr/items";
 import frPowers from "./locales/fr/powers";
+import frSkills from "./locales/fr/skills";
 
 const savedLang = localStorage.getItem(STORAGE_KEYS.LANGUAGE);
 const defaultLang = savedLang || navigator.language.split("-")[0] || "en";
@@ -32,6 +34,7 @@ i18n.use(initReactI18next).init({
       itemDescriptions: enItemDescriptions,
       items: enItems,
       powers: enPowers,
+      skills: enSkills,
     },
     fr: {
       common: frCommon,
@@ -40,7 +43,8 @@ i18n.use(initReactI18next).init({
       heroes: frHeroes,
       itemDescriptions: frItemDescriptions,
       items: frItems,
-      powers: frPowers
+      powers: frPowers,
+      skills: frSkills,
     },
   },
   lng: defaultLang,
@@ -53,6 +57,7 @@ i18n.use(initReactI18next).init({
     "itemDescriptions",
     "items",
     "powers",
+    "skills",
   ],
   defaultNS: "common",
   interpolation: {

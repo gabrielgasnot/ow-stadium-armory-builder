@@ -6,8 +6,15 @@ import {
   assertIsStatAttribute,
   Attribute,
 } from "../../models/attribute";
+import Skills from "../../models/skills";
 
-function PerkAttributes({ attributes }: { attributes: Attribute[] }) {
+function PerkAttributes({
+  attributes,
+  skills,
+}: {
+  attributes: Attribute[];
+  skills: Skills;
+}) {
   const theme = useTheme();
   const { attributeTypes } = useDb();
   return (

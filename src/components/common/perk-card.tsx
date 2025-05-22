@@ -15,15 +15,18 @@ import { useBuild } from "../../contexts/build-context";
 import { useHoverAttributes } from "../../hooks/use-hover-attributes";
 import { Item, assertIsItem } from "../../models/item";
 import { Power, assertIsPower } from "../../models/power";
+import Skills from "../../models/skills";
 
 function PerkCard({
   perk,
   perkType,
+  skills,
   isSelected,
   isDisabled,
 }: {
   perk: Item | Power;
   perkType: string;
+  skills: Skills;
   isSelected: boolean;
   isDisabled: boolean;
 }) {
@@ -124,7 +127,7 @@ function PerkCard({
       <CardContent>
         <Typography variant="body2" color="text.secondary" component="div">
           <HighlightText text={assertIsPower(perk) ? perk.description : ""} />
-          <PerkAttributes attributes={perk.attributes ?? []} />
+          <PerkAttributes attributes={perk.attributes ?? []} skills={skills} />
         </Typography>
       </CardContent>
 

@@ -7,7 +7,7 @@ import { useTranslation } from "react-i18next";
 
 function GroupItems({ category }: { category: string }) {
   const { t } = useTranslation("common");
-  const { availableItems } = useHero();
+  const { currentHero, availableItems } = useHero();
   const { selectedItems } = useBuild();
   const selectedIds = [...selectedItems.map((si: Item) => si.id)];
 
@@ -50,6 +50,7 @@ function GroupItems({ category }: { category: string }) {
             grade={grade}
             selectedIds={selectedIds}
             isDisabled={selectedIds.length >= 6}
+            currentHero={currentHero}
           />
         </Grid>
       ))}
