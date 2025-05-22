@@ -10,7 +10,7 @@ export default {
   "5A004": { position: 1, name: "Gryphon" },
   "5S004": { position: 2, name: "Protocole du Phoenix" },
   "5A005": { position: 2, name: "Frappe à Réaction" },
-  "2W001": { position: 1, name: "Balles Spectral" },
+  "2W001": { position: 1, name: "Balles Spectrales" },
   "2S001": { position: 3, name: "Givre interdit" },
   "2S002": { position: 2, name: "Brume de poche" },
   "2S003": { position: 1, name: "Dévastation" },

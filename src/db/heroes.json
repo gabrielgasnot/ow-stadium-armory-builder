@@ -748,9 +748,7 @@
           "id": "24A002",
           "price": 4000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         },
         {
           "id": "24A003",
@@ -782,9 +780,7 @@
           "id": "24A004",
           "price": 10000,
           "category": "Ability",
-          "attributes": [
-            { "type": "ALS", "value": 20, "unit": "%" }
-          ]
+          "attributes": [{ "type": "ALS", "value": 20, "unit": "%" }]
         },
         {
           "id": "24A005",
@@ -899,9 +895,7 @@
           "id": "34A003",
           "price": 11000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 15, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
         },
         {
           "id": "34S004",
@@ -922,9 +916,7 @@
           "id": "34S006",
           "price": 10000,
           "category": "Survival",
-          "attributes": [
-            { "type": "HP", "value": 50, "unit": "" }
-          ]
+          "attributes": [{ "type": "HP", "value": 50, "unit": "" }]
         }
       ]
     }
@@ -962,10 +954,7 @@
           "id": "13A001",
           "price": 4000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "[Projected Barrier] Range", "value": 20, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         },
         {
           "id": "13S001",
@@ -1023,8 +1012,7 @@
           "category": "Ability",
           "attributes": [
             { "type": "HP", "value": 25, "unit": "" },
-            { "type": "AP", "value": 15, "unit": "%" },
-            { "type": "[Barrier] Duration", "value": 40, "unit": "%" }
+            { "type": "AP", "value": 15, "unit": "%" }
           ]
         }
       ]
@@ -1075,10 +1063,7 @@
           "id": "35A001",
           "price": 4000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "[Kitsune Rush] Duration", "value": 35, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         },
         {
           "id": "35A002",
@@ -1104,14 +1089,7 @@
           "id": "35W005",
           "price": 12000,
           "category": "Weapon",
-          "attributes": [
-            { "type": "WP", "value": 15, "unit": "%" },
-            {
-              "type": "[Healing Ofuda] Projectile Speed",
-              "value": 100,
-              "unit": "%"
-            }
-          ]
+          "attributes": [{ "type": "WP", "value": 15, "unit": "%" }]
         },
         {
           "id": "35A003",
@@ -1176,9 +1154,7 @@
           "id": "22W001",
           "price": 4000,
           "category": "Weapon",
-          "attributes": [
-            { "type": "Biotic Grenade Duration", "value": 15, "unit": "%" }
-          ]
+          "attributes": []
         },
         {
           "id": "22W002",
@@ -1190,10 +1166,7 @@
           "id": "22W003",
           "price": 5000,
           "category": "Weapon",
-          "attributes": [
-            { "type": "WP", "value": 10, "unit": "%" },
-            { "type": "Faster Scope Speed", "value": 200, "unit": "%" }
-          ]
+          "attributes": [{ "type": "WP", "value": 10, "unit": "%" }]
         },
         {
           "id": "22A001",
@@ -1211,10 +1184,7 @@
           "id": "22S002",
           "price": 4000,
           "category": "Survival",
-          "attributes": [
-            { "type": "SH", "value": 25, "unit": "" },
-            { "type": "Nano Boost Duration", "value": 15, "unit": "%" }
-          ]
+          "attributes": [{ "type": "SH", "value": 25, "unit": "" }]
         },
         {
           "id": "22S003",
@@ -1246,10 +1216,7 @@
           "id": "22A004",
           "price": 12000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 20, "unit": "%" },
-            { "type": "[Biotic Grenade] Duration", "value": 30, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 20, "unit": "%" }]
         },
         {
           "id": "22A005",
@@ -1490,28 +1457,24 @@
           "attributes": [{ "type": "WP", "value": 5, "unit": "%" }]
         },
         {
-          "id": "41A001",
-          "price": 4000,
-          "category": "Ability",
-          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
-        },
-        {
           "id": "41A002",
           "price": 4000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "Hyper Ring Duration", "value": 25, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         },
         {
           "id": "41S001",
           "price": 4000,
           "category": "Survival",
           "attributes": [
-            { "type": "SH", "value": 25, "unit": "" },
-            { "type": "[Glide Boost] Duration", "value": 25, "unit": "%" }
+            { "type": "SH", "value": 25, "unit": "" }
           ]
+        },
+        {
+          "id": "41S004",
+          "price": 4000,
+          "category": "Survival",
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         }
       ],
       "epic": [
@@ -1532,12 +1495,7 @@
           "price": 11000,
           "category": "Weapon",
           "attributes": [
-            { "type": "AS", "value": 10, "unit": "%" },
-            {
-              "type": "[Pulsar Torpedoes] Projectile Speed",
-              "value": 35,
-              "unit": "%"
-            }
+            { "type": "AS", "value": 10, "unit": "%" }
           ]
         },
         {
@@ -1739,8 +1697,7 @@
           "price": 11000,
           "category": "Ability",
           "attributes": [
-            { "type": "AP", "value": 15, "unit": "%" },
-            { "type": "[Amp It Up] Duration", "value": 25, "unit": "%" }
+            { "type": "AP", "value": 15, "unit": "%" }
           ]
         },
         {

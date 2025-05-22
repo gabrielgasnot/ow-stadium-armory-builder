@@ -604,6 +604,7 @@ export default {
       value: "[Particle Cannon]'s primary fire range is increased by 20%",
     },
   ],
+  "13A001": [{ type: "[Projected Barrier] Range", value: 20, unit: "%" }],
   "13A002": [
     {
       type: "description",
@@ -611,6 +612,7 @@ export default {
         "Casting [Projected Barrier] on an refunds 20% of [Barrier] cooldown",
     },
   ],
+  "13A003": [{ type: "[Barrier] Duration", value: 40, unit: "%" }],
   "35W001": [
     { type: "description", value: "[Kunai] bounce off surfaces 1 time" },
   ],
@@ -628,6 +630,7 @@ export default {
         "When you heal an ally, grant them 10% increased Move Speed for 3s",
     },
   ],
+  "35A001": [{ type: "[Kitsune Rush] Duration", value: 35, unit: "%" }],
   "35A002": [
     {
       type: "description",
@@ -641,6 +644,13 @@ export default {
     {
       type: "description",
       value: "After casting an ability, restore 100% of your ammo",
+    },
+  ],
+  "35W005": [
+    {
+      type: "[Healing Ofuda] Projectile Speed",
+      value: 100,
+      unit: "%",
     },
   ],
   "35A003": [
@@ -675,6 +685,7 @@ export default {
     },
   ],
   "22W001": [
+    { type: "[Biotic Grenade] Duration", value: 15, unit: "%" },
     {
       type: "description",
       value:
@@ -688,6 +699,7 @@ export default {
     },
   ],
   "22W003": [
+    { type: "Faster Scope Speed", value: 200, unit: "%" },
     {
       type: "description",
       value: "Deal 20% more damage to airborne enemies",
@@ -706,6 +718,7 @@ export default {
       value: "Jumping in mid-air will dash you a short distance",
     },
   ],
+  "22S002": [{ type: "[Nano Boost] Duration", value: 15, unit: "%" }],
   "22S003": [
     {
       type: "description",
@@ -732,6 +745,7 @@ export default {
       value: "[Sleep Dart] direct hit deals 100 bonus damage",
     },
   ],
+  "22A004": [{ type: "[Biotic Grenade] Radius", value: 30, unit: "%" }],
   "22A005": [
     {
       type: "description",
@@ -875,13 +889,7 @@ export default {
       value: "While airborne, [Mediblaster] deals 15% more damage",
     },
   ],
-  "41A001": [
-    {
-      type: "description",
-      value:
-        "While aiming [Pulsar Torpedoes], gain Overhealth equal to 50% of your max Shields",
-    },
-  ],
+  "41A002": [{ type: "[Hyper Ring] Duration", value: 25, unit: "%" }],
   "41W002": [
     {
       type: "description",
@@ -898,14 +906,27 @@ export default {
   ],
   "41W003": [
     {
+      type: "[Pulsar Torpedoes] Projectile Speed",
+      value: 35,
+      unit: "%",
+    },
+    {
       type: "description",
       value: "After using [Pulsar Torpedoes], gain 25% Attack Speed for 4s",
     },
   ],
+  "41S001": [{ type: "[Glide Boost] Duration", value: 25, unit: "%" }],
   "41S002": [
     {
       type: "description",
       value: "+75 Shield, during [Glide Boost], gain 10% Damage Reduction",
+    },
+  ],
+  "41S004": [
+    {
+      type: "description",
+      value:
+        "While aiming [Pulsar Torpedoes], gain Overhealth equal to 50% of your max Shields",
     },
   ],
   "41W004": [
@@ -1031,6 +1052,7 @@ export default {
         "[Sound Barrier] effectiveness is increased by 25% for every 1s [Sound Barrier] is channeled, up to 50%",
     },
   ],
+  "16A005": [{ type: "[Amp It Up] Duration", value: 25, unit: "%" }],
   "16S002": [
     {
       type: "description",

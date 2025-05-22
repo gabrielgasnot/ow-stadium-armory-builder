@@ -593,7 +593,7 @@ export default {
     },
   ],
   "34A003": [
-    { type: "Rayon de [Cri de commandement] Radius", value: 50, unit: "%" },
+    { type: "Rayon de [Cri de commandement]", value: 50, unit: "%" },
     {
       type: "description",
       value:
@@ -615,6 +615,11 @@ export default {
     },
   ],
   "34S006": [
+    {
+      type: "Surplus de points de vie de [Cri de commandement]",
+      value: 30,
+      unit: "%",
+    },
     {
       type: "description",
       value:
@@ -662,6 +667,7 @@ export default {
         "La portée du tir principale de votre [canon à particules] augmente de 20%.",
     },
   ],
+  "13A001": [{ type: "Portée d'[Écran généré]", value: 20, unit: "%" }],
   "13A002": [
     {
       type: "description",
@@ -669,6 +675,7 @@ export default {
         "Lorsque vous lancez [Écran généré] sur un personnage allié, vous récupérez 20% du temps de recharge de votre [écran].",
     },
   ],
+  "13A003": [{ type: "Durée d'[Écran]", value: 40, unit: "%" }],
   "35W001": [
     {
       type: "description",
@@ -689,6 +696,7 @@ export default {
         "Lorsque vous soignez un personnage allié, vous augmentez aussi sa vitesse de déplacement de 10% pendant 3 s.",
     },
   ],
+  "35A001": [{ type: "Durée de [Ruée de kitsune]", value: 35, unit: "%" }],
   "35A002": [
     {
       type: "description",
@@ -707,6 +715,13 @@ export default {
       type: "description",
       value:
         "Après l'utilisation d'une capacité, vous récupérez 100% de vos munitions.",
+    },
+  ],
+  "35W005": [
+    {
+      type: "Vitesse des projectiles d'[O-fuda de guérison]",
+      value: 100,
+      unit: "%",
     },
   ],
   "35A003": [
@@ -745,6 +760,7 @@ export default {
     },
   ],
   "22W001": [
+    { type: "Durée de [Grenade biotique]", value: 15, unit: "%" },
     {
       type: "description",
       value:
@@ -759,6 +775,7 @@ export default {
     },
   ],
   "22W003": [
+    { type: "Zoom plus rapide", value: 200, unit: "%" },
     {
       type: "description",
       value:
@@ -779,6 +796,7 @@ export default {
         "Lorsque vous sautez en plein air, vous parcourez une courte distance.",
     },
   ],
+  "22S002": [{ type: "Durée de [Nanoboost]", value: 15, unit: "%" }],
   "22S003": [
     {
       type: "description",
@@ -807,6 +825,7 @@ export default {
         "Les tirs directs de [Fléchette hypodermique] infligent 100 points de dégâts supplémentaires.",
     },
   ],
+  "22A004": [{ type: "Rayon de [Grenade biotique]", value: 30, unit: "%" }],
   "22A005": [
     {
       type: "description",
@@ -956,13 +975,14 @@ export default {
         "Lorsque vous êtes dans les airs, votre [médiblaster] inflige des dégâts augmentés de 15%.",
     },
   ],
-  "41A001": [
+  "41S004": [
     {
       type: "description",
       value:
         "Lorsque vous visez avec [Torpilles à neutrons], vous gagnez un surplus de points de vie égale à 50% de vos points de bouclier maximum.",
     },
   ],
+  "41A002": [{ type: "Durée d'[Hyperanneau]", value: 25, unit: "%" }],
   "41W002": [
     {
       type: "description",
@@ -979,11 +999,17 @@ export default {
   ],
   "41W003": [
     {
+      type: "Vitesse des projectiles de [Torpilles à neutrons]",
+      value: 35,
+      unit: "%",
+    },
+    {
       type: "description",
       value:
         "Après l'utilisation de [Torpilles à neutrons], votre vitesse d'attaque augmente de 25% pendant 4 s.",
     },
   ],
+   "41S001": [{ type: "Durée de [Vol plané]", value: 25, unit: "%" }],
   "41S002": [
     {
       type: "description",
@@ -1123,6 +1149,7 @@ export default {
         "L'efficacité de [Mur de son] augmente de 25% pour chaque seconde passée à canaliser cette capacité, jusqu'à un maximum de 50%.",
     },
   ],
+  "16A005": [{ type: "Durée de [Volume max.]", value: 25, unit: "%" }],
   "16S002": [
     {
       type: "description",
