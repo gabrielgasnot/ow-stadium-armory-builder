@@ -1,9 +1,11 @@
+import { AttributeType } from "./types/attribute-type";
+
 export default interface Skill {
   id: string;
   name: string;
   primary: string;
   secondary: string;
-  notboosted?: boolean;
+  affectedBy: AttributeType[];
 }
 
 export const assertIsSkill = (skill: any): skill is Skill => {
@@ -11,7 +13,8 @@ export const assertIsSkill = (skill: any): skill is Skill => {
     typeof skill.id === "string" &&
     typeof skill.name === "string" &&
     typeof skill.primary === "string" &&
-    typeof skill.secondary === "string"
+    typeof skill.secondary === "string" &&
+    Array.isArray(skill.affectedBy)
   ) {
     return true;
   }

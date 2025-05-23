@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 import PerkCard from "../common/perk-card";
 import { GradedItem } from "../../models/graded-item";
-import { Hero } from "../../models/hero";
+import Skill from "../../models/skill";
 
 interface ItemsProps {
-  currentHero: Hero;
+  heroSkills: Skill[];
   items: GradedItem[];
   grade: string;
   selectedIds: string[];
@@ -12,7 +12,7 @@ interface ItemsProps {
 }
 
 function Items({
-  currentHero,
+  heroSkills,
   items,
   grade,
   selectedIds,
@@ -39,7 +39,7 @@ function Items({
               key={item.id}
               perk={item}
               perkType="item"
-              skills={currentHero.skills}
+              skills={heroSkills}
               isSelected={
                 selectedIds.find((id: string) => id === item.id) !== undefined
               }

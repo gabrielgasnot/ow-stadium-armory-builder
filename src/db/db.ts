@@ -1,6 +1,7 @@
 import basicItems from "./basicItems.json";
 import heroes from "./heroes.json";
 import attributeTypes from "./attributeTypes.json";
+import skillDetails from "./skills.json";
 import i18n from "../i18n";
 import { Hero } from "../models/hero";
 import { Items } from "../models/items";
@@ -116,9 +117,12 @@ const getLocalizedHeroes = (): Hero[] => {
             skills[skillKey].push(
               ...skillIds.map((skillId) => {
                 const skill = s(skillId, { returnObjects: true });
+                const skillDetail =
+                  skillDetails.find((sd) => sd.id === skillId) ?? [];
                 return {
                   id: skillId,
                   ...skill,
+                  ...skillDetail,
                 } as Skill;
               })
             );

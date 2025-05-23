@@ -15,7 +15,7 @@ import { useBuild } from "../../contexts/build-context";
 import { useHoverAttributes } from "../../hooks/use-hover-attributes";
 import { Item, assertIsItem } from "../../models/item";
 import { Power, assertIsPower } from "../../models/power";
-import Skills from "../../models/skills";
+import Skill from "../../models/skill";
 
 function PerkCard({
   perk,
@@ -26,7 +26,7 @@ function PerkCard({
 }: {
   perk: Item | Power;
   perkType: string;
-  skills: Skills;
+  skills: Skill[];
   isSelected: boolean;
   isDisabled: boolean;
 }) {

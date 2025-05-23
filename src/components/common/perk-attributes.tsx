@@ -6,15 +6,16 @@ import {
   assertIsStatAttribute,
   Attribute,
 } from "../../models/attribute";
-import Skills from "../../models/skills";
+import Skill from "../../models/skill";
 
 function PerkAttributes({
   attributes,
   skills,
 }: {
   attributes: Attribute[];
-  skills: Skills;
+  skills: Skill[];
 }) {
+  console.log("Skills", skills);
   const theme = useTheme();
   const { attributeTypes } = useDb();
   return (
@@ -31,24 +32,52 @@ function PerkAttributes({
           </Typography>
         ) : assertIsStatAttribute(attribute) ? (
           <>
-            <img
-              src={`${import.meta.env.BASE_URL}icons/${
-                attributeTypes[attribute.type]?.icon ?? "default.svg"
-              }`}
-              alt={attribute.type}
-              style={{ width: 20, height: 20, marginRight: 8 }}
-            />
-            <Typography
-              color={theme.palette.text.secondary}
-              fontWeight={550}
-              variant="body2"
+            <Box
+              sx={{
+                display: "flex",
+                alignItems: "flex-start",
+                flexDirection: "row",
+              }}
             >
-              {attribute.value}
-              {attribute.unit ?? ""}{" "}
-              {typeof attributeTypes[attribute.type] === "undefined"
-                ? `${attribute?.type}`
-                : `${attributeTypes[attribute.type]?.name}`}
-            </Typography>
+              <img
+                src={`${import.meta.env.BASE_URL}icons/${
+                  attributeTypes[attribute.type]?.icon ?? "default.svg"
+                }`}
+                alt={attribute.type}
+                style={{ width: 20, height: 20, marginRight: 8 }}
+              />
+              <Box sx={{ display: "flex", flexDirection: "column" }}>
+                <Typography
+                  color={theme.palette.text.secondary}
+                  fontWeight={550}
+                  variant="body2"
+                >
+                  {attribute.value}
+                  {attribute.unit ?? ""}{" "}
+                  {typeof attributeTypes[attribute.type] === "undefined"
+                    ? `${attribute?.type}`
+                    : `${attributeTypes[attribute.type]?.name}`}
+                </Typography>
+                {skills.filter((skill) =>
+                  skill.affectedBy.includes(attribute.type)
+                ).length > 0 && (
+                  <Typography
+                    color={theme.palette.text.secondary}
+                    fontWeight={550}
+                    variant="caption"
+                  >
+                    (
+                    {skills
+                      .filter((skill) =>
+                        skill.affectedBy.includes(attribute.type)
+                      )
+                      .map((skill) => skill.name)
+                      .join(", ")}
+                    )
+                  </Typography>
+                )}
+              </Box>
+            </Box>
           </>
         ) : (
           <></>
