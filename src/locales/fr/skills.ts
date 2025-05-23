@@ -26,13 +26,11 @@ export default {
   "2I002": {
     name: "Voie des ombres",
     primary: "Vous vous téléportez à l'endroit ciblé.",
-    notboosted: true,
   },
   "2I003": {
     name: "Forme spectrale",
     primary:
       "Vous vous déplacez plus rapidement et devenez invulnérable, mais vous ne pouvez pas tirer.",
-    notboosted: true,
   },
   "2I004": {
     name: "Éclosion Mortelle",
@@ -49,7 +47,6 @@ export default {
   "15I002": {
     name: "Sprint",
     primary: "Vous vous déplacez plus vite vers l'avant.",
-    notboosted: true,
   },
   "15I003": {
     name: "Champ biotique",
@@ -155,7 +152,6 @@ export default {
     name: "Riposte",
     primary:
       "Vous déviez les projectiles dans la direction que vous visez et vous bloquez les attaques en mêlée.",
-    notboosted: true,
   },
   "21I003": {
     name: "Frappe du Vent",
@@ -169,7 +165,6 @@ export default {
   "21I005": {
     name: "Agilité Cybernétique",
     primary: "Capacité à escalader les murs et à effectuer un double saut.",
-    notboosted: true,
   },
   "24I001": {
     name: "Canon à Fusion amélioré",
@@ -260,7 +255,6 @@ export default {
   "35I003": {
     name: "Pas Véloce",
     primary: "Vous vous téléportez directement vers un ou une alliée.",
-    notboosted: true,
   },
   "35I004": {
     name: "Suzu de Protection",
@@ -271,7 +265,6 @@ export default {
     name: "Ruée de Kitsune",
     primary:
       "Vous invoquez un esprit vulpin qui se précipite en avant, accélérant la vitesse de déplacement. La vitesse d'attaque et les temps de recharge des personnages alliés qui se trouvent dans son sillage.",
-    notboosted: true,
   },
   "35I006": {
     name: "Escalade",
@@ -306,7 +299,6 @@ export default {
     name: "Roulade",
     primary:
       "Vous effectuez une roulage dans la direction que vous visez, ce qui réduit les dégâts que vous subissez et recharge votre arme.",
-    notboosted: true,
   },
   "14I003": {
     name: "Grenade Flash",
@@ -351,13 +343,11 @@ export default {
   "41I003": {
     name: "Vol Plané",
     primary: "Plane horizontalement avec une vitesse de déplacement accrue.",
-    notboosted: true,
   },
   "41I004": {
     name: "Hyperanneau",
     primary:
       "Déploie un annveau qui augmente la vitesse de déplacement des membres de l'équipe passant à travers.",
-    notboosted: true,
   },
   "41I005": {
     name: "Rayon Orbital",
@@ -377,12 +367,10 @@ export default {
   "20I002": {
     name: "Cryostase",
     primary: "Rend invulnérable et vous soigne.",
-    notboosted: true,
   },
   "20I003": {
     name: "Mur de Glace",
     primary: "Crée un mur devant vous.",
-    notboosted: true,
   },
   "20I004": {
     name: "Blizzard",

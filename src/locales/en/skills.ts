@@ -26,12 +26,10 @@ export default {
   "2I002": {
     name: "Shadow Step",
     primary: "Teleport to a targeted location.",
-    notboosted: true,
   },
   "2I003": {
     name: "Wraith Form",
     primary: "Move faster and become invulnerable, but you cannot shoot.",
-    notboosted: true,
   },
   "2I004": {
     name: "Death Blossom",
@@ -48,7 +46,6 @@ export default {
   "15I002": {
     name: "Sprint",
     primary: "Run faster while moving forward.",
-    notboosted: true,
   },
   "15I003": {
     name: "Biotic Field",
@@ -154,7 +151,6 @@ export default {
     name: "Deflect",
     primary:
       "Deflect incoming projectiles towards the direction you are aiming and block melee attacks.",
-    notboosted: true,
   },
   "21I003": {
     name: "Swift Strike",
@@ -168,7 +164,6 @@ export default {
   "21I005": {
     name: "Cyber-Agility",
     primary: "Climb on walls and double jump.",
-    notboosted: true,
   },
   "24I001": {
     name: "Augmented Fusion Driver",
@@ -256,7 +251,6 @@ export default {
   "35I003": {
     name: "Swift Step",
     primary: "Teleport directly to an ally.",
-    notboosted: true,
   },
   "35I004": {
     name: "Protection Suzu",
@@ -267,7 +261,6 @@ export default {
     name: "Kitsune Rush",
     primary:
       "Summon a fox spirit that rushes forward, accelerating the movement, attack speed, and cooldowns of allies that follow in its path.",
-    notboosted: true,
   },
   "35I006": {
     name: "Wall Climb",
@@ -300,7 +293,6 @@ export default {
     name: "Combat Roll",
     primary:
       "Roll in the direction you're moving to take reduced damage and reload.",
-    notboosted: true,
   },
   "14I003": {
     name: "Flashbang",
@@ -343,13 +335,11 @@ export default {
   "41I003": {
     name: "Glide Boost",
     primary: "Glide horizontally with increased movement speed.",
-    notboosted: true,
   },
   "41I004": {
     name: "Hyper Ring",
     primary:
       "Deploy a ring that increases movement speed of allies that pass through it.",
-    notboosted: true,
   },
   "41I005": {
     name: "Orbital Ray",
@@ -368,12 +358,10 @@ export default {
   "20I002": {
     name: "Cryo-freeze",
     primary: "Become invulnerable and heal yourself.",
-    notboosted: true,
   },
   "20I003": {
     name: "Ice wall",
     primary: "Create a wall in front of you.",
-    notboosted: true,
   },
   "20I004": {
     name: "Blizzard",

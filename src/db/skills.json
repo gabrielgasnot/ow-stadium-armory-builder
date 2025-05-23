@@ -1,0 +1,382 @@
+[
+  {
+    "id": "5I001",
+    "affectedBy": ["WP", "WPLS", "AS", "MD"]
+  },
+  {
+    "id": "5I002",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "5I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "5I004",
+    "affectedBy": []
+  },
+  {
+    "id": "5I005",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "2I001",
+    "affectedBy": ["WP", "WPLS", "AS", "MA", "CD", "RS"]
+  },
+  {
+    "id": "2I002",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "2I003",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "2I004",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "2I005",
+    "affectedBy": []
+  },
+  {
+    "id": "15I001",
+    "affectedBy": ["WP", "WPLS", "AS", "MA", "CD", "RS"]
+  },
+  {
+    "id": "15I002",
+    "affectedBy": []
+  },
+  {
+    "id": "15I003",
+    "affectedBy": ["AP", "CR"]
+  },
+  {
+    "id": "15I004",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "15I005",
+    "affectedBy": []
+  },
+  {
+    "id": "6I001",
+    "affectedBy": ["WP", "AS"]
+  },
+  {
+    "id": "6I002",
+    "affectedBy": ["WP", "WPLS", "AS", "MA", "CD", "RS"]
+  },
+  {
+    "id": "6I003",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "6I004",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "6I005",
+    "affectedBy": []
+  },
+  {
+    "id": "6I006",
+    "affectedBy": []
+  },
+  {
+    "id": "6I007",
+    "affectedBy": []
+  },
+  {
+    "id": "26I001",
+    "affectedBy": ["WP", "WPLS", "AS"]
+  },
+  {
+    "id": "26I002",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "26I003",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "26I004",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "19I001",
+    "affectedBy": ["WP", "WPLS", "AS", "CD"]
+  },
+  {
+    "id": "19I002",
+    "affectedBy": ["WP", "WPLS", "AS", "CD", "RS", "MA"]
+  },
+  {
+    "id": "19I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "19I004",
+    "affectedBy": []
+  },
+  {
+    "id": "19I005",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "19I006",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "19I007",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "19I008",
+    "affectedBy": []
+  },
+  {
+    "id": "21I001",
+    "affectedBy": ["WP", "WPLS", "AS", "CD", "RS", "MA"]
+  },
+  {
+    "id": "21I002",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "21I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "21I004",
+    "affectedBy": ["WP", "WPLS", "AS"]
+  },
+  {
+    "id": "21I005",
+    "affectedBy": []
+  },
+  {
+    "id": "24I001",
+    "affectedBy": ["WP", "WPLS", "AS", "CD"]
+  },
+  {
+    "id": "24I002",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "24I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "24I004",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "24I005",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "34I001",
+    "affectedBy": ["WP", "WPLS", "AS", "CD", "RS", "MA"]
+  },
+  {
+    "id": "34I002",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "34I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "34I004",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "34I005",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "34I006",
+    "affectedBy": []
+  },
+  {
+    "id": "13I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA"]
+  },
+  {
+    "id": "13I002",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "13I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "13I004",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "13I005",
+    "affectedBy": []
+  },
+  {
+    "id": "35I001",
+    "affectedBy": ["WP", "AS", "RS"]
+  },
+  {
+    "id": "35I002",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA", "CD"]
+  },
+  {
+    "id": "35I003",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "35I004",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "35I005",
+    "affectedBy": []
+  },
+  {
+    "id": "35I006",
+    "affectedBy": []
+  },
+  {
+    "id": "22I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA"]
+  },
+  {
+    "id": "22I002",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "22I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "22I004",
+    "affectedBy": ["AP"]
+  },
+  {
+    "id": "14I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA", "CD"]
+  },
+  {
+    "id": "14I002",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "14I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "14I004",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "29I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA", "CD"]
+  },
+  {
+    "id": "29I002",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "29I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "29I004",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "41I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA"]
+  },
+  {
+    "id": "41I002",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "41I003",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "41I004",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "41I005",
+    "affectedBy": ["AP"]
+  },
+  {
+    "id": "41I006",
+    "affectedBy": []
+  },
+  {
+    "id": "20I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA", "CD"]
+  },
+  {
+    "id": "20I002",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "20I003",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "20I004",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "16I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA", "CD"]
+  },
+  {
+    "id": "16I002",
+    "affectedBy": ["AP"]
+  },
+  {
+    "id": "16I003",
+    "affectedBy": ["AP", "CR"]
+  },
+  {
+    "id": "16I004",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "16I005",
+    "affectedBy": ["AP"]
+  },
+  {
+    "id": "16I006",
+    "affectedBy": []
+  },
+  {
+    "id": "43I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA", "CD"]
+  },
+  {
+    "id": "43I002",
+    "affectedBy": ["WP", "WPLS", "CD"]
+  },
+  {
+    "id": "43I003",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "43I004",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "43I005",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "43I006",
+    "affectedBy": []
+  }
+]
