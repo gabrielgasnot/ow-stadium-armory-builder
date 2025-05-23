@@ -663,7 +663,7 @@ export default {
       "When [Barrier] expires, grand Overhealth equal to 50% if remaining  [Barrier] Health to the target for 3s",
   },
   "13P006": {
-    name: "Containment Field",
+    name: "Containment Shield",
     description:
       "[Barrier] heals 25 Life, increased by [Energy], and grants 20% Move Speed while active",
   },
