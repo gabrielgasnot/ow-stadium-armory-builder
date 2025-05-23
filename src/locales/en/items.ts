@@ -157,7 +157,7 @@ export default {
   "29S002": { position: 1, name: "B.O.B. Wire Defense" },
   "29S003": { position: 2, name: "Firestarter" },
   "41W001": { position: 1, name: "Vantage Shot" },
-  "41A001": { position: 1, name: "Lock-On Shield" },
+  "41S004": { position: 1, name: "Lock-On Shield" },
   "41A002": { position: 2, name: "Lux Loop" },
   "41S001": { position: 1, name: "Boosted Rockets" },
   "41W002": { position: 2, name: "Long Range Blaster" },
