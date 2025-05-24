@@ -1272,6 +1272,7 @@ export default {
   "43P010": {
     position: 11,
     name: "Lille Fælde",
+    disabled: true,
     description:
       "Après [Courant ascendant], votre prochain [Dans le mille] depuis les airs ne projette plus de carreau explosif, mais déclenche à la place un [Tir de bolas] qui inflige des dégâts réduits de 60 %.",
   },
