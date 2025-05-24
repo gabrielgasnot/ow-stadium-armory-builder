@@ -26,9 +26,9 @@ function PerkCard({
 }: {
   perk: Item | Power;
   perkType: string;
-  skills: Skill[];
   isSelected: boolean;
   isDisabled: boolean;
+  skills?: Skill[];
 }) {
   const theme = useTheme();
   const [, startTransition] = useTransition();

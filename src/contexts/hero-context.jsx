@@ -48,12 +48,11 @@ export const HeroProvider = ({ children }) => {
 
       const powers = localizedHero.powers?.filter((p) => !p.disabled) ?? [];
       const items = localizedHero.items ?? [];
-      const skills =
-        [
-          ...localizedHero.skills.weapons,
-          ...localizedHero.skills.abilities,
-          ...localizedHero.skills.passives,
-        ] ?? [];
+      const skills = [
+        ...localizedHero.skills.weapons,
+        ...localizedHero.skills.abilities,
+        ...localizedHero.skills.passives,
+      ];
 
       setHeroPowers(powers);
       setHeroItems(items);
