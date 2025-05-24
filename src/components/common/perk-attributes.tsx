@@ -13,7 +13,7 @@ function PerkAttributes({
   skills,
 }: {
   attributes: Attribute[];
-  skills: Skill[];
+  skills?: Skill[];
 }) {
   const theme = useTheme();
   const { attributeTypes } = useDb();
@@ -57,7 +57,7 @@ function PerkAttributes({
                     ? `${attribute?.type}`
                     : `${attributeTypes[attribute.type]?.name}`}
                 </Typography>
-                {skills.filter((skill) =>
+                {Array.isArray(skills) && skills.filter((skill) =>
                   skill.affectedBy.includes(attribute.type)
                 ).length > 0 && (
                   <Typography
