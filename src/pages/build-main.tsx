@@ -10,7 +10,7 @@ function BuildMain() {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const { t } = useTranslation("common");
-  const { loadHero } = useHero();
+  const { loadHero, heroSkills } = useHero();
   const { perkSummaryOpen, perkPopupAnchorEl, summaryPerk, placement } =
     useUI();
 
@@ -92,7 +92,7 @@ function BuildMain() {
       >
         {summaryPerk && (
           <Box sx={{ zIndex: 1300, pointerEvents: "none" }}>
-            <PerkSummary perk={summaryPerk} />
+            <PerkSummary perk={summaryPerk} skills={heroSkills} />
           </Box>
         )}
       </Popper>

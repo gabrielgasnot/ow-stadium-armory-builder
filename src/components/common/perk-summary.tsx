@@ -5,8 +5,9 @@ import PerkAttributes from "./perk-attributes";
 import { assertIsPower, Power } from "../../models/power";
 import { assertIsItem, Item } from "../../models/item";
 import { useTranslation } from "react-i18next";
+import Skill from "../../models/skill";
 
-export default function PerkSummary({ perk }: { perk: Item | Power }) {
+export default function PerkSummary({ perk, skills }: { perk: Item | Power, skills: Skill[] }) {
   const { t } = useTranslation("common");
   const theme = useTheme();
   if (!perk) return null;
@@ -42,7 +43,7 @@ export default function PerkSummary({ perk }: { perk: Item | Power }) {
       </Box>
       <Divider sx={{ my: 1 }} />
       <HighlightText text={assertIsPower(perk) ? perk.description : ""} />
-      <PerkAttributes attributes={perk.attributes ?? []} />
+      <PerkAttributes attributes={perk.attributes ?? []} skills={skills} />
 
       {assertIsItem(perk) && (perk.price || perk.category) && (
         <Box

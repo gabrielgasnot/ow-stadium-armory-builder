@@ -15,7 +15,6 @@ function PerkAttributes({
   attributes: Attribute[];
   skills: Skill[];
 }) {
-  console.log("Skills", skills);
   const theme = useTheme();
   const { attributeTypes } = useDb();
   return (
