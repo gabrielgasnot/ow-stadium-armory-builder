@@ -147,34 +147,7 @@ function Details() {
         </Card>
 
         <Card className="no-hover">
-          <CardHeader
-            title={t("items")}
-            action={
-              <Tooltip
-                title={`${keepItems ? t("keepItemsOn") : t("keepItemsOff")}`}
-                enterTouchDelay={0}
-                leaveTouchDelay={1000}
-              >
-                <Stack
-                  flexDirection={"row"}
-                  spacing={1}
-                  sx={{
-                    alignItems: "center",
-                    "& > *": {
-                      marginTop: "0 !important", // force reset any rogue margin
-                    },
-                  }}
-                >
-                  <Typography variant="body2">{t("keepItems")}</Typography>
-                  <Switch
-                    size="small"
-                    checked={keepItems}
-                    onChange={(e) => updateKeepItems(e.target.checked)}
-                  />
-                </Stack>
-              </Tooltip>
-            }
-          />
+          <CardHeader title={t("items")} />
           <CardContent>
             <Grid
               container
