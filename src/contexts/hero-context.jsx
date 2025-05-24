@@ -1,4 +1,10 @@
-import { createContext, useContext, useState, useEffect, useCallback } from "react";
+import {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useCallback,
+} from "react";
 import { useDb } from "./db-context";
 import { useTranslation } from "react-i18next";
 
@@ -11,6 +17,7 @@ export const HeroProvider = ({ children }) => {
   const [currentHero, setCurrentHero] = useState(undefined);
   const [heroPowers, setHeroPowers] = useState([]);
   const [heroItems, setHeroItems] = useState([]);
+  const [heroSkills, setHeroSkills] = useState([]);
   const [availableItems, setAvailableItems] = useState({
     common: [],
     rare: [],
@@ -22,6 +29,12 @@ export const HeroProvider = ({ children }) => {
       if (!hero) {
         setHeroPowers([]);
         setHeroItems([]);
+        setHeroSkills({
+          weapons: [],
+          abilities: [],
+          passives: [],
+          ultimates: [],
+        });
         setAvailableItems({
           common: [...basicItems.common],
           rare: [...basicItems.rare],
@@ -35,9 +48,16 @@ export const HeroProvider = ({ children }) => {
 
       const powers = localizedHero.powers?.filter((p) => !p.disabled) ?? [];
       const items = localizedHero.items ?? [];
+      const skills =
+        [
+          ...localizedHero.skills.weapons,
+          ...localizedHero.skills.abilities,
+          ...localizedHero.skills.passives,
+        ] ?? [];
 
       setHeroPowers(powers);
       setHeroItems(items);
+      setHeroSkills(skills);
       setAvailableItems({
         common: [...basicItems.common, ...(items.common ?? [])],
         rare: [...basicItems.rare, ...(items.rare ?? [])],
@@ -78,6 +98,7 @@ export const HeroProvider = ({ children }) => {
         loadHero,
         availableItems,
         importHero,
+        heroSkills,
       }}
     >
       {children}

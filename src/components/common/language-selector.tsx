@@ -27,7 +27,6 @@ const LanguageSelector = () => {
     <FormControl
       variant="standard"
       onClick={() => {
-        console.log("update open to ", !open);
         setOpen(!open);
       }}
       sx={{

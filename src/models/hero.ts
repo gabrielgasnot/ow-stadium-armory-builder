@@ -1,5 +1,6 @@
 import { Items } from "./items";
 import { Power } from "./power";
+import Skills from "./skills";
 import { Role } from "./types/role";
 
 export interface Hero {
@@ -11,4 +12,5 @@ export interface Hero {
   shields: number;
   powers: Power[];
   items: Items;
+  skills: Skills;
 }

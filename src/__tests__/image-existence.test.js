@@ -14,10 +14,7 @@ describe("Image existence check", () => {
       ...hero.items.epic.map((item) => item.id),
     ])
     .flat();
-  const ids = [
-    ...items.map((item) => item.id),
-    ...hero_items_perks,
-  ];
+  const ids = [...items.map((item) => item.id), ...hero_items_perks];
   const missingFiles = [];
 
   test.each(ids)('"%s.png" exists', (id) => {

@@ -1,11 +1,14 @@
 import basicItems from "./basicItems.json";
 import heroes from "./heroes.json";
 import attributeTypes from "./attributeTypes.json";
+import skillDetails from "./skills.json";
 import i18n from "../i18n";
 import { Hero } from "../models/hero";
 import { Items } from "../models/items";
 import { Item } from "../models/item";
 import { Power } from "../models/power";
+import Skills from "../models/skills";
+import Skill from "../models/skill";
 
 /**
  * Return tue localized attributes
@@ -34,6 +37,7 @@ const getLocalizedHeroes = (): Hero[] => {
   const p = i18n.getFixedT(null, "powers");
   const i = i18n.getFixedT(null, "items");
   const d = i18n.getFixedT(null, "itemDescriptions");
+  const s = i18n.getFixedT(null, "skills");
 
   const order = h("order", { returnObjects: true }) as number[];
 
@@ -100,6 +104,30 @@ const getLocalizedHeroes = (): Hero[] => {
             )
           );
 
+          // Get skills from translation file
+          const skills = {
+            weapons: [],
+            abilities: [],
+            passives: [],
+            ultimates: [],
+          } as Skills;
+
+          Object.entries(heroData.skills).forEach(([skillType, skillIds]) => {
+            const skillKey = skillType as keyof Skills;
+            skills[skillKey].push(
+              ...skillIds.map((skillId) => {
+                const skill = s(skillId, { returnObjects: true });
+                const skillDetail =
+                  skillDetails.find((sd) => sd.id === skillId) ?? [];
+                return {
+                  id: skillId,
+                  ...skill,
+                  ...skillDetail,
+                } as Skill;
+              })
+            );
+          });
+
           // Return Hero object.
           return {
             ...heroData,
@@ -107,6 +135,7 @@ const getLocalizedHeroes = (): Hero[] => {
               (a, b) => (a.position ?? Infinity) - (b.position ?? Infinity)
             ),
             items: items,
+            skills: skills,
             id: id,
             name: h(`names.${id}`),
           } as Hero;

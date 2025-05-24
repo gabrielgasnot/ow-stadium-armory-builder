@@ -1240,6 +1240,7 @@ export default {
   "43P010": {
     position: 10,
     name: "Lille Fælde",
+    disabled: true,
     description:
       "After using [Updraft], your next [Take Aim] while airborn fires a [Bola Shot] that deals 60% reduced damage instead of an explosive bolt.",
   },

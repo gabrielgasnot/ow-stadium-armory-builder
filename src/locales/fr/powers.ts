@@ -1272,17 +1272,18 @@ export default {
   "43P010": {
     position: 11,
     name: "Lille Fælde",
+    disabled: true,
     description:
       "Après [Courant ascendant], votre prochain [Dans le mille] depuis les airs ne projette plus de carreau explosif, mais déclenche à la place un [Tir de bolas] qui inflige des dégâts réduits de 60 %.",
   },
   "43P011": {
-    position: 10,
+    position: 12,
     name: "Cuisson parfaite",
     description:
       "La zone de dégâts de [Tir de bolas] persiste pendant 3 s et inflige des dégâts augmentés de 50 %. Les éliminations à l'aide de [Tir de bolas] comptent pour [Chasseuse de primes].",
   },
   "43P012": {
-    position: 12,
+    position: 10,
     name: "Bourrasque Puissante",
     description:
       "[Courant ascendant] projette une rafale dans la direction de votre viseur, ce qui repousse les adversaires et leur inflige 40 points de dégâts.",

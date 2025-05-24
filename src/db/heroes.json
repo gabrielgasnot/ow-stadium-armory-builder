@@ -5,6 +5,12 @@
     "hp": 250,
     "armor": 300,
     "shields": 0,
+    "skills": {
+      "weapons": ["5I001"],
+      "abilities": ["5I002", "5I003", "5I004", "5I005"],
+      "passives": [],
+      "ultimates": ["5I005"]
+    },
     "powers": [
       "5P009",
       "5P012",
@@ -109,6 +115,12 @@
     "hp": 300,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["2I001"],
+      "abilities": ["2I002", "2I003", "2I004"],
+      "passives": ["2I005"],
+      "ultimates": ["2I004"]
+    },
     "powers": [
       "2P001",
       "2P002",
@@ -212,6 +224,12 @@
     "hp": 250,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["15I001", "15I005"],
+      "abilities": ["15I002", "15I003", "15I004"],
+      "passives": [],
+      "ultimates": ["15I005"]
+    },
     "powers": [
       "15P001",
       "15P002",
@@ -294,6 +312,12 @@
     "hp": 225,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["6I001", "6I002"],
+      "abilities": ["6I003", "6I004", "6I005"],
+      "passives": ["6I006", "6I007"],
+      "ultimates": ["6I005"]
+    },
     "powers": [
       "6P001",
       "6P002",
@@ -385,6 +409,12 @@
     "hp": 225,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["26I001"],
+      "abilities": ["26I002", "26I003", "26I004"],
+      "passives": [],
+      "ultimates": ["26I004"]
+    },
     "powers": [
       "26P001",
       "26P002",
@@ -473,6 +503,12 @@
     "hp": 250,
     "armor": 300,
     "shields": 0,
+    "skills": {
+      "weapons": ["19I001", "19I002"],
+      "abilities": ["19I003", "19I004", "19I005", "19I006", "19I007"],
+      "passives": ["19I008"],
+      "ultimates": ["19I006", "19I007"]
+    },
     "powers": [
       "19P001",
       "19P004",
@@ -585,6 +621,12 @@
     "hp": 250,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["21I001", "21I002"],
+      "abilities": ["21I003", "21I004"],
+      "passives": ["21I005"],
+      "ultimates": ["21I002"]
+    },
     "powers": [
       "21P001",
       "21P002",
@@ -703,6 +745,12 @@
     "hp": 155,
     "armor": 325,
     "shields": 0,
+    "skills": {
+      "weapons": ["24I001"],
+      "abilities": ["24I002", "24I003", "24I004", "24I005"],
+      "passives": [],
+      "ultimates": ["24I005"]
+    },
     "powers": [
       "24P004",
       "24P001",
@@ -809,6 +857,12 @@
     "hp": 375,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["34I001"],
+      "abilities": ["34I002", "34I003", "34I004", "34I005"],
+      "passives": ["34I006"],
+      "ultimates": ["34I005"]
+    },
     "powers": [
       "34P001",
       "34P004",
@@ -927,6 +981,12 @@
     "hp": 175,
     "armor": 0,
     "shields": 225,
+    "skills": {
+      "weapons": ["13I001"],
+      "abilities": ["13I002", "13I003", "13I004"],
+      "passives": ["13I005"],
+      "ultimates": ["13I004"]
+    },
     "powers": [
       "13P001",
       "13P002",
@@ -1024,6 +1084,12 @@
     "hp": 225,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["35I001", "35I002"],
+      "abilities": ["35I003", "35I004", "35I005"],
+      "passives": ["35I006"],
+      "ultimates": ["35I005"]
+    },
     "powers": [
       "35P001",
       "35P002",
@@ -1133,6 +1199,12 @@
     "hp": 250,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["22I001"],
+      "abilities": ["22I002", "22I003", "22I004"],
+      "passives": [],
+      "ultimates": ["22I004"]
+    },
     "powers": [
       "22P001",
       "22P002",
@@ -1239,6 +1311,12 @@
     "hp": 275,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["14I001"],
+      "abilities": ["14I002", "14I003", "14I004"],
+      "passives": [],
+      "ultimates": ["14I004"]
+    },
     "powers": [
       "14P001",
       "14P002",
@@ -1318,6 +1396,12 @@
     "hp": 250,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["29I001"],
+      "abilities": ["29I002", "29I003", "29I004"],
+      "passives": [],
+      "ultimates": ["29I004"]
+    },
     "powers": [
       "29P001",
       "29P002",
@@ -1433,6 +1517,12 @@
     "armor": 0,
     "shields": 150,
     "role": "Support",
+    "skills": {
+      "weapons": ["41I001"],
+      "abilities": ["41I002", "41I003", "41I004", "41I005"],
+      "passives": ["41I006"],
+      "ultimates": ["41I005"]
+    },
     "powers": [
       "41P001",
       "41P002",
@@ -1466,9 +1556,7 @@
           "id": "41S001",
           "price": 4000,
           "category": "Survival",
-          "attributes": [
-            { "type": "SH", "value": 25, "unit": "" }
-          ]
+          "attributes": [{ "type": "SH", "value": 25, "unit": "" }]
         },
         {
           "id": "41S004",
@@ -1494,9 +1582,7 @@
           "id": "41W003",
           "price": 11000,
           "category": "Weapon",
-          "attributes": [
-            { "type": "AS", "value": 10, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AS", "value": 10, "unit": "%" }]
         },
         {
           "id": "41S002",
@@ -1540,6 +1626,12 @@
     "hp": 300,
     "armor": 0,
     "shields": 0,
+    "skills": {
+      "weapons": ["20I001"],
+      "abilities": ["20I002", "20I003", "20I004"],
+      "passives": [],
+      "ultimates": ["20I004"]
+    },
     "powers": [
       "20P001",
       "20P002",
@@ -1622,6 +1714,12 @@
     "armor": 0,
     "shields": 0,
     "role": "Support",
+    "skills": {
+      "weapons": ["16I001"],
+      "abilities": ["16I002", "16I003", "16I004", "16I005"],
+      "passives": ["16I006"],
+      "ultimates": ["16I005"]
+    },
     "powers": [
       "16P001",
       "16P002",
@@ -1696,9 +1794,7 @@
           "id": "16A005",
           "price": 11000,
           "category": "Ability",
-          "attributes": [
-            { "type": "AP", "value": 15, "unit": "%" }
-          ]
+          "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
         },
         {
           "id": "16S002",
@@ -1715,6 +1811,12 @@
     "armor": 0,
     "shields": 0,
     "role": "Damage",
+    "skills": {
+      "weapons": ["43I001", "43I002"],
+      "abilities": ["43I003", "43I004", "43I005"],
+      "passives": ["43I006"],
+      "ultimates": ["43I005"]
+    },
     "powers": [
       "43P001",
       "43P002",
