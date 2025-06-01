@@ -33,7 +33,7 @@ export default {
     position: 2,
     name: "Barrier Reconstruction",
     description:
-      "When you deal damage with [Rocket Hammer] or [Fire Strike], restore health to [Barrier Field] equal to 10% of its max Health.",
+      "When you deal damage with [Rocket Hammer] or [Fire Strike], restore health to [Barrier Field] equal to 15% of its max Health.",
   },
   "5P002": {
     position: 6,
@@ -150,7 +150,7 @@ export default {
     position: 3,
     name: "Chaingun",
     description:
-      "While continuously shooting [Pulse Rifle], each shot grants 0.5% Weapon Power, stacking up to 100 times",
+      "While continuously shooting [Pulse Rifle], each shot grants 0.4% Weapon Power, stacking up to 100 times",
   },
   "15P003": {
     position: 9,
@@ -180,7 +180,7 @@ export default {
     position: 7,
     name: "Hunker Down",
     description:
-      "When [Helix Rocket] deals damage, creates a [Biotic Field] with a 70% reduced duration at your position",
+      "When [Helix Rocket] deals damage, creates a [Biotic Field] with a 50% reduced duration at your position",
   },
   "15P008": {
     position: 5,
@@ -359,7 +359,7 @@ export default {
     position: 1,
     name: "Focused Fusion",
     description:
-      "[Fusion Cannon]'s spread is reduced by 66% and damage falloff range is 20m farther",
+      "[Fusion Cannon]'s spread is reduced by 50% and damage falloff range is 20m farther",
   },
   "19P004": {
     position: 2,
@@ -382,7 +382,7 @@ export default {
     position: 7,
     name: "Ignition Burst",
     description:
-      "[Boosters] leave a trail of lava that deals 30 damage every 1s",
+      "[Boosters] leave a trail of lava that deals 80 damage every 1s",
   },
   "19P006": {
     position: 8,
@@ -499,7 +499,7 @@ export default {
     position: 1,
     name: "Scorched Earth",
     description:
-      "When you [Overheat], apply Burning to enemies within 6m, dealing damage equal to 10% of your max Life over 5s",
+      "When you [Overheat], apply Burning to enemies within 6m, dealing damage equal to 20% of your max Life over 5s",
   },
   "24P001": {
     position: 2,
@@ -577,19 +577,19 @@ export default {
     position: 2,
     name: "Royal Bullets",
     description:
-      "[Scatter Gun] critical hits against targets within 12m applies [Wound] for 30 damage over 3s",
+      "[Scatter Gun] critical hits against targets within 15m applies [Wound] for 50 damage over 3s",
   },
   "34P007": {
     position: 3,
     name: "Twist the Knife",
     description:
-      "[Scatter Gun] critical hits extend the duration of all [Wounds] on the target by 0.5s",
+      "[Scatter Gun] critical hits extend the duration of all [Wounds] on the target by 1s",
   },
   "34P002": {
     position: 4,
     name: "Blade Parade",
     description:
-      "Holding [Jagged Blade] charges it, increasing its damage by up to 35% and causing it to knockback",
+      "Holding [Jagged Blade] charges it, increasing its damage by up to 100% and causing it to knockback",
   },
   "34P010": {
     position: 5,
@@ -725,7 +725,7 @@ export default {
     position: 5,
     name: "Self-Care",
     description:
-      "When you use [Healing Ofuda], heal yourself for 5% of your max Life",
+      "When you use [Healing Ofuda], heal yourself for 15% of your max Life",
   },
   "35P006": {
     position: 6,
@@ -910,7 +910,7 @@ export default {
   "29P001": {
     position: 4,
     name: "Reload Therapy",
-    description: "When you reload a shot, heal 3% of your Life",
+    description: "When you reload a shot, heal 10% of your Life",
   },
   "29P002": {
     position: 1,
@@ -957,13 +957,13 @@ export default {
     position: 9,
     name: "Molten Munitions",
     description:
-      "When [Dynamite] explodes on the ground, it leaves lava that Burns enemies for 50 every 1s",
+      "When [Dynamite] explodes on the ground, it leaves lava that Burns enemies for 80 every 1s",
   },
   "29P010": {
     position: 10,
     name: "Out with a Bang",
     description:
-      "When [Dynamite] explodes, it spawns 3 sticky explosives that deal 66% reduced damage",
+      "When [Dynamite] explodes, it spawns 3 sticky explosives that deal 30% reduced damage",
   },
   "29P011": {
     position: 12,
@@ -1027,12 +1027,12 @@ export default {
     position: 8,
     name: "Black Hole",
     description:
-      "[Hyper Ring] slows the Move Speed of enemies who pass through it by 35% for 1s",
+      "[Hyper Ring] slows the Move Speed of enemies who pass through it by 35% for 2s",
   },
   "41P010": {
     position: 9,
     name: "Hyper Healer",
-    description: "Allies affected by [Hyper Ring] gain 50 Overhealth",
+    description: "Allies affected by [Hyper Ring] gain 100 Overhealth",
   },
   "41P011": {
     position: 12,
@@ -1106,7 +1106,7 @@ export default {
   "20P011": {
     position: 12,
     name: "Blizznado",
-    description: "While within [Blizzard], heal 5% of your Life every 1s",
+    description: "While within [Blizzard], heal 15% of your Life every 1s",
   },
   "20P012": {
     position: 11,
@@ -1211,13 +1211,13 @@ export default {
   "43P005": {
     position: 5,
     name: "Deep Pockets",
-    description: "When you use an ability, restore 50% of your Max Ammo.",
+    description: "When you use an ability, restore 25% of your Max Ammo.",
   },
   "43P006": {
     position: 6,
     name: "Forager",
     description:
-      "For 2s after using [Quick Dash], [Revdraw Crossbow] hits heal you for 3% of your Max Life.",
+      "For 2s after using [Quick Dash], [Revdraw Crossbow] hits heal you for 4% of your Max Life.",
   },
   "43P007": {
     position: 7,
@@ -1235,12 +1235,11 @@ export default {
     position: 9,
     name: "Volley à deux",
     description:
-      "Every fifth [Revdraw Crossbow] shot fires an additional 2 bolts in a spread that deal 50% reduced domage.",
+      "Every fifth [Revdraw Crossbow] shot fires an additional 2 bolts in a spread that deal 33% reduced domage.",
   },
   "43P010": {
     position: 10,
     name: "Lille Fælde",
-    disabled: true,
     description:
       "After using [Updraft], your next [Take Aim] while airborn fires a [Bola Shot] that deals 60% reduced damage instead of an explosive bolt.",
   },
@@ -1248,7 +1247,7 @@ export default {
     position: 11,
     name: "So cooked",
     description:
-      "[Bola Shot]'s damaging zone deals 50% more damage and lingers for 3s. [Bola Shot] eliminations count towards [Bounty Hunting].",
+      "[Bola Shot]'s damaging zone deals 30% more damage and lingers for 2s. [Bola Shot] eliminations count towards [Bounty Hunting].",
   },
   "43P012": {
     position: 12,

@@ -69,7 +69,7 @@
           "price": 10000,
           "category": "Weapon",
           "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
+            { "type": "AP", "value": 15, "unit": "%" },
             { "type": "AS", "value": 10, "unit": "%" }
           ]
         },
@@ -277,7 +277,7 @@
           "category": "Survival",
           "attributes": [
             { "type": "HP", "value": 25, "unit": "" },
-            { "type": "AS", "value": 5, "unit": "%" }
+            { "type": "AP", "value": 5, "unit": "%" }
           ]
         }
       ],
@@ -1250,7 +1250,7 @@
           "id": "22S001",
           "price": 4000,
           "category": "Survival",
-          "attributes": [{ "type": "MS", "value": 5, "unit": "%" }]
+          "attributes": [{ "type": "MS", "value": 10, "unit": "%" }]
         },
         {
           "id": "22S002",
@@ -1473,7 +1473,7 @@
           "id": "29W005",
           "price": 11000,
           "category": "Weapon",
-          "attributes": [{ "type": "AS", "value": 10, "unit": "%" }]
+          "attributes": [{ "type": "AS", "value": 15, "unit": "%" }]
         },
         {
           "id": "29A003",
@@ -1883,12 +1883,13 @@
           "id": "43W003",
           "price": 10000,
           "category": "Weapon",
-          "attributes": [{ "type": "WP", "value": 15, "unit": "%" }]
+          "attributes": [{ "type": "WP", "value": 5, "unit": "%" }]
         },
         {
           "id": "43A002",
           "price": 10000,
           "category": "Ability",
+          "disabled": true,
           "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
         },
         {

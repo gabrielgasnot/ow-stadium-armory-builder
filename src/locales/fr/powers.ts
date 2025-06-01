@@ -33,7 +33,7 @@ export default {
     position: 2,
     name: "Reconstruction d'Écran",
     description:
-      "Lorsque vous infligez des dégâts avec votre [Marteau à réaction] ou [Frappe de feu], [Écran] récupère 10% de ses points de vie maximum.",
+      "Lorsque vous infligez des dégâts avec votre [Marteau à réaction] ou [Frappe de feu], [Écran] récupère 15% de ses points de vie maximum.",
   },
   "5P002": {
     position: 5,
@@ -151,7 +151,7 @@ export default {
     position: 4,
     name: "Fusil Automatique",
     description:
-      "Lorsque vous tirez en continu avec votre [Fusil à impulsions], chaque tir augmente votre puissance d'arme de 0,5%. Cette effet peut se cumuler 100 fois.",
+      "Lorsque vous tirez en continu avec votre [Fusil à impulsions], chaque tir augmente votre puissance d'arme de 0,4%. Cette effet peut se cumuler 100 fois.",
   },
   "15P003": {
     position: 10,
@@ -181,7 +181,7 @@ export default {
     position: 5,
     name: "À Terre",
     description:
-      "Lorsque vous infligez des dégâts avec [Roquette LX], vous faites apparaître un [Champ biotique] ayant une durée réduite de 70% à votre emplacement.",
+      "Lorsque vous infligez des dégâts avec [Roquette LX], vous faites apparaître un [Champ biotique] ayant une durée réduite de 50% à votre emplacement.",
   },
   "15P008": {
     position: 6,
@@ -361,7 +361,7 @@ export default {
     position: 1,
     name: "Fusion Ciblée",
     description:
-      "La dispersion de [Fusio-canon] est réduite de 66% et la portée de flèchissement est augmentée de 20 m.",
+      "La dispersion de [Fusio-canon] est réduite de 50% et la portée de flèchissement est augmentée de 20 m.",
   },
   "19P004": {
     position: 2,
@@ -384,7 +384,7 @@ export default {
     position: 7,
     name: "Allumage Explosif",
     description:
-      "Vos [Turboréacteurs] laissent derrière eux une traînée de lave qui inflige 30 points de dégâts par seconde.",
+      "Vos [Turboréacteurs] laissent derrière eux une traînée de lave qui inflige 80 points de dégâts par seconde.",
   },
   "19P006": {
     position: 10,
@@ -503,7 +503,7 @@ export default {
     position: 2,
     name: "Terre Brûlée",
     description:
-      "Lorsque vous êtes en [Surchauffe], vous faites brûler les adversaires à moins de 6 m, ce qui leu rinflige des dégâts égaux à 10% de vos points de vie maximum en 5 s.",
+      "Lorsque vous êtes en [Surchauffe], vous faites brûler les adversaires à moins de 6 m, ce qui leu rinflige des dégâts égaux à 20% de vos points de vie maximum en 5 s.",
   },
   "24P001": {
     position: 1,
@@ -581,19 +581,19 @@ export default {
     position: 2,
     name: "Balles Royales",
     description:
-      "Les coups critiques de votre [Fusil à dispersion] contre les cibles à moins de 12 m appliquent des [Blessures] qui infligent 30 points de dégâts en 3 s.",
+      "Les coups critiques de votre [Fusil à dispersion] contre les cibles à moins de 15 m appliquent des [Blessures] qui infligent 50 points de dégâts en 3 s.",
   },
   "34P007": {
     position: 3,
     name: "Torsion de Lame",
     description:
-      "Les coups critiques de votre [Fusil à dispersion] prolongent la durée de toutes les [Blessures] subites par la cible de 0,5 s.",
+      "Les coups critiques de votre [Fusil à dispersion] prolongent la durée de toutes les [Blessures] subites par la cible de 1 s.",
   },
   "34P002": {
     position: 5,
     name: "Parade de Lame",
     description:
-      "Lorsque vous tenez [Lame crantée], elle se charge pour infliger jusqu'à 35% de dégâts supplémentaires et repousser les adversaires.",
+      "Lorsque vous tenez [Lame crantée], elle se charge pour infliger jusqu'à 100% de dégâts supplémentaires et repousser les adversaires.",
   },
   "34P010": {
     position: 4,
@@ -743,7 +743,7 @@ export default {
     position: 5,
     name: "Soins Personnels",
     description:
-      "Lorsque vous utilisez [O-fuda de guérison], vous récupérez 5% de vos points de vie maximum.",
+      "Lorsque vous utilisez [O-fuda de guérison], vous récupérez 15% de vos points de vie maximum.",
   },
   "35P006": {
     position: 6,
@@ -933,7 +933,7 @@ export default {
     position: 4,
     name: "Rechargement Thérapeutique",
     description:
-      "Vous récupérez 3% de vos points de vie lorsque vous rechargez votre arme.",
+      "Vous récupérez 10% de vos points de vie lorsque vous rechargez votre arme.",
   },
   "29P002": {
     position: 1,
@@ -980,13 +980,13 @@ export default {
     position: 10,
     name: "Munitions Magmatiques",
     description:
-      "Si votre [Dynamite] ex^mpse au sol, elle produit de la lave qui brûle les adversaires en leur infligeant 50 points de dégâts par seconde.",
+      "Si votre [Dynamite] ex^mpse au sol, elle produit de la lave qui brûle les adversaires en leur infligeant 80 points de dégâts par seconde.",
   },
   "29P010": {
     position: 9,
     name: "Final Explosif",
     description:
-      "Lorsque votre [Dynamite] explose, elle génère 3 bombes collantes qui infligent des dégâts réduits de 66%.",
+      "Lorsque votre [Dynamite] explose, elle génère 3 bombes collantes qui infligent des dégâts réduits de 30%.",
   },
   "29P011": {
     position: 12,
@@ -1051,13 +1051,13 @@ export default {
     position: 10,
     name: "Trou Noir",
     description:
-      "Les adversaires qui passent à travers de votre [Hyperanneau] voient leur vitesse de déplacement réduite de 35% pendant 1 s.",
+      "Les adversaires qui passent à travers de votre [Hyperanneau] voient leur vitesse de déplacement réduite de 35% pendant 2 s.",
   },
   "41P010": {
     position: 9,
     name: "Hypersoins",
     description:
-      "Les personnages alliés affectés par [Hyperanneau] gagnent un surplus de 50 points de vie.",
+      "Les personnages alliés affectés par [Hyperanneau] gagnent un surplus de 100 points de vie.",
   },
   "41P011": {
     position: 12,
@@ -1135,7 +1135,7 @@ export default {
     position: 12,
     name: "Blizzard Tournoyant",
     description:
-      "Lorsque vous vous tenez dans le [Blizzard], vous récupérez 5% de vos points de vie chaque seconde.",
+      "Lorsque vous vous tenez dans le [Blizzard], vous récupérez 15% de vos points de vie chaque seconde.",
   },
   "20P012": {
     position: 11,
@@ -1243,13 +1243,13 @@ export default {
     position: 7,
     name: "Poches Profondes",
     description:
-      "Lorsque vous utilisez une capacité, vous récupérez 50% de votre maximum de munitions.",
+      "Lorsque vous utilisez une capacité, vous récupérez 25% de votre maximum de munitions.",
   },
   "43P006": {
     position: 5,
     name: "Herboriste",
     description:
-      "Pendant 2 s après l'utilisation de [Ruée rapide], les tirs réussis de votre [arbalète Rafale] vous rendent 3 % de vos points de vie maximum.",
+      "Pendant 2 s après l'utilisation de [Ruée rapide], les tirs réussis de votre [arbalète Rafale] vous rendent 4 % de vos points de vie maximum.",
   },
   "43P007": {
     position: 6,
@@ -1267,12 +1267,11 @@ export default {
     position: 9,
     name: "Volée à deux",
     description:
-      "Tous les cinq tirs à l'[arbalète Rafale], vous projetez 2 carreaux supplémentaires qui infligent des dégâts réduis de 50 %.",
+      "Tous les cinq tirs à l'[arbalète Rafale], vous projetez 2 carreaux supplémentaires qui infligent des dégâts réduis de 33 %.",
   },
   "43P010": {
     position: 11,
     name: "Lille Fælde",
-    disabled: true,
     description:
       "Après [Courant ascendant], votre prochain [Dans le mille] depuis les airs ne projette plus de carreau explosif, mais déclenche à la place un [Tir de bolas] qui inflige des dégâts réduits de 60 %.",
   },
@@ -1280,7 +1279,7 @@ export default {
     position: 12,
     name: "Cuisson parfaite",
     description:
-      "La zone de dégâts de [Tir de bolas] persiste pendant 3 s et inflige des dégâts augmentés de 50 %. Les éliminations à l'aide de [Tir de bolas] comptent pour [Chasseuse de primes].",
+      "La zone de dégâts de [Tir de bolas] persiste pendant 2 s et inflige des dégâts augmentés de 30 %. Les éliminations à l'aide de [Tir de bolas] comptent pour [Chasseuse de primes].",
   },
   "43P012": {
     position: 10,
