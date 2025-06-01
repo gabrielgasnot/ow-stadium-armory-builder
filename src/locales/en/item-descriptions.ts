@@ -127,7 +127,7 @@ export default {
       value: "[Helix Rocket] damage restores 20% of your ammo",
     },
   ],
-  "15A001": [{ type: "[Biotic Field] Duration", value: 30, unit: "%" }],
+  "15A001": [{ type: "[Biotic Field] Duration", value: 40, unit: "%" }],
   "15A002": [
     {
       type: "Reduced [Helix Rocket] Self-Damage",
@@ -141,7 +141,7 @@ export default {
     },
   ],
   "15A003": [
-    { type: "[Biotic Field] Radius", value: 30, unit: "%" },
+    { type: "[Biotic Field] Radius", value: 40, unit: "%" },
     {
       type: "description",
       value: "[Biotic Field] heals allies below 50% Life for 10% more",
@@ -280,7 +280,7 @@ export default {
     {
       type: "description",
       value:
-        "Using [Self-Destruct] drops lava nearby that deals 30 damage every 1s",
+        "Using [Self-Destruct] drops lava nearby that deals 80 damage every 1s",
     },
   ],
   "19S001": [{ type: "[Boosters] Duration", value: 25, unit: "%" }],
@@ -408,7 +408,7 @@ export default {
   "24W001": [
     {
       type: "description",
-      value: "Recover from being [Overheated] 25% faster",
+      value: "Recover from being [Overheated] 50% faster",
     },
   ],
   "24W002": [
@@ -553,7 +553,7 @@ export default {
   "34S005": [
     {
       type: "description",
-      value: "While casting [Rampage] or [Carnage], gain 50% damage reduction",
+      value: "While casting [Rampage] or [Carnage], gain 75% damage reduction",
     },
   ],
   "34S006": [
@@ -750,7 +750,7 @@ export default {
     {
       type: "description",
       value:
-        "[Biotic Grenade] cooldown is reduced by 1s for each target it hits",
+        "[Biotic Grenade] cooldown is reduced by 2s for each target it hits",
     },
   ],
   "22S004": [
@@ -856,7 +856,7 @@ export default {
     {
       type: "description",
       value:
-        "When the target is within 10m, unscoped shot gains 15% increased damage",
+        "When the target is within 10m, unscoped shot gains 25% increased damage",
     },
   ],
   "29A003": [

@@ -144,7 +144,7 @@ export default {
         "Lorsque vous utilisez [Roquette LX], vous récupérez 20% de vos munitions.",
     },
   ],
-  "15A001": [{ type: "Durée de [Champ biotique]", value: 30, unit: "%" }],
+  "15A001": [{ type: "Durée de [Champ biotique]", value: 40, unit: "%" }],
   "15A002": [
     {
       type: "Dégâts personnels de [Roquette LX] réduits",
@@ -158,7 +158,7 @@ export default {
     },
   ],
   "15A003": [
-    { type: "Rayon de [Champ biotique]", value: 30, unit: "%" },
+    { type: "Rayon de [Champ biotique]", value: 40, unit: "%" },
     {
       type: "description",
       value:
@@ -312,7 +312,7 @@ export default {
     {
       type: "description",
       value:
-        "Votre [Autodestruction] fait apparaître de la lave qui inflige 30 points de dégâts par seconde.",
+        "Votre [Autodestruction] fait apparaître de la lave qui inflige 80 points de dégâts par seconde.",
     },
   ],
   "19S001": [{ type: "Durée de [Turboréacteurs]", value: 25, unit: "%" }],
@@ -457,7 +457,7 @@ export default {
   "24W001": [
     {
       type: "description",
-      value: "Vous récupérez 25% plus vite en cas de [surchauffe].",
+      value: "Vous récupérez 50% plus vite en cas de [surchauffe].",
     },
   ],
   "24W002": [
@@ -611,7 +611,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous utilisez [Massacre] ou [Carnage], vous obtenez 50% de réduction de dégâts.",
+        "Lorsque vous utilisez [Massacre] ou [Carnage], vous obtenez 75% de réduction de dégâts.",
     },
   ],
   "34S006": [
@@ -830,7 +830,7 @@ export default {
     {
       type: "description",
       value:
-        "Le temps de recharge de [Grenade biotique] est réduit de 1 s par cible touchée.",
+        "Le temps de recharge de [Grenade biotique] est réduit de 2 s par cible touchée.",
     },
   ],
   "22S004": [
@@ -941,7 +941,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque la cible est à moins de 10 m, les tirs à l'œil nu infligent des dégâts augmentés de 15%.",
+        "Lorsque la cible est à moins de 10 m, les tirs à l'œil nu infligent des dégâts augmentés de 25%.",
     },
   ],
   "29A003": [
