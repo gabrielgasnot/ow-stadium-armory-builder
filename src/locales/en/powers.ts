@@ -1203,7 +1203,6 @@ export default {
   },
   "43P004": {
     position: 4,
-    disabled: true,
     name: "Thread the needle",
     description:
       "[Take Aim] bolts pierce enemies. Additional explosions deal 66% reduced damage.",

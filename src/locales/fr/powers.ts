@@ -1234,7 +1234,6 @@ export default {
   },
   "43P004": {
     position: 2,
-    disabled: true,
     name: "Enfiler l'aiguille",
     description:
       "Les carreaux de [Dans le mille] transpercent les adversaires. Les explosions supplémentaires infligent des dégâts réduits de 66 %.",
