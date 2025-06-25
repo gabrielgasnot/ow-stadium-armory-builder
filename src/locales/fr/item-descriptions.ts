@@ -1608,115 +1608,119 @@ export default {
     {
       type: "description",
       value:
-        "After using [Harmony Orb] or [Discord Orb], gain 100% Projectile Speed for 3s",
+        "Lorsque vous lancez un [Orbe d'harmonie] ou un [Orbe de discorde], la vitesse de vos projectiles augmente de 100 % pendant 3 s.",
     },
   ],
   "10W002": [
     {
       type: "description",
-      value: "[Orb of Destruction]'s secondary fire charges 20% faster.",
+      value:
+        "Le tir secondaire d'[Orbe de destruction] se charge 20 % plus vite.",
     },
   ],
   "10W003": [
     {
       type: "description",
-      value: "Targets affected by [Discord Orb] are Revealed.",
+      value: "Les cibles de vos [Orbes de discorde] sont révélées.",
     },
   ],
   "10A001": [
     {
       type: "description",
-      value: "[Harmony Orb] heals airborne allies for 15% more.",
+      value:
+        "Les soins de votre [Orbe d'harmonie] sont augmentés de 15 % sur les personnages alliés qui sont en l'air.",
     },
   ],
   "10A002": [
     {
       type: "description",
       value:
-        "While [Transcendence] is active, its radius increases by 1m every 1s.",
+        "Tant que [Transcendance] est active, son rayon augmente de 1 m chaque seconde.",
     },
   ],
   "10A003": [
     {
       type: "description",
       value:
-        "Increase your healing by up to 20%, based on how close you are to your target.",
+        "Vois soins augmentent jusqu'à un maximum de 20 % en fonction de votre proximité à la cible.",
     },
   ],
   "10A004": [
     {
-      type: "Starting Ultimate Charge",
+      type: "Charge de capacité ultime initiale",
       value: 15,
       unit: "%",
     },
     {
       type: "description",
       value:
-        "Allies affected by [Transcendence] have their cooldowns refresh 15% faster.",
+        "Les personnages alliés qui bénéficient de [Transcendance] rechargent leurs capacités 15 % plus vite.",
     },
   ],
   "10A005": [
     {
-      type: "Transcendence Duration",
+      type: "Durée de [Transcendance]",
       value: 30,
       unit: "%",
     },
     {
       type: "description",
       value:
-        "After [Transcendence] ends, gain Overhealth equal to 100% of the healing it did.",
+        "Vous gagnez un surplus de points de vie équivalent à 100 % des soins prodigués par [Transcendance] lorsqu'elle se termine.",
     },
   ],
   "10S001": [
     {
       type: "description",
-      value: "While airborne, hold Jump to hover for up to 3s.",
+      value:
+        "Lorsque vous êtes en l'air, maintenez la touche de saut pour flotter pendant un maximum de 3 s.",
     },
   ],
   "10S002": [
     {
       type: "description",
       value:
-        "When you charge an orb with [Orb of Destruction]'s secondary fire, restore for 3% of your Life.",
+        "Lorsque vous chargez un orbe avec le tir secondaire d'[Orbe de destruction], vous récupérez 3 % de vos points de vie.",
     },
   ],
   "10S003": [
     {
       type: "description",
       value:
-        "Eliminating an enemy affected by [Discord Orb] grants 5 Armor for the rest of the round, up to 50 Armor.",
+        "Lorsque vous éliminez une cible affectée par votre [Orbe de discorde], vous gagnez 5 points d'armure pour le reste de la manche, jusqu'à un maximum de 50.",
     },
   ],
   "10S004": [
     {
       type: "description",
-      value: "For every 50 Armor you have, gain 5% [Quick Melee] Damage.",
+      value:
+        "Les dégâts de votre [Coup en mêlée] augmentent de 5 % pour chaque tranche de 50 points d'armure dont vous bénéficiez.",
     },
   ],
   "10S005": [
     {
       type: "description",
       value:
-        "When your Shields are depleted, knock back nearby enemies, dealing 80 damage. Can only trigger every 6s after Shields are fully restored.",
+        "Lorsque vos boucliers sont détruits, vous repoussez les adversaires à proximité et leur infligez 80 points de dégâts. Cet effet ne peut se produire que toutes les 6 s après la recharge complète de votre bouclier.",
     },
   ],
   "10S006": [
     {
       type: "description",
       value:
-        "Allies affected by [Harmony Orb] take 10% reduced Ability Damage.",
+        "Les dégâts subis par les personnages alliés bénéficiant d'[Orbe d'harmonie] sont réduits de 10 %.",
     },
   ],
   "18W001": [
     {
       type: "description",
       value:
-        "Deal 10% increased damage and 25% [Quick Melee] damage to enemies that are airborne.",
+        "Vos dégâts sont augmentés de 10 % et vos dégâts de [Coup en mêlée] de 25 % contre les cibles en l'air.",
     },
   ],
   "18W002": [
     {
-      type: "[Frag Launcher] Bounce Distance",
+      type: "Distance des rebonds de [Lance-grenades]",
       value: 25,
       unit: "%",
     },
@@ -1725,90 +1729,94 @@ export default {
     {
       type: "description",
       value:
-        "After detonating [Concussion Mine], your next 2 [Frag Launcher] shots gain 200% Projectile Speed and deal 10% increased damage to airborne enemies.",
+        "Après avoir déclenché votre [Mine incapacitante], la vitesse des projectiles de vos 2 prochains tirs de [Lance-grenades] est augmentée de 200 % et ils infligent 10 % de dégâts supplémentaires aux cibles en l'air.",
     },
   ],
   "18A001": [
     {
-      type: "Starting Ultimate Charge",
+      type: "Charge de capacité ultime initiale",
       value: 10,
       unit: "%",
     },
     {
       type: "description",
-      value: "After detonating [Rip Tire], trigger [Total Mayhem] after 0.5s.",
+      value:
+        "Après avoir fait exploser [Pneumastic], vous déclenchez [Mauvais Perdant] après 0,5 s.",
     },
   ],
   "18A002": [
     {
-      type: "[Steel Trap] Health",
+      type: "Points de vie de [Piège d'acier]",
       value: 50,
       unit: "%",
     },
     {
       type: "description",
-      value: "[Steel Trap] refunds 33% cooldown when destroyed.",
+      value:
+        "[Piège d'acier] récupère 33 % de son temps de recharge lorsqu'il est détruit.",
     },
   ],
   "18A003": [
     {
       type: "description",
-      value: "Whenever [Total Mayhem] deals damage, gain 3% Ultimate Charge.",
+      value:
+        "Votre charge de capacité ultime augmente de 3 % chaque fois que [Mauvais Perdant] inflige des dégâts.",
     },
   ],
   "18A004": [
     {
-      type: "[Concussion Mine] Explosion Radius",
+      type: "Rayon d'explosion de [Mine incapacitante]",
       value: 15,
       unit: "%",
     },
     {
       type: "description",
       value:
-        "If [Concussion Mine] is 5m above the ground when detonated, increase its explosion radius by 25%.",
+        "Si votre [Mine incapacitante] se trouve à 5 m au-dessus du sol quand elle détone, son rayon d'explosion est augmenté de 25 %.",
     },
   ],
   "18A005": [
     {
-      type: "[Steel Trap] Throw Distance",
+      type: "Distance de lancer de [Piège d'acier]",
       value: 50,
       unit: "%",
     },
     {
       type: "description",
-      value: "Enemies that trigger [Steel Trap] Burn for 50 damage over 3s.",
+      value:
+        "Les ennemis qui déclenchent [Piège d'acier] s'enflamment et subissent 50 points de dégâts sur 3 s.",
     },
   ],
   "18S001": [
     {
       type: "description",
       value:
-        "When [Steel Trap] triggers, reveal the target and gain 25% Move Speed and 10% Attack Speed for 3s.",
+        "Lorsque [Piège d'acier] se déclenche, sa cible vous est révélée, votre vitesse de déplacement augmente de 25 % et votre vitesse d'attaque de 10 % pendant 3 s.",
     },
   ],
 
   "18S002": [
     {
-      type: "[Concussion Mine] Self Knockback Distance",
+      type: "Distance de l'effet de recul personnel de [Mine incapacitante]",
       value: 20,
       unit: "%",
     },
   ],
   "18S003": [
     {
-      type: "[Concussion Mine] Health",
+      type: "Points de vie de [Mine incapacitante]",
       value: 50,
       unit: "%",
     },
     {
       type: "description",
       value:
-        "For each target detonated by [Concussion Mine], gain Overhealth equal to 5% of Max Life for 3s.",
+        "Chaque cible qui subit l'explosion de [Mine incapacitante] vous confère un surplus de points de vie égal à 5 % de vos points de vie maximum pendant 3 s.",
     },
   ],
   "31W001": [
     {
-      type: "[Hyperspheres] Range",
+      type: "Portée d'[Hypersphères]",
       value: 15,
       unit: "%",
     },
@@ -1817,12 +1825,12 @@ export default {
     {
       type: "description",
       value:
-        "[Gravity Flux] levitates enemies for 25% longer. Enemies affected take 20% increased damage from [Hyperspheres].",
+        "La durée de soulèvement de [Flux Gravitationnel] est augmentée de 25 %. Les dégâts des [Hypersphères] contre les adversaires soulevés sont augmentés de 20 %.",
     },
   ],
   "31W003": [
     {
-      type: "[Hyperspheres] Explosion Radius",
+      type: "Rayon d'explosion d'[Hypersphères]",
       value: 35,
       unit: "%",
     },
@@ -1831,19 +1839,19 @@ export default {
     {
       type: "description",
       value:
-        "When you deal damage with [Accretion], gain 5% Ability Power, stacking up to 4 times. Resets on miss.",
+        "Lorsque vous infligez des dégâts avec [Concrétion], vous gagnez 5 % de puissance de capacité. Cet effet peut être cumulé 4 fois. Les cumuls sont réinitialisés si vous ratez votre cible.",
     },
   ],
   "31A002": [
     {
-      type: "[Kinetic Grasp] Duration",
+      type: "Durée de [Captation cinétique]",
       value: 50,
       unit: "%",
     },
   ],
   "31A003": [
     {
-      type: "[Accretion] Explosion Radius",
+      type: "Rayon d'explosion de [Concrétion]",
       value: 50,
       unit: "%",
     },
@@ -1852,21 +1860,21 @@ export default {
     {
       type: "description",
       value:
-        "While behind [Experimental Barrier], gain 5% Weapon Power and Attack Speed. While in front of [Experimental Barrier], gain 10% Move Speed and Weapon Lifesteal.",
+        "Tant que vous êtes derrière votre [Écran expérimental], votre puissance d'arme et votre vitesse d'attaque augmentent de 5 %. Tant que vous êtes devant, votre vitesse de déplacement et le vol de vie de votre arme augmentent de 10 %.",
     },
   ],
   "31S002": [
     {
       type: "description",
       value:
-        "While [Kinetic Grasp] is active, reduce incoming Beam damage by 50%.",
+        "[Captation cinétique] réduit les dégâts des rayons de 50 % tant que la capacité est active.",
     },
   ],
   "31S003": [
     {
       type: "description",
       value:
-        "[Experimental Barrier] heals nearby allies for 3% of your max Life every 1s.",
+        "[Écran expérimental] soigne les personnages alliés à proximité à hauteur de 3 % de vos points de vie maximum par seconde.",
     },
   ],
 };
