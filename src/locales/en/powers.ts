@@ -1234,7 +1234,7 @@ export default {
     position: 9,
     name: "Volley à deux",
     description:
-      "Every fifth [Revdraw Crossbow] shot fires an additional 2 bolts in a spread that deal 33% reduced domage.",
+      "Every fifth [Revdraw Crossbow] shot fires an additional 2 bolts in a spread that deal 33% reduced damage.",
   },
   "43P010": {
     position: 10,
@@ -1253,5 +1253,221 @@ export default {
     name: "Mighty Gust",
     description:
       "[Updraft] launches a wind blast towards your crosshair, knocking back enemies and dealing 40 damage.",
+  },
+
+  "10P001": {
+    position: 1,
+    name: "Flying Kick",
+    description:
+      "While airborne, [Quick Melee] becomes a dash kick that stuns if it knocks an enemy back into a wall. (5s cooldown).",
+  },
+  "10P002": {
+    position: 2,
+    name: "It's Orbin' Time",
+    description:
+      "[Orb of Destruction]'s secondary fire can charge up to 3 additional orbs.",
+  },
+  "10P003": {
+    position: 3,
+    name: "Seeking Salvation",
+    description:
+      "[Orb of Destruction]'s secondary fire projectiles home when aimed at a target below 35% Life.",
+  },
+  "10P004": {
+    position: 4,
+    name: "Dual Harmony",
+    description: "Gain a 2nd [Harmony Orb] but they both heal 45% less.",
+  },
+  "10P005": {
+    position: 5,
+    name: "Enlightenment",
+    description:
+      "Allies affected by [Harmony Orb] are healed for 35% of the damage you deal.",
+  },
+  "10P006": {
+    position: 6,
+    name: "Gotta Have Faith",
+    description:
+      "[Harmony Orb] targets can be out of your line of sight for 5s longer before [Harmony Orb] returns to you.",
+  },
+  "10P007": {
+    position: 7,
+    name: "Inner Peace",
+    description:
+      "Gain a [Harmony Orb] that is always attached to you. It heals for 75% less.",
+  },
+  "10P008": {
+    position: 8,
+    name: "Discord Fever",
+    description:
+      "When [Discord Orb] is applied to a target, they take 50 damage over 5s.",
+  },
+  "10P009": {
+    position: 9,
+    name: "Discord Inferno",
+    description:
+      "When you critically hit a target affected by your [Discord Orb], the [Orb of Destruction] explodes, dealing 50 damage.",
+  },
+  "10P010": {
+    position: 10,
+    name: "Instant Karma",
+    description:
+      "When a target of your [Discord Orb] damages you, restore 30% of that damage over 2s.",
+  },
+  "10P011": {
+    position: 11,
+    name: "Circle of Strife",
+    description:
+      "While using [Transcendence], apply [Discord Orb] to all enemies within range.",
+  },
+  "10P012": {
+    position: 12,
+    name: "Soul Control",
+    description:
+      "[Transcendence] can be canceled early, saving up to 65% of your Ultimate Charge.",
+  },
+
+  "18P001": {
+    position: 1,
+    name: "2 Frag 2 Frurious",
+    description:
+      "[Frag Launcher] has a 25% chance to shoot an additional projectile that deals 66% reduced damage.",
+  },
+  "18P002": {
+    position: 2,
+    name: "Bango!",
+    description:
+      "[Frag Launcher] Direct Hits without bouncing Burn for 20% additional damage over 2s.",
+  },
+  "18P003": {
+    position: 3,
+    name: "Big Bang",
+    description:
+      "When a [Frag Launcher] shot bounces, increase its projectile size by 33%.",
+  },
+  "18P004": {
+    position: 4,
+    name: "Bingo!",
+    description:
+      "[Frag Launcher] Direct Hits without bouncing recude cooldown of abilities by 25%.",
+  },
+  "18P005": {
+    position: 5,
+    name: "Soot Shaker",
+    description:
+      "After detonating [Concussion Mine], gain 15% increased Attack Speed for 1.5s and restore 20% Max Ammo.",
+  },
+  "18P006": {
+    position: 6,
+    name: "It's a(nother) Trap!",
+    description: "Gain 1 additional charge of [Steel Trap].",
+  },
+  "18P007": {
+    position: 7,
+    name: "Trap II, Esquire",
+    description:
+      "After [Concussion Mine] has landed for 0.5s, detonating it will spawn a mini [Steel Trap] that slows instead of immobilizing.",
+  },
+  "18P008": {
+    position: 8,
+    name: "Hop Boom",
+    description:
+      "After launching yourself with [Concussion Mine], detonate a [Concussion Mine] wherever you land with 50% reduced effectiveness.",
+  },
+  "18P009": {
+    position: 9,
+    name: "Slapnel",
+    description:
+      "[Quick Melee] hits explode for up to 100% [Quick Melee] damage, knocking you and targets back (10s cooldown).",
+  },
+  "18P010": {
+    position: 10,
+    name: "Gachabomb",
+    description:
+      "+20% [Total Mayhem] Explosion Radius. [Total Mayhem] creates a random number of additional bombs.",
+  },
+  "18P011": {
+    position: 11,
+    name: "Rainin' Lead",
+    description:
+      "After launching yourself, drop 1 [Total Mayhem] bomb with 25% reduced damage every 0.4s while airborne.",
+  },
+  "18P012": {
+    position: 12,
+    name: "Rip Roll",
+    description:
+      "20% Ultimate Cost Reduction. During your ultimate, enter your [RIP-Tire]. Launch out when it is destroyed or triggered.",
+  },
+
+  "31P001": {
+    position: 1,
+    name: "Zero Grabvity",
+    description: "When you use an ability, gain the ability to fly for 2.5s.",
+  },
+  "31P002": {
+    position: 2,
+    name: "Hyperloop",
+    description:
+      "[Hyperspheres] direct hits reduce the cooldown of [Accretion] by 0.5s.",
+  },
+  "31P003": {
+    position: 3,
+    name: "Trinisphere",
+    description:
+      "Your primary fire launches a third [Hypersphere] that deals 50% reduced damage.",
+  },
+  "31P004": {
+    position: 4,
+    name: "Event Horizon",
+    description:
+      "Damage absorbed by [Kinetic Grasp] also restores [Experimental Barrier]'s health. Excess is converted to Overhealth.",
+  },
+  "31P005": {
+    position: 5,
+    name: "Symphonic Syzygy",
+    description:
+      "When [Kinetic Grasp] ends, for every 100 damage absorbed gain 10% Attack Speed for 4s, stacking up to 4 times.",
+  },
+  "31P006": {
+    position: 6,
+    name: "Orbital Barrier",
+    description:
+      "Get a mini [Experimental Barrier] that orbits around you. It has 50% reduced health.",
+  },
+  "31P007": {
+    position: 7,
+    name: "Philharmonic Fortitude",
+    description:
+      "[Experimental Barrier] has 25% increased Max Health. Barrier health regenerates constantly but 50% slower while deployed.",
+  },
+  "31P008": {
+    position: 8,
+    name: "Mass Driver",
+    description:
+      "[Accretion] projectiles that pass through [Experimental Barrier] gain 300% Projectile Speed and deal 20% increased damage.",
+  },
+  "31P009": {
+    position: 9,
+    name: "Singularity",
+    description:
+      "[Accretion] splash damage is increased by 25% and enemies are pulled towards its explosion.",
+  },
+  "31P010": {
+    position: 10,
+    name: "Maestro",
+    description:
+      "50% Ultimate Cost Reduction. [Gravity Flux] Radius is reduced by 50%.",
+  },
+  "31P011": {
+    position: 11,
+    name: "Apogee Alignment",
+    description:
+      "When you use an ability, create 2 [Hyperspheres] that orbit around you. They explode on contact but deal 50% reduced damage.",
+  },
+  "31P012": {
+    position: 12,
+    name: "Astrophysical",
+    description:
+      "[Quick Melee] causes enemies hit to levitate into the air for 1s (10s cooldown).",
   },
 };
