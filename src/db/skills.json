@@ -378,5 +378,65 @@
   {
     "id": "43I006",
     "affectedBy": []
+  },
+  {
+    "id": "10I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA", "CD"]
+  },
+  {
+    "id": "10I002",
+    "affectedBy": []
+  },
+  {
+    "id": "10I003",
+    "affectedBy": ["AP"]
+  },
+  {
+    "id": "10I004",
+    "affectedBy": ["AP"]
+  },
+  {
+    "id": "10I005",
+    "affectedBy": ["WP", "WPLS"]
+  },
+  {
+    "id": "18I001",
+    "affectedBy": ["WP", "WPLS", "AS", "RS", "MA"]
+  },
+  {
+    "id": "18I002",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "18I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "18I004",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "18I005",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "31I001",
+    "affectedBy": ["WP", "WPLS", "AS"]
+  },
+  {
+    "id": "31I002",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "31I003",
+    "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "31I004",
+    "affectedBy": []
+  },
+  {
+    "id": "31I005",
+    "affectedBy": ["AP", "ALS", "CR"]
   }
 ]
