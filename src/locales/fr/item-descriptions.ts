@@ -1380,6 +1380,20 @@ export default {
       value: "Les coups critiques révèlent la cible pendant 3 s.",
     },
   ],
+  "00W024": [
+    {
+      type: "description",
+      value:
+        "Les dégâts d'arme que vous infligez aux adversaires dans les airs leur infligent également 25 % de dégâts supplémentaires en 3 s.",
+    },
+  ],
+  "00W025": [
+    {
+      type: "description",
+      value:
+        "Tant que vos points de vie sont inférieurs à 150, vous bénéficiez de 15 % de vol de vie de l'arme.",
+    },
+  ],
   "00A012": [
     {
       type: "description",
@@ -1441,6 +1455,20 @@ export default {
       type: "description",
       value:
         "Lorsque vous utilisez une capacité, les prochains soins ou dégâts que vous infligez avec votre arme sont augmentés de 25.",
+    },
+  ],
+  "00A022": [
+    {
+      type: "description",
+      value:
+        "La régénération passive peut soigner jusqu'à 75 points de vie excédentaires.",
+    },
+  ],
+  "00A023": [
+    {
+      type: "description",
+      value:
+        "Tant que vos points de vie sont supérieurs à 80%, vous gagnez 10 % de puissance de capacité.",
     },
   ],
   "00S017": [
@@ -1512,6 +1540,13 @@ export default {
         "Lorsque vous subissez des dégâts, vous gagnez 0,5% de réduction des dégâts pendant 1 s. Cet effet peut se cumuler 20 fois.",
     },
   ],
+  "00S027": [
+    {
+      type: "description",
+      value:
+        "Une fois par vie, lorsque vous subissez des dégâts qui vous font passer en dessous de 30 % de votre maximum de points de vie, vous gagnez d'abord un surplus de points de vie égal à 300 qui disparaît progressivement.",
+    },
+  ],
   "43W001": [{ type: "Distance de [Ruée rapide]", value: 25, unit: "%" }],
   "43W002": [
     {
@@ -1566,6 +1601,272 @@ export default {
       type: "description",
       value:
         "Les carreaux de [Dans le mille] sont collants et leurs explosions ralentissent les adversaires de 30 %, mais elles prennent 1 s supplémentaires pour se déclencher.",
+    },
+  ],
+
+  "10W001": [
+    {
+      type: "description",
+      value:
+        "After using [Harmony Orb] or [Discord Orb], gain 100% Projectile Speed for 3s",
+    },
+  ],
+  "10W002": [
+    {
+      type: "description",
+      value: "[Orb of Destruction]'s secondary fire charges 20% faster.",
+    },
+  ],
+  "10W003": [
+    {
+      type: "description",
+      value: "Targets affected by [Discord Orb] are Revealed.",
+    },
+  ],
+  "10A001": [
+    {
+      type: "description",
+      value: "[Harmony Orb] heals airborne allies for 15% more.",
+    },
+  ],
+  "10A002": [
+    {
+      type: "description",
+      value:
+        "While [Transcendence] is active, its radius increases by 1m every 1s.",
+    },
+  ],
+  "10A003": [
+    {
+      type: "description",
+      value:
+        "Increase your healing by up to 20%, based on how close you are to your target.",
+    },
+  ],
+  "10A004": [
+    {
+      type: "Starting Ultimate Charge",
+      value: 15,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Allies affected by [Transcendence] have their cooldowns refresh 15% faster.",
+    },
+  ],
+  "10A005": [
+    {
+      type: "Transcendence Duration",
+      value: 30,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "After [Transcendence] ends, gain Overhealth equal to 100% of the healing it did.",
+    },
+  ],
+  "10S001": [
+    {
+      type: "description",
+      value: "While airborne, hold Jump to hover for up to 3s.",
+    },
+  ],
+  "10S002": [
+    {
+      type: "description",
+      value:
+        "When you charge an orb with [Orb of Destruction]'s secondary fire, restore for 3% of your Life.",
+    },
+  ],
+  "10S003": [
+    {
+      type: "description",
+      value:
+        "Eliminating an enemy affected by [Discord Orb] grants 5 Armor for the rest of the round, up to 50 Armor.",
+    },
+  ],
+  "10S004": [
+    {
+      type: "description",
+      value: "For every 50 Armor you have, gain 5% [Quick Melee] Damage.",
+    },
+  ],
+  "10S005": [
+    {
+      type: "description",
+      value:
+        "When your Shields are depleted, knock back nearby enemies, dealing 80 damage. Can only trigger every 6s after Shields are fully restored.",
+    },
+  ],
+  "10S006": [
+    {
+      type: "description",
+      value:
+        "Allies affected by [Harmony Orb] take 10% reduced Ability Damage.",
+    },
+  ],
+  "18W001": [
+    {
+      type: "description",
+      value:
+        "Deal 10% increased damage and 25% [Quick Melee] damage to enemies that are airborne.",
+    },
+  ],
+  "18W002": [
+    {
+      type: "[Frag Launcher] Bounce Distance",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "18W003": [
+    {
+      type: "description",
+      value:
+        "After detonating [Concussion Mine], your next 2 [Frag Launcher] shots gain 200% Projectile Speed and deal 10% increased damage to airborne enemies.",
+    },
+  ],
+  "18A001": [
+    {
+      type: "Starting Ultimate Charge",
+      value: 10,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value: "After detonating [Rip Tire], trigger [Total Mayhem] after 0.5s.",
+    },
+  ],
+  "18A002": [
+    {
+      type: "[Steel Trap] Health",
+      value: 50,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value: "[Steel Trap] refunds 33% cooldown when destroyed.",
+    },
+  ],
+  "18A003": [
+    {
+      type: "description",
+      value: "Whenever [Total Mayhem] deals damage, gain 3% Ultimate Charge.",
+    },
+  ],
+  "18A004": [
+    {
+      type: "[Concussion Mine] Explosion Radius",
+      value: 15,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "If [Concussion Mine] is 5m above the ground when detonated, increase its explosion radius by 25%.",
+    },
+  ],
+  "18A005": [
+    {
+      type: "[Steel Trap] Throw Distance",
+      value: 50,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value: "Enemies that trigger [Steel Trap] Burn for 50 damage over 3s.",
+    },
+  ],
+  "18S001": [
+    {
+      type: "description",
+      value:
+        "When [Steel Trap] triggers, reveal the target and gain 25% Move Speed and 10% Attack Speed for 3s.",
+    },
+  ],
+
+  "18S002": [
+    {
+      type: "[Concussion Mine] Self Knockback Distance",
+      value: 20,
+      unit: "%",
+    },
+  ],
+  "18S003": [
+    {
+      type: "[Concussion Mine] Health",
+      value: 50,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "For each target detonated by [Concussion Mine], gain Overhealth equal to 5% of Max Life for 3s.",
+    },
+  ],
+  "31W001": [
+    {
+      type: "[Hyperspheres] Range",
+      value: 15,
+      unit: "%",
+    },
+  ],
+  "31W002": [
+    {
+      type: "description",
+      value:
+        "[Gravity Flux] levitates enemies for 25% longer. Enemies affected take 20% increased damage from [Hyperspheres].",
+    },
+  ],
+  "31W003": [
+    {
+      type: "[Hyperspheres] Explosion Radius",
+      value: 35,
+      unit: "%",
+    },
+  ],
+  "31A001": [
+    {
+      type: "description",
+      value:
+        "When you deal damage with [Accretion], gain 5% Ability Power, stacking up to 4 times. Resets on miss.",
+    },
+  ],
+  "31A002": [
+    {
+      type: "[Kinetic Grasp] Duration",
+      value: 50,
+      unit: "%",
+    },
+  ],
+  "31A003": [
+    {
+      type: "[Accretion] Explosion Radius",
+      value: 50,
+      unit: "%",
+    },
+  ],
+  "31S001": [
+    {
+      type: "description",
+      value:
+        "While behind [Experimental Barrier], gain 5% Weapon Power and Attack Speed. While in front of [Experimental Barrier], gain 10% Move Speed and Weapon Lifesteal.",
+    },
+  ],
+  "31S002": [
+    {
+      type: "description",
+      value:
+        "While [Kinetic Grasp] is active, reduce incoming Beam damage by 50%.",
+    },
+  ],
+  "31S003": [
+    {
+      type: "description",
+      value:
+        "[Experimental Barrier] heals nearby allies for 3% of your max Life every 1s.",
     },
   ],
 };

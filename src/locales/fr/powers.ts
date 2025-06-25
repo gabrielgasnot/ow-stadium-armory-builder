@@ -1286,4 +1286,220 @@ export default {
     description:
       "[Courant ascendant] projette une rafale dans la direction de votre viseur, ce qui repousse les adversaires et leur inflige 40 points de dégâts.",
   },
+  "10P001": {
+    position: 1,
+    name: "Coup de pied volant",
+    description:
+      "En l'air, votre [coup en mêlée] se transforme en ruée suivie d'un coup de pied qui étourdit les adversaires projetés dans un mur. (Temps de recharge: 5 s)",
+  },
+  "10P002": {
+    position: 2,
+    name: "Orbes à gogo",
+    description:
+      "Le tir secondaire de votre [orbe de destruction] peut charger jusqu'à 3 projectiles supplémentaires.",
+  },
+  "10P003": {
+    position: 3,
+    name: "Quête de salut",
+    description:
+      "Les projectiles du tir secondaire d'[Orbe de destruction] traquent la cible si les points de vie de cette dernière sont inférieurs à 35 %.",
+  },
+  "10P004": {
+    position: 4,
+    name: "Double Harmonie",
+    description:
+      "Vous gagnez un deuxième [Orbe d'harmonie], mais les soins de vos orbes sont réduits de 45 %.",
+  },
+  "10P005": {
+    position: 6,
+    name: "Illumination",
+    description:
+      "Les personnages alliés qui bénéficient de votre [Orbe d'harmonie] sont soignés à hauteur de 35 % des dégâts que vous infligez.",
+  },
+  "10P006": {
+    position: 5,
+    name: "Foi inébranlable",
+    description:
+      "La cible de votre [Orbe d'harmonie] peut rester hors de votre ligne de vue pendant 5 s de plus avant de perdre l'orbe.",
+  },
+  "10P007": {
+    position: 7,
+    name: "Paix intérieure",
+    description:
+      "Vous bénéficiez d'un [Orbe d'harmonie] personnel et permanent dont les soins sont réduits de 75 %.",
+  },
+  "10P008": {
+    position: 9,
+    name: "Fièvre de discorde",
+    description:
+      "Lorsqu'une cible adverse subit les effets de votre [Orbe de discorde], elle subit 50 points de dégâts en 5 s.",
+  },
+  "10P009": {
+    position: 8,
+    name: "Brasier de discorde",
+    description:
+      "Lorsque vous infligez un coup critique à la cible de votre [Orbe de discorde], il explose et inflige 50 points de dégâts.",
+  },
+  "10P010": {
+    position: 10,
+    name: "Karma Instantané",
+    description:
+      "Lorsque la cible de votre [Orbe de discorde] vous inflige des dégâts, vous vous soignez à hauteur de 30 % de ces dégâts de 2 s.",
+  },
+  "10P011": {
+    position: 11,
+    name: "Cercle de conflit",
+    description:
+      "Lorsque vous utilisez [Transcendance], vous appliquez un [Orbe de discorde] à chaque adversaire à portée.",
+  },
+  "10P012": {
+    position: 12,
+    name: "Contrôle de l'âme",
+    description:
+      "[Transcendance] peut être interrompue avant la fin de son effet pour conserver jusqu'à 65 % de sa charge.",
+  },
+  "18P001": {
+    position: 4,
+    name: "Furie explosive",
+    description:
+      "[Lance-grenades] a 25 % de chances de tirer un projectile supplémentaire dont les dégâts sont réduits de 66 %.",
+  },
+  "18P002": {
+    position: 2,
+    name: "Boum !",
+    description:
+      "Les tirs directs de [Lance-grenades] qui touchent une cible sans avoir ricoché brûlent cette dernière et lui infligent 20% de dégâts supplémentaires en 2 s.",
+  },
+  "18P003": {
+    position: 1,
+    name: "Big Bang",
+    description:
+      "Lorsqu'un projectile du [Lance-grenades] ricoche, sa taille augmente de 33%.",
+  },
+  "18P004": {
+    position: 2,
+    name: "Bingo!",
+    description:
+      "Les tirs de [Lance-grenades] qui touchent une cible sans avoir ricoché réduisent le temps de recharge de vos capacités de 25 %.",
+  },
+  "18P005": {
+    position: 5,
+    name: "Souffle-suie",
+    description:
+      "Après avoir déclenché votre [Mine incapacitante], votre vitesse d'attaque augmente de 15 % pendant 1,50 s et vous récupérez 20 % de vos munitions maximum.",
+  },
+  "18P006": {
+    position: 6,
+    name: "Encore un piège !",
+    description: "Vous gagnez 1 charge supplémentaire de [Piège d'acier].",
+  },
+  "18P007": {
+    position: 7,
+    name: "Piège, 2e du nom",
+    description:
+      "Si [Mine incapacitante] est au sol depuis au moins 0,5s, elle génère quand elle explose un [Piège d'acier] miniature qui ralentit les adversaires au lieu de les immobiliser.",
+  },
+  "18P008": {
+    position: 8,
+    name: "Rebonds explosifs",
+    description:
+      "Après une projection à l'aide d'une [Mine incapacitante], vous en déclenchez une autre à l'endroit où vous atterrissez avec une efficacité réduite de 50 %.",
+  },
+  "18P009": {
+    position: 9,
+    name: "Obus-é",
+    description:
+      "Les [coups en mêlée] explosent et infligent 100 % des dégâts de [coup en mêlée], ce qui vous repousse vous et vos adversaires. (Temps de recharge: 10 s)",
+  },
+  "18P010": {
+    position: 10,
+    name: "Bombe surprise",
+    description:
+      "Rayon d'explosion de [Mauvais Perdant] augmenté de 20 %. [Mauvais Perdant] lbère une quantité aléatoire de bombes supplémentaires.",
+  },
+  "18P011": {
+    position: 11,
+    name: "Pluie de plomb",
+    description:
+      "Lorsque vous vous propulsez, vous lâchez 1 bombe de [Mauvais Perdant] à l'efficacité réduite de 25 % toutes les 0.4 s tant que vous êtes en l'air.",
+  },
+  "18P012": {
+    position: 12,
+    name: "Roulé-boulé explosif",
+    description:
+      "Coût de la capacité ultime réduit de 20 %. Vous entrez dans votre [Pneumastic] pendant la capacité ultime et en sortez lorsque celui-ci est détruit ou déclenché.",
+  },
+
+  "31P001": {
+    position: 1,
+    name: "Apesanteur",
+    description:
+      "Lorsque vous utilisez une capacité, vous pouvez voler pendant 2,5 s.",
+  },
+  "31P002": {
+    position: 2,
+    name: "Hypercycle",
+    description:
+      "Le temps de recharge de [Concrétion] est réduit de 0,5 s chaque fois qu'[Hypersphères] touche directement une cible adverse.",
+  },
+  "31P003": {
+    position: 3,
+    name: "Trinisphère",
+    description:
+      "Votre tir principal lance une troisième [Hypersphère] dont les dégâts sont réduits de 50 %.",
+  },
+  "31P004": {
+    position: 4,
+    name: "Horizon des évèvenemts",
+    description:
+      "Les dégâts absorbés par [Captation cinétique] regénèrent les points de vie d'[Écran expérimental]. L'excédent lui accorde un surplus de points de vie.",
+  },
+  "31P005": {
+    position: 5,
+    name: "Syzygie symphonique",
+    description:
+      "A la fin de [Captation cinétique], vous gagnez 10 % de vitesse d'attaque pour chaque tranche de 100 points de dégâts absorbés pendant 4 s. Cet effet peut être cumulé 4 fois.",
+  },
+  "31P006": {
+    position: 6,
+    name: "Écran orbital",
+    description:
+      "Vous obtenez un [Écran expérimental] miniature qui tourne autour de vous. Cet écran dispose de points de vie réduits de 50 %.",
+  },
+  "31P007": {
+    position: 7,
+    name: "Résistance philharmonique",
+    description:
+      "Le maximum de points de vie d'[Écran expérimental] est augmenté de 25 %. L'écran régénère constamment ses points de vie, mais cet effet est ralenti de 50 % tant que l'écran est déployé.",
+  },
+  "31P008": {
+    position: 8,
+    name: "Projection de masse",
+    description:
+      "Les projectiles de [Concrétion] qui traversent l'[Écran expérimental] voient leur vitesse augmentée de 300 %  et leurs dégâts de 20 %.",
+  },
+  "31P009": {
+    position: 9,
+    name: "Singularité",
+    description:
+      "Les dégâts de zone de [Concrétion] sont augmentés de 25 % et les adversaires sont attirés vers le centre de l'explosion.",
+  },
+  "31P010": {
+    position: 10,
+    name: "Maestro",
+    description:
+      "Le coût de votre capacité ultime est réduit de 50 %. Le rayon de [Flux gravitationnel] est réduit de 50 %.",
+  },
+  "31P011": {
+    position: 11,
+    name: "Alignement paroxystique",
+    description:
+      "Lorsque vous utilisez une capacité, vous obtenez 2 [Hypersphères] qui gravitent autour de vous. Elles explosent au contact, mais leurs dégâts sont réduits de 50 %.",
+  },
+  "31P012": {
+    position: 12,
+    name: "Astrophysicien",
+    description:
+      "Vos [coups en mêlée] soulèvent vos adversaires dans les airs pendant 1 s. (Temps de recharge: 10 s)",
+  },
 };

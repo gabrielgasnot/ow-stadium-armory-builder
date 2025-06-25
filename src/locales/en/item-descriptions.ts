@@ -939,8 +939,7 @@ export default {
     { type: "[Glide Boost] Duration", value: 25, unit: "%" },
     {
       type: "description",
-      value:
-        "During [Glide Boost], gain 10% Damage Reduction.",
+      value: "During [Glide Boost], gain 10% Damage Reduction.",
     },
   ],
   "41S002": [
@@ -1260,6 +1259,19 @@ export default {
   "00W023": [
     { type: "description", value: "Critical Hits reveal the target for 3s" },
   ],
+  "00W024": [
+    {
+      type: "description",
+      value:
+        "Weapon damage to airborne enemies deal 25% bonus damage over 3s.",
+    },
+  ],
+  "00W025": [
+    {
+      type: "description",
+      value: "While you are below 150 Life, gain 15% Weapon Lifesteal.",
+    },
+  ],
   "00A012": [
     {
       type: "description",
@@ -1317,6 +1329,18 @@ export default {
       type: "description",
       value:
         "After casting an ability, your next instance of Weapon Damage or Healing deals 25 bonus damage or healing",
+    },
+  ],
+  "00A022": [
+    {
+      type: "description",
+      value: "Passive Life Regeneration can overheal up to 75.",
+    },
+  ],
+  "00A023": [
+    {
+      type: "description",
+      value: "While you are above 80% Life, gain 10% Ability Power.",
     },
   ],
   "00S017": [
@@ -1380,6 +1404,13 @@ export default {
       type: "description",
       value:
         "When you take damage, gain 0.5% Damage Reduction for 1s, stacking up to 20 times",
+    },
+  ],
+  "00S027": [
+    {
+      type: "description",
+      value:
+        "Once per life, if you take damage that would reduce you below 30% Max Life, first gain 300 decaying Overhealth.",
     },
   ],
   "43W001": [{ type: "[Quick Dash] Distance", value: 25, unit: "%" }],
