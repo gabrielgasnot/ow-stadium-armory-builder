@@ -94,8 +94,8 @@ function PerkCard({
               height: 64,
               border: getPerkColor(perkGrade),
               backgroundColor: "white",
-              variant: `${perkType === "power" ? "rounded" : "circle"}`,
             }}
+            variant={`${perkType === "power" ? "rounded" : "circular"}`}
             slotProps={{
               img: {
                 loading: "lazy",
