@@ -1905,5 +1905,349 @@
         }
       ]
     }
+  },
+  {
+    "id": 10,
+    "hp": 75,
+    "armor": 0,
+    "shields": 175,
+    "role": "Support",
+    "skills": {
+      "weapons": ["10I001"],
+      "abilities": ["10I002", "10I003", "10I004"],
+      "passives": ["10I005"],
+      "ultimates": ["10I004"]
+    },
+    "powers": [
+      "10P001",
+      "10P002",
+      "10P003",
+      "10P004",
+      "10P005",
+      "10P006",
+      "10P007",
+      "10P008",
+      "10P009",
+      "10P010",
+      "10P011",
+      "10P012"
+    ],
+    "items": {
+      "common": [],
+      "rare": [
+        {
+          "id": "10A001",
+          "price": 4000,
+          "category": "Ability",
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
+        },
+        {
+          "id": "10A002",
+          "price": 4000,
+          "category": "Ability",
+          "attributes": [
+            { "type": "AP", "value": 10, "unit": "%" },
+            { "type": "MS", "value": 10, "unit": "%" }
+          ]
+        },
+        {
+          "id": "10S001",
+          "price": 4000,
+          "category": "Survival",
+          "attributes": [{ "type": "MS", "value": 10, "unit": "%" }]
+        },
+        {
+          "id": "10S002",
+          "price": 4500,
+          "category": "Survival",
+          "attributes": [{ "type": "SH", "value": 25, "unit": "" }]
+        },
+        {
+          "id": "10S003",
+          "price": 4000,
+          "category": "Survival",
+          "attributes": [{ "type": "AR", "value": 25, "unit": "" }]
+        }
+      ],
+      "epic": [
+        {
+          "id": "10W001",
+          "price": 11000,
+          "category": "Weapon",
+          "attributes": [{ "type": "AS", "value": 15, "unit": "%" }]
+        },
+        {
+          "id": "10W002",
+          "price": 12000,
+          "category": "Weapon",
+          "attributes": [
+            { "type": "WP", "value": 10, "unit": "%" },
+            { "type": "AS", "value": 10, "unit": "%" }
+          ]
+        },
+        {
+          "id": "10W003",
+          "price": 11000,
+          "category": "Weapon",
+          "attributes": [
+            { "type": "WP", "value": 15, "unit": "%" },
+            { "type": "AP", "value": 15, "unit": "%" }
+          ]
+        },
+        {
+          "id": "10A003",
+          "price": 11000,
+          "category": "Ability",
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
+        },
+        {
+          "id": "10A004",
+          "price": 12000,
+          "category": "Ability",
+          "attributes": [
+            { "type": "AP", "value": 15, "unit": "%" },
+            { "type": "Starting Ultimate Charge", "value": 15, "unit": "%" }
+          ]
+        },
+        {
+          "id": "10A005",
+          "price": 11000,
+          "category": "Ability",
+          "attributes": [
+            { "type": "Transcendance Duration", "value": 30, "unit": "%" }
+          ]
+        },
+        {
+          "id": "10S004",
+          "price": 10000,
+          "category": "Survival",
+          "attributes": [{ "type": "AR", "value": 50, "unit": "" }]
+        },
+        {
+          "id": "10S005",
+          "price": 10000,
+          "category": "Survival",
+          "attributes": [{ "type": "AR", "value": 50, "unit": "" }]
+        },
+        {
+          "id": "10S006",
+          "price": 10000,
+          "category": "Survival",
+          "attributes": [{ "type": "SH", "value": 50, "unit": "" }]
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "hp": 250,
+    "armor": 0,
+    "shields": 0,
+    "role": "Damage",
+    "skills": {
+      "weapons": ["18I001"],
+      "abilities": ["18I002", "18I003", "18I004"],
+      "passives": ["18I005"],
+      "ultimates": ["18I004"]
+    },
+    "powers": [
+      "18P001",
+      "18P002",
+      "18P003",
+      "18P004",
+      "18P005",
+      "18P006",
+      "18P007",
+      "18P008",
+      "18P009",
+      "18P010",
+      "18P011",
+      "18P012"
+    ],
+    "items": {
+      "common": [],
+      "rare": [
+        {
+          "id": "18W001",
+          "price": 4500,
+          "category": "Weapon",
+          "attributes": [
+            { "type": "HP", "value": 25, "unit": "" },
+            { "type": "WP", "value": 5, "unit": "%" }
+          ]
+        },
+        {
+          "id": "18W002",
+          "price": 4500,
+          "category": "Weapon",
+          "attributes": [
+            { "type": "HP", "value": 25, "unit": "" },
+            { "type": "AS", "value": 5, "unit": "%" }
+          ]
+        },
+        {
+          "id": "18A001",
+          "price": 4000,
+          "category": "Ability",
+          "attributes": [{ "type": "ALS", "value": 10, "unit": "%" }]
+        },
+        {
+          "id": "18A002",
+          "price": 4000,
+          "category": "Ability",
+          "attributes": [{ "type": "AP", "value": 5, "unit": "%" }]
+        },
+        {
+          "id": "18S001",
+          "price": 4000,
+          "category": "Survival",
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+        }
+      ],
+      "epic": [
+        {
+          "id": "18W003",
+          "price": 10000,
+          "category": "Weapon",
+          "attributes": [
+            { "type": "HP", "value": 25, "unit": "" },
+            { "type": "WP", "value": 5, "unit": "%" }
+          ]
+        },
+        {
+          "id": "18A003",
+          "price": 10000,
+          "category": "Ability",
+          "attributes": [
+            { "type": "HP", "value": 50, "unit": "" },
+            { "type": "AP", "value": 10, "unit": "%" }
+          ]
+        },
+        {
+          "id": "18A004",
+          "price": 10000,
+          "category": "Ability",
+          "attributes": [
+            { "type": "AP", "value": 10, "unit": "%" },
+            { "type": "ALS", "value": 10, "unit": "%" }
+          ]
+        },
+        {
+          "id": "18A005",
+          "price": 10000,
+          "category": "Ability",
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+        },
+        {
+          "id": "18S002",
+          "price": 10000,
+          "category": "Survival",
+          "attributes": [
+            { "type": "WP", "value": 10, "unit": "%" },
+            { "type": "AP", "value": 10, "unit": "%" }
+          ]
+        },
+        {
+          "id": "18S003",
+          "price": 10000,
+          "category": "Survival",
+          "attributes": [{ "type": "CR", "value": 10, "unit": "%" }]
+        }
+      ]
+    }
+  },
+  {
+    "id": 31,
+    "hp": 350,
+    "armor": 0,
+    "shields": 275,
+    "role": "Tank",
+    "skills": {
+      "weapons": ["31I001"],
+      "abilities": ["31I002", "31I003", "31I004", "31I005"],
+      "passives": [],
+      "ultimates": ["31I005"]
+    },
+    "powers": [
+      "31P001",
+      "31P002",
+      "31P003",
+      "31P004",
+      "31P005",
+      "31P006",
+      "31P007",
+      "31P008",
+      "31P009",
+      "31P010",
+      "31P011",
+      "31P012"
+    ],
+    "items": {
+      "common": [],
+      "rare": [
+        {
+          "id": "31W001",
+          "price": 4500,
+          "category": "Weapon",
+          "attributes": [{ "type": "AS", "value": 10, "unit": "%" }]
+        },
+        {
+          "id": "31W002",
+          "price": 5000,
+          "category": "Weapon",
+          "attributes": [
+            { "type": "WP", "value": 10, "unit": "%" },
+            { "type": "AP", "value": 5, "unit": "%" }
+          ]
+        },
+        {
+          "id": "31A001",
+          "price": 4000,
+          "category": "Ability",
+          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
+        },
+        {
+          "id": "31A002",
+          "price": 5000,
+          "category": "Ability",
+          "attributes": [{ "type": "CR", "value": 10, "unit": "%" }]
+        },
+        {
+          "id": "31S001",
+          "price": 4500,
+          "category": "Survival",
+          "attributes": [{ "type": "SH", "value": 25, "unit": "" }]
+        },
+        {
+          "id": "31S002",
+          "price": 4000,
+          "category": "Survival",
+          "attributes": [
+            { "type": "SH", "value": 25, "unit": "" },
+            { "type": "CR", "value": 5, "unit": "%" }
+          ]
+        }
+      ],
+      "epic": [
+        {
+          "id": "31W003",
+          "price": 10000,
+          "category": "Weapon",
+          "attributes": [{ "type": "WP", "value": 15, "unit": "%" }]
+        },
+        {
+          "id": "31A003",
+          "price": 11000,
+          "category": "Ability",
+          "attributes": [{ "type": "AP", "value": 25, "unit": "%" }]
+        },
+        {
+          "id": "31S003",
+          "price": 11000,
+          "category": "Survival",
+          "attributes": [{ "type": "SH", "value": 50, "unit": "" }]
+        }
+      ]
+    }
   }
 ]
