@@ -6,8 +6,7 @@ export default {
   "5S003": [
     {
       type: "description",
-      value:
-        "Les points de vie de votre [écran] augmentent à hauteur de 100% de vos points de vie maximum.",
+      value: "Vous pouvez maintenir la commande d'[accroupissement] pour augmenter d'un maximum de 200% la hauteur de votre prochain saut."
     },
   ],
   "5A001": [
@@ -17,7 +16,11 @@ export default {
         "Si votre [charge] est interrompue par l'adversaire, vous récupérez 50% du temps de recharge de [charge].",
     },
   ],
-  "5A002": [{ type: "Rayon de [Frappe de feu]", value: 50, unit: "%" }],
+  "5A002": [
+    { type: "Rayon de [Frappe de feu]", value: 50, unit: "%" },
+    { type: "Vitesse des projectiles de [Frappe de feu]", value: 25, unit: "%" },
+    { type: "description", value: "Pour chaque cible supplémentaire touchée par [Frappe de feu], le temps de recharge de [Frappe de feu] est réduit de 5%." }
+  ],
   "5S001": [
     {
       type: "description",
@@ -44,18 +47,18 @@ export default {
       value: "Vous pouvez maintenant voler pendant [Charge].",
     },
   ],
-  "5A005": [
-    {
-      type: "Vitesse des projectiles de [Frappe de feu]",
-      value: 25,
-      unit: "%",
-    },
-  ],
   "5S004": [
     {
       type: "description",
       value:
         "Votre [écran] se régénère 50% plus vite et commence à se régénérer 50% plus vite après avoir été détruit.",
+    },
+  ],
+  "5S005": [
+    {
+      type: "description",
+      value:
+        "Quand votre [écran] est déployé, votre vitesse de déplacement est augmentée de 30%.",
     },
   ],
   "2W001": [
@@ -298,7 +301,7 @@ export default {
     {
       type: "description",
       value:
-        "Si votre [méca] explose dans les airs, les dégâts et la portée d'[Autodestruction] sont augmentés de 200%.",
+        "Si votre [méca] explose dans les airs, les dégâts et la portée d'[Autodestruction] sont augmentés de 100%.",
     },
   ],
   "19A002": [
@@ -341,7 +344,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous vous éjectez de votre [méca], vos points de vie maximum sont augmentés de 5% et vous bénéficiez de [Nanoboost] pendant 4s.",
+        "Lorsque vous vous éjectez de votre [méca], vous bénéficiez de [Nanoboost] pendant 4s.",
     },
   ],
   "19S005": [
@@ -672,10 +675,15 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous lancez [Écran généré] sur un personnage allié, vous récupérez 20% du temps de recharge de votre [écran].",
+        "Vous récupérez des points de vie à hauteur de 30% des dégâts atténués par [Écran généré].",
     },
   ],
-  "13A003": [{ type: "Durée d'[Écran]", value: 40, unit: "%" }],
+  "13A003": [
+    {
+      type: "description",
+      value: "Après l'expiration ou la destruction de [Écran de particules], vous obtenez un surplus de points de vie qui disparaît progressivement. Celui-ci est égal à 50% des dégâts atténués par [Écran de particules] pendant 3 s.",
+    }
+  ],
   "35W001": [
     {
       type: "description",

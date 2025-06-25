@@ -12,10 +12,10 @@ export default {
       "Every 3rd [Rocket Hammer] swing applies Burn, dealing 30% [Rocket Hammer] damage over 2s.",
   },
   "5P010": {
-    position: 4,
-    name: "Wilhelmwagen",
+    position: 3,
+    name: "Infusion Generator",
     description:
-      "While [Barrier Field] is deployed, you heal for 5% of the damage it mitigates and gain 30% Move Speed.",
+      "Increase [Barrier Field] Health by 250% of your Bonus Max Life.",
   },
   "5P007": {
     position: 3,
@@ -57,7 +57,7 @@ export default {
     position: 9,
     name: "Impact Burst",
     description:
-      "[Fire Strike] triggers an explosion the first time it hits an enemy, dealing 15% of its damage in a 3m radius.",
+      "[Fire Strike] triggers an explosion the first time it hits an enemy, dealing 30% of its damage in a 3m radius.",
   },
   "5P003": {
     position: 10,
@@ -388,7 +388,7 @@ export default {
     position: 8,
     name: "MEKA Punch",
     description:
-      "While using [Boosters], [Quick Melee] deals 75% more damage. [Quick Melee] eliminations reset the cooldown of [Boosters]",
+      "While using [Boosters], [Quick Melee] deals 50% more damage. [Quick Melee] and [Boosters] eliminations reset the cooldown of [Boosters]",
   },
   "19P003": {
     position: 10,
@@ -595,12 +595,12 @@ export default {
     position: 5,
     name: "Cut'em, Gracie!",
     description:
-      "Each enemy hit by [Jagged Blade] while it returns to you reduces its cooldown by 1s",
+      "Each enemy hit by [Jagged Blade] while it returns to you reduces its cooldown by 2s",
   },
   "34P005": {
     position: 6,
     name: "Let's go Win",
-    description: "Eliminations reset the cooldown of [Commanding Shout]",
+    description: "Eliminations reset the cooldown of [Commanding Shout] by 50%",
   },
   "34P008": {
     position: 7,
@@ -640,7 +640,7 @@ export default {
   "13P001": {
     name: "No Limits",
     description:
-      "Maximum [Energy] increased to 150. [Energy] always decays above 100 [Energy] at a 150% faster rate",
+      "Maximum [Energy] increased to 125. [Energy] always decays above 100 [Energy] at a 150% faster rate",
   },
   "13P002": {
     name: "Particle Accelerator",
@@ -660,17 +660,17 @@ export default {
   "13P005": {
     name: "Barrier Benefits",
     description:
-      "When [Barrier] expires, grand Overhealth equal to 50% if remaining  [Barrier] Health to the target for 3s",
+      "When [Barrier] expires, grand Overhealth equal to 100% if remaining  [Barrier] Health to the target for 2s",
   },
   "13P006": {
     name: "Containment Shield",
     description:
-      "[Barrier] heals 25 Life, increased by [Energy], and grants 20% Move Speed while active",
+      "[Barrier] heals 5% of your Max Life every 1s and grants 20% Move Speed while active",
   },
   "13P007": {
     name: "Fission Field",
     description:
-      "[Projected Barrier] also applies to 1 additional ally within 10m, but has 20% reduced duration",
+      "[Projected Barrier] also applies to 1 additional ally within 10m, but has 20% reduced maximum [Energy] gain and 20% reduced duration",
   },
   "13P008": {
     name: "Here to Spot You",
@@ -680,7 +680,7 @@ export default {
   "13P009": {
     name: "Lifelift",
     description:
-      "+50% [Particle Barrier] size. Increase [Particle Barrier] Health by 25% of Bonus Max Life.",
+      "+50% [Particle Barrier] size. Increase [Particle Barrier] Health by 50% of Bonus Max Life from items.",
   },
   "13P010": {
     name: "Major Flex",
@@ -690,7 +690,7 @@ export default {
   "13P011": {
     name: "Volskaya Vortex",
     description:
-      "After a [Barrier] is cast, [Particle Cannon]'s next secondary fire spawns a slowing vortex tat deals 100 damage over 2s",
+      "After a [Barrier] is cast, [Particle Cannon]'s next secondary fire spawns a slowing vortex tat deals 80 damage over 2s",
   },
   "13P012": {
     name: "Graviton Anomaly",

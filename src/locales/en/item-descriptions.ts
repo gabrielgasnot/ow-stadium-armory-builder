@@ -6,7 +6,7 @@ export default {
   "5S003": [
     {
       type: "description",
-      value: "Increase [Barrier Field] Health by 100% of your max Life",
+      value: "Vous pouvez maintenir la commande d'[accroupissement] pour augmenter d'un maximum de 200% la hauteur de votre prochain saut."
     },
   ],
   "5A001": [
@@ -16,7 +16,11 @@ export default {
         "If [Charge] is interrupted by the enemy, refund 50% of [Charge]'s cooldown",
     },
   ],
-  "5A002": [{ type: "[Fire Strike] Radius", value: 50, unit: "%" }],
+  "5A002": [
+    { type: "[Fire Strike] Radius", value: 50, unit: "%" },
+    { type: "Increase [Fire Strike] Projectile Speed", value: 25, unit: "%" },
+    { type: "description", value: "Pour chaque cible supplémentaire touchée par [Frappe de feu], le temps de recharge de [Frappe de feu] est réduit de 5%." }
+  ],
   "5S001": [
     {
       type: "description",
@@ -37,12 +41,18 @@ export default {
     },
   ],
   "5A004": [{ type: "description", value: "You can now fly during [Charge]" }],
-  "5A005": [{ type: "Fire Strike Projectile Speed", value: 25, unit: "%" }],
   "5S004": [
     {
       type: "description",
       value:
         "[Barrier Field] regenerates 50% faster and begins regenerating 50% sooner after being destroyed",
+    },
+  ],
+  "5S005": [
+    {
+      type: "description",
+      value:
+        "While [Barrier Field] is deployed, gain 30% Move Speed."
     },
   ],
   "2W001": [
@@ -266,7 +276,7 @@ export default {
     {
       type: "description",
       value:
-        "If your [Mech] detonates while mid-air, increase [Self-Destruct] explosion damage and range by 200%",
+        "If your [Mech] detonates while mid-air, increase [Self-Destruct] explosion damage and range by 100%",
     },
   ],
   "19A002": [
@@ -309,7 +319,7 @@ export default {
     {
       type: "description",
       value:
-        "When you eject from your Mech, gain 5% increased max Health and gain [Nano Boost] for 4s",
+        "When you eject from your Mech, gain [Nano Boost] for 4s",
     },
   ],
   "19S005": [
@@ -609,10 +619,16 @@ export default {
     {
       type: "description",
       value:
-        "Casting [Projected Barrier] on an refunds 20% of [Barrier] cooldown",
+        "Restore Life equal to 30% of damage mitigated by [Projected Barrier].",
     },
   ],
-  "13A003": [{ type: "[Barrier] Duration", value: 40, unit: "%" }],
+  "13A003": [
+    {
+      type: "description",
+      value:
+        "After [Particule Barrier] is detroyed or expires, gain decaying Overhealth equal to 50% of damage mitigated during [Particule Barrier] for 3s."
+    }
+  ],
   "35W001": [
     { type: "description", value: "[Kunai] bounce off surfaces 1 time" },
   ],

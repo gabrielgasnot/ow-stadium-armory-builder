@@ -13,9 +13,9 @@ export default {
   },
   "5P010": {
     position: 4,
-    name: "Wilhelmwagen",
+    name: "Générateur d'Injection",
     description:
-      "Tant que votre [Écran] est déployé, vous vous soignez à hauteur de 5% des points de vie que vous bloquez et votre vitesse de déplacement augmenten de 30%.",
+      "Les points de vie de votre [écran] augmentent à hauteur de 250% de vos points de vie maximum supplémentaires.",
   },
   "5P007": {
     position: 3,
@@ -57,7 +57,7 @@ export default {
     position: 10,
     name: "Salve Explosive",
     description:
-      "[Frappe de feu] déclenche une explosion lorsqu'elle touche une cible pour la première fois, ce qui inflige 15% de ses dégâts dans un rayon de 3 m.",
+      "[Frappe de feu] déclenche une explosion lorsqu'elle touche une cible pour la première fois, ce qui inflige 30% de ses dégâts dans un rayon de 3 m.",
   },
   "5P003": {
     position: 9,
@@ -390,7 +390,7 @@ export default {
     position: 10,
     name: "Frappe MEKA",
     description:
-      "Tant que vos [Turboréacteurs] sont actifs, vos [coups en mêlée] infligent 75% de dégâts supplémentaires. Les éliminations réalisées avec Frappe MEKA réinitialisent le temps de recharge de [Turboréacteurs].",
+      "Tant que vos [Turboréacteurs] sont actifs, vos [coups en mêlée] infligent 50% de dégâts supplémentaires. Les éliminations réalisées avec Frappe MEKA réinitialisent le temps de recharge de [Turboréacteurs].",
   },
   "19P003": {
     position: 9,
@@ -599,13 +599,13 @@ export default {
     position: 4,
     name: "Découpez-les, Gracie!",
     description:
-      "Chaque cible adverse touchée par [Lame crantée] lorsque l'arme revient vers vous réduit le temps de recharge de la capacité de 1 s.",
+      "Chaque cible adverse touchée par [Lame crantée] lorsque l'arme revient vers vous réduit le temps de recharge de la capacité de 2 s.",
   },
   "34P005": {
     position: 6,
     name: "En Route pour la Victoire",
     description:
-      "Les éliminations réinitialisent le temps de recharge de [Cri de commandement].",
+      "Les éliminations réinitialisent le temps de recharge de [Cri de commandement] de 50%.",
   },
   "34P008": {
     position: 7,
@@ -647,7 +647,7 @@ export default {
     position: 3,
     name: "Sans Limites",
     description:
-      "Votre maximum d'[Énergie] passe à 150. Au-delà de 100 points, l'[Énergie] se dissipe 150% plus vite.",
+      "Votre maximum d'[Énergie] passe à 125. Au-delà de 100 points, l'[Énergie] se dissipe 150% plus vite.",
   },
   "13P002": {
     position: 1,
@@ -671,19 +671,19 @@ export default {
     position: 5,
     name: "Avantages de l'Écran",
     description:
-      "Quand vos [Écrans] expirent, ils octroient à leur cible un surplus de points de vie égal à 50% de leurs points de vie restants pendant 3 s.",
+      "Quand vos [Écrans] expirent, ils octroient à leur cible un surplus de points de vie égal à 100% de leurs points de vie restants pendant 3 s.",
   },
   "13P006": {
     position: 7,
     name: "Bouclier de Contention",
     description:
-      "Quand votre [Écran] est actif, il rend 25 points de vie et plus en fonction de votre [Énergie], et augmente également votre vitesse de déplacement de 20%.",
+      "Quand votre [Écran] est actif, il rend 5% de vos points de vie maximum par seconde et augmente également votre vitesse de déplacement de 20%.",
   },
   "13P007": {
     position: 8,
     name: "Champ de Fission",
     description:
-      "[Écran généré] s'applique également à 1 personnage allié supplémentaire à moins de 10 m, mais sa durée est réduite de 20%.",
+      "[Écran généré] s'applique également à 1 personnage allié supplémentaire à moins de 10 m, mais son gain d'[Énergie] maximum est réduit de 25% et sa durée est réduite de 20%.",
   },
   "13P008": {
     position: 9,
@@ -695,7 +695,7 @@ export default {
     position: 6,
     name: "Bonus de Vie",
     description:
-      "Taille d'[Écran de particules] augmentée de 50%. Les points de vie maximum d'[Écran de particules] augmentent de 25%.",
+      "Taille d'[Écran de particules] augmentée de 50%. Les points de vie maximum d'[Écran de particules] augmentent de 50% du maximum de point de vie octroyé par les objets.",
   },
   "13P010": {
     position: 10,
@@ -707,7 +707,7 @@ export default {
     position: 11,
     name: "Vortex de Volskaya",
     description:
-      "Après le déploiement d'un [Écran], le prochain tir secondaire du [Canon à particules] fait apparaître un vortex qui ralentit les adversaires et leur inflige 100 points de dégâts en 2 s.",
+      "Après le déploiement d'un [Écran], le prochain tir secondaire du [Canon à particules] fait apparaître un vortex qui ralentit les adversaires et leur inflige 80 points de dégâts en 2 s.",
   },
   "13P012": {
     position: 12,

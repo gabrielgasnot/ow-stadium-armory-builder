@@ -57,10 +57,10 @@
           "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         },
         {
-          "id": "5A002",
+          "id": "5S003",
           "price": 4000,
-          "category": "Ability",
-          "attributes": [{ "type": "AP", "value": 5, "unit": "%" }]
+          "category": "Survival",
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         }
       ],
       "epic": [
@@ -89,22 +89,27 @@
           ]
         },
         {
-          "id": "5S003",
-          "price": 10000,
-          "category": "Survival",
-          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
-        },
-        {
           "id": "5S004",
           "price": 10000,
           "category": "Survival",
           "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         },
         {
-          "id": "5A005",
+          "id": "5S005",
+          "price": 11000,
+          "category": "Survival",
+          "attributes": [{ "type": "AR", "value": 50, "unit": "" }]
+        },
+        {
+          "id": "5A002",
           "price": 10000,
           "category": "Ability",
-          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
+          "attributes": []
+        },
+        {
+          "id": "5S005",
+          "price": 11000,
+          "attributes": [{ "type": "AR", "value": 50 }]
         }
       ]
     }
@@ -574,7 +579,7 @@
           "id": "19S004",
           "price": 11000,
           "category": "Survival",
-          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+          "attributes": [{ "type": "HP", "value": 50, "unit": "" }]
         },
         {
           "id": "19S005",
@@ -790,7 +795,7 @@
           "id": "24A001",
           "price": 4000,
           "category": "Ability",
-          "attributes": []
+          "attributes": [{ "type": "CR", "value": 5, "unit": "%" }]
         },
         {
           "id": "24A002",
@@ -814,7 +819,7 @@
           "id": "24S002",
           "price": 4000,
           "category": "Survival",
-          "attributes": []
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         },
         {
           "id": "24S003",
@@ -1053,7 +1058,7 @@
         },
         {
           "id": "13W003",
-          "price": 11000,
+          "price": 12000,
           "category": "Weapon",
           "attributes": [{ "type": "WP", "value": 10, "unit": "%" }]
         },
@@ -1063,7 +1068,7 @@
           "category": "Ability",
           "attributes": [
             { "type": "HP", "value": 25, "unit": "" },
-            { "type": "AP", "value": 15, "unit": "%" }
+            { "type": "AP", "value": 10, "unit": "%" }
           ]
         },
         {
