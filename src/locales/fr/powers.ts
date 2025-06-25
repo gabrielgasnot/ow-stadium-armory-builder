@@ -93,7 +93,7 @@ export default {
     position: 8,
     name: "Pas Étouffant",
     description:
-      "Après l'utilisation de [Voie des ombres], votre effet de vol de vie est doublé pendant 3 s.",
+      "Vitesse de lancement de [Voie des ombres] augmentée de 30%. Après l'utilisation de [Voie des ombres], votre effet de vol de vie est doublé pendant 3 s.",
   },
   "2P005": {
     position: 1,
@@ -110,7 +110,7 @@ export default {
     position: 12,
     name: "Forme Spectrale Renouvelée",
     description:
-      "Tant que vous êtes en [Forme spectrale], vous récupérez 10% de vos points de vie par seconde. Ce montant est doublé si vous avez moins de 50% de vos points de vie.",
+      "Tant que vous êtes en [Forme spectrale], vous récupérez 7% de vos points de vie par seconde. Ce montant est doublé si vous avez moins de 50% de vos points de vie.",
   },
   "2P008": {
     position: 11,
@@ -175,7 +175,7 @@ export default {
     position: 12,
     name: "Premières Lignes",
     description:
-      "Les personnages alliés qui sont à portée de votre [Champ biotique] au moment de son déploiement gagnent un surplus de points de vie égal à 30% de vos points de vie maximum pendant 3 s.",
+      "Les personnages alliés qui sont à portée de votre [Champ biotique] au moment de son déploiement gagnent un surplus de points de vie égal à 25% de vos points de vie maximum pendant 3 s.",
   },
   "15P007": {
     position: 5,
@@ -437,7 +437,7 @@ export default {
     position: 5,
     name: "Lacération",
     description:
-      "[Frappe du vent] inflige 25% de dégâts supplémentaires en 3 s aux cibles adverses touchées.",
+      "[Frappe du vent] inflige 35% de dégâts supplémentaires en 3 s aux cibles adverses touchées.",
   },
   "21P003": {
     position: 11,
@@ -449,7 +449,7 @@ export default {
     position: 6,
     name: "Lame dissimulée",
     description:
-      "Vos dégâts de mêlée bénéficient de 50% de vol de vie et les dégâts de votre [Coup en mêlée] augmentent de 25.",
+      "Vos dégâts de mêlée bénéficient de 60% de vol de vie et les dégâts de votre [Coup en mêlée] augmentent de 15.",
   },
   "21P005": {
     position: 9,
@@ -867,7 +867,7 @@ export default {
     position: 5,
     name: "Mort en Sursis",
     description:
-      "Lorsque vous éliminez une cible à laquelle vous avez récemment infligé un coup critique, votre maximum de munitions augmente de 1.",
+      "Lorsque vous éliminez une cible avec un coup critique, votre maximum de munitions augmente de 1, jusqu'à un maximum de 4.",
   },
   "14P003": {
     position: 2,
@@ -879,7 +879,7 @@ export default {
     position: 7,
     name: "Tout Roule",
     description:
-      "Vous ne pouvez pas subir de dégâts pendant [Roulade]. À l'issue de [Roulade], vous récupérez 30% de vos points de vie en 3 s.",
+      "[Roulade] réduit les dégâts subis de 25% supplémentaires et vous soigne de 30% de vos points de vie en 3 s.",
   },
   "14P005": {
     position: 1,
@@ -1022,7 +1022,7 @@ export default {
     position: 3,
     name: "Missiles Médicinaux",
     description:
-      "[Torpilles à neutrons] rend 30 points de vie supplémentaires et les personnages alliés touchés reçoivent des soins augmentés de 50% pendant 3s.",
+      "Les personnages alliés touchés par [Torpilles à neutrons] reçoivent des soins augmentés de 50% pendant 3 s.",
   },
   "41P005": {
     position: 4,
@@ -1075,7 +1075,7 @@ export default {
     position: 4,
     name: "Pergélisol",
     description:
-      "Vos points de vie maximum augmentent à hauteur de 50% de votre puissance de capacité.",
+      "Vous gagnez un multiplicateur de points de vie supplémentaires égal à 50% de votre puissance de capacité. Lorsque celle-ci est supérieure à 30%, votre taille augmente de 15%.",
   },
   "20P002": {
     position: 2,
@@ -1132,16 +1132,16 @@ export default {
       "Lorsque [Cryostase] prend fin, vous repoussez les adversaires à proximité et leur infligez 60 points de dégâts.",
   },
   "20P011": {
-    position: 12,
+    position: 11,
     name: "Blizzard Tournoyant",
     description:
       "Lorsque vous vous tenez dans le [Blizzard], vous récupérez 15% de vos points de vie chaque seconde.",
   },
   "20P012": {
-    position: 11,
-    name: "Avalanche",
+    position: 12,
+    name: "Lance-Neige",
     description:
-      "Les personnages adverses visibles à moins de 20 m de [Blizzard] sont ralentis de 25%.",
+      "Les dégâts du tir principal de [Canon Endothermique] sont augmentés de 20% contre les adversaires pris dans votre [Blizzard].",
   },
   "16P001": {
     position: 1,
@@ -1159,7 +1159,7 @@ export default {
     position: 2,
     name: "Boum Supersonique",
     description:
-      "Les personnages alliés affectés par [Crossfade] reçoivent des soins égaux à 30% des dégâts infligés par [Ampli].",
+      "Les personnages alliés affectés par [Crossfade] reçoivent des soins égaux à 30% des dégâts infligés par [Ampli] et vos [Coups en mêlée].",
   },
   "16P004": {
     position: 4,
@@ -1183,7 +1183,7 @@ export default {
     position: 7,
     name: "Vivace",
     description:
-      "Pendant [Wall ride] ou lorsque vous êtes en l'air, le temps de recharge d'[Onde sonore] s'écoule 25% plus vite et votre maximum de munitions augmente de 1 chaque seconde jusqu'à ce que vous rechargiez.",
+      "Toutes les 1 s de [Wall ride], vous obtenez 3 % de vitesse de déplacement et 1,5 % de vitesse d'attaque pendant 5 s. Cet effet peut se cumuler jusqu'à 10 fois.",
   },
   "16P008": {
     position: 8,
@@ -1195,7 +1195,7 @@ export default {
     position: 10,
     name: "Ovation",
     description:
-      "Après avoir utilisé [Onde sonore], vous soignez tous les personnages alliés affectés par [Crossfade] à hauteur de 100% des soins de [Crossfade].",
+      "Après avoir utilisé [Onde sonore], vous soignez tous les personnages alliés affectés par [Crossfade] à hauteur de 20 points. Ce montant est double lorsque [Volume Max.] est actif.",
   },
   "16P010": {
     position: 9,
@@ -1272,7 +1272,7 @@ export default {
     position: 11,
     name: "Lille Fælde",
     description:
-      "Après [Courant ascendant], votre prochain [Dans le mille] depuis les airs ne projette plus de carreau explosif, mais déclenche à la place un [Tir de bolas] qui inflige des dégâts réduits de 60 %.",
+      "Après [Courant ascendant], votre prochain [Dans le mille] depuis les airs lance un mini [Tir de Bolas] qui n'attire pas l'adversaire et inflige des dégâts réduits de 50 %.",
   },
   "43P011": {
     position: 12,

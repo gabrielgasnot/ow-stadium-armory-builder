@@ -6,7 +6,8 @@ export default {
   "5S003": [
     {
       type: "description",
-      value: "Vous pouvez maintenir la commande d'[accroupissement] pour augmenter d'un maximum de 200% la hauteur de votre prochain saut."
+      value:
+        "Vous pouvez maintenir la commande d'[accroupissement] pour augmenter d'un maximum de 200% la hauteur de votre prochain saut.",
     },
   ],
   "5A001": [
@@ -18,8 +19,16 @@ export default {
   ],
   "5A002": [
     { type: "Rayon de [Frappe de feu]", value: 50, unit: "%" },
-    { type: "Vitesse des projectiles de [Frappe de feu]", value: 25, unit: "%" },
-    { type: "description", value: "Pour chaque cible supplémentaire touchée par [Frappe de feu], le temps de recharge de [Frappe de feu] est réduit de 5%." }
+    {
+      type: "Vitesse des projectiles de [Frappe de feu]",
+      value: 25,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Pour chaque cible supplémentaire touchée par [Frappe de feu], le temps de recharge de [Frappe de feu] est réduit de 5%.",
+    },
   ],
   "5S001": [
     {
@@ -85,7 +94,7 @@ export default {
     {
       type: "description",
       value:
-        "Chaque élimination à l'aide d'[Eclosion mortelle] augmente vos points de vie de 25 jusqu'à la fin de la manche, jusqu'à un maximum de 100 points de vie.",
+        "Chaque élimination à l'aide d'[Eclosion mortelle] augmente vos points de vie de 25 jusqu'à la fin de la manche, jusqu'à un maximum de 75 points de vie.",
     },
   ],
   "2S004": [
@@ -104,11 +113,10 @@ export default {
     { type: "Durée de [Forme spectrale]", value: 33, unit: "%" },
   ],
   "2A001": [
-    { type: "Temps de lancement de [Voie des ombres]", value: 30, unit: "%" },
     {
       type: "description",
       value:
-        "[Forme spectrale] réduit le temps de recharge de [Voie des ombres] de 2 s.",
+        "Après l'utilisation d'une de vos capacités, les personnages adverses à proximité vous sont révélés pendant 3 s.",
     },
   ],
   "2A003": [
@@ -123,14 +131,14 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous utilisez [Éclosion mortelle], vous gagnez un surplus de points de vie égale à 15% de vos points de vie maximum.",
+        "Au début d'[Éclosion Mortelle], vous gagnez un surplus de points de vie égal à 5% de vos points de vie maximum pour chaque adversaire dans son rayon d'effet.",
     },
   ],
   "2A002": [
     {
       type: "description",
       value:
-        "[Éclosion mortelle] gagne 5% de puissance de capacité pour chaque adversaire dans son rayon d'effet.",
+        "[Éclosion mortelle] gagne 4% de puissance de capacité pour chaque adversaire dans son rayon d'effet.",
     },
   ],
   "2W002": [
@@ -681,8 +689,9 @@ export default {
   "13A003": [
     {
       type: "description",
-      value: "Après l'expiration ou la destruction de [Écran de particules], vous obtenez un surplus de points de vie qui disparaît progressivement. Celui-ci est égal à 50% des dégâts atténués par [Écran de particules] pendant 3 s.",
-    }
+      value:
+        "Après l'expiration ou la destruction de [Écran de particules], vous obtenez un surplus de points de vie qui disparaît progressivement. Celui-ci est égal à 50% des dégâts atténués par [Écran de particules] pendant 3 s.",
+    },
   ],
   "35W001": [
     {
@@ -736,7 +745,7 @@ export default {
     {
       type: "description",
       value:
-        "[Pas véloce] rend 80 points de vie en 2 s aux personnages alliées à proximité.",
+        "[Pas véloce] rend 120 points de vie en 2 s aux personnages alliées à proximité.",
     },
   ],
   "35A004": [
@@ -794,7 +803,7 @@ export default {
     {
       type: "description",
       value:
-        "Si [Fléchette hypodermique] touche une cible affectée par [Grenade biotique], son temps de recharge est réduit de 35%.",
+        "Si [Fléchette hypodermique] touche une cible adverse, son temps de recharge est réduit de 30%. Non cumulable.",
     },
   ],
   "22S001": [
@@ -935,7 +944,7 @@ export default {
     {
       type: "description",
       value:
-        "Après avoir utilisé [Canon scié], vous gagnez 20% de vitesse de déplacement pendant 3 s.",
+        "Après avoir utilisé [Canon scié], vous gagnez 20% de vitesse de déplacement pendant 5 s et rechargez 25% de votre maximum de munitions.",
     },
   ],
   "29W004": [
@@ -987,7 +996,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous visez avec [Torpilles à neutrons], vous gagnez un surplus de points de vie égale à 50% de vos points de bouclier maximum.",
+        "Lorsque vous visez avec [Torpilles à neutrons], vous gagnez un surplus de points de vie égale à 25% de vos points de bouclier maximum.",
     },
   ],
   "41A002": [{ type: "Durée d'[Hyperanneau]", value: 25, unit: "%" }],
@@ -1017,7 +1026,14 @@ export default {
         "Après l'utilisation de [Torpilles à neutrons], votre vitesse d'attaque augmente de 25% pendant 4 s.",
     },
   ],
-   "41S001": [{ type: "Durée de [Vol plané]", value: 25, unit: "%" }],
+  "41S001": [
+    { type: "Durée de [Vol plané]", value: 25, unit: "%" },
+    {
+      type: "description",
+      value:
+        "Pendant [Vol plané], les dégâts que vous subissez sont réduits de 10%.",
+    },
+  ],
   "41S002": [
     {
       type: "description",
@@ -1251,7 +1267,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous dépensez votre charge de capacité ultime, les personnages alliés à proximité gagnent un surplus de 50 points de vie pendant 3 s.",
+        "Lorsque vous dépensez votre charge de capacité ultime, les personnages alliés à proximité gagnent un surplus de 75 points de vie pendant 3 s.",
     },
   ],
   "00S009": [
@@ -1445,7 +1461,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous subissez au moins 100 points de dégâts en une seule fois, vous récupérez 15% des dégâts subis et vos points de bouclier commencent à se régénérer immédiatement.",
+        "Lorsque vous subissez au moins 100 points de dégâts en une seule fois, vous récupérez 20% des dégâts subis et vos points de bouclier commencent à se régénérer immédiatement.",
     },
   ],
   "00S020": [
@@ -1535,7 +1551,7 @@ export default {
     {
       type: "description",
       value:
-        "Les cibles adverses dont la prime est supérieure ou égale à 750 vous sont révélées à moins de 40 m. Leur élimination rapporte 250 crédits du Stadium supplémentaires.",
+        "Les cibles adverses dont la prime est supérieure ou égale à 750 vous sont révélées à moins de 40 m. Leur élimination rapporte 350 crédits du Stadium supplémentaires.",
     },
   ],
   "43S003": [

@@ -18,10 +18,10 @@ export default {
       "Increase [Barrier Field] Health by 250% of your Bonus Max Life.",
   },
   "5P007": {
-    position: 3,
+    position: 4,
     name: "To Me, My Friends!",
     description:
-      "While [Barrier Field] is deployed, allies within 5m are healed equal to 4% of your max Life every 1s.",
+      "While [Barrier Field] is deployed, allies within 5m are healed equal to 5% of your max Life every 1s.",
   },
   "5P001": {
     position: 1,
@@ -45,7 +45,7 @@ export default {
     position: 5,
     name: "Shield Stampede",
     description:
-      "+50% [Charge] Knockback Power During [Charge], automatically deploy [Barrier Field].",
+      "+50% [Charge] Knockback Power. During [Charge], automatically deploy [Barrier Field].",
   },
   "5P008": {
     position: 7,
@@ -57,13 +57,13 @@ export default {
     position: 9,
     name: "Impact Burst",
     description:
-      "[Fire Strike] triggers an explosion the first time it hits an enemy, dealing 30% of its damage in a 3m radius.",
+      "[Fire Strike] triggers an explosion the first time it hits an enemy, dealing 30% [Fire Strike] damage in a 3m radius.",
   },
   "5P003": {
     position: 10,
     name: "Magma Strike",
     description:
-      "If [Fire Strike] is cast twice within 2s, the second strike leaves a trail of lava that Burns enemies for 50% of [Fire Strike] damage.",
+      "Every second [Fire Strike] leaves a trail of lava that Burns enemies for 50% of [Fire Strike] damage.",
   },
   "5P011": {
     position: 8,
@@ -92,7 +92,7 @@ export default {
   "2P004": {
     position: 10,
     name: "Strangle Step",
-    description: "After using [Shadow Step], double your Lifesteal for 3s",
+    description: "+30% [Shadow Step] Cast Speed. After using [Shadow Step], double your Lifesteal for 3s",
   },
   "2P005": {
     position: 6,
@@ -109,7 +109,7 @@ export default {
     position: 12,
     name: "Wraith Renewal",
     description:
-      "While in [Wraith Form], restore 10% of your Life every 1s. Double this while below 50% Life.",
+      "While in [Wraith Form], restore 7% of your Life every 1s. Double this while below 50% Life.",
   },
   "2P008": {
     position: 11,
@@ -174,7 +174,7 @@ export default {
     position: 10,
     name: "Frontliners",
     description:
-      "Allies in range of your [Biotic Field] when it spawns gain Overhealth equal to 30% of your max Life for 3s",
+      "Allies in range of your [Biotic Field] when it spawns gain Overhealth equal to 25% of your max Life for 3s",
   },
   "15P007": {
     position: 7,
@@ -210,13 +210,13 @@ export default {
     position: 1,
     name: "Peripheral Pulse",
     description:
-      "During [Tactical Visor], [Pulse Rifle] shoots at 1 additional enemy, dealing 50% damage",
+      "During [Tactical Visor], [Pulse Rifle] shoots at 1 additional enemy, dealing 50% reduced damage",
   },
   "6P001": {
     position: 6,
     name: "Battle Medic",
     description:
-      "Every 1s your Staff is attached, [Caduceus Blaster] gains +4% Attack Speed (stacks 10 times) until you reload or swap to your Staff",
+      "Every 1s your Staff is attached, [Caduceus Blaster] gains 4% Attack Speed (stacks 10 times) until you reload or swap to your Staff",
   },
   "6P002": {
     position: 8,
@@ -234,7 +234,7 @@ export default {
     position: 9,
     name: "Renaissance",
     description:
-      "After successfully [Resurrect], gain [Valkyrie] for 5 seconds",
+      "After successfully using [Resurrect], activate [Valkyrie] for 5 seconds",
   },
   "6P005": {
     position: 7,
@@ -246,13 +246,13 @@ export default {
     position: 11,
     name: "Triage Unit",
     description:
-      "When using [Guardian Angel] on allies below 50% HP, your [Caduceus Staff] heals them for 30% more for 3 sec",
+      "When using [Guardian Angel] on allies below 50% Life, your [Caduceus Staff] heals them for 30% more for 3 sec",
   },
   "6P007": {
     position: 5,
     name: "Threads of Fate",
     description:
-      "[Caduceus Staff] chains to your previous target for 3 sec at 50% effectiveness",
+      "[Caduceus Staff] chains to your previous target for 3s, at 50% effectiveness",
   },
   "6P008": {
     position: 3,
@@ -269,7 +269,7 @@ export default {
   "6P010": {
     position: 1,
     name: "Distortion",
-    description: "Allies boosted by your [Caduceus Staff] gain +20% Lifesteal",
+    description: "Allies boosted by your [Caduceus Staff] gain 20% Lifesteal",
   },
   "6P011": {
     position: 12,
@@ -305,7 +305,7 @@ export default {
     position: 4,
     name: "Ethereal Excision",
     description:
-      "While aiming at an enemy's head with [Biotic Grasp]'s secondary fire, gain 30% Lifesteal, 30% Move Speed, and restore 100% increased Biotic Energy",
+      "While aiming at an enemy's head with [Biotic Grasp]'s secondary fire, gain 30% Lifesteal, 30% Move Speed, and restore 100% more Biotic Energy",
   },
   "26P005": {
     position: 1,
@@ -347,13 +347,13 @@ export default {
     position: 11,
     name: "Voidhoppers",
     description:
-      "[Fade] phases other allies within 8m for 0.25s and grants them Overhealth equal to 20% of your max Life",
+      "[Fade] phases other allies within 8m for 0.3s and grants them Overhealth equal to 20% of your max Life",
   },
   "26P012": {
     position: 12,
     name: "Destruction's Divide",
     description:
-      "[Coalescence] can be toggled between pure healing or pure damage, with 30% greater effect",
+      "+25% [Coalescence] Duration. [Coalescence] can be toggled between pure healing or pure damage, with 30% greater effect",
   },
   "19P001": {
     position: 1,
@@ -405,7 +405,7 @@ export default {
     position: 6,
     name: "Ultrawide Matrix",
     description:
-      "Increase the size of Defense Matrix by 50% and its duration by 25%",
+      "Increase the size of [Defense Matrix] by 50% and its duration by 25%",
   },
   "19P011": {
     position: 9,
@@ -422,7 +422,7 @@ export default {
   "19P009": {
     position: 11,
     name: "Express Detonation",
-    description: "Self-Destruct explosion is triggered 15% faster",
+    description: "[Self-Destruct] explosion is triggered 15% faster",
   },
   "21P001": {
     position: 7,
@@ -434,18 +434,18 @@ export default {
     position: 6,
     name: "Laceration",
     description:
-      "[Swift Strike] deals 25% additional damage over 3s to enemies hit",
+      "[Swift Strike] deals 35% additional damage over 3s to enemies hit",
   },
   "21P003": {
     position: 10,
     name: "Iaido Strike",
     description:
-      "After [Deflect] ends, you quickly swing your [Dragonblade] once",
+      "After [Deflect] ends, quickly swing your [Dragonblade] once",
   },
   "21P004": {
     position: 5,
     name: "Hidden Blade",
-    description: "Gain 50% Melee Lifesteal and +25 Quick Melee Damage",
+    description: "Gain 60% Melee Lifesteal and increase [Quick Melee] damage by 15.",
   },
   "21P005": {
     position: 9,
@@ -457,7 +457,7 @@ export default {
     position: 3,
     name: "Sacred Shuriken",
     description:
-      "[Shuriken]'s primary fire throws 2 additional [Shuriken] that don't consume any extra ammo",
+      "[Shuriken]'s primary fire throws 2 additional [Shuriken] that don't consume any ammo.",
   },
   "21P007": {
     position: 4,
@@ -475,7 +475,7 @@ export default {
     position: 12,
     name: "Dragon's Breath",
     description:
-      "[Dragonblade] swings also fire a large piercing projectile that deals 50% of [Dragonblade]'s damage",
+      "[Dragonblade] swings launch a large piercing projectile that deals 50% of [Dragonblade]'s damage.",
   },
   "21P010": {
     position: 1,
@@ -499,7 +499,7 @@ export default {
     position: 1,
     name: "Scorched Earth",
     description:
-      "When you [Overheat], apply Burning to enemies within 6m, dealing damage equal to 20% of your max Life over 5s",
+      "When you [Overheat], apply Burning to enemies within 6m, dealing damage equal to 20% of your max Life over 4s.",
   },
   "24P001": {
     position: 2,
@@ -577,13 +577,13 @@ export default {
     position: 2,
     name: "Royal Bullets",
     description:
-      "[Scatter Gun] critical hits against targets within 15m applies [Wound] for 50 damage over 3s",
+      "[Scattergun] critical hits against targets within 15m applies [Wound] for 50 damage over 3s",
   },
   "34P007": {
     position: 3,
     name: "Twist the Knife",
     description:
-      "[Scatter Gun] critical hits extend the duration of all [Wounds] on the target by 1s",
+      "[Scattergun] critical hits extend the duration of all [Wounds] on the target by 1s",
   },
   "34P002": {
     position: 4,
@@ -595,18 +595,18 @@ export default {
     position: 5,
     name: "Cut'em, Gracie!",
     description:
-      "Each enemy hit by [Jagged Blade] while it returns to you reduces its cooldown by 2s",
+      "Each enemy hit by [Jagged Blade] reduces its cooldown by 2s",
   },
   "34P005": {
     position: 6,
     name: "Let's go Win",
-    description: "Eliminations reset the cooldown of [Commanding Shout] by 50%",
+    description: "Eliminations reduce the cooldown of [Commanding Shout] by 50%",
   },
   "34P008": {
     position: 7,
     name: "Merciless Magnetism",
     description:
-      "Using [Commanding Shout] causes your [Jagged Blade] to home to a target",
+      "Using [Commanding Shout] causes your [Jagged Blade] to home to a target within 15m",
   },
   "34P011": {
     position: 8,
@@ -624,13 +624,13 @@ export default {
     position: 10,
     name: "Soaring Stone",
     description:
-      "[Carnage] becomes a leaping strike if ou jump during its cast time",
+      "[Carnage] becomes a leaping strike if you jump during its cast time",
   },
   "34P009": {
     position: 11,
     name: "Bloodcrazed",
     description:
-      "[Carnage] and [Rampage] gives 15% of Max Life as Overhealth per hit",
+      "[Rampage] and [Carnage] gives 15% of Max Life as Overhealth per hit",
   },
   "34P012": {
     position: 12,
@@ -660,17 +660,17 @@ export default {
   "13P005": {
     name: "Barrier Benefits",
     description:
-      "When [Barrier] expires, grand Overhealth equal to 100% if remaining  [Barrier] Health to the target for 2s",
+      "When [Barrier] expires, grant Overhealth equal to 100% of remaining [Barrier] Health to the target for 2s",
   },
   "13P006": {
     name: "Containment Shield",
     description:
-      "[Barrier] heals 5% of your Max Life every 1s and grants 20% Move Speed while active",
+      "[Barrier] heals the target for 5% of your Max Life every 1s and grants 20% Move Speed while active",
   },
   "13P007": {
     name: "Fission Field",
     description:
-      "[Projected Barrier] also applies to 1 additional ally within 10m, but has 20% reduced maximum [Energy] gain and 20% reduced duration",
+      "[Projected Barrier] also applies to 1 additional ally within 10m, but has 25% reduced maximum [Energy] gain and 20% reduced duration",
   },
   "13P008": {
     name: "Here to Spot You",
@@ -680,7 +680,7 @@ export default {
   "13P009": {
     name: "Lifelift",
     description:
-      "+50% [Particle Barrier] size. Increase [Particle Barrier] Health by 50% of Bonus Max Life from items.",
+      "+50% [Particle Barrier] Size. Increase [Barrier] Health by 50% of Bonus Max Life from items.",
   },
   "13P010": {
     name: "Major Flex",
@@ -695,7 +695,7 @@ export default {
   "13P012": {
     name: "Graviton Anomaly",
     description:
-      "25% Ultimate Cost Reduction [Graviton Surge] base damage is increased to 30 and increased by [Energy], but has 50% reduced duration",
+      "25% Ultimate Cost Reduction. [Graviton Surge] base damage is increased to 30 and increased by [Energy], but has 50% reduced duration",
   },
   "35P001": {
     position: 1,
@@ -725,7 +725,7 @@ export default {
     position: 5,
     name: "Self-Care",
     description:
-      "When you use [Healing Ofuda], heal yourself for 15% of your max Life",
+      "When you use [Healing Ofuda], each ofuda thrown heals you for 3% of your max Life.",
   },
   "35P006": {
     position: 6,
@@ -813,7 +813,7 @@ export default {
     position: 9,
     name: "Venomous",
     description:
-      "[Biotic Grenade] deals an additional 50 damage over its duration to enemies affected by it",
+      "[Biotic Grenade] deals an additional 50 damage over its duration to enemies affected.",
   },
   "22P009": {
     position: 8,
@@ -837,7 +837,7 @@ export default {
     position: 11,
     name: "Our Turn",
     description:
-      "[Nano Boost] also affects other visible allies, but it has a 50% reduced duration on them",
+      "[Nano Boost] also affects other allies in your line of sight, but it has a 50% reduced duration on them",
   },
   "14P001": {
     position: 4,
@@ -849,7 +849,7 @@ export default {
     position: 2,
     name: "Dead Man Walking",
     description:
-      "Eliminating an enemy you've recently critically hit grants 1 Max Ammo for the round",
+      "Eliminating an enemy with a critical hit grants 1 Max Ammo for the round, up to 4.",
   },
   "14P003": {
     position: 3,
@@ -861,7 +861,7 @@ export default {
     position: 7,
     name: "Just Roll With It",
     description:
-      "During [Combat Roll], prevent all incoming damage, after [Combat Roll] ends, heal 30% of your Life over 3s",
+      "[Combat Roll] gains additional 25% damage reduction and heals 30% of your Life over 3s.",
   },
   "14P005": {
     position: 1,
@@ -895,7 +895,7 @@ export default {
     position: 10,
     name: "Easy Rider",
     description:
-      "While using [Deadeye], gain 100 Overhealth and 25% Movement Speed",
+      "While using [Deadeye], gain 100 Overhealth and 25% Move Speed",
   },
   "14P011": {
     position: 11,
@@ -934,7 +934,7 @@ export default {
     position: 7,
     name: "Incendiary Blast",
     description:
-      "[Coach Gun] applies Burning, dealing 100 damage over 5s. If target was burning, deal extra 75 additional Ability Damage instantly",
+      "[Coach Gun] applies Burning, dealing 100 damage over 5s. If target was burning, deal 75 additional damage instantly.",
   },
   "29P006": {
     position: 5,
@@ -975,7 +975,7 @@ export default {
     position: 11,
     name: "B.O.B. Jr.",
     description:
-      "[B.O.B.] costs 20% less Ultimate Charge but has reduced Life, 50% reduced Attack Speed, and is significantly smaller",
+      "[B.O.B.] costs 50% less Ultimate Charge but has reduced Life, 20% reduced Attack Speed, and is significantly smaller",
   },
   "41P001": {
     position: 1,
@@ -998,7 +998,7 @@ export default {
     position: 4,
     name: "Medicinal Missiles",
     description:
-      "[Pulsar Torpedoes] heal for an extra 30 life and causes allies hit to receive 50% more healing for 3s",
+      "[Pulsar Torpedoes] causes allies hit to receive 50% more healing for 3s.",
   },
   "41P005": {
     position: 5,
@@ -1049,7 +1049,7 @@ export default {
   "20P001": {
     position: 3,
     name: "Permafrost",
-    description: "Increase your Max Health by 50% of your Ability Power",
+    description: "Gain bonus health multiplier equal to 50% of your Ability Power. While above 30% Ability Power, grow 15% in size.",
   },
   "20P002": {
     position: 4,
@@ -1104,14 +1104,14 @@ export default {
       "When [Cryo-Freeze] ends, knock back nearby enemies, dealing 60 damage",
   },
   "20P011": {
-    position: 12,
+    position: 11,
     name: "Blizznado",
     description: "While within [Blizzard], heal 15% of your Life every 1s",
   },
   "20P012": {
-    position: 11,
-    name: "Avalanche",
-    description: "Visible enemies within 20m of the Blizzard are slowed by 25%",
+    position: 12,
+    name: "Cold Blaster",
+    description: "[Endothermic Blaster]'s primary fire does 20% increased damage to enemies within [Blizzard].",
   },
   "16P001": {
     position: 1,
@@ -1128,7 +1128,7 @@ export default {
     position: 3,
     name: "Sonic Boom",
     description:
-      "[Sonic Amplifier] Damage heals all allies affected by [Crossfade] equal to 30% of damage dealt",
+      "[Sonic Amplifier] and [Quick Melee] Damage heals all allies affected by [Crossfade] equal to 30% of damage dealt",
   },
   "16P004": {
     position: 4,
@@ -1146,25 +1146,25 @@ export default {
     position: 6,
     name: "Radio Edit",
     description:
-      "After using [Amp It Up], trigger [Sound Barrier] with 85% reduced Overhealth",
+      "After using [Amp It Up], trigger a [Sound Barrier] with 85% reduced Overhealth",
   },
   "16P007": {
     position: 7,
     name: "Vivace",
     description:
-      "While [Wallriding] or airborne, [Soundwave] cooldown refreshes 25% faster and adds 1 Max Ammo per 1s until you reload",
+      "Every 1s you are [Wallriding], gain 3% Move Speed and 1.5% Attack Speed for 5s, stacking up to 10 times.",
   },
   "16P008": {
     position: 8,
     name: "Wallvibing",
     description:
-      "While [Wallriding] or airborne, gain temporary Overhealth equal to 3% of your life every 1s up to 30%",
+      "While [Wallriding] or airborne, gain temporary Overhealth equal to 3% of your life every 1s, up to 30%",
   },
   "16P009": {
     position: 9,
     name: "Crowd Pleaser",
     description:
-      "After using [Soundwave], heal all allies affected by [Crossfade] for 100% of [Crossfade] healing.",
+      "After using [Soundwave], heal all allies affected by [Crossfade] for 20. This healing is doubled while [Amp It Up] is active.",
   },
   "16P010": {
     position: 10,
@@ -1228,7 +1228,7 @@ export default {
     position: 8,
     name: "Redux",
     description:
-      "[Revdraw Crossbow] hits against targets stuck by a [Take Aim] bot or [Bola Shot] reduce the cooldown of your abilities by 5% and refunds 1 ammo.",
+      "[Revdraw Crossbow] hits against targets stuck by a [Take Aim] bolt or [Bola Shot] reduce the cooldown of your abilities by 5% and refunds 1 ammo.",
   },
   "43P009": {
     position: 9,
@@ -1240,7 +1240,7 @@ export default {
     position: 10,
     name: "Lille Fælde",
     description:
-      "After using [Updraft], your next [Take Aim] while airborn fires a [Bola Shot] that deals 60% reduced damage instead of an explosive bolt.",
+      "After using [Updraft], your next [Take Aim] while airborne instead fires a mini [Bola Shot] that no longer pulls and has 50% reduced effectiveness.",
   },
   "43P011": {
     position: 11,
@@ -1254,7 +1254,6 @@ export default {
     description:
       "[Updraft] launches a wind blast towards your crosshair, knocking back enemies and dealing 40 damage.",
   },
-
   "10P001": {
     position: 1,
     name: "Flying Kick",

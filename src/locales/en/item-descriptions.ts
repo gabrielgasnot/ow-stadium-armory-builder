@@ -81,7 +81,7 @@ export default {
     {
       type: "description",
       value:
-        "Each [Death Blossom] elimination increases your Health by 25 until the end of the round, up to 100 Health",
+        "Each [Death Blossom] elimination increases your Health by 25 until the end of the round, up to 75 Health",
     },
   ],
   "2S004": [
@@ -100,10 +100,10 @@ export default {
     { type: "[Wraith Form] Duration", value: 33, unit: "%" },
   ],
   "2A001": [
-    { type: "[Shadow Step] Cast Speed", value: 30, unit: "%" },
     {
       type: "description",
-      value: "Using [Wraith Form] reduces the cooldown of [Shadow Step] by 2s",
+      value:
+        "After using an ability, nearby enemies are Revealed to you for 3s",
     },
   ],
   "2A003": [
@@ -118,14 +118,14 @@ export default {
     {
       type: "description",
       value:
-        "Using [Death Blossom] grants you Overhelth equel to 15% of your max Life",
+        "When [Death Blossom] starts, gain Overhealth equal to 5% of your max Life for each enemy within its range.",
     },
   ],
   "2A002": [
     {
       type: "description",
       value:
-        "[Death Blossom] gains 5% Ability Power for each enemy within its range",
+        "[Death Blossom] gains 4% Ability Power for each enemy within its range",
     },
   ],
   "2W002": [
@@ -316,13 +316,13 @@ export default {
     {
       type: "description",
       value:
-        "[Light Gun] gains a secondary fire, which charges up to fire a piercing shot that deals 80 piercing damage",
+        "[Light Gun] gains a secondary fire, which charges up to fire a piercing shot that deals 80 piercing damage. Doesn't generate Ultimate Charge.",
     },
   ],
   "19S004": [
     {
       type: "description",
-      value: "When you eject from your Mech, gain [Nano Boost] for 4s",
+      value: "When you eject from your [Mech], gain [Nano Boost] for 4s",
     },
   ],
   "19S005": [
@@ -349,7 +349,7 @@ export default {
     {
       type: "description",
       value:
-        "When you use [Boosters], allies within 16m gain 25% Move Speed for 2s",
+        "When you use [Boosters], other allies within 16m gain 25% Move Speed for 2s",
     },
   ],
   "19A005": [
@@ -500,7 +500,7 @@ export default {
   "34W002": [
     {
       type: "description",
-      value: "[Commanding Shout] grants you +15% Attack Speed",
+      value: "[Commanding Shout] grants you 15% Attack Speed",
     },
   ],
   "34A001": [
@@ -512,7 +512,7 @@ export default {
   "34S001": [
     {
       type: "description",
-      value: "When knockback, gain 25%  increased Move Speed for 3s",
+      value: "When knocked back, gain 25% increased Move Speed for 3s",
     },
   ],
   "34S002": [
@@ -560,7 +560,7 @@ export default {
     {
       type: "description",
       value:
-        "[Carnage] and [Jagged Blade] impacts damage grants Overhealth equal to 40% of damage dealt",
+        "[Carnage] and [Jagged Blade] impact damage grants Overhealth equal to 40% of damage dealt",
     },
   ],
   "34S005": [
@@ -675,7 +675,7 @@ export default {
   "35A003": [
     {
       type: "description",
-      value: "[Swift Step] heals nearby allies by 80 Life over 2s",
+      value: "[Swift Step] heals nearby allies by 120 Life over 2s",
     },
   ],
   "35A004": [
@@ -728,7 +728,7 @@ export default {
     {
       type: "description",
       value:
-        "Landing a [Sleep Dart] on target affected by [Biotic Grenade] reduces its cooldown by 35%",
+        "Landing a [Sleep Dart] on enemy reduces its cooldown by 30%. Does not stack.",
     },
   ],
   "22S001": [
@@ -861,7 +861,8 @@ export default {
   "29S001": [
     {
       type: "description",
-      value: "After using [Coach Gun], gain 20% Move Speed for 3s",
+      value:
+        "After using [Coach Gun], gain 20% Move Speed for 5s and reload 25% of Max Ammo",
     },
   ],
   "29W004": [
@@ -934,7 +935,14 @@ export default {
       value: "After using [Pulsar Torpedoes], gain 25% Attack Speed for 4s",
     },
   ],
-  "41S001": [{ type: "[Glide Boost] Duration", value: 25, unit: "%" }],
+  "41S001": [
+    { type: "[Glide Boost] Duration", value: 25, unit: "%" },
+    {
+      type: "description",
+      value:
+        "During [Glide Boost], gain 10% Damage Reduction.",
+    },
+  ],
   "41S002": [
     {
       type: "description",
@@ -945,7 +953,7 @@ export default {
     {
       type: "description",
       value:
-        "While aiming [Pulsar Torpedoes], gain Overhealth equal to 50% of your max Shields",
+        "While aiming [Pulsar Torpedoes], gain Overhealth equal to 25% of your max Shields",
     },
   ],
   "41W004": [
@@ -1152,7 +1160,7 @@ export default {
     {
       type: "description",
       value:
-        "When you spend your Ultimate Charge, grant nearby allies 50 Overhealth for 3s",
+        "When you spend your Ultimate Charge, grant nearby allies 75 Overhealth for 3s",
     },
   ],
   "00S009": [
@@ -1328,7 +1336,7 @@ export default {
     {
       type: "description",
       value:
-        "When you take more than 100 damage at once, restore 15% of damage taken and start regenerating your Shields",
+        "When you take more than 100 damage at once, restore 20% of damage taken and start regenerating your Shields",
     },
   ],
   "00S020": [
@@ -1408,7 +1416,7 @@ export default {
     {
       type: "description",
       value:
-        "Enemies with a Bounty of 750 or more are revealed to you within 40m. Eliminating them grants 250 additional Stadium Cash.",
+        "Enemies with a Bounty of 750 or more are revealed to you within 40m. Eliminating them grants 350 additional Stadium Cash.",
     },
   ],
   "43S003": [

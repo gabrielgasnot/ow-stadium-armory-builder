@@ -265,4 +265,9 @@ export default {
   "43S002": { position: 2, name: "Marque de Chasseuse" },
   "43S003": { position: 3, name: "Garrot" },
   "43S004": { position: 1, name: "Pointes Toxiques" },
+  "00W024": { position: 6, name: "Péril aérien" },
+  "00S027": { position: 6, name: "Noyau Surchargé" },
+  "00W025": { position: 6, name: "Puce d'urgence" },
+  "00A022": { position: 11, name: "Chargeur Sonique" },
+  "00A023": { position: 11, name: "Amplificateur de Vitalité" },
 };

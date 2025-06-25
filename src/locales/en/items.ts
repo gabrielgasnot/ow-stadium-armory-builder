@@ -299,4 +299,9 @@ export default {
   "31S001": { position: 1, name: "Synced Shielding" },
   "31S002": { position: 2, name: "Beam Splitter" },
   "31S003": { position: 3, name: "De Kuiper's Thesis" },
+  "00W024": { position: 6, name: "Aerial Distresser" },
+  "00W025": { position: 6, name: "Emergency Chip" },
+  "00S027": { position: 6, name: "Overdrive Core" },
+  "00A022": { position: 11, name: "Sonic Recharge" },
+  "00A023": { position: 11, name: "Vitality Amplifier" },
 };

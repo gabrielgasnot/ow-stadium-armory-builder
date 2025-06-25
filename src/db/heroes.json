@@ -153,6 +153,21 @@
           ]
         },
         {
+          "id": "2A001",
+          "price": 3750,
+          "category": "Ability",
+          "attributes": [
+            { "type": "WP", "value": 5, "unit": "%" },
+            { "type": "MS", "value": 5, "unit": "%" }
+          ]
+        },
+        {
+          "id": "2A002",
+          "price": 4000,
+          "category": "Ability",
+          "attributes": [{ "type": "ALS", "value": 10, "unit": "%" }]
+        },
+        {
           "id": "2S001",
           "price": 4000,
           "category": "Survival",
@@ -169,9 +184,9 @@
         },
         {
           "id": "2S003",
-          "price": 4000,
+          "price": 3750,
           "category": "Survival",
-          "attributes": [{ "type": "AL", "value": 15, "unit": "%" }]
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         }
       ],
       "epic": [
@@ -187,27 +202,17 @@
           "category": "Survival",
           "attributes": [{ "type": "HP", "value": 50, "unit": "" }]
         },
-        {
-          "id": "2A001",
-          "price": 9500,
-          "category": "Ability",
-          "attributes": [{ "type": "MS", "value": 10, "unit": "%" }]
-        },
+
         {
           "id": "2S006",
-          "price": 11000,
-          "category": "Survival",
+          "price": 9500,
+          "category": "Ability",
           "attributes": [
             { "type": "HP", "value": 25, "unit": "" },
             { "type": "AP", "value": 10, "unit": "%" }
           ]
         },
-        {
-          "id": "2A002",
-          "price": 11000,
-          "category": "Ability",
-          "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
-        },
+
         {
           "id": "2A003",
           "price": 10000,
@@ -692,7 +697,7 @@
       "epic": [
         {
           "id": "21W002",
-          "price": 10000,
+          "price": 11000,
           "category": "Weapon",
           "attributes": [{ "type": "MD", "value": 25, "unit": "%" }]
         },
@@ -716,7 +721,7 @@
           "price": 10000,
           "category": "Ability",
           "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
+            { "type": "AP", "value": 15, "unit": "%" },
             { "type": "ALS", "value": 15, "unit": "%" }
           ]
         },
@@ -1166,7 +1171,7 @@
           "id": "35A003",
           "price": 10000,
           "category": "Ability",
-          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
+          "attributes": [{ "type": "CR", "value": 10, "unit": "%" }]
         },
         {
           "id": "35A004",
@@ -1558,16 +1563,10 @@
           "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
         },
         {
-          "id": "41S001",
-          "price": 4000,
-          "category": "Survival",
-          "attributes": [{ "type": "SH", "value": 25, "unit": "" }]
-        },
-        {
           "id": "41S004",
           "price": 4000,
           "category": "Survival",
-          "attributes": [{ "type": "AP", "value": 10, "unit": "%" }]
+          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
         }
       ],
       "epic": [
@@ -1588,6 +1587,12 @@
           "price": 11000,
           "category": "Weapon",
           "attributes": [{ "type": "AS", "value": 10, "unit": "%" }]
+        },
+        {
+          "id": "41S001",
+          "price": 12000,
+          "category": "Survival",
+          "attributes": []
         },
         {
           "id": "41S002",
@@ -1874,7 +1879,10 @@
           "id": "43S002",
           "price": 4000,
           "category": "Survival",
-          "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+          "attributes": [
+            { "type": "HP", "value": 25, "unit": "" },
+            { "type": "WP", "value": 5, "unit": "%" }
+          ]
         },
         {
           "id": "43S003",
@@ -1894,7 +1902,6 @@
           "id": "43A002",
           "price": 10000,
           "category": "Ability",
-          "disabled": true,
           "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
         },
         {
@@ -2239,6 +2246,7 @@
           "id": "31A003",
           "price": 11000,
           "category": "Ability",
+
           "attributes": [{ "type": "AP", "value": 25, "unit": "%" }]
         },
         {

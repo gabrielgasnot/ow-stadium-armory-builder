@@ -205,13 +205,13 @@
     },
     {
       "id": "00S010",
-      "price": 4500,
+      "price": 4000,
       "category": "Survival",
       "attributes": [{ "type": "SH", "value": 25, "unit": "" }]
     },
     {
       "id": "00S011",
-      "price": 4000,
+      "price": 3750,
       "category": "Survival",
       "attributes": [
         { "type": "SH", "value": 25, "unit": "" },
@@ -272,7 +272,7 @@
     },
     {
       "id": "00W014",
-      "price": 9500,
+      "price": 9000,
       "category": "Weapon",
       "attributes": [
         { "type": "AS", "value": 10, "unit": "%" }
