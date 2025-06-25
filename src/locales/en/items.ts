@@ -3,7 +3,7 @@ export default {
   "5A001": { name: "Boost Recycler" },
   "5S001": { position: 1, name: "Crusader's Cure" },
   "5S002": { position: 2, name: "Overclocked Barrier" },
-  "5S003": { position: 2, name: "Bottes à réaction" },
+  "5S003": { position: 2, name: "Rocket Boots" },
   "5A002": { position: 1, name: "Chimera's Maw" },
   "5W002": { position: 1, name: "Dampener Grip" },
   "5W003": { position: 2, name: "Plan Z" },
