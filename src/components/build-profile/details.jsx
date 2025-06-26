@@ -48,11 +48,35 @@ function Details() {
   const itemColumns = 3;
   const itemRows = 2;
 
+  const waitForImagesToLoad = (container) => {
+    const images = Array.from(container.querySelectorAll("img"));
+    const promises = images.map(
+      (img) =>
+        new Promise((resolve) => {
+          if (img.complete && img.naturalHeight !== 0) {
+            resolve();
+          } else {
+            img.onload = () => {
+              resolve();
+            };
+            img.onerror = () => {
+              resolve();
+            }; // resolve even on error to avoid hanging
+          }
+        })
+    );
+    return Promise.all(promises).then(() => undefined);
+  };
+
   const handleCopy = async () => {
     setShowExport(true);
     await new Promise((resolve) => setTimeout(resolve, 200));
 
     const element = exportRef.current;
+    if (!element) return;
+
+    // Wait for all images inside the export element to load (including fallback)
+    await waitForImagesToLoad(element);
 
     const canvas = await html2canvas(element, {
       onclone: (clonedDoc) => {

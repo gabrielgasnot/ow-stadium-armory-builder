@@ -1,4 +1,4 @@
-import React, { useState, useTransition } from "react";
+import React, { useState, useTransition, useEffect } from "react";
 import { Box, CardMedia } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { useUI } from "../../contexts/ui-context";
@@ -9,6 +9,9 @@ function PerkMiniCard({ perk, perkType, setHoverPerk, unselectPerk }) {
   const isPower = perkType === "power";
 
   const [isTouch, setIsTouch] = useState(false);
+  const [imgSrc, setImgSrc] = useState(
+    `${import.meta.env.BASE_URL}perks/default.png`
+  );
   const { handleShowPerkSummary, handleHidePerkSummary } = useUI();
   const handleTouchStart = () => {
     setIsTouch(true);
@@ -47,6 +50,23 @@ function PerkMiniCard({ perk, perkType, setHoverPerk, unselectPerk }) {
       }
     : {};
 
+  useEffect(() => {
+    const img = new Image();
+
+    if (perk?.id) {
+      img.onload = () =>
+        setImgSrc(`${import.meta.env.BASE_URL}perks/${perk.id}.png`);
+      img.onerror = () =>
+        setImgSrc(`${import.meta.env.BASE_URL}perks/default.png`);
+      img.src = `${import.meta.env.BASE_URL}perks/${perk.id}.png`;
+    }
+
+    return () => {
+      img.onload = null;
+      img.onerror = null;
+    };
+  }, [perk?.id]);
+
   return (
     <Box
       sx={{
@@ -81,7 +101,7 @@ function PerkMiniCard({ perk, perkType, setHoverPerk, unselectPerk }) {
       {perk && (
         <CardMedia
           component="img"
-          image={`${import.meta.env.BASE_URL}perks/${perk.id}.png`}
+          image={imgSrc}
           alt={perk.name}
           sx={{
             width: "100%",

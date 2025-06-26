@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material/styles";
 
 function HighlightText({ text }: { text: string }) {
   const theme = useTheme();
-  const parts = text?.split(/(\[.*?\])/g); // Split on [brackets], keeping them
+  const parts = text?.split(/(\[.*?\]|<e>.*?<\/e>)/g); // Split on [brackets] or <e>...</e>, keeping them
 
   return (
     parts &&
@@ -20,6 +20,20 @@ function HighlightText({ text }: { text: string }) {
                 }}
               >
                 {part}
+              </span>
+            );
+          } else if (part.startsWith("<e>") && part.endsWith("</e>")) {
+            // Highlight <e> tags but remove the tags themselves
+            const innerText = part.slice(3, -4); // Remove <e> and </e>
+            return (
+              <span
+                key={index}
+                style={{
+                  color: theme.palette.custom.orange,
+                  fontWeight: "bold",
+                }}
+              >
+                {innerText}
               </span>
             );
           } else {
