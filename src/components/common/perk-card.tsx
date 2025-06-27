@@ -93,8 +93,8 @@ function PerkCard({
             src={imgSrc}
             alt={perk.name}
             sx={{
-              width: 64,
-              height: 64,
+              width: 48,
+              height: 48,
               border: getPerkColor(perkGrade),
               backgroundColor: "white",
             }}

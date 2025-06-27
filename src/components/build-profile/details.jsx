@@ -13,6 +13,7 @@ import {
   Switch,
   Tooltip,
   useTheme,
+  useMediaQuery,
 } from "@mui/material";
 import DetailsHeader from "./details-header";
 import PerkMiniCard from "../common/perk-mini-card";
@@ -25,6 +26,8 @@ import { useBuild } from "../../contexts/build-context";
 import BuildExportCanvas from "../capture/build-export-canvas";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useTranslation } from "react-i18next";
+import RenderPowers from "./powers-render.js";
+import RenderItems from "./items-render.js";
 
 function Details() {
   const { t } = useTranslation("common");
@@ -47,6 +50,8 @@ function Details() {
   const powerColumns = 4;
   const itemColumns = 3;
   const itemRows = 2;
+
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const waitForImagesToLoad = (container) => {
     const images = Array.from(container.querySelectorAll("img"));
@@ -111,9 +116,20 @@ function Details() {
     });
   };
 
-  const getPerkMiniCard = (perks, perkType, index) => {
+  const getPerkMiniCardDesktop = (perks, perkType, index) => {
     return (
-      <Box sx={{ textAlign: "center" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          width: "100%",
+          justifyContent: "center",
+          alignItems: "center",
+          alignContent: "center",
+          gap: 1,
+        }}
+        key={`${perkType}-${index}`}
+      >
         <Typography variant="h6">
           {perkType === "power" && `${t("round")} ${2 * index + 1}`}
           {perkType === "item" && `${t("item")} ${index + 1}`}
@@ -123,9 +139,43 @@ function Details() {
           perkType={perkType}
           setHoverPerk={setHoverPerk}
           unselectPerk={() => removePerkBuild(perkType, perks[index])}
+          isDesktop={isDesktop}
         />
       </Box>
     );
+  };
+
+  const getPerkMiniCardMobile = (perks, perkType, index) => {
+    return (
+      <Box
+        key={`${perkType}-${index}`}
+        sx={{ display: "flex", flexDirection: "column", gap: 1, width: "100%" }}
+      >
+        {perks.length === 0 && index === 0 && (
+          <Typography variant="body2" sx={{ color: "text.secondary" }}>
+            {perkType === "power" ? t("selectPower") : t("selectItem")}
+          </Typography>
+        )}
+        <Typography variant="h6">
+          {perkType === "power" && `${t("round")} ${2 * index + 1}`}
+          {perkType === "item" && `${t("item")} ${index + 1}`}
+        </Typography>
+        <PerkMiniCard
+          perk={perks[index]}
+          perkType={perkType}
+          setHoverPerk={setHoverPerk}
+          unselectPerk={() => removePerkBuild(perkType, perks[index])}
+          isDesktop={isDesktop}
+        />
+      </Box>
+    );
+  };
+
+  const getPerkMiniCard = (perks, perkType, index) => {
+    if (isDesktop) {
+      return getPerkMiniCardDesktop(perks, perkType, index);
+    }
+    return getPerkMiniCardMobile(perks, perkType, index);
   };
 
   if (!currentHero) {
@@ -143,65 +193,22 @@ function Details() {
         <Card className="no-hover" sx={{ height: "100%" }}>
           <CardHeader title={t("power")} />
           <CardContent>
-            <Grid
-              container
-              spacing={2}
-              sx={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              {[...Array(powerColumns)].map((_, index) => (
-                <Grid
-                  item
-                  size={3}
-                  key={index}
-                  sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  {getPerkMiniCard(selectedPowers, "power", index)}
-                </Grid>
-              ))}
-            </Grid>
+            <RenderPowers
+              isDesktop={isDesktop}
+              selectedPowers={selectedPowers}
+              displayPerk={getPerkMiniCard}
+            />
           </CardContent>
         </Card>
 
         <Card className="no-hover">
           <CardHeader title={t("items")} />
           <CardContent>
-            <Grid
-              container
-              spacing={1}
-              sx={{
-                textAlign: "center",
-              }}
-            >
-              {[...Array(itemRows)].map((_, rowIndex) =>
-                [...Array(itemColumns)].map((_, index) => (
-                  <Grid
-                    item
-                    spacing={2}
-                    size={4}
-                    sx={{
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                    key={index}
-                  >
-                    {getPerkMiniCard(
-                      selectedItems,
-                      "item",
-                      rowIndex * itemColumns + index
-                    )}
-                  </Grid>
-                ))
-              )}
-            </Grid>
+            <RenderItems
+              isDesktop={isDesktop}
+              selectedItems={selectedItems}
+              displayPerk={getPerkMiniCard}
+            />
           </CardContent>
         </Card>
 

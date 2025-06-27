@@ -68,27 +68,33 @@ const owTheme = createTheme({
     fontFamily: "'BigNoodleTitling', sans-serif",
     fontSize: 14, // base size slightly smaller
     h1: {
-      fontSize: "clamp(1.8rem, 3vw, 2.2rem)",
+      fontSize: "clamp(1.5rem, 2.6vw, 2rem)",
       lineHeight: 1.1,
     },
     h2: {
-      fontSize: "clamp(1.5rem, 2.5vw, 1.8rem)",
+      fontSize: "clamp(1.3rem, 2.3vw, 1.6rem)",
       lineHeight: 1.2,
     },
-    h6: {
-      fontSize: "clamp(1.05rem, 1vw, 1.2rem)",
+    h5: {
+      fontSize: "clamp(1.2rem, 1.4vw, 1.4rem)",
       lineHeight: 1.2,
       fontWeight: 400,
-      letterSpacing: "0.05em",
+      letterSpacing: "0.1em",
+    },
+    h6: {
+      fontSize: "clamp(0.9rem, 1vw, 1rem)",
+      lineHeight: 1.2,
+      fontWeight: 400,
+      letterSpacing: "0.1em",
     },
     body1: {
       fontFamily: "'Titillium Web', sans-serif",
-      fontSize: "clamp(1rem, 1.4vw, 1.1rem)",
+      fontSize: "clamp(0.8rem, 1.2vw, 0.9rem)",
       lineHeight: 1.4,
     },
     body2: {
       fontFamily: "'Titillium Web', sans-serif",
-      fontSize: "clamp(0.95rem, 1.2vw, 1rem)",
+      fontSize: "clamp(0.85rem, 1.1vw, 0.9rem)",
       lineHeight: 1.4,
     },
     caption: {

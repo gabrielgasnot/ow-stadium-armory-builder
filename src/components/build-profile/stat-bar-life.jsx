@@ -5,7 +5,7 @@ import { useHero } from "../../contexts/hero-context";
 import { useStats } from "../../contexts/stats-context";
 import { useTranslation } from "react-i18next";
 
-const StatBar = ({ setHoverAttributes }) => {
+const StatBar = () => {
   const theme = useTheme();
   const { t } = useTranslation("attributes");
   const [, startTransition] = useTransition();
@@ -131,14 +131,6 @@ const StatBar = ({ setHoverAttributes }) => {
     }
   };
 
-  const boxEvents = {
-    onMouseEnter: (e) =>
-      startTransition(() => {
-        setHoverAttributes([...values]);
-      }),
-    onMouseLeave: () => startTransition(() => setHoverAttributes([])),
-  };
-
   return (
     <Box key={"lifeStats"} display="flex" alignItems="center" gap={2}>
       {/* Image on the left */}
@@ -153,12 +145,13 @@ const StatBar = ({ setHoverAttributes }) => {
         }}
       />
       <Tooltip
-        title={`${t("HP")}: ${stats.HP.value} / ${t("AR")}: ${stats.AR.value} / ${t("SH")}: ${stats.SH.value}`}
+        title={`${t("HP")}: ${stats.HP.value} / ${t("AR")}: ${
+          stats.AR.value
+        } / ${t("SH")}: ${stats.SH.value}`}
         enterTouchDelay={0}
         leaveTouchDelay={1000}
       >
         <Box
-          {...boxEvents}
           sx={{
             width: "100%",
             height: 20,
