@@ -8,12 +8,14 @@ import {
   Grid,
   Divider,
 } from "@mui/material";
-import PerkMiniCard from "../common/perk-mini-card";
 import StatsSummary from "./stats-summary";
 import BuildExportHeader from "./build-export-header";
 import buildShareLink from "../../services/build-share-link";
 import exportBuild from "../../services/export-build";
 import { useTranslation } from "react-i18next";
+import { assertIsPower } from "../../models/power";
+import { assertIsItem } from "../../models/item";
+import PerkPrintable from "../common/perk-printable";
 
 function BuildExportCanvas({ hero, allRounds }) {
   const { t } = useTranslation("common");
@@ -23,19 +25,15 @@ function BuildExportCanvas({ hero, allRounds }) {
 
   const shareLink = buildShareLink(exportBuild(hero, allRounds));
 
-  const getPerkMiniCard = (perks, perkType, index) => {
+  const displayPerk = (perks, perkType, index) => {
+    if (!perks[index]) return null;
     return (
-      <Box sx={{ textAlign: "center" }}>
+      <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
         <Typography variant="h6">
           {perkType === "power" && `${t("round")} ${2 * index + 1}`}
           {perkType === "item" && `${t("item")} ${index + 1}`}
         </Typography>
-        <PerkMiniCard
-          perk={perks[index]}
-          perkType={perkType}
-          setHoverPerk={() => null}
-          unselectPerk={() => null}
-        />
+        <PerkPrintable perk={perks[index]} />
       </Box>
     );
   };
@@ -102,65 +100,47 @@ function BuildExportCanvas({ hero, allRounds }) {
                 <Card className="no-hover" sx={{ height: "100%" }}>
                   <CardHeader title={t("power")} />
                   <CardContent>
-                    <Grid
+                    <Stack
                       container
                       spacing={2}
                       sx={{
+                        flexDirection: "column",
                         display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
+                        justifyContent: "flex-start",
+                        alignItems: "flex-start",
                       }}
                     >
-                      {[...Array(powerColumns)].map((_, index) => (
-                        <Grid
-                          item
-                          size={3}
-                          key={index}
-                          sx={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                          }}
-                        >
-                          {getPerkMiniCard(round.powers, "power", index)}
-                        </Grid>
-                      ))}
-                    </Grid>
+                      {[...Array(powerColumns)].map((_, index) =>
+                        displayPerk(round.powers, "power", index)
+                      )}
+                    </Stack>
                   </CardContent>
                 </Card>
 
                 <Card className="no-hover">
                   <CardHeader title={t("items")} />
                   <CardContent>
-                    <Grid
+                    <Stack
                       container
-                      spacing={1}
+                      spacing={2}
                       sx={{
-                        textAlign: "center",
+                        flexDirection: "column",
+                        display: "flex",
+                        justifyContent: "flex-start",
+                        alignItems: "flex-start",
+                        gap: 1,
                       }}
                     >
                       {[...Array(itemRows)].map((_, rowIndex) =>
-                        [...Array(itemColumns)].map((_, index) => (
-                          <Grid
-                            item
-                            spacing={2}
-                            size={4}
-                            sx={{
-                              display: "flex",
-                              justifyContent: "center",
-                              alignItems: "center",
-                            }}
-                            key={index}
-                          >
-                            {getPerkMiniCard(
-                              round.items,
-                              "item",
-                              rowIndex * itemColumns + index
-                            )}
-                          </Grid>
-                        ))
+                        [...Array(itemColumns)].map((_, index) =>
+                          displayPerk(
+                            round.items,
+                            "item",
+                            rowIndex * itemColumns + index
+                          )
+                        )
                       )}
-                    </Grid>
+                    </Stack>
                   </CardContent>
                 </Card>
 

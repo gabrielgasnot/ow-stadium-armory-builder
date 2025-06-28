@@ -69,8 +69,8 @@ function DetailsHeader({ copyBuild }: DetailsHeaderProps) {
             variant="h4"
             sx={{
               mr: 1,
-              fontWeight: 600,
               textDecoration: "none",
+              letterSpacing: "0.1rem",
             }}
           >
             {currentHero.name}
@@ -102,7 +102,7 @@ function DetailsHeader({ copyBuild }: DetailsHeaderProps) {
         <Box
           sx={{
             display: "flex",
-            flexDirection: { xs: "row" }, // Stack on mobile, row on desktop
+            flexDirection: { xs: "row" },
             alignItems: { xs: "flex-start", md: "center" }, // Align left on mobile, center on desktop
           }}
           className="no-capture"
@@ -120,9 +120,9 @@ function DetailsHeader({ copyBuild }: DetailsHeaderProps) {
           </Typography>
         </Box>
 
-        {/* Share button */}
+        {/* Share buttons */}
         <Box sx={{ mt: 1 }} className="no-capture">
-          <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+          <Stack direction={{ xs: "column", lg: "row" }} spacing={1}>
             <Button
               variant="contained"
               color="primary"

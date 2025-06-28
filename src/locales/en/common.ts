@@ -9,7 +9,8 @@ export default {
   item: "Item",
   items: "Items",
   keepItems: "Keep items between rounds",
-  keepItemsOn: "Items will be copied on all coming rounds with no items (or with same items).",
+  keepItemsOn:
+    "Items will be copied on all coming rounds with no items (or with same items).",
   keepItemsOff: "Items will only be applied to this round.",
   share: "Share",
   shareBuild: "Share your build",
@@ -25,6 +26,7 @@ export default {
   survival: "Survival",
   power: "Powers",
   cancel: "Cancel",
+  delete: "Delete",
   import: "Import",
   wait: "Please wait...",
   close: "Close",
@@ -35,4 +37,6 @@ export default {
   epic: "Epic",
   buildCreatedOn: "Build created on",
   roundCost: "Round cost",
+  selectPower: "Select a first Power",
+  selectItem: "Select a first Weapon, Ability or Survival item.",
 };

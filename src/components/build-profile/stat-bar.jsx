@@ -2,14 +2,7 @@ import React from "react";
 import { Box, Tooltip, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-const StatBar = ({
-  name,
-  icon,
-  attributeType,
-  value,
-  hoverImpact,
-  setHoverAttributes,
-}) => {
+const StatBar = ({ name, icon, attributeType, value, hoverImpact }) => {
   const theme = useTheme();
   const cappedPercentage = Math.min(value, 100);
 
@@ -25,11 +18,6 @@ const StatBar = ({
     Math.max(cappedPercentage + cappedPositiveImpact + cappedNegativeImpact, 0),
     100
   );
-
-  const boxEvents = {
-    onMouseEnter: () => setHoverAttributes([attributeType]),
-    onMouseLeave: () => setHoverAttributes([]),
-  };
 
   return (
     <Box key={attributeType} display="flex" alignItems="center" gap={2}>
@@ -50,7 +38,6 @@ const StatBar = ({
         leaveTouchDelay={1000}
       >
         <Box
-          {...boxEvents}
           sx={{
             width: "100%",
             height: 20,

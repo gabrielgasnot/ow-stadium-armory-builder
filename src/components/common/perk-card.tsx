@@ -1,4 +1,4 @@
-import { useTransition } from "react";
+import { useState, useTransition } from "react";
 import {
   Card,
   CardContent,
@@ -34,6 +34,9 @@ function PerkCard({
   const [, startTransition] = useTransition();
   const { checkHoverAttributes, hasHoverAttributes } = useHoverAttributes();
   const { perkGrade, setHoverPerk, addPerkBuild, removePerkBuild } = useBuild();
+  const [imgSrc, setImgSrc] = useState<string>(
+    `${import.meta.env.BASE_URL}perks/${perk.id}.png`
+  );
   const matchesAttribute = checkHoverAttributes(perk.attributes);
 
   const isPower = perkType === "power";
@@ -87,18 +90,20 @@ function PerkCard({
       <CardHeader
         avatar={
           <Avatar
-            src={`${import.meta.env.BASE_URL}perks/${perk.id}.png`}
+            src={imgSrc}
             alt={perk.name}
             sx={{
-              width: 64,
-              height: 64,
+              width: 48,
+              height: 48,
               border: getPerkColor(perkGrade),
               backgroundColor: "white",
-              variant: `${perkType === "power" ? "rounded" : "circle"}`,
             }}
+            variant={`${perkType === "power" ? "rounded" : "circular"}`}
             slotProps={{
               img: {
                 loading: "lazy",
+                onError: () =>
+                  setImgSrc(`${import.meta.env.BASE_URL}perks/default.png`),
               },
             }}
           />

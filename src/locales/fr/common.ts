@@ -26,6 +26,7 @@ export default {
   survival: "Survie",
   power: "Puissance",
   cancel: "Annuler",
+  delete: "Supprimer",
   import: "Importer",
   wait: "Veuillez patienter...",
   close: "Fermer",
@@ -36,4 +37,6 @@ export default {
   epic: "Épique",
   buildCreatedOn: "Build créé sur",
   roundCost: "Coût de la manche",
+  selectPower: "Sélectionnez un premier pouvoir dans Puissance",
+  selectItem: "Sélectionnez un premier objet dans Arme, Capacité ou Survie",
 };

@@ -419,4 +419,70 @@ export default {
     name: "Bounty Hunting",
     primary: "Every 3 Final Blows, gain bonus ultimate charge.",
   },
+  "10I001": {
+    name: "Orb of destruction",
+    primary: "Energy projectile weapon.",
+    secondary: "Charge to release more projectiles.",
+  },
+  "10I002": {
+    name: "Orb of discord",
+    primary: "Launch this orb at an enemy to increase the damage they take.",
+  },
+  "10I003": {
+    name: "Orb of harmony",
+    primary: "Launch this orb at an ally to heal them.",
+  },
+  "10I004": {
+    name: "Transcendence",
+    primary: "Become invulnerable, move faster, and heal all nearby allies.",
+  },
+  "10I005": {
+    name: "Snap Kick",
+    primary:
+      "Quick melee damage increased by 50%, and its knockback is significantly increased.",
+  },
+  "18I001": {
+    name: "Frag Launcher",
+    primary: "Bouncing explosive projectile weapon.",
+  },
+  "18I002": {
+    name: "Concussion Mine",
+    primary: "Throw a knockback mine then detonate it.",
+  },
+  "18I003": {
+    name: "Steel Trap",
+    primary: "Place an immobilizing trap.",
+  },
+  "18I004": {
+    name: "RIP-Tire",
+    primary: "Drive and detonate an exploding tire.",
+  },
+  "18I005": {
+    name: "Total Mayhem",
+    primary: "Deals no damage to self with explosives. Drop bombs on death.",
+  },
+  "31I001": {
+    name: "Hyperspheres",
+    primary:
+      "Launch two charges which implode after a short duration, dealing damage in an area.",
+  },
+  "31I002": {
+    name: "Kinetic Grasp",
+    primary:
+      "Absorb projectiles in front of you and convert them into extra health.",
+  },
+  "31I003": {
+    name: "Accretion",
+    primary:
+      "Gather a mass of debris and throw it at an enemy to knock them down.",
+  },
+  "31I004": {
+    name: "Experimental Barrier",
+    primary: "Propel a floating barrier.",
+  },
+  "31I005": {
+    name: "Gravitic Flux",
+    primary:
+      "Manipulate gravity to lift enemies into the air and slam them back down.",
+  },
 };
