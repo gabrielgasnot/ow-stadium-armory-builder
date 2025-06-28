@@ -742,7 +742,7 @@ export default {
     position: 7,
     name: "Clone Conjuration",
     description:
-      "After using [Swift Step], create a clone of yourself that lasts for 5s",
+      "After using [Swift Step], create a clone of yourself that lasts for <e>2.5s</e>.",
   },
   "35P009": {
     position: 10,

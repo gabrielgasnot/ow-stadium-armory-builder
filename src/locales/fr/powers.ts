@@ -761,7 +761,7 @@ export default {
     position: 7,
     name: "Invocation de Clone",
     description:
-      "Après l'utilisation de [Pas véloce], vous créez un clone de vous-même qui persiste 5 s.",
+      "Après l'utilisation de [Pas véloce], vous créez un clone de vous-même qui persiste <e>2.5 s</e>.",
   },
   "35P009": {
     position: 9,
