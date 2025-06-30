@@ -5,6 +5,7 @@ export default {
     34, // Junker Queen
     24, // Orisa
     5, // Reinhardt
+    31, // Sigma
     13, // Zarya
 
     // DPS
@@ -12,6 +13,7 @@ export default {
     14, // Cassidy
     43, // Freja
     21, // Genji
+    18, // Junkrat
     20, // Mei
     2, // Reaper
     15, // Soldier 76
@@ -23,6 +25,7 @@ export default {
     16, // Lucio
     6, // Mercy
     26, // Moira
+    10 // Zenyatta
   ],
   names: {
     "19": "D.Va",
@@ -43,5 +46,8 @@ export default {
     "6": "Mercy",
     "26": "Moira",
     "43": "Freja",
+    "10": "Zenyatta",
+    "18": "Junkrat",
+    "31": "Sigma",
   },
 };

@@ -7,7 +7,7 @@ export default {
     {
       type: "description",
       value:
-        "Les points de vie de votre [écran] augmentent à hauteur de 100% de vos points de vie maximum.",
+        "Vous pouvez maintenir la commande d'[accroupissement] pour augmenter d'un maximum de 200% la hauteur de votre prochain saut.",
     },
   ],
   "5A001": [
@@ -17,7 +17,19 @@ export default {
         "Si votre [charge] est interrompue par l'adversaire, vous récupérez 50% du temps de recharge de [charge].",
     },
   ],
-  "5A002": [{ type: "Rayon de [Frappe de feu]", value: 50, unit: "%" }],
+  "5A002": [
+    { type: "Rayon de [Frappe de feu]", value: 50, unit: "%" },
+    {
+      type: "Vitesse des projectiles de [Frappe de feu]",
+      value: 25,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Pour chaque cible supplémentaire touchée par [Frappe de feu], le temps de recharge de [Frappe de feu] est réduit de 5%.",
+    },
+  ],
   "5S001": [
     {
       type: "description",
@@ -44,18 +56,18 @@ export default {
       value: "Vous pouvez maintenant voler pendant [Charge].",
     },
   ],
-  "5A005": [
-    {
-      type: "Vitesse des projectiles de [Frappe de feu]",
-      value: 25,
-      unit: "%",
-    },
-  ],
   "5S004": [
     {
       type: "description",
       value:
         "Votre [écran] se régénère 50% plus vite et commence à se régénérer 50% plus vite après avoir été détruit.",
+    },
+  ],
+  "5S005": [
+    {
+      type: "description",
+      value:
+        "Quand votre [écran] est déployé, votre vitesse de déplacement est augmentée de 30%.",
     },
   ],
   "2W001": [
@@ -82,7 +94,7 @@ export default {
     {
       type: "description",
       value:
-        "Chaque élimination à l'aide d'[Eclosion mortelle] augmente vos points de vie de 25 jusqu'à la fin de la manche, jusqu'à un maximum de 100 points de vie.",
+        "Chaque élimination à l'aide d'[Eclosion mortelle] augmente vos points de vie de 25 jusqu'à la fin de la manche, jusqu'à un maximum de 75 points de vie.",
     },
   ],
   "2S004": [
@@ -101,11 +113,10 @@ export default {
     { type: "Durée de [Forme spectrale]", value: 33, unit: "%" },
   ],
   "2A001": [
-    { type: "Temps de lancement de [Voie des ombres]", value: 30, unit: "%" },
     {
       type: "description",
       value:
-        "[Forme spectrale] réduit le temps de recharge de [Voie des ombres] de 2 s.",
+        "Après l'utilisation d'une de vos capacités, les personnages adverses à proximité vous sont révélés pendant 3 s.",
     },
   ],
   "2A003": [
@@ -120,14 +131,14 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous utilisez [Éclosion mortelle], vous gagnez un surplus de points de vie égale à 15% de vos points de vie maximum.",
+        "Au début d'[Éclosion Mortelle], vous gagnez un surplus de points de vie égal à 5% de vos points de vie maximum pour chaque adversaire dans son rayon d'effet.",
     },
   ],
   "2A002": [
     {
       type: "description",
       value:
-        "[Éclosion mortelle] gagne 5% de puissance de capacité pour chaque adversaire dans son rayon d'effet.",
+        "[Éclosion mortelle] gagne 4% de puissance de capacité pour chaque adversaire dans son rayon d'effet.",
     },
   ],
   "2W002": [
@@ -298,7 +309,7 @@ export default {
     {
       type: "description",
       value:
-        "Si votre [méca] explose dans les airs, les dégâts et la portée d'[Autodestruction] sont augmentés de 200%.",
+        "Si votre [méca] explose dans les airs, les dégâts et la portée d'[Autodestruction] sont augmentés de 100%.",
     },
   ],
   "19A002": [
@@ -341,7 +352,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous vous éjectez de votre [méca], vos points de vie maximum sont augmentés de 5% et vous bénéficiez de [Nanoboost] pendant 4s.",
+        "Lorsque vous vous éjectez de votre [méca], vous bénéficiez de [Nanoboost] pendant 4s.",
     },
   ],
   "19S005": [
@@ -672,10 +683,16 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous lancez [Écran généré] sur un personnage allié, vous récupérez 20% du temps de recharge de votre [écran].",
+        "Vous récupérez des points de vie à hauteur de 30% des dégâts atténués par [Écran généré].",
     },
   ],
-  "13A003": [{ type: "Durée d'[Écran]", value: 40, unit: "%" }],
+  "13A003": [
+    {
+      type: "description",
+      value:
+        "Après l'expiration ou la destruction de [Écran de particules], vous obtenez un surplus de points de vie qui disparaît progressivement. Celui-ci est égal à 50% des dégâts atténués par [Écran de particules] pendant 3 s.",
+    },
+  ],
   "35W001": [
     {
       type: "description",
@@ -728,7 +745,7 @@ export default {
     {
       type: "description",
       value:
-        "[Pas véloce] rend 80 points de vie en 2 s aux personnages alliées à proximité.",
+        "[Pas véloce] rend 120 points de vie en 2 s aux personnages alliées à proximité.",
     },
   ],
   "35A004": [
@@ -786,7 +803,7 @@ export default {
     {
       type: "description",
       value:
-        "Si [Fléchette hypodermique] touche une cible affectée par [Grenade biotique], son temps de recharge est réduit de 35%.",
+        "Si [Fléchette hypodermique] touche une cible adverse, son temps de recharge est réduit de 30%. Non cumulable.",
     },
   ],
   "22S001": [
@@ -927,7 +944,7 @@ export default {
     {
       type: "description",
       value:
-        "Après avoir utilisé [Canon scié], vous gagnez 20% de vitesse de déplacement pendant 3 s.",
+        "Après avoir utilisé [Canon scié], vous gagnez 20% de vitesse de déplacement pendant 5 s et rechargez 25% de votre maximum de munitions.",
     },
   ],
   "29W004": [
@@ -979,7 +996,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous visez avec [Torpilles à neutrons], vous gagnez un surplus de points de vie égale à 50% de vos points de bouclier maximum.",
+        "Lorsque vous visez avec [Torpilles à neutrons], vous gagnez un surplus de points de vie égale à 25% de vos points de bouclier maximum.",
     },
   ],
   "41A002": [{ type: "Durée d'[Hyperanneau]", value: 25, unit: "%" }],
@@ -1009,7 +1026,14 @@ export default {
         "Après l'utilisation de [Torpilles à neutrons], votre vitesse d'attaque augmente de 25% pendant 4 s.",
     },
   ],
-   "41S001": [{ type: "Durée de [Vol plané]", value: 25, unit: "%" }],
+  "41S001": [
+    { type: "Durée de [Vol plané]", value: 25, unit: "%" },
+    {
+      type: "description",
+      value:
+        "Pendant [Vol plané], les dégâts que vous subissez sont réduits de 10%.",
+    },
+  ],
   "41S002": [
     {
       type: "description",
@@ -1243,7 +1267,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous dépensez votre charge de capacité ultime, les personnages alliés à proximité gagnent un surplus de 50 points de vie pendant 3 s.",
+        "Lorsque vous dépensez votre charge de capacité ultime, les personnages alliés à proximité gagnent un surplus de 75 points de vie pendant 3 s.",
     },
   ],
   "00S009": [
@@ -1356,6 +1380,20 @@ export default {
       value: "Les coups critiques révèlent la cible pendant 3 s.",
     },
   ],
+  "00W024": [
+    {
+      type: "description",
+      value:
+        "Les dégâts d'arme que vous infligez aux adversaires dans les airs leur infligent également 25 % de dégâts supplémentaires en 3 s.",
+    },
+  ],
+  "00W025": [
+    {
+      type: "description",
+      value:
+        "Tant que vos points de vie sont inférieurs à 150, vous bénéficiez de 15 % de vol de vie de l'arme.",
+    },
+  ],
   "00A012": [
     {
       type: "description",
@@ -1419,6 +1457,20 @@ export default {
         "Lorsque vous utilisez une capacité, les prochains soins ou dégâts que vous infligez avec votre arme sont augmentés de 25.",
     },
   ],
+  "00A022": [
+    {
+      type: "description",
+      value:
+        "La régénération passive peut soigner jusqu'à 75 points de vie excédentaires.",
+    },
+  ],
+  "00A023": [
+    {
+      type: "description",
+      value:
+        "Tant que vos points de vie sont supérieurs à 80%, vous gagnez 10 % de puissance de capacité.",
+    },
+  ],
   "00S017": [
     {
       type: "description",
@@ -1437,7 +1489,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous subissez au moins 100 points de dégâts en une seule fois, vous récupérez 15% des dégâts subis et vos points de bouclier commencent à se régénérer immédiatement.",
+        "Lorsque vous subissez au moins 100 points de dégâts en une seule fois, vous récupérez 20% des dégâts subis et vos points de bouclier commencent à se régénérer immédiatement.",
     },
   ],
   "00S020": [
@@ -1488,6 +1540,13 @@ export default {
         "Lorsque vous subissez des dégâts, vous gagnez 0,5% de réduction des dégâts pendant 1 s. Cet effet peut se cumuler 20 fois.",
     },
   ],
+  "00S027": [
+    {
+      type: "description",
+      value:
+        "Une fois par vie, lorsque vous subissez des dégâts qui vous font passer en dessous de 30 % de votre maximum de points de vie, vous gagnez d'abord un surplus de points de vie égal à 300 qui disparaît progressivement.",
+    },
+  ],
   "43W001": [{ type: "Distance de [Ruée rapide]", value: 25, unit: "%" }],
   "43W002": [
     {
@@ -1527,7 +1586,7 @@ export default {
     {
       type: "description",
       value:
-        "Les cibles adverses dont la prime est supérieure ou égale à 750 vous sont révélées à moins de 40 m. Leur élimination rapporte 250 crédits du Stadium supplémentaires.",
+        "Les cibles adverses dont la prime est supérieure ou égale à 750 vous sont révélées à moins de 40 m. Leur élimination rapporte 350 crédits du Stadium supplémentaires.",
     },
   ],
   "43S003": [
@@ -1542,6 +1601,280 @@ export default {
       type: "description",
       value:
         "Les carreaux de [Dans le mille] sont collants et leurs explosions ralentissent les adversaires de 30 %, mais elles prennent 1 s supplémentaires pour se déclencher.",
+    },
+  ],
+
+  "10W001": [
+    {
+      type: "description",
+      value:
+        "Lorsque vous lancez un [Orbe d'harmonie] ou un [Orbe de discorde], la vitesse de vos projectiles augmente de 100 % pendant 3 s.",
+    },
+  ],
+  "10W002": [
+    {
+      type: "description",
+      value:
+        "Le tir secondaire d'[Orbe de destruction] se charge 20 % plus vite.",
+    },
+  ],
+  "10W003": [
+    {
+      type: "description",
+      value: "Les cibles de vos [Orbes de discorde] sont révélées.",
+    },
+  ],
+  "10A001": [
+    {
+      type: "description",
+      value:
+        "Les soins de votre [Orbe d'harmonie] sont augmentés de 15 % sur les personnages alliés qui sont en l'air.",
+    },
+  ],
+  "10A002": [
+    {
+      type: "description",
+      value:
+        "Tant que [Transcendance] est active, son rayon augmente de 1 m chaque seconde.",
+    },
+  ],
+  "10A003": [
+    {
+      type: "description",
+      value:
+        "Vois soins augmentent jusqu'à un maximum de 20 % en fonction de votre proximité à la cible.",
+    },
+  ],
+  "10A004": [
+    {
+      type: "Charge de capacité ultime initiale",
+      value: 15,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Les personnages alliés qui bénéficient de [Transcendance] rechargent leurs capacités 15 % plus vite.",
+    },
+  ],
+  "10A005": [
+    {
+      type: "Durée de [Transcendance]",
+      value: 30,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Vous gagnez un surplus de points de vie équivalent à 100 % des soins prodigués par [Transcendance] lorsqu'elle se termine.",
+    },
+  ],
+  "10S001": [
+    {
+      type: "description",
+      value:
+        "Lorsque vous êtes en l'air, maintenez la touche de saut pour flotter pendant un maximum de 3 s.",
+    },
+  ],
+  "10S002": [
+    {
+      type: "description",
+      value:
+        "Lorsque vous chargez un orbe avec le tir secondaire d'[Orbe de destruction], vous récupérez 3 % de vos points de vie.",
+    },
+  ],
+  "10S003": [
+    {
+      type: "description",
+      value:
+        "Lorsque vous éliminez une cible affectée par votre [Orbe de discorde], vous gagnez 5 points d'armure pour le reste de la manche, jusqu'à un maximum de 50.",
+    },
+  ],
+  "10S004": [
+    {
+      type: "description",
+      value:
+        "Les dégâts de votre [Coup en mêlée] augmentent de 5 % pour chaque tranche de 50 points d'armure dont vous bénéficiez.",
+    },
+  ],
+  "10S005": [
+    {
+      type: "description",
+      value:
+        "Lorsque vos boucliers sont détruits, vous repoussez les adversaires à proximité et leur infligez 80 points de dégâts. Cet effet ne peut se produire que toutes les 6 s après la recharge complète de votre bouclier.",
+    },
+  ],
+  "10S006": [
+    {
+      type: "description",
+      value:
+        "Les dégâts subis par les personnages alliés bénéficiant d'[Orbe d'harmonie] sont réduits de 10 %.",
+    },
+  ],
+  "18W001": [
+    {
+      type: "description",
+      value:
+        "Vos dégâts sont augmentés de 10 % et vos dégâts de [Coup en mêlée] de 25 % contre les cibles en l'air.",
+    },
+  ],
+  "18W002": [
+    {
+      type: "Distance des rebonds de [Lance-grenades]",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "18W003": [
+    {
+      type: "description",
+      value:
+        "Après avoir déclenché votre [Mine incapacitante], la vitesse des projectiles de vos 2 prochains tirs de [Lance-grenades] est augmentée de 200 % et ils infligent 10 % de dégâts supplémentaires aux cibles en l'air.",
+    },
+  ],
+  "18A001": [
+    {
+      type: "Charge de capacité ultime initiale",
+      value: 10,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Après avoir fait exploser [Pneumastic], vous déclenchez [Mauvais Perdant] après 0,5 s.",
+    },
+  ],
+  "18A002": [
+    {
+      type: "Points de vie de [Piège d'acier]",
+      value: 50,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "[Piège d'acier] récupère 33 % de son temps de recharge lorsqu'il est détruit.",
+    },
+  ],
+  "18A003": [
+    {
+      type: "description",
+      value:
+        "Votre charge de capacité ultime augmente de 3 % chaque fois que [Mauvais Perdant] inflige des dégâts.",
+    },
+  ],
+  "18A004": [
+    {
+      type: "Rayon d'explosion de [Mine incapacitante]",
+      value: 15,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Si votre [Mine incapacitante] se trouve à 5 m au-dessus du sol quand elle détone, son rayon d'explosion est augmenté de 25 %.",
+    },
+  ],
+  "18A005": [
+    {
+      type: "Distance de lancer de [Piège d'acier]",
+      value: 50,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Les ennemis qui déclenchent [Piège d'acier] s'enflamment et subissent 50 points de dégâts sur 3 s.",
+    },
+  ],
+  "18S001": [
+    {
+      type: "description",
+      value:
+        "Lorsque [Piège d'acier] se déclenche, sa cible vous est révélée, votre vitesse de déplacement augmente de 25 % et votre vitesse d'attaque de 10 % pendant 3 s.",
+    },
+  ],
+
+  "18S002": [
+    {
+      type: "Distance de l'effet de recul personnel de [Mine incapacitante]",
+      value: 20,
+      unit: "%",
+    },
+  ],
+  "18S003": [
+    {
+      type: "Points de vie de [Mine incapacitante]",
+      value: 50,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Chaque cible qui subit l'explosion de [Mine incapacitante] vous confère un surplus de points de vie égal à 5 % de vos points de vie maximum pendant 3 s.",
+    },
+  ],
+  "31W001": [
+    {
+      type: "Portée d'[Hypersphères]",
+      value: 15,
+      unit: "%",
+    },
+  ],
+  "31W002": [
+    {
+      type: "description",
+      value:
+        "La durée de soulèvement de [Flux Gravitationnel] est augmentée de 25 %. Les dégâts des [Hypersphères] contre les adversaires soulevés sont augmentés de 20 %.",
+    },
+  ],
+  "31W003": [
+    {
+      type: "Rayon d'explosion d'[Hypersphères]",
+      value: 35,
+      unit: "%",
+    },
+  ],
+  "31A001": [
+    {
+      type: "description",
+      value:
+        "Lorsque vous infligez des dégâts avec [Concrétion], vous gagnez 5 % de puissance de capacité. Cet effet peut être cumulé 4 fois. Les cumuls sont réinitialisés si vous ratez votre cible.",
+    },
+  ],
+  "31A002": [
+    {
+      type: "Durée de [Captation cinétique]",
+      value: 50,
+      unit: "%",
+    },
+  ],
+  "31A003": [
+    {
+      type: "Rayon d'explosion de [Concrétion]",
+      value: 50,
+      unit: "%",
+    },
+  ],
+  "31S001": [
+    {
+      type: "description",
+      value:
+        "Tant que vous êtes derrière votre [Écran expérimental], votre puissance d'arme et votre vitesse d'attaque augmentent de 5 %. Tant que vous êtes devant, votre vitesse de déplacement et le vol de vie de votre arme augmentent de 10 %.",
+    },
+  ],
+  "31S002": [
+    {
+      type: "description",
+      value:
+        "[Captation cinétique] réduit les dégâts des rayons de 50 % tant que la capacité est active.",
+    },
+  ],
+  "31S003": [
+    {
+      type: "description",
+      value:
+        "[Écran expérimental] soigne les personnages alliés à proximité à hauteur de 3 % de vos points de vie maximum par seconde.",
     },
   ],
 };

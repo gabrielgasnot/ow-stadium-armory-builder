@@ -433,4 +433,71 @@ export default {
     primary:
       "Tous les 3 coups de grâce, vous recevez un bonus de charge de capacité ultime.",
   },
+
+   "10I001": {
+    name: "Orbe de destruction",
+    primary: "Arme projetant de l'énergie.",
+    secondary: "Chargez pour libérer davantage de projectiles.",
+  },
+  "10I002": {
+    name: "Orbe de discorde",
+    primary: "Vous lancez cet orbe sur un ennemi pour augmenter les dégâts qu'il subit.",
+  },
+  "10I003": {
+    name: "Orbe d'harmonie",
+    primary: "Vous lancez cet orbe sur un allié pour le soigner.",
+  },
+  "10I004": {
+    name: "Transcendance",
+    primary: "Vous devenez invulnérable, plus rapide et soignez les alliés proches.",
+  },
+  "10I005": {
+    name: "Coup de pied",
+    primary:
+      "Les dégâts du coup en mêlée sont augmentés de 50 % et le recul infligé est fortement augmenté.",
+  },
+  "18I001": {
+    name: "Lance-grenades",
+    primary: "Arme à projectiles explosifs rebondissants.",
+  },
+  "18I002": {
+    name: "Mine incapacitante",
+    primary: "Lancez une mine et déclenchez-la.",
+  },
+  "18I003": {
+    name: "Piège d'acier",
+    primary: "Vous placez un piège immobilisant.",
+  },
+  "18I004": {
+    name: "Pneumastic",
+    primary: "Vous dirigez et faites détoner un pneu explosif.",
+  },
+  "18I005": {
+    name: "Mauvais Perdant",
+    primary: "Vos explosifs ne vous blessent pas. Vous larguez des bombes à votre mort.",
+  },
+  "31I001": {
+    name: "Hypersphères",
+    primary:
+      "Projette deux charges qui s'implosent après un bref délai en infligeant des dégâts de zone.",
+  },
+  "31I002": {
+    name: "Captation cinétique",
+    primary:
+      "Absorbe les projectiles qui arrivent par devant et les convertit en points de vie supplémentaires.",
+  },
+  "31I003": {
+    name: "Concrétion",
+    primary:
+      "Agglomère une masse de gravats et la lance sur les ennemis pour les renverser.",
+  },
+  "31I004": {
+    name: "Écran expérimental",
+    primary: "Propulse une barrière flottante.",
+  },
+  "31I005": {
+    name: "Flux Gravitationnel",
+    primary:
+      "Manipulez la gravité pour soulever les ennemis dans les airs puis les écraser au sol.",
+  },
 };

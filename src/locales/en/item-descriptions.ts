@@ -6,7 +6,8 @@ export default {
   "5S003": [
     {
       type: "description",
-      value: "Increase [Barrier Field] Health by 100% of your max Life",
+      value:
+        "Vous pouvez maintenir la commande d'[accroupissement] pour augmenter d'un maximum de 200% la hauteur de votre prochain saut.",
     },
   ],
   "5A001": [
@@ -16,7 +17,15 @@ export default {
         "If [Charge] is interrupted by the enemy, refund 50% of [Charge]'s cooldown",
     },
   ],
-  "5A002": [{ type: "[Fire Strike] Radius", value: 50, unit: "%" }],
+  "5A002": [
+    { type: "[Fire Strike] Radius", value: 50, unit: "%" },
+    { type: "Increase [Fire Strike] Projectile Speed", value: 25, unit: "%" },
+    {
+      type: "description",
+      value:
+        "Pour chaque cible supplémentaire touchée par [Frappe de feu], le temps de recharge de [Frappe de feu] est réduit de 5%.",
+    },
+  ],
   "5S001": [
     {
       type: "description",
@@ -37,12 +46,17 @@ export default {
     },
   ],
   "5A004": [{ type: "description", value: "You can now fly during [Charge]" }],
-  "5A005": [{ type: "Fire Strike Projectile Speed", value: 25, unit: "%" }],
   "5S004": [
     {
       type: "description",
       value:
         "[Barrier Field] regenerates 50% faster and begins regenerating 50% sooner after being destroyed",
+    },
+  ],
+  "5S005": [
+    {
+      type: "description",
+      value: "While [Barrier Field] is deployed, gain 30% Move Speed.",
     },
   ],
   "2W001": [
@@ -67,7 +81,7 @@ export default {
     {
       type: "description",
       value:
-        "Each [Death Blossom] elimination increases your Health by 25 until the end of the round, up to 100 Health",
+        "Each [Death Blossom] elimination increases your Health by 25 until the end of the round, up to 75 Health",
     },
   ],
   "2S004": [
@@ -86,10 +100,10 @@ export default {
     { type: "[Wraith Form] Duration", value: 33, unit: "%" },
   ],
   "2A001": [
-    { type: "[Shadow Step] Cast Speed", value: 30, unit: "%" },
     {
       type: "description",
-      value: "Using [Wraith Form] reduces the cooldown of [Shadow Step] by 2s",
+      value:
+        "After using an ability, nearby enemies are Revealed to you for 3s",
     },
   ],
   "2A003": [
@@ -104,14 +118,14 @@ export default {
     {
       type: "description",
       value:
-        "Using [Death Blossom] grants you Overhelth equel to 15% of your max Life",
+        "When [Death Blossom] starts, gain Overhealth equal to 5% of your max Life for each enemy within its range.",
     },
   ],
   "2A002": [
     {
       type: "description",
       value:
-        "[Death Blossom] gains 5% Ability Power for each enemy within its range",
+        "[Death Blossom] gains 4% Ability Power for each enemy within its range",
     },
   ],
   "2W002": [
@@ -266,7 +280,7 @@ export default {
     {
       type: "description",
       value:
-        "If your [Mech] detonates while mid-air, increase [Self-Destruct] explosion damage and range by 200%",
+        "If your [Mech] detonates while mid-air, increase [Self-Destruct] explosion damage and range by 100%",
     },
   ],
   "19A002": [
@@ -302,14 +316,13 @@ export default {
     {
       type: "description",
       value:
-        "[Light Gun] gains a secondary fire, which charges up to fire a piercing shot that deals 80 piercing damage",
+        "[Light Gun] gains a secondary fire, which charges up to fire a piercing shot that deals 80 piercing damage. Doesn't generate Ultimate Charge.",
     },
   ],
   "19S004": [
     {
       type: "description",
-      value:
-        "When you eject from your Mech, gain 5% increased max Health and gain [Nano Boost] for 4s",
+      value: "When you eject from your [Mech], gain [Nano Boost] for 4s",
     },
   ],
   "19S005": [
@@ -336,7 +349,7 @@ export default {
     {
       type: "description",
       value:
-        "When you use [Boosters], allies within 16m gain 25% Move Speed for 2s",
+        "When you use [Boosters], other allies within 16m gain 25% Move Speed for 2s",
     },
   ],
   "19A005": [
@@ -487,7 +500,7 @@ export default {
   "34W002": [
     {
       type: "description",
-      value: "[Commanding Shout] grants you +15% Attack Speed",
+      value: "[Commanding Shout] grants you 15% Attack Speed",
     },
   ],
   "34A001": [
@@ -499,7 +512,7 @@ export default {
   "34S001": [
     {
       type: "description",
-      value: "When knockback, gain 25%  increased Move Speed for 3s",
+      value: "When knocked back, gain 25% increased Move Speed for 3s",
     },
   ],
   "34S002": [
@@ -547,7 +560,7 @@ export default {
     {
       type: "description",
       value:
-        "[Carnage] and [Jagged Blade] impacts damage grants Overhealth equal to 40% of damage dealt",
+        "[Carnage] and [Jagged Blade] impact damage grants Overhealth equal to 40% of damage dealt",
     },
   ],
   "34S005": [
@@ -609,10 +622,16 @@ export default {
     {
       type: "description",
       value:
-        "Casting [Projected Barrier] on an refunds 20% of [Barrier] cooldown",
+        "Restore Life equal to 30% of damage mitigated by [Projected Barrier].",
     },
   ],
-  "13A003": [{ type: "[Barrier] Duration", value: 40, unit: "%" }],
+  "13A003": [
+    {
+      type: "description",
+      value:
+        "After [Particule Barrier] is detroyed or expires, gain decaying Overhealth equal to 50% of damage mitigated during [Particule Barrier] for 3s.",
+    },
+  ],
   "35W001": [
     { type: "description", value: "[Kunai] bounce off surfaces 1 time" },
   ],
@@ -656,7 +675,7 @@ export default {
   "35A003": [
     {
       type: "description",
-      value: "[Swift Step] heals nearby allies by 80 Life over 2s",
+      value: "[Swift Step] heals nearby allies by 120 Life over 2s",
     },
   ],
   "35A004": [
@@ -709,7 +728,7 @@ export default {
     {
       type: "description",
       value:
-        "Landing a [Sleep Dart] on target affected by [Biotic Grenade] reduces its cooldown by 35%",
+        "Landing a [Sleep Dart] on enemy reduces its cooldown by 30%. Does not stack.",
     },
   ],
   "22S001": [
@@ -842,7 +861,8 @@ export default {
   "29S001": [
     {
       type: "description",
-      value: "After using [Coach Gun], gain 20% Move Speed for 3s",
+      value:
+        "After using [Coach Gun], gain 20% Move Speed for 5s and reload 25% of Max Ammo",
     },
   ],
   "29W004": [
@@ -915,7 +935,13 @@ export default {
       value: "After using [Pulsar Torpedoes], gain 25% Attack Speed for 4s",
     },
   ],
-  "41S001": [{ type: "[Glide Boost] Duration", value: 25, unit: "%" }],
+  "41S001": [
+    { type: "[Glide Boost] Duration", value: 25, unit: "%" },
+    {
+      type: "description",
+      value: "During [Glide Boost], gain 10% Damage Reduction.",
+    },
+  ],
   "41S002": [
     {
       type: "description",
@@ -926,7 +952,7 @@ export default {
     {
       type: "description",
       value:
-        "While aiming [Pulsar Torpedoes], gain Overhealth equal to 50% of your max Shields",
+        "While aiming [Pulsar Torpedoes], gain Overhealth equal to 25% of your max Shields",
     },
   ],
   "41W004": [
@@ -1133,7 +1159,7 @@ export default {
     {
       type: "description",
       value:
-        "When you spend your Ultimate Charge, grant nearby allies 50 Overhealth for 3s",
+        "When you spend your Ultimate Charge, grant nearby allies 75 Overhealth for 3s",
     },
   ],
   "00S009": [
@@ -1233,6 +1259,19 @@ export default {
   "00W023": [
     { type: "description", value: "Critical Hits reveal the target for 3s" },
   ],
+  "00W024": [
+    {
+      type: "description",
+      value:
+        "Weapon damage to airborne enemies deal 25% bonus damage over 3s.",
+    },
+  ],
+  "00W025": [
+    {
+      type: "description",
+      value: "While you are below 150 Life, gain 15% Weapon Lifesteal.",
+    },
+  ],
   "00A012": [
     {
       type: "description",
@@ -1292,6 +1331,18 @@ export default {
         "After casting an ability, your next instance of Weapon Damage or Healing deals 25 bonus damage or healing",
     },
   ],
+  "00A022": [
+    {
+      type: "description",
+      value: "Passive Life Regeneration can overheal up to 75.",
+    },
+  ],
+  "00A023": [
+    {
+      type: "description",
+      value: "While you are above 80% Life, gain 10% Ability Power.",
+    },
+  ],
   "00S017": [
     {
       type: "description",
@@ -1309,7 +1360,7 @@ export default {
     {
       type: "description",
       value:
-        "When you take more than 100 damage at once, restore 15% of damage taken and start regenerating your Shields",
+        "When you take more than 100 damage at once, restore 20% of damage taken and start regenerating your Shields",
     },
   ],
   "00S020": [
@@ -1355,6 +1406,13 @@ export default {
         "When you take damage, gain 0.5% Damage Reduction for 1s, stacking up to 20 times",
     },
   ],
+  "00S027": [
+    {
+      type: "description",
+      value:
+        "Once per life, if you take damage that would reduce you below 30% Max Life, first gain 300 decaying Overhealth.",
+    },
+  ],
   "43W001": [{ type: "[Quick Dash] Distance", value: 25, unit: "%" }],
   "43W002": [
     {
@@ -1389,7 +1447,7 @@ export default {
     {
       type: "description",
       value:
-        "Enemies with a Bounty of 750 or more are revealed to you within 40m. Eliminating them grants 250 additional Stadium Cash.",
+        "Enemies with a Bounty of 750 or more are revealed to you within 40m. Eliminating them grants 350 additional Stadium Cash.",
     },
   ],
   "43S003": [
@@ -1404,6 +1462,271 @@ export default {
       type: "description",
       value:
         "[Take Aim] bolt sticks and explosions slow enemies by 30%, but takes 1s longer to explode.",
+    },
+  ],
+  "10W001": [
+    {
+      type: "description",
+      value:
+        "After using [Harmony Orb] or [Discord Orb], gain 100% Projectile Speed for 3s",
+    },
+  ],
+  "10W002": [
+    {
+      type: "description",
+      value: "[Orb of Destruction]'s secondary fire charges 20% faster.",
+    },
+  ],
+  "10W003": [
+    {
+      type: "description",
+      value: "Targets affected by [Discord Orb] are Revealed.",
+    },
+  ],
+  "10A001": [
+    {
+      type: "description",
+      value: "[Harmony Orb] heals airborne allies for 15% more.",
+    },
+  ],
+  "10A002": [
+    {
+      type: "description",
+      value:
+        "While [Transcendence] is active, its radius increases by 1m every 1s.",
+    },
+  ],
+  "10A003": [
+    {
+      type: "description",
+      value:
+        "Increase your healing by up to 20%, based on how close you are to your target.",
+    },
+  ],
+  "10A004": [
+    {
+      type: "Starting Ultimate Charge",
+      value: 15,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "Allies affected by [Transcendence] have their cooldowns refresh 15% faster.",
+    },
+  ],
+  "10A005": [
+    {
+      type: "Transcendence Duration",
+      value: 30,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "After [Transcendence] ends, gain Overhealth equal to 100% of the healing it did.",
+    },
+  ],
+  "10S001": [
+    {
+      type: "description",
+      value: "While airborne, hold Jump to hover for up to 3s.",
+    },
+  ],
+  "10S002": [
+    {
+      type: "description",
+      value:
+        "When you charge an orb with [Orb of Destruction]'s secondary fire, restore for 3% of your Life.",
+    },
+  ],
+  "10S003": [
+    {
+      type: "description",
+      value:
+        "Eliminating an enemy affected by [Discord Orb] grants 5 Armor for the rest of the round, up to 50 Armor.",
+    },
+  ],
+  "10S004": [
+    {
+      type: "description",
+      value: "For every 50 Armor you have, gain 5% [Quick Melee] Damage.",
+    },
+  ],
+  "10S005": [
+    {
+      type: "description",
+      value:
+        "When your Shields are depleted, knock back nearby enemies, dealing 80 damage. Can only trigger every 6s after Shields are fully restored.",
+    },
+  ],
+  "10S006": [
+    {
+      type: "description",
+      value:
+        "Allies affected by [Harmony Orb] take 10% reduced Ability Damage.",
+    },
+  ],
+  "18W001": [
+    {
+      type: "description",
+      value:
+        "Deal 10% increased damage and 25% [Quick Melee] damage to enemies that are airborne.",
+    },
+  ],
+  "18W002": [
+    {
+      type: "[Frag Launcher] Bounce Distance",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "18W003": [
+    {
+      type: "description",
+      value:
+        "After detonating [Concussion Mine], your next 2 [Frag Launcher] shots gain 200% Projectile Speed and deal 10% increased damage to airborne enemies.",
+    },
+  ],
+  "18A001": [
+    {
+      type: "Starting Ultimate Charge",
+      value: 10,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value: "After detonating [Rip Tire], trigger [Total Mayhem] after 0.5s.",
+    },
+  ],
+  "18A002": [
+    {
+      type: "[Steel Trap] Health",
+      value: 50,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value: "[Steel Trap] refunds 33% cooldown when destroyed.",
+    },
+  ],
+  "18A003": [
+    {
+      type: "description",
+      value: "Whenever [Total Mayhem] deals damage, gain 3% Ultimate Charge.",
+    },
+  ],
+  "18A004": [
+    {
+      type: "[Concussion Mine] Explosion Radius",
+      value: 15,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "If [Concussion Mine] is 5m above the ground when detonated, increase its explosion radius by 25%.",
+    },
+  ],
+  "18A005": [
+    {
+      type: "[Steel Trap] Throw Distance",
+      value: 50,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value: "Enemies that trigger [Steel Trap] Burn for 50 damage over 3s.",
+    },
+  ],
+  "18S001": [
+    {
+      type: "description",
+      value:
+        "When [Steel Trap] triggers, reveal the target and gain 25% Move Speed and 10% Attack Speed for 3s.",
+    },
+  ],
+
+  "18S002": [
+    {
+      type: "[Concussion Mine] Self Knockback Distance",
+      value: 20,
+      unit: "%",
+    },
+  ],
+  "18S003": [
+    {
+      type: "[Concussion Mine] Health",
+      value: 50,
+      unit: "%",
+    },
+    {
+      type: "description",
+      value:
+        "For each target detonated by [Concussion Mine], gain Overhealth equal to 5% of Max Life for 3s.",
+    },
+  ],
+  "31W001": [
+    {
+      type: "[Hyperspheres] Range",
+      value: 15,
+      unit: "%",
+    },
+  ],
+  "31W002": [
+    {
+      type: "description",
+      value:
+        "[Gravity Flux] levitates enemies for 25% longer. Enemies affected take 20% increased damage from [Hyperspheres].",
+    },
+  ],
+  "31W003": [
+    {
+      type: "[Hyperspheres] Explosion Radius",
+      value: 35,
+      unit: "%",
+    },
+  ],
+  "31A001": [
+    {
+      type: "description",
+      value:
+        "When you deal damage with [Accretion], gain 5% Ability Power, stacking up to 4 times. Resets on miss.",
+    },
+  ],
+  "31A002": [
+    {
+      type: "[Kinetic Grasp] Duration",
+      value: 50,
+      unit: "%",
+    },
+  ],
+  "31A003": [
+    {
+      type: "[Accretion] Explosion Radius",
+      value: 50,
+      unit: "%",
+    },
+  ],
+  "31S001": [
+    {
+      type: "description",
+      value:
+        "While behind [Experimental Barrier], gain 5% Weapon Power and Attack Speed. While in front of [Experimental Barrier], gain 10% Move Speed and Weapon Lifesteal.",
+    },
+  ],
+  "31S002": [
+    {
+      type: "description",
+      value:
+        "While [Kinetic Grasp] is active, reduce incoming Beam damage by 50%.",
+    },
+  ],
+  "31S003": [
+    {
+      type: "description",
+      value:
+        "[Experimental Barrier] heals nearby allies for 3% of your max Life every 1s.",
     },
   ],
 };

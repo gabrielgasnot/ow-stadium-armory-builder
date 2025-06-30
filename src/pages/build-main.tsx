@@ -30,7 +30,7 @@ function BuildMain() {
       <Box
         sx={{
           minWidth: { xs: "375px", sm: "440px" },
-          maxWidth: { xs: "100%", lg: "600px" },
+          maxWidth: { xs: "100%", lg: "440px" },
           width: { xs: "100%", md: "40%", xl: "20%" },
           flexShrink: 0,
           overflow: "auto",

@@ -20,7 +20,7 @@ const StatsPanel = () => {
   const { updateHoverAttributes } = useUI();
   return (
     <Box display="flex" flexDirection="column" gap={1}>
-      <StatBarLife setHoverAttributes={updateHoverAttributes} />
+      <StatBarLife />
       {getBasicStatAttributes().map(([attributeType, { icon, name }]) => (
         <StatBar
           key={attributeType}
@@ -29,7 +29,6 @@ const StatsPanel = () => {
           attributeType={attributeType}
           value={baseValues[attributeType] ?? 0}
           hoverImpact={hoverValues[attributeType] ?? 0}
-          setHoverAttributes={updateHoverAttributes}
         />
       ))}
     </Box>

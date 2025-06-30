@@ -205,13 +205,13 @@
     },
     {
       "id": "00S010",
-      "price": 4500,
+      "price": 4000,
       "category": "Survival",
       "attributes": [{ "type": "SH", "value": 25, "unit": "" }]
     },
     {
       "id": "00S011",
-      "price": 4000,
+      "price": 3750,
       "category": "Survival",
       "attributes": [
         { "type": "SH", "value": 25, "unit": "" },
@@ -261,6 +261,24 @@
         { "type": "AR", "value": 8, "unit": "%" },
         { "type": "SH", "value": 8, "unit": "%" }
       ]
+    },
+    {
+      "id": "00W025",
+      "price": 4500,
+      "category": "Weapon",
+      "attributes": [
+        { "type": "SH", "value": 25, "unit": "" },
+        { "type": "WP", "value": 5, "unit": "%" }
+      ]
+    },
+    {
+      "id": "00A023",
+      "price": 4500,
+      "category": "Ability",
+      "attributes": [
+        { "type": "SH", "value": 25, "unit": "" },
+        { "type": "ALS", "value": 10, "unit": "%" }
+      ]
     }
   ],
   "epic": [
@@ -272,11 +290,9 @@
     },
     {
       "id": "00W014",
-      "price": 9500,
+      "price": 9000,
       "category": "Weapon",
-      "attributes": [
-        { "type": "AS", "value": 10, "unit": "%" }
-      ]
+      "attributes": [{ "type": "AS", "value": 10, "unit": "%" }]
     },
     {
       "id": "00W015",
@@ -505,6 +521,33 @@
       "price": 11000,
       "category": "Survival",
       "attributes": [{ "type": "AR", "value": 50, "unit": "" }]
+    },
+    {
+      "id": "00S027",
+      "price": 10000,
+      "category": "Survival",
+      "attributes": [
+        { "type": "SH", "value": 25, "unit": "" },
+        { "type": "WP", "value": 10, "unit": "" }
+      ]
+    },
+    {
+      "id": "00A022",
+      "price": 9500,
+      "category": "Ability",
+      "attributes": [
+        { "type": "HP", "value": 25, "unit": "" },
+        { "type": "AP", "value": 10, "unit": "%" }
+      ]
+    },
+     {
+      "id": "00W024",
+      "price": 10000,
+      "category": "Weapon",
+      "attributes": [
+        { "type": "SH", "value": 25, "unit": "" },
+        { "type": "AS", "value": 10, "unit": "%" }
+      ]
     }
   ]
 }
