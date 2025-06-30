@@ -111,8 +111,8 @@ function PerkMiniCard({
       >
         <Box
           sx={{
-            width: 48,
-            height: 48,
+            width: isDesktop ? 64 : 48,
+            height: isDesktop ? 64 : 48,
             border: perk ? "none" : `2px solid ${theme.palette.text.secondary}`,
             borderRadius: isPower ? 2 : "50%", // Circle for "item", square for "power"
             overflow: "hidden",
