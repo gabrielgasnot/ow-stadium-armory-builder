@@ -1400,7 +1400,7 @@ export default {
 
   "31P001": {
     position: 1,
-    name: "Zero Grabvity",
+    name: "Zero Gravity",
     description: "When you use an ability, gain the ability to fly for 2.5s.",
   },
   "31P002": {

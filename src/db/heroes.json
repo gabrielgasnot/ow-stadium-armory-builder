@@ -1596,6 +1596,7 @@
         },
         {
           "id": "41S002",
+          "disabled": true,
           "price": 10000,
           "category": "Survival",
           "attributes": [{ "type": "SH", "value": 75, "unit": "" }]
@@ -1900,6 +1901,7 @@
         },
         {
           "id": "43A002",
+          "disabled": true,
           "price": 10000,
           "category": "Ability",
           "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]

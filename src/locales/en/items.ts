@@ -90,7 +90,7 @@ export default {
   "34W001": { position: 1, name: "Gutpunch Gauntlet" },
   "34W002": { position: 2, name: "Monarch's Decree" },
   "34A001": { position: 1, name: "Bigger Magnet" },
-  "34S001": { position: 1, name: "Dez's Damage Dampener" },
+  "34S001": { position: 1, name: "Dez's Damage Dampeners" },
   "34S002": { position: 2, name: "Rebellious Spirit" },
   "34S003": { position: 3, name: "Slicing Spree" },
   "34W003": { position: 1, name: "Shred and Lead" },
@@ -302,6 +302,6 @@ export default {
   "00W024": { position: 6, name: "Aerial Distresser" },
   "00W025": { position: 6, name: "Emergency Chip" },
   "00S027": { position: 6, name: "Overdrive Core" },
-  "00A022": { position: 11, name: "Sonic Recharge" },
+  "00A022": { position: 11, name: "Sonic Recharger" },
   "00A023": { position: 11, name: "Vitality Amplifier" },
 };
