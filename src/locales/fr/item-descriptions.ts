@@ -1784,7 +1784,7 @@ export default {
     {
       type: "description",
       value:
-        "Les ennemis qui déclenchent [Piège d'acier] s'enflamment et subissent 50 points de dégâts sur 3 s.",
+        "Les ennemis qui déclenchent [Piège d'acier] s'enflamment et subissent 75 points de dégâts sur 3 s.",
     },
   ],
   "18S001": [

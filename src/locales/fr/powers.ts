@@ -396,7 +396,7 @@ export default {
     position: 9,
     name: "Frappe de Tokki",
     description:
-      "Pendant l'utilisation de [Turboréacteurs], utilisez la commande d'accroupissement pour heurter le sol, ce qui inflige des dégâts égaux à 20% de votre de votre maximum d'armure et renverse les cibles adverses touchées.",
+      "Pendant l'utilisation de [Turboréacteurs], utilisez la commande d'accroupissement pour heurter le sol, ce qui inflige des dégâts égaux à 30% de votre de votre maximum d'armure et renverse les cibles adverses touchées.",
   },
   "19P005": {
     position: 6,
@@ -761,7 +761,7 @@ export default {
     position: 7,
     name: "Invocation de Clone",
     description:
-      "Après l'utilisation de [Pas véloce], vous créez un clone de vous-même qui persiste <e>2.5 s</e>.",
+      "Après l'utilisation de [Pas véloce], vous créez un clone de vous-même qui persiste <e>4 s</e>. Les dégâts et les soins de votre clone sont réduits de <e>65%</e>",
   },
   "35P009": {
     position: 9,
@@ -832,13 +832,13 @@ export default {
     position: 9,
     name: "Vénéneuse",
     description:
-      "[Grenade biotique] inflige 50 points de dégâts supplémentaires aux personnages adverses affectés pendant sa durée.",
+      "[Grenade biotique] inflige 75 points de dégâts supplémentaires aux personnages adverses affectés pendant sa durée.",
   },
   "22P009": {
     position: 8,
     name: "Temps Mort",
     description:
-      "[Grenade biotique] repousse désormais les cibles adverses et réduit leur vitesse de déplacement de 50% pendant 1,5 s.",
+      "[Grenade biotique] repousse désormais les cibles adverses et réduit leur vitesse de déplacement de 50% pendant 2,5 s.",
   },
   "22P010": {
     position: 12,
@@ -849,13 +849,13 @@ export default {
   "22P011": {
     position: 10,
     name: "À mon tour",
-    description: "[Nanoboost] s'applique aussi à vous pendant 50% de sa durée.",
+    description: "[Nanoboost] s'applique aussi à vous pendant 100% de sa durée.",
   },
   "22P012": {
     position: 11,
     name: "À notre tour",
     description:
-      "[Nanoboost] affecte également les autres personnges alliés dans votre champ de vision, mais la durée de son effet est réduite de 50% pour eux.",
+      "[Nanoboost] affecte également les autres personnges alliés dans votre champ de vision, mais la durée de son effet est réduite de 25% pour eux.",
   },
   "14P001": {
     position: 3,
@@ -1057,7 +1057,7 @@ export default {
     position: 9,
     name: "Hypersoins",
     description:
-      "Les personnages alliés affectés par [Hyperanneau] gagnent un surplus de 100 points de vie.",
+      "Les personnages alliés affectés par [Hyperanneau] gagnent un surplus de 75 points de vie.",
   },
   "41P011": {
     position: 12,
@@ -1308,7 +1308,7 @@ export default {
     position: 4,
     name: "Double Harmonie",
     description:
-      "Vous gagnez un deuxième [Orbe d'harmonie], mais les soins de vos orbes sont réduits de 45 %.",
+      "Vous gagnez un deuxième [Orbe d'harmonie], mais les soins de vos orbes sont réduits de 40 %.",
   },
   "10P005": {
     position: 6,
@@ -1320,7 +1320,7 @@ export default {
     position: 5,
     name: "Foi inébranlable",
     description:
-      "La cible de votre [Orbe d'harmonie] peut rester hors de votre ligne de vue pendant 5 s de plus avant de perdre l'orbe.",
+      "La cible de votre [Orbe d'harmonie] peut rester hors de votre ligne de vue pendant 10 s de plus avant de perdre l'orbe.",
   },
   "10P007": {
     position: 7,
@@ -1356,7 +1356,7 @@ export default {
     position: 12,
     name: "Contrôle de l'âme",
     description:
-      "[Transcendance] peut être interrompue avant la fin de son effet pour conserver jusqu'à 65 % de sa charge.",
+      "[Transcendance] peut être interrompue avant la fin de son effet pour conserver jusqu'à 75 % de sa charge.",
   },
   "18P001": {
     position: 4,
@@ -1403,7 +1403,7 @@ export default {
     position: 8,
     name: "Rebonds explosifs",
     description:
-      "Après une projection à l'aide d'une [Mine incapacitante], vous en déclenchez une autre à l'endroit où vous atterrissez avec une efficacité réduite de 50 %.",
+      "Après une projection à l'aide d'une [Mine incapacitante], vous en déclenchez une autre à l'endroit où vous atterrissez avec une efficacité réduite de 30 %.",
   },
   "18P009": {
     position: 9,
@@ -1421,7 +1421,7 @@ export default {
     position: 11,
     name: "Pluie de plomb",
     description:
-      "Lorsque vous vous propulsez, vous lâchez 1 bombe de [Mauvais Perdant] à l'efficacité réduite de 25 % toutes les 0.4 s tant que vous êtes en l'air.",
+      "Lorsque vous vous propulsez, vous lâchez 1 bombe de [Mauvais Perdant] à l'efficacité réduite de 25 % toutes les 0.3 s tant que vous êtes en l'air.",
   },
   "18P012": {
     position: 12,
