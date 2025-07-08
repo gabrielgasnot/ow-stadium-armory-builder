@@ -2137,8 +2137,8 @@
           "price": 10000,
           "category": "Ability",
           "attributes": [
-            { "type": "AP", "value": 10, "unit": "%" },
-            { "type": "ALS", "value": 10, "unit": "%" }
+            { "type": "AP", "value": 15, "unit": "%" },
+            { "type": "ALS", "value": 15, "unit": "%" }
           ]
         },
         {

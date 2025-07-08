@@ -1636,7 +1636,7 @@ export default {
     },
     {
       type: "description",
-      value: "Enemies that trigger [Steel Trap] Burn for 50 damage over 3s.",
+      value: "Enemies that trigger [Steel Trap] Burn for 75 damage over 3s.",
     },
   ],
   "18S001": [

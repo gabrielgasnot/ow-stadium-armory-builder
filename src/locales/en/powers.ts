@@ -394,7 +394,7 @@ export default {
     position: 10,
     name: "Tokki Slam",
     description:
-      "During [Boosters], use crouch to slam the ground, dealing damage equal to 20% of your max Armor and knocking up enemies hit",
+      "During [Boosters], use crouch to slam the ground, dealing damage equal to 30% of your max Armor and knocking up enemies hit",
   },
   "19P005": {
     position: 5,
@@ -742,7 +742,7 @@ export default {
     position: 7,
     name: "Clone Conjuration",
     description:
-      "After using [Swift Step], create a clone of yourself that lasts for <e>2.5s</e>.",
+      "After using [Swift Step], create a clone of yourself that lasts for <e>4s</e>. Your clone's damage and healing are reduced by <e>65%</e>",
   },
   "35P009": {
     position: 10,
@@ -813,13 +813,13 @@ export default {
     position: 9,
     name: "Venomous",
     description:
-      "[Biotic Grenade] deals an additional 50 damage over its duration to enemies affected.",
+      "[Biotic Grenade] deals an additional 75 damage over its duration to enemies affected.",
   },
   "22P009": {
     position: 8,
     name: "Time Out",
     description:
-      "[Biotic Grenade] now knocks enemies back and reduces their Move Speed by 50% for 1.5s",
+      "[Biotic Grenade] now knocks enemies back and reduces their Move Speed by 50% for 2.5s",
   },
   "22P010": {
     position: 12,
@@ -831,13 +831,13 @@ export default {
     position: 10,
     name: "My Turn",
     description:
-      "[Nano Boost] also applies to yourself for 50% of its duration",
+      "[Nano Boost] also applies to yourself for 100% of its duration",
   },
   "22P012": {
     position: 11,
     name: "Our Turn",
     description:
-      "[Nano Boost] also affects other allies in your line of sight, but it has a 50% reduced duration on them",
+      "[Nano Boost] also affects other allies in your line of sight, but it has a 25% reduced duration on them",
   },
   "14P001": {
     position: 4,
@@ -1032,7 +1032,7 @@ export default {
   "41P010": {
     position: 9,
     name: "Hyper Healer",
-    description: "Allies affected by [Hyper Ring] gain 100 Overhealth",
+    description: "Allies affected by [Hyper Ring] gain 75 Overhealth",
   },
   "41P011": {
     position: 12,
@@ -1275,7 +1275,7 @@ export default {
   "10P004": {
     position: 4,
     name: "Dual Harmony",
-    description: "Gain a 2nd [Harmony Orb] but they both heal 45% less.",
+    description: "Gain a 2nd [Harmony Orb] but they both heal 40% less.",
   },
   "10P005": {
     position: 5,
@@ -1287,7 +1287,7 @@ export default {
     position: 6,
     name: "Gotta Have Faith",
     description:
-      "[Harmony Orb] targets can be out of your line of sight for 5s longer before [Harmony Orb] returns to you.",
+      "[Harmony Orb] targets can be out of your line of sight for 10s longer before [Harmony Orb] returns to you.",
   },
   "10P007": {
     position: 7,
@@ -1323,7 +1323,7 @@ export default {
     position: 12,
     name: "Soul Control",
     description:
-      "[Transcendence] can be canceled early, saving up to 65% of your Ultimate Charge.",
+      "[Transcendence] can be canceled early, saving up to 75% of your Ultimate Charge.",
   },
 
   "18P001": {
@@ -1371,7 +1371,7 @@ export default {
     position: 8,
     name: "Hop Boom",
     description:
-      "After launching yourself with [Concussion Mine], detonate a [Concussion Mine] wherever you land with 50% reduced effectiveness.",
+      "After launching yourself with [Concussion Mine], detonate a [Concussion Mine] wherever you land with 30% reduced effectiveness.",
   },
   "18P009": {
     position: 9,
@@ -1389,7 +1389,7 @@ export default {
     position: 11,
     name: "Rainin' Lead",
     description:
-      "After launching yourself, drop 1 [Total Mayhem] bomb with 25% reduced damage every 0.4s while airborne.",
+      "After launching yourself, drop 1 [Total Mayhem] bomb with 25% reduced damage every 0.3s while airborne.",
   },
   "18P012": {
     position: 12,
