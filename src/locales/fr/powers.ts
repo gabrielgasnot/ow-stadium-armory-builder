@@ -1039,7 +1039,7 @@ export default {
     position: 7,
     name: "Vol Rapide",
     description:
-      "[Vol plané] gagne 2 charges supplémentaires et son temps de recharge est diminué de 65% mais sa durée est réduite de 75%.",
+      "[Vol plané] gagne 2 charges supplémentaires et son temps de recharge est diminué de 30% mais sa durée est réduite de 75%.",
   },
   "41P008": {
     position: 8,
