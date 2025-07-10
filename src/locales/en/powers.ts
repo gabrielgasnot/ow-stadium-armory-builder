@@ -1015,7 +1015,7 @@ export default {
     position: 6,
     name: "Blink Boosts",
     description:
-      "[Glide Boost] gains 2 additional charges and has a 65% reduced cooldown, but has 75% reduced duration",
+      "[Glide Boost] gains 2 additional charges and has a 30% reduced cooldown, but has 75% reduced duration",
   },
   "41P008": {
     position: 10,
