@@ -59,6 +59,7 @@ export default {
   "19W001": { position: 1, name: "Multi-Task Mod" },
   "19S007": { position: 3, name: "Singijeon's Pulse Plating" },
   "19S008": { position: 1, name: "APM AMP" },
+  "19S009": { position: 1, name: "Retraction Armor" },
   "19A005": { position: 3, name: "Onslaught Ordinance" },
   "19A006": { position: 2, name: "Macro Missile" },
   "21W001": { position: 1, name: "Spiked Grip" },
