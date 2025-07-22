@@ -394,7 +394,7 @@ export default {
     position: 10,
     name: "Tokki Slam",
     description:
-      "During [Boosters], use crouch to slam the ground, dealing damage equal to 30% of your max Armor and knocking up enemies hit",
+      "During [Boosters], use crouch to slam the ground, dealing damage equal to <e>30%</e> of your max Armor plus Shield and knocking up enemies hit",
   },
   "19P005": {
     position: 5,
