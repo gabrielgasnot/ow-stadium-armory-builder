@@ -399,13 +399,13 @@ export default {
   "19P005": {
     position: 5,
     name: "Facetanking",
-    description: "[Defense Matrix] heals you for 30% of the damage it blocks",
+    description: "[Defense Matrix] heals you for <e>50%</e> of the damage it blocks",
   },
   "19P002": {
     position: 6,
     name: "Ultrawide Matrix",
     description:
-      "Increase the size of [Defense Matrix] by 50% and its duration by 25%",
+      "Increase the size of [Defense Matrix] by <e>50%</e> and its duration by <e>25%</e>",
   },
   "19P011": {
     position: 9,
@@ -736,7 +736,7 @@ export default {
   "35P007": {
     position: 8,
     name: "Fleet Foot",
-    description: "[Swift Step] can be used directionally without a target",
+    description: "[Swift Step] can be used directionally without a target. Cooldown is increased by <e>35%</e> when used without a target.",
   },
   "35P008": {
     position: 7,
@@ -1038,7 +1038,7 @@ export default {
     position: 12,
     name: "Stellar Focus",
     description:
-      "[Orbital Ray] now follows you and its duration is increased by 35%",
+      "[Orbital Ray] now follows you and its duration is increased by <e>50%</e>",
   },
   "41P012": {
     position: 11,
@@ -1055,7 +1055,7 @@ export default {
     position: 4,
     name: "Slowball",
     description:
-      "[Endothermic Blaster]'s secondary fire now shoots a snowball that applies 30% slow for 1s on critical hit",
+      "[Endothermic Blaster]'s secondary fire now shoots a snowball that applies <e>30%</e> slow for <e>1s</e> on hit",
   },
   "20P003": {
     position: 1,

@@ -402,7 +402,7 @@ export default {
     position: 6,
     name: "Tank Ultime",
     description:
-      "[Matrice défensive] vous soigne à hauteur de 30% des dégâts bloqués.",
+      "[Matrice défensive] vous soigne à hauteur de <e>50 %</e> des dégâts bloqués.",
   },
   "19P002": {
     position: 5,
@@ -755,13 +755,13 @@ export default {
     position: 8,
     name: "Pied Léger",
     description:
-      "[Pas véloce] peut être utilisé dans n'importe quelle direction, sans nécessiter de cible.",
+      "[Pas véloce] peut être utilisé dans n'importe quelle direction, sans nécessiter de cible. Le temps de recharge est augmenté de <e>35 %</e> lorsque la compétence est utilisée sans cible.",
   },
   "35P008": {
     position: 7,
     name: "Invocation de Clone",
     description:
-      "Après l'utilisation de [Pas véloce], vous créez un clone de vous-même qui persiste <e>4 s</e>. Les dégâts et les soins de votre clone sont réduits de <e>65%</e>",
+      "Après l'utilisation de [Pas véloce], vous créez un clone de vous-même qui persiste <e>4 s</e>. Les dégâts et les soins de votre clone sont réduits de <e>65 %</e>",
   },
   "35P009": {
     position: 9,
@@ -849,7 +849,8 @@ export default {
   "22P011": {
     position: 10,
     name: "À mon tour",
-    description: "[Nanoboost] s'applique aussi à vous pendant 100% de sa durée.",
+    description:
+      "[Nanoboost] s'applique aussi à vous pendant 100% de sa durée.",
   },
   "22P012": {
     position: 11,
@@ -1063,7 +1064,7 @@ export default {
     position: 12,
     name: "Concentration Cosmique",
     description:
-      "[Rayon Orbital] vous suit désormais et sa durée augmente de 35%.",
+      "[Rayon Orbital] vous suit désormais et sa durée augmente de <e>50 %</e>.",
   },
   "41P012": {
     position: 11,
@@ -1081,7 +1082,7 @@ export default {
     position: 2,
     name: "Boule de neige lente",
     description:
-      "Le tir secondaire de votre [Canon endothermique] projette désormais une boule de neige qui applique un effet de ralentissement de 30% pendant 1 s en cas de coup critique.",
+      "Le tir secondaire de votre [Canon endothermique] projette désormais une boule de neige qui applique un effet de ralentissement de <e>30%</e> pendant <e>1 s</e> lorsqu'elle touche.",
   },
   "20P003": {
     position: 3,

@@ -59,6 +59,7 @@ export default {
   "19W001": { position: 1, name: "Mode Multitâche" },
   "19S007": { position: 2, name: "Blindage à impulsion de Singijeon" },
   "19S008": { position: 1, name: "APM AMP" },
+  "19S009": { position: 1, name: "Armure Réfléchissante" },
   "19A005": { position: 3, name: "Ordre d'Assault" },
   "19A006": { position: 2, name: "Macromissiles" },
   "21W001": { position: 1, name: "Emprise Hérissée" },

@@ -1,8 +1,15 @@
 import { Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 
-function HighlightText({ text }: { text: string }) {
+function HighlightText({
+  text,
+  color,
+}: {
+  text: string;
+  color?: string;
+}) {
   const theme = useTheme();
+  const highlightColor = color || theme.palette.custom.orange;
   const parts = text?.split(/(\[.*?\]|<e>.*?<\/e>)/g); // Split on [brackets] or <e>...</e>, keeping them
 
   return (
@@ -29,7 +36,7 @@ function HighlightText({ text }: { text: string }) {
               <span
                 key={index}
                 style={{
-                  color: theme.palette.custom.orange,
+                  color: highlightColor,
                   fontWeight: "bold",
                 }}
               >

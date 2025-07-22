@@ -383,6 +383,13 @@ export default {
         "Votre vous utilisez [Turboréacteur], la vitesse des autres personnages alliés à moins de 16 m augmente de 25% pendant 2 s.",
     },
   ],
+  "19S009": [
+    {
+      type: "description",
+      value:
+        "Tant que vous avez des points d'armure, les rayons vous infligent des dégâts réduits de <e>15 %</e>.",
+    },
+  ],
   "19A005": [
     {
       type: "description",
@@ -825,7 +832,7 @@ export default {
     {
       type: "description",
       value:
-        "Les tirs à l'œil nu de [Fusil biotique] ont 50% de chance de ne consommer aucune munition.",
+        "Les tirs à l'œil nu de [Fusil biotique] ont <e>50%</e> de chance de ne consommer aucune munition.",
     },
   ],
   "22A002": [

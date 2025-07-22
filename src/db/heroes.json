@@ -534,7 +534,14 @@
       "19P009"
     ],
     "items": {
-      "common": [],
+      "common": [
+        {
+          "id": "19S009",
+          "price": 2000,
+          "category": "Survival",
+          "attributes": [{ "type": "AR", "value": 25, "unit": "" }]
+        }
+      ],
       "rare": [
         {
           "id": "19A001",
@@ -1280,7 +1287,10 @@
           "id": "22W004",
           "price": 11000,
           "category": "Weapon",
-          "attributes": [{ "type": "MA", "value": 4, "unit": "" }]
+          "attributes": [
+            { "type": "WP", "value": 15, "unit": "%" },
+            { "type": "MA", "value": 4, "unit": "" }
+          ]
         },
         {
           "id": "22A002",

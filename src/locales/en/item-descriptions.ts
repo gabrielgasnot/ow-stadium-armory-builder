@@ -352,6 +352,13 @@ export default {
         "When you use [Boosters], other allies within 16m gain 25% Move Speed for 2s",
     },
   ],
+  "19S009": [
+    {
+      type: "description",
+      value:
+        "While you have Armor, gain <e>15%</e> damage reduction against Beams.",
+    },
+  ],
   "19A005": [
     {
       type: "description",
@@ -748,7 +755,7 @@ export default {
     {
       type: "description",
       value:
-        "Unscoped [Biotic Rifle] shots have a 50% chance not to consume Ammo",
+        "Unscoped [Biotic Rifle] shots have a <e>50%</e> chance not to consume Ammo",
     },
   ],
   "22A002": [
