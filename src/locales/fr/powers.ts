@@ -396,7 +396,7 @@ export default {
     position: 9,
     name: "Frappe de Tokki",
     description:
-      "Pendant l'utilisation de [Turboréacteurs], utilisez la commande d'accroupissement pour heurter le sol, ce qui inflige des dégâts égaux à 30% de votre de votre maximum d'armure et renverse les cibles adverses touchées.",
+      "Pendant l'utilisation de [Turboréacteurs], utilisez la commande d'accroupissement pour heurter le sol, ce qui inflige des dégâts égaux à <e>30 %</e> de votre de votre maximum d'armure et de bouclier, et renverse les cibles adverses touchées.",
   },
   "19P005": {
     position: 6,
