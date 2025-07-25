@@ -365,7 +365,7 @@ export default {
     position: 2,
     name: "Legendary Loadout",
     description:
-      "[Micro Missiles] are replaced with 6 Heavy Rockets, which deal 350% more explosive damage and have 100% increased radius",
+      "[Micro Missiles] are replaced with 6 Heavy Rockets, which deal <e>325%</e> more explosive damage and have 100% increased radius",
   },
   "19P007": {
     position: 3,
@@ -376,7 +376,7 @@ export default {
     position: 4,
     name: "Countermeasures",
     description:
-      "When you mitigate 100 damage with [Defense Matrix], automatically fire 2 [Micro Missiles]",
+      "When you mitigate <e>150</e> damage with [Defense Matrix], automatically fire <e>2</e> [Micro Missiles]",
   },
   "19P008": {
     position: 7,
@@ -1055,7 +1055,7 @@ export default {
     position: 4,
     name: "Slowball",
     description:
-      "[Endothermic Blaster]'s secondary fire now shoots a snowball that applies <e>30%</e> slow for <e>1s</e> on hit",
+      "[Endothermic Blaster]'s secondary fire now shoots a snowball that applies <e>15%</e> slow for <e>1s</e> on hit",
   },
   "20P003": {
     position: 1,
@@ -1240,13 +1240,13 @@ export default {
     position: 10,
     name: "Lille Fælde",
     description:
-      "After using [Updraft], your next [Take Aim] while airborne instead fires a mini [Bola Shot] that no longer pulls and has 50% reduced effectiveness.",
+      "After using [Updraft], your next [Take Aim] while airborne instead fires a mini [Bola Shot] that no longer pulls and has <e>40%</e> reduced effectiveness.",
   },
   "43P011": {
     position: 11,
     name: "So cooked",
     description:
-      "[Bola Shot]'s damaging zone deals 30% more damage and lingers for 2s. [Bola Shot] eliminations count towards [Bounty Hunting].",
+      "[Bola Shot]'s damaging zone deals 30% more damage and lingers for <e>3s</e>. [Bola Shot] eliminations count towards [Bounty Hunting].",
   },
   "43P012": {
     position: 12,

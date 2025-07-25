@@ -367,7 +367,7 @@ export default {
     position: 2,
     name: "Arsenal Légendaire",
     description:
-      "Les [Micro-missiles] sont remplacés par 6 Roquettes lourdes, qui infligent 350% de dégâts d'explosion supplémentaires dans un rayon augmenté de 100%.",
+      "Les [Micro-missiles] sont remplacés par 6 Roquettes lourdes, qui infligent <e>325 %</e> de dégâts d'explosion supplémentaires dans un rayon augmenté de 100%.",
   },
   "19P007": {
     position: 3,
@@ -378,7 +378,7 @@ export default {
     position: 4,
     name: "Contre-mesures",
     description:
-      "Lorsque vous bloquez 100 points de dégâts avec [Matrice défensive], vous tirez automatiquement 2 [Micro-missiles].",
+      "Lorsque vous bloquez <e>150</e> points de dégâts avec [Matrice défensive], vous tirez automatiquement <e>2</e> [Micro-missiles].",
   },
   "19P008": {
     position: 7,
@@ -1082,7 +1082,7 @@ export default {
     position: 2,
     name: "Boule de neige lente",
     description:
-      "Le tir secondaire de votre [Canon endothermique] projette désormais une boule de neige qui applique un effet de ralentissement de <e>30%</e> pendant <e>1 s</e> lorsqu'elle touche.",
+      "Le tir secondaire de votre [Canon endothermique] projette désormais une boule de neige qui applique un effet de ralentissement de <e>15 %</e> pendant <e>1 s</e> lorsqu'elle touche.",
   },
   "20P003": {
     position: 3,
@@ -1273,13 +1273,13 @@ export default {
     position: 11,
     name: "Lille Fælde",
     description:
-      "Après [Courant ascendant], votre prochain [Dans le mille] depuis les airs lance un mini [Tir de Bolas] qui n'attire pas l'adversaire et inflige des dégâts réduits de 50 %.",
+      "Après [Courant ascendant], votre prochain [Dans le mille] depuis les airs lance un mini [Tir de Bolas] qui n'attire pas l'adversaire et inflige des dégâts réduits de <e>40 %</e>.",
   },
   "43P011": {
     position: 12,
     name: "Cuisson parfaite",
     description:
-      "La zone de dégâts de [Tir de bolas] persiste pendant 2 s et inflige des dégâts augmentés de 30 %. Les éliminations à l'aide de [Tir de bolas] comptent pour [Chasseuse de primes].",
+      "La zone de dégâts de [Tir de bolas] persiste pendant <e>3 s</e> et inflige des dégâts augmentés de 30 %. Les éliminations à l'aide de [Tir de bolas] comptent pour [Chasseuse de primes].",
   },
   "43P012": {
     position: 10,
