@@ -1407,7 +1407,7 @@ export default {
     position: 2,
     name: "Hyperloop",
     description:
-      "[Hyperspheres] direct hits reduce the cooldown of [Accretion] by 0.5s.",
+      "[Hyperspheres] direct hits reduce the cooldown of [Accretion] by 0.8s.",
   },
   "31P003": {
     position: 3,
@@ -1449,7 +1449,7 @@ export default {
     position: 9,
     name: "Singularity",
     description:
-      "[Accretion] splash damage is increased by 25% and enemies are pulled towards its explosion.",
+      "[Accretion] splash damage is increased by 75% and enemies are pulled towards its explosion.",
   },
   "31P010": {
     position: 10,

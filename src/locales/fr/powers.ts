@@ -1441,7 +1441,7 @@ export default {
     position: 2,
     name: "Hypercycle",
     description:
-      "Le temps de recharge de [Concrétion] est réduit de 0,5 s chaque fois qu'[Hypersphères] touche directement une cible adverse.",
+      "Le temps de recharge de [Concrétion] est réduit de 0,8 s chaque fois qu'[Hypersphères] touche directement une cible adverse.",
   },
   "31P003": {
     position: 3,
@@ -1483,7 +1483,7 @@ export default {
     position: 9,
     name: "Singularité",
     description:
-      "Les dégâts de zone de [Concrétion] sont augmentés de 25 % et les adversaires sont attirés vers le centre de l'explosion.",
+      "Les dégâts de zone de [Concrétion] sont augmentés de 75 % et les adversaires sont attirés vers le centre de l'explosion.",
   },
   "31P010": {
     position: 10,
