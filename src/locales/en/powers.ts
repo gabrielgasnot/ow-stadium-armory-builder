@@ -499,73 +499,73 @@ export default {
     position: 1,
     name: "Scorched Earth",
     description:
-      "When you [Overheat], apply Burning to enemies within 6m, dealing damage equal to 20% of your max Life over 4s.",
+      "When you [Overheat], apply <e>Burning</e> to enemies within <e>6m</e>, dealing damage equal to <e>20%</e> of your max Life over <e>4s</e>.",
   },
   "24P001": {
     position: 2,
     name: "Shield Divergence",
     description:
-      "When you [Overheat], deploy a Barrier with 600 Health in front",
+      "When you [Overheat], deploy a <e>Barrier</e> with <ap>600</ap> Health in front.",
   },
   "24P007": {
     position: 3,
     name: "Advanced Throwbotics",
     description:
-      "When you use [Javelin Spin], launch an [Energy Javelin] with 50% less damage",
+      "When you use [Javelin Spin], launch an [Energy Javelin] with <e>50%</e> less damage.",
   },
   "24P010": {
     position: 5,
     name: "Spynstem Update",
     description:
-      "[Javelin Spin] now deflects projectiles and grants 20% of damage dealt from deflecting as Ultimate Charge",
+      "[Javelin Spin] now deflects projectiles and grants <e>20%</e> of damage dealt from deflecting as Ultimate Charge.",
   },
   "24P002": {
     position: 4,
     name: "Hot Rotate-O",
     description:
-      "[Javelin Spin] gains 35% Cooldown Reduction but now generates [Heat]",
+      "[Javelin Spin] gains <e>35%</e> Cooldown Reduction but now generates [Heat].",
   },
   "24P011": {
     position: 6,
     name: "Factory Reset",
     description:
-      "While [Fortify] is active, [Javelin Spin] and [Energy Javelin] gain 25% Cooldown Reduction",
+      "While [Fortify] is active, [Javelin Spin] and [Energy Javelin] gain <e>25%</e> Cooldown Reduction.",
   },
   "24P006": {
     position: 10,
     name: "Lassoed",
     description:
-      "On impact, [Energy Javelin] will pull enemies within 4m towards itself",
+      "On impact, [Energy Javelin] will pull enemies within <e>4m</e> towards itself",
   },
   "24P008": {
     position: 9,
     name: "Ride With Me",
     description:
-      "While [Fortify] is active, grant allies in line of sight 30% Move Speed and Overhealth equal to 10% of your max Life",
+      "While [Fortify] is active, grant allies in line of sight <e>30%</e> Move Speed and <e>Overhealth</e> equal to <e>10%</e> of your max Life.",
   },
   "24P003": {
     position: 7,
     name: "Hooves of Steel",
     description:
-      "After [Fortify] ends, gain Shields equal to 50% of the damage received during [Fortify]. Resets when you next use [Fortify]",
+      "After [Fortify] ends, gain Shields equal to <e>50%</e> of the damage received during [Fortify]. Resets when you next use [Fortify]",
   },
   "24P005": {
     position: 8,
     name: "Restortify",
     description:
-      "While [Fortify] is active, heal for 5% of your max Life every 1s",
+      "While [Fortify] is active, heal for <e>5%</e> of your max Life every <e>1s</e>.",
   },
   "24P009": {
     position: 11,
     name: "Centripetal Charge",
     description:
-      "25% Ultimate Cost Reduction. After using [Terra Surge], reset your ability cooldowns",
+      "<e>25%</e> Ultimate Cost Reduction. After using [Terra Surge], reset your ability cooldowns.",
   },
   "24P012": {
     position: 12,
     name: "Supercharger",
     description:
-      "When you use [Terra Surge], drop a [Supercharger] that increases the damage of nearby allies by 25% for 15s",
+      "When you use [Terra Surge], drop a [Supercharger] that increases the damage of nearby allies by <e>25%</e> for <e>15s</e>.",
   },
   "34P001": {
     position: 1,
