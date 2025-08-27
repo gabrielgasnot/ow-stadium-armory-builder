@@ -771,73 +771,73 @@ export default {
     position: 1,
     name: "No Scope Needed",
     description:
-      "Landing unscoped shots with [Biotic Rifle] grants 10% Attack Speed for 2s, stacking up to 3 times",
+      "Landing unscoped shots with [Biotic Rifle] grants <e>10%</e> Attack Speed for <e>2s</e>, stacking up to <e>3 times</e>.",
   },
   "22P002": {
     position: 3,
     name: "Tactical Rifle",
     description:
-      "While scoped, [Biotic Rifle] will lock-on to allies for guaranteed hits",
+      "While scoped, [Biotic Rifle] will lock-on to allies for guaranteed hits and has less reduced movement speed.",
   },
   "22P003": {
     position: 2,
     name: "Pinpoint Prescription",
     description:
-      "[Biotic Rifle] can now critically hit both allies and enemies",
+      "[Biotic Rifle] can now critically hit both allies and enemies.",
   },
   "22P004": {
     position: 5,
     name: "Dreamy",
     description:
-      "[Sleep Dart] can hit allies, healing 80% of their max Life over 4s instead of putting them to sleep",
+      "[Sleep Dart] can hit allies, healing <e>80%</e> of their max Life over <e>4s</e> instead of putting them to sleep.",
   },
   "22P005": {
     position: 4,
     name: "Comfy Cloud",
     description:
-      "[Sleep Dart] explodes on contact, hitting targets within 3m, but Sleep has a 50% reduced duration",
+      "[Sleep Dart] explodes on contact, hitting targets within <e>3m</e>, but <e>Sleep</e> has a <e>50% reduced</e> duration.",
   },
   "22P006": {
     position: 6,
     name: "Sleep Regimen",
     description:
-      "Gain 50 Health. When you apply Sleep to an enemy, gain 10 Health, up to 150",
+      "Gain <e>50</e> Health. When you apply <e>Sleep</e> to an enemy, gain <e>10</e> Health, up to <e>150</e>.",
   },
   "22P007": {
     position: 7,
     name: "Home Remedy",
     description:
-      "[Biotic Grenade] applies Overhealth equal to 200% of its healing",
+      "[Biotic Grenade] grants <e>Overhealth</e> equal to <e>200%</e> of its healing.",
   },
   "22P008": {
     position: 9,
     name: "Venomous",
     description:
-      "[Biotic Grenade] deals an additional 75 damage over its duration to enemies affected.",
+      "[Biotic Grenade] deals an additional <ap>75</ap> damage over <e>2s</e> to enemies affected.",
   },
   "22P009": {
     position: 8,
     name: "Time Out",
     description:
-      "[Biotic Grenade] now knocks enemies back and reduces their Move Speed by 50% for 2.5s",
+      "[Biotic Grenade] now knocks back Ana and enemies, slowing enemies by <e>50%</e> for <e>2.5s</e>.",
   },
   "22P010": {
     position: 12,
     name: "Your Full Potential",
     description:
-      "[Nano Boost] also grants the target 20% Ultimate Charge and 200 Overhealth",
+      "[Nano Boost] also grants the target <e>35%</e> Ultimate Charge and <ap>200</ap> <e>Overhealth</e>.",
   },
   "22P011": {
     position: 10,
     name: "My Turn",
     description:
-      "[Nano Boost] also applies to yourself for 100% of its duration",
+      "[Nano Boost] also applies to yourself for <e>100%</e> of its duration.",
   },
   "22P012": {
     position: 11,
     name: "Our Turn",
     description:
-      "[Nano Boost] also affects other allies in your line of sight, but it has a 25% reduced duration on them",
+      "[Nano Boost] also affects other allies in your line of sight, but it has a <e>25% reduced</e> duration on them.",
   },
   "14P001": {
     position: 4,
