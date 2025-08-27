@@ -144,73 +144,73 @@ export default {
     position: 2,
     name: "Super Visor",
     description:
-      "After using [Helix Rocket], activate [Tactical Visor] for 0.5s",
+      "After using [Helix Rocket], activate [Tactical Visor] for <e>0.5s</e>.",
   },
   "15P002": {
     position: 3,
     name: "Chaingun",
     description:
-      "While continuously shooting [Pulse Rifle], each shot grants 0.4% Weapon Power, stacking up to 100 times",
+      "While continuously shooting [Pulse Rifle], each shot grants <e>0.4%</e> Weapon Power, stacking up to <e>100 times</e>.",
   },
   "15P003": {
     position: 9,
     name: "Biotic Bullseye",
     description:
-      "While in [Biotic Field], critical hits restore 10% Max Ammo and extend the field's duration by 0.5s (up to 5s)",
+      "While in [Biotic Field], critical hits restore <e>10%</e> Max Ammo and extend the duration of [Biotic Field] by <e>0.5s</e>, up to <e>5s</e>.",
   },
   "15P004": {
     position: 8,
     name: "Back Off",
     description:
-      "Enemies within your [Biotic Field] take damage equal to 100% of its healing output",
+      "Enemies within your [Biotic Field] take damage equal to <e>100%</e> of its healing output.",
   },
   "15P005": {
     position: 11,
     name: "On Me!",
     description:
-      "[Biotic Field] moves with you and grants you 20% increased max Health while active",
+      "[Biotic Field] moves with you and grants you <e>20%</e> increased max Health while active.",
   },
   "15P006": {
     position: 10,
     name: "Frontliners",
     description:
-      "Allies in range of your [Biotic Field] when it spawns gain Overhealth equal to 25% of your max Life for 3s",
+      "Allies in range of your [Biotic Field] when it spawns gain <e>Overhealth</e> equal to <e>25%</e> of your max Life for <e>3s</e>.",
   },
   "15P007": {
     position: 7,
     name: "Hunker Down",
     description:
-      "When [Helix Rocket] deals damage, creates a [Biotic Field] with a 50% reduced duration at your position",
+      "When [Helix Rocket] deals damage, creates a [Biotic Field] with a <e>50% reduced</e> duration at your position.",
   },
   "15P008": {
     position: 5,
     name: "Cratered",
     description:
-      "Increase [Helix Rocket] explosion radius by 40% and explosion damage by 15%",
+      "Increase [Helix Rocket] explosion radius by <e>40%</e> and explosion damage by <e>15%</e>.",
   },
   "15P009": {
     position: 6,
     name: "Double Helix",
     description:
-      "[Helix Rocket] fires a second homing [Helix Rocket] that deals 70% reduced damage",
+      "[Helix Rocket] fires a second homing [Helix Rocket] that deals <e>70% reduced</e> damage.",
   },
   "15P010": {
     position: 4,
     name: "Man On The Run",
     description:
-      "During [Sprint], restore 10% of your Ammo every 1s and increase your Max Ammo by 10% until you reload, stacking up to 10 times",
+      "During [Sprint], restore <e>10%</e> of your Ammo every <e>1s</e> and increase your Max Ammo by <e>10%</e> until you reload, stacking up to <e>10 times</e>.",
   },
   "15P011": {
     position: 12,
     name: "Track and Field",
     description:
-      "During [Sprint], [Biotic Field] cooldown refreshes 150% faster",
+      "During [Sprint], [Biotic Field] cooldown refreshes <e>150%</e> faster.",
   },
   "15P012": {
     position: 1,
     name: "Peripheral Pulse",
     description:
-      "During [Tactical Visor], [Pulse Rifle] shoots at 1 additional enemy, dealing 50% reduced damage",
+      "During [Tactical Visor], [Pulse Rifle] shoots at <e>1</e> additional enemy, dealing <e>50% reduced</e> damage.",
   },
   "6P001": {
     position: 6,
