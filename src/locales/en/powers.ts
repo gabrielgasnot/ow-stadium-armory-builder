@@ -287,73 +287,73 @@ export default {
     position: 5,
     name: "Optimal Overflow",
     description:
-      "After you spend 50 [Biotic Energy], launch the last selected [Biotic Orb] with 75% reduced duration",
+      "After you spend <e>50</e> [Biotic Energy], launch the last selected [Biotic Orb] with <e>75% reduced</e> duration.",
   },
   "26P002": {
     position: 6,
     name: "Precarious Potency",
     description:
-      "Allies healed by your [Biotic Grasp] are healed for an additional 25% of [Biotic Grasp]'s healing over 5s",
+      "Allies healed by your [Biotic Grasp] are healed for an additional <e>25%</e> of [Biotic Grasp]'s healing over <e>5s</e>.",
   },
   "26P003": {
     position: 2,
     name: "Deconstruction",
     description:
-      "After you spend 50 [Biotic Energy], deal 20% increased damage for 6s",
+      "After you spend <e>50</e> [Biotic Energy], deal <e>20% increased</e> damage for <e>6s</e>.",
   },
   "26P004": {
     position: 4,
     name: "Ethereal Excision",
     description:
-      "While aiming at an enemy's head with [Biotic Grasp]'s secondary fire, gain 30% Lifesteal, 30% Move Speed, and restore 100% more Biotic Energy",
+      "While aiming at an enemy's head with [Biotic Grasp]'s secondary fire, gain <e>30%</e> Move Speed, <e>30%</e> Lifesteal, and restore <e>100%</e> more [Biotic Energy].",
   },
   "26P005": {
     position: 1,
     name: "Chain Grasp",
     description:
-      "After using [Biotic Orb], [Biotic Grasp]'s secondary fire chains to 2 additional targets within 10m for 3s",
+      "After using [Biotic Orb], [Biotic Grasp]'s secondary fire chains to <e>2</e> additional enemies within <e>10m</e> for <e>3s</e>.",
   },
   "26P006": {
     position: 3,
     name: "Empowering You",
     description:
-      "[Biotic Grasp]'s secondary fire can target allies, increasing their damage by 15%",
+      "[Biotic Grasp]'s secondary fire can target allies, increasing their damage by <e>15%</e>.",
   },
   "26P007": {
     position: 7,
     name: "Cross-Orbal",
     description:
-      "[Biotic Orb] launches an additional [Biotic Orb] of the other type with 50% reduced capacity",
+      "[Biotic Orb] launches an additional [Biotic Orb] of the other type with <e>50% reduced</e> capacity.",
   },
   "26P008": {
     position: 8,
     name: "Multiball",
     description:
-      "[Biotic Orb] launches 2 additional orbs of the chosen type with 85% reduced effectiveness",
+      "[Biotic Orb] launches <e>2</e> additional orbs of the chosen type with <e>85% reduced</e> effectiveness.",
   },
   "26P009": {
     position: 9,
     name: "Phantasm",
     description:
-      "When you use [Fade], spawn a stationary copy of the last selected [Biotic Orb] with 50% reduced duration",
+      "When you use [Fade], spawn a stationary copy of the last selected [Biotic Orb] with <e>50% reduced</e> duration.",
   },
   "26P010": {
     position: 10,
     name: "Scientific Deathod",
     description:
-      "While using [Fade], passing through enemies grants 5% Ultimate Charge and Overhealth equal to 15% of your max Life",
+      "While using [Fade], passing through enemies grants <e>5%</e> Ultimate Charge and <e>Overhealth</e> equal to <e>15%</e> of your max Life.",
   },
   "26P011": {
     position: 11,
     name: "Voidhoppers",
     description:
-      "[Fade] phases other allies within 8m for 0.3s and grants them Overhealth equal to 20% of your max Life",
+      "[Fade] also phases other allies within <e>8m</e> for <e>0.3s</e> and grants them <e>Overhealth</e> equal to <e>20%</e> of your max Life.",
   },
   "26P012": {
     position: 12,
     name: "Destruction's Divide",
     description:
-      "+25% [Coalescence] Duration. [Coalescence] can be toggled between pure healing or pure damage, with 30% greater effect",
+      "<e>+25%</e> [Coalescence] Duration. [Coalescence] can be toggled between pure healing or pure damage, with <e>30%</e> greater effect.",
   },
   "19P001": {
     position: 1,
