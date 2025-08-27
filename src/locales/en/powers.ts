@@ -986,65 +986,65 @@ export default {
     position: 2,
     name: "Stinger",
     description:
-      "[Mediblaster] deals an additional 10 damage to enemies over 1s. (Does not stack)",
+      "[Mediblaster] deals an additional <ap>10</ap> damage to enemies over <e>1s</e>. (Does not stack).",
   },
   "41P003": {
     position: 3,
     name: "Cosmic Coolant",
     description:
-      "[Pulsar Torpedoes] cooldown is reduced by 0.5s for each target it hits",
+      "[Pulsar Torpedoes] cooldown is reduced by <e>0.5s</e> for each target it hits",
   },
   "41P004": {
     position: 4,
     name: "Medicinal Missiles",
     description:
-      "[Pulsar Torpedoes] causes allies hit to receive 50% more healing for 3s.",
+      "[Pulsar Torpedoes] causes allies hit to receive <e>50%</e> more healing for <e>3s</e>.",
   },
   "41P005": {
     position: 5,
     name: "Pulsar Plus",
-    description: "[Pulsar Torpedoes] gains 1 additional charge",
+    description: "[Pulsar Torpedoes] gains <e>1</e> additional charge.",
   },
   "41P006": {
     position: 7,
     name: "Torpedo Glide",
     description:
-      "During [Glide Boost], every 50 damage you deal reduces the cooldown of [Pulsar Torpedoes] by 1s",
+      "During [Glide Boost], every <e>50</e> damage you deal reduces the cooldown of [Pulsar Torpedoes] by <e>1s</e>.",
   },
   "41P007": {
     position: 6,
     name: "Blink Boosts",
     description:
-      "[Glide Boost] gains 2 additional charges and has a 30% reduced cooldown, but has 75% reduced duration",
+      "[Glide Boost] gains <e>2</e> additional charges and has a <e>40% reduced</e> cooldown, but has <e>75% reduced</e> duration.",
   },
   "41P008": {
     position: 10,
     name: "Rally Ring",
     description:
-      "Reduce [Hyper Ring]'s cooldown by 1s when an ally passes through it",
+      "Reduce [Hyper Ring]'s cooldown by <e>1s</e> when an ally passes through it.",
   },
   "41P009": {
     position: 8,
     name: "Black Hole",
     description:
-      "[Hyper Ring] slows the Move Speed of enemies who pass through it by 35% for 2s",
+      "[Hyper Ring] slows the Move Speed of enemies who pass through it by <e>35%</e> for <e>2s</e>.",
   },
   "41P010": {
     position: 9,
     name: "Hyper Healer",
-    description: "Allies affected by [Hyper Ring] gain 75 Overhealth",
+    description: "Allies affected by [Hyper Ring] gain <ap>75</ap> <e>Overhealth</e>.",
   },
   "41P011": {
     position: 12,
     name: "Stellar Focus",
     description:
-      "[Orbital Ray] now follows you and its duration is increased by <e>50%</e>",
+      "[Orbital Ray] now follows you and its duration is increased by <e>50%</e>.",
   },
   "41P012": {
     position: 11,
     name: "Orbital Alignment",
     description:
-      "Enemies inside of [Orbital Ray] lose 35% Move Speed. Allies inside of it gain 25% Move Speed",
+      "Enemies inside of [Orbital Ray] lose <e>35%</e> Move Speed and float upward. Allies inside of it gain <e>25%</e> Move Speed.",
   },
   "20P001": {
     position: 3,
