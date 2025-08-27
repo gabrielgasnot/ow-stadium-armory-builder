@@ -216,72 +216,72 @@ export default {
     position: 6,
     name: "Battle Medic",
     description:
-      "Every 1s your Staff is attached, [Caduceus Blaster] gains 4% Attack Speed (stacks 10 times) until you reload or swap to your Staff",
+      "Every <e>1s</e> your Staff is attached, [Caduceus Blaster] gains <e>3%</e> Attack Speed (stacks <e>10 times</e>) until you reload or swap to your Staff.",
   },
   "6P002": {
-    position: 8,
+    position: 9,
     name: "First Responder",
     description:
-      "When you [Resurrect] an ally, you both gain 250 Overhealth for 6s",
+      "When you [Resurrect] an ally, you both gain <ap>250</ap> <e>Overhealth</e> for <e>6s</e>.",
   },
   "6P003": {
-    position: 10,
+    position: 11,
     name: "The Whambulance",
     description:
-      "When [Guardian Angel] ends, heal your target for 4 Life for every 1m you traveled",
+      "When [Guardian Angel] ends, heal your target for <ap>4</ap> Life for every <e>1m</e> you traveled.",
   },
   "6P004": {
-    position: 9,
+    position: 10,
     name: "Renaissance",
     description:
-      "After successfully using [Resurrect], activate [Valkyrie] for 5 seconds",
+      "After successfully using [Resurrect], activate [Valkyrie] for <e>5s</e>.",
   },
   "6P005": {
-    position: 7,
+    position: 8,
     name: "Equivalent Exchange",
     description:
-      "You have 3 charges of [Resurrect] with 33% reduced cast time, but their cooldowns only reset at the start of the round",
+      "You have <e>3 charges</e> of [Resurrect] with <e>33% reduced</e> cast time, but their cooldowns only reset at the start of the round.",
   },
   "6P006": {
-    position: 11,
+    position: 12,
     name: "Triage Unit",
     description:
-      "When using [Guardian Angel] on allies below 50% Life, your [Caduceus Staff] heals them for 30% more for 3 sec",
+      "When using [Guardian Angel] on allies below 50% Life, they receive <e>25%</e> more healing from you for <e>3s</e>.",
   },
   "6P007": {
     position: 5,
     name: "Threads of Fate",
     description:
-      "[Caduceus Staff] chains to your previous target for 3s, at 50% effectiveness",
+      "[Caduceus Staff] chains to your previous target for <e>3s</e>, at <e>35%</e> effectiveness.",
   },
   "6P008": {
-    position: 3,
+    position: 2,
     name: "Protective Beam",
     description:
-      "[Caduceus Staff] targets above 80% Life gain 10% damage reduction",
+      "[Caduceus Staff] targets above <e>80%</e> Life gain <e>10% damage reduction</e>. [Caduceus Staff] stays tethered <e>1s</e> longer to allies not in line of sight.",
   },
   "6P009": {
-    position: 4,
+    position: 3,
     name: "Serenity",
     description:
-      "[Sympathetic Recovery] heals for 20% more and heals you even while healing a full health ally",
+      "[Sympathetic Recovery] heals for <e>10%</e> more and heals you even while healing a full health ally.",
   },
   "6P010": {
     position: 1,
     name: "Distortion",
-    description: "Allies boosted by your [Caduceus Staff] gain 20% Lifesteal",
+    description: "Allies boosted by your [Caduceus Staff] gain <e>20%</e> Lifesteal",
   },
   "6P011": {
-    position: 12,
-    name: "Crepuscular Circle",
+    position: 7,
+    name: "Tethered Tourniquet",
     description:
-      "While [Valkyrie] is active, the healing and damage boost of [Caduceus Staff] are automatically applied to nearby allies",
+      "After swapping to [Caduceus Blaster], [Caduceus Staff] automatically heals allies at <e>100%</e> effectiveness for every <e>1s</e> you spent tethered, up to <e>10s</e>.",
   },
   "6P012": {
-    position: 2,
-    name: "Glass Extra Full",
+    position: 4,
+    name: "Supply Surge",
     description:
-      "Healing from [Caduceus Staff] targeting full health allies is converted to Overhealth, up to 50",
+      "Reloading [Caduceus Staff] grants allies affected by it <e>20%</e> Move Speed for <e>2s</e>, restores <e>50%</e> Ammo, and reduces their cooldowns by <e>3s</e>. <e>(10s Cooldown)</e>",
   },
   "26P001": {
     position: 5,
