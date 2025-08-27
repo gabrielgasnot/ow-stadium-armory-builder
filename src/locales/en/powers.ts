@@ -428,72 +428,72 @@ export default {
     position: 7,
     name: "Wyrm's Maw",
     description:
-      "Targets hit by your [Shurikens] take 10% more damage from [Swift Strike] for 4s, stacking up to 5 times",
+      "Targets hit by [Shuriken] take <e>10%</e> more damage from [Swift Strike] for <e>4s</e>, stacking up to <e>5 times</e>.",
   },
   "21P002": {
     position: 6,
     name: "Laceration",
     description:
-      "[Swift Strike] deals 35% additional damage over 3s to enemies hit",
+      "[Swift Strike] deals <e>35%</e> additional damage over <e>3s</E> to enemies hit.",
   },
   "21P003": {
     position: 10,
     name: "Iaido Strike",
     description:
-      "After [Deflect] ends, quickly swing your [Dragonblade] once",
+      "After [Deflect] ends, quickly swing your [Dragonblade] once.",
   },
   "21P004": {
     position: 5,
     name: "Hidden Blade",
-    description: "Gain 60% Melee Lifesteal and increase [Quick Melee] damage by 15.",
+    description: "Gain <e>60%</e> Melee Lifesteal and increase [Quick Melee] damage by <e>15</e>.",
   },
   "21P005": {
     position: 9,
     name: "Forged Under Fire",
     description:
-      "While [Deflect] is active, heal for 60% of the damage it prevents",
+      "While [Deflect] is active, heal for <e>60%</e> of the damage it prevents.",
   },
   "21P006": {
     position: 3,
     name: "Sacred Shuriken",
     description:
-      "[Shuriken]'s primary fire throws 2 additional [Shuriken] that don't consume any ammo.",
+      "[Shuriken]'s primary fire throws <e>2</e> additional [Shuriken] that don't consume any ammo.",
   },
   "21P007": {
     position: 4,
     name: "Hanamura Healing",
     description:
-      "Critical hits and [Swift Strike] grant Overhealth equal to 25% of their damage dealt for 5s",
+      "Critical hits and [Swift Strike] grant <e>Overhealth</e> equal to <e>25%</e> of their damage dealt for <e>5s</e>.",
   },
   "21P008": {
     position: 11,
     name: "Spirit of Sojiro",
     description:
-      "When [Deflect] stops incoming damage, reduce the cooldown of [Swift Strike] by 1s, up to 5s",
+      "When [Deflect] stops incoming damage, reduce the cooldown of [Swift Strike] by <e>1s</e>, up to <e>5s</e>.",
   },
   "21P009": {
     position: 12,
     name: "Dragon's Breath",
     description:
-      "[Dragonblade] swings launch a large piercing projectile that deals 50% of [Dragonblade]'s damage.",
+      "[Dragonblade] swings launch a large piercing projectile that deals <e>50%</e> of [Dragonblade]'s damage.",
   },
   "21P010": {
     position: 1,
     name: "Cybernetic Speed",
     description:
-      "Dealing damage with [Shuriken] grants 2% [Shuriken] Attack Speed for 3s, stacking up to 15 times",
+      "Dealing damage with [Shuriken] grants <e>2%</e> [Shuriken] Attack Speed for <e>3s</E>, stacking up to <e>15 times</e>.",
   },
   "21P011": {
     position: 2,
     name: "Hashimoto's Bane",
     description:
-      "After using an ability, your next secondary fire throws 2 extra [Shuriken] that seek enemies but deal 50% less damage",
+      "After using an ability, your next secondary fire throws <e>2</e> extra [Shuriken] that seek enemies but deal <e>50% less</e> damage.",
   },
   "21P012": {
     position: 8,
     name: "Deflect-o-bot",
     description:
-      "+50% Deflected Projectile Speed. During the first 1.5s of [Deflect], automatically deflect projectiles toward enemies.",
+      "<e>+50%</e> Deflected Projectile Speed. During the first <e>1.5s</e> of [Deflect], automatically deflect projectiles toward enemies.",
   },
   "24P004": {
     position: 1,
@@ -640,62 +640,62 @@ export default {
   "13P001": {
     name: "No Limits",
     description:
-      "Maximum [Energy] increased to 125. [Energy] always decays above 100 [Energy] at a 150% faster rate",
+      "Maximum [Energy] increased to <e>125</e>. [Energy] always decays above <e>100</e> [Energy] at a <e>150%</e> faster rate.",
   },
   "13P002": {
     name: "Particle Accelerator",
     description:
-      "Gain 15% Attack Speed for [Particle Cannon]'s secondary fire. After using an ability, quadruple this bonus for 5s",
+      "Gain <e>15%</e> Attack Speed for [Particle Cannon]'s secondary fire. After using an ability, <e>quadruple</e> this bonus for <e>5s</e>.",
   },
   "13P003": {
     name: "Piercing Beam",
     description:
-      "Above 80 [Energy], [Particle Cannon]'s Primary Fire will pierce enemies",
+      "Above <e>80</e> [Energy], [Particle Cannon]'s Primary Fire will pierce enemies",
   },
   "13P004": {
     name: "Pre-Workout",
     description:
-      "Gain Weapon Lifesteal and Ability Lifesteal equal to 15% of [Energy]",
+      "Gain Weapon Lifesteal and Ability Lifesteal equal to <e>15%</e> of [Energy]",
   },
   "13P005": {
     name: "Barrier Benefits",
     description:
-      "When [Barrier] expires, grant Overhealth equal to 100% of remaining [Barrier] Health to the target for 2s",
+      "When [Barriers] expire, grant <e>Overhealth</e> equal to <e>100%</e> of remaining [Barrier] Health to the target for <e>2s</e>.",
   },
   "13P006": {
     name: "Containment Shield",
     description:
-      "[Barrier] heals the target for 5% of your Max Life every 1s and grants 20% Move Speed while active",
+      "[Barrier] heals the target for <e>5%</e> of your Max Life every <e>1s</e> and grants <e>20%</e> Move Speed while active.",
   },
   "13P007": {
     name: "Fission Field",
     description:
-      "[Projected Barrier] also applies to 1 additional ally within 10m, but has 25% reduced maximum [Energy] gain and 20% reduced duration",
+      "[Projected Barrier] also applies to <e>1</e> additional ally within <e>10m</e>, but has <e>25% reduced</e> maximum [Energy] gain and <e>20% reduced</e> duration",
   },
   "13P008": {
     name: "Here to Spot You",
     description:
-      "[Projected Barrier] pulls you to the targeted ally and heals you for 20% of Max Life over 3s",
+      "[Projected Barrier] pulls you to the targeted ally and heals you for <e>20%</e> of Max Life over <e>3s</e>.",
   },
   "13P009": {
     name: "Lifelift",
     description:
-      "+50% [Particle Barrier] Size. Increase [Barrier] Health by 50% of Bonus Max Life from items.",
+      "<e>+50%</e> [Particle Barrier] Size. Increase [Barrier] Health by <e>50%</e> of Bonus Max Life from items.",
   },
   "13P010": {
     name: "Major Flex",
     description:
-      "[Barrier] knocks back and deal 25 damage, increased by [Energy], to enemies within 5m every 1s",
+      "[Barrier] knocks back and deal <ap>25</ap> damage, increased by [Energy], to enemies within <e>5m</e> every <e>1s</e>.",
   },
   "13P011": {
     name: "Volskaya Vortex",
     description:
-      "After a [Barrier] is cast, [Particle Cannon]'s next secondary fire spawns a slowing vortex tat deals 80 damage over 2s",
+      "After a [Barrier] is cast, [Particle Cannon]'s next secondary fire spawns a slowing vortex that deals <ap>80</ap> damage over <e>2s</e>.",
   },
   "13P012": {
     name: "Graviton Anomaly",
     description:
-      "25% Ultimate Cost Reduction. [Graviton Surge] base damage is increased to 30 and increased by [Energy], but has 50% reduced duration",
+      "<e>25%</e> Ultimate Cost Reduction. [Graviton Surge] base damage is increased to <e>30</e> and increased by [Energy], but has <e>50% reduced</e> duration",
   },
   "35P001": {
     position: 1,
@@ -843,139 +843,139 @@ export default {
     position: 4,
     name: "Quick Draw",
     description:
-      "After using [Combat Roll], [Peacekeeper]'s next primary fire can auto-aim within 9m while under cooldown",
+      "After using [Combat Roll], [Peacekeeper]'s next primary fire can auto-aim within <e>15m</e> while under cooldown.",
   },
   "14P002": {
     position: 2,
     name: "Dead Man Walking",
     description:
-      "Eliminating an enemy with a critical hit grants 1 Max Ammo for the round, up to 4.",
+      "Eliminating an enemy with a critical hit grants <e>1</e> Max Ammo for the round, up to <e>4</e>.",
   },
   "14P003": {
     position: 3,
     name: "Full House",
     description:
-      "For each Ammo available, [Peacekeeper]'s primary fire gains 1% increased damage, up to 25%",
+      "For each Ammo available, [Peacekeeper]'s primary fire gains <e>1%</e> increased damage, up to <e>25%</e>.",
   },
   "14P004": {
     position: 7,
     name: "Just Roll With It",
     description:
-      "[Combat Roll] gains additional 25% damage reduction and heals 30% of your Life over 3s.",
+      "[Combat Roll] gains additional <e>25%</e> damage reduction and heals <e>30%</e> of your Life over <e>3s</e>.",
   },
   "14P005": {
     position: 1,
     name: "Bullseye",
-    description: "Critical hit reduces [Combat Roll]'s cooldown by 2s",
+    description: "Critical hit reduces [Combat Roll]'s cooldown by <e>2s</e>.",
   },
   "14P006": {
     position: 6,
     name: "Barrel Roll",
     description:
-      "[Combat Roll] takes you 50% further and deals 65 damage to enemies",
+      "[Combat Roll] takes you <e>50%</e> further and deals <ap>65</ap> damage to enemies",
   },
   "14P007": {
     position: 8,
     name: "Flash In The Pan",
     description:
-      "Eliminating an enemy recently damaged by [Flashbang] grants 15% Ultimate Charge",
+      "Eliminating an enemy recently damaged by [Flashbang] grants <e>20%</e> Ultimate Charge.",
   },
   "14P008": {
     position: 5,
     name: "Think Flasht",
-    description: "When you start a [Combat Roll], leave a [Flashbang] behind",
+    description: "When you start a [Combat Roll], leave a [Flashbang] behind. [Flashbang]'s hinder duration is increased by <e>50%</e>.",
   },
   "14P009": {
     position: 9,
     name: "Hot Potato",
     description:
-      "[Flashbang] adds 3 extra Ammo on hit until [Peacekeeper] is reloaded",
+      "[Flashbang] adds <e>3</e> extra Ammo on hit until [Peacekeeper] is reloaded.",
   },
   "14P010": {
     position: 10,
     name: "Easy Rider",
     description:
-      "While using [Deadeye], gain 100 Overhealth and 25% Move Speed",
+      "While using [Deadeye], gain <ap>100</ap> <e>Overhealth</e> and <e>25%</e> Move Speed.",
   },
   "14P011": {
     position: 11,
     name: "Sunrise",
-    description: "Using [Deadeye] slows all visible enemies by 35% for 1.5s",
+    description: "Using [Deadeye] slows all visible enemies by <e>35%</e> for <e>2.5s</e>.",
   },
   "14P012": {
     position: 12,
     name: "Sunset",
-    description: "[Deadeye] eliminations grant 15% Ultimate Charge each",
+    description: "[Deadeye] eliminations grant <e>25%</e> Ultimate Charge each.",
   },
   "29P001": {
     position: 4,
     name: "Reload Therapy",
-    description: "When you reload a shot, heal 10% of your Life",
+    description: "When you reload a shot, restore <e>10%</e> of your Life",
   },
   "29P002": {
     position: 1,
     name: "Head Honcho",
     description:
-      "Each unscoped shot you land increases the damage of the next scoped shot you land by 5%, up to 30%. Resets on reload",
+      "Each <e>unscoped</e> shot you land increases the damage of the next <e>scoped</e> shot you land by <e>5%</e>, up to <e>15%</e>.",
   },
   "29P003": {
     position: 3,
     name: "My Business, My Rules",
     description:
-      "When you deal damage to a Burning enemy with [The Viper], reduce the cooldown of your abilities by 10%",
+      "When you deal damage to a <e>Burning</e> enemy with [The Viper], reduce the cooldown of your abilities by <e>10%</e>.",
   },
   "29P004": {
     position: 2,
     name: "Incendiary Rounds",
     description:
-      "While scoped, hitting the same target without missing deals 30 extra damage",
+      "While <e>scoped</e>, hitting the same target without missing deals <wp>30</wp> extra damage",
   },
   "29P005": {
     position: 7,
     name: "Incendiary Blast",
     description:
-      "[Coach Gun] applies Burning, dealing 100 damage over 5s. If target was burning, deal 75 additional damage instantly.",
+      "[Coach Gun] applies <e>Burning</e>, dealing <ap>100</ap> damage over <e>5s</e>. If target was <e>Burning</e>, deal <ap>75</ap> additional damage instantly.",
   },
   "29P006": {
     position: 5,
     name: "Calamity",
     description:
-      "Using [Coach Gun] reloads 2 Ammo. [The Viper]'s next 2 hits deal 40 additional damage over 3s",
+      "Using [Coach Gun] reloads <e>2</e> Ammo. [The Viper]'s next <e>2</e> hits deal <ap>40</ap> additional damage over <e>3s</e>.",
   },
   "29P007": {
     position: 6,
     name: "Double Barreled",
-    description: "[Coach Gun] gains an additional charge",
+    description: "[Coach Gun] gains an additional charge.",
   },
   "29P008": {
     position: 8,
     name: "Early Detonation",
     description:
-      "Shooting [Dynamite] reloads 5 Ammo and reduces the cooldown of [Dynamite] by 3s",
+      "Shooting [Dynamite] reloads <e>5</e> Ammo and reduces the cooldown of [Dynamite] by <e>3s</e>.",
   },
   "29P009": {
     position: 9,
     name: "Molten Munitions",
     description:
-      "When [Dynamite] explodes on the ground, it leaves lava that Burns enemies for 80 every 1s",
+      "When [Dynamite] explodes on the ground, it leaves lava that <e>Burns</e> enemies for <ap>80</ap> every <e>1s</e>.",
   },
   "29P010": {
     position: 10,
     name: "Out with a Bang",
     description:
-      "When [Dynamite] explodes, it spawns 3 sticky explosives that deal 30% reduced damage",
+      "When [Dynamite] explodes, it spawns <e>3</e> sticky explosives that deal <e>30% reduced</e> damage.",
   },
   "29P011": {
     position: 12,
     name: "Partners in Crime",
     description:
-      "You are healed for 100% of [B.O.B.]'s damage dealt and [B.O.B.] is healed for 100% of your damage dealt",
+      "You are healed for <e>100%</e> of [B.O.B.]'s damage dealt and [B.O.B.] is healed for <e>100%</e> of your damage dealt.",
   },
   "29P012": {
     position: 11,
     name: "B.O.B. Jr.",
     description:
-      "[B.O.B.] costs 50% less Ultimate Charge but has reduced Life, 20% reduced Attack Speed, and is significantly smaller",
+      "[B.O.B.] costs <e>50%</e> less Ultimate Charge but has reduced Life, <e>20% reduced</e> Attack Speed, and is significantly smaller.",
   },
   "41P001": {
     position: 1,
@@ -1193,48 +1193,48 @@ export default {
     position: 2,
     name: "Seekerpoint",
     description:
-      "When [Take Aim] bolt sticks an enemy, automatically fire 3 additional crossbow shots at them that deal 66% reduced damage.",
+      "When [Take Aim] bolt sticks an enemy, automatically fire <e>3</e> additional crossbow shots at them that deal <e>66% reduced</e> damage.",
   },
   "43P003": {
     position: 3,
     name: "Seismic Shot",
     description:
-      "[Take Aim] explosion radius is increased by 33%. Double this if the bolt is stuck to a target.",
+      "[Take Aim] explosion radius is increased by <e>33%</e>. Double this if the bolt is stuck to a target.",
   },
   "43P004": {
     position: 4,
     name: "Thread the needle",
     description:
-      "[Take Aim] bolts pierce enemies. Additional explosions deal 66% reduced damage.",
+      "[Take Aim] bolts pierce enemies. Additional explosions deal <e>66%</e> reduced damage.",
   },
   "43P005": {
     position: 5,
     name: "Deep Pockets",
-    description: "When you use an ability, restore 25% of your Max Ammo.",
+    description: "When you use an ability, restore <e>25%</e> of your Max Ammo.",
   },
   "43P006": {
     position: 6,
     name: "Forager",
     description:
-      "For 2s after using [Quick Dash], [Revdraw Crossbow] hits heal you for 4% of your Max Life.",
+      "For <e>2s</e> after using [Quick Dash], [Revdraw Crossbow] hits heal you for <e>4%</e> of your Max Life.",
   },
   "43P007": {
     position: 7,
     name: "Peak Performance",
     description:
-      "While firing [Revdraw Crowbow], your fall speed is decreased by 80%.",
+      "While firing [Revdraw Crowbow], your fall speed is decreased by <e>80%</e>.",
   },
   "43P008": {
     position: 8,
     name: "Redux",
     description:
-      "[Revdraw Crossbow] hits against targets stuck by a [Take Aim] bolt or [Bola Shot] reduce the cooldown of your abilities by 5% and refunds 1 ammo.",
+      "[Revdraw Crossbow] hits against targets stuck by a [Take Aim] bolt or [Bola Shot] reduce the cooldown of your abilities by <e>5%</e> and refunds <e>1</e> ammo.",
   },
   "43P009": {
     position: 9,
     name: "Volley à deux",
     description:
-      "Every fifth [Revdraw Crossbow] shot fires an additional 2 bolts in a spread that deal 33% reduced damage.",
+      "Every <e>fifth</e> [Revdraw Crossbow] shot fires an additional <e>2</e> bolts in a spread that deal <e>33% reduced</e> damage.",
   },
   "43P010": {
     position: 10,
@@ -1246,13 +1246,13 @@ export default {
     position: 11,
     name: "So cooked",
     description:
-      "[Bola Shot]'s damaging zone deals 30% more damage and lingers for <e>3s</e>. [Bola Shot] eliminations count towards [Bounty Hunting].",
+      "[Bola Shot]'s damaging zone deals <e>30%</e> more damage and lingers for <e>3s</e>. [Bola Shot] eliminations count towards [Bounty Hunting].",
   },
   "43P012": {
     position: 12,
     name: "Mighty Gust",
     description:
-      "[Updraft] launches a wind blast towards your crosshair, knocking back enemies and dealing 40 damage.",
+      "[Updraft] launches a wind blast towards your crosshair, knocking back enemies and dealing <ap>40</ap> damage.",
   },
   "10P001": {
     position: 1,
