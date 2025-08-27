@@ -1258,60 +1258,60 @@ export default {
     position: 1,
     name: "Flying Kick",
     description:
-      "While airborne, [Quick Melee] becomes a dash kick that stuns if it knocks an enemy back into a wall. (5s cooldown).",
+      "While airborne, [Quick Melee] becomes a dash kick that stuns if it knocks an enemy back into a wall and deals <wp>40</wp> damage. <e>(5s Cooldown)</e>",
   },
   "10P002": {
     position: 2,
     name: "It's Orbin' Time",
     description:
-      "[Orb of Destruction]'s secondary fire can charge up to 3 additional orbs.",
+      "[Orb of Destruction]'s secondary fire can charge up to <e>3</e> additional orbs.",
   },
   "10P003": {
     position: 3,
     name: "Seeking Salvation",
     description:
-      "[Orb of Destruction]'s secondary fire projectiles home when aimed at a target below 35% Life.",
+      "[Orb of Destruction]'s secondary fire projectiles home when aimed at a target below <e>35%</e> Life.",
   },
   "10P004": {
     position: 4,
     name: "Dual Harmony",
-    description: "Gain a 2nd [Harmony Orb] but they both heal 40% less.",
+    description: "Gain a <e>2nd</e> [Harmony Orb] but they both heal <e>40% less</e>.",
   },
   "10P005": {
     position: 5,
     name: "Enlightenment",
     description:
-      "Allies affected by [Harmony Orb] are healed for 35% of the damage you deal.",
+      "Allies affected by [Harmony Orb] are healed for <e>35%</e> of the damage you deal.",
   },
   "10P006": {
     position: 6,
     name: "Gotta Have Faith",
     description:
-      "[Harmony Orb] targets can be out of your line of sight for 10s longer before [Harmony Orb] returns to you.",
+      "[Harmony Orb] targets can be out of your line of sight for <e>10s</e> longer before [Harmony Orb] returns to you.",
   },
   "10P007": {
     position: 7,
     name: "Inner Peace",
     description:
-      "Gain a [Harmony Orb] that is always attached to you. It heals for 75% less.",
+      "Gain a [Harmony Orb] that is always attached to you. It heals for <e>75% less</e>.",
   },
   "10P008": {
     position: 8,
     name: "Discord Fever",
     description:
-      "When [Discord Orb] is applied to a target, they take 50 damage over 5s.",
+      "When [Discord Orb] is applied to a target, they take <ap>50</ap> damage over <e>5s</e>.",
   },
   "10P009": {
     position: 9,
     name: "Discord Inferno",
     description:
-      "When you critically hit a target affected by your [Discord Orb], the [Orb of Destruction] explodes, dealing 50 damage.",
+      "When you critically hit a target affected by your [Discord Orb], the [Orb of Destruction] explodes, dealing <ap>50</ap> damage.",
   },
   "10P010": {
     position: 10,
     name: "Instant Karma",
     description:
-      "When a target of your [Discord Orb] damages you, restore 30% of that damage over 2s.",
+      "When a target of your [Discord Orb] damages you, restore <e>30%</e> of that damage over <e>2s</e>.",
   },
   "10P011": {
     position: 11,
@@ -1323,7 +1323,7 @@ export default {
     position: 12,
     name: "Soul Control",
     description:
-      "[Transcendence] can be canceled early, saving up to 75% of your Ultimate Charge.",
+      "[Transcendence] can be canceled early, saving up to <e>75%</e> of your Ultimate Charge.",
   },
 
   "18P001": {
