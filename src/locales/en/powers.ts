@@ -75,70 +75,70 @@ export default {
     position: 3,
     name: "Revolving Ruin",
     description:
-      "Close-range (7m) [Hellfire Shotgun] hits grant 4% Attack Speed for 1s, stacking up to 10 times",
+      "Close-range (7m) [Hellfire Shotgun] hits grant <e>4%</e> Attack Speed for <e>1s</e>, stacking up to <e>10 times</e>.",
   },
   "2P002": {
     position: 5,
     name: "Shrouded Shrapnel",
     description:
-      "Using [Wraith Form] increases the number of pellets per shot in your next magazine by 25% and its spread by 50%",
+      "Using [Wraith Form] increases the number of pellets per shot in your next magazine by <e>25%</e> and its spread by <e>50%</e>.",
   },
   "2P003": {
     position: 8,
     name: "Death Step",
     description:
-      "After using [Shadow Step], cast [Death Blossom] for 1.5s with 50% reduced damage",
+      "After using [Shadow Step], cast [Death Blossom] for <e>1.5s</e> with <e>50% reduced</e> damage",
   },
   "2P004": {
     position: 10,
     name: "Strangle Step",
-    description: "+30% [Shadow Step] Cast Speed. After using [Shadow Step], double your Lifesteal for 3s",
+    description: "<e>+30%</e> [Shadow Step] Cast Speed. After using [Shadow Step], <e>double</e> your Lifesteal for <e>3s</e>.",
   },
   "2P005": {
     position: 6,
     name: "Spirited To Slay",
-    description: "Eliminations reset your cooldowns",
+    description: "Eliminations reduce the cooldown of [Wraith Form] by <e>100%</e> and [Shadow Step] by <e>100%</e>.",
   },
   "2P006": {
     position: 1,
     name: "Backstabber",
     description:
-      "After using an ability, your next shot deals 50% additional damage over 3s to enemies struck from behind",
+      "After using an ability, your next shot deals <e>50%</e> additional damage over <e>3s</e> to enemies struck from behind.",
   },
   "2P007": {
     position: 12,
     name: "Wraith Renewal",
     description:
-      "While in [Wraith Form], restore 7% of your Life every 1s. Double this while below 50% Life.",
+      "While in [Wraith Form], restore <e>7%</e> of your Life every <e>1s</e>. <e>Double</e> this while below <e>50%</e> Life.",
   },
   "2P008": {
     position: 11,
     name: "Ghosted",
     description:
-      "While in [Wraith Form], passing through enemies slows their Move Speed and Attack Speed by 30% for 3s",
+      "While in [Wraith Form], passing through enemies slows their Move Speed and Attack Speed by <e>30%</e> for <e>3s</e>.",
   },
   "2P009": {
     position: 9,
     name: "Silent As The Grave",
-    description: "Your footsteps and [Shadow Step] are significantly quieter",
+    description: "Your footsteps and [Shadow Step] are significantly quieter.",
   },
   "2P010": {
     position: 4,
     name: "Shared Siphon",
     description:
-      "[The Reaping] also heals the nearest ally within 10m for 30% of Reaper's damage dealt",
+      "[The Reaping] also heals the nearest ally within <e>10m</e> for <e>30%</e> of Reaper's damage dealt.",
   },
   "2P011": {
     position: 2,
     name: "Harvest Fest",
     description:
-      "[Hellfire Shotgun] hits have a 10% chance to spawn a Soul Globe. When picked up, restore 25% Life, 25% Ammo, and gain 25% Move Speed for 3s",
+      "[Hellfire Shotgun] hits have a <e>10%</e> chance to spawn a <e>Soul Globe</e>. When picked up, restore <e>25%</e> Life, <e>25%</e> Ammo, and gain <e>25%</e> Move Speed for <e>3s</e>.",
   },
   "2P012": {
     position: 7,
     name: "Vampiric Touch",
     description:
-      "Hits with [Quick Melee] mark enemies for 5s. Allies gain 20% Lifesteal against marked enemies",
+      "Hits with [Quick Melee] mark enemies for <e>5s</e>. Allies gain <e>20%</e> Lifesteal against marked enemies.",
   },
   "15P001": {
     position: 2,
