@@ -701,7 +701,7 @@ export default {
     position: 1,
     name: "Foxy Fireworks",
     description:
-      "After reloading, your next <e>3</e> thrown [Kunai] explode on contact, dealing <wp>20</wp> damage to nearby enemies.,
+      "After reloading, your next <e>3</e> thrown [Kunai] explode on contact, dealing <wp>20</wp> damage to nearby enemies.",
   },
   "35P002": {
     position: 2,
