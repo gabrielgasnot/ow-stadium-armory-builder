@@ -359,18 +359,18 @@ export default {
     position: 1,
     name: "Focused Fusion",
     description:
-      "[Fusion Cannon]'s spread is reduced by 50% and damage falloff range is 20m farther",
+      "[Fusion Cannon]'s spread is reduced by <e>50%</e> and damage falloff range is <e>20m</e> farther",
   },
   "19P004": {
     position: 2,
     name: "Legendary Loadout",
     description:
-      "[Micro Missiles] are replaced with 6 Heavy Rockets, which deal <e>325%</e> more explosive damage and have 100% increased radius",
+      "[Micro Missiles] are replaced with <e>6 Heavy Rockets</e>, which deal <e>325%</e> more explosive damage and have <e>100%</e> increased radius",
   },
   "19P007": {
     position: 3,
     name: "Overstocked",
-    description: "Gain 1 extra charge of [Micro Missiles]",
+    description: "Gain <e>1</e> extra charge of [Micro Missiles]",
   },
   "19P010": {
     position: 4,
@@ -382,47 +382,47 @@ export default {
     position: 7,
     name: "Ignition Burst",
     description:
-      "[Boosters] leave a trail of lava that deals 80 damage every 1s",
+      "[Boosters] leave a trail of lava that deals <ap>80</ap> damage every <e>1s</e>.",
   },
   "19P006": {
     position: 8,
     name: "MEKA Punch",
     description:
-      "While using [Boosters], [Quick Melee] deals 50% more damage. [Quick Melee] and [Boosters] eliminations reset the cooldown of [Boosters]",
+      "While using [Boosters], [Quick Melee] has <e>50%</e> more Attack Speed. MEKA Punch elimienations reset the cooldown of [Boosters].",
   },
   "19P003": {
     position: 10,
     name: "Tokki Slam",
     description:
-      "During [Boosters], use crouch to slam the ground, dealing damage equal to <e>30%</e> of your max Armor plus Shield and knocking up enemies hit",
+      "During [Boosters], use crouch to slam the ground, dealing damage equal to <e>25%</e> of your max Armor plus Shield and knocking up enemies hit.",
   },
   "19P005": {
     position: 5,
     name: "Facetanking",
-    description: "[Defense Matrix] heals you for <e>50%</e> of the damage it blocks",
+    description: "[Defense Matrix] heals you for <e>40%</e> of the damage it blocks.",
   },
   "19P002": {
     position: 6,
     name: "Ultrawide Matrix",
     description:
-      "Increase the size of [Defense Matrix] by <e>50%</e> and its duration by <e>25%</e>",
+      "Increase the size of [Defense Matrix] by <e>50%</e> and its duration by <e>25%</e>.",
   },
   "19P011": {
     position: 9,
     name: "Stat Boost",
     description:
-      "During the first 2s of [Boosters], [Defense Matrix] recovers 125% faster",
+      "During the first <e>2s</e> of [Boosters], [Defense Matrix] recovers <e>125%</e> faster.",
   },
   "19P012": {
     position: 12,
     name: "Party Protector",
     description:
-      "When you use [Self-Destruct], allies within [Self-Destruct] radius gains 250 Overhealth for 8s",
+      "When you use [Self-Destruct], allies within [Self-Destruct] radius gains <ap>250</ap> <e>Overhealth</e> for <e>8s</e>.",
   },
   "19P009": {
     position: 11,
     name: "Express Detonation",
-    description: "[Self-Destruct] explosion is triggered 15% faster",
+    description: "[Self-Destruct] explosion is triggered <e>15%</e> faster.",
   },
   "21P001": {
     position: 7,
