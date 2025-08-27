@@ -1327,75 +1327,75 @@ export default {
   },
 
   "18P001": {
-    position: 1,
-    name: "2 Frag 2 Frurious",
+    position: 4,
+    name: "Frags for Days",
     description:
-      "[Frag Launcher] has a 25% chance to shoot an additional projectile that deals 66% reduced damage.",
+      "[Frag Launcher] has a <e>25%</e> chance to shoot an additional projectile that deals <e>66% reduced</e> damage.",
   },
   "18P002": {
-    position: 2,
+    position: 1,
     name: "Bango!",
     description:
-      "[Frag Launcher] Direct Hits without bouncing Burn for 20% additional damage over 2s.",
+      "[Frag Launcher] Direct Hits without bouncing <e>Burn</e> for <e>20%</e> additional damage over <e>2s</e>.",
   },
   "18P003": {
-    position: 3,
+    position: 2,
     name: "Big Bang",
     description:
-      "When a [Frag Launcher] shot bounces, increase its projectile size by 33%.",
+      "When a [Frag Launcher] shot bounces, increase its projectile size by <e>33%</e>.",
   },
   "18P004": {
-    position: 4,
+    position: 3,
     name: "Bingo!",
     description:
-      "[Frag Launcher] Direct Hits without bouncing recude cooldown of abilities by 25%.",
+      "[Frag Launcher] Direct Hits without bouncing reduce cooldown of abilities by <e>25%</e>.",
   },
   "18P005": {
     position: 5,
     name: "Soot Shaker",
     description:
-      "After detonating [Concussion Mine], gain 15% increased Attack Speed for 1.5s and restore 20% Max Ammo.",
+      "After detonating [Concussion Mine], gain <e>15%</e> increased Attack Speed for <e>1.5s</e> and restore <e>20%</e> Max Ammo.",
   },
   "18P006": {
     position: 6,
-    name: "It's a(nother) Trap!",
-    description: "Gain 1 additional charge of [Steel Trap].",
+    name: "Double Trouble",
+    description: "Gain <e>1</e> additional charge of [Steel Trap].",
   },
   "18P007": {
     position: 7,
     name: "Trap II, Esquire",
     description:
-      "After [Concussion Mine] has landed for 0.5s, detonating it will spawn a mini [Steel Trap] that slows instead of immobilizing.",
+      "After [Concussion Mine] has landed for <e>0.5s</e>, detonating it will spawn a mini [Steel Trap] that slows instead of immobilizing.",
   },
   "18P008": {
     position: 8,
     name: "Hop Boom",
     description:
-      "After launching yourself with [Concussion Mine], detonate a [Concussion Mine] wherever you land with 30% reduced effectiveness.",
+      "After launching yourself with [Concussion Mine], detonate a [Concussion Mine] wherever you land with <e>30% reduced</e> effectiveness.",
   },
   "18P009": {
     position: 9,
     name: "Slapnel",
     description:
-      "[Quick Melee] hits explode for up to 100% [Quick Melee] damage, knocking you and targets back (10s cooldown).",
+      "[Quick Melee] hits explode for up to <e>100%</e> [Quick Melee] damage, knocking you and targets back <e>(10s cooldown)</e>.",
   },
   "18P010": {
     position: 10,
     name: "Gachabomb",
     description:
-      "+20% [Total Mayhem] Explosion Radius. [Total Mayhem] creates a random number of additional bombs.",
+      "<e>+20%</e> [Total Mayhem] Explosion Radius. [Total Mayhem] creates a random number of additional bombs.",
   },
   "18P011": {
     position: 11,
     name: "Rainin' Lead",
     description:
-      "After launching yourself, drop 1 [Total Mayhem] bomb with 25% reduced damage every 0.3s while airborne.",
+      "After launching yourself, drop <e>1</e> [Total Mayhem] bomb with <e>25% reduced</e> damage every <e>0.3s</e> while airborne.",
   },
   "18P012": {
     position: 12,
     name: "Rip Roll",
     description:
-      "20% Ultimate Cost Reduction. During your ultimate, enter your [RIP-Tire]. Launch out when it is destroyed or triggered.",
+      "<e>20%</e> Ultimate Cost Reduction. During your ultimate, enter your [RIP-Tire]. Launch out when it is destroyed or triggered.",
   },
 
   "31P001": {
