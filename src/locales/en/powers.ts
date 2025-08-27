@@ -1049,25 +1049,25 @@ export default {
   "20P001": {
     position: 3,
     name: "Permafrost",
-    description: "Gain bonus health multiplier equal to 50% of your Ability Power. While above 30% Ability Power, grow 15% in size.",
+    description: "Gain bonus health multiplier equal to <e>50%</e> of your Ability Power. While above <e>30%</e> Ability Power, grow <e>15%</e> in size.",
   },
   "20P002": {
     position: 4,
     name: "Slowball",
     description:
-      "[Endothermic Blaster]'s secondary fire now shoots a snowball that applies <e>15%</e> slow for <e>1s</e> on hit",
+      "[Endothermic Blaster]'s secondary fire now shoots a snowball that applies <e>15%</e> slow for <e>1s</e> on hit.",
   },
   "20P003": {
     position: 1,
     name: "Extendothermics",
     description:
-      "[Endothermic Blaster]'s primary fire range is increased by 6m",
+      "[Endothermic Blaster]'s primary fire range is increased by <e>6m</e>.",
   },
   "20P004": {
     position: 2,
     name: "Frost Armor",
     description:
-      "Gain Armor equal to 5% of the primary fire damage you deal, up to 100, until the end of the round",
+      "Gain Armor equal to <e>5%</e> of the primary fire damage you deal, up to <e>100</e>, until the end of the round.",
   },
   "20P005": {
     position: 6,
@@ -1079,39 +1079,39 @@ export default {
     position: 7,
     name: "Twice As Ice",
     description:
-      "When you use [Cryo-Freeze], reset the next cooldown of [Ice Wall]",
+      "When you use [Cryo-Freeze], reset the next cooldown of [Ice Wall].",
   },
   "20P007": {
     position: 5,
     name: "Iceberg",
-    description: "[Ice Wall] spawns a mini [Blizzard] that slows enemies",
+    description: "[Ice Wall] spawns a mini [Blizzard] that slows enemies.",
   },
   "20P008": {
     position: 9,
     name: "Cryclone",
-    description: "[Cryo-Freeze] spawns a mini [Blizzard] that slows enemies",
+    description: "[Cryo-Freeze] spawns a mini [Blizzard] that slows enemies.",
   },
   "20P009": {
     position: 8,
     name: "Coulder",
     description:
-      "[Cryo-Freeze] now encases you in a rolling iceball that can knock back enemies and deal 20 damage",
+      "[Cryo-Freeze] now encases you in a rolling iceball that can knock back enemies and deal <ap>20</ap> damage.",
   },
   "20P010": {
     position: 10,
     name: "Frost Nova",
     description:
-      "When [Cryo-Freeze] ends, knock back nearby enemies, dealing 60 damage",
+      "When [Cryo-Freeze] ends, knock back nearby enemies, dealing <ap>60</ap> damage.",
   },
   "20P011": {
     position: 11,
     name: "Blizznado",
-    description: "While within [Blizzard], heal 15% of your Life every 1s",
+    description: "While within [Blizzard], heal <e>15%</e> of your Life every <e>1s</e>.",
   },
   "20P012": {
     position: 12,
     name: "Cold Blaster",
-    description: "[Endothermic Blaster]'s primary fire does 20% increased damage to enemies within [Blizzard].",
+    description: "[Endothermic Blaster]'s primary fire does <e>20%</e> increased damage to enemies within [Blizzard].",
   },
   "16P001": {
     position: 1,
@@ -1397,7 +1397,6 @@ export default {
     description:
       "<e>20%</e> Ultimate Cost Reduction. During your ultimate, enter your [RIP-Tire]. Launch out when it is destroyed or triggered.",
   },
-
   "31P001": {
     position: 1,
     name: "Zero Gravity",
