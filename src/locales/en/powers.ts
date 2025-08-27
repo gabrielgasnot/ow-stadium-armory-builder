@@ -1401,72 +1401,72 @@ export default {
   "31P001": {
     position: 1,
     name: "Zero Gravity",
-    description: "When you use an ability, gain the ability to fly for 2.5s.",
+    description: "When you use an ability, gain the ability to fly for <e>2.5s</e>. While flying, gain <e>10%</e> Damage reduction and increased Movement Speed.",
   },
   "31P002": {
     position: 2,
     name: "Hyperloop",
     description:
-      "[Hyperspheres] direct hits reduce the cooldown of [Accretion] by 0.5s.",
+      "[Hyperspheres] direct hits reduce the cooldown of [Accretion] by <e>0.8s</e>.",
   },
   "31P003": {
     position: 3,
     name: "Trinisphere",
     description:
-      "Your primary fire launches a third [Hypersphere] that deals 50% reduced damage.",
+      "Your primary fire launches a third [Hypersphere] that deals <e>50% reduced</e> damage.",
   },
   "31P004": {
     position: 4,
     name: "Event Horizon",
     description:
-      "Damage absorbed by [Kinetic Grasp] also restores [Experimental Barrier]'s health. Excess is converted to Overhealth.",
+      "Damage absorbed by [Kinetic Grasp] also restores [Experimental Barrier]'s health. Excess is converted to <e>Overhealth</e>.",
   },
   "31P005": {
     position: 5,
     name: "Symphonic Syzygy",
     description:
-      "When [Kinetic Grasp] ends, for every 100 damage absorbed gain 10% Attack Speed for 4s, stacking up to 4 times.",
+      "When [Kinetic Grasp] ends, for every <e>100</e> damage absorbed gain <e>10%</e> Attack Speed for <e>4s</e>, stacking up to <e>4 times</e>.",
   },
   "31P006": {
     position: 6,
     name: "Orbital Barrier",
     description:
-      "Get a mini [Experimental Barrier] that orbits around you. It has 50% reduced health.",
+      "Get a mini [Experimental Barrier] that orbits around you. It has <e>50% reduced</e> health.",
   },
   "31P007": {
     position: 7,
     name: "Philharmonic Fortitude",
     description:
-      "[Experimental Barrier] has 25% increased Max Health. Barrier health regenerates constantly but 50% slower while deployed.",
+      "[Experimental Barrier] has <e>25%</e> increased Max Health. Barrier health regenerates constantly but <e>50%</e> slower while deployed.",
   },
   "31P008": {
     position: 8,
     name: "Mass Driver",
     description:
-      "[Accretion] projectiles that pass through [Experimental Barrier] gain 300% Projectile Speed and deal 20% increased damage.",
+      "[Accretion] projectiles that pass through [Experimental Barrier] gain <e>300%</e> Projectile Speed and deal <e>20%</e> increased damage.",
   },
   "31P009": {
     position: 9,
     name: "Singularity",
     description:
-      "[Accretion] splash damage is increased by 25% and enemies are pulled towards its explosion.",
+      "[Accretion] splash damage is increased by <e>75%</e> and enemies are pulled towards its explosion.",
   },
   "31P010": {
     position: 10,
     name: "Maestro",
     description:
-      "50% Ultimate Cost Reduction. [Gravity Flux] Radius is reduced by 50%.",
+      "<e>50%</e> Ultimate Cost Reduction. [Gravity Flux] Radius is reduced by <e>50%</e>.",
   },
   "31P011": {
     position: 11,
     name: "Apogee Alignment",
     description:
-      "When you use an ability, create 2 [Hyperspheres] that orbit around you. They explode on contact but deal 50% reduced damage.",
+      "When you use an ability, create <e>2</e> [Hyperspheres] that orbit around you. They explode on contact but deal <e>50% reduced</e> damage.",
   },
   "31P012": {
     position: 12,
     name: "Astrophysical",
     description:
-      "[Quick Melee] causes enemies hit to levitate into the air for 1s (10s cooldown).",
+      "[Quick Melee] causes enemies hit to levitate into the air for <e>1s (10s cooldown)</e>.",
   },
 };
