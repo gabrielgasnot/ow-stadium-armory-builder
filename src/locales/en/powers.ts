@@ -1116,72 +1116,72 @@ export default {
   "16P001": {
     position: 1,
     name: "Fast Forward",
-    description: "While above 50% Move Speed, increase damage by 30%",
+    description: "While above <e>50%</e> Move Speed, increase damage by <e>30%</e>.",
   },
   "16P002": {
     position: 2,
     name: "Signature Shift",
     description:
-      "After using an ability, your next [Sonic Amplifier] shot shoots a volley of 6 ammo with 80% increased projectile size",
+      "After using an ability, your next [Sonic Amplifier] shot shoots a volley of <e>6</e> ammo with <e>80%</e> increased projectile size.",
   },
   "16P003": {
     position: 3,
     name: "Sonic Boom",
     description:
-      "[Sonic Amplifier] and [Quick Melee] Damage heals all allies affected by [Crossfade] equal to 30% of damage dealt",
+      "[Sonic Amplifier] and [Quick Melee] Damage heals all allies affected by [Crossfade] equal to <e>30%</e> of damage dealt.",
   },
   "16P004": {
     position: 4,
     name: "Mixtape",
     description:
-      "When switching to [Healing Boost], [Crossfade] heals for 50% of [Crossfade] healing for every 1s [Speed Boost] was active",
+      "When switching to [Healing Boost], [Crossfade] heals for <e>50%</e> of [Crossfade] healing for every <e>1s</e> [Speed Boost] was active.",
   },
   "16P005": {
     position: 5,
     name: "Megaphone",
     description:
-      "+15% [Amp It Up] Duration. While [Amp It Up] is active, [Crossfade] radius is increased by 150%",
+      "<e>+15%</e> [Amp It Up] Duration. While [Amp It Up] is active, [Crossfade] radius is increased by <e>150%</e>.",
   },
   "16P006": {
     position: 6,
     name: "Radio Edit",
     description:
-      "After using [Amp It Up], trigger a [Sound Barrier] with 85% reduced Overhealth",
+      "After using [Amp It Up], trigger a [Sound Barrier] with <e>85% reduced</e> Overhealth.",
   },
   "16P007": {
     position: 7,
     name: "Vivace",
     description:
-      "Every 1s you are [Wallriding], gain 3% Move Speed and 1.5% Attack Speed for 5s, stacking up to 10 times.",
+      "Every <e>1s</e> you are [Wallriding], gain <e>3%</e> Move Speed and <e>1.5%</e> Attack Speed for <e>5s</e>, stacking up to <e>10 times</e>.",
   },
   "16P008": {
     position: 8,
     name: "Wallvibing",
     description:
-      "While [Wallriding] or airborne, gain temporary Overhealth equal to 3% of your life every 1s, up to 30%",
+      "While [Wallriding] or airborne, gain temporary <e>Overhealth</e> equal to <e>3%</e> of your life every <e>1s</e>, up to <e>30%</e>.",
   },
   "16P009": {
     position: 9,
     name: "Crowd Pleaser",
     description:
-      "After using [Soundwave], heal all allies affected by [Crossfade] for 20. This healing is doubled while [Amp It Up] is active.",
+      "After using [Soundwave], heal all allies affected by [Crossfade] for <ap>20</ap>. This healing is doubled while [Amp It Up] is active.",
   },
   "16P010": {
     position: 10,
     name: "Let's Bounce",
     description:
-      "[Soundwave] has 25% increased knockback and deals 25 bonus damage if the target hits a wall",
+      "[Soundwave] has <e>25%</e> increased knockback and deals <ap>25</ap> bonus damage if the target hits a wall.",
   },
   "16P011": {
     position: 11,
     name: "Reverb",
-    description: "Gain 1 extra charge of [Soundwave]",
+    description: "Gain <e>1</e> extra charge of [Soundwave].",
   },
   "16P012": {
     position: 12,
     name: "Beat Drop",
     description:
-      "20% Ultimate Cost Reduction. Landing on an enemy with [Sound Barrier] deals up to 200 damage",
+      "<e>20%</e> Ultimate Cost Reduction. Landing on an enemy with [Sound Barrier] deals up to <ap>250</ap> damage",
   },
   "43P001": {
     position: 1,
