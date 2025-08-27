@@ -701,37 +701,37 @@ export default {
     position: 1,
     name: "Foxy Fireworks",
     description:
-      "After reloading, your next 3 thrown [Kunai] explode on contact, dealing 20 damage to nearby enemies",
+      "After reloading, your next <e>3</e> thrown [Kunai] explode on contact, dealing <wp>20</wp> damage to nearby enemies.,
   },
   "35P002": {
     position: 2,
     name: "Keen Kunai",
     description:
-      "Kunai critical hits decreases active ability cooldowns by 15% and refund 3 ammo",
+      "[Kunai] critical hits decreases active ability cooldowns by <e>15%</e> and refund <e>3</e> ammo.",
   },
   "35P003": {
     position: 3,
     name: "Triple Threat",
     description:
-      "After using [Swift Step], for 4s, your secondary fire throws 2 additional [Kunai] in a spread that deal 50% less damage",
+      "After using [Swift Step], for <e>4s</e>, your secondary fire throws <e>2</e> additional [Kunai] in a spread that deal <e>50% less</e> damage.",
   },
   "35P004": {
     position: 4,
     name: "Leaf On The Wind",
     description:
-      "[Healing Ofuda] bounces to another ally up to 2 times, healing for 30% of the normal amount",
+      "[Healing Ofuda] bounces to another ally up to <e>2 times</e>, healing for <e>30%</e> of the normal amount.",
   },
   "35P005": {
     position: 5,
     name: "Self-Care",
     description:
-      "When you use [Healing Ofuda], each ofuda thrown heals you for 3% of your max Life.",
+      "When you use [Healing Ofuda], each ofuda thrown heals you for <e>3%</e> of your max Life.",
   },
   "35P006": {
     position: 6,
     name: "Supported Shooting",
     description:
-      "When [Healing Ofuda] heals allies, grant them 20% increased Attack Speed for 3s",
+      "When [Healing Ofuda] heals allies, grant them <e>20%</e> increased Attack Speed for <e>3s</e>.",
   },
   "35P007": {
     position: 8,
@@ -742,30 +742,30 @@ export default {
     position: 7,
     name: "Clone Conjuration",
     description:
-      "After using [Swift Step], create a clone of yourself that lasts for <e>4s</e>. Your clone's damage and healing are reduced by <e>65%</e>",
+      "After using [Swift Step], create a clone of yourself that lasts for <e>4s</e>. Clone has <e>65% less</e> damage and healing.",
   },
   "35P009": {
     position: 10,
     name: "Two-Zu",
-    description: "[Protection Suzu] gains an additional charge",
+    description: "[Protection Suzu] gains an additional charge.",
   },
   "35P010": {
     position: 9,
     name: "Cleansing Charge",
     description:
-      "When you cleanse negative effects with [Protection Suzu], gain 5% Ultimate Charge for each hero cleansed",
+      "When you cleanse negative effects with [Protection Suzu], gain <e>5%</e> Ultimate Charge for each hero cleansed.",
   },
   "35P011": {
     position: 11,
     name: "Crossing Guard",
     description:
-      "[Kitsune Rush] now also reduces enemies Move Speed by 50% for 2s",
+      "[Kitsune Rush] now also reduces enemies Move Speed by <e>50%</e> for <e>2s</e>.",
   },
   "35P012": {
     position: 12,
     name: "Spirit Veil",
     description:
-      "Using [Kitsune Rush] cleanses Kiriko of negative effects and make her invulnerable for 4s",
+      "Using [Kitsune Rush] cleanses Kiriko of negative effects, and makes her <e>Invulnerable</e> for <e>4s</e>.",
   },
   "22P001": {
     position: 1,
