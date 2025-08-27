@@ -11,7 +11,9 @@ function HighlightText({
   const theme = useTheme();
   const highlightColor = color || theme.palette.custom.orange;
   const parts = text?.split(/(\[.*?\]|<e>.*?<\/e>)/g); // Split on [brackets] or <e>...</e>, keeping them
-
+  const apParts = text?.split(/(<ap>.*?<\/ap>)/g); // Split <ap>...</ap>, keeping them
+  const wpParts = text?.split(/(<wp>.*?<\/wp>)/g); // Split <wp>...</wp>, keeping them
+  
   return (
     parts &&
     parts.length > 0 && (
