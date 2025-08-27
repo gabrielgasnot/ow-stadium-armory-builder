@@ -3,73 +3,73 @@ export default {
     position: 12,
     name: "Smashing!",
     description:
-      "When you deal damage with [Rocket Hammer], gain 1% Move Speed and 3% Weapon Lifesteal for 2s, stacking up to 10 times.",
+      "When you deal damage with [Rocket Hammer], gain <e>1%</e> Move Speed and <e>3%</e> Weapon Lifesteal for <e>2s</e>, stacking up to <e>10 times</e>.",
   },
   "5P012": {
     position: 11,
     name: "Feeling The Burn",
     description:
-      "Every 3rd [Rocket Hammer] swing applies Burn, dealing 30% [Rocket Hammer] damage over 2s.",
+      "Every 3rd [Rocket Hammer] swing applies <e>Burn</e>, dealing <e>30%</e> [Rocket Hammer] damage over <e>2s</e>.",
   },
   "5P010": {
     position: 3,
     name: "Infusion Generator",
     description:
-      "Increase [Barrier Field] Health by 250% of your Bonus Max Life.",
+      "Increase [Barrier Field] Health by <e>250%</e> of your Bonus Max Life.",
   },
   "5P007": {
     position: 4,
     name: "To Me, My Friends!",
     description:
-      "While [Barrier Field] is deployed, allies within 5m are healed equal to 5% of your max Life every 1s.",
+      "While [Barrier Field] is acive, allies within <e>5m</e> are healed equal to <e>5%</e> of your max Life every <e>1s</e>.",
   },
   "5P001": {
     position: 1,
     name: "Amplification Barrier",
     description:
-      "Friendly projectiles that pass through your [Barrier Field] deal 15% more damage.",
+      "Friendly projectiles that pass through your [Barrier Field] deal <e>15%</e> more damage.",
   },
   "5P004": {
     position: 2,
     name: "Barrier Reconstruction",
     description:
-      "When you deal damage with [Rocket Hammer] or [Fire Strike], restore health to [Barrier Field] equal to 15% of its max Health.",
+      "When you deal damage with [Rocket Hammer] or [Fire Strike], restore health to [Barrier Field] equal to <e>15%</e> of [Barrier Field] Health.",
   },
   "5P002": {
     position: 6,
     name: "Vanguard",
     description:
-      "[Charge] grants nearby allies Overhealth equal to 10% of your max Life and 20% Move Speed for 3s.",
+      "[Charge] grants nearby allies <e>Overhealth</e> equal to <e>10%</e> of your max Life and <e>20%</e> Move Speed for <e>3s</e>.",
   },
   "5P005": {
     position: 5,
     name: "Shield Stampede",
     description:
-      "+50% [Charge] Knockback Power. During [Charge], automatically deploy [Barrier Field].",
+      "<e>+50%</e> [Charge] Knockback Power. During [Charge], automatically deploy [Barrier Field].",
   },
   "5P008": {
     position: 7,
     name: "Vroom Boom Boom",
     description:
-      "During [Charge], colliding with a wall triggers an explosion that deals 30% of [Charge]'s pin damage.",
+      "During [Charge], colliding with a wall triggers an explosion that deals <e>30%</e> of [Charge]'s pin damage.",
   },
   "5P006": {
     position: 9,
     name: "Impact Burst",
     description:
-      "[Fire Strike] triggers an explosion the first time it hits an enemy, dealing 30% [Fire Strike] damage in a 3m radius.",
+      "[Fire Strike] triggers an explosion the first time it hits an enemy, dealing <e>30%</e> [Fire Strike] damage to other enemies in a <e>3m</e> radius.",
   },
   "5P003": {
     position: 10,
     name: "Magma Strike",
     description:
-      "Every second [Fire Strike] leaves a trail of lava that Burns enemies for 50% of [Fire Strike] damage.",
+      "Every second [Fire Strike] leaves a trail of lava that <e>Burns</e> enemies for <e>50%</e> of [Fire Strike] damage.",
   },
   "5P011": {
     position: 8,
     name: "Blazing Blitz",
     description:
-      "After using [Earthshatter], every [Rocket Hammer] swing launches a [Fire Strike] for 4s.",
+      "After using [Earthshatter], every [Rocket Hammer] swing launches a [Fire Strike] for <e>4s</e>.",
   },
   "2P001": {
     position: 3,
