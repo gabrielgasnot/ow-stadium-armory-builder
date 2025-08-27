@@ -571,71 +571,71 @@ export default {
     position: 1,
     name: "Thrill of Battle",
     description:
-      "[Adrenalin Rush] also heals allies within 12m for 50% of the amount it heals you",
+      "[Adrenalin Rush] also heals allies within <e>12m</e> for <e>100%</e> of the amount it heals you.",
   },
   "34P004": {
     position: 2,
     name: "Royal Bullets",
     description:
-      "[Scattergun] critical hits against targets within 15m applies [Wound] for 50 damage over 3s",
+      "[Scattergun] critical hit applies [Wound] for <wp>50</wp> damage over <e>2s</e>.",
   },
   "34P007": {
     position: 3,
     name: "Twist the Knife",
     description:
-      "[Scattergun] critical hits extend the duration of all [Wounds] on the target by 1s",
+      "[Scattergun] critical hits extend the duration of all [Wounds] on the target by <e>2s</e>.",
   },
   "34P002": {
     position: 4,
     name: "Blade Parade",
     description:
-      "Holding [Jagged Blade] charges it, increasing its damage by up to 100% and causing it to knockback",
+      "Holding [Jagged Blade] charges it, increasing its damage by up to <e>100%</e> and causing it to knockback.",
   },
   "34P010": {
     position: 5,
     name: "Cut'em, Gracie!",
     description:
-      "Each enemy hit by [Jagged Blade] reduces its cooldown by 2s",
+      "Each enemy hit by [Jagged Blade] reduces its cooldown by 2s and are slowed by <e>35%</e> for <e>1s</e>.",
   },
   "34P005": {
     position: 6,
     name: "Let's go Win",
-    description: "Eliminations reduce the cooldown of [Commanding Shout] by 50%",
+    description: "Elimination reduces the cooldown of [Commanding Shout] by <e>50%</e>.",
   },
   "34P008": {
     position: 7,
     name: "Merciless Magnetism",
     description:
-      "Using [Commanding Shout] causes your [Jagged Blade] to home to a target within 15m",
+      "Using [Commanding Shout] causes your [Jagged Blade] to home to a target within <e>25m</e>.",
   },
   "34P011": {
     position: 8,
     name: "Reckoner's Roar",
     description:
-      "Using [Commanding Shout] [Wounds] enemies within 10m for 30 damage over 3s",
+      "Using [Commanding Shout] [Wounds] enemies within <e>10m</e> for <ap>30</ap> damage over <e>3s</e>.",
   },
   "34P006": {
     position: 9,
     name: "Chop chop",
     description:
-      "[Carnage] gains an additional charge but its cooldown reduction per hit is reduced to 1s",
+      "[Carnage] gains an additional charge but its cooldown reduction per hit is reduced to <e>1s</e>.",
   },
   "34P003": {
     position: 10,
     name: "Soaring Stone",
     description:
-      "[Carnage] becomes a leaping strike if you jump during its cast time",
+      "[Carnage] becomes a leaping strike if you jump during its cast time.",
   },
   "34P009": {
     position: 11,
     name: "Bloodcrazed",
     description:
-      "[Rampage] and [Carnage] gives 15% of Max Life as Overhealth per hit",
+      "[Rampage] and [Carnage] gives <e>15%</e> of Max Life as Overhealth per hit, up to <e>45%</e>.",
   },
   "34P012": {
     position: 12,
     name: "Bow down",
-    description: "[Rampage] now also knocks down enemy hit for 1.5s",
+    description: "[Rampage] now also knocks down enemy hit for <e>1.5s</e>.",
   },
   "13P001": {
     name: "No Limits",
