@@ -3,73 +3,73 @@ export default {
     position: 11,
     name: "Renversant!",
     description:
-      "Lorsque vous infligez des dégâts avec [Marteau à réaction], vous gagnez 1% de vitesse de déplacement et votre arme gagne 3% de vol de vie pendant 2 s. Cet effet peut se cumuler 10 fois.",
+      "Lorsque vous infligez des dégâts avec [Marteau à réaction], vous gagnez <e>1 %</e> de vitesse de déplacement et votre arme gagne <e>3 %</e> de vol de vie pendant <e>2 s</e>. Cet effet peut se cumuler <e>10 fois</e>.",
   },
   "5P012": {
     position: 12,
     name: "Tout Feu Tout Flamme",
     description:
-      "Tous les trois coups, votre [Marteau à réaction] cause des brûlures qui infligent 30% de dégâts de [Marteau à réaction] en 2 s.",
+      "Tous les trois coups, votre [Marteau à réaction] cause des <e>brûlures</e> qui infligent <e>30 % de dégâts de</e> [Marteau à réaction] en <e>2 s</e>.",
   },
   "5P010": {
-    position: 4,
+    position: 2,
     name: "Générateur d'Injection",
     description:
-      "Les points de vie de votre [écran] augmentent à hauteur de 250% de vos points de vie maximum supplémentaires.",
+      "Les points de vie de votre [écran] augmentent à hauteur de <e>250 %</e> de vos points de vie maximum supplémentaires.",
   },
   "5P007": {
-    position: 3,
+    position: 4,
     name: "Rejoignez-moi, Camarades !",
     description:
-      "Tant que votre [Écran] est actif, les personnages alliés à moins de 5 m sont soignés à hauteur de 4% de vos points de vie maximum chaque seconde.",
+      "Tant que votre [Écran] est actif, les personnages alliés à moins de <e>5 m</e> sont soignés à hauteur de <e>5 %</e> de vos points de vie maximum <e>chaque seconde</e>.",
   },
   "5P001": {
     position: 1,
     name: "Écran Amplificateur",
     description:
-      "Les projectiles alliés qui traversent votre [Écran] infligent 15% points de dégâts supplémentaires.",
+      "Les projectiles alliés qui traversent votre [Écran] infligent <e>15 %</e> points de dégâts supplémentaires.",
   },
   "5P004": {
-    position: 2,
+    position: 3,
     name: "Reconstruction d'Écran",
     description:
-      "Lorsque vous infligez des dégâts avec votre [Marteau à réaction] ou [Frappe de feu], [Écran] récupère 15% de ses points de vie maximum.",
+      "Lorsque vous infligez des dégâts avec votre [Marteau à réaction] ou [Frappe de feu], [Écran] récupère <e>15 %</e> de ses points de vie maximum.",
   },
   "5P002": {
     position: 5,
     name: "Avant-Garde",
     description:
-      "[Charge] octroie aux personnages alliés à proximité un surplus de points de vie égal à 10% de vos points de vie maximum ainsi que 20% de vitesse de déplacement pendant 3 s.",
+      "[Charge] octroie aux personnages alliés à proximité un <e>surplus de points de vie</e> égal à <e>10 %</e> de vos points de vie maximum ainsi que <e>20 %</e> de vitesse de déplacement pendant <e>3 s</e>.",
   },
   "5P005": {
     position: 6,
     name: "Ruée Protectrice",
     description:
-      "La puissance de recul de [Charge] est augmentée de 50%. Vous déployez automatiquement [Écran] pendant votre [Charge].",
+      "La puissance de recul de [Charge] est augmentée de <e>50 %</e>. Vous déployez automatiquement [Écran] pendant votre [Charge].",
   },
   "5P008": {
     position: 7,
     name: "Vroum Boum Boum",
     description:
-      "Si vous heurtez un mur pendant [Charge], vous provoquez une explosion qui inflige 30% des dégâts qu'inflige normalement [Charge]lorsque vous écrasez un personnage adverse.",
+      "Si vous heurtez un mur pendant [Charge], vous provoquez une explosion qui inflige <e>30 %</e> des dégâts qu'inflige normalement [Charge] lorsque vous écrasez un personnage adverse.",
   },
   "5P006": {
     position: 10,
     name: "Salve Explosive",
     description:
-      "[Frappe de feu] déclenche une explosion lorsqu'elle touche une cible pour la première fois, ce qui inflige 30% de ses dégâts dans un rayon de 3 m.",
+      "[Frappe de feu] déclenche une explosion lorsqu'elle touche une cible pour la première fois, ce qui inflige <e>30 %</e> de ses dégâts aux autres cibles dans un rayon de <e>3 m</e>.",
   },
   "5P003": {
     position: 9,
     name: "Frappe du Magma",
     description:
-      "Si vous utilisez [Frappe de feu] deux fois en 2 s, votre deuxième frappe laisse au sol une traînée de lave qui brûle les adversaires à hauteur de 50% des points de dégâts de [Frappe de feu].",
+      "Une [Frappe de feu] sur deux laisse au sol une traînée de lave qui <e>brûle</e> les adversaires à hauteur de <e>50 %</e> des points de dégâts de [Frappe de feu].",
   },
   "5P011": {
     position: 8,
     name: "Assaut Flamboyant",
     description:
-      "Pendant 4 s après l'utilisation de [Choc Sismique], chaque voup de votre [Marteau à réaction] s'accompagne d'une [Frappe de feu].",
+      "Pendant <e>4 s</e> après l'utilisation de [Choc Sismique], chaque voup de votre [Marteau à réaction] s'accompagne d'une [Frappe de feu].",
   },
   "2P001": {
     position: 4,
