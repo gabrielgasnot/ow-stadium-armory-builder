@@ -1148,72 +1148,72 @@ export default {
     position: 1,
     name: "Avance Rapide",
     description:
-      "Au-delà de 50% de vitesse de déplacement, vos dégâts augmentent de 30%.",
+      "Au-delà de <e>50 %</e> de vitesse de déplacement, vos dégâts augmentent de <e>30 %</e>.",
   },
   "16P002": {
     position: 3,
     name: "Effet Signature",
     description:
-      "Après l'utilisation d'une capacité, le prochain tir de votre [Ampli] projette une salve de 6 munitions et la taille des projectile est augmentée de 80%.",
+      "Après l'utilisation d'une capacité, le prochain tir de votre [Ampli] projette une salve de <e>6</e> munitions et la taille des projectile est augmentée de <e>80 %</e>.",
   },
   "16P003": {
     position: 2,
     name: "Boum Supersonique",
     description:
-      "Les personnages alliés affectés par [Crossfade] reçoivent des soins égaux à 30% des dégâts infligés par [Ampli] et vos [Coups en mêlée].",
+      "Les personnages alliés affectés par [Crossfade] reçoivent des soins égaux à <e>30 %</e> des dégâts infligés par [Ampli] et vos [Coups en mêlée].",
   },
   "16P004": {
     position: 4,
     name: "Mixtape",
     description:
-      "Lorsque vous passez au [Beat de soins], [Crossfade] prodigue 50% de ses soins pour chaque seconde d'utilisation du [Beat de vitesse].",
+      "Lorsque vous passez au [Beat de soins], [Crossfade] prodigue <e>50 %</e> de ses soins pour chaque seconde d'utilisation du [Beat de vitesse].",
   },
   "16P005": {
     position: 5,
     name: "Megaphone",
     description:
-      "Durée de [Volume max.] augmenté de 15%. Tant que [Volume max.] est actif, le rayon de [Crossfade] est augmenté de 150%.",
+      "Durée de [Volume max.] augmenté de <e>15 %</e>. Tant que [Volume max.] est actif, le rayon de [Crossfade] est augmenté de <e>150 %</e>.",
   },
   "16P006": {
     position: 6,
     name: "Radio Edit",
     description:
-      "Après avoir utilisé [Volume max.], vous générez un [Mur de son] qui octroie un surplus de points de vie réduit de 85%.",
+      "Après avoir utilisé [Volume max.], vous générez un [Mur de son] qui octroie un surplus de points de vie <e>réduit de 85%</e>.",
   },
   "16P007": {
     position: 7,
     name: "Vivace",
     description:
-      "Toutes les 1 s de [Wall ride], vous obtenez 3 % de vitesse de déplacement et 1,5 % de vitesse d'attaque pendant 5 s. Cet effet peut se cumuler jusqu'à 10 fois.",
+      "Toutes les <e>1 s</e> de [Wall ride], vous obtenez <e>3 %</e> de vitesse de déplacement et <e>1,5 %</e> de vitesse d'attaque pendant <e>5 s</e>. Cet effet peut se cumuler jusqu'à <e>10 fois</e>.",
   },
   "16P008": {
     position: 8,
     name: "Wallvibe",
     description:
-      "Lorsque vous utilisez [Wall ride] ou que vous êtes en l'air, vous gagnez un surplus de points de vie égal à 3% de vos points de vie chaque seconde, jusqu'à un maximum de 30%",
+      "Lorsque vous utilisez [Wall ride] ou que vous êtes en l'air, vous gagnez un <e>surplus de points de vie</e> égal à <e>3 %</e> de vos points de vie chaque <e>seconde</e>, jusqu'à un maximum de <e>30 %</e>.",
   },
   "16P009": {
     position: 10,
     name: "Ovation",
     description:
-      "Après avoir utilisé [Onde sonore], vous soignez tous les personnages alliés affectés par [Crossfade] à hauteur de 20 points. Ce montant est double lorsque [Volume Max.] est actif.",
+      "Après avoir utilisé [Onde sonore], vous soignez tous les personnages alliés affectés par [Crossfade] à hauteur de <ap>20</ap> points. Ce montant est double lorsque [Volume Max.] est actif.",
   },
   "16P010": {
     position: 9,
     name: "On se bouge",
     description:
-      "[Onde sonore] voit son effet de recul augmenté de 25% et inflige 25 points de dégâts supplémentaires si la cible heurte un mur.",
+      "[Onde sonore] voit son effet de recul augmenté de <e>25 %</e> et inflige <ap>25</ap> points de dégâts supplémentaires si la cible heurte un mur.",
   },
   "16P011": {
     position: 11,
     name: "Réverbération",
-    description: "Vous obtenez 1 charge supplémentaire d'[Onde sonore]",
+    description: "Vous obtenez <e>1</e> charge supplémentaire d'[Onde sonore]",
   },
   "16P012": {
     position: 12,
     name: "Chute de Rythme",
     description:
-      "Le coût de votre capacité ultime est réduit de 20%. Atterir sur une cible adverse avec [Mur de son] inflige jusqu'à 200 points de dégâts.",
+      "Le coût de votre capacité ultime est réduit de <e>20 %</e>. Atterir sur une cible adverse avec [Mur de son] inflige jusqu'à <ap>250</ap> points de dégâts.",
   },
   "43P001": {
     position: 1,
