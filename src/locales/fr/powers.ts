@@ -647,73 +647,73 @@ export default {
     position: 3,
     name: "Sans Limites",
     description:
-      "Votre maximum d'[Énergie] passe à 125. Au-delà de 100 points, l'[Énergie] se dissipe 150% plus vite.",
+      "Votre maximum d'[Énergie] passe à <e>125</e>. Au-delà de <e>100 points</e>, l'[Énergie] se dissipe <e>150 %</e> plus vite.",
   },
   "13P002": {
     position: 1,
     name: "Accélérateur de Particules",
     description:
-      "La vitesse d'attaque du tir secondaire de [Canon à particules] augmente de 15%. Après l'utilisation d'une capacité, ce bonus est multiplié par quatre pendant 5 s.",
+      "La vitesse d'attaque du tir secondaire de [Canon à particules] augmente de <e>15 %</e>. Après l'utilisation d'une capacité, ce bonus est <e>multiplié par quatre</e> pendant <e>5 s</e>.",
   },
   "13P003": {
     position: 2,
     name: "Rayon Perforant",
     description:
-      "Au-delà de 80 unités d'[Énergie], le tir principal de votre [Canon à particules] transperce les adversaires.",
+      "Au-delà de <e>80 unités d'</e>[Énergie], le tir principal de votre [Canon à particules] transperce les adversaires.",
   },
   "13P004": {
     position: 4,
     name: "Pré-entraînement",
     description:
-      "Vous gagnez un effet de vol de vie avec de l'arme et vol de vie des capacités à hauteur de 15% de votre [Énergie].",
+      "Vous gagnez un effet de vol de vie avec votre arme et une capacité de vol de vie à hauteur de <e>15 %</e> de votre [Énergie].",
   },
   "13P005": {
     position: 5,
     name: "Avantages de l'Écran",
     description:
-      "Quand vos [Écrans] expirent, ils octroient à leur cible un surplus de points de vie égal à 100% de leurs points de vie restants pendant 3 s.",
+      "Quand vos [Écrans] expirent, ils octroient à leur cible un <e>surplus de points de vie</e> égal à <e>100 %</e> de leurs points de vie restants pendant <e>2 s</e>.",
   },
   "13P006": {
     position: 7,
     name: "Bouclier de Contention",
     description:
-      "Quand votre [Écran] est actif, il rend 5% de vos points de vie maximum par seconde et augmente également votre vitesse de déplacement de 20%.",
+      "Quand votre [Écran] est actif, il rend <e>5 %</e> de vos points de vie maximum àa la cible toutes les <e>1 s</e> et augmente la vitesse de déplacement de <e>20 %</e>.",
   },
   "13P007": {
     position: 8,
     name: "Champ de Fission",
     description:
-      "[Écran généré] s'applique également à 1 personnage allié supplémentaire à moins de 10 m, mais son gain d'[Énergie] maximum est réduit de 25% et sa durée est réduite de 20%.",
+      "[Écran généré] s'applique également à <e>1</e> personnage allié supplémentaire à moins de <e>10 m</e>, mais son gain d'[Énergie] maximum est <e>réduit de 25 %</e> et sa durée est <e>réduite de 20 %</e>.",
   },
   "13P008": {
     position: 9,
     name: "Coup de main",
     description:
-      "[Écran généré] vous attire vers le personnage allié ciblé et vous rend 20% de vos points de vie maximum en 3 s.",
+      "[Écran généré] vous attire vers le personnage allié ciblé et vous rend <e>20 %</e> de vos points de vie maximum en <e>3 s</e>.",
   },
   "13P009": {
     position: 6,
     name: "Bonus de Vie",
     description:
-      "Taille d'[Écran de particules] augmentée de 50%. Les points de vie maximum d'[Écran de particules] augmentent de 50% du maximum de point de vie octroyé par les objets.",
+      "Taille d'[Écran de particules] augmentée de <e>50 %</e>. Les points de vie maximum d'[Écran] augmentent de <e>50 %</e> du maximum de point de vie octroyé par les objets.",
   },
   "13P010": {
     position: 10,
     name: "Frime Majeure",
     description:
-      "[Écran] repousse les adversaires à moins de 5 m chaque sconde et leur inflige 25 points de dégâts qui augmentent avec l'[Énergie].",
+      "[Écran] repousse les adversaires à moins de <e>5 m</e> chaque <e>seconde</e> et leur inflige <ap>25</ap> points de dégâts qui augmentent avec l'[Énergie].",
   },
   "13P011": {
     position: 11,
     name: "Vortex de Volskaya",
     description:
-      "Après le déploiement d'un [Écran], le prochain tir secondaire du [Canon à particules] fait apparaître un vortex qui ralentit les adversaires et leur inflige 80 points de dégâts en 2 s.",
+      "Après le déploiement d'un [Écran], le prochain tir secondaire du [Canon à particules] fait apparaître un vortex qui ralentit les adversaires et leur inflige <ap>80</ap> points de dégâts en <e>2 s</e>.",
   },
   "13P012": {
     position: 12,
     name: "Anomalie Gravitationnelle",
     description:
-      "Coût de la capacité ultime réduit de 25%. Les dégâts de base d'[Orbe à gravitons] passent à 30 et augmentent avec l'[Énergie], mais la durée de cette capacité est réduite de 50%.",
+      "Coût de la capacité ultime réduit de <e>25 %</e>. Les dégâts de base d'[Orbe à gravitons] passent à <e>30</e> et augmentent avec l'[Énergie], mais la durée de cette capacité est réduite de <e>50 %</e>.",
   },
   "35P001": {
     position: 1,
