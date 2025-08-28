@@ -75,48 +75,48 @@ export default {
     position: 4,
     name: "Ruine Tourbillonnante",
     description:
-      "Les tirs à courte portée (7 m) de vos [Pompes funèbres] augmentent votre vitesse d'attaque de 4% pendant 1 s. Cet effet peut se cumuler 10 fois.",
+      "Les tirs à courte portée (7 m) de vos [Pompes funèbres] augmentent votre vitesse d'attaque de <e>4 %</e> pendant <e>1 s</e>. Cet effet peut se cumuler <e>10 fois</e>.",
   },
   "2P002": {
     position: 2,
     name: "Éclats Dissimulés",
     description:
-      "L'utilisation de [Forme spectrale] augmente de 25% le nombre de plombs projetés par chaque tir de votre prochain chargeur et augmente la dispersion des tirs de 50%.",
+      "L'utilisation de [Forme spectrale] augmente de <e>25 %</e> le nombre de plombs projetés par chaque tir de votre prochain chargeur et augmente la dispersion des tirs de <e>50 %</e>.",
   },
   "2P003": {
     position: 9,
     name: "Pas Mortel",
     description:
-      "Après l'utilisation de [Voie des ombres], vous lancez une [Éclosion mortelle] qui dure 1,5 s et inflige des dégâts réduits de 50%.",
+      "Après l'utilisation de [Voie des ombres], vous lancez une [Éclosion mortelle] qui dure <e>1,5</e> s et inflige des dégâts <e>réduits de 50 %</e>.",
   },
   "2P004": {
     position: 8,
     name: "Pas Étouffant",
     description:
-      "Vitesse de lancement de [Voie des ombres] augmentée de 30%. Après l'utilisation de [Voie des ombres], votre effet de vol de vie est doublé pendant 3 s.",
+      "Vitesse de lancement de [Voie des ombres] <e>augmentée de 30 %</e>. Après l'utilisation de [Voie des ombres], votre effet de vol de vie est doublé pendant <e>3 s</e>.",
   },
   "2P005": {
     position: 1,
     name: "Esprit de Massacre",
-    description: "Les éliminations réinitialisent vos temps de recharge.",
+    description: "Les éliminations réduisent le temps de recharge de [Forme spectrale] de <e>100 %</e> et celui de [Voie des ombres] de <e>100 %</e>.",
   },
   "2P006": {
     position: 6,
     name: "Traître",
     description:
-      "Après l'utilisation d'une capacité, votre prochain tir inflige 50% points de dégâts supplémentaires en 3 s aux cibles adverses touchées dans le dos.",
+      "Après l'utilisation d'une capacité, votre prochain tir inflige <e>50 %</e> points de dégâts supplémentaires en <e>3 s</e> aux cibles adverses touchées dans le dos.",
   },
   "2P007": {
     position: 12,
     name: "Forme Spectrale Renouvelée",
     description:
-      "Tant que vous êtes en [Forme spectrale], vous récupérez 7% de vos points de vie par seconde. Ce montant est doublé si vous avez moins de 50% de vos points de vie.",
+      "Tant que vous êtes en [Forme spectrale], vous récupérez <e>7 %</e> de vos points de vie par seconde. Ce montant est doublé si vous avez moins de <e>50 %</e> de vos points de vie.",
   },
   "2P008": {
     position: 11,
     name: "Fantôme",
     description:
-      "Lorsque vous traversez un adversaire avec votre [Forme spectrale], sa vitesse de déplacement et sa vitesse d'attaque sont réduites de 30% pendant 3 s.",
+      "Lorsque vous traversez un adversaire avec votre [Forme spectrale], sa vitesse de déplacement et sa vitesse d'attaque sont réduites de <e>30 %</e> pendant <e>3 s</e>.",
   },
   "2P009": {
     position: 10,
@@ -127,19 +127,19 @@ export default {
     position: 7,
     name: "Vampirisme Partagé",
     description:
-      "[La Moisson] soigne également le personnage allié le plus proche dans un rayson de 10 m à hauteur de 30% des dégâts infligés par Faucheur.",
+      "[La Moisson] soigne également le personnage allié le plus proche dans un rayson de <e>10 m</e> à hauteur de <e>30 %</e> des dégâts infligés par Faucheur.",
   },
   "2P011": {
     position: 3,
     name: "Fête de la Moisson",
     description:
-      "Les coups de [Pompes funèbres] ont 10% de chances de faire apparaître un globe d'âme. Lorsque vous ramassez un globe, vous récupérez 25% points de vie et 25% munitions, et votre vitesse de déplacement augmente de 25% pendant 3 s.",
+      "Les coups de [Pompes funèbres] ont <e>10 %</e> de chances de faire apparaître un globe d'âme. Lorsque vous ramassez un globe, vous récupérez <e>25 %</e> points de vie et <e>25 %</E> munitions, et votre vitesse de déplacement augmente de <e>25 %</e> pendant <e>3 s</e>.",
   },
   "2P012": {
     position: 5,
     name: "Toucher Vampirique",
     description:
-      "Votre [Coup en mêlée] marque les adversaires pendant 5 s. Les personnages alliés bénéficient de 20% de vol de vie contre les personnages adverses marqués.",
+      "Votre [Coup en mêlée] marque les adversaires pendant <e>5 s</e>. Les personnages alliés bénéficient de <e>20 %</e> de vol de vie contre les personnages adverses marqués.",
   },
   "15P001": {
     position: 2,
