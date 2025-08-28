@@ -575,55 +575,55 @@ export default {
     position: 1,
     name: "Frisson de la Bataille",
     description:
-      "[Montée d'adrénaline] soigne également les personnages alliés à moins de 12 m pour un montant égal à 50% des soins qu'il vous octroie.",
+      "[Montée d'adrénaline] soigne également les personnages alliés à moins de <e>12 m</e> pour un montant égal à <e>100 %</e> des soins qu'il vous octroie.",
   },
   "34P004": {
     position: 2,
     name: "Balles Royales",
     description:
-      "Les coups critiques de votre [Fusil à dispersion] contre les cibles à moins de 15 m appliquent des [Blessures] qui infligent 50 points de dégâts en 3 s.",
+      "Les coups critiques de votre [Fusil à dispersion] appliquent des [Blessures] qui infligent <wp>50</wp> points de dégâts en <e>2 s</e>.",
   },
   "34P007": {
     position: 3,
     name: "Torsion de Lame",
     description:
-      "Les coups critiques de votre [Fusil à dispersion] prolongent la durée de toutes les [Blessures] subites par la cible de 1 s.",
+      "Les coups critiques de votre [Fusil à dispersion] prolongent la durée de toutes les [Blessures] subies par la cible de <e>2 s</e>.",
   },
   "34P002": {
     position: 5,
     name: "Parade de Lame",
     description:
-      "Lorsque vous tenez [Lame crantée], elle se charge pour infliger jusqu'à 100% de dégâts supplémentaires et repousser les adversaires.",
+      "Lorsque vous tenez [Lame crantée], elle se charge pour infliger jusqu'à <e>100 %</e> de dégâts supplémentaires et repousser les adversaires.",
   },
   "34P010": {
     position: 4,
     name: "Découpez-les, Gracie!",
     description:
-      "Chaque cible adverse touchée par [Lame crantée] lorsque l'arme revient vers vous réduit le temps de recharge de la capacité de 2 s.",
+      "Chaque cible adverse touchée par [Lame crantée] réduit le temps de recharge de la capacité de <e>2 s</e> et est ralentie de <e>35 %</e> pendant <e>1 s</e>.",
   },
   "34P005": {
     position: 6,
     name: "En Route pour la Victoire",
     description:
-      "Les éliminations réinitialisent le temps de recharge de [Cri de commandement] de 50%.",
+      "Les éliminations réduisent le temps de recharge de [Cri de commandement] de <e>50 %</e>.",
   },
   "34P008": {
     position: 7,
     name: "Magnétisme Impitoyable",
     description:
-      "Lorsque vous utilisez [Cri de commandement], votre [Lame crantée] traque une cible.",
+      "Lorsque vous utilisez [Cri de commandement], votre [Lame crantée] traque une cible dans un rayon de <e>25 m</e>.",
   },
   "34P011": {
     position: 8,
     name: "Rugissement Calculé",
     description:
-      "L'utilisatoin de [Cri de commandement] [blesse] les adversaires à moins de 10 m et leur inflige 30 points de dégâts en 3 s.",
+      "L'utilisatoin de [Cri de commandement] [blesse] les adversaires à moins de <e>10 m</e> et leur inflige <ap>30</ap> points de dégâts en <e>3 s</e>.",
   },
   "34P006": {
     position: 10,
     name: "Schlak Schlak",
     description:
-      "[Carnage] bénéficie d'une charge supplémentaire, mais sa réduction du temps de recharge par coup porté est atténuée de 1 s.",
+      "[Carnage] bénéficie d'une charge supplémentaire, mais sa réduction du temps de recharge par coup porté est atténuée de <e>1 s</e>.",
   },
   "34P003": {
     position: 9,
@@ -635,13 +635,13 @@ export default {
     position: 11,
     name: "Furie Sanguinaire",
     description:
-      "Chaque coup infligé par [Massacre] et [Carnage] vous octroie un surplus de points de vie égal à 15% de vos points de vie maximum.",
+      "Chaque coup infligé par [Massacre] et [Carnage] vous octroie un surplus de points de vie égal à <e>15 %</e> de vos points de vie maximum, jusqu'à un maximum de <e>45 %</e>.",
   },
   "34P012": {
     position: 12,
     name: "Inclinez-vous",
     description:
-      "[Massacre] renverse également les cibles adverses touchées pendant 1,5 s.",
+      "[Massacre] renverse également les cibles adverses touchées pendant <e>1,5 s</e>.",
   },
   "13P001": {
     position: 3,
