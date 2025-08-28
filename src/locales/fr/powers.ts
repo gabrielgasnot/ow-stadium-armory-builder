@@ -289,73 +289,73 @@ export default {
     position: 2,
     name: "Débordement Optimal",
     description:
-      "Après avoir dépensé 50 unités d'[Énergie biotique], vous lancez le dernier [Orbe biotique] sélectionné. Sa durée est réduite de 75 %.",
+      "Après avoir dépensé <e>50 unités d'</e>[Énergie biotique], vous lancez le dernier [Orbe biotique] sélectionné. Sa durée est <e>réduite de 75 %</e>.",
   },
   "26P002": {
     position: 5,
     name: "Puissance Précaire",
     description:
-      "Les personnages alliés soignés par [Emprise biotique] récupèrent des points de vie supplémentaires à hauteur de 25% des soins d'[Emprise biotique] en 5 s.",
+      "Les personnages alliés soignés par [Emprise biotique] récupèrent des points de vie supplémentaires à hauteur de <e>25 %</e> des soins d'[Emprise biotique] en <e>5 s</e>.",
   },
   "26P003": {
     position: 3,
     name: "Déconstruction",
     description:
-      "Après avoir dépensé 50 unités d'[Énergie biotique], vos dégâts sont augmentés de 20% pendant 6 s.",
+      "Après avoir dépensé <e>50 unités d'</e>[Énergie biotique], vos dégâts sont augmentés de <e>20 %</e> pendant <e>6 s</e>.",
   },
   "26P004": {
     position: 1,
     name: "Ablation Éthérée",
     description:
-      "Lorsque vous visez la tête d'un personnage adverse avec le tir secondaire d'[Emprise biotique], vous gagnez 30% de vitesse de déplacement, vous infligez 30% de vol de vie et vous récupérez 100% d'[Énergie biotique] supplémentaire.",
+      "Lorsque vous visez la tête d'un personnage adverse avec le tir secondaire d'[Emprise biotique], vous gagnez <e>30 %</e> de vitesse de déplacement, vous infligez <e>30 %</e> de vol de vie et vous récupérez <e>100 %</e> d'[Énergie biotique] supplémentaire.",
   },
   "26P005": {
     position: 4,
     name: "Emprise Propagée",
     description:
-      "Après l'utilisation d'[Orbe biotique], le tir secondaire d'[Emprise biotique] se propage à 2 cibles supplémentaires dans uin rayon de 10 m pendant 3 s.",
+      "Après l'utilisation d'[Orbe biotique], le tir secondaire d'[Emprise biotique] se propage à <e>2</e> adversaires supplémentaires dans un rayon de <e>10 m</e> pendant <e>3 s</e>.",
   },
   "26P006": {
     position: 6,
     name: "Renforcement",
     description:
-      "Le tir secondaire d'[Emprise biotique] peut cibler les personnages alliés pour augmenter leurs dégâts de 15%.",
+      "Le tir secondaire d'[Emprise biotique] peut cibler les personnages alliés pour augmenter leurs dégâts de <e>15 %</e>.",
   },
   "26P007": {
     position: 7,
     name: "Orbes Croisés",
     description:
-      "[Orbe biotique] projette également un orbe de l'autre type qui dispose d'une charge réduite de 50%.",
+      "[Orbe biotique] projette également un orbe de l'autre type qui dispose d'une charge <e>réduite de 50%</e>.",
   },
   "26P008": {
     position: 8,
     name: "Orbes multiples",
     description:
-      "[Orbe biotique] projette 2 orbes supplémentaires du type choisi, mais leur efficacité est réduite de 85%.",
+      "[Orbe biotique] projette <e>2</e> orbes supplémentaires du type choisi, mais leur efficacité est <e>réduite de 85 %</e>.",
   },
   "26P009": {
     position: 9,
     name: "Phantasme",
     description:
-      "Lorsque vous utilisez [Volatilité], une copie immobile du dernier [Orbe biotique] sélectionné apparaît. Sa durée est réduite de 50%.",
+      "Lorsque vous utilisez [Volatilité], une copie immobile du dernier [Orbe biotique] sélectionné apparaît. Sa durée est <e>réduite de 50 %</e>.",
   },
   "26P010": {
     position: 10,
     name: "Linceul Scientifique",
     description:
-      "Lorsque vous utilisez [Volatilité], le fait de traverser des adversaires vous octroie 5% de charge de capacité ultime et un surplus de points de vie égale à 15% de vos points de vie maximum.",
+      "Lorsque vous utilisez [Volatilité], le fait de traverser des adversaires vous octroie <e>5 %</e> de charge de capacité ultime et un <e>surplus de points de vie</e> égale à <e>15 %</e> de vos points de vie maximum.",
   },
   "26P011": {
     position: 11,
     name: "Marche-Vide",
     description:
-      "[Volatilité] phase également les personnages alliés à moins de 8 m pendant 0,25 s et leur octroie un surplus de points de vie égal à 20% de vos points de vie maximum.",
+      "[Volatilité] phase également les personnages alliés à moins de <e>8 m</e> pendant <e>0,3 s</e> et leur octroie un <e>surplus de points de vie</e> égal à <e>20 %</e> de vos points de vie maximum.",
   },
   "26P012": {
     position: 12,
     name: "Scission de Destruction",
     description:
-      "[Coalescence] inflige uniquement des dégâts ou prodigue uniquement des soins, selon ce que vous choisissez, mais son effet est augmenté de 30%.",
+      "Durée de [Coalescence] <e>augmentée de 25 %</e>. [Coalescence] inflige uniquement des dégâts ou prodigue uniquement des soins, selon ce que vous choisissez, mais son effet est augmenté de <e>30 %</e>.",
   },
   "19P001": {
     position: 1,
