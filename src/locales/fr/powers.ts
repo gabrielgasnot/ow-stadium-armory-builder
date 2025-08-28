@@ -145,73 +145,73 @@ export default {
     position: 2,
     name: "Super Visière",
     description:
-      "Après l'utilisation de [Roquette LX], vous activez [Visière Tactique] pendant 0,5 s.",
+      "Après l'utilisation de [Roquette LX], vous activez [Visière Tactique] pendant <e>0,5 s</e>.",
   },
   "15P002": {
     position: 4,
     name: "Fusil Automatique",
     description:
-      "Lorsque vous tirez en continu avec votre [Fusil à impulsions], chaque tir augmente votre puissance d'arme de 0,4%. Cette effet peut se cumuler 100 fois.",
+      "Lorsque vous tirez en continu avec votre [Fusil à impulsions], chaque tir augmente votre puissance d'arme de <e>0,4 %</e>. Cette effet peut se cumuler <e>100 fois</e>.",
   },
   "15P003": {
     position: 10,
     name: "Dans le mille Biotique",
     description:
-      "Lorsque vous vous tenez dans votre [Champ biotique], les coups critiques rendent 10% de vos munitions maximum et prolongent la durée de [Champ biotique] de 0,5 s, jusqu'à un maximum de 5 s.",
+      "Lorsque vous vous tenez dans votre [Champ biotique], les coups critiques rendent <e>10 %</e> de vos munitions maximum et prolongent la durée de [Champ biotique] de <e>0,5 s</e>, jusqu'à un maximum de <e>5 s</e>.",
   },
   "15P004": {
     position: 11,
     name: "Du Vent !",
     description:
-      "Les adversaires à l'intérieur de votre [Champ biotique] subissent des dégâts à hauteur de 100% de sa capacité de soins.",
+      "Les adversaires à l'intérieur de votre [Champ biotique] subissent des dégâts égaux à <e>100 %</e> des soins prodigués.",
   },
   "15P005": {
     position: 9,
     name: "Avec Moi!",
     description:
-      "[Champ biotique] vous suit et vous accorde 20% de points de vie maximum supplémentaire tant qu'il est actif.",
+      "[Champ biotique] vous suit et vous accorde <e>20 %</e> points de vie maximum supplémentaire tant qu'il est actif.",
   },
   "15P006": {
     position: 12,
     name: "Premières Lignes",
     description:
-      "Les personnages alliés qui sont à portée de votre [Champ biotique] au moment de son déploiement gagnent un surplus de points de vie égal à 25% de vos points de vie maximum pendant 3 s.",
+      "Les personnages alliés qui sont à portée de votre [Champ biotique] au moment de son déploiement gagnent un <e>surplus de points de vie</e> égal à <e>25 %</e> de vos points de vie maximum pendant <e>3 s</e>.",
   },
   "15P007": {
     position: 5,
     name: "À Terre",
     description:
-      "Lorsque vous infligez des dégâts avec [Roquette LX], vous faites apparaître un [Champ biotique] ayant une durée réduite de 50% à votre emplacement.",
+      "Lorsque vous infligez des dégâts avec [Roquettes LX], vous faites apparaître un [Champ biotique] ayant une durée <e>réduite de 50 %</e> à votre emplacement.",
   },
   "15P008": {
     position: 6,
     name: "Cratère",
     description:
-      "Le rayon d'explosion de [Roquette LX] augmente de 40% et les dégâts de l'explosion augmentent de 15%.",
+      "Le rayon d'explosion de [Roquette LX] augmente de <e>40 %</E> et les dégâts de l'explosion augmentent de <e>15 %</e>.",
   },
   "15P009": {
     position: 7,
     name: "Double LX",
     description:
-      "[Roquette LX] tire une seconde [Roquette LX] à tête chercheuse qui inflige des dégâts réduits de 70%.",
+      "[Roquette LX] tire une seconde [Roquette LX] à tête chercheuse qui inflige des dégâts réduits de <e>70 %</e>.",
   },
   "15P010": {
     position: 3,
     name: "Cible en Fuite",
     description:
-      "Pendant [Sprint], vous récupérez 10% de munitions par seconde et votre maxmimum de munitions augmente de 10% jusqu'à ce que vous rechargiez. Cet effet peut se cumuler 10 fois.",
+      "Pendant [Sprint], vous récupérez <e>10 %</e> de munitions par seconde et votre maxmimum de munitions augmente de <e>10 %</e> jusqu'à ce que vous rechargiez. Cet effet peut se cumuler <e>10 fois</E>.",
   },
   "15P011": {
     position: 8,
     name: "Athlétisme",
     description:
-      "Pendant [Sprint], le temps de recharghe de [Champ biotique] s'écoule 150% fois plus vite.",
+      "Pendant [Sprint], le temps de recharghe de [Champ biotique] s'écoule <e>150 %</e> fois plus vite.",
   },
   "15P012": {
     position: 1,
     name: "Impulsion Périphérique",
     description:
-      "Pendant [Visière Tactique], [Fusil à impulsions] tire sur 1 cible adverse supplémentaire et ses dégâts sont augmentés de 50%.",
+      "Pendant [Visière Tactique], [Fusil à impulsions] tire sur <e>1</e> cible adverse supplémentaire et ses dégâts sont augmentés de <e>50 %</e>.",
   },
   "6P001": {
     position: 6,
