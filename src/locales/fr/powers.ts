@@ -1076,7 +1076,7 @@ export default {
     position: 4,
     name: "Pergélisol",
     description:
-      "Vous gagnez un multiplicateur de points de vie supplémentaires égal à 50% de votre puissance de capacité. Lorsque celle-ci est supérieure à 30%, votre taille augmente de 15%.",
+      "Vous gagnez un multiplicateur de points de vie supplémentaires égal à <e>50 %</e> de votre puissance de capacité. Lorsque celle-ci est supérieure à <e>30 %</e>, votre taille augmente de <e>15 %</e>.",
   },
   "20P002": {
     position: 2,
@@ -1088,13 +1088,13 @@ export default {
     position: 3,
     name: "Extendothermique",
     description:
-      "La portée du tir principal de votre [Canon endothermique] augmente de 6 m.",
+      "La portée du tir principal de votre [Canon endothermique] augmente de <e>6 m</e>.",
   },
   "20P004": {
     position: 1,
     name: "Armure de Glace",
     description:
-      "Vous gagnez des points d'armure à hauteur de 5% des dégâts infligés par votre tir principal, jusqu'à un maximum de 100, et ce jusqu'à la fin de la manche.",
+      "Vous gagnez des points d'armure à hauteur de <e>5 %</e> des dégâts infligés par votre tir principal, jusqu'à un maximum de <e>100</e>, et ce jusqu'à la fin de la manche.",
   },
   "20P005": {
     position: 6,
@@ -1124,25 +1124,25 @@ export default {
     position: 8,
     name: "Boule Froide",
     description:
-      "[Cryostase] vous enferme désormais dans une boule de glace mobile qui peut repousser les adversaires et leur infliger 20 points de dégâts.",
+      "[Cryostase] vous enferme désormais dans une boule de glace mobile qui peut repousser les adversaires et leur infliger <ap>20</ap> points de dégâts.",
   },
   "20P010": {
     position: 10,
     name: "Nova de Givre",
     description:
-      "Lorsque [Cryostase] prend fin, vous repoussez les adversaires à proximité et leur infligez 60 points de dégâts.",
+      "Lorsque [Cryostase] prend fin, vous repoussez les adversaires à proximité et leur infligez <ap>60</ap> points de dégâts.",
   },
   "20P011": {
     position: 11,
     name: "Blizzard Tournoyant",
     description:
-      "Lorsque vous vous tenez dans le [Blizzard], vous récupérez 15% de vos points de vie chaque seconde.",
+      "Lorsque vous vous tenez dans le [Blizzard], vous récupérez <e>15 %</e> de vos points de vie chaque seconde.",
   },
   "20P012": {
     position: 12,
     name: "Lance-Neige",
     description:
-      "Les dégâts du tir principal de [Canon Endothermique] sont augmentés de 20% contre les adversaires pris dans votre [Blizzard].",
+      "Les dégâts du tir principal de [Canon Endothermique] sont augmentés de <e>20 %</e> contre les adversaires pris dans votre [Blizzard].",
   },
   "16P001": {
     position: 1,
