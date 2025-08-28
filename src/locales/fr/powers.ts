@@ -790,13 +790,13 @@ export default {
     position: 2,
     name: "Pas besoin de lunette",
     description:
-      "Les tirs à l'oeil nu de votre [Fusil biotique] augmentent la vitesse d'attaque de 10% pendant 2 s. Cet effet peut se cumuler 3 fois.",
+      "Les tirs à l'oeil nu de votre [Fusil biotique] augmentent la vitesse d'attaque de <e>10 %</e> pendant <e>2 s</e>. Cet effet peut se cumuler <e>3 fois</e>.",
   },
   "22P002": {
     position: 1,
     name: "Fusil Tactique",
     description:
-      "Lorsque vous visez à la lunette, votre [Fusil biotique] cible automatiquement les personnages alliés pour vous assurer des tirs réussis.",
+      "Lorsque vous visez à la lunette, votre [Fusil biotique] cible automatiquement les personnages alliés pour vous assurer des tirs réussis, et votre vitesse de déplacement est moins réduite que d'habitude.",
   },
   "22P003": {
     position: 3,
@@ -808,55 +808,55 @@ export default {
     position: 5,
     name: "Doux Rêve",
     description:
-      "[Fléchette hypodermique] peut toucher les personnages alliés pour leur rendre 80% de leurs points de vie maximum en 4s au lieu de les endormir.",
+      "[Fléchette hypodermique] peut toucher les personnages alliés pour leur rendre <e>80 %</e> de leurs points de vie maximum en <e>4 s</e> au lieu de les endormir.",
   },
   "22P005": {
     position: 6,
     name: "Nuage Douillet",
     description:
-      "[Fléchette hypodermique] explose à l'impact et touche les cibles à moins de 3 m, mais son effet de sommeil voit sa durée réduite de 50%.",
+      "[Fléchette hypodermique] explose à l'impact et touche les cibles à moins de <e>3 m</e>, mais son effet de sommeil voit sa durée <e>réduite de 50 %</e>.",
   },
   "22P006": {
     position: 4,
     name: "Cycle de Sommeil",
     description:
-      "Vous gagnez 50 points de vie. Lorsque vous endormez un personnage adverse, vous gagnez 10 points de vie, jusqu'à un maximum de 150.",
+      "Vous gagnez <e>50</e> points de vie. Lorsque vous <e>endormez</e> un personnage adverse, vous gagnez <e>10</e> points de vie, jusqu'à un maximum de <e>150</e>.",
   },
   "22P007": {
     position: 7,
     name: "Remède Maison",
     description:
-      "[Grenade biotique] octroie un surplus de points de vie égal à 200% de ses soins.",
+      "[Grenade biotique] octroie un <e>surplus de points de vie</e> égal à <e>200 %</e> de ses soins.",
   },
   "22P008": {
     position: 9,
     name: "Vénéneuse",
     description:
-      "[Grenade biotique] inflige 75 points de dégâts supplémentaires aux personnages adverses affectés pendant sa durée.",
+      "[Grenade biotique] inflige <ap>75</ap> points de dégâts supplémentaires en <e>2 s</e> aux personnages adverses affectés.",
   },
   "22P009": {
     position: 8,
     name: "Temps Mort",
     description:
-      "[Grenade biotique] repousse désormais les cibles adverses et réduit leur vitesse de déplacement de 50% pendant 2,5 s.",
+      "[Grenade biotique] repousse désormais Ana et ses adversaires, qui sont ralentis de <e>50 %</e> pendant <e>2,5 s</e>.",
   },
   "22P010": {
     position: 12,
     name: "Plein Potentiel",
     description:
-      "[Nanoboost] octroie également à sa cible 20% de charge de capacité ultime et un surplus de 200 points de vie.",
+      "[Nanoboost] octroie également à sa cible <e>35 %</e> de charge de capacité ultime et un <e>surplus de</e> <ap>200</ap> points de vie.",
   },
   "22P011": {
     position: 10,
     name: "À mon tour",
     description:
-      "[Nanoboost] s'applique aussi à vous pendant 100% de sa durée.",
+      "[Nanoboost] s'applique aussi à vous pendant <e>100 %</e> de sa durée.",
   },
   "22P012": {
     position: 11,
     name: "À notre tour",
     description:
-      "[Nanoboost] affecte également les autres personnges alliés dans votre champ de vision, mais la durée de son effet est réduite de 25% pour eux.",
+      "[Nanoboost] affecte également les autres personnges alliés dans votre champ de vision, mais la durée de son effet est <e>réduite de 25 %</e> pour eux.",
   },
   "14P001": {
     position: 3,
