@@ -934,37 +934,37 @@ export default {
     position: 4,
     name: "Rechargement Thérapeutique",
     description:
-      "Vous récupérez 10% de vos points de vie lorsque vous rechargez votre arme.",
+      "Vous récupérez <e>10 %</e> de vos points de vie lorsque vous rechargez votre arme.",
   },
   "29P002": {
     position: 1,
     name: "Chasse aux Têtes",
     description:
-      "Chaque tir à l'oeil nu réussi augmente les dégâts du prochain tir à la lunette de 5%, jusqu'à un maximum de 30%. Cet effet se réinitialise lorsque l'arme est rechargée.",
+      "Chaque tir <e>à l'oeil nu</e> réussi augmente les dégâts du prochain tir <e>à la lunette</e> de <e>5 %</e>, jusqu'à un maximum de <e>15 %</e>.",
   },
   "29P003": {
     position: 2,
     name: "Mon Plan, Mes Règles",
     description:
-      "Lorsque vous infligez des dégâts à une cible en feu avec le [Cobra], les temps de recharge de vos capacités sont réduits de 10%.",
+      "Lorsque vous infligez des dégâts à une cible <e>en feu</e> avec le [Cobra], les temps de recharge de vos capacités sont réduits de <e>10 %</e>.",
   },
   "29P004": {
     position: 3,
     name: "Munitions Incendiaires",
     description:
-      "Lorsque vous touchez la même cible à la lunette sans rater, les dégâts sont augmentés de 30.",
+      "Lorsque vous touchez la même cible <e>à la lunette</e> sans rater, les dégâts sont augmentés de <wp>30</wp>.",
   },
   "29P005": {
     position: 7,
     name: "Tir Incendiaire",
     description:
-      "[Canon scié] applique un effet de brûlure qui inflige 100 points de dégâts en 5 s. Si la cible est déjà en feu, elle subit immédiatement 75 points de dégâts supplémentaires.",
+      "[Canon scié] applique un effet de <e>brûlure</e> qui inflige <ap>100</ap> points de dégâts en <e>5 s</e>. Si la cible est <e>déjà en feu</e>, elle subit immédiatement <ap>75</ap> points de dégâts supplémentaires.",
   },
   "29P006": {
     position: 5,
     name: "Calamity",
     description:
-      "L'utilisation de [Canon scié] recharge 2 munitions. Les 2 prochains coups du [Cobra] infligent 40 points de dégâts supplémentaires en 3 s.",
+      "L'utilisation de [Canon scié] recharge <e>2</e> munitions. Les <e>2</e> prochains coups du [Cobra] infligent <ap>40</ap> points de dégâts supplémentaires en <e>3 s</e>.",
   },
   "29P007": {
     position: 6,
@@ -975,31 +975,31 @@ export default {
     position: 8,
     name: "Détonation Précoce",
     description:
-      "Lorsque vous tirez sur votre [Dynamite], vous récupérez 5 munitions et le temps de recharge de [Dynamite] est réduit de 3 s.",
+      "Lorsque vous tirez sur votre [Dynamite], vous récupérez <e>5</e> munitions et le temps de recharge de [Dynamite] est réduit de <e>3 s</e>.",
   },
   "29P009": {
     position: 10,
     name: "Munitions Magmatiques",
     description:
-      "Si votre [Dynamite] ex^mpse au sol, elle produit de la lave qui brûle les adversaires en leur infligeant 80 points de dégâts par seconde.",
+      "Si votre [Dynamite] explose au sol, elle produit de la lave qui <e>brûle</e> les adversaires en leur infligeant <ap>80</ap> points de dégâts par seconde.",
   },
   "29P010": {
     position: 9,
     name: "Final Explosif",
     description:
-      "Lorsque votre [Dynamite] explose, elle génère 3 bombes collantes qui infligent des dégâts réduits de 30%.",
+      "Lorsque votre [Dynamite] explose, elle génère <e>3</e> bombes collantes qui infligent des dégâts <e>réduits de 30 %</e>.",
   },
   "29P011": {
     position: 12,
     name: "Partenaires de Crime",
     description:
-      "Vous récupérez des points de vie à hauteur de 100% des dégâts infligés par [B.O.B.] et ce dernier est soigné à hauteur de 100% des dégâts que vous infligez.",
+      "Vous récupérez des points de vie à hauteur de <e>100 %</e> des dégâts infligés par [B.O.B.] et ce dernier est soigné à hauteur de <e>100 %</e> des dégâts que vous infligez.",
   },
   "29P012": {
     position: 11,
     name: "B.O.B. Jr.",
     description:
-      "[B.O.B.] consomme 50% de charge de capacité ultime en moins, mais ses points de vie sont réduits, sa vitesse d'attaque est diminuée de 20% et il est nettement plus petit.",
+      "[B.O.B.] consomme <e>50 %</e> de charge de capacité ultime en moins, mais ses points de vie sont réduits, sa vitesse d'attaque est <e>diminuée de 20 %</e> et il est nettement plus petit.",
   },
   "41P001": {
     position: 1,
