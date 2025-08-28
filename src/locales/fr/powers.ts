@@ -862,73 +862,73 @@ export default {
     position: 3,
     name: "Gâchette Rapide",
     description:
-      "Après l'utilisation de [Roulade], le prochain tir principal du [Pacificateur] peut viser automatiquement les cibles à moins de 9 m tant que la capacité est en cours de recharge.",
+      "Après l'utilisation de [Roulade], le prochain tir principal du [Pacificateur] peut viser automatiquement les cibles à moins de <e>15 m</e> tant que la capacité est en cours de recharge.",
   },
   "14P002": {
     position: 5,
     name: "Mort en Sursis",
     description:
-      "Lorsque vous éliminez une cible avec un coup critique, votre maximum de munitions augmente de 1, jusqu'à un maximum de 4.",
+      "Lorsque vous éliminez une cible avec un coup critique, votre maximum de munitions augmente de <e>1</e>, jusqu'à un maximum de <e>4</e>.",
   },
   "14P003": {
     position: 2,
     name: "Full House",
     description:
-      "Pour chaque munition disponible, le tir principal du [Pacificateur] voit ses dégâts augmentés de 1% jusqu'à un maximum de 25%.",
+      "Pour chaque munition disponible, le tir principal du [Pacificateur] voit ses dégâts augmentés de <e>1 %</e> jusqu'à un maximum de <e>25 %</e>.",
   },
   "14P004": {
     position: 7,
     name: "Tout Roule",
     description:
-      "[Roulade] réduit les dégâts subis de 25% supplémentaires et vous soigne de 30% de vos points de vie en 3 s.",
+      "[Roulade] réduit les dégâts subis de <e>25 %</e> supplémentaires et vous soigne de <e>30 %</e> de vos points de vie en <e>3 s</e>.",
   },
   "14P005": {
     position: 1,
     name: "Dans le Mille",
     description:
-      "Les coups critiques réduisent le temps de recharge de [Roulade] de 2 s.",
+      "Les coups critiques réduisent le temps de recharge de [Roulade] de <e>2 s</e>.",
   },
   "14P006": {
     position: 6,
     name: "Tonneau",
     description:
-      "Votre [Roulade] vous emmène 50% plus loin et inflige 65 points de dégâts aux adversaires.",
+      "Votre [Roulade] vous emmène <e>50 %</e> plus loin et inflige <ap>65</ap> points de dégâts aux adversaires.",
   },
   "14P007": {
     position: 8,
     name: "Grenade dans le Mille",
     description:
-      "Lorsque vous éliminez une cible adverse récemment blessée par [Grenade flash], vous gagnez 15% de charge de capacité ultime.",
+      "Lorsque vous éliminez une cible adverse récemment blessée par [Grenade flash], vous gagnez <e>20 %</e> de charge de capacité ultime.",
   },
   "14P008": {
     position: 4,
     name: "Grenade instinctive",
     description:
-      "Vous lâchez une [Grenade flash] lorsque vous initiez une [Roulade].",
+      "Vous lâchez une [Grenade flash] lorsque vous initiez une [Roulade]. La durée d'entrave de [Grenade flash] est augmentée de <e>50 %</e>.",
   },
   "14P009": {
     position: 9,
     name: "Patate Chaude",
     description:
-      "[Grenade flash] vous octroie 3 munitions supplémentaires à l'impact jusqu'à ce que vous rechargiez votre [Pacificateur].",
+      "[Grenade flash] vous octroie <e>3</e> munitions supplémentaires à l'impact jusqu'à ce que vous rechargiez votre [Pacificateur].",
   },
   "14P010": {
     position: 11,
     name: "Easy Rider",
     description:
-      "Lorsque vous utilisez [Implacable], vous gagnez un surplus de 100 points de vie et 25% de vitesse de déplacement.",
+      "Lorsque vous utilisez [Implacable], vous gagnez un <e>surplus de</e> <ap>100</ap> <e>points de vie</e> et <e>25 %</e> de vitesse de déplacement.",
   },
   "14P011": {
     position: 12,
     name: "Lever de Soleil",
     description:
-      "[Implacable] ralentit tous les adversaires visibles de 35% pendant 1,5 s.",
+      "[Implacable] ralentit tous les adversaires visibles de <e>35 %</e> pendant <e>2,5 s</e>.",
   },
   "14P012": {
     position: 10,
     name: "Coucher de Soleil",
     description:
-      "Chaque élimination à l'aide d'[Implacable] vous octroie 15% de charge de capacité ultime.",
+      "Chaque élimination à l'aide d'[Implacable] vous octroie <e>25 %</e> de charge de capacité ultime.",
   },
   "29P001": {
     position: 4,
