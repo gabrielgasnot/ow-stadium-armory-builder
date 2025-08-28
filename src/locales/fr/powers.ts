@@ -361,18 +361,18 @@ export default {
     position: 1,
     name: "Fusion Ciblée",
     description:
-      "La dispersion de [Fusio-canon] est réduite de 50% et la portée de flèchissement est augmentée de 20 m.",
+      "La dispersion de [Fusio-canon] est réduite de <e>50 %</e> et la portée d'atténuation est augmentée de <e>20 m</e>.",
   },
   "19P004": {
     position: 2,
     name: "Arsenal Légendaire",
     description:
-      "Les [Micro-missiles] sont remplacés par 6 Roquettes lourdes, qui infligent <e>325 %</e> de dégâts d'explosion supplémentaires dans un rayon augmenté de 100%.",
+      "Les [Micro-missiles] sont remplacés par <e>6 Roquettes lourdes</e>, qui infligent <e>325 %</e> de dégâts d'explosion supplémentaires dans un rayon augmenté de <e>100 %</e>.",
   },
   "19P007": {
     position: 3,
     name: "Surstockage",
-    description: "Vous obtenez 1 charge supplémentaire de [Micro-missiles].",
+    description: "Vous obtenez <e>1</e> charge supplémentaire de [Micro-missiles].",
   },
   "19P010": {
     position: 4,
@@ -384,48 +384,48 @@ export default {
     position: 7,
     name: "Allumage Explosif",
     description:
-      "Vos [Turboréacteurs] laissent derrière eux une traînée de lave qui inflige 80 points de dégâts par seconde.",
+      "Vos [Turboréacteurs] laissent derrière eux une traînée de lave qui inflige <ap>80</ap> points de dégâts par seconde.",
   },
   "19P006": {
     position: 10,
     name: "Frappe MEKA",
     description:
-      "Tant que vos [Turboréacteurs] sont actifs, vos [coups en mêlée] infligent 50% de dégâts supplémentaires. Les éliminations réalisées avec Frappe MEKA réinitialisent le temps de recharge de [Turboréacteurs].",
+      "Tant que vos [Turboréacteurs] sont actifs, La vitesse d'attaque de vos [coups en mêlée] est augmentée de <e>50 %</e>. Les éliminations réalisées avec [Frappe MEKA] réinitialisent le temps de recharge de [Turboréacteurs].",
   },
   "19P003": {
     position: 9,
     name: "Frappe de Tokki",
     description:
-      "Pendant l'utilisation de [Turboréacteurs], utilisez la commande d'accroupissement pour heurter le sol, ce qui inflige des dégâts égaux à <e>30 %</e> de votre de votre maximum d'armure et de bouclier, et renverse les cibles adverses touchées.",
+      "Pendant l'utilisation de [Turboréacteurs], utilisez la commande d'accroupissement pour heurter le sol, ce qui inflige des dégâts égaux à <e>25 %</e> de votre de votre maximum d'armure et de bouclier, et renverse les cibles adverses touchées.",
   },
   "19P005": {
     position: 6,
     name: "Tank Ultime",
     description:
-      "[Matrice défensive] vous soigne à hauteur de <e>50 %</e> des dégâts bloqués.",
+      "[Matrice défensive] vous soigne à hauteur de <e>40 %</e> des dégâts bloqués.",
   },
   "19P002": {
     position: 5,
     name: "Matrice Ultra-Large",
     description:
-      "La taille de votre [Matrice défensive] augmente de 50% et sa durée de 25%.",
+      "La taille de votre [Matrice défensive] augmente de <e>50 %</e> et sa durée de <e>25 %</e>.",
   },
   "19P011": {
     position: 8,
     name: "Boost de Stats",
     description:
-      "Pendant les 2 premières secondes de [Turboréacteurs], votre [Matrice défensive] se régénère 125% plus vite.",
+      "Pendant les <e>2 premières secondes</e> de [Turboréacteurs], votre [Matrice défensive] se régénère <e>125 %</e> plus vite.",
   },
   "19P012": {
     position: 12,
     name: "Protection du groupe",
     description:
-      "Lorsque vous déclenchez votre [Autodestruction], les personnages alliés dans le rayon de l'explosion reçoivent un surplus de 250 points de vie pendant 8 s.",
+      "Lorsque vous déclenchez votre [Autodestruction], les personnages alliés dans le rayon de l'explosion reçoivent un <e>surplus</e> de <ap>250</ap> points de vie pendant <e>8 s</e>.",
   },
   "19P009": {
     position: 11,
     name: "Explosion Express",
-    description: "[Autodestruction] explose 15% plus vite.",
+    description: "[Autodestruction] explose <e>15 %</e> plus vite.",
   },
   "21P001": {
     position: 4,
@@ -503,73 +503,73 @@ export default {
     position: 2,
     name: "Terre Brûlée",
     description:
-      "Lorsque vous êtes en [Surchauffe], vous faites brûler les adversaires à moins de 6 m, ce qui leu rinflige des dégâts égaux à 20% de vos points de vie maximum en 5 s.",
+      "Lorsque vous êtes en [Surchauffe], vous faites <e>brûler</e> les adversaires à moins de <e>6 m</e>, ce qui leur inflige des dégâts égaux à <e>20 %</e> de vos points de vie maximum en <e>4 s</e>.",
   },
   "24P001": {
     position: 1,
     name: "Divergence de Bouclier",
     description:
-      "Lorsque vous êtes en [Surchauffe], vous déployez devant vous un [Écran] qui bénéficie de 600 points de vie.",
+      "Lorsque vous êtes en [Surchauffe], vous déployez devant vous un [Écran] qui bénéficie de <ap>600</ap> points de vie.",
   },
   "24P007": {
     position: 3,
     name: "Lancer Robotique",
     description:
-      "Lorsque vous utilisez [Rotation de javelot], vous lancez un [Javelot d'énergie] qui inflige des dégâts réduits de 50%.",
+      "Lorsque vous utilisez [Rotation de javelot], vous lancez un [Javelot d'énergie] qui inflige des dégâts réduits de <e>50 %</e>.",
   },
   "24P010": {
     position: 4,
     name: "Mise à jour Tournoyante",
     description:
-      "[Rotation de javelot] renvoie désormais les projectiles et 20% des dégâts infligés par les projectiles renvoyés sont convertis en charge de capacité ultime.",
+      "[Rotation de javelot] renvoie désormais les projectiles et <e>20 %</e> des dégâts infligés par les projectiles renvoyés sont convertis en charge de capacité ultime.",
   },
   "24P002": {
     position: 5,
     name: "Rotation ardente",
     description:
-      "Le temps de recharge de [Rotation de javelot] est réduit de 35%, mais cette capacité génère désormais de la [Chaleur].",
+      "Le temps de recharge de [Rotation de javelot] est réduit de <e>35 %</e>, mais cette capacité génère désormais de la [Chaleur].",
   },
   "24P011": {
     position: 8,
     name: "Réglages d'Usine",
     description:
-      "Tant que [Blindage] est actif, [Rotation de javelot] est [Javelot d'énergie] voient leurs temps de recharge réduit de 25%.",
+      "Tant que [Blindage] est actif, [Rotation de javelot] et [Javelot d'énergie] voient leurs temps de recharge réduit de <e>25 %</e>.",
   },
   "24P006": {
     position: 10,
     name: "Au Lasso",
     description:
-      "Au moment de l'impact, [Javelot d'énergie] attire les adversaires à moins de 4 m.",
+      "Au moment de l'impact, [Javelot d'énergie] attire les adversaires à moins de <e>4 m</e>.",
   },
   "24P008": {
     position: 7,
     name: "Qui m'aime me suive",
     description:
-      "Tant que [Blindage] est actif, les personnages alliés dans votre champ de vision voient leur vitesse de déplacement augmentée de 30% et gagnent un surplus de points de vie égal à 10% de vos points de vie maximum.",
+      "Tant que [Blindage] est actif, les personnages alliés dans votre champ de vision voient leur vitesse de déplacement augmentée de <e>30 %</e> et gagnent un <e>surplus de points de vie</e> égal à <e>10 %</e> de vos points de vie maximum.",
   },
   "24P003": {
     position: 9,
     name: "Sabots d'Acier",
     description:
-      "Après la fin de [Blindage], vous gagnez des points de bouclier à hauteur de 50% des dégâts reçus pendant la durée de la capacité. Cet effet est réinitialisé à la prochaine utilisation de [Blindage].",
+      "Après la fin de [Blindage], vous gagnez des points de bouclier à hauteur de <e>50 %</e> des dégâts reçus pendant la durée de la capacité. Cet effet est réinitialisé à la prochaine utilisation de [Blindage].",
   },
   "24P005": {
     position: 6,
     name: "Blindage Médical",
     description:
-      "Tant que [Blindace] est actif, vous récupérez 5% de vos points de vie maximum chaque seconde.",
+      "Tant que [Blindage] est actif, vous récupérez <e>5 %</e> de vos points de vie maximum chaque seconde.",
   },
   "24P009": {
     position: 11,
     name: "Charge Centripète",
     description:
-      "Coût de la capacité ultime réduit de 25%. Après l'utilisation de [Vague Terra], les temps de recharge de vos capacités sont réinitialisés.",
+      "Coût de la capacité ultime réduit de <e>25 %</e>. Après l'utilisation de [Vague Terra], les temps de recharge de vos capacités sont réduits.",
   },
   "24P012": {
     position: 12,
     name: "Surchargeur",
     description:
-      "[Vague Terra] fait apparaître un [Surchargeur] qui augmente les dégâts des personnages alliés à proximité de 25% pendant 15 s.",
+      "[Vague Terra] fait apparaître un [Surchargeur] qui augmente les dégâts des personnages alliés à proximité de <e>25 %</e> pendant <e>15 s</e>.",
   },
   "34P001": {
     position: 1,
