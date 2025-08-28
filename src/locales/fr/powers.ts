@@ -1361,74 +1361,74 @@ export default {
   },
   "18P001": {
     position: 4,
-    name: "Furie explosive",
+    name: "Grenades à gogo",
     description:
-      "[Lance-grenades] a 25 % de chances de tirer un projectile supplémentaire dont les dégâts sont réduits de 66 %.",
+      "[Lance-grenades] a <e>25 %</e> de chances de tirer un projectile supplémentaire dont les dégâts sont <e>réduits de 66 %</e>.",
   },
   "18P002": {
-    position: 2,
+    position: 3,
     name: "Boum !",
     description:
-      "Les tirs directs de [Lance-grenades] qui touchent une cible sans avoir ricoché brûlent cette dernière et lui infligent 20% de dégâts supplémentaires en 2 s.",
+      "Les tirs directs de [Lance-grenades] qui touchent une cible sans avoir ricoché <e>brûlent</e> cette dernière et lui infligent <e>20 %</e> de dégâts supplémentaires en <e>2 s</e>.",
   },
   "18P003": {
     position: 1,
     name: "Big Bang",
     description:
-      "Lorsqu'un projectile du [Lance-grenades] ricoche, sa taille augmente de 33%.",
+      "Lorsqu'un projectile du [Lance-grenades] ricoche, sa taille augmente de <e>33 %</e>.",
   },
   "18P004": {
     position: 2,
     name: "Bingo!",
     description:
-      "Les tirs de [Lance-grenades] qui touchent une cible sans avoir ricoché réduisent le temps de recharge de vos capacités de 25 %.",
+      "Les tirs de [Lance-grenades] qui touchent une cible sans avoir ricoché réduisent le temps de recharge de vos capacités de <e>25 %</e>.",
   },
   "18P005": {
     position: 5,
     name: "Souffle-suie",
     description:
-      "Après avoir déclenché votre [Mine incapacitante], votre vitesse d'attaque augmente de 15 % pendant 1,50 s et vous récupérez 20 % de vos munitions maximum.",
+      "Après avoir déclenché votre [Mine incapacitante], votre vitesse d'attaque augmente de <e>15 %</e> pendant <e>1,50 s</e> et vous récupérez <e>20 %</e> de vos munitions maximum.",
   },
   "18P006": {
     position: 6,
-    name: "Encore un piège !",
-    description: "Vous gagnez 1 charge supplémentaire de [Piège d'acier].",
+    name: "Dédoublement",
+    description: "Vous gagnez <e>1</e> charge supplémentaire de [Piège d'acier].",
   },
   "18P007": {
     position: 7,
     name: "Piège, 2e du nom",
     description:
-      "Si [Mine incapacitante] est au sol depuis au moins 0,5s, elle génère quand elle explose un [Piège d'acier] miniature qui ralentit les adversaires au lieu de les immobiliser.",
+      "Si [Mine incapacitante] est au sol depuis au moins <e>0,5 s</e>, elle génère quand elle explose un [Piège d'acier] miniature qui ralentit les adversaires au lieu de les immobiliser.",
   },
   "18P008": {
     position: 8,
     name: "Rebonds explosifs",
     description:
-      "Après une projection à l'aide d'une [Mine incapacitante], vous en déclenchez une autre à l'endroit où vous atterrissez avec une efficacité réduite de 30 %.",
+      "Après une projection à l'aide d'une [Mine incapacitante], vous en déclenchez une autre à l'endroit où vous atterrissez avec une efficacité <e>réduite de 30 %</e>.",
   },
   "18P009": {
     position: 9,
     name: "Obus-é",
     description:
-      "Les [coups en mêlée] explosent et infligent 100 % des dégâts de [coup en mêlée], ce qui vous repousse vous et vos adversaires. (Temps de recharge: 10 s)",
+      "Les [coups en mêlée] explosent et infligent <e>100 %</e> des dégâts de [coup en mêlée], ce qui vous repousse vous et vos adversaires. <e>(Temps de recharge: 10 s)</e>",
   },
   "18P010": {
     position: 10,
     name: "Bombe surprise",
     description:
-      "Rayon d'explosion de [Mauvais Perdant] augmenté de 20 %. [Mauvais Perdant] lbère une quantité aléatoire de bombes supplémentaires.",
+      "Rayon d'explosion de [Mauvais Perdant] <e>augmenté de 20 %</e>. [Mauvais Perdant] libère une quantité aléatoire de bombes supplémentaires.",
   },
   "18P011": {
     position: 11,
     name: "Pluie de plomb",
     description:
-      "Lorsque vous vous propulsez, vous lâchez 1 bombe de [Mauvais Perdant] à l'efficacité réduite de 25 % toutes les 0.3 s tant que vous êtes en l'air.",
+      "Lorsque vous vous propulsez, vous lâchez <e>1 bombe de</e> [Mauvais Perdant] à l'efficacité <e>réduite de 25 %</e> toutes les <e>0.3 s</e> tant que vous êtes en l'air.",
   },
   "18P012": {
     position: 12,
     name: "Roulé-boulé explosif",
     description:
-      "Coût de la capacité ultime réduit de 20 %. Vous entrez dans votre [Pneumastic] pendant la capacité ultime et en sortez lorsque celui-ci est détruit ou déclenché.",
+      "Coût de la capacité ultime réduit de <e>20 %</e>. Vous entrez dans votre [Pneumastic] pendant la capacité ultime et en sortez lorsque celui-ci est détruit ou déclenché.",
   },
 
   "31P001": {
