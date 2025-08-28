@@ -719,49 +719,49 @@ export default {
     position: 1,
     name: "Feux d'artifice rusés",
     description:
-      "Après un rechargement, les 3 prochains [Kunais] que vous lancez explosent à l'impact en infligeant 20 points de dégâts aux adversaires proches.",
+      "Quand les munitions sont au max., <e>3</e>[Kunais] lancés explosent à l'impact en infligeant <wp>20</wp> points de dégâts aux adversaires proches.",
   },
   "35P002": {
     position: 2,
     name: "Kunai Acéré",
     description:
-      "Les coups critiques de [Kunai] réduisent vos temps de recharge en cours de 15% et vous rendent 3 munitions.",
+      "Les coups critiques de [Kunai] réduisent vos temps de recharge en cours de <e>15 %</e> et vous rendent <e>3</e> munitions.",
   },
   "35P003": {
     position: 3,
     name: "Menace Triple",
     description:
-      "Pendant 4 s après l'utilisatoin de [Pas véloce], votre tir secondaire projette 2 [Kunais] supplémentaires qui infligent des dégâts réduits de 50%.",
+      "Pendant <e>4 s</e> après l'utilisation de [Pas véloce], votre tir secondaire projette <e>2</e> [Kunais] supplémentaires qui infligent des dégâts réduits de <e>50 %</e>.",
   },
   "35P004": {
     position: 4,
     name: "Feuille dans le Vent",
     description:
-      "[O-fuda de guérison] rebondit vers un autre personnage allié jusqu'à 2 fois et prodigue des soins à hauteur de 30% du montant normal.",
+      "[O-fuda de guérison] rebondit vers un autre personnage allié jusqu'à <e>2 fois</e> et prodigue des soins à hauteur de <e>30 %</e> du montant normal.",
   },
   "35P005": {
     position: 5,
     name: "Soins Personnels",
     description:
-      "Lorsque vous utilisez [O-fuda de guérison], vous récupérez 15% de vos points de vie maximum.",
+      "Lorsque vous utilisez [O-fuda de guérison], chaque o-fuda lancé vous soigne à hauteur de <e>3 %</e> de vos points de vie maximum.",
   },
   "35P006": {
     position: 6,
     name: "Tirs Assistés",
     description:
-      "Lorsque [O-fuda de guérison] soigne des personnages alliés, ceux-ci voient leur vitesse d'attaque augmentée de 20% pendant 3 s.",
+      "Lorsque [O-fuda de guérison] soigne des personnages alliés, ceux-ci voient leur vitesse d'attaque augmentée de <e>20 %</e> pendant <e>3 s</e>.",
   },
   "35P007": {
     position: 8,
     name: "Pied Léger",
     description:
-      "[Pas véloce] peut être utilisé dans n'importe quelle direction, sans nécessiter de cible. Le temps de recharge est augmenté de <e>35 %</e> lorsque la compétence est utilisée sans cible.",
+      "[Pas véloce] peut être utilisé dans n'importe quelle direction, sans nécessiter de cible. Son temps de recharge est augmenté de <e>35 %</e> lorsqu'il est utilisé sans cible.",
   },
   "35P008": {
     position: 7,
     name: "Invocation de Clone",
     description:
-      "Après l'utilisation de [Pas véloce], vous créez un clone de vous-même qui persiste <e>4 s</e>. Les dégâts et les soins de votre clone sont réduits de <e>65 %</e>",
+      "Après l'utilisation de [Pas véloce], vous créez un clone de vous-même qui persiste <e>4 s</e>. Les dégâts et les soins de votre clone sont réduits de <e>65 %</e>.",
   },
   "35P009": {
     position: 9,
@@ -772,19 +772,19 @@ export default {
     position: 10,
     name: "Purification Énergisante",
     description:
-      "Lorsque vous dissipez des effets négatifs avec [Suzu de protection], vous gagnez 5% de charge de capacité ultime pour chaque personnage purifié.",
+      "Lorsque vous dissipez des effets négatifs avec [Suzu de protection], vous gagnez <e>5 %</e> de charge de capacité ultime pour chaque personnage purifié.",
   },
   "35P011": {
     position: 11,
     name: "Agente de la Circulation",
     description:
-      "[Ruée de Kitsune] réduit désormais aussi la vitesse de déplacement des personnages adverses de 50% pendant 2 s.",
+      "[Ruée de Kitsune] réduit désormais aussi la vitesse de déplacement des personnages adverses de <e>50 %</e> pendant <e>2 s</e>.",
   },
   "35P012": {
     position: 12,
     name: "Voile Spirituel",
     description:
-      "[Ruée de Kitsune] dissipe les effets négatifs qui vous affectent et vous rendent invulnérable pendant 4 s.",
+      "[Ruée de Kitsune] dissipe les effets négatifs qui vous affectent et vous rendent <e>invulnérable</e> pendant <e>4 s</e>.",
   },
   "22P001": {
     position: 2,
