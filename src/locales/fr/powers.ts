@@ -1011,54 +1011,54 @@ export default {
     position: 2,
     name: "Piqûre",
     description:
-      "Votre [Médiblaster] inflige 10 points de dégâts supplémentaires aux adveraires en 1 s (Cet effet n'est pas cumulable).",
+      "Votre [Médiblaster] inflige <ap>10</ap> points de dégâts supplémentaires aux adveraires en <e>1 s</e>. (Cet effet n'est pas cumulable).",
   },
   "41P003": {
     position: 5,
     name: "Réfrigérant Cosmique",
     description:
-      "Le temps de recharge de [Torpilles à neutrons] est réduit de 0,5 s par cible touchée.",
+      "Le temps de recharge de [Torpilles à neutrons] est réduit de <e>0,5 s</e> par cible touchée.",
   },
   "41P004": {
     position: 3,
     name: "Missiles Médicinaux",
     description:
-      "Les personnages alliés touchés par [Torpilles à neutrons] reçoivent des soins augmentés de 50% pendant 3 s.",
+      "Les personnages alliés touchés par [Torpilles à neutrons] reçoivent des soins augmentés de <e>50 %</e> pendant <e>3 s</e>.",
   },
   "41P005": {
     position: 4,
     name: "Neutrons Améliorés",
-    description: "[Torpilles à neutrons] obtient 1 charge supplémentaire.",
+    description: "[Torpilles à neutrons] obtient <e>1</e> charge supplémentaire.",
   },
   "41P006": {
     position: 6,
     name: "Torpilles en vol",
     description:
-      "Pendant [Vol plané], le temps de recharge de [Torpilles à neutrons] est réduit de 1 s chaque fois que vous infligez 50 points de dégâts.",
+      "Pendant [Vol plané], le temps de recharge de [Torpilles à neutrons] est réduit de <e>1 s</e> chaque fois que vous infligez <e>50</e> points de dégâts.",
   },
   "41P007": {
     position: 7,
     name: "Vol Rapide",
     description:
-      "[Vol plané] gagne 2 charges supplémentaires et son temps de recharge est diminué de 30% mais sa durée est réduite de 75%.",
+      "[Vol plané] gagne <e>2</e> charges supplémentaires et son temps de recharge est diminué de <e>40 %</e> mais sa durée est <e>réduite de 75%</e>.",
   },
   "41P008": {
     position: 8,
     name: "Anneau de Ralliement",
     description:
-      "Le temps de recharge d'[Hyperanneau] est réduit de 1 s quand un allié le traverse.",
+      "Le temps de recharge d'[Hyperanneau] est réduit de <e>1 s</e> quand un allié le traverse.",
   },
   "41P009": {
     position: 10,
     name: "Trou Noir",
     description:
-      "Les adversaires qui passent à travers de votre [Hyperanneau] voient leur vitesse de déplacement réduite de 35% pendant 2 s.",
+      "Les adversaires qui passent à travers de votre [Hyperanneau] voient leur vitesse de déplacement réduite de <e>35 %</e> pendant <e>2 s</e>.",
   },
   "41P010": {
     position: 9,
     name: "Hypersoins",
     description:
-      "Les personnages alliés affectés par [Hyperanneau] gagnent un surplus de 75 points de vie.",
+      "Les personnages alliés affectés par [Hyperanneau] gagnent un <e>surplus de</e> <ap>75</ap> <e>points de vie</e>.",
   },
   "41P011": {
     position: 12,
@@ -1070,7 +1070,7 @@ export default {
     position: 11,
     name: "Alignement Orbital",
     description:
-      "Les personnages adverses pris dans votre [Rayon Orbital] voient leur vitesse de déplacement réduite de 35%. Les personnages alliés qui se trouvent dans le rayon voient leur vitesse de déplacement augmentée de 25%.",
+      "Les personnages adverses pris dans votre [Rayon Orbital] voient leur vitesse de déplacement réduite de <e>35 %</e> et flottent vers le haut. Les personnages alliés qui se trouvent dans le rayon voient leur vitesse de déplacement augmentée de <e>25 %</e>.",
   },
   "20P001": {
     position: 4,
