@@ -217,73 +217,73 @@ export default {
     position: 6,
     name: "Secouriste Militaire",
     description:
-      "Chaque intervalle de 1 s d'utilisation du [Caducée] augmente la vitesse d'attaque de [Miséricorde] de 4 % (cumulable 10 fois). Cet effet perdure jusqu'à ce que vous rechargiez votre arme ou repreniez votre caducée.",
+      "Chaque intervalle de <e>1 s</e> d'utilisation du [Caducée] augmente la vitesse d'attaque de [Miséricorde] de <e>3 %</e> (cumulable <e>10 fois</e>). Cet effet perdure jusqu'à ce que vous rechargiez votre arme ou repreniez votre [Caducée].",
   },
   "6P002": {
-    position: 8,
+    position: 10,
     name: "Soins d'Urgence",
     description:
-      "Lorsque vous utilisez [Résurrection] sur un personnage allié, lui et vous gagnez un surplus de 250 points de vie pendant 6 s.",
+      "Lorsque vous utilisez [Résurrection] sur un personnage allié, lui et vous gagnez un <e>surplus de</e> <ap>250</ap> <e>points de vie</e> pendant <e>6 s</e>.",
   },
   "6P003": {
-    position: 9,
+    position: 11,
     name: "Tirer sur l'Ambulance",
     description:
-      "Lorsqu'[Ange Gardien] prend fin, vous rendez 4 points de vie à votre cible pour chaque intervalle de 1 m parcourue.",
+      "Lorsqu'[Ange Gardien] prend fin, vous rendez <ap>4</ap> points de vie à votre cible pour chaque intervalle de <e>1 m</e> parcourus.",
   },
   "6P004": {
-    position: 7,
+    position: 9,
     name: "Renaissance",
     description:
-      "Après une [Résurrection] réussie, vous activez [Valkyrie] pendant 5 s.",
+      "Après une [Résurrection] réussie, vous activez [Valkyrie] pendant <e>5 s</e>.",
   },
   "6P005": {
-    position: 7,
+    position: 8,
     name: "Échange Équivalent",
     description:
-      "[Résurrection] dispose de 3 charges et son temps de lancement est réduit de 33 %, mais son temps de recharge ne se réinitialise qu'au début d'une manche.",
+      "[Résurrection] dispose de <e>3 charges</e> et son temps de lancement est réduit de <e>33 %</e>, mais son temps de recharge ne se réinitialise qu'au début d'une manche.",
   },
   "6P006": {
-    position: 10,
+    position: 12,
     name: "Unité de Triage",
     description:
-      "Lorsque vous utilisez [Ange Gardien] sur un personnage allié ayant moins de 50% de points de vie, votre [Caducée] lui rend 30 % de points de vie supplémentaires pendant 3 s.",
+      "Lorsque vous utilisez [Ange Gardien] sur un personnage allié ayant moins de <e>50 %</e> de points de vie, vous lui rendez <e>25 %</e> de points de vie supplémentaires pendant <e>3 s</e>.",
   },
   "6P007": {
     position: 2,
     name: "Fils du Destin",
     description:
-      "Votre [Caducée] affecte aussi votre cible précédente pendant 3 s avec une efficacité de 50 %.",
+      "Votre [Caducée] affecte aussi votre cible précédente pendant <e>3 s</e> avec une efficacité de <e>35 %</e>.",
   },
   "6P008": {
     position: 3,
     name: "Rayon Protecteur",
     description:
-      "Les cibles de votre [Caducée] ayant plus de 80% de leurs points de vie bénéficient de 10 % de réduction des dégâts.",
+      "Les cibles de votre [Caducée] ayant plus de <e>80 %</e> de leurs points de vie bénéficient de <e>10 % de réduction des dégâts</e>. [Caducée] reste lié <e>1 s</e> de plus aux personnages alliés hors de votre ligne de vue.",
   },
   "6P009": {
     position: 4,
     name: "Sérénité",
     description:
-      "[Guérison favorable] rend 20 % de points de vie supplémentaires et vous soigne même lorsque vous aidez un personnage allié ayant tous ses points de vie.",
+      "[Guérison favorable] rend <e>10 %</e> de points de vie supplémentaires et vous soigne même lorsque vous aidez un personnage allié ayant tous ses points de vie.",
   },
   "6P010": {
     position: 1,
     name: "Distorsion",
     description:
-      "Les personnages alliés boostés par votre [Caducée] gagnent un effet de vol de vie de 20 %.",
+      "Les personnages alliés boostés par votre [Caducée] gagnent un effet de vol de vie de <e>20 %</e>.",
   },
   "6P011": {
-    position: 11,
-    name: "Cercle Crépusculaire",
+    position: 6,
+    name: "Garrot lié",
     description:
-      "Tant que la capacité [Valkyrie] est active, les soins et le bonus de dégâts de votre [Caducée] s'appliquent automatiquement aux personnages alliés proches.",
+      "Lorsque vous dégainez votre [Miséricorde], [Caducée] soigne automatiquement les personnages alliés à <e>100 %</e> d'efficacité pour chaque <e>seconde</e> où [Caducée] était lié à quelqu'un, jusqu'à un maximum de <e>10 s</e>.",
   },
   "6P012": {
     position: 5,
-    name: "Verre Extra Plein",
+    name: "Surapprovisionnement",
     description:
-      "Les soins octroyés par votre [Caducée] aux personnages alliés disposant de tous leurs points de vie sont convertis en surplus de points de vie, jusqu'à un maximum de 50.",
+      "Recharger [Caducée] augmente la vitesse de déplacement des personnages alliés affectés de <e>20 %</e> pendant <e>2 s</e>, leur rend <e>50 %</e> de leurs munitions et réduit leurs temps de recharge de <e>3 s</e>. <e>(Temps de recharge: 10 s)</e>",
   },
   "26P001": {
     position: 2,
