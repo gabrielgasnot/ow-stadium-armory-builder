@@ -1291,61 +1291,61 @@ export default {
     position: 1,
     name: "Coup de pied volant",
     description:
-      "En l'air, votre [coup en mêlée] se transforme en ruée suivie d'un coup de pied qui étourdit les adversaires projetés dans un mur. (Temps de recharge: 5 s)",
+      "En l'air, votre [coup en mêlée] se transforme en ruée suivie d'un coup de pied qui étourdit les adversaires projetés dans un mur et inflige <wp>40</wp> points de dégâts. <e>(Temps de recharge: 5 s)</e>",
   },
   "10P002": {
     position: 2,
     name: "Orbes à gogo",
     description:
-      "Le tir secondaire de votre [orbe de destruction] peut charger jusqu'à 3 projectiles supplémentaires.",
+      "Le tir secondaire de votre [orbe de destruction] peut charger jusqu'à <e>3</e> projectiles supplémentaires.",
   },
   "10P003": {
     position: 3,
     name: "Quête de salut",
     description:
-      "Les projectiles du tir secondaire d'[Orbe de destruction] traquent la cible si les points de vie de cette dernière sont inférieurs à 35 %.",
+      "Les projectiles du tir secondaire d'[Orbe de destruction] traquent la cible si les points de vie de cette dernière sont inférieurs à <e>35 %</e>.",
   },
   "10P004": {
     position: 4,
     name: "Double Harmonie",
     description:
-      "Vous gagnez un deuxième [Orbe d'harmonie], mais les soins de vos orbes sont réduits de 40 %.",
+      "Vous gagnez un <e>deuxième</e> [Orbe d'harmonie], mais les soins de vos orbes sont <e>réduits de 40 %</e>.",
   },
   "10P005": {
     position: 6,
     name: "Illumination",
     description:
-      "Les personnages alliés qui bénéficient de votre [Orbe d'harmonie] sont soignés à hauteur de 35 % des dégâts que vous infligez.",
+      "Les personnages alliés qui bénéficient de votre [Orbe d'harmonie] sont soignés à hauteur de <e>35 %</e> des dégâts que vous infligez.",
   },
   "10P006": {
     position: 5,
     name: "Foi inébranlable",
     description:
-      "La cible de votre [Orbe d'harmonie] peut rester hors de votre ligne de vue pendant 10 s de plus avant de perdre l'orbe.",
+      "La cible de votre [Orbe d'harmonie] peut rester hors de votre ligne de vue pendant <e>10 s</e> de plus avant de perdre l'orbe.",
   },
   "10P007": {
     position: 7,
     name: "Paix intérieure",
     description:
-      "Vous bénéficiez d'un [Orbe d'harmonie] personnel et permanent dont les soins sont réduits de 75 %.",
+      "Vous bénéficiez d'un [Orbe d'harmonie] personnel et permanent dont les soins sont <e>réduits de 75 %</e>.",
   },
   "10P008": {
     position: 9,
     name: "Fièvre de discorde",
     description:
-      "Lorsqu'une cible adverse subit les effets de votre [Orbe de discorde], elle subit 50 points de dégâts en 5 s.",
+      "Lorsqu'une cible adverse subit les effets de votre [Orbe de discorde], elle subit <ap>50</ap> points de dégâts en <e>5 s</e>.",
   },
   "10P009": {
     position: 8,
     name: "Brasier de discorde",
     description:
-      "Lorsque vous infligez un coup critique à la cible de votre [Orbe de discorde], il explose et inflige 50 points de dégâts.",
+      "Lorsque vous infligez un coup critique à la cible de votre [Orbe de discorde], il explose et inflige <ap>50</ap> points de dégâts.",
   },
   "10P010": {
     position: 10,
     name: "Karma Instantané",
     description:
-      "Lorsque la cible de votre [Orbe de discorde] vous inflige des dégâts, vous vous soignez à hauteur de 30 % de ces dégâts de 2 s.",
+      "Lorsque la cible de votre [Orbe de discorde] vous inflige des dégâts, vous vous soignez à hauteur de <e>30 %</e> de ces dégâts de <e>2 s</e>.",
   },
   "10P011": {
     position: 11,
@@ -1357,7 +1357,7 @@ export default {
     position: 12,
     name: "Contrôle de l'âme",
     description:
-      "[Transcendance] peut être interrompue avant la fin de son effet pour conserver jusqu'à 75 % de sa charge.",
+      "[Transcendance] peut être interrompue avant la fin de son effet pour conserver jusqu'à <e>75 %</e> de sa charge.",
   },
   "18P001": {
     position: 4,
