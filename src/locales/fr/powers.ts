@@ -431,73 +431,73 @@ export default {
     position: 4,
     name: "Gueule de Wyrm",
     description:
-      "Les cibles touchées par vos [Shurikens] subissent des dégâts augmentés de 10% de la part de [Frappe du vent] pendant 4 s. Cet effet peut se cumuler 5 fois.",
+      "Les cibles touchées par vos [Shurikens] subissent des dégâts augmentés de <e>10 %</e> de la part de [Frappe du vent] pendant <e>4 s</e>. Cet effet peut se cumuler <e>5 fois</e>.",
   },
   "21P002": {
     position: 5,
     name: "Lacération",
     description:
-      "[Frappe du vent] inflige 35% de dégâts supplémentaires en 3 s aux cibles adverses touchées.",
+      "[Frappe du vent] inflige <e>35 %</e> de dégâts supplémentaires en <e>3 s</e> aux cibles adverses touchées.",
   },
   "21P003": {
-    position: 11,
+    position: 10,
     name: "Technique d'Iaido",
     description:
       "Lorsque [Riposte] prend fin, vous effectuez une frappe rapide avec votre [Lame du dragon].",
   },
   "21P004": {
-    position: 6,
+    position: 11,
     name: "Lame dissimulée",
     description:
-      "Vos dégâts de mêlée bénéficient de 60% de vol de vie et les dégâts de votre [Coup en mêlée] augmentent de 15.",
+      "Vos dégâts de mêlée bénéficient de <e>60 %</e> de vol de vie et les dégâts de votre [Coup en mêlée] augmentent de <e>15</e>.",
   },
   "21P005": {
-    position: 9,
+    position: 8,
     name: "Forgé sous le Feu",
     description:
-      "Tant que votre [Riposte] est active, vous vous soignez à hauteur de 60% des dégâts bloqués.",
+      "Tant que votre [Riposte] est active, vous vous soignez à hauteur de <e>60 %</e> des dégâts bloqués.",
   },
   "21P006": {
     position: 2,
     name: "Shuriken Sacré",
     description:
-      "Le tir principal de [Shuriken] lance 2 [Shurikens] supplémentaires qui ne consomment pas de munitions.",
+      "Le tir principal de [Shuriken] lance <e>2</e> [Shurikens] supplémentaires qui ne consomment pas de munitions.",
   },
   "21P007": {
-    position: 7,
+    position: 6,
     name: "Soins d'Hanamura",
     description:
-      "Les coups critiques et les [Frappes du vent] vous octroient un surplus de points de vie égal à 25% des dégâts infligés pendant 5 s.",
+      "Les coups critiques et les [Frappes du vent] vous octroient un <e>surplus de points de vie</e> égal à <e>25 %</e> des dégâts infligés pendant <e>5 s</e>.",
   },
   "21P008": {
-    position: 8,
+    position: 7,
     name: "Esprit de Sojiro",
     description:
-      "Quand [Riposte] bloque des dégâts, le temps de recharge de [Frappe du vent] est réduit de 1 s. Cet effet peut se cumuler jusqu'à atteindre 5 s.",
+      "Quand [Riposte] bloque des dégâts, le temps de recharge de [Frappe du vent] est réduit de <e>1 s</e>. Cet effet peut se cumuler jusqu'à atteindre <e>5 s</e>.",
   },
   "21P009": {
     position: 12,
     name: "Souffle du Dragon",
     description:
-      "Les frappes de [Lame du dragon] projettent un large projectile perforant qui inflige 50% des dégâts de [Lame du dragon].",
+      "Les frappes de [Lame du dragon] projettent un large projectile perforant qui inflige <e>50 %</e> des dégâts de [Lame du dragon].",
   },
   "21P010": {
     position: 3,
     name: "Vitesse Cybernétique",
     description:
-      "Les dégâts infligés par [Shuriken] augmentent de 2% la vitesse d'attaque de [Shuriken] pendant 3 s. Cet effet peut se cumuler 15 fois.",
+      "Les dégâts infligés par [Shuriken] augmentent de <e>2 %</e> la vitesse d'attaque de [Shuriken] pendant <e>3 s</e>. Cet effet peut se cumuler <e>15 fois</e>.",
   },
   "21P011": {
     position: 1,
     name: "Fléau des Hashimoto",
     description:
-      "Après l'utilisation d'une capacité, votre prochain tir secondaire lance 2 [Shurikens] supplémentaires qui traquent les adversaires, mais infligent des dégâts réduits de 50%.",
+      "Après l'utilisation d'une capacité, votre prochain tir secondaire lance <e>2</e> [Shurikens] supplémentaires qui traquent les adversaires, mais infligent des dégâts <e>réduits de 50 %</e>.",
   },
   "21P012": {
-    position: 10,
+    position: 9,
     name: "Riposte-o-tron",
     description:
-      "Vitesse des projectiles renvoyés augmentée de 50 %. Pendant les 1,5 premières secondes de [Riposte] vous renvoyez automatiquement les projectiles en direction des adversaires.",
+      "Vitesse des projectiles renvoyés augmentée de <e>50 %</e>. Pendant les <e>1,5 premières secondes</e> de [Riposte] vous renvoyez automatiquement les projectiles en direction des adversaires.",
   },
   "24P004": {
     position: 2,
