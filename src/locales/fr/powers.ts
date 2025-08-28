@@ -1435,72 +1435,72 @@ export default {
     position: 1,
     name: "Apesanteur",
     description:
-      "Lorsque vous utilisez une capacité, vous pouvez voler pendant 2,5 s.",
+      "Lorsque vous utilisez une capacité, vous pouvez voler pendant <e>2,5 s</e>. En vol, vous bénéficiez de <e>10 %</e> de réduction des dégâts et d'augmentation de la vitesse de déplacement.",
   },
   "31P002": {
     position: 2,
     name: "Hypercycle",
     description:
-      "Le temps de recharge de [Concrétion] est réduit de 0,5 s chaque fois qu'[Hypersphères] touche directement une cible adverse.",
+      "Le temps de recharge de [Concrétion] est réduit de <e>0,8 s</e> chaque fois qu'[Hypersphères] touche directement une cible adverse.",
   },
   "31P003": {
     position: 3,
     name: "Trinisphère",
     description:
-      "Votre tir principal lance une troisième [Hypersphère] dont les dégâts sont réduits de 50 %.",
+      "Votre tir principal lance une troisième [Hypersphère] dont les dégâts sont <e>réduits de 50 %</e>.",
   },
   "31P004": {
     position: 4,
     name: "Horizon des évèvenemts",
     description:
-      "Les dégâts absorbés par [Captation cinétique] regénèrent les points de vie d'[Écran expérimental]. L'excédent lui accorde un surplus de points de vie.",
+      "Les dégâts absorbés par [Captation cinétique] regénèrent les points de vie d'[Écran expérimental]. L'excédent lui accorde un <e>surplus de points de vie</e>.",
   },
   "31P005": {
     position: 5,
     name: "Syzygie symphonique",
     description:
-      "A la fin de [Captation cinétique], vous gagnez 10 % de vitesse d'attaque pour chaque tranche de 100 points de dégâts absorbés pendant 4 s. Cet effet peut être cumulé 4 fois.",
+      "A la fin de [Captation cinétique], vous gagnez <e>10 %</e> de vitesse d'attaque pour chaque tranche de <e>100</e> points de dégâts absorbés pendant <e>4 s</e>. Cet effet peut être cumulé <e>4 fois</e>.",
   },
   "31P006": {
     position: 6,
     name: "Écran orbital",
     description:
-      "Vous obtenez un [Écran expérimental] miniature qui tourne autour de vous. Cet écran dispose de points de vie réduits de 50 %.",
+      "Vous obtenez un [Écran expérimental] miniature qui tourne autour de vous. Cet écran dispose de points de vie <e>réduits de 50 %</e>.",
   },
   "31P007": {
     position: 7,
     name: "Résistance philharmonique",
     description:
-      "Le maximum de points de vie d'[Écran expérimental] est augmenté de 25 %. L'écran régénère constamment ses points de vie, mais cet effet est ralenti de 50 % tant que l'écran est déployé.",
+      "Le maximum de points de vie d'[Écran expérimental] est augmenté de <e>25 %</e>. L'écran régénère constamment ses points de vie, mais cet effet est ralenti de <e>50 %</e> tant que l'écran est déployé.",
   },
   "31P008": {
     position: 8,
     name: "Projection de masse",
     description:
-      "Les projectiles de [Concrétion] qui traversent l'[Écran expérimental] voient leur vitesse augmentée de 300 %  et leurs dégâts de 20 %.",
+      "Les projectiles de [Concrétion] qui traversent l'[Écran expérimental] voient leur vitesse augmentée de <e>300 %</e> et leurs dégâts de <e>20 %</e>.",
   },
   "31P009": {
     position: 9,
     name: "Singularité",
     description:
-      "Les dégâts de zone de [Concrétion] sont augmentés de 25 % et les adversaires sont attirés vers le centre de l'explosion.",
+      "Les dégâts de zone de [Concrétion] sont augmentés de <e>75 %</e> et les adversaires sont attirés vers le centre de l'explosion.",
   },
   "31P010": {
     position: 10,
     name: "Maestro",
     description:
-      "Le coût de votre capacité ultime est réduit de 50 %. Le rayon de [Flux gravitationnel] est réduit de 50 %.",
+      "Le coût de votre capacité ultime est réduit de <e>50 %</e>. Le rayon de [Flux gravitationnel] est réduit de <e>50 %</e>.",
   },
   "31P011": {
     position: 11,
     name: "Alignement paroxystique",
     description:
-      "Lorsque vous utilisez une capacité, vous obtenez 2 [Hypersphères] qui gravitent autour de vous. Elles explosent au contact, mais leurs dégâts sont réduits de 50 %.",
+      "Lorsque vous utilisez une capacité, vous obtenez <e>2</e> [Hypersphères] qui gravitent autour de vous. Elles explosent au contact, mais leurs dégâts sont <e>réduits de 50 %</e>.",
   },
   "31P012": {
     position: 12,
     name: "Astrophysicien",
     description:
-      "Vos [coups en mêlée] soulèvent vos adversaires dans les airs pendant 1 s. (Temps de recharge: 10 s)",
+      "Vos [coups en mêlée] soulèvent vos adversaires dans les airs pendant <e>1 s</e>. <e>(Temps de recharge: 10 s)</e>",
   },
 };
