@@ -303,4 +303,7 @@ export default {
   "00W025": { position: 6, name: "Puce d'urgence" },
   "00A022": { position: 11, name: "Chargeur Sonique" },
   "00A023": { position: 11, name: "Amplificateur de Vitalité" },
+  "00W026": { position: 12, name: "Balise Stratosphérique" },
+  "00A024": { position: 11, name: "Nanorobots antiaériens" },
+  "00S028": { position: 11, name: "Protection balistique" },
 };

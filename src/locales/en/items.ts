@@ -303,4 +303,7 @@ export default {
   "00S027": { position: 6, name: "Overdrive Core" },
   "00A022": { position: 11, name: "Sonic Recharger" },
   "00A023": { position: 11, name: "Vitality Amplifier" },
+  "00W026": { position: 12, name: "Stratosphere Beacon" },
+  "00A024": { position: 11, name: "Skyline Nanites" },
+  "00S028": { position: 11, name: "Ballistic Buffer" },
 };
