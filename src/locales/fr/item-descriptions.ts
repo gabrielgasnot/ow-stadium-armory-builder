@@ -1041,12 +1041,6 @@ export default {
         "Pendant [Vol plané], les dégâts que vous subissez sont réduits de 10%.",
     },
   ],
-  "41S002": [
-    {
-      type: "description",
-      value: "Les soints de [Rayon orbital] augmentent de 25%.",
-    },
-  ],
   "41W004": [
     {
       type: "description",
@@ -1570,13 +1564,6 @@ export default {
     },
   ],
   "43A001": [{ type: "Hauteur de [Courant ascendant]", value: 20, unit: "%" }],
-  "43A002": [
-    {
-      type: "description",
-      value:
-        "[Tir de bolas] attire les adversaires à proximité même lorsqu'il rate sa cible, mais sa force d'attraction est réduite de 50 %.",
-    },
-  ],
   "43S001": [
     {
       type: "Durée de déplacement ralenti de [Dans le mille]",

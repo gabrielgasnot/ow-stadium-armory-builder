@@ -949,12 +949,6 @@ export default {
       value: "During [Glide Boost], gain 10% Damage Reduction.",
     },
   ],
-  "41S002": [
-    {
-      type: "description",
-      value: "+75 Shield, during [Glide Boost], gain 10% Damage Reduction",
-    },
-  ],
   "41S004": [
     {
       type: "description",
@@ -1435,13 +1429,6 @@ export default {
     },
   ],
   "43A001": [{ type: "[Updraft] Height", value: 20, unit: "%" }],
-  "43A002": [
-    {
-      type: "description",
-      value:
-        "[Bola Shot] pulls in nearby enemies even when it misses with 50% reduced pull strength.",
-    },
-  ],
   "43S001": [
     { type: "[Take Aim] Slowed Momentum Duration", value: 100, unit: "%" },
     {

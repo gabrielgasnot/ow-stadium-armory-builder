@@ -1605,13 +1605,6 @@
           "attributes": []
         },
         {
-          "id": "41S002",
-          "disabled": true,
-          "price": 10000,
-          "category": "Survival",
-          "attributes": [{ "type": "SH", "value": 75, "unit": "" }]
-        },
-        {
           "id": "41W004",
           "price": 10000,
           "category": "Weapon",
@@ -1908,13 +1901,6 @@
           "price": 10000,
           "category": "Weapon",
           "attributes": [{ "type": "WP", "value": 5, "unit": "%" }]
-        },
-        {
-          "id": "43A002",
-          "disabled": true,
-          "price": 10000,
-          "category": "Ability",
-          "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
         },
         {
           "id": "43S004",
