@@ -2269,5 +2269,37 @@
         }
       ]
     }
+  },
+  {
+    "id": 4,
+    "hp": 0,
+    "armor": 0,
+    "shields": 0,
+    "role": "Damage",
+    "skills": {
+      "weapons": [],
+      "abilities": [],
+      "passives": [],
+      "ultimates": []
+    },
+    "powers": [
+      "4P001",
+      "4P002",
+      "4P003",
+      "4P004",
+      "4P005",
+      "4P006",
+      "4P007",
+      "4P008",
+      "4P009",
+      "4P010",
+      "4P011",
+      "4P012"
+    ],
+    "items": {
+      "common": [],
+      "rare": [],
+      "epic": []
+    }
   }
 ]
