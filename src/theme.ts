@@ -8,6 +8,8 @@ declare module "@mui/material/styles" {
       orange: string;
       grades: { common: string; rare: string; epic: string };
       green: string;
+      ap: string;
+      wp: string;
     };
   }
   interface PaletteOptions {
@@ -16,6 +18,8 @@ declare module "@mui/material/styles" {
       orange?: string;
       grades?: { common: string; rare: string; epic: string };
       green?: string;
+      ap?:string;
+      wp?:string;
     };
   }
 }
@@ -34,6 +38,8 @@ const colors = {
   greenOW: "#16a531",
   blueOW: "#05a0fa",
   purpleOW: "#c948ff",
+  apPower: "#884ce7ff",
+  wpPower: "#ff3b3b",
 };
 
 const owTheme = createTheme({
@@ -57,6 +63,8 @@ const owTheme = createTheme({
       },
       blue: colors.blueOW,
       green: colors.greenOW,
+      ap: colors.apPower,
+      wp: colors.wpPower,
     },
     action: {
       disabled: colors.lightGrey,
