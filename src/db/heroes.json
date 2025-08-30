@@ -2263,10 +2263,10 @@
     "shields": 0,
     "role": "Damage",
     "skills": {
-      "weapons": [],
-      "abilities": [],
-      "passives": [],
-      "ultimates": []
+      "weapons": ["4I001"],
+      "abilities": ["4I002", "4I003", "4I004"],
+      "passives": ["4I006"],
+      "ultimates": ["4I005"]
     },
     "powers": [
       "4P001",

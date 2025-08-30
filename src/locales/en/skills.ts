@@ -485,4 +485,29 @@ export default {
     primary:
       "Manipulate gravity to lift enemies into the air and slam them back down.",
   },
+  "4I001": {
+    name: "Rocket Launcher",
+    primary: "Long-range explosive projectile weapon.",
+  },
+  "4I002": {
+    name: "Jump Jet",
+    primary: "Fly rapidly upwards. Grants some fuel.",
+  },
+  "4I003": {
+    name: "Concussive Blast",
+    primary: "Launch an explosive blast to knock back enemies.",
+  },
+  "4I004": {
+    name: "Jet Dash",
+    primary: "Boost horizontally.",
+  },
+  "4I005": {
+    name: "Barrage",
+    primary: "Hover in place and launch a continuous volley of mini-rockets.",
+  },
+  "4I006": {
+    name: "Hover Jets",
+    primary:
+      "Hold [Space] to hover. Slows falling when fuel is empty. Fuel only regenerates while on the ground.",
+  },
 };

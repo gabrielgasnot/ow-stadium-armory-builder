@@ -437,6 +437,26 @@
   },
   {
     "id": "31I005",
+    "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "4I001",
+    "affectedBy": ["WP", "WPLS", "AS"]
+  },
+  {
+    "id": "4I002",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "4I003",
     "affectedBy": ["AP", "ALS", "CR"]
+  },
+  {
+    "id": "4I004",
+    "affectedBy": ["CR"]
+  },
+  {
+    "id": "4I005",
+    "affectedBy": ["AP", "ALS"]
   }
 ]
