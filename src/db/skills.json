@@ -458,5 +458,9 @@
   {
     "id": "4I005",
     "affectedBy": ["AP", "ALS"]
+  },
+  {
+    "id": "4I006",
+    "affectedBy": []
   }
 ]

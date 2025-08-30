@@ -52,6 +52,7 @@ export const HeroProvider = ({ children }) => {
         ...localizedHero.skills.weapons,
         ...localizedHero.skills.abilities,
         ...localizedHero.skills.passives,
+        ...localizedHero.skills.ultimates
       ];
 
       setHeroPowers(powers);

@@ -306,4 +306,13 @@ export default {
   "00W026": { position: 12, name: "Balise Stratosphérique" },
   "00A024": { position: 11, name: "Nanorobots antiaériens" },
   "00S028": { position: 11, name: "Protection balistique" },
+  "4W001": { position: 1, name: "Améliorateur d'explosion" },
+  "4W002": { position: 2, name: "Ciblage de précision" },
+  "4A001": { position: 1, name: "Réfrigérant du Caire" },
+  "4A002": { position: 2, name: "Munitions Surchargées" },
+  "4A003": { position: 1, name: "Inhibiteur Helix" },
+  "4S001": { position: 1, name: "Plan de Vol" },
+  "4S002": { position: 2, name: "Turbines Calibrées" },
+  "4S003": { position: 1, name: "Aide à la visée d'Ana" },
+  "4S004": { position: 2, name: "Bouclier Préventif" },
 };

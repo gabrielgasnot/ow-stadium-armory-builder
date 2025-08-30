@@ -306,4 +306,13 @@ export default {
   "00W026": { position: 12, name: "Stratosphere Beacon" },
   "00A024": { position: 11, name: "Skyline Nanites" },
   "00S028": { position: 11, name: "Ballistic Buffer" },
+  "4W001": { position: 1, name: "Blast Enhancer" },
+  "4W002": { position: 2, name: "Precision Targeting" },
+  "4A001": { position: 1, name: "Cairo Coolant" },
+  "4A002": { position: 2, name: "Overcharged Ordnance" },
+  "4A003": { position: 1, name: "Helix Inhibitor" },
+  "4S001": { position: 1, name: "Flight Plan" },
+  "4S002": { position: 2, name: "Tuned Turbines" },
+  "4S003": { position: 1, name: "Ana's Aim-Assist" },
+  "4S004": { position: 2, name: "Forward Shielding" },
 };

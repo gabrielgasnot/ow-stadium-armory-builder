@@ -23,7 +23,10 @@ function PerkAttributes({
     attributes.map((attribute, index) => (
       <Box key={index} style={{ display: "flex", alignItems: "center" }}>
         {assertIsDescriptionAttribute(attribute) ? (
-          <HighlightText text={attribute.value} color={theme.palette.text.primary} />
+          <HighlightText
+            text={attribute.value}
+            color={theme.palette.text.primary}
+          />
         ) : assertIsStatAttribute(attribute) ? (
           <>
             <Box
@@ -52,24 +55,25 @@ function PerkAttributes({
                     ? `${attribute?.type}`
                     : `${attributeTypes[attribute.type]?.name}`}
                 </Typography>
-                {Array.isArray(skills) && skills.filter((skill) =>
-                  skill.affectedBy.includes(attribute.type)
-                ).length > 0 && (
-                  <Typography
-                    color={theme.palette.text.secondary}
-                    fontWeight={550}
-                    variant="caption"
-                  >
-                    (
-                    {skills
-                      .filter((skill) =>
-                        skill.affectedBy.includes(attribute.type)
+                {Array.isArray(skills) &&
+                  skills.filter((skill) =>
+                    skill.affectedBy.includes(attribute.type)
+                  ).length > 0 && (
+                    <Typography
+                      color={theme.palette.text.secondary}
+                      fontWeight={550}
+                      variant="caption"
+                    >
+                      (
+                      {skills
+                        .filter((skill) =>
+                          skill.affectedBy.includes(attribute.type)
+                        )
+                        .map((skill) => skill.name)
+                        .join(", ")}
                       )
-                      .map((skill) => skill.name)
-                      .join(", ")}
-                    )
-                  </Typography>
-                )}
+                    </Typography>
+                  )}
               </Box>
             </Box>
           </>

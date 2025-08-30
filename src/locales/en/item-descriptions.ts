@@ -1205,7 +1205,8 @@ export default {
   "00S013": [
     {
       type: "description",
-      value: "While you have Armor, take <e>10%</e> reduced Weapon Damage and gain <e>5%</e> Attack Speed.",
+      value:
+        "While you have Armor, take <e>10%</e> reduced Weapon Damage and gain <e>5%</e> Attack Speed.",
     },
   ],
   "00W013": [
@@ -1753,6 +1754,67 @@ export default {
       type: "description",
       value:
         "[Experimental Barrier] heals nearby allies for 3% of your max Life every 1s.",
+    },
+  ],
+  "4W001": [
+    {
+      type: "[Rocket Launcher] Explosion Radius",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "4W002": [
+    {
+      type: "description",
+      value: "[Rocket Launcher] direct hits restore <e>1</e> ammo.",
+    },
+  ],
+  "4A001": [
+    {
+      type: "description",
+      value:
+        "When you knock yourself back with [Concussive Blast], gain <e>20%</> Movement Speed for <e>3s</e>.",
+    },
+  ],
+  "4A002": [
+    {
+      type: "[Mini Rocket] Explosion Radius",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "4A003": [
+    {
+      type: "description",
+      value:
+        "[Concussive Blast] slows affected enemies by <e>20%<e> for <e>2s</e>.",
+    },
+  ],
+  "4S001": [
+    {
+      type: "description",
+      value:
+        "After using [Jump Jet] or [Jet Dash], gain <e>25</e> Overhealth for <e>3s</e>.",
+    },
+  ],
+  "4S002": [
+    {
+      type: "description",
+      value: "[Hover Jets] consume <e>20%</e> less fuel.",
+    },
+  ],
+  "4S003": [
+    {
+      type: "description",
+      value:
+        "[Rocket Launcher] direct hits heal <e>15%</e> of your maximum health over <e>3s</e>.",
+    },
+  ],
+  "4S004": [
+    {
+      type: "description",
+      value:
+        "When you use [Barrage], gain <e>25%</e> of your Max Life as Overhealth for <e>3s</e>.",
     },
   ],
 };

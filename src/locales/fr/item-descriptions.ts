@@ -1291,11 +1291,12 @@ export default {
   "00S010": [
     {
       type: "description",
-      value: "Les dégâts critiques que vous subissez sont réduits de <e>20 %</e>.",
+      value:
+        "Les dégâts critiques que vous subissez sont réduits de <e>20 %</e>.",
     },
   ],
   "00S011": [
-        {
+    {
       type: "Durée d'effets négatifs subis",
       value: -40,
       unit: "%",
@@ -1898,6 +1899,68 @@ export default {
       type: "description",
       value:
         "[Écran expérimental] soigne les personnages alliés à proximité à hauteur de 3 % de vos points de vie maximum par seconde.",
+    },
+  ],
+  "4W001": [
+    {
+      type: "Rayon d'explosion de [Lance-Roquettes]",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "4W002": [
+    {
+      type: "description",
+      value:
+        "Les tirs directs de [Lance-Roquettes] vous redonnent <e>1</e> munition.",
+    },
+  ],
+  "4A001": [
+    {
+      type: "description",
+      value:
+        "Lorsque vous vous faites reculer avec [Conflagration], votre vitesse de déplacement est augmentée de <e>20 %</e> pendant <e>3 s</e>.",
+    },
+  ],
+  "4A002": [
+    {
+      type: "Rayon d'explosion des [Mini-Roquettes]",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "4A003": [
+    {
+      type: "description",
+      value:
+        "[Conflagration] ralentit les cibles affectées de <e>20 %</e> pendant <e>2 s</e>.",
+    },
+  ],
+  "4S001": [
+    {
+      type: "description",
+      value:
+        "Après l'utilisation de [Réacteurs] ou d'[Élan Propulseur], vous obtenez un surplus de <e>25</e> points de vie pendant <e>3 s</e>.",
+    },
+  ],
+  "4S002": [
+    {
+      type: "description",
+      value: "[Stabilisateurs] consomme <e>20 %</e> de carburant en moins.",
+    },
+  ],
+  "4S003": [
+    {
+      type: "description",
+      value:
+        "Les tirs directs de [Lance-Roquettes] soignent <e>15 %</e> de vos points de vie maximum en <e>3 s</e>.",
+    },
+  ],
+  "4S004": [
+    {
+      type: "description",
+      value:
+        "Lorsque vous utilisez [Barrage], vous obtenez un surplus depoints de vie égal à <e>25 %</e> de vos points de vie max. pendant <e>3 s</e>.",
     },
   ],
 };
