@@ -949,12 +949,6 @@ export default {
       value: "During [Glide Boost], gain 10% Damage Reduction.",
     },
   ],
-  "41S002": [
-    {
-      type: "description",
-      value: "+75 Shield, during [Glide Boost], gain 10% Damage Reduction",
-    },
-  ],
   "41S004": [
     {
       type: "description",
@@ -1108,17 +1102,25 @@ export default {
   "00A004": [
     { type: "description", value: "When you die, gain 15% Ultimate Charge" },
   ],
+  "00A007": [{ type: "Starting Ultimate Charge", value: 25, unit: "%" }],
+  "00A024": [
+    {
+      type: "description",
+      value:
+        "Ability Damage to airborne enemies deal <e>20%</e> bonus damage over <e>2s</e>.",
+    },
+  ],
   "00S001": [
     {
       type: "description",
       value:
-        "At the start of the round and everytime you respawn, gain 100 unrecoverable Overhealth",
+        "At the start of the round and everytime you respawn, gain <e>100</e> unrecoverable <e>Overhealth</e>.",
     },
   ],
   "00S002": [
     {
       type: "description",
-      value: "While on the Objective, restore 8 Life every 1s",
+      value: "While on the Objective, restore <e>8</e> Life every <e>1s</e>",
     },
   ],
   "00S003": [
@@ -1131,7 +1133,7 @@ export default {
     {
       type: "description",
       value:
-        "At the start of the round and when you first respawn, gain 20% Move Speed for 10s while out of combat",
+        "At the start of the round and when you first respawn, gain <e>30%</e> Move Speed for <e>10s</e> while out of combat",
     },
   ],
   "00S005": [
@@ -1172,20 +1174,26 @@ export default {
   "00S009": [
     {
       type: "description",
-      value: "While you have Shields, take 15% reduced Ability Damage",
+      value:
+        "While you have Shields, take <e>15%</e> reduced Ability Damage and gain <e>5%</e> Ability Power.",
     },
   ],
   "00S010": [
     {
       type: "description",
-      value: "You take 20% reduced damage from Critical Hits",
+      value: "You take <e>20%</e> reduced damage from Critical Hits",
     },
   ],
   "00S011": [
     {
+      type: "Incoming Negative Effect Duration",
+      value: -40,
+      unit: "%",
+    },
+    {
       type: "description",
       value:
-        "When affected by Stun, Sleep, or Hinder, regenerate 10% of your Max Life over 3s",
+        "When affected by <e>Stun</e>, <e>Sleep</e>, or <e>Hinder</e>, restore <e>10%</e> of your Max Life over <e>3s</e>.",
     },
   ],
   "00S012": [
@@ -1197,7 +1205,8 @@ export default {
   "00S013": [
     {
       type: "description",
-      value: "While you have Armor, take 10% less Weapon Damage",
+      value:
+        "While you have Armor, take <e>10%</e> reduced Weapon Damage and gain <e>5%</e> Attack Speed.",
     },
   ],
   "00W013": [
@@ -1208,14 +1217,14 @@ export default {
     {
       type: "description",
       value:
-        "Dealing Weapon Damage to Barriers has a 50% chance to restore 1 ammo",
+        "Dealing Weapon Damage to Barriers has a <e>50%</e> chance to restore <e>1</e> ammo",
     },
   ],
   "00W015": [
     {
       type: "description",
       value:
-        "Deal 5% increased Weapon Damage for every 100 Max Life the target has more than you, up to 20%",
+        "Deal <e>5%</e> increased Weapon Damage for every <e>100</e> Max Life the target has more than you, up to <e>25%</e>",
     },
   ],
   "00W016": [
@@ -1241,7 +1250,8 @@ export default {
   "00W019": [
     {
       type: "description",
-      value: "When you use an ability, gain 20% Move Speed for 2s",
+      value:
+        "When you use an ability, gain <e>10%</e> Move Speed for <e>2s</e>",
     },
   ],
   "00W020": [
@@ -1269,14 +1279,21 @@ export default {
   "00W024": [
     {
       type: "description",
-      value:
-        "Weapon damage to airborne enemies deal 25% bonus damage over 3s.",
+      value: "Weapon damage to airborne enemies deal 25% bonus damage over 3s.",
     },
   ],
   "00W025": [
     {
       type: "description",
-      value: "While you are below 150 Life, gain 15% Weapon Lifesteal.",
+      value:
+        "Once per Life, when you are below <e>150</e> Life, gain <e>15%</e> Weapon Lifesteal and <e>50</e> Overhealth for <e>5s</e>.",
+    },
+  ],
+  "00W026": [
+    {
+      type: "description",
+      value:
+        "Weapon Damage to airborne targets above <e>3m</e> deals <e>10</e> bonus damage and slows the enemy by <e>25%</e> for <e>3s</e> <e>(10s Cooldown)</e>.",
     },
   ],
   "00A012": [
@@ -1296,7 +1313,8 @@ export default {
   "00A014": [
     {
       type: "description",
-      value: "Ability Damage and Healing grants 20% more Ultimate Charge",
+      value:
+        "Ability Damage and Healing grants <e>20%</e> more Ultimate Charge",
     },
   ],
   "00A015": [
@@ -1309,7 +1327,8 @@ export default {
   "00A016": [
     {
       type: "description",
-      value: "When you use an ability, restore 50 Armor or Shields over 2s",
+      value:
+        "When you use an ability, restore <e>50</e> Armor or Shields over <e>3s</e>",
     },
   ],
   "00A017": [
@@ -1335,7 +1354,7 @@ export default {
     {
       type: "description",
       value:
-        "After casting an ability, your next instance of Weapon Damage or Healing deals 25 bonus damage or healing",
+        "When you an ability, your next instance of Weapon Damage or Healing deals <ap>25</ap> bonus damage or healing",
     },
   ],
   "00A022": [
@@ -1347,7 +1366,8 @@ export default {
   "00A023": [
     {
       type: "description",
-      value: "While you are above 80% Life, gain 10% Ability Power.",
+      value:
+        "While you are above <e>50%</e> Life, gain <e>10%</E> Ability Power. Otherwise, gain <e>15%</e> Ability Lifesteal and abilities refresh <e>10%</e> faster.",
     },
   ],
   "00S017": [
@@ -1360,14 +1380,14 @@ export default {
     {
       type: "description",
       value:
-        "The last enemy to deal a final blow to you is Revealed when nearby, deal 10% more damage to them and take 10% reduced damage from them",
+        "The last enemy to deal a final blow to you is <e>Revealed</e> to you when nearby. Deal <e>10%</e> more damage to them and take <e>10%</e> reduced damage from them.",
     },
   ],
   "00S019": [
     {
       type: "description",
       value:
-        "When you take more than 100 damage at once, restore 20% of damage taken and start regenerating your Shields",
+        "When you take more than <e>150</e> pre-mitigation damage at once, gain Overhealth equal to <e>20%</e> of damage taken for <e>3s</e> and start regenerating your Shields.",
     },
   ],
   "00S020": [
@@ -1420,6 +1440,13 @@ export default {
         "Once per life, if you take damage that would reduce you below 30% Max Life, first gain 300 decaying Overhealth.",
     },
   ],
+  "00S028": [
+    {
+      type: "description",
+      value:
+        "After taking damage beyond <e>20m</e>, gain <e>50</e> Overhealth for <e>3s</e> <e>(15s Cooldown)</e>.",
+    },
+  ],
   "43W001": [{ type: "[Quick Dash] Distance", value: 25, unit: "%" }],
   "43W002": [
     {
@@ -1435,13 +1462,6 @@ export default {
     },
   ],
   "43A001": [{ type: "[Updraft] Height", value: 20, unit: "%" }],
-  "43A002": [
-    {
-      type: "description",
-      value:
-        "[Bola Shot] pulls in nearby enemies even when it misses with 50% reduced pull strength.",
-    },
-  ],
   "43S001": [
     { type: "[Take Aim] Slowed Momentum Duration", value: 100, unit: "%" },
     {
@@ -1734,6 +1754,67 @@ export default {
       type: "description",
       value:
         "[Experimental Barrier] heals nearby allies for 3% of your max Life every 1s.",
+    },
+  ],
+  "4W001": [
+    {
+      type: "[Rocket Launcher] Explosion Radius",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "4W002": [
+    {
+      type: "description",
+      value: "[Rocket Launcher] direct hits restore <e>1</e> ammo.",
+    },
+  ],
+  "4A001": [
+    {
+      type: "description",
+      value:
+        "When you knock yourself back with [Concussive Blast], gain <e>20%</> Movement Speed for <e>3s</e>.",
+    },
+  ],
+  "4A002": [
+    {
+      type: "[Mini Rocket] Explosion Radius",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "4A003": [
+    {
+      type: "description",
+      value:
+        "[Concussive Blast] slows affected enemies by <e>20%<e> for <e>2s</e>.",
+    },
+  ],
+  "4S001": [
+    {
+      type: "description",
+      value:
+        "After using [Jump Jet] or [Jet Dash], gain <e>25</e> Overhealth for <e>3s</e>.",
+    },
+  ],
+  "4S002": [
+    {
+      type: "description",
+      value: "[Hover Jets] consume <e>20%</e> less fuel.",
+    },
+  ],
+  "4S003": [
+    {
+      type: "description",
+      value:
+        "[Rocket Launcher] direct hits heal <e>15%</e> of your maximum health over <e>3s</e>.",
+    },
+  ],
+  "4S004": [
+    {
+      type: "description",
+      value:
+        "When you use [Barrage], gain <e>25%</e> of your Max Life as Overhealth for <e>3s</e>.",
     },
   ],
 };

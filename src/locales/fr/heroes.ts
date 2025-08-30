@@ -16,6 +16,7 @@ export default {
       43, // Freja
       21, // Genji
       20, // Mei
+      4, // Pharah
       15, // Soldat 76
 
       // Support
@@ -37,6 +38,7 @@ export default {
       "14": "Cassidy",
       "21": "Genji",
       "20": "Mei",
+      "4": "Pharah",
       "2": "Faucheur",
       "15": "Soldat 76",
       "22": "Ana",

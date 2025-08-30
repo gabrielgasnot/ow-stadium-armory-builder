@@ -15,6 +15,7 @@ export default {
     21, // Genji
     18, // Junkrat
     20, // Mei
+    4, // Pharah
     2, // Reaper
     15, // Soldier 76
 
@@ -37,6 +38,7 @@ export default {
     "14": "Cassidy",
     "21": "Genji",
     "20": "Mei",
+    "4": "Pharah",
     "2": "Reaper",
     "15": "Soldier 76",
     "22": "Ana",

@@ -1503,4 +1503,75 @@ export default {
     description:
       "Vos [coups en mêlée] soulèvent vos adversaires dans les airs pendant <e>1 s</e>. <e>(Temps de recharge: 10 s)</e>",
   },
+  "4P001": {
+    position: 2,
+    name: "Manoeuvre d'évitement",
+    description: "Après avoir utilisé [Réacteurs], le projectile de [Conflagration] est à tête chercheuse et il entrave les adversaires pendant <e>1,50 s</e> en cas de tir direct.",
+  },
+  "4P002": {
+    position: 1,
+    name: "Charge Supplémentaire",
+    description:
+      "[Conflagration] obtient <e>1</e> charge supplémentaire.",
+  },
+  "4P003": {
+    position: 3,
+    name: "Vecteur de lancement",
+    description:
+      "Chaque fois que vous repoussez des adversaires avec [Conflagration], vous leur tirez dessus <e>3</e> [Mini-Roquettes] à tête chercheuse.",
+  },
+  "4P004": {
+    position: 4,
+    name: "Barrage Éclair",
+    description:
+      "Votre vitesse de déplacement est augmentée de <e>40 %</e> pendant [Barrage]. Après avoir utilisé [Élan Propulseur], vous lancez un [Barrage] qui tire <e>60 %</e> de [Mini-Roquettes] en moins.",
+  },
+  "4P005": {
+    position: 6,
+    name: "Tapis de Bombes",
+    description:
+      "Votre vitesse est augmentée de <e>40 %</e> pendant [Barrage]. [Barrage] dure <e>50 %</e> plus longtemps.",
+  },
+  "4P006": {
+    position: 5,
+    name: "Batterie Récursive",
+    description:
+      "Les [Mini-Roquettes] gagnent <e>50 %</e> de vol de vie de capacité.",
+  },
+  "4P007": {
+    position: 8,
+    name: "Salve Cyclique",
+    description:
+      "Les tirs directs de [Lance-Roquettes] octroient <e>10</e> points de carburant et réduisent vos temps de recharge de <e>1 s</e>.",
+  },
+  "4P008": {
+    position: 7,
+    name: "Réserve de carburant",
+    description:
+      "Les tirs directs de [Lance-Roquettes] augmentent votre carburant maximum de <e>2</e> de façon permanente. Cet effet se cumule jusqu'à <e>25 fois</e>.",
+  },
+  "4P009": {
+    position: 9,
+    name: "Triple Salve",
+    description:
+      "Après avoir utilisé une capacité, votre prochain [Tir Principal] tire <e>3</e> roquettes infligeant chacune <e>40 %</e> des dégâts habituels.",
+  },
+  "4P010": {
+    position: 10,
+    name: "Conversion de carburant",
+    description:
+      "Le temps de recharge d'[Élan Propulseur] est <e>réduit de 50 %</e>, mais la capacité coûte désormais <e>65</e> points de carburant.",
+  },
+  "4P011": {
+    position: 11,
+    name: "Guidage Thermique",
+    description:
+      "Après avoir utilisé [Élan Propulseur], votre prochain [Tir Principal] est une roquette à tête chercheuse qui cible les adversaires.",
+  },
+  "4P012": {
+    position: 12,
+    name: "Vitesse Excessive",
+    description:
+      "Lorsque vous infligez des dégâts avec votre arme, votre vitesse de déplacement est augmentée de <e>5 %</e> et votre vitesse d'attaque de <e>3 %</e> pendant <e>3 s</e>. Cet effet peut se cumuler <e>6 fois</e>.Les tirs directs octroient le double de cumuls.",
+  }
 };

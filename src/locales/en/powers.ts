@@ -593,7 +593,7 @@ export default {
   },
   "34P010": {
     position: 5,
-    name: "Cut'em, Gracie!",
+    name: "Cut 'em, Gracie!",
     description:
       "Each enemy hit by [Jagged Blade] reduces its cooldown by 2s and are slowed by <e>35%</e> for <e>1s</e>.",
   },
@@ -1325,7 +1325,6 @@ export default {
     description:
       "[Transcendence] can be canceled early, saving up to <e>75%</e> of your Ultimate Charge.",
   },
-
   "18P001": {
     position: 4,
     name: "Frags for Days",
@@ -1468,4 +1467,75 @@ export default {
     description:
       "[Quick Melee] causes enemies hit to levitate into the air for <e>1s (10s cooldown)</e>.",
   },
+  "4P001": {
+    position: 1,
+    name: "Evasive Maneuvers",
+    description: "After using [Jump Jet], [Concussive Blast] gains homing and hinders enemies for <e>1.50s</e> on direct hit.",
+  },
+  "4P002": {
+    position: 2,
+    name: "Extra Charge",
+    description:
+      "[Concussive Blast] gains <e>1</e> extra charge.",
+  },
+  "4P003": {
+    position: 3,
+    name: "Launch Vector",
+    description:
+      "Whenever you knockback an enemy with [Concussive Blast], fire <e>3</e> homing mini-rockets at them.",
+  },
+  "4P004": {
+    position: 4,
+    name: "Blitz Barrage",
+    description:
+      "Gain <e>40%</e> Move Speed during [Barrage]. After using [Jet Dash], fire a [Barrage] with <e>60%</e> fewer [Mini-Rockets].",
+  },
+  "4P005": {
+    position: 5,
+    name: "Carpet Bomb",
+    description:
+      "Gain <e>40%</e> Move Speed during [Barrage]. [Barrage] has <e>50%</e> increased duration.",
+  },
+  "4P006": {
+    position: 6,
+    name: "Recursion Battery",
+    description:
+      "[Mini-Rockets] gain <e>50%</e> Ability Lifesteal.",
+  },
+  "4P007": {
+    position: 7,
+    name: "Cyclic Salvo",
+    description:
+      "[Rocket Launcher] direct hits grant <e>10</e> fuel and reduce your cooldowns by <e>1s</e>.",
+  },
+  "4P008": {
+    position: 8,
+    name: "Fuel Depot",
+    description:
+      "[Rocket Launcher] direct hits permanently increase your maximum fuel by <e>2</e>, stacking up to <e>25 times</e>.",
+  },
+  "4P009": {
+    position: 9,
+    name: "Triple Volley",
+    description:
+      "After using an ability, your next [Primary Fire] fires <e>3</e> rockets that each deal <e>40%</e> damage.",
+  },
+  "4P010": {
+    position: 10,
+    name: "Fuel Conversion",
+    description:
+      "[Jet Dash] gains <e>50%</e> cooldown reduction but now costs <e>65</e> fuel.",
+  },
+  "4P011": {
+    position: 11,
+    name: "Heat Seekers",
+    description:
+      "After using [Jet Dash], your next [Primary Fire] locks onto enemies.",
+  },
+  "4P012": {
+    position: 12,
+    name: "Speed Kills",
+    description:
+      "Dealing Weapon Damage grants <e>5%</e> Move Speed and <e>3%</e> Attack Speed for <e>3s</e>, stacking up to <e>6 times</e>. Direct hits grand double stacks.",
+  }
 };

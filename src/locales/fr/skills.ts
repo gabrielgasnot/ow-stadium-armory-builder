@@ -434,14 +434,15 @@ export default {
       "Tous les 3 coups de grâce, vous recevez un bonus de charge de capacité ultime.",
   },
 
-   "10I001": {
+  "10I001": {
     name: "Orbe de destruction",
     primary: "Arme projetant de l'énergie.",
     secondary: "Chargez pour libérer davantage de projectiles.",
   },
   "10I002": {
     name: "Orbe de discorde",
-    primary: "Vous lancez cet orbe sur un ennemi pour augmenter les dégâts qu'il subit.",
+    primary:
+      "Vous lancez cet orbe sur un ennemi pour augmenter les dégâts qu'il subit.",
   },
   "10I003": {
     name: "Orbe d'harmonie",
@@ -449,7 +450,8 @@ export default {
   },
   "10I004": {
     name: "Transcendance",
-    primary: "Vous devenez invulnérable, plus rapide et soignez les alliés proches.",
+    primary:
+      "Vous devenez invulnérable, plus rapide et soignez les alliés proches.",
   },
   "10I005": {
     name: "Coup de pied",
@@ -474,7 +476,8 @@ export default {
   },
   "18I005": {
     name: "Mauvais Perdant",
-    primary: "Vos explosifs ne vous blessent pas. Vous larguez des bombes à votre mort.",
+    primary:
+      "Vos explosifs ne vous blessent pas. Vous larguez des bombes à votre mort.",
   },
   "31I001": {
     name: "Hypersphères",
@@ -499,5 +502,32 @@ export default {
     name: "Flux Gravitationnel",
     primary:
       "Manipulez la gravité pour soulever les ennemis dans les airs puis les écraser au sol.",
+  },
+  "4I001": {
+    name: "Lance-roquettes",
+    primary: "Arme à projectiles explosifs de longue portée.",
+  },
+  "4I002": {
+    name: "Réacteurs",
+    primary:
+      "Vous vous envolez rapidement dans les airs et récupérez du carburant.",
+  },
+  "4I003": {
+    name: "Conflagration",
+    primary: "Vous provoquez une explosion qui repousse les ennemis au loin.",
+  },
+  "4I004": {
+    name: "Élan Propulseur",
+    primary: "Vous vous déplacez rapidement sur une ligne droite.",
+  },
+  "4I005": {
+    name: "Barrage",
+    primary:
+      "Vous planez sur place et projetez une rafale continue de mini-roquettes.",
+  },
+  "4I006": {
+    name: "Stabilisateurs",
+    primary:
+      "Maintenez [Space] pour planer. Vous chutez au ralenti lorsque vous n'avez plus de carburant. Le carburant ne se régénère qu'au sol.",
   },
 };

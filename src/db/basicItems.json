@@ -44,8 +44,18 @@
       "category": "Ability",
       "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
     },
-    { "id": "00S001", "price": 1000, "category": "Survival", "attributes": [] },
-    { "id": "00S002", "price": 1000, "category": "Survival", "attributes": [] },
+    {
+      "id": "00S001",
+      "price": 1000,
+      "category": "Survival",
+      "attributes": [{ "type": "HP", "value": 10, "unit": "" }]
+    },
+    {
+      "id": "00S002",
+      "price": 1000,
+      "category": "Survival",
+      "attributes": [{ "type": "HP", "value": 10, "unit": "" }]
+    },
     {
       "id": "00S003",
       "price": 1500,
@@ -89,6 +99,7 @@
       "price": 4000,
       "category": "Weapon",
       "attributes": [
+        { "type": "HP", "value": 10, "unit": "" },
         { "type": "AS", "value": 5, "unit": "%" },
         { "type": "MA", "value": 25, "unit": "%" }
       ]
@@ -119,7 +130,8 @@
       "price": 4500,
       "category": "Weapon",
       "attributes": [
-        { "type": "WP", "value": 5, "unit": "%" },
+        { "type": "HP", "value": 25, "unit": "" },
+        { "type": "AS", "value": 5, "unit": "%" },
         { "type": "WPLS", "value": 10, "unit": "%" }
       ]
     },
@@ -143,6 +155,7 @@
       "price": 4000,
       "category": "Ability",
       "attributes": [
+        { "type": "HP", "value": 10, "unit": "" },
         { "type": "AP", "value": 5, "unit": "%" },
         { "type": "AS", "value": 10, "unit": "%" }
       ]
@@ -152,6 +165,7 @@
       "price": 3750,
       "category": "Ability",
       "attributes": [
+        { "type": "HP", "value": 10, "unit": "" },
         { "type": "WP", "value": 5, "unit": "%" },
         { "type": "AP", "value": 10, "unit": "%" }
       ]
@@ -160,15 +174,14 @@
       "id": "00A007",
       "price": 4000,
       "category": "Ability",
-      "attributes": [
-        { "type": "Starting Ultimate Charge", "value": 25, "unit": "%" }
-      ]
+      "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
     },
     {
       "id": "00A008",
       "price": 4000,
       "category": "Ability",
       "attributes": [
+        { "type": "HP", "value": 10, "unit": "" },
         { "type": "AP", "value": 10, "unit": "%" },
         { "type": "ALS", "value": 10, "unit": "%" }
       ]
@@ -198,6 +211,12 @@
       "attributes": [{ "type": "AP", "value": 20, "unit": "%" }]
     },
     {
+      "id": "00A024",
+      "price": 4000,
+      "category": "Ability",
+      "attributes": [{ "type": "APLS", "value": 10, "unit": "%" }]
+    },
+    {
       "id": "00S009",
       "price": 3750,
       "category": "Survival",
@@ -205,22 +224,18 @@
     },
     {
       "id": "00S010",
-      "price": 4000,
+      "price": 3750,
       "category": "Survival",
-      "attributes": [{ "type": "SH", "value": 25, "unit": "" }]
+      "attributes": [
+        { "type": "SH", "value": 25, "unit": "" },
+        { "type": "MS", "value": 5, "unit": "%" }
+      ]
     },
     {
       "id": "00S011",
       "price": 3750,
       "category": "Survival",
-      "attributes": [
-        { "type": "SH", "value": 25, "unit": "" },
-        {
-          "type": "Incoming Negative Effect Duration",
-          "value": -40,
-          "unit": "%"
-        }
-      ]
+      "attributes": [{ "type": "SH", "value": 25, "unit": "" }]
     },
     {
       "id": "00S012",
@@ -240,7 +255,7 @@
       "category": "Survival",
       "attributes": [
         { "type": "SH", "value": 25, "unit": "" },
-        { "type": "CHS", "value": 100, "unit": "" }
+        { "type": "CHS", "value": 150, "unit": "" }
       ]
     },
     {
@@ -264,7 +279,7 @@
     },
     {
       "id": "00W025",
-      "price": 4500,
+      "price": 4000,
       "category": "Weapon",
       "attributes": [
         { "type": "SH", "value": 25, "unit": "" },
@@ -272,13 +287,25 @@
       ]
     },
     {
-      "id": "00A023",
-      "price": 4500,
-      "category": "Ability",
+      "id": "00W026",
+      "price": 4000,
+      "category": "Weapon",
       "attributes": [
-        { "type": "SH", "value": 25, "unit": "" },
-        { "type": "ALS", "value": 10, "unit": "%" }
+        { "type": "HP", "value": 25, "unit": "" },
+        { "type": "WP", "value": 5, "unit": "%" }
       ]
+    },
+    {
+      "id": "00A023",
+      "price": 5000,
+      "category": "Ability",
+      "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
+    },
+    {
+      "id": "00S018",
+      "price": 4000,
+      "category": "Survival",
+      "attributes": [{ "type": "HP", "value": 50, "unit": "" }]
     }
   ],
   "epic": [
@@ -292,7 +319,10 @@
       "id": "00W014",
       "price": 9000,
       "category": "Weapon",
-      "attributes": [{ "type": "AS", "value": 10, "unit": "%" }]
+      "attributes": [
+        { "type": "HP", "value": 25, "unit": "" },
+        { "type": "AS", "value": 10, "unit": "%" }
+      ]
     },
     {
       "id": "00W015",
@@ -385,7 +415,7 @@
       "id": "00A014",
       "price": 10000,
       "category": "Ability",
-      "attributes": [{ "type": "AP", "value": 15, "unit": "" }]
+      "attributes": [{ "type": "AP", "value": 15, "unit": "%" }]
     },
     {
       "id": "00A015",
@@ -449,12 +479,6 @@
       "price": 9000,
       "category": "Survival",
       "attributes": [{ "type": "HP", "value": 25, "unit": "" }]
-    },
-    {
-      "id": "00S018",
-      "price": 9000,
-      "category": "Survival",
-      "attributes": [{ "type": "HP", "value": 50, "unit": "" }]
     },
     {
       "id": "00S019",
@@ -532,6 +556,12 @@
       ]
     },
     {
+      "id": "00S028",
+      "price": 1000,
+      "category": "Survival",
+      "attributes": [{ "type": "HP", "value": 10, "unit": "" }]
+    },
+    {
       "id": "00A022",
       "price": 9500,
       "category": "Ability",
@@ -540,7 +570,7 @@
         { "type": "AP", "value": 10, "unit": "%" }
       ]
     },
-     {
+    {
       "id": "00W024",
       "price": 10000,
       "category": "Weapon",

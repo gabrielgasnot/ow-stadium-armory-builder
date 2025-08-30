@@ -1041,12 +1041,6 @@ export default {
         "Pendant [Vol plané], les dégâts que vous subissez sont réduits de 10%.",
     },
   ],
-  "41S002": [
-    {
-      type: "description",
-      value: "Les soints de [Rayon orbital] augmentent de 25%.",
-    },
-  ],
   "41W004": [
     {
       type: "description",
@@ -1208,18 +1202,28 @@ export default {
       value: "À votre mort, vous obtenez 15% de charge de capacité ultime.",
     },
   ],
+  "00A007": [
+    { type: "Charge de capacité ultime initiale", value: 25, unit: "%" },
+  ],
+  "00A024": [
+    {
+      type: "description",
+      value:
+        "Les dégâts de capacité que vous infligez aux adversaires dans les airs leur infligent également <e>20 %</e> de dégâts supplémentaires en <e>2 s</e>.",
+    },
+  ],
   "00S001": [
     {
       type: "description",
       value:
-        "En début de manche et à chaque réapparition, vous gagnez un surplus de 100 points de vie qui ne peuvent pas être récupérés.",
+        "En début de manche et à chaque réapparition, vous gagnez un <e>surplus</e> de <e>100</e> points de vie qui ne peuvent pas être récupérés.",
     },
   ],
   "00S002": [
     {
       type: "description",
       value:
-        "Lorsque vous êtes sur l'objectif, vous récupérez 8 points de vie par seconde",
+        "Lorsque vous êtes sur l'objectif, vous récupérez <e>8</e> points de vie par <e>seconde</e>.",
     },
   ],
   "00S003": [
@@ -1233,7 +1237,7 @@ export default {
     {
       type: "description",
       value:
-        "Au début d'une manche et lors de votre première réapparition, vous gagnez 20% de vitesse de déplacement pendant 10 s lorsque vous n'êtes pas en combat.",
+        "Au début d'une manche et lors de votre première réapparition, vous gagnez <e>30 %</e> de vitesse de déplacement pendant <e>10 s</e> lorsque vous n'êtes pas en combat.",
     },
   ],
   "00S005": [
@@ -1281,20 +1285,26 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous avez des boucliers, les capacités vous infligent des dégâts réduits de 15%",
+        "Lorsque vous avez des points de boucliers, les capacités vous infligent des dégâts réduits de <e>15 %</e> et vous gagnez <e>5 %</e> de puissance de capacité.",
     },
   ],
   "00S010": [
     {
       type: "description",
-      value: "Les dégâts critiques que vous subissez sont réduits de 20%.",
+      value:
+        "Les dégâts critiques que vous subissez sont réduits de <e>20 %</e>.",
     },
   ],
   "00S011": [
     {
+      type: "Durée d'effets négatifs subis",
+      value: -40,
+      unit: "%",
+    },
+    {
       type: "description",
       value:
-        "Lorsque vous subissez un effet d'étourdissement, de sommeil ou d'entrave, vous récupérez 10% de vos points de vie maximum en 3 s.",
+        "Lorsque vous subissez un effet d'<e>étourdissement</e>, de <e>sommeil</e> ou d'<e>entrave</e>, vous récupérez <e>10 %</e> de vos points de vie maximum en <e>3 s</e>.",
     },
   ],
   "00S012": [
@@ -1308,7 +1318,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous avez des points d'armure, les armes infligent des dégâts réduits de 10%.",
+        "Lorsque vous avez des points d'armure, les armes infligent des dégâts réduits de <e>10 %</e> et vous gagnez <e>5 %</e> de vitesse d'attaque.",
     },
   ],
   "00W013": [
@@ -1322,14 +1332,14 @@ export default {
     {
       type: "description",
       value:
-        "Vous avez 50% de chances de récupérer 1 munition lorsque vous infligez des dégâts aux Ecrans avec votre arme.",
+        "Vous avez <e>50 %</e> de chances de récupérer <e>1</e> munition lorsque vous infligez des dégâts aux Ecrans avec votre arme.",
     },
   ],
   "00W015": [
     {
       type: "description",
       value:
-        "Les dégâts de votre arme augmentent de 5% pour chaque tranche de 100 points de vie maxium excédent les vôtres dont dispose la cible, jusqu'à un maximum de 20%.",
+        "Les dégâts de votre arme augmentent de <e>5 %</e> pour chaque tranche de <e>100</e> points de vie maximum excédent les vôtres dont dispose la cible, jusqu'à un maximum de <e>25 %</e>.",
     },
   ],
   "00W016": [
@@ -1357,7 +1367,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous utilisez une capacité, votre vitesse de déplacement augmente de 10% pendant 2 s.",
+        "Lorsque vous utilisez une capacité, votre vitesse de déplacement augmente de <e>10 %</e> pendant <e>2 s</e>.",
     },
   ],
   "00W020": [
@@ -1398,7 +1408,14 @@ export default {
     {
       type: "description",
       value:
-        "Tant que vos points de vie sont inférieurs à 150, vous bénéficiez de 15 % de vol de vie de l'arme.",
+        "Une fois par vie, lorsque vos points de vie sont inférieurs à <e>150</e>, vous bénéficiez de <e>15 %</e> de vol de vie de l'arme et d'un surplus de <e>50</e> points de vie pendant <e>5 s</e>.",
+    },
+  ],
+  "00W026": [
+    {
+      type: "description",
+      value:
+        "Les dégâts d'arme infligé aux adversaires en l'air à plus de <e>3m</e> leur infligent également <e>10</e> de dégâts supplémentaires et les ralentissent de <e>25 %</e> pendant <e>3 s</e> <e>(Temps de recharge: 10 s)</e>.",
     },
   ],
   "00A012": [
@@ -1419,7 +1436,7 @@ export default {
     {
       type: "description",
       value:
-        "Les dégâts infligés et les soins prodigués par les capacités vous confèrent 20% de charge de capacité ultime en plus.",
+        "Les dégâts infligés et les soins prodigués par les capacités vous confèrent <e>20 %</e> de charge de capacité ultime en plus.",
     },
   ],
   "00A015": [
@@ -1433,7 +1450,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous utilisez une capacité, vous récupérez 50 points d'armure ou de bouclier en 2 s.",
+        "Lorsque vous utilisez une capacité, vous récupérez <e>50</e> points d'armure ou de bouclier en <e>3 s</e>.",
     },
   ],
   "00A017": [
@@ -1461,7 +1478,7 @@ export default {
     {
       type: "description",
       value:
-        "Lorsque vous utilisez une capacité, les prochains soins ou dégâts que vous infligez avec votre arme sont augmentés de 25.",
+        "Lorsque vous utilisez une capacité, les prochains soins ou dégâts que vous infligez avec votre arme sont augmentés de <ap>25</ap>.",
     },
   ],
   "00A022": [
@@ -1475,7 +1492,7 @@ export default {
     {
       type: "description",
       value:
-        "Tant que vos points de vie sont supérieurs à 80%, vous gagnez 10 % de puissance de capacité.",
+        "Tant que vos points de vie sont supérieurs à <e>50 %</e>, vous gagnez <e>10 %</e> de puissance de capacité. Sinon, vous obtenez <e>15 %</e> de vol de vie de capacité et les temps de recharge des capacités sont réduits de <e>10 %</e>.",
     },
   ],
   "00S017": [
@@ -1489,14 +1506,14 @@ export default {
     {
       type: "description",
       value:
-        "La dernière cible adverse vous ayant éliminé vous est révélée lorsqu'elle est à proximité. Les dégâts que vous lui infligez sont augmentés de 10% et les dégâts que vous subissez de sa part sont réduits de 10%.",
+        "La dernière cible adverse vous ayant éliminé vous est <e>révélée</E> lorsqu'elle est à proximité. Les dégâts que vous lui infligez sont augmentés de <e>10 %</E> et les dégâts que vous subissez de sa part sont réduits de <e>10 %</e>.",
     },
   ],
   "00S019": [
     {
       type: "description",
       value:
-        "Lorsque vous subissez au moins 100 points de dégâts en une seule fois, vous récupérez 20% des dégâts subis et vos points de bouclier commencent à se régénérer immédiatement.",
+        "Lorsque vous subissez au moins <e>150</e> points de dégâts en une seule fois (avant atténuation des dégâts), vous gagnez un surplus de points de vie égal à <e>20 %</E> des dégâts subis pendant <e>3 s</e> et vos points de bouclier commencent à se régénérer immédiatement.",
     },
   ],
   "00S020": [
@@ -1554,6 +1571,13 @@ export default {
         "Une fois par vie, lorsque vous subissez des dégâts qui vous font passer en dessous de 30 % de votre maximum de points de vie, vous gagnez d'abord un surplus de points de vie égal à 300 qui disparaît progressivement.",
     },
   ],
+  "00S028": [
+    {
+      type: "description",
+      value:
+        "Après avoir subi des dégâts à plus de <e>20 m</e>, vous gagnez un surplus de <e>50</e> points de vie pendant <e>3 s</e> <e>(Temps de recharge: 15 s)</e>.",
+    },
+  ],
   "43W001": [{ type: "Distance de [Ruée rapide]", value: 25, unit: "%" }],
   "43W002": [
     {
@@ -1570,13 +1594,6 @@ export default {
     },
   ],
   "43A001": [{ type: "Hauteur de [Courant ascendant]", value: 20, unit: "%" }],
-  "43A002": [
-    {
-      type: "description",
-      value:
-        "[Tir de bolas] attire les adversaires à proximité même lorsqu'il rate sa cible, mais sa force d'attraction est réduite de 50 %.",
-    },
-  ],
   "43S001": [
     {
       type: "Durée de déplacement ralenti de [Dans le mille]",
@@ -1882,6 +1899,68 @@ export default {
       type: "description",
       value:
         "[Écran expérimental] soigne les personnages alliés à proximité à hauteur de 3 % de vos points de vie maximum par seconde.",
+    },
+  ],
+  "4W001": [
+    {
+      type: "Rayon d'explosion de [Lance-Roquettes]",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "4W002": [
+    {
+      type: "description",
+      value:
+        "Les tirs directs de [Lance-Roquettes] vous redonnent <e>1</e> munition.",
+    },
+  ],
+  "4A001": [
+    {
+      type: "description",
+      value:
+        "Lorsque vous vous faites reculer avec [Conflagration], votre vitesse de déplacement est augmentée de <e>20 %</e> pendant <e>3 s</e>.",
+    },
+  ],
+  "4A002": [
+    {
+      type: "Rayon d'explosion des [Mini-Roquettes]",
+      value: 25,
+      unit: "%",
+    },
+  ],
+  "4A003": [
+    {
+      type: "description",
+      value:
+        "[Conflagration] ralentit les cibles affectées de <e>20 %</e> pendant <e>2 s</e>.",
+    },
+  ],
+  "4S001": [
+    {
+      type: "description",
+      value:
+        "Après l'utilisation de [Réacteurs] ou d'[Élan Propulseur], vous obtenez un surplus de <e>25</e> points de vie pendant <e>3 s</e>.",
+    },
+  ],
+  "4S002": [
+    {
+      type: "description",
+      value: "[Stabilisateurs] consomme <e>20 %</e> de carburant en moins.",
+    },
+  ],
+  "4S003": [
+    {
+      type: "description",
+      value:
+        "Les tirs directs de [Lance-Roquettes] soignent <e>15 %</e> de vos points de vie maximum en <e>3 s</e>.",
+    },
+  ],
+  "4S004": [
+    {
+      type: "description",
+      value:
+        "Lorsque vous utilisez [Barrage], vous obtenez un surplus depoints de vie égal à <e>25 %</e> de vos points de vie max. pendant <e>3 s</e>.",
     },
   ],
 };
