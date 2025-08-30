@@ -1773,7 +1773,7 @@ export default {
     {
       type: "description",
       value:
-        "When you knock yourself back with [Concussive Blast], gain <e>20%</> Movement Speed for <e>3s</e>.",
+        "When you knock yourself back with [Concussive Blast], gain <e>20%</e> Movement Speed for <e>3s</e>.",
     },
   ],
   "4A002": [
@@ -1787,7 +1787,7 @@ export default {
     {
       type: "description",
       value:
-        "[Concussive Blast] slows affected enemies by <e>20%<e> for <e>2s</e>.",
+        "[Concussive Blast] slows affected enemies by <e>20%</e> for <e>2s</e>.",
     },
   ],
   "4S001": [
